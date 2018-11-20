@@ -1,0 +1,13 @@
+baseURL = "https://docs.kolibricloud.ch/"
+languageCode = "en-us"
+relativeURLs = true
+title = "KOLIBRI Cloud, the secure Web Portal to your measurements made with pressure sensors."
+googleAnalytics = "UA-117920007-1"
+pygmentsUseClasses = true
+
+[[menu.main]]
+    pre = "<i class='fas fa-hand-point-right'></i>"
+    name = "Overview"
+    identifier = "overview"
+    url = "/overview/"
+    weight = 1

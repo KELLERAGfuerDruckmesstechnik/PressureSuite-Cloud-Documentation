@@ -1,0 +1,22 @@
+baseURL = "https://docs.kolibricloud.ch/sending-technology/"
+languageCode = "en-us"
+title = "KOLIBRI Cloud Sending Technology"
+googleAnalytics = "UA-117920007-1"
+pygmentsUseClasses = true
+
+[[menu.main]]
+    pre = "<i class='fas fa-broadcast-tower'></i>"
+    name = "LoRa technology"
+    identifier = "lora-technology"
+    url = "/lora-technology/"
+    weight = 1
+
+[[menu.main]]
+    pre = "<i class='fas fa-broadcast-tower'></i>"
+    name = "GSM technology"
+    identifier = "gsm-technology"
+    url = "/gsm-technology/"
+    weight = 2
+
+[params]
+    version = "1.0.0"

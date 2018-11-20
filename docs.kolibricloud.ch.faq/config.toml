@@ -1,0 +1,15 @@
+baseURL = "https://docs.kolibricloud.ch/faq/"
+languageCode = "en-us"
+title = "KELLER Cloud FAQ documentation"
+googleAnalytics = "UA-117920007-1"
+pygmentsUseClasses = true
+
+[[menu.main]]
+    pre = "<i class='fas fa-question-circle'></i>"
+    name = "Overview"
+    identifier = "overview"
+    url = "/overview/"
+    weight = 1
+
+[params]
+    version = "2.0.1"

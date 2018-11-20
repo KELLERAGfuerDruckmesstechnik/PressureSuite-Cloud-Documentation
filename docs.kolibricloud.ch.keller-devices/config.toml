@@ -1,0 +1,22 @@
+baseURL = "https://docs.kolibricloud.ch/keller-devices/"
+languageCode = "en-us"
+title = "Compatible KELLER devices"
+googleAnalytics = "UA-117920007-1"
+pygmentsUseClasses = true
+
+[[menu.main]]
+    pre = "<i class='fas fa-hand-point-right'></i>"
+    name = "Overview"
+    identifier = "overview"
+    url = "/overview/"
+    weight = 1
+
+[[menu.main]]
+    pre = "<i class='fas fa-download'></i>"
+    name = "Use Cases"
+    identifier = "usecases"
+    url = "/usecases/"
+    weight = 2
+
+[params]
+    version = "1.0.0"
