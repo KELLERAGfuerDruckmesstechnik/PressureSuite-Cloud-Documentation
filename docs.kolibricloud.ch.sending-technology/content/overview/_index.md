@@ -4,7 +4,6 @@ menu:
     main:
         parent: overview
         weight: 1
-hidden: true
 ---
 
 # Differences between LoRa and GSM
