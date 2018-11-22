@@ -16,5 +16,5 @@ or
 ## Contribute
 Did you find a bug or want to request a new feature?
 * Ask directly: <kolibri@keller-druck.ch>
-* Report bugs or make feature-requests by opening an issue at [https://github.com/KellerAG/todo/issues](https://github.com/KellerAG/todo/issues)
+* Report bugs or make feature-requests by opening an issue at [https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/issues](https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/issues)
 * Help fixing issues or improve documentation by creating pull-requests
