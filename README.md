@@ -13,7 +13,7 @@ To test the page locally do this:
 3.	Make your changes in the files and see the changes on the local Web Server on http://localhost:1313/ (or another port)
 
 # Deployment
-Azure Dev Ops is used to automatically build the static file (buildStaticFiles.ps1) and deploy it to a cheap Azure storage.
+Azure DevOps Services is used to automatically build the static file (buildStaticFiles.ps1) and deploy it to a cheap Azure storage.
 [![Build Status](https://kellerdruck.visualstudio.com/Keller%20Cloud/_apis/build/status/Documentation%20-%20CI)](https://kellerdruck.visualstudio.com/Keller%20Cloud/_build/latest?definitionId=27)
 
 # Kudos
