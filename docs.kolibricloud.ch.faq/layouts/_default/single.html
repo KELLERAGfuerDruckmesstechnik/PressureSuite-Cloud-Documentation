@@ -1,7 +1,5 @@
 {{ define "main" }}
-    {{ if .Params.toc }}
-        {{ .TableOfContents }}
-    {{ end }}
+   {{ .TableOfContents }}
 {{ .Content }}
 
 {{ end }}
