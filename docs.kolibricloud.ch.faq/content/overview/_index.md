@@ -74,7 +74,6 @@ During the testing phase, he can start using our documentation to integrate his 
 
 See ..todo link
 
-
 ## How do I sign up? How do I log in? How can I test it?
 
 See: www.kolibricloud.ch
@@ -144,11 +143,40 @@ APIs are not sorcery solely for developers.
 The KOLIBRI Cloud API can also be tested (if authorized) at https://api.kolibricloud.ch/swagger/index.html?url=/swagger/v1/swagger.json
 
 If you as a specific software aks. e.g. "Give me the list of all devices", the answer would be:
-https://api.kolibricloud.ch/v1/Devices
+
+```https://api.kolibricloud.ch/v1/Devices```
 
 And in answer you get from KOLIBRI Cloud:
 
-```{" totalRecords ": 3 , " devices ": [{" id ": 1004 , " name ": "Eulach 03" , " networkNode ": "Winterthur" , " transferType ": "GSM" , " gsmNumber ": "+ 41774691179 " ," euiNumber ": null }, {" id ": 1005 ," name ": " Eulach 10 " ," networkNode ":"Winterthur" , " transferType ": "GSM", " gsmNumber ": "+41774692307" , " euiNumber ": null }, {" id ": 1508 , " name ": "Pascal Swisscom 05" , " networkNode ": "Winterthur" , " transferType ": "LoRa" , " gsmNumber ": null , " euiNumber ": "0004A30B001E5CD8" }]}
+```{
+   " totalRecords ":3,
+   " devices ":[
+      {
+         " id ":1004,
+         " name ":"Eulach 03",
+         " networkNode ":"Winterthur",
+         " transferType ":"GSM",
+         " gsmNumber ":"+ 41774691179 ",
+         " euiNumber ":null
+      },
+      {
+         " id ":1005,
+         " name ":" Eulach 10 ",
+         " networkNode ":"Winterthur",
+         " transferType ":"GSM",
+         " gsmNumber ":"+41774692307",
+         " euiNumber ":null
+      },
+      {
+         " id ":1508,
+         " name ":"Pascal Swisscom 05",
+         " networkNode ":"Winterthur",
+         " transferType ":"LoRa",
+         " gsmNumber ":null,
+         " euiNumber ":"0004A30B001E5CD8"
+      }
+   ]
+}
 ```
 
 The data format is called JSON (standard) and can be easily decrypted by all programming languages.
