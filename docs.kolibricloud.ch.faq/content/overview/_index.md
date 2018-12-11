@@ -14,7 +14,8 @@ description: Frequently Asked Questions  (FAQ)
   - [What kind of IoT devices does KELLER have?](#what-kind-of-iot-devices-does-keller-have)
   - [Can I use other non-KELLER devices?](#can-i-use-other-non-keller-devices)
   - [What does "KOLIBRI" even mean?](#what-does-kolibri-even-mean)
-  - [What is the "KOLIBRI Cloud"?](#what-is-the-kolibri-cloud)
+  - [What is the "KOLIBRI Cloud?](#what-is-the-kolibri-cloud)
+  - [Should I use the Cloud or the GSM2Datamanager solution?](#should-i-use-the-cloud-or-the-gsm2datamanager-solution)
   - [What is the roadmap of the features?](#what-is-the-roadmap-of-the-features)
   - [The customer wants to create his own web app or mobile app. How can KELLER help the customer?](#the-customer-wants-to-create-his-own-web-app-or-mobile-app-how-can-keller-help-the-customer)
   - [The customer does not want to use our "cloud". ie the customer wants to save and present the data by himself. How can KELLER help the customer?]  (#the-customer-does-not-want-to-use-our-cloud-ie-the-customer-wants-to-save-and-present-the-data-by-himself-how-can-keller-help-the-customer)
@@ -78,9 +79,13 @@ Part of this new product line are the cloud possibilities, which are:
 
 - Tools : To simplify the integration of our IoT devices, sample programs and libraries are available for free or even open sourced.
 
+## Should I use the Cloud or the GSM2Datamanager solution?
+
+[Please see this comparison.](https://docs.kolibricloud.ch/cloud-interfaces/overview/differences/)
+
 ## What is the roadmap of the features?
 
-See ...todo link
+[Plese see this overview.](https://docs.kolibricloud.ch/overview/features/)
 
 ## The customer wants to create his own web app or mobile app. How can KELLER help the customer?
 
