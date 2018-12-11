@@ -9,8 +9,30 @@ description: Frequently Asked Questions  (FAQ)
 ---
 
 # Frequently Asked Questions
-
-Here some common questions to the KELLER KOLIBRI Cloud. If you miss a question/answer please contact <kolibri@keller-druck.ch> or write a new issue on Github (https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation).
+- If you miss a question/answer please contact <kolibri@keller-druck.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation).
+  - [What does "cloud", "IoT", "LoRa" mean?](#what does "cloud", "iot", "lora" mean?)
+  - [What kind of IoT devices does KELLER have?](#what kind of iot devices does keller have?)
+  - [Can I use other non-KELLER devices?](#can i use other non-keller devices?)
+  - [What does "KOLIBRI" even mean?](#what does "kolibri" even mean?)
+  - [What is the "KOLIBRI Cloud"?](#what is the "kolibri cloud"?)
+  - [What is the roadmap of the features?](#what is the roadmap of the features?)
+  - [The customer wants to create his own web app or mobile app. How can KELLER help the customer?](#the customer wants to create his own web app or mobile app. how can keller help the customer?)
+  - [The customer does not want to use our "cloud". ie the customer wants to save and present the data by himself. How can KELLER help the customer?](#the customer does not want to use our "cloud". ie the customer wants to save and present the data by himself. how can keller help the customer?)
+  - [Where can I find marketing/promotional material?](#where can i find marketing/promotional material?)
+  - [How do I sign up? How do I log in? How can I test it?](#how do i sign up? how do i log in? how can i test it?)
+  - [Does the website also work on a mobile phone?](#does the website also work on a mobile phone?)
+  - [What alarms are there](#what alarms are there)
+  - [How do I know that the devices are communicating?](#how do i know that the devices are communicating?)
+  - [Can I use existing data from the GSM2Datamanager switch to the KOLIBRI Cloud?](#can i use existing data from the gsm2datamanager switch to the kolibri cloud?)
+  - [The customer needs a new feature? How do I proceed?](#the customer needs a new feature? how do i proceed?)
+  - [I discovered an SW error. How do I contact KELLER?](#i discovered an sw error. how do i contact keller?)
+  - [How does LoRa technology work and what are the advantages?](#how does lora technology work and what are the advantages?)
+  - [What is an API?](#what is an api?)
+  - [Where is the data stored?](#where is the data stored?)
+  - [How do I get the data from the devices to the WebApp?](#how do i get the data from the devices to the webapp?)
+  - [How safe is the cloud?](#how safe is the cloud?)
+  - [Are there any specific standards that the cloud fulfills?](#are there any specific standards that the cloud fulfills?)
+  - [Is there a terms of service(ToS)?](#is there a terms of service(tos)?)
 
 ## What does "cloud", "IoT", "LoRa" mean?
 
@@ -86,7 +108,7 @@ Yes. The site is optimized for the PC / Mac with monitor screen.
 The WebApp is "responsive" and therefore it works on a mobile phone, too. However, because of the small screen area, the chart display is very difficult to use.
 The mobile version is needed more to monitor triggered alarms and to monitor the current state of all devices.
 
-## What alarms are there?
+## What alarms are there
 
 There are three categories:
 
