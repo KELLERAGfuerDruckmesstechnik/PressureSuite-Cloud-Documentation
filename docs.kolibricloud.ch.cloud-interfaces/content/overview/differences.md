@@ -11,13 +11,14 @@ description: What are the differences between GSM2Datamanager and KOLIBRI Cloud
 # What are the differences between GSM2Datamanager and KOLIBRI Cloud
 
 Basically prefer to use the KOLIBRI Cloud as it is easier, modern and well supported.
+
 The reasons to use the Datamanager are:
+
 - You are bound to rules that do not allow to use cloud services (such as Dropbox, Windows 10)
 - You are bound to rules that do not allow to have the data stored in another country
 - Accessability of 98% is not enough
 - You need to use a E-Mail-account to temporary store the data and not an FTP account
 - You change the location of the device in a regular basis
-
 
 
 GSM2Datamanager    | KOLIBRI Cloud 
