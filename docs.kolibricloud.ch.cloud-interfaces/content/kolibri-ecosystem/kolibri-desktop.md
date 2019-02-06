@@ -16,7 +16,7 @@ During the Installation process please install the "FTDI Chip CDM Drivers" when 
 
 A KELLER device should be recognized automatically. Otherwise pleaser 'restart the search for devices'
 
-![1](\\images/1.png)
+![1](\images\1.png)
 
 
 
