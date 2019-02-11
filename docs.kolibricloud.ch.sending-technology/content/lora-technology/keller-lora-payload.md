@@ -26,21 +26,23 @@ Payload string: "AQUA079gQlk9vCn8QajZAD93x6RBuAAA"
 Base64 decrypted byte array: **01 05 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 
   **2) Basic steps**  
+
 - A)  Decrypt the Payload string to a Byte-Array  
 - B)  Identify the Device-Type and channel numbers  
 - C)  Decode the bytes to (float) values  
 - D)  Assign the values to the correct channels according to the Device-Type  
 
   **2.A) Decrypt the Payload string to a Byte-Array**  
+
 - The payload string is Base64 encrypted.  
 - Decrypt it into a byte array. (Not a string)  
-    
 ```
 // Code example with C#:
     byte[] decodedPayload = System.Convert.FromBase64String(payload);
 ```
 
   **2.B) Identify the Device-Type and channel numbers**  
+
 - The payload size varies depending of the count of transmitted values  
 - The payload is divided into the following groups:  
 ![picture of internal payload build](../../payload_protocol.png "internal payload build")  
@@ -54,10 +56,11 @@ Base64 decrypted byte array: **01 05 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3
 --> Device Type = 5  
 
   **2.C) Decode the bytes to (float) values**  
+  
 - Byte #2+#3: Represent the information which transmitted channel values have been sent. Each bit represent the used channel from the particular device type  
 **01 05 <span style="color:red">00 D3</span> BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 --> 00 D3 --> 0000'0000 **11**0**1**'00**11**  
-Transmitted Channels:  
+- Transmitted Channels:  
     - #1  
     - #2  
     - #5  
@@ -126,10 +129,10 @@ Now, to map the channels to real named channels with physical units it is needed
 The given channels are therefore:    
 
 - #1 = MeasurementDefinitionId 11 = Pd(P1-PBaro) with -0.876012384... bar   
-- #2 = MeasurementDefinitionId  2 = P1 with  0.091876953... bar  
-- #5 = MeasurementDefinitionId  5 = TOB1 with 21.105957031... °C  
-- #7 = MeasurementDefinitionId  7 = PBaro with  0.967890024... bar  
-- #8 = MeasurementDefinitionId  8 = TBaro with 23.0 °C  
+- #2 = MeasurementDefinitionId 2  = P1 with  0.091876953... bar  
+- #5 = MeasurementDefinitionId 5  = TOB1 with 21.105957031... °C  
+- #7 = MeasurementDefinitionId 7  = PBaro with  0.967890024... bar  
+- #8 = MeasurementDefinitionId 8  = TBaro with 23.0 °C  
 
 Pressure values from the API are always in bar  
 Temperature values from the API are always in °C  
