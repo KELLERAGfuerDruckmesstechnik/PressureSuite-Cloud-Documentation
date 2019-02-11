@@ -9,17 +9,16 @@ description: Information how you to decrypt and use the LoRa payload encrypted b
 ---
 
 ## How many LoRa messages can I send per device?
-Due to the limited size of a LoRa message KELLER can send up to five float values per transmission. If a device is configured to send more than 5 float values then two messages have to be transmitted. Be aware that this doubles the message rate and therefore you might have to adjust the sending interval. KELLER recommends not more than 1 message per 10min per device. Independently, if there is one device or one thousand devices.
+Due to the limited size of a LoRa message KELLER can send up to five float values per transmission. If a device is configured to send more than 5 float values then two messages have to be transmitted. Be aware that this doubles the message rate and therefore you might have to adjust the sending interval. KELLER recommends not more than 1 message per 10min per device; Independently, if there is one device or one thousand devices.
 
 ## How to decrypt the KELLER payload message from TheThingsNetwork?
 
 The actual protocol can be [found here](../../Kommunikationsprotokoll LoRa v2.0.pdf) (*IN GERMAN*)
 
-Let's make an example:
-
 #### Introduction   
-In the [TTN console](https://console.thethingsnetwork.org/applications) the payload and the decrypted values can be seen in the DATA tab:
-![picture of TTN payload example](../../payload_ttn_example.png "TTN payload example")  
+In the [TTN console](https://console.thethingsnetwork.org/applications) the payload and the decrypted values can be seen in the DATA tab:   
+<img src="../../payload_ttn_example.png" alt="TTN payload example" width="400"/>  
+
 TTN here already decrypts the payload, and displays the channel values as floats. It does it because it uses [KELLER's TTN payload decoder Javascript code](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder). This decoder SW works because TTN already decodes the payload (string) firstly to a byte array.
 
 Payload string: "AQUA079gQlk9vCn8QajZAD93x6RBuAAA"  
