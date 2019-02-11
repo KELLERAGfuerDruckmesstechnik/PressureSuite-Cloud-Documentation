@@ -4,6 +4,7 @@ menu:
     main:
         parent: lora-technology
         weight: 2
+toc: false
 description: Information how you to decrypt and use the LoRa payload encrypted by KELLER AG
 ---
 
@@ -16,7 +17,7 @@ The actual protocol can be [found here](../../Kommunikationsprotokoll LoRa v2.0.
 
 Let's make an example:
 
-  **1) Introduction**
+  **1) Introduction**  
 In the [TTN console](https://console.thethingsnetwork.org/applications) the payload and the decrypted values can be seen in the DATA tab:
 ![picture of TTN payload example](../../payload_ttn_example.png "TTN payload example")  
 TTN here already decrypts the payload, and displays the channel values as floats. It does it because it uses [KELLER's TTN payload decoder Javascript code](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder). This decoder SW works because TTN already decodes the payload (string) firstly to a byte array.
@@ -25,14 +26,14 @@ Payload string: "AQUA079gQlk9vCn8QajZAD93x6RBuAAA"
 Base64 decrypted byte array: **01 05 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 
   **2) Basic steps**  
-  - A)  Decrypt the Payload string to a Byte-Array  
-  - B)  Identify the Device-Type and channel numbers  
-  - C)  Decode the bytes to (float) values  
-  - D)  Assign the values to the correct channels according to the Device-Type  
+- A)  Decrypt the Payload string to a Byte-Array  
+- B)  Identify the Device-Type and channel numbers  
+- C)  Decode the bytes to (float) values  
+- D)  Assign the values to the correct channels according to the Device-Type  
 
   **2.A) Decrypt the Payload string to a Byte-Array**  
-  - The payload string is Base64 encrypted.  
-  - Decrypt it into a byte array. (Not a string)  
+- The payload string is Base64 encrypted.  
+- Decrypt it into a byte array. (Not a string)  
     
 ```
 // Code example with C#:
@@ -40,8 +41,8 @@ Base64 decrypted byte array: **01 05 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3
 ```
 
   **2.B) Identify the Device-Type and channel numbers**  
--  The payload size varies depending of the count of transmitted values  
--  The payload is divided into the following groups:  
+- The payload size varies depending of the count of transmitted values  
+- The payload is divided into the following groups:  
 ![picture of internal payload build](../../payload_protocol.png "internal payload build")  
 
 - Byte #1: Represents the "function code". For normal measurement transmission this is 1. It would be another function code in case of alarming, configuration, transmission acknowledges, ...  
@@ -55,13 +56,13 @@ Base64 decrypted byte array: **01 05 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3
   **2.C) Decode the bytes to (float) values**  
 - Byte #2+#3: Represent the information which transmitted channel values have been sent. Each bit represent the used channel from the particular device type  
 **01 05 <span style="color:red">00 D3</span> BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
---> 00 D3 --> 0000'0000 1101'0011  
+--> 00 D3 --> 0000'0000 **11**0**1**'00**11**  
 Transmitted Channels:  
-  - #1
-  - #2
-  - #5
-  - #7
-  - #8
+    - #1  
+    - #2  
+    - #5  
+    - #7  
+    - #8  
 
 - Byte #4 .. #7: Represents a float value using the IEEE 754 (https://en.wikipedia.org/wiki/IEEE_754) standard.  
 **01 05 00 D3 <span style="color:red">BF 60 42 59</span> 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
@@ -99,7 +100,7 @@ Test it with one of many online converters such as
     } 
 ```
 
-- Byte #8 .. #11, etc: Represent the other floating values like above 
+  - Byte #8 .. #11, etc: Represent the other floating values like above 
   
 BF 60 42 59 --> -0.876012384...  
 3D BC 29 FC -->  0.091876953...  
@@ -111,8 +112,9 @@ It is important to know that order and the definition of the float values corres
 
   **2.D) Assign the values to the correct channels according to the Device-Type**  
 Above example payload identified:  
-  - DeviceType #5 which is "RS485 & Baro (P1-PB) & Dig.Inp.1 & Volt Inp. 1"  
-  - Transmitted Channels:   
+
+- DeviceType #5 which is "RS485 & Baro (P1-PB) & Dig.Inp.1 & Volt Inp. 1"  
+- Transmitted Channels:   
     - #1 with -0.876012384...  
     - #2 with  0.091876953...  
     - #5 with 21.105957031...  
@@ -122,11 +124,12 @@ Above example payload identified:
 Now, to map the channels to real named channels with physical units it is needed to lookup the given device type. See [protocol pdf](../../Kommunikationsprotokoll LoRa v2.0.pdf) or the [table below](#mapping).   
   
 The given channels are therefore:    
-   - #1 = MeasurementDefinitionId 11 = Pd(P1-PBaro) with -0.876012384... bar   
-   - #2 = MeasurementDefinitionId  2 = P1 with  0.091876953... bar  
-   - #5 = MeasurementDefinitionId  5 = TOB1 with 21.105957031... °C  
-   - #7 = MeasurementDefinitionId  7 = PBaro with  0.967890024... bar  
-   - #8 = MeasurementDefinitionId  8 = TBaro with 23.0 °C  
+
+- #1 = MeasurementDefinitionId 11 = Pd(P1-PBaro) with -0.876012384... bar   
+- #2 = MeasurementDefinitionId  2 = P1 with  0.091876953... bar  
+- #5 = MeasurementDefinitionId  5 = TOB1 with 21.105957031... °C  
+- #7 = MeasurementDefinitionId  7 = PBaro with  0.967890024... bar  
+- #8 = MeasurementDefinitionId  8 = TBaro with 23.0 °C  
 
 Pressure values from the API are always in bar  
 Temperature values from the API are always in °C  
@@ -154,7 +157,8 @@ It is exactly the same as above except the payload string doesn't have to be dec
 ## Mapping between: Device Type - Measurement Definition Id - Channel numbers  
 
 
-####Device Type  
+### Device Type  
+
 
  Id | Device Type                                                        
 ----|--------------------------------------------------------------------
@@ -173,7 +177,8 @@ It is exactly the same as above except the payload string doesn't have to be dec
  12 | RS485 & Baro (P1-PBaro) & Modbus ABB Aquamaster                    
  13 | RS485 (2x(P1+P2+TOB1+TOB2)) & Counter Inp. & Volt Inp.             
 
-###Measurement Definition Id  
+
+### Measurement Definition Id  
 
  Id | MeasurementDefinition              
 ----|------------------------------------
@@ -233,7 +238,7 @@ It is exactly the same as above except the payload string doesn't have to be dec
  54 | Tank Content 3                     
 
 
-###Mapping  
+### Mapping  
 
  ChannelNumber | DeviceTypeId | MeasurementDefinitionId 
 ---------------|--------------|-------------------------
