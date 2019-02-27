@@ -22,12 +22,11 @@ menu:
 - Wireless connection over K114 BT does not work reliable
 
 
+-----
 
-# recent updates
+# Release History
 
-
-
-## Version 6.2.19057.1
+## Version 6.2.19058.1
 
 ### Description
 
@@ -48,8 +47,8 @@ In this version we focused on implementing *your* feedback requests and suggeste
 - Device overview is updated after writing a configuration
 - Translated all texts to German
 - Conductivity channels of DCX CTD are now available in live data
-- 
 
-## Version 6.2.0
+-----
+## Version 6.2.18355.1
 
-Version 6.2.0 is the first release
+Version 6.2.18355.1 is the first release with the basic functionalities.
