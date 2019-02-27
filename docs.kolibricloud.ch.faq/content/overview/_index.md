@@ -261,4 +261,4 @@ eg  ISO 9001 , ISO 20000-1: 2011, ISO 2230, ISO 27001, ISO 27017, ISO 27018, BIR
 
 ## Is there a terms of service(ToS)?
 
-Yes. Todo Link
+Yes. Todo Link!
