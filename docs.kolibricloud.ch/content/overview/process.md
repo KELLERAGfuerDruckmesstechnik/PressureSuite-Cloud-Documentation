@@ -4,7 +4,7 @@ menu:
     main:
         parent: overview
         weight: 2
-description: Overview of the general process
+toc: false
 ---
 
 # General process  
@@ -20,7 +20,6 @@ description: Overview of the general process
   - A user sees only the devices that are in the group he/she belongs to.
   - There are no sub-groups implemented. There are no customer administrator functionalities implemented.
   - Although, a user can either be a “contributor” with write rights or a “reader” without write rights.
-
-- As a customer please tell the customer support which user should have which access rights (“contributor” or "reader")
+- As a customer please tell the KOLIBRI Cloud support team which user should have which access rights (“contributor” or "reader")
 - As a customer please setup the device. For GSM/ARC devices please look at [this guideline](https://docs.kolibricloud.ch/sending-technology/gsm-technology/). For LoRa devices a [this guideline](https://docs.kolibricloud.ch/sending-technology/lora-technology/) might help.
-- Please be in contact with the KOLIBRI Cloud support team (kolibri@keller-druck.ch)
+- Please be in contact with the KOLIBRI Cloud support team (kolibri@keller-druck.com)

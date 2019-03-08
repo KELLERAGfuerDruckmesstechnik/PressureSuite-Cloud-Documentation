@@ -4,7 +4,7 @@ menu:
     main:
         parent: overview
         weight: 3
-description: Information how you ToDo
+toc: false
 ---
 
 # Features and release history
@@ -21,15 +21,15 @@ A lot of information is missing and needs to be written.
 PLANNED: April 2019
 
 ### Self-Device-Registration
-Customer should be able to self-register devices.
+Customer should be able to self-register devices.  
 PLANNED: Q3/2019
 
 ### Device Settings from the Cloud for GSM/ARC devices
-It should be possible to change the settings online. Similar as the Datamanager or the GSMSetup, but online.
+It should be possible to change the settings online. Similar as the Datamanager or the GSMSetup, but online.  
 PLANNED: Q2-Q3/2019
 
 ### Performance optimization
-Everything can be made faster.
+Everything can be made faster.  
 PLANNED: Q3
 
 ### Maps
