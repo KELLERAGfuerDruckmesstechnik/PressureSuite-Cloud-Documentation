@@ -7,7 +7,7 @@ menu:
 description: Overview of the general process
 ---
 
-#General process
+# General process  
 - As a customer you can try out the KOLIBRI Cloud by using a demo user name "Test2019" and its password "Test2019" on https://www.kolibricloud.com
 - As a customer you can register yourself at https://www.kolibricloud.com at any time. Please understand the [Terms of Use](https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_e.pdf).  
 - Understand the differences between Groups-Devices-Users

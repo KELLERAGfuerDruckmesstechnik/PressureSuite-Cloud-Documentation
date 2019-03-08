@@ -10,7 +10,7 @@ menu:
 Todo: Some general information about GSM
 
 # How to setup a GSM/ARC device to send data to the cloud
-Please refer to the [General Process](https://docs.kolibricloud.ch/overview/general-process) of working with the KOLIBRI Cloud.
+Please refer to the [General Process](https://docs.kolibricloud.ch/overview/process) of working with the KOLIBRI Cloud.
 To register a GSM/ARC device please follow the following steps:
 
 1) Consider staying in close contact with the KELLER sales engineer and/or the KOLIBRI Cloud support team (kolibri@keller-druck.com)  
