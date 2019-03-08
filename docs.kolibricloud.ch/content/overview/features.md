@@ -7,36 +7,39 @@ menu:
 description: Information how you ToDo
 ---
 
-# Features
+# Features and release history
+TODO: add Existing features and release history
 
-### <i class="fa fa-dot-circle-o" style="color: green"></i> KELLER unlimited
-«ONE SOFTWARE» – No installation necessary, data is displayed in browser.
-All pressure measurement data available in one place.
+# Roadmap
 
-### <i class="fa fa-podcast" style="color: green"></i> LoRa and GSM ready
-LoRa & GSM data directly saved to the KOLIBRI Cloud.
-No need for PC software (GSM2Datamanager) and maintenance-free.
-<i class="fas fa-broadcast-tower"></i>
+### Mail Import
+In addition to FTP import, we would like to support Mail import (SMTP), too.  
+PLANNED: Soon
 
-### <i class="fa fa-users" style="color: green"></i> Multi-Tenancy
-Data can be viewed and used by multiple users at the same time.
-Structured data stored at any time and accessible from any device via browser.
+### Fill docs.kolibricloud.ch
+A lot of information is missing and needs to be written.  
+PLANNED: April 2019
 
-### <i class="fa fa-line-chart" aria-hidden="true" style="color: green"></i> Visualise with charts
-Visualise and analyse stored data in KOLIBRI Cloud.
+### Self-Device-Registration
+Customer should be able to self-register devices.
+PLANNED: Q3/2019
 
-### <i class="fa fa-exclamation-triangle" style="color: green"></i> Alarming
-Set and receive device and system alarms.
+### Device Settings from the Cloud for GSM/ARC devices
+It should be possible to change the settings online. Similar as the Datamanager or the GSMSetup, but online.
+PLANNED: Q2-Q3/2019
 
-### <i class="fa fa-lock" style="color: green"></i> Secure      
-„State of the Art“ security with HTTPS, SSL, OAuth 2.0, ...
-DB backups of your data every 10min.
+### Performance optimization
+Everything can be made faster.
+PLANNED: Q3
 
-### <i class="fa fa-exchange" style="color: green"></i> Compatibility
-Supports existing and new KELLER IoT products and IoT protocols: GSM, ARC, LoRa, KOLIBRI Mobile App and Desktop App.
+### Maps
+Visualize the devices in a map
 
-### <i class="fa fa-plug" style="color: green"></i> API integration
-Flexible access via standard interfaces to your own cloud services or local databases.
+### More and better alarms
+More auto-generated alarms to troublesome devices, communication, FTP-Mail servers, ...
 
-### <i class="fa fa-file" style="color: green"></i> Export data
-Export using API possible or easy export in CSV, Excel, Hydras, Aquainfo,...
+### Customer Admin
+An Customer Admin can add and assign other users. Maybe even create sub-groups.
+
+### YOUR idea
+Tell us your idea! What do you need!
