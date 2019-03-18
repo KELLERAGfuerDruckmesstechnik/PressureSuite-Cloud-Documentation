@@ -42,7 +42,15 @@ To register a GSM/ARC device please follow the following steps:
 ![Do manually send a config file picture](../gsmsetup_sendconfigfile.png "Do manually send a config file!") 
 
 # Cloud integration with the GSMDataManager
-1. Please consult the [DataManager Manual](http://www.keller-druck2.ch/swupdate/InstallerGSM2Datamanager/manual/MAN_Datamanager_EN_en.pdf).  
-2. Like with the GSMSetup it is *NEEDED* to activate the "Record Datatransfer". 
-![Use the record format picture](../datamanager_recordformat.png "Use the record format!")
-3. Like with the GSMSetup above it is *NEEDED* to have a configuration file ready for the Cloud. One way to trigger the device to send a configuration file is to send a configuration from the DataManager to the devices. The device will mirror the settings and make it available for the cloud.
+1. Please consult the [DataManager Manual](http://www.keller-druck2.ch/swupdate/InstallerGSM2Datamanager/manual/MAN_Datamanager_EN_en.pdf).
+
+2. Ideally, the KOLIBRI Cloud gets the data from an FTP-Server. Either you host an own FTP server or use own of the provided FTP accounts from KELLER. Either way please contact KOLIBRI support to communicate the needed credentials (host-name, user-name, password).  
+
+3. For each device  
+    - Like above configure the device so that it sends the data to the agreed FTP account.  
+    - Like with the GSMSetup it is ***NEEDED*** to activate the "Record Datatransfer".  
+    ![Use the record format picture](../datamanager_recordformat.png "Use the record format!")  
+    - Like with the GSMSetup above it is ***NEEDED*** to have a configuration file ready for the Cloud. One way to trigger the device to send a configuration file is to **send a configuration from the DataManager to the devices**. The device will mirror the settings and make it available for the cloud.  
+    - When using water calculations (or other calculation) it is a good idea to make screenshots or notes of the used values like installation lengths or offsets. The water calculations in the KOLIBRI Cloud has to be set up again.  
+
+4. Set the GSMDatamanager in "silent mode" so it doesn't synchronize the data and delete data from the FTP server.  
