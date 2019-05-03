@@ -9,7 +9,7 @@ function Create-StaticPagesOfSubDirs {
 		#	$folderName = ($Path).Replace($siteName+".","")
 		#	$folderName = ($folderName).Replace($siteName,"")
 		$destPath = "$srcRoot\$destinationSubDirectoryName\"
-	}else{
+	} else {
 		$folderName = ($Path).Replace($siteName+".","")
 		$destPath = "$srcRoot\$destinationSubDirectoryName\$folderName"
 		mkdir $destPath
