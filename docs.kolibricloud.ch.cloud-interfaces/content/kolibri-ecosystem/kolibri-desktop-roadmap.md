@@ -26,6 +26,25 @@ menu:
 
 # Release History
 
+## Version 6.2.19136.2
+
+### Description
+
+This version introduces the Dutch translation and focuses on bugfixes. We always welcome feedback and suggestions on how to improve the software.
+
+### Features and Enhancements
+
+- **[General]**: New language: KOLIBRI Desktop is now available in **Dutch**.
+- **[Export]**: The export of large records now is considerably faster.
+
+### Bug fixes
+
+- Sometimes a cable connected K114-BT could end up with communication errors.
+- Sometimes modifications in the visualization would not be recognized by the export.
+- In rare occasions if a big record was read from a device only the first few measurements where shown afterwards
+
+-----
+
 ## Version 6.2.19058.1
 
 ### Description
