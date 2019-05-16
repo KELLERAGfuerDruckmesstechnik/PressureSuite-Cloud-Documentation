@@ -34,14 +34,14 @@ This version introduces the Dutch translation and focuses on bugfixes. We always
 
 ### Features and Enhancements
 
-- **[General]**: New language: KOLIBRI Desktop is now available in **Dutch**.
-- **[Export]**: The export of large records now is considerably faster.
+- **[General]**: New language: KOLIBRI Desktop is now available in **Dutch**. 
+- **[Export]**: The export of large records is now considerably faster.
 
 ### Bug fixes
 
-- Sometimes a cable connected K114-BT could end up with communication errors.
+- Sometimes a cable-connected K114-BT could end up with communication errors.
 - Sometimes modifications in the visualization would not be recognized by the export.
-- In rare occasions if a big record was read from a device only the first few measurements where shown afterwards
+- In rare occasions when a big record was read from a device only the first few measurements were shown afterwards.
 
 -----
 
