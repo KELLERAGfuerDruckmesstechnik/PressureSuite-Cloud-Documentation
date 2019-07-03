@@ -125,7 +125,7 @@ There are three categories:
   - "Low Battery Voltage " / "Critical Battery Voltage"
   - "Low signal quality" / "low signal capacity"
   - Extraordinary humidity in the sensor (feature of ARC devices)
-  - Sensor error
+  - Sensor Error
   - Device does not send or is sending late
 - PLANNED: System Alarms: Alarms in case multiple devices have problems at the same time:
   - Several devices do not send or arrive late
