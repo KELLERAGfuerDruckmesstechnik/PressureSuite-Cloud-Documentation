@@ -9,6 +9,7 @@ menu:
 # KOLIBRI Desktop - Roadmap
 
 - **Event-Trigger configurations** - Configure events and store/read configuration to/from device
+- **Support for non-metric units** - Exported files use configured units
 - **Water Level configurations** - Configure Water levels and store it into the device. Introducing a new profile system only available for users that care about water calculations.
 - **Cloud-to-Desktop connection** - Use KOLIBRI Desktop to store/backup data from the KOLIBRI Cloud and visualize them.
 - **Purge obsolete data on the logger device** - Deletion of existing records stored on the device.
