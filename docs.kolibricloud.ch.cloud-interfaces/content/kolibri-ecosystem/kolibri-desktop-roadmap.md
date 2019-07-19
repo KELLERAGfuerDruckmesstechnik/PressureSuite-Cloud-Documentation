@@ -27,6 +27,30 @@ menu:
 
 # Release History
 
+## Version 6.2.19200.1
+
+### Description
+
+In this update we introduce the event-triggered recording. We reworked the entire device configuration section and added various configuration settings. We also got a lot of feedback and based on that we fixed bugs and added usability features.
+
+### Features and Enhancements
+
+- **[General]**: KOLIBRI Desktop no longer automatically searches for devices while communicating with another device
+- **[General]**: Navigation is no longer limited while communicating
+- **[Configuration]**: Added event-triggered recording
+- **[Configuration]**: Reworked the existing configuration
+- **[Settings]**: KOLIBRI Desktop settings are no longer reset after an update
+- **[Live data]**: The Windows sleep mode is now disabled while recording live data
+- **[Device overview]**: Device overview now refreshes after the device is configured 
+
+### Bug fixes
+
+- If a converter (e.g. K-114) without a manometer is connected there will no longer be error messages
+- Live data now uses the selected units instead of the default ones
+- Using a customized unit now uses regional format
+
+-----
+
 ## Version 6.2.19136.2
 
 ### Description
