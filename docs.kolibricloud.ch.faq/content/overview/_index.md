@@ -41,7 +41,7 @@ IoT ("Internet of Things"): Hype term that describes a system / network of thing
 KELLER has been using IoT devices for many years: GSM data loggers and now also LoRa devices.
 Cloud . Can be defined as follows: By " cloud  computing" one can mean storing and accessing data and programs via the Internet or the opposite is saving data to your hard disk. The term "cloud" is also used as a metaphor for "the Internet".
 LoRa (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to GSM, measurement data from the KELLER sensor can be sent away wirelessly to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers. LoRa has the advantages over GSM that it is cheaper and requires less power (smaller, cheaper battery)
-See more at: LoRa Overview and LoRa- LPWAN
+See more at: LoRa Overview and LoRa-LPWAN
 
 ## What kind of IoT devices does KELLER have?
 
@@ -51,7 +51,7 @@ In 2019 KELLER will sell cost-efficient LoRa-devices. And there will be the firs
 ## Can I use other non-KELLER devices?
 
 Yes, as long as you use KELLER pressure sensors you can use other sending devices.
-E.g. [DecentLab](https://www.decentlab.com/products/)
+E.g. [DecentLab](https://www.decentlab.com/products/), [Lobaro](https://www.lobaro.com/lobaro-iot-produkte-dienste/)
 
 ## What does "KOLIBRI" even mean?
 
@@ -60,7 +60,7 @@ Currently this product line contains:
 
 - KOLIBRI Cloud : Web portal for customers to access data
 
-- KOLIBRI Desktop : The new logger software application that we use to store and visualise data from data loggers on the Windows PC.
+- KOLIBRI Desktop : The new logger software application that we use to store and visualize data from data loggers on the Windows PC.
 
 - KOLIBRI Mobile : The new Android app, with which you can load measurement data from KELLER data loggers via Bluetooth to a smartphone.
 
@@ -85,7 +85,7 @@ Part of this new product line are the cloud possibilities, which are:
 
 ## What is the roadmap of the features?
 
-[Plese see this overview.](https://docs.kolibricloud.ch/overview/features/)
+[Please see this overview.](https://docs.kolibricloud.ch/overview/features/)
 
 ## The customer wants to create his own web app or mobile app. How can KELLER help the customer?
 
@@ -212,7 +212,7 @@ An API is very powerful. A customer can use the API to pick up all his data, sav
 
 ## Where is the data stored?
 
-All data is stored in a data center in Ireland (soon to be Germany) in an SQL database and partly information is cached in logfiles to recover data in an emergency.
+All data is stored in a data center in Ireland (soon to be in Switzerland) in an SQL database and partly information is cached in log files to recover data in an emergency.
 It is automatically backed up every 5-10 min.
 
 ## How do I get the data from the devices to the WebApp?
@@ -225,7 +225,7 @@ The entire system is not that complicated.
 - Another program controls the data queue and analyses the content and origin. The data will then be converted and stored in a database.
 - There are other programs that regularly check the measured data and abnormalities and, if necessary, generate alarms and send emails.
 - At the same time there is this- (our) API. This is the gateway to the database. No customer can access the database directly. Everything goes through the API.
-- You can log in with username/password. An external service autorises the user and responds with a special key that identifies the user correctly and allows the user to use our API.
+- You can log in with username/password. An external service authorizes the user and responds with a special key that identifies the user correctly and allows the user to use our API.
 - Thanks to the key, the API knows what data it is allowed to send to the user / program.
 - The WebApp is such a program that collects all data via the API. The measurement data are also sent in compressed&encrypted text formats to the WebApp. The WebApp (App = Application = Program) generates a chart itself based on the measured data.
 
@@ -233,9 +233,9 @@ The entire system is not that complicated.
 
 The cloud is very safe.
 It uses modern processes, best practices and tools.
-Authorisation is managed externally (by Microsoft Azure Active Directory B2C). So if you want to hack accounts from KOLIBRI Cloud, then you have to hack Microsoft first.
-Without proper authorisation, it is not possible to get data.
-You can only query the data assigned to the user. This means that a validly authorised user can not see other user's data. This is even backed up at the database level (role-level feature SQL Server).
+Authorization is managed externally (by Microsoft Azure Active Directory B2C). So if you want to hack accounts from KOLIBRI Cloud, then you have to hack Microsoft first.
+Without proper authorization, it is not possible to get data.
+You can only query the data assigned to the user. This means that a validly authorized user can not see other user's data. This is even backed up at the database level (role-level feature SQL Server).
 
 The greatest risk is not that our system (or Microsoft's) or a password is hacked, but that a customer wrongly redistributes the password themselves.
 
@@ -245,7 +245,7 @@ Microsoft Azure is one of the top three players in cloud services and meets seve
 
 Security is one of the key features and concerns in IoT / cloud projects.
 
-The KOLIBRI Cloud uses the access, storage and authentication of users and data in / from a MICROSOFT (Azure) datacenter.
+The KOLIBRI Cloud uses the access, storage and authentication of users and data in / from a MICROSOFT (Azure) data center.
 
 This data center is in the EU and subject to EU regulations ( EU Data Protection Regulation ( DSGVO) ) (ie no data may be shared with data centers outside the EU, especially not with US). https://www.microsoft.com/de-de/TrustCenter/Privacy/gdpr/default.aspx
 
@@ -261,4 +261,6 @@ eg  ISO 9001 , ISO 20000-1: 2011, ISO 2230, ISO 27001, ISO 27017, ISO 27018, BIR
 
 ## Is there a terms of service(ToS)?
 
-Yes. Todo Link!
+Yes.
+ENGLISH: https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_e.pdf
+GERMAN : https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_g.pdf

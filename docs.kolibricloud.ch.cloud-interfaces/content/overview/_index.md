@@ -6,6 +6,4 @@ menu:
         weight: 1
 hidden: true
 ---
-
-
-todo
+![KOLIBRI Cloud Architectural overview](/img/KellerCloud_Architecture.png "Architectural overview")
