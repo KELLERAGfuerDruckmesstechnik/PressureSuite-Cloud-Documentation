@@ -24,7 +24,7 @@ The reasons to use the Datamanager are:
 GSM2Datamanager    | KOLIBRI Cloud 
 --------|------
 | Runs locally on a Windows system    | Runs "in the cloud"  | 
-| You have to do the backup | Data is backuped automatically every 10min  | 
+| You have to do the backup | Data is backed up automatically every 10min  | 
 | Gets data from MAIL & FTP | Gets data from FTP only |
 | Documentation: [PDF download](http://www.keller-druck2.ch/swupdate/InstallerGSM2Datamanager/manual/MAN_Datamanager_EN_en.pdf)| Documentation: This page | 
 | Battleproofen since >10 years      | Used by customers since 2017 | 
