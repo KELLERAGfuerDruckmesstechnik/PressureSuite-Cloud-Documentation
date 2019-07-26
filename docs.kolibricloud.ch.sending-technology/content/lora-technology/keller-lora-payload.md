@@ -13,7 +13,7 @@ Due to the limited size of a LoRa message KELLER can send up to five float value
 
 ## How to decrypt the KELLER payload message from TheThingsNetwork?
 
-The actual protocol can be [found here](../../Kommunikationsprotokoll LoRa v2.0.pdf) (*IN GERMAN*)
+The actual protocol can be [found here](../../Kommunikationsprotokoll LoRa v2.1.pdf) (*IN GERMAN*)
 
 #### Introduction   
 In the [TTN console](https://console.thethingsnetwork.org/applications) the payload and the decrypted values can be seen in the DATA tab:   
