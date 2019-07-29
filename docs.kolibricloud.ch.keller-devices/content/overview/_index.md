@@ -55,6 +55,5 @@ Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-ma
    - Box  
 
 
-
- ![Preview picture 1 small ADT-1 vs ARC-1](../GSMvsADT.jpg"Preview picture 1 small ADT-1 vs ARC-1")
- ![Preview picture 2 small ADT-1 vs ARC-1](../GSMvsADT2.jpg"Preview picture 2 small ADT-1 vs ARC-1")
+ ![Preview picture 1 small ADT-1 vs ARC-1](../GSMvsADT.jpg"Preview picture 1 small ADT-1 vs ARC-1")  ![Preview picture 2 small ADT-1 vs ARC-1](../GSMvsADT2.jpg"Preview picture 2 small ADT-1 vs ARC-1")
+*Bigger tube = GSM-1   /   Smaller tube = New ADT-1*
