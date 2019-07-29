@@ -29,7 +29,7 @@ KELLER has more than a decade experience with sending measuring data with mobile
 
 # Remote Data Transmission Unit with LoRa
 Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1) and member of the LoRa Alliance since 2016 KELLER has a lot experience with LoRa.
- ![ARC-1](../../ARC-1.jpg"ARC-1")
+ ![ARC-1](../ARC-1.jpg"ARC-1")
 
 - The [ARC-1 remote transmitter](http://www.keller-druck.ch/home_e/paprod_e/arc1_e.asp) is a battery operated, robust sending device that is compatible with the KOLIBRI Cloud.
 
@@ -40,12 +40,12 @@ Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-ma
   Multiple housing variants such as:  
    - Tube  
    - Box  
-   ![ARC-1 BOX](../../ARC-1_box.jpg"ARC-1 BOX")
+   ![ARC-1 BOX](../ARC-1_box.jpg"ARC-1 BOX")
 
 ***COMING SOON***  
 
 - The **ADT-1 remote transmitter** is a battery operated sending device that is compatible with the KOLIBRI Cloud.
- ![Preview picture of ADT-1 prototype](../../ADT-1.jpg"Preview picture of ADT-1 prototype")  
+ ![Preview picture of ADT-1 prototype](../ADT-1.jpg"Preview picture of ADT-1 prototype")  
 
   Connectivity variant:  
   - LoRa: country-specific modules (868 or 915 MHz)  
@@ -56,5 +56,5 @@ Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-ma
 
 
 
- ![Preview picture 1 small ADT-1 vs ARC-1](../../GSMvsADT.jpg"Preview picture 1 small ADT-1 vs ARC-1")
- ![Preview picture 2 small ADT-1 vs ARC-1](../../GSMvsADT2.jpg"Preview picture 2 small ADT-1 vs ARC-1")
+ ![Preview picture 1 small ADT-1 vs ARC-1](../GSMvsADT.jpg"Preview picture 1 small ADT-1 vs ARC-1")
+ ![Preview picture 2 small ADT-1 vs ARC-1](../GSMvsADT2.jpg"Preview picture 2 small ADT-1 vs ARC-1")
