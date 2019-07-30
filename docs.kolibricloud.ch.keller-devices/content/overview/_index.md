@@ -44,7 +44,7 @@ Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-ma
 
 ***COMING SOON***  
 
-- The **ADT-1 remote transmitter** is a battery operated sending device that is compatible with the KOLIBRI Cloud.
+- The **ADT-1 remote transmitter** is a battery operated sending device that is compatible with the KOLIBRI Cloud.  
  ![Preview picture of ADT-1 prototype](../ADT-1.jpg"Preview picture of ADT-1 prototype")  
 
   Connectivity variant:  
@@ -55,5 +55,5 @@ Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-ma
    - Box  
 
 
- ![Preview picture 1 small ADT-1 vs ARC-1](../GSMvsADT.jpg"Preview picture 1 small ADT-1 vs ARC-1")  ![Preview picture 2 small ADT-1 vs ARC-1](../GSMvsADT2.jpg"Preview picture 2 small ADT-1 vs ARC-1")
-*Bigger tube = GSM-1   /   Smaller tube = New ADT-1*
+ ![Preview picture 1 small ADT-1 vs ARC-1](../GSMvsADT.jpg"Preview picture 1 small ADT-1 vs ARC-1")  ![Preview picture 2 small ADT-1 vs ARC-1](../GSMvsADT2.jpg"Preview picture 2 small ADT-1 vs ARC-1")  
+ *Bigger tube = GSM-1 / Smaller tube = New ADT-1*
