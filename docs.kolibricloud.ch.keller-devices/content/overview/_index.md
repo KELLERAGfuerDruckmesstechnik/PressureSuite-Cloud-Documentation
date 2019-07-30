@@ -19,13 +19,13 @@ KELLER has more than a decade experience with sending measuring data with mobile
 
 - The [ARC-1 remote transmitter](http://www.keller-druck.ch/home_e/paprod_e/arc1_e.asp) is a battery operated, robust sending device that is compatible with the KOLIBRI Cloud.
 
-  Multiple housing variants such as:
-   - Tube
-   - Box
+  Multiple housing variants such as:  
+   - Tube  
+   - Box  
 
-  Connectivity variants:
-  - 2G/3G:	GSM, GPRS/EDGE, UMTS, HSDPA
-  - 4G: including 3G/2G, country-specific modules
+  Connectivity variants:  
+  - 2G/3G:	GSM, GPRS/EDGE, UMTS, HSDPA  
+  - 4G: including 3G/2G, country-specific modules  
 
 # Remote Data Transmission Unit with LoRa
 Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1) and member of the LoRa Alliance since 2016 KELLER has a lot experience with LoRa.
@@ -34,8 +34,8 @@ Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-ma
 - The [ARC-1 remote transmitter](http://www.keller-druck.ch/home_e/paprod_e/arc1_e.asp) is a battery operated, robust sending device that is compatible with the KOLIBRI Cloud.
 
   Connectivity variants:  
-  - 2G/3G:	GSM, GPRS/EDGE, UMTS, HSDPA
-  - 4G: including 3G/2G, country-specific modules
+  - 2G/3G:	GSM, GPRS/EDGE, UMTS, HSDPA  
+  - 4G: including 3G/2G, country-specific modules  
 
   Multiple housing variants such as:  
    - Tube  
