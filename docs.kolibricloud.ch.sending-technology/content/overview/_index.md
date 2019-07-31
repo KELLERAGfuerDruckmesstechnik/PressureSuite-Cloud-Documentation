@@ -23,7 +23,7 @@ GSM/UMTS/LTE    | LoRa
 | Range: 2km(LTE) - 35km(GSM) | Range: 5-15km typical (heavily dependant on line of sight) | 
 | Communication from device to a mobile telephone provider antenna | Communication from device to either a LoRa Gateway or a LoRa-compatible antenna from a mobile telephone provider | 
 | 👍 Existing Coverage & High data rate | 👍 Low power & Lower cost & "Real Time"-Data| 
-|  ![Beware!](https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/thumbs-down-sign_1f44e.png "Beware!")   Requires a contract with a mobile telephone service provider. Requires a lot of energy. | <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/thumbs-down-sign_1f44e.png" height="20"> Requires investing in one’s own network with base stations, a community network or getting a contract with a service provider that has coverage where you need it. | 
+| 👎  Requires a contract with a mobile telephone service provider. Requires a lot of energy. | 👎 Requires investing in one’s own network with base stations, a community network or getting a contract with a service provider that has coverage where you need it. | 
 
 ## Important questions for a decision between LoRa and GSM/UMTS/LTE  
 - Do I have a mobile telephone provider antenna near the device?  
@@ -31,4 +31,4 @@ GSM/UMTS/LTE    | LoRa
 - What is your budget? Depending of the amount of needed devices: LoRa devices have the potential to lower the cost.  
 - How important are "real time" data for my application?  
 - Is it ok that a LoRa Network provider temporary stored my measurement data?  
-- Why not try out a device from KELLER with the KOLIBRI Cloud and try it out in your environment for your application? In just a couple of days you see your data and have a proof-of-concept of your application!
+- Why not try out a device from KELLER with the KOLIBRI Cloud and try it out in your environment for your application? In just a couple of days you have a proof-of-concept of your application!  

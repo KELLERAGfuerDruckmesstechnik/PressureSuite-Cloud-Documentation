@@ -28,7 +28,7 @@ KELLER has more than a decade experience with sending measuring data with mobile
   - 4G: including 3G/2G, country-specific modules  
 
 # Remote Data Transmission Unit with LoRa
-Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1) and member of the LoRa Alliance since 2016 KELLER has a lot experience with LoRa.
+Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1) and member of the LoRa Alliance since 2016 KELLER has a lot experience with LoRa. See [Datasheet PDF](http://www.keller-druck.ch/picts/pdf/engl/arc-1_e.pdf)  
  ![ARC-1](../ARC-1.jpg"ARC-1")
 
 - The [ARC-1 remote transmitter](http://www.keller-druck.ch/home_e/paprod_e/arc1_e.asp) is a battery operated, robust sending device that is compatible with the KOLIBRI Cloud.
