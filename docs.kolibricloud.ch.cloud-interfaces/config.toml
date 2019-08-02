@@ -34,9 +34,9 @@ pygmentsUseClasses = true
 
 [[menu.main]]
     pre = "<i class='fab fa-github'></i>"
-    name = "Community & support"
-    identifier = "community"
-    url = "/community/"
+    name = "Support"
+    identifier = "support"
+    url = "/support/"
     weight = 5
 
 [params]

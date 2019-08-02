@@ -40,4 +40,3 @@ GSM2Datamanager    | KOLIBRI Cloud
 GSM2Datamanager    | KOLIBRI Cloud 
 --------|------
 |![Datamanager Architectural overview](/../DataManagerOverview.png "Architectural overview Datamanager")|![KOLIBRI Cloud Architectural overview](/./KellerCloud_Architecture.png "Architectural overview KOLIBRI Cloud")|
-

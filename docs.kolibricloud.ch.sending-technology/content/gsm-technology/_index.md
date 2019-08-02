@@ -1,5 +1,5 @@
 ---
-title: GMS: How to setup a device for the KOLIBRI Cloud
+title: How to setup a device for the KOLIBRI Cloud
 menu:
     main:
         parent: gsm-technology

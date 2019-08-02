@@ -6,7 +6,7 @@ pygmentsUseClasses = true
 
 [[menu.main]]
     pre = "<i class='fas fa-hand-point-right'></i>"
-    name = "Differences between LoRa and GSM/UMTS/LTE"
+    name = "Differences between LoRa and GSM UMTS LTE"
     identifier = "overview"
     url = "/overview/"
     weight = 1
