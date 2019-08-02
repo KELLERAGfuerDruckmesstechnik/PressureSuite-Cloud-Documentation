@@ -25,3 +25,6 @@ description: Information how you ToDo
 
 ## I do not want that my Data is stored in a Cloud. What are my options?
 ..
+
+## I do I get calculated data from the API?
+..
