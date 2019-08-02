@@ -35,3 +35,9 @@ GSM2Datamanager    | KOLIBRI Cloud
 | Exports to CSV, Hydras, AquaInfo, Delft-Fews, XML, PGI | Exports to EXCEL, CSV, Hydras, AquaInfo, KOLIBRI | 
 | Stores everything in a MySQL or SQLite DB which can be exported | Has a documented API|
 | Tool available to periodically store data locally | Open Source tools available to download and/or integrate data locally or other cloud services| 
+
+
+GSM2Datamanager    | KOLIBRI Cloud 
+--------|------
+|![Datamanager Architectural overview](/../DataManagerOverview.png "Architectural overview Datamanager")|![KOLIBRI Cloud Architectural overview](/./KellerCloud_Architecture.png "Architectural overview KOLIBRI Cloud")|
+

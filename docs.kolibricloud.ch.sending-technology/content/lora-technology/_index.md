@@ -22,9 +22,10 @@ There are many youtube channels with interesting content about LoRa and alternat
 ## What is needed to get measurement data from a KELLER device via LoRa?
 
  1. A KELLER device. See https://docs.kolibricloud.ch/keller-devices/overview/  
- 2. A way to send to the Internet
+ 2. A way to send to the Internet  
    A)  Buy a LoRaWAN gateway. See https://www.thethingsnetwork.org/docs/gateways/start/list.html   
        Depending on your location you might be lucky and can use an existing TTN gateway. See https://www.thethingsnetwork.org/map or https://ttnmapper.org/ to find the nearest community TTN gateway.  
+or       
    B) In certain countries mobile communication provider offer a connection to their LoRa-compatible antennas. See https://docs.kolibricloud.ch/sending-technology/lora-technology/partners/ for example coverage maps. You do not have to buy a gateway but pay a monthly/yearly fee to your provider.  
 3. Choose a LoRa Network server
 4. Connect the LoRa devices with your LoRa Network server and test the connection

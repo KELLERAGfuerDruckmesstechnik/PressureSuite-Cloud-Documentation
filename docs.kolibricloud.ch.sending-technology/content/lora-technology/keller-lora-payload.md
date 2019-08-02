@@ -3,7 +3,7 @@ title: The KELLER LoRa payload
 menu:
     main:
         parent: lora-technology
-        weight: 2
+        weight: 3
 toc: false
 description: Information how you to decrypt and use the LoRa payload encrypted by KELLER AG
 ---

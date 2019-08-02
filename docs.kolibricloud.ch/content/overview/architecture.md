@@ -8,5 +8,5 @@ description: Information how you ToDo
 ---
 
 # System architecture
-todo: Detailed overview with Cloud mechanism and open source SW
+![Architectural Overview](https://docs.kolibricloud.ch/cloud-interfaces/img/KellerCloud_Architecture.png"Architectural Overview")
 
