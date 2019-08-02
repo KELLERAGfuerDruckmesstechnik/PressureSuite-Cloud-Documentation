@@ -4,6 +4,7 @@ menu:
     main:
         parent: lora-technology
         weight: 2
+toc: true
 description: Partners and integrators
 ---
 
@@ -27,15 +28,12 @@ There are 121 Network operators in 58 countries providing LoRa Networks.
 See https://lora-alliance.org/  
 76 are LoRaWAN Public Network Operators and some of them are Mobile Communication Companies offering LoRaWAN antennas.
 
-
-
-Here are some examples:
+###Here are some examples:
 
 #### Example Switzerland: Swisscom
 https://lpn.swisscom.ch  
 *"The Swisscom LPN currently covers 96.7% of the Swiss population. The information contained in this map is based on network coverage simulations, so small variations in coverage may occur. Map dated 14 June 2019."*
 ![Swisscom LoRa Coverage](../../coverage_Swisscom_IoT.jpg"Swisscom LoRa Coverage")
-
 
 #### Example The Netherlands: KPN 
 https://www.kpn.com/lora  
@@ -48,23 +46,23 @@ https://www.digita.fi/en/services/iot/iot_lorawan_network_coverage_map
 *"Using Digita's nationwide covering LPWA(Low Power Wide Area), LoRa is next-generation’s radio technology that has been especially designed to meet the needs of IoT. [..] For many customers of Digita, it is crucial to develop IoT-services without complicated local network or gateway solutions in properties. "*  
 ![Finland LoRa Coverage](../../Digita_IoT_peittoalueet.jpg"Finland LoRa Coverage")
 
-## Software Integrators with experience with KELLER devices
+# Software Integrators with experience with KELLER devices
 You might want to have an own or another frontend? You are searching for a partner to integrate your application using KELLER devices? Here are some experienced partners:  
 
-#### Decentlab
-https://www.decentlab.com/  
+#### Decentlab (LoRa)
+https://www.decentlab.com/   
 *"Decentlab is a Swiss company providing wireless sensor devices and services for distributed, cost-effective monitoring solutions."*
 https://keller-druck.decentlab.com/d/000000031/keller-demo-at-keller-druck
 
-#### Hivemind
+#### Hivemind (GSM/LoRa)
 https://www.hivemind.ch/  
 *"Hivemind is a Swiss leading IoT company with focus on commercial IoT."*
 https://keller-druck.hivemind.swiss/apps
 
-#### Lobaro
+#### Lobaro (LoRa)
 https://www.lobaro.com/  
 *"Lobaro ist Ihr Hamburger Dienstleister für die kosteneffiziente Realisierung industrieller „IoT“ Projekte bzw. der Digitalisierung von Produkten und Prozessen."*
 
-#### BBV
-https://bbv.ch  
+#### BBV (GSM/LoRA)
+https://bbv.ch   
 *"bbv Software Services steht für Top-Qualität in der Beratung, erstklassiges Software Engineering und viel Erfahrung in der Umsetzung."*

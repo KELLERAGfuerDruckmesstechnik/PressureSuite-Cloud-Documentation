@@ -36,7 +36,8 @@ GSM2Datamanager    | KOLIBRI Cloud
 | Stores everything in a MySQL or SQLite DB which can be exported | Has a documented API|
 | Tool available to periodically store data locally | Open Source tools available to download and/or integrate data locally or other cloud services| 
 
+---
 
 GSM2Datamanager    | KOLIBRI Cloud 
 --------|------
-|![Datamanager Architectural overview](/../DataManagerOverview.png "Architectural overview Datamanager")|![KOLIBRI Cloud Architectural overview](/./KellerCloud_Architecture.png "Architectural overview KOLIBRI Cloud")|
+|![Datamanager Architectural overview](/cloud-interfaces/img/DataManagerOverview.png "Architectural overview Datamanager")|![KOLIBRI Cloud Architectural overview](/cloud-interfaces/img/KellerCloud_Architecture.png  "Architectural overview KOLIBRI Cloud")|
