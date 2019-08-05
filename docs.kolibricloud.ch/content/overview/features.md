@@ -3,7 +3,7 @@ title: Features
 menu:
     main:
         parent: overview
-        weight: 3
+        weight: 4
 toc: false
 ---
 
@@ -43,41 +43,3 @@ The selected Calculations are shown in the chart as well:
  - Export of measuring data of multiple devices produces a zip file with the Excel or CSV included instead of having all data in one single Excel/CSV included. It is planned to make this possible.
  - For now, Events (vertical line) nor reference heights (horizontal line) not event ranges (highlighted area) can be added to the chart.
  - Calculations are applied to ALL measurements. It is not possible have a separate calculation for a certain time frame and another calculation for another time range in the same chart.
-
-## Roadmap
-
-### Self-Device-Registration
-
-Customer should be able to self-register devices.  
-PLANNED: Q3/2019
-
-### Device Settings from the Cloud for GSM/ARC devices
-
-It should be possible to change the settings online. Similar as the Datamanager or the GSMSetup, but online.  
-PLANNED: Q3/2019
-
-### Device Log
-
-It is possible to see when what changes ahs been made.  
-PLANNED: Q3/2019
-
-### Performance optimization
-
-Everything can be made faster.  
-PLANNED: Q3
-
-### Maps
-
-Visualize the devices in a map
-
-### More and better alarms
-
-More auto-generated alarms to troublesome devices, communication, FTP-Mail servers, ...
-
-### Customer Admin
-
-An Customer Admin can add and assign other users. Maybe even create sub-groups.
-
-### YOUR idea
-
-Tell us your idea! What do you need!
