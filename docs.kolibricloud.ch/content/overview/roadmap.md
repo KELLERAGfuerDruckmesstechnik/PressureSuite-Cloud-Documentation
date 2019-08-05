@@ -12,7 +12,7 @@ toc: false
 It should be possible to change the settings online. Similar as the Datamanager or the GSMSetup, but online.  
 PLANNED: Q3/2019
 
-![DeviceConfigurationPreview](/img/calculations/DeviceConfigurationPreview.png "DeviceConfigurationPreview")
+![DeviceConfigurationPreview](/img/DeviceConfigurationPreview.png "DeviceConfigurationPreview")
 
 ### Device Log
 It is possible to see when what changes has been made. It logs "Device Configuration"-changes, "Page Settings"-changes and various calculation changes such as "Water Calculation Settings".
