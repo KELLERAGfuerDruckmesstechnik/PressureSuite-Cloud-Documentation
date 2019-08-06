@@ -8,10 +8,10 @@ hidden: true
 ---
 
 ## Questions
-For support questions, please refer to 
-* <kolibri@keller-druck.com> 
-or
-* [your local KELLER sales engineer](http://www.keller-druck.ch/home_e/addr_e.asp)
+For support questions, please refer to  
+  * <kolibri@keller-druck.com> 
+or  
+  * [your local KELLER sales engineer](http://www.keller-druck.ch/home_e/addr_e.asp)  
 
 ## Contribute
 Did you find a bug or want to request a new feature?
@@ -22,8 +22,11 @@ Did you find a bug or want to request a new feature?
 
 
 ## Github projects
-https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation
-
+*JavaScript code to decrypt the KELLER LoRa Payload to readable values.*
 https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder
 
-https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-API-daemon-example-with-access-token
+*An example in Python to access data from the KOLIBRI Cloud API* 
+https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-API-daemon-example-with-access-token  
+
+*This documentation site using Hugo, Markdown and HTML*
+https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation

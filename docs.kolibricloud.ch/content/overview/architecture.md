@@ -4,7 +4,7 @@ menu:
     main:
         parent: overview
         weight: 2
-description: Information how you ToDo
+description: Architectural overview. What components are used and how.
 ---
 
 # System architecture

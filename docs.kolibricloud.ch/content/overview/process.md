@@ -4,6 +4,7 @@ menu:
     main:
         parent: overview
         weight: 3
+description: General process on how to "get" the KOLIBRI Cloud
 toc: false
 ---
 

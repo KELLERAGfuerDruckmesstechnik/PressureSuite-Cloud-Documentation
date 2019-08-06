@@ -4,7 +4,8 @@ menu:
     main:
         parent: overview
         weight: 5
-toc: false
+    toc: false
+description: Roadmap of coming features
 ---
 # Roadmap
 
