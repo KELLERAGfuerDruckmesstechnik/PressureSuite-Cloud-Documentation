@@ -31,6 +31,7 @@ We differ between 13 connection types. Customer that know the GSMSetup-tool reco
  12 | RS485 & Baro (P1-PBaro) & Modbus ABB Aquamaster                    
  13 | RS485 (2x(P1+P2+TOB1+TOB2)) & Counter Inp. & Volt Inp.             
   
+  
 Depending on the chosen ***DeviceTypeId*** one has a different set of channel numbers (***ChannelNumber***). These ***ChannelNumber*** are again mapped to certain ***MeasurementDefinitionId*** 's which defines the physical measurement identification and unit.
 
 ## Measurement Definition Id  
@@ -339,4 +340,3 @@ This is also visible through the API...
       "transmissionInterval": null,
       "saveInterval": null
     }
-    
