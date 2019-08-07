@@ -46,9 +46,12 @@ The selected Calculations are shown in the chart as well:
  - For now, Events (vertical line) nor reference heights (horizontal line) not event ranges (highlighted area) can be added to the chart.
  - Calculations are applied to ALL measurements. It is not possible have a separate calculation for a certain time frame and another calculation for another time range in the same chart.
 
-
- ## Existing Features
+<hr />
+<hr />
   <div>
+  <section class="features py-3">
+    <h2 class="text-center">Existing Features</h2>
+    <div class="row py-3">
       <div class="col-sm-4">
         <h4><i class="far fa-dot-circle"></i> KELLER unlimited</h4>
         <p class="content">
@@ -70,10 +73,12 @@ The selected Calculations are shown in the chart as well:
           Structured data stored at any time and accessible from any device via browser.
         </p>
       </div>
+    </div>
+    <div class="row py-3">
       <div class="col-sm-4">
-        <h4><i class="fas fa-chart-line"></i> Visualize with charts</h4>
+        <h4><i class="fas fa-chart-line"></i> Visualise with charts</h4>
         <p class="content">
-          Visualize and analyse stored data in KOLIBRI Cloud.
+          Visualise and analyse stored data in KOLIBRI Cloud.
         </p>
       </div>
       <div class="col-sm-4">
@@ -89,6 +94,8 @@ The selected Calculations are shown in the chart as well:
           DB backups of your data every 10min.
         </p>
       </div>
+    </div>
+    <div class="row py-3">
       <div class="col-sm-4">
         <h4><i class="fas fa-exchange-alt"></i> Compatibility</h4>
         <p class="content">
@@ -107,4 +114,6 @@ The selected Calculations are shown in the chart as well:
           Export using API possible or easy export in CSV, Excel, Hydras, Aquainfo,...
         </p>
       </div>
-</div>>
+    </div>
+  </section>
+</div>
