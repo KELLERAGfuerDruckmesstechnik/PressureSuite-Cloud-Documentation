@@ -1,5 +1,5 @@
 ---
-title: Features
+title: New Features and Limitations
 menu:
     main:
         parent: overview
@@ -45,3 +45,66 @@ The selected Calculations are shown in the chart as well:
  - Export of measuring data of multiple devices produces a zip file with the Excel or CSV included instead of having all data in one single Excel/CSV included. It is planned to make this possible.
  - For now, Events (vertical line) nor reference heights (horizontal line) not event ranges (highlighted area) can be added to the chart.
  - Calculations are applied to ALL measurements. It is not possible have a separate calculation for a certain time frame and another calculation for another time range in the same chart.
+
+
+ ## Existing Features
+  <div>
+      <div class="col-sm-4">
+        <h4><i class="far fa-dot-circle"></i> KELLER unlimited</h4>
+        <p class="content">
+          «ONE SOFTWARE» – No installation necessary, data is displayed in browser.</br>
+          All pressure measurement data available in one place.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h4><i class="fas fa-broadcast-tower"></i> LoRa and GSM ready</h4>
+        <p class="content">
+          LoRa & GSM data directly saved to the KOLIBRI Cloud.</br>
+          No need for PC software (GSM2Datamanager) and maintenance-free.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h4><i class="fas fa-users"></i> Multi-Tenancy</h4>
+        <p class="content">
+          Data can be viewed and used by multiple users at the same time.</br>
+          Structured data stored at any time and accessible from any device via browser.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h4><i class="fas fa-chart-line"></i> Visualize with charts</h4>
+        <p class="content">
+          Visualize and analyse stored data in KOLIBRI Cloud.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h4><i class="fas fa-exclamation-triangle"></i> Alarming</h4>
+        <p class="content">
+          Set and receive device and system alarms.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h4><i class="fas fa-lock"></i> Secure</h4>
+        <p class="content">
+          „State of the Art“ security with HTTPS, SSL, OAuth 2.0, ...</br>
+          DB backups of your data every 10min.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h4><i class="fas fa-exchange-alt"></i> Compatibility</h4>
+        <p class="content">
+          Supports existing and new KELLER IoT products and IoT protocols: GSM, ARC, LoRa, KOLIBRI Mobile App and Desktop App.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h4><i class="fas fa-plug"></i> API integration</h4>
+        <p class="content">
+          Flexible access via standard interfaces to your own cloud services or local databases.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h4><i class="fas fa-file-export"></i> Export data</h4>
+        <p class="content">
+          Export using API possible or easy export in CSV, Excel, Hydras, Aquainfo,...
+        </p>
+      </div>
+</div>>
