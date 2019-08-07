@@ -35,7 +35,7 @@ A [KELLER LoRa device](https://docs.kolibricloud.ch/keller-devices/overview/) ca
 - Choose **HTTP integration** and enter a POST method to forward the URL to `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`. This will forward a transmission to the KOLIBRI Cloud.
 
 ## LoRa and Loriot.io, Swisscom, KPN... : How do I connect my device to the KOLIBRI Cloud?
-- Use the same procedure as with TTN but with the specific named services (eg. "HTTP Post").  The [KOLIBRI support team](kolibri@keller-druck.com) can help you with the integration.
+- Use the same procedure as with TTN but with the specific named services (eg. "HTTP Post").  The [KOLIBRI support team](<kolibri@keller-druck.com>) can help you with the integration.
 
 ## LoRa: I want LoRa technology but not share my data in any cloud. What are my options?
 The KOLIBRI Cloud does not support this right now. Meaning, it is not possible to run the KOLIBRI Cloud locally. There are possibilities like using a [*Wifx LORIX One* Gateway](https://www.lorixone.io/) and run it with a the [*loraserver.io* LoRa Gateway OS](https://www.loraserver.io/lora-gateway-os/overview/) that stores the measurement and offers an API. 

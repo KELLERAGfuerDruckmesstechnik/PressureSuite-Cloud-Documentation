@@ -262,80 +262,81 @@ With the mapping above this gives us
 
 This is also visible through the API...
 ![Device Details of Device 1834](../../img/APIDeviceDetails.png "Device Details of Device 1834")
-...the response is: 
-``` {
-  "deviceId": 1834,
-  "stationId": "GSM: +901405100488246",
-  "measurementDefinitions": [
+...the response is:  
+
     {
-      "id": 11,
-      "name": "Pd (P1-PBaro)",
-      "unitId": 101,
-      "isActive": true
-    },
-    {
-      "id": 2,
-      "name": "P1",
-      "unitId": 101,
-      "isActive": true
-    },
-    {
-      "id": 3,
-      "name": "P2",
-      "unitId": 101,
-      "isActive": false
-    },
-    {
-      "id": 4,
-      "name": "T",
-      "unitId": 201,
-      "isActive": false
-    },
-    {
-      "id": 5,
-      "name": "TOB1",
-      "unitId": 201,
-      "isActive": true
-    },
-    {
-      "id": 6,
-      "name": "TOB2",
-      "unitId": 201,
-      "isActive": false
-    },
-    {
-      "id": 7,
-      "name": "PBaro",
-      "unitId": 101,
-      "isActive": true
-    },
-    {
-      "id": 8,
-      "name": "TBaro",
-      "unitId": 201,
-      "isActive": true
-    },
-    {
-      "id": 9,
-      "name": "Volt Inp. 1",
-      "unitId": 501,
-      "isActive": false
-    },
-    {
-      "id": 10,
-      "name": "Volt Inp. 2",
-      "unitId": 501,
-      "isActive": false
+      "deviceId": 1834,
+      "stationId": "GSM: +901405100488246",
+      "measurementDefinitions": [
+        {
+          "id": 11,
+          "name": "Pd (P1-PBaro)",
+          "unitId": 101,
+          "isActive": true
+        },
+        {
+          "id": 2,
+          "name": "P1",
+          "unitId": 101,
+          "isActive": true
+        },
+        {
+          "id": 3,
+          "name": "P2",
+          "unitId": 101,
+          "isActive": false
+        },
+        {
+          "id": 4,
+          "name": "T",
+          "unitId": 201,
+          "isActive": false
+        },
+        {
+          "id": 5,
+          "name": "TOB1",
+          "unitId": 201,
+          "isActive": true
+        },
+        {
+          "id": 6,
+          "name": "TOB2",
+          "unitId": 201,
+          "isActive": false
+        },
+        {
+          "id": 7,
+          "name": "PBaro",
+          "unitId": 101,
+          "isActive": true
+        },
+        {
+          "id": 8,
+          "name": "TBaro",
+          "unitId": 201,
+          "isActive": true
+        },
+        {
+          "id": 9,
+          "name": "Volt Inp. 1",
+          "unitId": 501,
+          "isActive": false
+        },
+        {
+          "id": 10,
+          "name": "Volt Inp. 2",
+          "unitId": 501,
+          "isActive": false
+        }
+      ],
+      "note": "Luftfeuchtigkeitsüberwachung im Keller",
+      "numberOfUnconfirmedAlarms": 0,
+      "lastMeasurementTransmissionDateTime": "2019-08-07T10:03:18.8421797",
+      "signalQuality": 16,
+      "humidity": 53,
+      "batteryInfoVoltageInVolt": 3.898,
+      "batteryInfoCapacityInPercent": 98,
+      "transmissionInterval": null,
+      "saveInterval": null
     }
-  ],
-  "note": "Luftfeuchtigkeitsüberwachung im Keller",
-  "numberOfUnconfirmedAlarms": 0,
-  "lastMeasurementTransmissionDateTime": "2019-08-07T10:03:18.8421797",
-  "signalQuality": 16,
-  "humidity": 53,
-  "batteryInfoVoltageInVolt": 3.898,
-  "batteryInfoCapacityInPercent": 98,
-  "transmissionInterval": null,
-  "saveInterval": null
-}
-```
+    

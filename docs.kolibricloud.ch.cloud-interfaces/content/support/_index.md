@@ -9,9 +9,9 @@ hidden: true
 
 ## Questions
 For support questions, please refer to  
-  * <kolibri@keller-druck.com> 
+  - <kolibri@keller-druck.com> 
 or  
-  * [your local KELLER sales engineer](http://www.keller-druck.ch/home_e/addr_e.asp)  
+  - [your local KELLER sales engineer](http://www.keller-druck.ch/home_e/addr_e.asp)  
 
 ## Contribute
 Did you find a bug or want to request a new feature?

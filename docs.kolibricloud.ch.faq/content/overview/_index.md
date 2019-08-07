@@ -147,11 +147,11 @@ At a trade fair I would like to present the KOLIBRI WebApp.
 
 ## The customer needs a new feature? How do I proceed?
 
-Contact to kolibri@keller-druck.com
+Contact to <kolibri@keller-druck.com>
 
 ## I discovered an SW error. How do I contact KELLER?
 
-Contact to kolibri@keller-druck.com
+Contact to <kolibri@keller-druck.com>
 
 ## How does LoRa technology work and what are the advantages?
 
