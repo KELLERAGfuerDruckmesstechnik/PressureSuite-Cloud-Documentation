@@ -3,14 +3,15 @@ title: KELLER Device Channel Mapping
 menu:
     main:
         parent: api
-        weight: 1
+        weight: 2
 ---
 
 # KELLER Channel mapping
 The KELLER IoT devices can have multiple types of connection as there are multiple use cases for many customers.  
 
 ## Connection Types
-We differ between 13 connection types. Customer that know the GSMSetup-tool recognize them as *"HW Connection Device Types"* 
+We differ between 13 connection types. Customer that know the GSMSetup-tool recognize them as *"HW Connection Device Types"*  
+
 ![Connection Types in GSMSetup](../../img/GSMSetupConnectionTypes.png "Connection Types in GSMSetup")
 
 ***DeviceTypeId*** | ***Device Type***                                                        
@@ -29,11 +30,10 @@ We differ between 13 connection types. Customer that know the GSMSetup-tool reco
  11 | RS485 CTD & Baro (3x P1+TOB1+Cond comp+Tcon) & Baro & Counter Inp. 
  12 | RS485 & Baro (P1-PBaro) & Modbus ABB Aquamaster                    
  13 | RS485 (2x(P1+P2+TOB1+TOB2)) & Counter Inp. & Volt Inp.             
-
+  
 Depending on the chosen ***DeviceTypeId*** one has a different set of channel numbers (***ChannelNumber***). These ***ChannelNumber*** are again mapped to certain ***MeasurementDefinitionId*** 's which defines the physical measurement identification and unit.
 
 ## Measurement Definition Id  
-
 ***MeasurementDefinitionId*** | ***MeasurementDefinition***          
 ----|------------------------------------
  1  | Pd (P1-P2)                         
@@ -263,7 +263,7 @@ With the mapping above this gives us
 This is also visible through the API...
 ![Device Details of Device 1834](../../img/APIDeviceDetails.png "Device Details of Device 1834")
 ...the response is: 
-```{
+``` {
   "deviceId": 1834,
   "stationId": "GSM: +901405100488246",
   "measurementDefinitions": [
@@ -337,4 +337,5 @@ This is also visible through the API...
   "batteryInfoCapacityInPercent": 98,
   "transmissionInterval": null,
   "saveInterval": null
-}```
+}
+```
