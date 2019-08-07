@@ -63,6 +63,10 @@ https://keller-druck.hivemind.swiss/apps
 https://www.lobaro.com/  
 *"Lobaro ist Ihr Hamburger Dienstleister für die kosteneffiziente Realisierung industrieller „IoT“ Projekte bzw. der Digitalisierung von Produkten und Prozessen."*
 
+#### WRMSYSTEM
+http://www.wrm-systems.fi/
+*"From Finland to the world - We are based in the city of Oulu, the "living lab city", close to the Arctic Circle. For us, the environment is an important treasure. We aim that our position in the sector may contribute to fight the water scarcity for human consumption, protect the environment from possible damages caused by agriculture or industry, and prevent water catastrophes."*
+
 #### BBV (GSM/LoRA)
-https://bbv.ch   
+https://bbv.ch/   
 *"bbv Software Services steht für Top-Qualität in der Beratung, erstklassiges Software Engineering und viel Erfahrung in der Umsetzung."*
