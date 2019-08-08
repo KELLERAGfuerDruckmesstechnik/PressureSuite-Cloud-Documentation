@@ -63,7 +63,7 @@ https://keller-druck.hivemind.swiss/apps
 https://www.lobaro.com/  
 *"Lobaro ist Ihr Hamburger Dienstleister für die kosteneffiziente Realisierung industrieller „IoT“ Projekte bzw. der Digitalisierung von Produkten und Prozessen."*
 
-#### WRMSYSTEM
+#### WRMSYSTEM (GSM)
 http://www.wrm-systems.fi/
 *"From Finland to the world - We are based in the city of Oulu, the "living lab city", close to the Arctic Circle. For us, the environment is an important treasure. We aim that our position in the sector may contribute to fight the water scarcity for human consumption, protect the environment from possible damages caused by agriculture or industry, and prevent water catastrophes."*
 

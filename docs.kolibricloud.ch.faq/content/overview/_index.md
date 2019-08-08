@@ -9,9 +9,7 @@ description: Frequently Asked Questions  (FAQ)
 ---
 
 # Frequently Asked Questions
-<div id="google_translate_element"></div>
-
-- If you miss a question/answer please contact <kolibri@keller-druck.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation).
+If you miss a question/answer please contact <kolibri@keller-druck.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation).
   - [What does "cloud", "IoT", "LoRa" mean?](#what-does-cloud-iot-lora-mean)
   - [What kind of IoT devices does KELLER have?](#what-kind-of-iot-devices-does-keller-have)
   - [What does "KOLIBRI" even mean?](#what-does-kolibri-even-mean)
