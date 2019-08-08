@@ -4,6 +4,7 @@ menu:
     main:
         parent: overview
         weight: 2
+toc: false
 description: Architectural overview. What components are used and how.
 ---
 
@@ -11,12 +12,14 @@ description: Architectural overview. What components are used and how.
 ![Architectural Overview](https://docs.kolibricloud.ch/cloud-interfaces/img/KellerCloud_Architecture.png"Architectural Overview")
 
 
-![Architecture part 1](../../img/arch2.png) *Using a ARC device lets the sensor send measurement data per GSM/UMTS/LTE to the next antenna and from there via internet to a configured FTP server. The measurement data or configuration information are stored in text files. It is also possible to store the data on a mail server but we do not recommend this as FTP is more reliable than SMTP/POP. If you do not want to host a FTP server than KELLER can create one for you as part of the KOLIBRI Cloud set up process.*
+![Architecture part 1](../../img/arch2.png)
+*Using a ARC device lets the sensor send measurement data per GSM/UMTS/LTE to the next antenna and from there via internet to a configured FTP server. The measurement data or configuration information are stored in text files. It is also possible to store the data on a mail server but we do not recommend this as FTP is more reliable than SMTP/POP. If you do not want to host a FTP server than KELLER can create one for you as part of the KOLIBRI Cloud set up process.*  
+
 *Normally, measurements will be periodically stored (e.g. every 1h) and send after reaching a certain amount of measurements (e.g.after 24 measurements = every 24h).*
 *The ARC device can be configured in a way that it immediately triggers and sends a SMS/Email-alarm. E.g. when the water level reached a critical level.*
 
 ![Architecture part 2](../../img/arch1.png)  
-*When using a KELLER device that is using the LoRa sending technology than *
+*When using a KELLER device that is using the LoRa sending technology than*
 
 ![Architecture part 3](../../img/arch3.png)
 

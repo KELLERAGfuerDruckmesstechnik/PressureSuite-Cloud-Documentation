@@ -4,11 +4,13 @@ menu:
     main:
         parent: overview
         weight: 1
-toc: true
+toc: false
 description: Frequently Asked Questions  (FAQ)
 ---
 
 # Frequently Asked Questions
+<div id="google_translate_element"></div>
+
 - If you miss a question/answer please contact <kolibri@keller-druck.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation).
   - [What does "cloud", "IoT", "LoRa" mean?](#what-does-cloud-iot-lora-mean)
   - [What kind of IoT devices does KELLER have?](#what-kind-of-iot-devices-does-keller-have)
@@ -35,20 +37,17 @@ description: Frequently Asked Questions  (FAQ)
   - [Is there a terms of service(ToS)?](#is-there-a-terms-of-service-tos)
 
 ## What does "cloud", "IoT", "LoRa" mean?
-
-**IoT** ("Internet of Things"): Hype term that describes a system / network of things (= devices) with sensors , which perform well together or with users thanks to information exchange (e.g. measurement data through the Internet).
-KELLER has been using IoT devices for many years: GSM data loggers and now also LoRa devices.
-**Cloud**: Can be defined as follows: By " cloud  computing" one can mean storing and accessing data and programs via the Internet or the opposite is saving data to your hard disk. The term "cloud" is also used as a metaphor for "the Internet".
-**LoRa** (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to GSM, measurement data from the KELLER sensor can be sent away wirelessly to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers. LoRa has the advantages over GSM that it is cheaper and requires less power (smaller, cheaper battery)
+**IoT** ("Internet of Things"): Hype term that describes a system / network of things (= devices) with sensors , which perform well together or with users thanks to information exchange (e.g. measurement data through the Internet).  
+KELLER has been using IoT devices for many years: GSM data loggers and now also LoRa devices.  
+**Cloud**: Can be defined as follows: By " cloud  computing" one can mean storing and accessing data and programs via the Internet or the opposite is saving data to your hard disk. The term "cloud" is also used as a metaphor for "the Internet".  
+**LoRa** (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to GSM, measurement data from the KELLER sensor can be sent away wirelessly to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers. LoRa has the advantages over GSM that it is cheaper and requires less power (smaller, cheaper battery).  
 See more at https://docs.kolibricloud.ch/sending-technology/lora-technology/
 
 ## What kind of IoT devices does KELLER have?
-
 KELLER sells pressure sensors that send data via GSM or LoRa. Both using the ARC-1 variations. With or without ATEX certification. 
 In 2019 KELLER will sell cost-efficient LoRa-devices. And there will be the first NB-IoT prototypes, too.
 
 ## What does "KOLIBRI" even mean?
-
 KOLIBRI is the name of the new KELLER AG product line. Its the German name for Hummingbird starting with a **K** as in **K**ELLER.
 Currently this product line contains:
 
