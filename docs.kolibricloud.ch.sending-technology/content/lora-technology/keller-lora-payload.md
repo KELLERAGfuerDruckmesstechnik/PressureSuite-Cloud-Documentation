@@ -5,7 +5,7 @@ menu:
         parent: lora-technology
         weight: 3
 toc: false
-description: Information how you to decrypt and use the LoRa payload encrypted by KELLER AG
+description: Information how to decrypt and use the LoRa payload encrypted by KELLER AG
 ---
 
 ## How many LoRa messages can I send per device?
