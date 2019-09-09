@@ -33,7 +33,7 @@ A [KELLER LoRa device](https://docs.kolibricloud.ch/keller-devices/overview/) ca
 
 - When using [TTN](https://www.thethingsnetwork.org/) to register your device, go to https://console.thethingsnetwork.org/ and use the given EUI.  
 
-- Verify your connection with your gateway by seeing a transmission with a payload in the [TTN console](https://console.thethingsnetwork.org/). You may optionally use the (KELLER LoRa Payload Decoder code)[https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder] to decrypt the real channel values.  
+- Verify your connection with your gateway by seeing a transmission with a payload in the [TTN console](https://console.thethingsnetwork.org/). You may optionally use the [KELLER LoRa Payload Decoder code](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder) to decrypt the real channel values and visualize them in the TTN console.  
 ![TTN LoRa Decoder](/cloud-interfaces/img/TTN_PayloadDecryptor.png  "TTN LoRa Decoder")  
 - Choose **HTTP integration** and enter a POST method to forward the URL to `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`. This will forward a transmission to the KOLIBRI Cloud.
 
