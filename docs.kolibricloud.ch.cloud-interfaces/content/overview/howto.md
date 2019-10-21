@@ -44,7 +44,7 @@ Use the same procedure as with TTN but with the specific named services (eg. "HT
 The KOLIBRI Cloud does not support this right now. Meaning, it is not possible to run the KOLIBRI Cloud locally. There are possibilities like using a [*Wifx LORIX One* Gateway](https://www.lorixone.io/) and run it with a the [*loraserver.io* LoRa Gateway OS](https://www.loraserver.io/lora-gateway-os/overview/) that stores the measurement and offers an API. 
 
 # How do I get calculated data from the API?
-Currently, we do not offer calculated data such as "water levels", "tank levels" etc through the API.  
+Currently, we do not offer calculated data such as "water levels", "tank levels" etc through the API.    
   
 Besides technical and security reasons:  
   - We believe it will cause more trouble for customers to have this option activated. You can continuously fetch measurements from the Cloud API and automatically store it in the customers DB/system.  
