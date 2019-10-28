@@ -35,6 +35,7 @@ If you miss a question/answer please contact <kolibri@keller-druck.com> or write
   - [How safe is the cloud?](#how-safe-is-the-cloud)
   - [Are there any specific standards that the cloud fulfills?](#are-there-any-specific-standards-that-the-cloud-fulfills)
   - [Is there a terms of service(ToS)?](#is-there-a-terms-of-service-tos)
+  - [Does the Chart show all measurement points?](#does-the-chart-show-all-measurement-points)
 
 ## What does "cloud", "IoT", "LoRa" mean?
 **IoT** ("Internet of Things"): Hype term that describes a system / network of things (= devices) with sensors , which perform well together or with users thanks to information exchange (e.g. measurement data through the Internet).  
@@ -256,3 +257,7 @@ eg  ISO 9001 , ISO 20000-1: 2011, ISO 2230, ISO 27001, ISO 27017, ISO 27018, BIR
 Yes.  
 ENGLISH: https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_e.pdf  
 GERMAN : https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_g.pdf
+
+## Does the Chart show all measurement points?
+
+To reduce the needed computing power used to show the loaded measurement points in the chart - wich is quite scarce when using a browser - a downsample algorithm is used. This algorithm reduces the number of displayed measurement points to a maximum of 1000 (per channel). The algorithm is based on Largest Triangle Three Buckets algorithm developed by Sveinn Steinarsson at the Faculty of Industrial Engineering, Mechanical Engeneering and Computer Sciece University of Iceland.
