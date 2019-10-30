@@ -29,7 +29,7 @@ Alternately, it is possible to periodically gather the measurement data and deve
 # LoRa and TheThingsNetwork: How do I connect my device to the KOLIBRI Cloud?
 A [KELLER LoRa device](https://docs.kolibricloud.ch/keller-devices/overview/) can be added to the KOLIBRI Cloud using the following steps:  
   
-- During the order of the device ask your sales person to let the device pre-configure by the KOLIBRI support team. This helps to speed up and simplify your configuration work.  
+- During the order of the device ask your sales person to let the device pre-configure by the KOLIBRI support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device).
 
 - When using [TTN](https://www.thethingsnetwork.org/) to register your device, go to https://console.thethingsnetwork.org/ and use the given EUI.  
 
