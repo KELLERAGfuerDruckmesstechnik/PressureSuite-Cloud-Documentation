@@ -8,7 +8,7 @@ toc: false
 description: History about maintenances and outages
 ---
 # Status
-All services running: Good
+All services running: OFFLINE - Updating to new Version
 
 # Planned Maintenance windows
 - None
