@@ -8,12 +8,19 @@ toc: false
 description: History about maintenances and outages
 ---
 # Status
-All services running: OFFLINE - Updating to new Version
+All services running: OK
 
 # Planned Maintenance windows
 - None
 
 # Outages & Maintenance Windows
+---
+## 06.Nov.2019 from 16:00-17:00 CET
+**Planned Maintenance Window**:  
+Updated various features including test version of the new "Device Configuration" feature.
+Known issues: 
+ - The Device Confiduration-Button is hidden on purpose.
+ - "Measure interval" and "Next expected transmission" are showing wrong values due to missing device configurations
 
 ---
 ## 29.Okt.2019 from 17:00-21:00 CET
