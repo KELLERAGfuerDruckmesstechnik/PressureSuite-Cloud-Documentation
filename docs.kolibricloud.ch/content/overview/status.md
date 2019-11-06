@@ -17,10 +17,10 @@ All services running: OK
 ---
 ## 06.Nov.2019 from 16:00-17:00 CET
 **Planned Maintenance Window**:  
-Updated various features including test version of the new "Device Configuration" feature.
-Known issues: 
- - The Device Confiduration-Button is hidden on purpose.
- - "Measure interval" and "Next expected transmission" are showing wrong values due to missing device configurations
+Updated various features including test version of the new "Device Configuration" feature.  
+Known issues:  
+ - The Device Confiduration-Button is hidden on purpose.  
+ - "Measure interval" and "Next expected transmission" are showing wrong values due to missing device configurations  
 
 ---
 ## 29.Okt.2019 from 17:00-21:00 CET
