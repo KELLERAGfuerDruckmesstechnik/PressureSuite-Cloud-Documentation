@@ -13,7 +13,56 @@ description: Actual Release History and Known Limitations
 
 ## Releases
 
-### v.1.19108.01
+---
+
+### v.1.19315.01 (11.November 2019)
+
+#### Device Configuration
+
+The Devices  can now be configured through KOLIBRI Cloud. 
+
+![Device Configuration](/img/device_configuration.png "Device Configuration")
+
+#### Chart Performance
+
+Chart performance has been optimized. This was acomplished by two main adjustments:
+
+- Calculating the correct timezone to display on the chart is a time consuming thing when done in the browser. That is why it is now calculated on the backend.
+- Displaying over 100'000 data points per chanel is not performant. Especially useless is showing 100'000 data points on a 1000 pixel wide chart. The backend no uses the [Largest Triangle Three Buckets](https://docs.kolibricloud.ch/faq/overview/#does-the-chart-show-all-measurement-points) algorithm to downsample the loaded data to a maximum of 1'500 data points per channel. This leads to a drastic performance boost without a significant accuracy loss.
+
+#### Last Data Values
+
+Tank calculations have been added to the "Last Data Values" in the device table.
+
+#### Column Widths in Device and Alarm Table
+
+The column widths of the device and alarm table have been adjusted to the expected width of the texts within the colums. This saves up precious space.
+
+#### Mail Addresses in Alarm Settings
+
+The mail addresses in alarm settings can now be added by pressing "," or ";" while typeing. After adding a mail address it appears as a so called chip token. Clicking "x" on the chip token removes the mail address from the settings.
+
+Copy and pasting a comma or semicolon seperated list of mail addresses works accordingly.
+
+![How to enter mail addresses](/img/enter_alarm_email_addresses.gif "How to enter mail addresses")
+
+#### Number of Decimal Places
+
+KOLIBRI Cloud now supports 0 as decimal precision in page settings.
+
+![0 as number of decimal places](/img/page_settings_units_precision.png "0 as number of decimal places")
+
+#### Scale Settings
+
+As the scale settings consist of five different units, it used to be difficulte to enter big numbers into the "max" and "min" field.
+
+The settings are now split into two rows which leaves enough room for the parameters to be adjustet without the space restrictions.
+
+![New layout for scale settings](/img/scale_settings.png "New layout for scale settings")
+
+---
+
+### v.1.19108.01 (18.April 2019)
 
 #### Translations Update
 
@@ -40,11 +89,12 @@ The selected Calculations are shown in the chart as well:
 ![View Calculation in chart](/img/calculations/view_calculation.png "View Calculation in chart")
 
 ## Known Limitations
- - Only the default units (° C, bar, m..) will be exported. It is planned to make it possible to export the configured units.
- - The color scheme of the chart lines needs a redesign. Especially, line colors in the multiple device mode.
- - Export of measuring data of multiple devices produces a zip file with the Excel or CSV included instead of having all data in one single Excel/CSV included. It is planned to make this possible.
- - For now, Events (vertical line) nor reference heights (horizontal line) not event ranges (highlighted area) can be added to the chart.
- - Calculations are applied to ALL measurements. It is not possible have a separate calculation for a certain time frame and another calculation for another time range in the same chart.
+
+- Only the default units (°C, bar, m..) will be exported. It is planned to make it possible to export the configured units.
+- The color scheme of the chart lines needs a redesign. Especially, line colors in the multiple device mode.
+- Export of measuring data of multiple devices produces a zip file with the Excel or CSV included instead of having all data in one single Excel/CSV included. It is planned to make this possible.
+- For now, Events (vertical line) nor reference heights (horizontal line) not event ranges (highlighted area) can be added to the chart.
+- Calculations are applied to ALL measurements. It is not possible have a separate calculation for a certain time frame and another calculation for another time range in the same chart.
 
 <hr />
 <hr />
