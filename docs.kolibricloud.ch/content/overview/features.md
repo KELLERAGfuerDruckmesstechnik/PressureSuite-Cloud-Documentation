@@ -58,6 +58,8 @@ As the scale settings consist of five different units, it used to be difficulte 
 
 The settings are now split into two rows which leaves enough room for the parameters to be adjustet without the space restrictions.
 
+Scale settings are now being saved on the browser side. It must be kept in mind that if the browser / workstation is switched or KOLIBRI Cloud is opened in an incognito window the settings will be reset to the default value. Furthermore, the scale settings do not distinguish between devices.
+
 ![New layout for scale settings](/img/scale_settings.png "New layout for scale settings")
 
 ---
