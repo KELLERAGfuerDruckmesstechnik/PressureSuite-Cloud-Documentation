@@ -32,7 +32,7 @@ To register a GSM/ARC device please follow the following steps:
  - In the **[Measure]** tab it is *NEEDED* to activate the "Record Datatransfer". The KOLIBRI Cloud only handles data in this format.  
 ![Use the record format picture](../gsmsetup_recordformat.png "Use the record format!")  
 
-- In the **[Communication]** tab avoid having a "FTP directory". If you need/configured one then please contact KOLIBRI support. It is recommended to NOT use the "active Mode" and NOT use sFTP.
+ - In the **[Communication]** tab avoid having a "FTP directory". If you need/configured one then please contact KOLIBRI support. It is recommended to NOT use the "active Mode" and NOT use sFTP.
 ![Prefer not to use a sub folder picture](../gsmsetup_ftpsettings.png "Prefer not to use a sub folder!") 
 
 5. <span style="color:red">After writing the settings it is *NEEDED* to have a configuration file ready for the Cloud.</span> Without a configuration a device CAN NOT be registered in the Cloud! We recommend sending it manually in tab **[Error/Status]**. Otherwise, the Cloud has to wait for the interval set in **[Info]**.  
