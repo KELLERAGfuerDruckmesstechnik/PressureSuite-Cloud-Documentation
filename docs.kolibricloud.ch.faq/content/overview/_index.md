@@ -97,9 +97,9 @@ Please contact <marketing@keller-druck.com>
 
 ## How do I sign up? How do I log in? How can I test it?
 
-See: www.kolibricloud.ch
+See: http://www.kolibricloud.ch
 For all those interested there is a test user account, with which everyone can log in and try out the WebApp.
-There are a few test devices visible and their measurement data. The login password can be seen on www.kolibricloud.ch.
+There are a few test devices visible and their measurement data. The login password can be seen on http://www.kolibricloud.ch.
 
 ## Does the website also work on a mobile phone?
 

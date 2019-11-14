@@ -10,6 +10,8 @@ menu:
 
 The API's specification can be found here: https://api.kolibricloud.ch/swagger/index.html?url=/swagger/v1/swagger.json
 
+An open-sourced example implementation can be seen here: https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-API-daemon-example-with-access-token
+
 Endpoints of interest are:  
 
  Endpoint| Use to        
@@ -28,7 +30,7 @@ It is not possible to delete measurement data with the API
 If you want to try out the API with [Swagger](https://api.kolibricloud.ch/swagger/index.html?url=/swagger/v1/swagger.json) please us the dark green [Authorize] button and a valid bearer token.  
 ![BearerToken From Swagger UI](../img/BearerTokenFromSwaggerUI.png)
 
-You can get a valid bearer token when logged in on www.kolibricloud.ch under [User Settings]  
+You can get a valid bearer token when logged in on <http://www.kolibricloud.ch> under [User Settings]  
 ![BearerToken From Web App](../img/BearerTokenFromWebApp.png)
 
 The ```deviceId``` are the same numbers that can be seen in the URL of the WebApp when the device is selected: [https://www.kolibricloud.ch/devices/**1234**/](https://www.kolibricloud.ch/devices/1234/)

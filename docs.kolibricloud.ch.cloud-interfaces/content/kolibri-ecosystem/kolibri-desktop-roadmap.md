@@ -15,7 +15,7 @@ menu:
 - **Purge obsolete data on the logger device** - Deletion of existing records stored on the device.
 - **More languages** - Do you wish other languages? We can do that?
 - **CCS30 functionality** - Such as "Zero function"
-- **Desktop-to-Cloud connection** - Press a button and store records of your device in the cloud. Access this data using www.kolibricloud.ch
+- **Desktop-to-Cloud connection** - Press a button and store records of your device in the cloud. Access this data using http://www.kolibricloud.ch
 
 ## Known limitations
 
