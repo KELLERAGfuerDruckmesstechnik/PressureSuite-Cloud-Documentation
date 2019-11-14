@@ -11,21 +11,21 @@ description: Roadmap of coming features
 
 ### Device Settings from the Cloud for GSM/ARC devices
 It should be possible to change the settings online. Similar as the Datamanager or the GSMSetup, but online.  
-PLANNED: Q3/2019
+**PLANNED: Q4/2019**
 
 ![DeviceConfigurationPreview](/img/DeviceConfigurationPreview.png "DeviceConfigurationPreview")
 
+### Performance optimization
+Everything can be made faster.  
+**PLANNED: Q4/2019**
+
 ### Device Log
 It is possible to see when what changes has been made. It logs "Device Configuration"-changes, "Page Settings"-changes and various calculation changes such as "Water Calculation Settings".
-PLANNED: Q3/2019
+**PLANNED: Q1/2020**
 
 ### Self-Device-Registration
 Customer should be able to self-register devices.  
-PLANNED: Q4/2019
-
-### Performance optimization
-Everything can be made faster.  
-PLANNED: Q4
+**PLANNED: Q2/2020**
 
 ### Visualize multiple Device Configurations in one chart/export
 With the Device Log feature it is possible to visualize the changes to the calculation in the chart and export files.

@@ -17,32 +17,32 @@ description: Actual Release History and Known Limitations
 
 ### v.1.19315.01 (11.November 2019)
 
-#### Device Configuration
+#### PREVIEW: Device Configuration
 
-The Devices  can now be configured through KOLIBRI Cloud. 
+**PREVIEW**: Some devices configurations can now be seen in through the KOLIBRI Cloud. We are now testing the sending and fixing various issues.
 
 ![Device Configuration](/img/device_configuration.png "Device Configuration")
 
 #### Chart Performance
 
-Chart performance has been optimized. This was acomplished by two main adjustments:
+Chart performance has been optimized. This was accomplished by two main adjustments:
 
 - Calculating the correct timezone to display on the chart is a time consuming thing when done in the browser. That is why it is now calculated on the backend.
-- Displaying over 100'000 data points per chanel is not performant. Especially useless is showing 100'000 data points on a 1000 pixel wide chart. The backend no uses the [Largest Triangle Three Buckets](https://docs.kolibricloud.ch/faq/overview/#does-the-chart-show-all-measurement-points) algorithm to downsample the loaded data to a maximum of 1'500 data points per channel. This leads to a drastic performance boost without a significant accuracy loss.
+- Displaying over 100'000 data points per channel is not performant nor really useful as the chart is limited to 1000 pixel wide so it is not possible to present them. The backend no uses the [Largest Triangle Three Buckets algorithm](https://docs.kolibricloud.ch/faq/overview/#does-the-chart-show-all-measurement-points) to downsample the loaded data to a maximum of 1'500 data points per channel. This leads to a drastic performance boost without a significant accuracy loss. The downside of this is that when zooming in some values might be missing. The export feature still exports all data.
 
 #### Last Data Values
 
 Tank calculations have been added to the "Last Data Values" in the device table.
 
-#### Column Widths in Device and Alarm Table
+#### Column widths in Device and Alarm Table
 
-The column widths of the device and alarm table have been adjusted to the expected width of the texts within the colums. This saves up precious space.
+The column widths of the device and alarm table have been adjusted to the expected width of the texts within the columns. 
 
 #### Mail Addresses in Alarm Settings
 
-The mail addresses in alarm settings can now be added by pressing "," or ";" while typeing. After adding a mail address it appears as a so called chip token. Clicking "x" on the chip token removes the mail address from the settings.
+The mail addresses in alarm settings can now be added by pressing "," or ";" while typing. After adding a mail address it appears as a so called chip token. Clicking "x" on the chip token removes the mail address from the settings.
 
-Copy and pasting a comma or semicolon seperated list of mail addresses works accordingly.
+Copy and pasting a comma or semicolon separated list of mail addresses works accordingly.
 
 ![How to enter mail addresses](/img/enter_alarm_email_addresses.gif "How to enter mail addresses")
 
@@ -54,9 +54,9 @@ KOLIBRI Cloud now supports 0 as decimal precision in page settings.
 
 #### Scale Settings
 
-As the scale settings consist of five different units, it used to be difficulte to enter big numbers into the "max" and "min" field.
+As the scale settings consist of five different units, it used to be difficult to enter big numbers into the "max" and "min" field.
 
-The settings are now split into two rows which leaves enough room for the parameters to be adjustet without the space restrictions.
+The settings are now split into two rows which leaves enough room for the parameters to be adjusted without the space restrictions.
 
 Scale settings are now being saved on the browser side. It must be kept in mind that if the browser / workstation is switched or KOLIBRI Cloud is opened in an incognito window the settings will be reset to the default value. Furthermore, the scale settings do not distinguish between devices.
 

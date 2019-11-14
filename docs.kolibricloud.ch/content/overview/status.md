@@ -19,7 +19,7 @@ All services running: OK
 **Planned Maintenance Window**:  
 Updated various features including test version of the new "Device Configuration" feature.  
 Known issues:  
- - The Device Confiduration-Button is hidden on purpose.  
+ - The Device Configuration-Button is hidden on purpose.  
  - "Measure interval" and "Next expected transmission" are showing wrong values due to missing device configurations  
 
 ---

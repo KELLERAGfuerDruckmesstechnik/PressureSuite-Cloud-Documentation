@@ -35,7 +35,7 @@ If you miss a question/answer please contact <kolibri@keller-druck.com> or write
   - [How safe is the cloud?](#how-safe-is-the-cloud)
   - [Are there any specific standards that the cloud fulfills?](#are-there-any-specific-standards-that-the-cloud-fulfills)
   - [Is there a terms of service(ToS)?](#is-there-a-terms-of-service-tos)
-  - [Does the Chart show all measurement points?](#does-the-chart-show-all-measurement-points)
+  - [Does the chart show all measurement points?](#does-the-chart-show-all-measurement-points)
 
 ## What does "cloud", "IoT", "LoRa" mean?
 **IoT** ("Internet of Things"): Hype term that describes a system / network of things (= devices) with sensors , which perform well together or with users thanks to information exchange (e.g. measurement data through the Internet).  
@@ -258,6 +258,6 @@ Yes.
 ENGLISH: https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_e.pdf  
 GERMAN : https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_g.pdf
 
-## Does the Chart show all measurement points?
+## Does the chart show all measurement points?
 
-To reduce the computing power needed to show the loaded measurement points in the chart - wich is quite scarce when using a browser - a downsample algorithm is used. This algorithm reduces the displayed measurement points to a maximum number of 1500pts / channel. The algorithm is based on Largest Triangle Three Buckets algorithm described by Sveinn Steinarsson in his master thesis "Downsampling Time Series for Visual Representation" at the Faculty of Industrial Engineering, Mechanical Engeneering and Computer Sciece University of Iceland (https://skemman.is/handle/1946/15343).
+To reduce the computing power needed to show the loaded measurement points in the chart (which is quite scarce when using a browser) a downsample algorithm is used. This algorithm reduces the displayed measurement points to a maximum number of 1500pts / channel. The algorithm is based on *Largest Triangle Three Buckets algorithm* described by *Sveinn Steinarsson* in his master thesis *"Downsampling Time Series for Visual Representation"* at the Faculty of Industrial Engineering, Mechanical Engeneering and Computer Sciece University of Iceland (https://skemman.is/handle/1946/15343).
