@@ -29,7 +29,7 @@ To register a GSM/ARC device please follow the following steps:
 
  - In the **[Measure]** tab please set the measure "Interval" and the "Send FTP-File after X-Measurements". If you measure every 30min and send a measurements file after 20 Measurements then the device will send data every 10 hours. As longer the this send interval as lower the battery is used. On the other hand, an alarm set in the Cloud will only react when it has data. In this example a Cloud alarm is triggered in worst-case after 10h.  
 
- - In the **[Measure]** tab it is *NEEDED* to activate the "Record Datatransfer". The KOLIBRI Cloud only handles data in this format.  
+ - <span style="color:red">In the **[Measure]** tab it is *NEEDED* to activate the "Record Datatransfer".</span> The KOLIBRI Cloud only handles data in this format.  
 ![Use the record format picture](../gsmsetup_recordformat.png "Use the record format!")  
 
  - In the **[Communication]** tab avoid having a "FTP directory". If you need/configured one then please contact KOLIBRI support. It is recommended to NOT use the "active Mode" and NOT use sFTP.
