@@ -116,12 +116,12 @@ The mapping of the API fields and the ARC1 cellular data communication protocol 
 | mailPop3UseSSL                        | #c/1      | Bit Position 1                                                                                   |
 | mailUseAlternativeSMTPLogin           | #c/2      | -                                                                                                |
 | waterLevelCalculationFormType         | #c/3      | 0 = none \| 1 = A \| 2 = B \| 3 = C \| 4 = D \| 5 = E \| 6 = F \| 7 = Venturi \| 8 = Open tube * |
-| hardwarePowerExternalDevice           | #c/4      | 0 = Deactivated \| 1 = +12V \| 2 = +5V \| 3 = +3.9V \| 4 = all On **                             |
+| hardwarePowerExternalDevice           | #c/4      | 0 = Deactivated \| 1 = +12V \| 2 = +5V \| 3 = +3.9V \| 4 = all On                                |
 | hardwareSupportedSensorTypes          | #c/5      | -                                                                                                |
 | hardwareConnectionType                | #c/6      | -                                                                                                |
 | waterLevelCalculationIsAbsoluteSensor | #c/7      | -                                                                                                |
 | waterLevelCalculationCalculateFrom    | #c/8      | 0 = P1-P2 \| 1 = P1-PBaro \| 2 = P1 relative \| 3 = not defined                                  |
-| waterLevelCalculationConversionTo     | #c/9      | 0 = E \| 1 = F, 2 = G \| 3 = Poleni \| 4 = Thomson                                               |
+| waterLevelCalculationConversionTo     | #c/9      | 0 = E \| 1 = F, 2 = G \| 3 = Poleni \| 4 = Thomson **                                            |
 | ftpUseTLS                             | #c/A      | -                                                                                                |
 | ftpUseActiveMode                      | #c/B      | -                                                                                                |
 
