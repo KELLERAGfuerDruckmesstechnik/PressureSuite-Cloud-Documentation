@@ -8,8 +8,9 @@ description: General process on how to "get" the KOLIBRI Cloud
 toc: false
 ---
 
-# General process  
-- As a customer you can try out the KOLIBRI Cloud by using a demo user name "Test2019" and its password "Test2019" on https://www.kolibricloud.com
+# General process
+
+- As a customer you can try out the KOLIBRI Cloud by using a demo user name "Test2019" and its password "Test2019" on <https://www.kolibricloud.com>
 - As a customer you can register yourself at https://www.kolibricloud.com at any time. Please understand the [Terms of Use](https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_e.pdf).  
 - Understand the differences between Groups-Devices-Users
   - A registered user can only see devices that are assigned to the "customer group" the customer is assigned to.

@@ -8,47 +8,50 @@ toc: false
 description: Frequently Asked Questions  (FAQ)
 ---
 
-# Frequently Asked Questions  
+# Frequently Asked Questions
 
 If you miss a question/answer please contact <kolibri@keller-druck.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation).
 
-  - [What does "cloud", "IoT", "LoRa" mean?](#what-does-cloud-iot-lora-mean)
-  - [What kind of IoT devices does KELLER have?](#what-kind-of-iot-devices-does-keller-have)
-  - [What does "KOLIBRI" even mean?](#what-does-kolibri-even-mean)
-  - [What is the "KOLIBRI Cloud?](#what-is-the-kolibri-cloud)
-  - [Should I use the Cloud or the GSM2Datamanager solution?](#should-i-use-the-cloud-or-the-gsm2datamanager-solution)
-  - [What is the roadmap of the features?](#what-is-the-roadmap-of-the-features)
-  - [The customer wants to create his own web app or mobile app. How can KELLER help the customer?](#the-customer-wants-to-create-his-own-web-app-or-mobile-app-how-can-keller-help-the-customer)
-  - [The customer does not want to use our "cloud". ie the customer wants to save and present the data by himself. How can KELLER help the customer?]  (#the-customer-does-not-want-to-use-our-cloud-ie-the-customer-wants-to-save-and-present-the-data-by-himself-how-can-keller-help-the-customer)
-  - [Where can I find marketing/promotional material?](#where-can-i-find-marketing-promotional-material)
-  - [How do I sign up? How do I log in? How can I test it?](#how-do-i-sign-up-how-do-i-log-in-how-can-i-test-it)
-  - [Does the website also work on a mobile phone?](#does-the-website-also-work-on-a-mobile-phone)
-  - [What alarms are there](#what-alarms-are-there)
-  - [How do I know that the devices are communicating?](#how-do-i-know-that-the-devices-are-communicating)
-  - [Can I use existing data from the GSM2Datamanager switch to the KOLIBRI Cloud?](#can-i-use-existing-data-from-the-gsm2datamanager-switch-to-the-kolibri-cloud)
-  - [The customer needs a new feature? How do I proceed?](#the-customer-needs-a-new-feature-how-do-i-proceed)
-  - [I discovered an SW error. How do I contact KELLER?](#i-discovered-an-sw-error-how-do-i-contact-keller)
-  - [How does LoRa technology work and what are the advantages?](#how-does-lora-technology-work-and-what-are-the-advantages)
-  - [What is an API?](#what-is-an-api)
-  - [Where is the data stored?](#where-is-the-data-stored)
-  - [How do I get the data from the devices to the WebApp?](#how-does-the-data-get-from-the-devices-to-the-webapp)
-  - [How safe is the cloud?](#how-safe-is-the-cloud)
-  - [Are there any specific standards that the cloud fulfills?](#are-there-any-specific-standards-that-the-cloud-fulfills)
-  - [Is there a terms of service(ToS)?](#is-there-a-terms-of-service-tos)
-  - [Does the chart show all measurement points?](#does-the-chart-show-all-measurement-points)
+- [What does "cloud", "IoT", "LoRa" mean?](#what-does-cloud-iot-lora-mean)
+- [What kind of IoT devices does KELLER have?](#what-kind-of-iot-devices-does-keller-have)
+- [What does "KOLIBRI" even mean?](#what-does-kolibri-even-mean)
+- [What is the "KOLIBRI Cloud"?](#what-is-the-kolibri-cloud)
+- [Should I use the Cloud or the GSM2Datamanager solution?](#should-i-use-the-cloud-or-the-gsm2datamanager-solution)
+- [What is the roadmap of the features?](#what-is-the-roadmap-of-the-features)
+- [The customer wants to create his own web app or mobile app. How can KELLER help the customer?](#the-customer-wants-to-create-his-own-web-app-or-mobile-app-how-can-keller-help-the-customer)
+- [The customer does not want to use our "cloud". (ie the customer wants to save and present the data by himself). How can KELLER help the customer?](#the-customer-does-not-want-to-use-our-cloud-ie-the-customer-wants-to-save-and-present-the-data-by-himself-how-can-keller-help-the-customer)
+- [Where can I find marketing/promotional material?](#where-can-i-find-marketingpromotional-material)
+- [How do I sign up? How do I log in? How can I test it?](#how-do-i-sign-up-how-do-i-log-in-how-can-i-test-it)
+- [Does the website also work on a mobile phone?](#does-the-website-also-work-on-a-mobile-phone)
+- [What alarms are there](#what-alarms-are-there)
+- [How do I know that the devices are communicating?](#how-do-i-know-that-the-devices-are-communicating)
+- [Can I use existing data from the GSM2Datamanager switch to the KOLIBRI Cloud?](#can-i-use-existing-data-from-the-gsm2datamanager-switch-to-the-kolibri-cloud)
+- [The customer needs a new feature? How do I proceed?](#the-customer-needs-a-new-feature-how-do-i-proceed)
+- [I discovered an SW error. How do I contact KELLER?](#i-discovered-an-sw-error-how-do-i-contact-keller)
+- [How does LoRa technology work and what are the advantages?](#how-does-lora-technology-work-and-what-are-the-advantages)
+- [What is an API?](#what-is-an-api)
+- [Where is the data stored?](#where-is-the-data-stored)
+- [How does the data get from the devices to the WebApp?](#how-does-the-data-get-from-the-devices-to-the-webapp)
+- [How safe is the cloud?](#how-safe-is-the-cloud)
+- [Are there any specific standards that the cloud fulfills?](#are-there-any-specific-standards-that-the-cloud-fulfills)
+- [Is there a terms of service(ToS)?](#is-there-a-terms-of-servicetos)
+- [Does the chart show all measurement points?](#does-the-chart-show-all-measurement-points)
 
 ## What does "cloud", "IoT", "LoRa" mean?
+
 **IoT** ("Internet of Things"): Hype term that describes a system / network of things (= devices) with sensors , which perform well together or with users thanks to information exchange (e.g. measurement data through the Internet).  
 KELLER has been using IoT devices for many years: GSM data loggers and now also LoRa devices.  
 **Cloud**: Can be defined as follows: By " cloud  computing" one can mean storing and accessing data and programs via the Internet or the opposite is saving data to your hard disk. The term "cloud" is also used as a metaphor for "the Internet".  
 **LoRa** (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to GSM, measurement data from the KELLER sensor can be sent away wirelessly to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers. LoRa has the advantages over GSM that it is cheaper and requires less power (smaller, cheaper battery).  
-See more at https://docs.kolibricloud.ch/sending-technology/lora-technology/
+See more at <https://docs.kolibricloud.ch/sending-technology/lora-technology/>
 
 ## What kind of IoT devices does KELLER have?
+
 KELLER sells pressure sensors that send data via GSM or LoRa. Both using the ARC-1 variations. With or without ATEX certification. 
 In 2019 KELLER will sell cost-efficient LoRa-devices. And there will be the first NB-IoT prototypes, too.
 
 ## What does "KOLIBRI" even mean?
+
 KOLIBRI is the name of the new KELLER AG product line. Its the German name for Hummingbird starting with a **K** as in **K**ELLER.
 Currently this product line contains:
 
@@ -97,9 +100,9 @@ Please contact <marketing@keller-druck.com>
 
 ## How do I sign up? How do I log in? How can I test it?
 
-See: http://www.kolibricloud.ch
+See: <http://www.kolibricloud.ch>
 For all those interested there is a test user account, with which everyone can log in and try out the WebApp.
-There are a few test devices visible and their measurement data. The login password can be seen on http://www.kolibricloud.ch.
+There are a few test devices visible and their measurement data. The login password can be seen on <http://www.kolibricloud.ch.>
 
 ## Does the website also work on a mobile phone?
 
@@ -131,7 +134,7 @@ There are three categories:
 ## How do I know that the devices are communicating?
 
 On the WebApp you can read the time of the last communication.
-  ![Last Data on www.kolibricloud.ch](../LastData.png"Last Data")
+![Last Data on www.kolibricloud.ch](../LastData.png"Last Data")
 
 ## Can I use existing data from the GSM2Datamanager switch to the KOLIBRI Cloud?
 
@@ -152,7 +155,7 @@ Contact to <kolibri@keller-druck.com>
 LoRa (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to GSM, measurement data from the KELLER sensor can be sent away wireless to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers.
 LoRa has the advantages over GSM that it is cheaper and requires less power (smaller, cheaper battery)
 
-See https://docs.kolibricloud.ch/sending-technology/lora-technology/
+See <https://docs.kolibricloud.ch/sending-technology/lora-technology/>
 
 ## What is an API?
 
@@ -161,44 +164,45 @@ See https://docs.kolibricloud.ch/sending-technology/lora-technology/
 The Internet and Internet products essentially consist of devices that communicate with each other. The format of this interface is often a REST API. All large companies have APIs. Google Maps, for example, needs an API to query where a place is and reacts to maps, coordinates, ...
 
 APIs are not sorcery solely for developers.
-The KOLIBRI Cloud API can also be tested (if authorized) at https://api.kolibricloud.ch/swagger/index.html?url=/swagger/v1/swagger.json
+The KOLIBRI Cloud API can also be tested (if authorized) at <https://api.kolibricloud.ch/swagger/index.html?url=/swagger/v1/swagger.json>
 
 If you as a specific software aks. e.g. "Give me the list of all devices", the answer would be:
 
-```https://api.kolibricloud.ch/v1/Devices```
+`https://api.kolibricloud.ch/v1/Devices`
 
 And in answer you get from KOLIBRI Cloud:
 
-```{
-   " totalRecords ":3,
-   " devices ":[
-      {
-         " id ":1004,
-         " name ":"Eulach 03",
-         " networkNode ":"Winterthur",
-         " transferType ":"GSM",
-         " gsmNumber ":"+ 41774691179 ",
-         " euiNumber ":null
-      },
-      {
-         " id ":1005,
-         " name ":" Eulach 10 ",
-         " networkNode ":"Winterthur",
-         " transferType ":"GSM",
-         " gsmNumber ":"+41774692307",
-         " euiNumber ":null
-      },
-      {
-         " id ":1508,
-         " name ":"Pascal Swisscom 05",
-         " networkNode ":"Winterthur",
-         " transferType ":"LoRa",
-         " gsmNumber ":null,
-         " euiNumber ":"0004A30B001E5CD8"
-      }
-   ]
+{{< highlight json >}}
+{
+    "totalRecords":3,
+    "devices":[
+        {
+            "id": 1004,
+            "name": "Eulach 03",
+            "networkNode": "Winterthur",
+            "transferType": "GSM",
+            "gsmNumber": "+ 41774691179",
+            "euiNumber": null
+        },
+        {
+            "id": 1005,
+            "name": "Eulach 10",
+            "networkNode": "Winterthur",
+            "transferType": "GSM",
+            "gsmNumber": "+41774692307",
+            "euiNumber": null
+        },
+        {
+            "id": 1508,
+            "name": "Pascal Swisscom 05",
+            "networkNode": "Winterthur",
+            "transferType": "LoRa",
+            "gsmNumber": null,
+            "euiNumber": "0004A30B001E5CD8"
+        }
+    ]
 }
-```
+{{< /highlight >}}
 
 The data format is called JSON (standard) and can be easily decrypted by all programming languages.
 
@@ -241,23 +245,24 @@ Security is one of the key features and concerns in IoT / cloud projects.
 
 The KOLIBRI Cloud uses the access, storage and authentication of users and data in / from a MICROSOFT (Azure) data center.
 
-This data center is in the EU and subject to EU regulations ( EU Data Protection Regulation ( DSGVO) ) (ie no data may be shared with data centers outside the EU, especially not with US). https://www.microsoft.com/de-de/TrustCenter/Privacy/gdpr/default.aspx
+This data center is in the EU and subject to EU regulations ( EU Data Protection Regulation ( DSGVO) ) (ie no data may be shared with data centers outside the EU, especially not with US). <https://www.microsoft.com/de-de/TrustCenter/Privacy/gdpr/default.aspx>
 
 In addition:
 
 - There are not many standards of countries regarding cloud/data/privacy, yet. And if so, then they affect the "personal data" which does not concern us, because the KOLIBRI Cloud stores mostly measurement data.
 - What standards does Microsoft guarantee?
 
-  - https://azure.microsoft.com/en-us/overview/trusted-cloud/   (overview)
-  - https://azure.microsoft.com/en-us/blog/microsoft-azure-leads-the-industry-in-iso-certifications/  (overview)
-  - List of standards:  https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings
+  - <https://azure.microsoft.com/en-us/overview/trusted-cloud/>   (overview)
+  - <https://azure.microsoft.com/en-us/blog/microsoft-azure-leads-the-industry-in-iso-certifications/>  (overview)
+  - List of standards:  <https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings>
 eg  ISO 9001 , ISO 20000-1: 2011, ISO 2230, ISO 27001, ISO 27017, ISO 27018, BIR 2012 (Netherlands), UK G-Cloud, Argentina PDPA, ...
 
 ## Is there a terms of service(ToS)?
+
 Yes.  
-ENGLISH: https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_e.pdf  
-GERMAN : https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_g.pdf
+ENGLISH: <https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_e.pdf>  
+GERMAN : <https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_g.pdf>
 
 ## Does the chart show all measurement points?
 
-To reduce the computing power needed to show the loaded measurement points in the chart (which is quite scarce when using a browser) a downsample algorithm is used. This algorithm reduces the displayed measurement points to a maximum number of 1500pts / channel. The algorithm is based on *Largest Triangle Three Buckets algorithm* described by *Sveinn Steinarsson* in his master thesis *"Downsampling Time Series for Visual Representation"* at the Faculty of Industrial Engineering, Mechanical Engeneering and Computer Sciece University of Iceland (https://skemman.is/handle/1946/15343).
+To reduce the computing power needed to show the loaded measurement points in the chart (which is quite scarce when using a browser) a downsample algorithm is used. This algorithm reduces the displayed measurement points to a maximum number of 1500pts / channel. The algorithm is based on *Largest Triangle Three Buckets algorithm* described by *Sveinn Steinarsson* in his master thesis *"Downsampling Time Series for Visual Representation"* at the Faculty of Industrial Engineering, Mechanical Engeneering and Computer Sciece University of Iceland (<https://skemman.is/handle/1946/15343>).

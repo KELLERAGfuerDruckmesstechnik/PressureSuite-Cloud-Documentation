@@ -36,7 +36,7 @@ Tank calculations have been added to the "Last Data Values" in the device table.
 
 #### Column widths in Device and Alarm Table
 
-The column widths of the device and alarm table have been adjusted to the expected width of the texts within the columns. 
+The column widths of the device and alarm table have been adjusted to the expected width of the texts within the columns.
 
 #### Mail Addresses in Alarm Settings
 

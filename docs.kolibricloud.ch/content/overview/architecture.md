@@ -9,10 +9,10 @@ description: Architectural overview. What components are used and how.
 ---
 
 # System architecture
-![Architectural Overview](https://docs.kolibricloud.ch/cloud-interfaces/img/KellerCloud_Architecture.png"Architectural Overview")
+
+![Architectural Overview](<https://docs.kolibricloud.ch/cloud-interfaces/img/KellerCloud_Architecture.png>"Architectural Overview")
 
 ---  
-
 
 ![Architecture part 1](../../img/arch2.png)  
 *Using a ARC device lets the sensor send measurement data per GSM/UMTS/LTE to the next antenna and from there via internet to a configured FTP server. The measurement data or configuration information are stored in text files. It is also possible to store the data on a mail server but we do not recommend this as FTP is more reliable than SMTP/POP. If you do not want to host a FTP server than KELLER can create one for you as part of the KOLIBRI Cloud set up process.*  
@@ -30,7 +30,7 @@ description: Architectural overview. What components are used and how.
 *A LoRa Network Server pushed the transmission further to the KOLIBRI Cloud where it is transformed and stored in a SQL database.*  
 *Every 5 minutes, Cloud programs gather new files from the FTP- rsp. Mail-server and transform and store them in a SQL database.*
   
---- 
+---
 ![Architecture part 4](../../img/arch4.png)  
 *The data center is in the EU and subject to EU regulations (EU Data Protection Regulation (DSGVO)). The database is backuped every 10 minutes.*  
 

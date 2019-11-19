@@ -7,12 +7,12 @@ The template was taken from <https://github.com/brocaar/docs.loraserver.io>
 
 ## Getting Started
 
-To deploy a change you basically have to change the markdown files and ```git push```. Or wait for the accepted push request.
+To deploy a change you basically have to change the markdown files and `git push`. Or wait for the accepted push request.
 
 To test the page locally do this:
 
 1. Choose the folder you want to change (e.g. /docs.kolibricloud.ch.keller-devices/)
-2. To start Hugo as a web-server (auto-refreshing on file-change), run the following command from the root of this repository: ```hugo server -w``` (when not on windows you have to install hugo first and use the installed binary)
+2. To start Hugo as a web-server (auto-refreshing on file-change), run the following command from the root of this repository: `hugo server -w` (when not on windows you have to install hugo first and use the installed binary)
 3. Make your changes in the files and see the changes on the local Web Server on <http://localhost:1313/> (or another port)
 
 ## Deployment
