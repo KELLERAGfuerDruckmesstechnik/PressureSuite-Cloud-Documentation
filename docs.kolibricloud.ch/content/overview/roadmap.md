@@ -8,7 +8,8 @@ toc: true
 description: Roadmap of coming features
 ---
 # Roadmap
-The following roadmap is an idea. Therefore, the priority might change and ee might implement a feature earlier or later depending on customer projects and other circumstances.
+The following roadmap is an idea. Therefore, the priority might change and ee might implement a feature earlier or later depending on customer projects and other circumstances.  
+
 ![.](../../img/roadmap/void.jpg)  
 
 
