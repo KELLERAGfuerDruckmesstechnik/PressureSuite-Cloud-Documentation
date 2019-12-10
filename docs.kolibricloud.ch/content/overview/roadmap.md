@@ -8,6 +8,9 @@ toc: true
 description: Roadmap of coming features
 ---
 # Roadmap
+The following roadmap is an idea. Therefore, the priority might change and ee might implement a feature earlier or later depending on customer projects and other circumstances.
+![.](../../img/roadmap/void.jpg)  
+
 
 ## PRIO 1
 ### DeviceConfiguration for LoRa devices
@@ -22,7 +25,7 @@ Changing configurations, settings and calculations should be stored to give a ce
 This feature let an customer admin add FTP server credentials. Each new device communicating from this FTP will automatically added to the customers group.  
 ![Add FTP account for auto-assignment of devices](../../img/roadmap/AddFtpAccountForAutoAssignmentOfDevices_red.png)  
 
-### Auto-Add used channels
+### Auto-add used channels
 Especially with the new LoRa ADT devices the used channels have to be changed according to the users configuration. At the same time the user expect to see measuring data from channels that are not sending data anymore but have stored data.  
 ![Auto-Add used channels](../../img/roadmap/AutoAssingmentOfUsedChannels.png)  
 
@@ -33,7 +36,7 @@ We are going to add more language plus revise the existing terms in cooperation 
 ![More languages 1](../../img/roadmap/Poland.png) ![More languages 2](../../img/roadmap/Spain.png)  
 
 ### Devices Map
-As now a user can change and store the coordinates of a device from the WebApp it makes sense to visualize the devices in a map. It might be possible to change the location in the map to update the coordinates.  
+As now a user can change and store the coordinates of a device from the WebApp it makes sense to visualize the devices in a map. It might be possible to change the location in the map to update the coordinates.  Try https://www.kolibricloud.ch/device-map  
 ![Devices Map](../../img/roadmap/DevicesMap.png)  
 
 ### Handle multiple Configurations/Water Calculations per device
@@ -57,15 +60,17 @@ To make it easier for the users and the KOLIBRI support team the individual perm
 
 ### Alarming
 It is wished to automatically trigger alarms when certain device or system specific cases occur:  
-	* Device Alarm
-		* Low Battery - Warn when battery has to be replaced
-		* Too high humidity
-		* Freeze (water must be ice - pressure measurement unusable)
-		* Level probe is not in water anymore
-	* System Alarm
-		* Gateway does not respond
-		* FTP/Mail server do not respond
-![Alarm Overview](../../img/roadmap/AlarmOverview.png)  
+* Device Alarm  
+  * Low Battery - Warn when battery has to be replaced  
+  * Too high humidity  
+  * Freeze (water must be ice - pressure measurement unusable)  
+  * Level probe is not in water anymore  
+* System Alarm  
+  * Gateway does not respond  
+  * FTP/Mail server do not respond  
+
+![Alarm Overview](../../img/roadmap/AlarmOverview.png)   
+  
 ![Alarming](../../img/roadmap/SystemDeviceAlarms.png)  
 
 ----
