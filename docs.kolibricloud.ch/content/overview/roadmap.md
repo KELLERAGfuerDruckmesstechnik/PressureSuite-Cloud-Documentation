@@ -20,9 +20,9 @@ Now that the sending 'Device Configuration' for GSM/ARC to devices over FTP/Mail
 
 
 
-### Device Log
-Changing configurations, settings and calculations should be stored to give a certain traceability for understanding the system and allow to post-configure multiple installation per device. The 'Device Log' discloses the changes and who did the changes.  
-![Device Log](../../img/roadmap/DeviceLog.png)  
+### More languages (eg. Polish, Spanish)
+We are going to add more language plus revise the existing terms in cooperation with native partners.  
+![More languages 1](../../img/roadmap/Poland.png) ![More languages 2](../../img/roadmap/Spain.png)  
 
 
 
@@ -36,13 +36,21 @@ This feature let an customer admin add FTP server credentials. Each new device c
 Especially with the new LoRa ADT devices the used channels have to be changed according to the users configuration. At the same time the user expect to see measuring data from channels that are not sending data anymore but have stored data.  
 ![Auto-Add used channels](../../img/roadmap/AutoAssingmentOfUsedChannels.png)  
 
+### Process descriptions
+It is needed to have an easy overview of how to initialize a project with as a sales person, as a customer as KOLIBRI Cloud support person...
+A check list and a graphical overview is wished.  
 
 ----
-## PRIO 2
-### More languages (eg. Polish, Italian)
-We are going to add more language plus revise the existing terms in cooperation with native partners.  
-![More languages 1](../../img/roadmap/Poland.png) ![More languages 2](../../img/roadmap/Spain.png)  
+## PRIO 2  
+### Device Log  
+Changing configurations, settings and calculations should be stored to give a certain traceability for understanding the system and allow to post-configure multiple installation per device. The 'Device Log' discloses the changes and who did the changes.  
+![Device Log](../../img/roadmap/DeviceLog.png)  
 
+
+
+### Performance
+It is planned to optimize the starting behavior in order to quickly load the devices overview. Performance is always a feature.  
+![Performance](../../img/roadmap/performance.png)  
 
 
 ### Devices Map
@@ -64,9 +72,8 @@ A long awaiting feature is the possibility to set a different **color** and **na
 
 ----
 ## PRIO 3
-### Performance
-It is planned to optimize the starting behavior in order to quickly load the devices overview. Performance is always a feature.  
-![Performance](../../img/roadmap/performance.png)  
+### Explainer videos
+Videos or Gifs are needed to understand the functionalities and get a short overview.  
 
 
 
@@ -123,6 +130,12 @@ The possibility to add multiple reference lines to show various installation dep
 ### Overflow Calculations
 Like the KOLIBRI Desktop-SW the KOLIBRI Cloud has to support overflow calculations, too.
 ![Overflow Calculations 1](../../img/roadmap/Poleni.png)  ![Overflow Calculations 2](../../img/roadmap/Thomson.png)  ![Overflow Calculations 3](../../img/roadmap/Venturi.png)  
+
+
+
+### *Find*, *mark* and *delete* unreliable or outlier data
+Statistical methods and customized threshold should make it possible to find irregularities.  
+Found unreliable data should be able to be marked and and even deleted.
 
 
 
