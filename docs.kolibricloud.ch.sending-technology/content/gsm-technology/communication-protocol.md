@@ -21,3 +21,7 @@ Two SW implemented this protocol:
   - KOLIBRI Cloud backend SW  
   
 Right now, there is no open-sourced SW that uses the protocol.  
+
+## FAQ: I don't want to implement this protocol. What alternatives do I have?
+- Alternatively, it is possible to use the KOLIBRI Cloud API and get the data automatized in a proper JSON format through.    
+- It is also possible to use the GSMDatamanager and let it store data into a local MySQL database. Then implement a SW tool that extracts the data out of the MySQL database.   
