@@ -26,6 +26,11 @@ We are going to add more language plus revise the existing terms in cooperation 
 
 
 
+### Customized Alarm-Mail message subject
+The subject of a mail should be configurable per device.
+
+
+
 ### Add FTP account for self-assignment of devices
 This feature let an customer admin add FTP server credentials. Each new device communicating from this FTP will automatically added to the customers group.  
 ![Add FTP account for auto-assignment of devices](../../img/roadmap/AddFtpAccountForAutoAssignmentOfDevices_red.png)  
