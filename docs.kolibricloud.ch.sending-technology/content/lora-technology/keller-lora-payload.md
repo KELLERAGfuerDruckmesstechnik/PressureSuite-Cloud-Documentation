@@ -4,7 +4,7 @@ menu:
     main:
         parent: lora-technology
         weight: 3
-toc: false
+toc: true
 description: Information how to decrypt and use the LoRa payload encrypted by KELLER AG
 ---
 
@@ -12,11 +12,11 @@ description: Information how to decrypt and use the LoRa payload encrypted by KE
 
 Due to the limited size of a LoRa message KELLER can send up to five float values per transmission. If a device is configured to send more than 5 float values then two messages have to be transmitted. Be aware that this doubles the message rate and therefore you might have to adjust the sending interval. KELLER recommends not more than 1 message per 10min per device; Independently, if there is one device or one thousand devices.
 
-## How to decrypt the KELLER payload message from TheThingsNetwork
+## How to decrypt the KELLER payload messages?
 
-The actual protocol can be [found here](../../Kommunikationsprotokoll LoRa v2.1.pdf) (*IN GERMAN*)
+The actual protocol can be [found here](../../ADT1 LoRa data communication protocol 12_2019.pdf) (V12.2019 English)
 
-### Introduction
+### Example with measurements
 
 In the [TTN console](https://console.thethingsnetwork.org/applications) the payload and the decrypted values can be seen in the DATA tab:
 <img src="../../payload_ttn_example.png" alt="TTN payload example"/>  
@@ -49,7 +49,7 @@ byte[] decodedPayload = System.Convert.FromBase64String(payload);
 - The payload is divided into the following groups:  
 ![picture of internal payload build](../../payload_protocol.png "internal payload build")  
 
-- Byte #1: Represents the "function code". For normal measurement transmission this is 1. It would be another function code in case of alarming, configuration, transmission acknowledges, ...  
+- Byte #1: Represents the "function code". For normal ''measurement transmission this is 1. It would be another function code in case of alarming, configuration, transmission acknowledges, ...  
 **<span style="color:red">01</span> 05 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 --> Function Code = 1  
 
