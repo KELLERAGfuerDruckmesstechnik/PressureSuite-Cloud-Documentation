@@ -26,14 +26,14 @@ TTN here already decrypts the payload, and displays the channel values as floats
 Payload string: "AQUA079gQlk9vCn8QajZAD93x6RBuAAA"  
 Base64 decrypted byte array: **01 05 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 
-### Basic steps
+#### Basic steps
 
 1. Decrypt the Payload string to a Byte-Array
 2. Identify the Device-Type and channel numbers  
 3. Decode the bytes to (float) values  
 4. Assign the values to the correct channels according to the Device-Type  
 
-#### 1. Decrypt the Payload string to a Byte-Array
+##### 1. Decrypt the Payload string to a Byte-Array
 
 - The payload string is Base64 encrypted.  
 - Decrypt it into a byte array. (Not a string)  
@@ -43,7 +43,7 @@ Base64 decrypted byte array: **01 05 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3
 byte[] decodedPayload = System.Convert.FromBase64String(payload);
 {{< /highlight >}}
 
-#### 2. Identify the Device-Type and channel numbers
+##### 2. Identify the Device-Type and channel numbers
 
 - The payload size varies depending of the count of transmitted values  
 - The payload is divided into the following groups:  
@@ -57,7 +57,7 @@ byte[] decodedPayload = System.Convert.FromBase64String(payload);
 **01 <span style="color:red">05</span> 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 --> Device Type = 5  
 
-#### 3. Decode the bytes to (float) values  
+##### 3. Decode the bytes to (float) values  
 
 - Byte #2+#3: Represent the information which transmitted channel values have been sent. Each bit represent the used channel from the particular device type  
 **01 05 <span style="color:red">00 D3</span> BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
@@ -116,7 +116,7 @@ BF 60 42 59 --> -0.876012384...
   
 It is important to know that order and the definition of the float values corresponds to the order of the transmitted channels.  
 
-#### 4. Assign the values to the correct channels according to the Device-Type
+##### 4. Assign the values to the correct channels according to the Device-Type
 
 Above example payload identified:  
 
