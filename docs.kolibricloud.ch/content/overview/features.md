@@ -15,7 +15,7 @@ description: Actual Release History and Known Limitations
 
 ---
 
-### v.1.19352.01 (18.December 2019)
+### v.1.19352.02 (18.December 2019)
 
 #### Device Configuration
 
