@@ -15,6 +15,12 @@ description: Actual Release History and Known Limitations
 
 ---
 
+### v.1.19352.01 (18.December 2019)
+
+#### Device Configuration
+
+Some devices configurations can now be seen and saved through the KOLIBRI Cloud.
+
 ### v.1.19315.01 (11.November 2019)
 
 #### PREVIEW: Device Configuration
