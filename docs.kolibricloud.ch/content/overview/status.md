@@ -9,7 +9,12 @@ description: History about maintenances and outages
 ---
 # Status
 
-All services running: OK
+```diff
+- Wrong "Last Measurements" are shown. 
+- Due to a new release with increased performance, several devices show wrong last data (mostly from 19.Dec.2020).
+- No data loss.
++ A fix is planned today.
+```
 
 ## Planned Maintenance windows
 
@@ -18,6 +23,7 @@ All services running: OK
 ## Outages & Maintenance Windows
 
 ---
+
 
 ### 06.Nov.2019 from 16:00-17:00 CET
 
