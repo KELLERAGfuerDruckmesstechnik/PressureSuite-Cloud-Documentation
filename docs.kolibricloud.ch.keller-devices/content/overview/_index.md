@@ -51,9 +51,9 @@ Multiple housing variants such as:
 ## NEW: ADT1-TUBE and ADT1-BOX
 
 - The **ADT-1 remote transmitter** is a battery operated sending device that is compatible with the KOLIBRI Cloud.  
- ![ADT-1 Box Open](https://backend.keller-druck.com/gallery/full/1665/adt1-box-offen@2x.jpg"ADT-1 Box open")  
- ![ADT-1 Tube](https://backend.keller-druck.com/gallery/full/1667/adt1-tube-1@2x.jpg"ADT-1 Tube")
- ![ADT-1 Tube Open](https://backend.keller-druck.com/gallery/full/1668/adt1-tube-offen@2x.jpg"ADT-1 Tube open")
+ ![ADT-1 Box Open](../adt1-box-offen.jpg"ADT-1 Box open")  
+ ![ADT-1 Tube](../adt1-tube-1.jpg"ADT-1 Tube")
+ ![ADT-1 Tube Open](../adt1-tube-offen.jpg"ADT-1 Tube open")
  
 
 Connectivity variant:  

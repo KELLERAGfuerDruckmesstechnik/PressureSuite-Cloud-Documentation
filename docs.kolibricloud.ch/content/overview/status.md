@@ -20,10 +20,10 @@ description: History about maintenances and outages
 ---
 
 
-### From 03.Jan.2020 to 10.Jan.2020
+### From 23.Jan.2020 to 10.Feb.2020
 
 **Summary of Impact**:  
-The "LastMeasurements" and the "Device Informations" showed older measurements (timestamp + values) then available and stored.  
+The "LastMeasurements" and the "DeviceInformation" showed older measurements (timestamp + values) then available and stored.  
 
 **Preliminary Root Cause**:
 The DevOps Engineer determined an error in a wrong continuous deployment process that upgraded only parts of the system causing the ```/v1/LastMeasurements``` endpoint to show an older measurement. Nevertheless, no data was lost and the ```/v1/Measurements``` endpoint continued to work properly.
