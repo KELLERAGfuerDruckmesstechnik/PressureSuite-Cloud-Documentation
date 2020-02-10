@@ -10,17 +10,15 @@ menu:
 
 ## Compatible KELLER devices
 
-All KELLER Level transmitters can be connected to our [Remote Data Transmission Units](http://www.keller-druck.ch/home_e/paprod_e/hm_level_e.asp).
+All KELLER [KELLER pressure transmitters](https://keller-druck.com/en/products/pressure-transmitters) can be connected to our [Remote Data Transmission Units](https://keller-druck.com/en/products/wireless-solutions).
 
-Same with [Data Loggers](http://www.keller-druck.ch/home_e/paprod_e/hm_loggers_e.asp).
-
-And generally with all [KELLER pressure transmitters](http://www.keller-druck.ch/home_e/paprod_e/hm_transm_e.asp).
+They are especially suitable with our [Data Loggers](https://keller-druck.com/en/products/data-loggers) and best suitable with our [Level Probes](https://keller-druck.com/en/products/level-probes).
 
 ## Remote Data Transmission Unit with Mobile Communication
 
 KELLER has more than a decade experience with sending measuring data with mobile 2G/3G, 4G.
 
-- The [ARC-1 remote transmitter](http://www.keller-druck.ch/home_e/paprod_e/arc1_e.asp) is a battery operated, robust sending device that is compatible with the KOLIBRI Cloud.
+- The [ARC-1 remote transmitter](https://keller-druck.com/en/products/wireless-solutions/remote-transmission-units/arc1-tube) is a battery operated, robust sending device that is compatible with the KOLIBRI Cloud.
 
 Multiple housing variants such as:  
 
@@ -34,10 +32,10 @@ Connectivity variants:
 
 ## Remote Data Transmission Unit with LoRa
 
-Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1) and member of the LoRa Alliance since 2016 KELLER has a lot experience with LoRa. See [Datasheet PDF](http://www.keller-druck.ch/picts/pdf/engl/arc-1_e.pdf)  
+Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1) and member of the LoRa Alliance since 2016 KELLER has a lot experience with LoRa. See [Datasheet PDF](https://download.keller-druck.com/api/download/VyyiKwTWpeTxLdpb9sSSK4/en/2019-09.pdf)  
  ![ARC-1](../ARC-1.jpg"ARC-1")
 
-- The [ARC-1 remote transmitter](http://www.keller-druck.ch/home_e/paprod_e/arc1_e.asp) is a battery operated, robust sending device that is compatible with the KOLIBRI Cloud.
+- The [ARC-1 remote transmitter](https://keller-druck.com/en/products/wireless-solutions/remote-transmission-units/arc1-tube) is a battery operated, robust sending device that is compatible with the KOLIBRI Cloud.
 
 Connectivity variants:
 
@@ -50,10 +48,13 @@ Multiple housing variants such as:
 - Box  
 ![ARC-1 BOX](../ARC-1_box.jpg"ARC-1 BOX")
 
-## COMING SOON
+## NEW: ADT1-TUBE and ADT1-BOX
 
 - The **ADT-1 remote transmitter** is a battery operated sending device that is compatible with the KOLIBRI Cloud.  
- ![Preview picture of ADT-1 prototype](../ADT-1.jpg"Preview picture of ADT-1 prototype")  
+ ![ADT-1 Box Open](https://backend.keller-druck.com/gallery/full/1665/adt1-box-offen@2x.jpg"ADT-1 Box open")  
+ ![ADT-1 Tube](https://backend.keller-druck.com/gallery/full/1667/adt1-tube-1@2x.jpg"ADT-1 Tube")
+ ![ADT-1 Tube Open](https://backend.keller-druck.com/gallery/full/1668/adt1-tube-offen@2x.jpg"ADT-1 Tube open")
+ 
 
 Connectivity variant:  
 
@@ -61,8 +62,8 @@ Connectivity variant:
 
 Multiple housing variants such as:  
 
-- Tube
-- Box  
+ - Tube  [More information about ADT1-Tube](https://keller-druck.com/en/products/data-loggers/remote-transmission-units-with-data-logger/adt1-tube)  
+ - Box  [More information about ADT1-Box](https://keller-druck.com/en/products/data-loggers/remote-transmission-units-with-data-logger/adt1-box)  
 
 ![Preview picture 1 small ADT-1 vs ARC-1](../GSMvsADT.jpg"Preview picture 1 small ADT-1 vs ARC-1")  ![Preview picture 2 small ADT-1 vs ARC-1](../GSMvsADT2.jpg"Preview picture 2 small ADT-1 vs ARC-1")  
 *Bigger tube = GSM-1 / Smaller tube = New ADT-1*

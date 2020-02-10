@@ -9,18 +9,30 @@ description: History about maintenances and outages
 ---
 # Status
 
-```diff
-- Wrong "Last Measurements" are shown. 
-- Due to a new release with increased performance, several devices show wrong last data (mostly from 19.Dec.2020).
-- No data loss.
-+ A fix is planned today.
-```
+🟢 ***OK*** - The KOLIBRI Cloud is working as planned
 
 ## Planned Maintenance windows
 
 - None
 
 ## Outages & Maintenance Windows
+
+---
+
+
+### From 03.Jan.2020 to 10.Jan.2020
+
+**Summary of Impact**:  
+The "LastMeasurements" and the "Device Informations" showed older measurements (timestamp + values) then available and stored.  
+
+**Preliminary Root Cause**:
+The DevOps Engineer determined an error in a wrong continuous deployment process that upgraded only parts of the system causing the ```/v1/LastMeasurements``` endpoint to show an older measurement. Nevertheless, no data was lost and the ```/v1/Measurements``` endpoint continued to work properly.
+
+**Mitigation:**:  
+Engineers fixed and tested the issue.
+
+**Next Steps**:  
+None.
 
 ---
 
@@ -48,7 +60,7 @@ Engineers determined that an error in a recent deployment of a new auto-assignme
 Engineers fixed and tested the protocol issue.
 
 **Next Steps**:  
-Customers who lost important data can contact the KOLIBRI Cloud support (kolibri@keller-druck.ch) to retrieve the missing measurement data from the log files.
+Customers who lost important data can contact the KOLIBRI Cloud support (kolibri@keller-druck.com) to retrieve the missing measurement data from the log files.
 
 ---
 

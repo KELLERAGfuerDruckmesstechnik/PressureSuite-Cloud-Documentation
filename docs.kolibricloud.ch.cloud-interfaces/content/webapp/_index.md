@@ -11,4 +11,4 @@ hidden: true
 We strive to have a Web App that is simple to use and doesn't need a written manual.  
 
 Nevertheless, we plan to have a Youtube Video for an easy quick introduction to show the biggest features.
-(PLANNED: End of 2019)
+(PLANNED: Middle of 2020)

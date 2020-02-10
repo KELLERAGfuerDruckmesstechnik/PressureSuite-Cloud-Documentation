@@ -44,7 +44,7 @@ If you plan run this as a server script to store measurement data from the KOLIB
 
 - Decide for a time span to gather date: eg. Every 24h
 - Create a list of the `deviceId`s that needs to be monitored (eg. `my_devices=[1234,1235,1236]`)  
-- Create a list of ***MeasurementsDefinitonId***'s representing the physical measurement channel (eg. `channels_of_interest=[2,5,7,8,11]`)  
+- Create a list of ***MeasurementsDefinitionId***'s representing the physical measurement channel (eg. `channels_of_interest=[2,5,7,8,11]`)  
 - Run the program every ~24h and  
     : - for all devices of interest...  
     : - for all channels of interest..  

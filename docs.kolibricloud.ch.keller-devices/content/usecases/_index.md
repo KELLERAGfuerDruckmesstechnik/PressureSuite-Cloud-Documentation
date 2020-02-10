@@ -16,12 +16,8 @@ hidden: true
 
 ## Use cases with KELLER devices
 
-Please visit: https://keller-h2o.com/en/home/ground-water
+Please visit: https://keller-druck.com/en/industries
 
-## Leaflet "Data Loggers/Level Transmitters"
+## Leaflet "Data Loggers/Level probes"
 
-<object data="http://www.keller-druck.ch/picts/pdf/engl/leaflet_level_e.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://www.keller-druck.ch/picts/pdf/engl/leaflet_level_e.pdf">
-        <p>This browser does not allow embedded PDFs. Please download the PDF to view it: <a href="http://www.keller-druck.ch/picts/pdf/engl/leaflet_level_e.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+Please visit: https://keller-druck.com/en/products/level-probes

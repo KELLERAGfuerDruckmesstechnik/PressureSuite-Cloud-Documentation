@@ -12,12 +12,12 @@ description: Some FAQ but rather technical and specific.
 
 ## How to connect the KOLIBRI Cloud with my Database/Leitsystem?
 
-The best way is to use the KOLIBRI Cloud API to periodically gather measurement data from the KOLIBRI Cloud API. When the data is loaded from the API it can be transformed or stored in your database system.
+The best way is to use the KOLIBRI Cloud API to periodically gather measurement data from the KOLIBRI Cloud API. When the data is loaded from the API it can be transformed or stored in your database system.  
 
 This is an example SW (Python) that shows the connection and data loading: <https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-API-daemon-example-with-access-token>  
 
 Please be aware that you need a valid AccessToken. See <https://docs.kolibricloud.ch/cloud-interfaces/api>  
-Ask for a permanent Access Token that is bound to your user account.
+Ask for a permanent Access Token that is bound to your user account.  
 
 ## How to add a KOLIBRI Cloud Chart into my Website?
 
@@ -30,18 +30,6 @@ It is even possible to use „Google Spreadsheet“ as a "database" and visualiz
 
 As the whole www.kolibricloud.com-"Web App" gets all the information through the KOLIBRI Cloud API it is also possible to re-design an own App and just use the KOLIBRI Cloud API to get the data and present them.  
 Alternately, it is possible to periodically gather the measurement data and develop an own API.
-
-## LoRa and TheThingsNetwork: How do I connect my device to the KOLIBRI Cloud?
-
-A [KELLER LoRa device](https://docs.kolibricloud.ch/keller-devices/overview/) can be added to the KOLIBRI Cloud using the following steps:  
-  
-- During the order of the device ask your sales person to let the device pre-configure by the KOLIBRI support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device).
-
-- When using [TTN](https://www.thethingsnetwork.org/) to register your device, go to <https://console.thethingsnetwork.org/> and use the given EUI.  
-
-- Verify your connection with your gateway by seeing a transmission with a payload in the [TTN console](https://console.thethingsnetwork.org/). You may optionally use the [KELLER LoRa Payload Decoder code](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder) to decrypt the real channel values and visualize them in the TTN console.  
-![TTN LoRa Decoder](/cloud-interfaces/img/TTN_PayloadDecryptor.png  "TTN LoRa Decoder")  
-- Choose **HTTP integration** and enter a POST method to forward the URL to `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`. This will forward a transmission to the KOLIBRI Cloud.
 
 ## LoRa and Loriot.io, Swisscom, KPN... : How do I connect my device to the KOLIBRI Cloud?
 

@@ -3,7 +3,8 @@ title: Integrate with Actility/ThingsPark (Swisscom/Digita/KPN/...)
 menu:
     main:
         parent: lora-technology
-        weight: 5
+        weight: 6
+        
 toc: false
 description: Information on how to integrate a configurated LoRa KELLER to the Actility plattform
 ---

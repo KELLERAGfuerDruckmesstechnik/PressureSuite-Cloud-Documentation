@@ -1,5 +1,5 @@
 ---
-title: Device Configuration Protocoll
+title: Device Configuration Protocol
 menu:
     main:
         parent: api

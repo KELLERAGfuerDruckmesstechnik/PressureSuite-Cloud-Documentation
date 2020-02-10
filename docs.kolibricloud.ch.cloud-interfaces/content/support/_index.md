@@ -14,7 +14,7 @@ hidden: true
 For support questions, please refer to
 
 - <kolibri@keller-druck.com>
-- OR: [your local KELLER sales engineer](http://www.keller-druck.ch/home_e/addr_e.asp)  
+- OR: [your local KELLER sales engineer](https://keller-druck.com/en/company/subsidiaries)  
 
 ## Contribute
 
