@@ -19,10 +19,10 @@ description: History about maintenances and outages
 
 ---
 
-### 10.Feb.2020 from 17:30- 11.Feb.2020 08:30 CET
+### 10.Feb.2020 from 17:30 CET - 11.Feb.2020 08:30 CET
 
 **Summary of Impact**:  
-The www.kolibriclloud.ch web app showed no content. Only the the https://test.kolibricloud.ch test environment was working.
+The https://www.kolibricloud.ch web app showed no content. Only the the https://test.kolibricloud.ch test environment was working.
 
 **Preliminary Root Cause**:
 Engineers determined that an error in deployment process that just happens to stop working.  
