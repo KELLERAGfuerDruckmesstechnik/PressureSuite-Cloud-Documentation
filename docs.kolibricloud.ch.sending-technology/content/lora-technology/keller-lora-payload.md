@@ -1,5 +1,5 @@
 ---
-title: The KELLER LoRa payload
+title: The KELLER LoRa communication protocol
 menu:
     main:
         parent: lora-technology
@@ -12,11 +12,16 @@ description: Information how to decrypt and use the LoRa payload encrypted by KE
 
 Due to the limited size of a LoRa message KELLER can send up to five float values per transmission. If a device is configured to send more than 5 float values then two messages have to be transmitted. Be aware that this doubles the message rate and therefore you might have to adjust the sending interval. KELLER recommends not more than 1 message per 10min per device; Independently, if there is one device or one thousand devices.
 
-## How to decrypt the KELLER payload messages?
+## The KELLER ADT/ARC LoRa communication protocol  ...or How to decrypt the KELLER payload messages?
 
-The actual protocol can be [found here](../../ADT1 LoRa data communication protocol 12_2019.pdf) (V12.2019 English)
+#### For the ARC devices
+The actual protocol can be [found here](../../ARC-1 LoRa data communication protocol 02_2020.pdf) (V02.2020 English)
 
-### Example with measurements
+#### For the ADT devices
+The actual protocol can be [found here](../../ADT1 LoRa data communication protocol 02_2020.pdf) (V02.2020 English)
+
+
+### Example with measurements (Port==1, Function code == 0x01)
 
 In the [TTN console](https://console.thethingsnetwork.org/applications) the payload and the decrypted values can be seen in the DATA tab:
 <img src="../../payload_ttn_example.png" alt="TTN payload example"/>  
@@ -49,17 +54,18 @@ byte[] decodedPayload = System.Convert.FromBase64String(payload);
 - The payload is divided into the following groups:  
 ![picture of internal payload build](../../payload_protocol.png "internal payload build")  
 
-- Byte #1: Represents the "function code". For normal ''measurement transmission this is 1. It would be another function code in case of alarming, configuration, transmission acknowledges, ...  
+- Byte #1: Represents the "function code" which is the expected data format structure of the answer message. For normal ''measurement'' transmission this is **1**.   
 **<span style="color:red">01</span> 05 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 --> Function Code = 1  
 
-- Byte 2#: Represents the Device Type (or "Connection Type"). Please use the "Device Type table" below. The value is not zero-based (sorry)  
+- Byte 2#: Represents the Device Type (or "Connection Type"). Please use the "Device Type table" below.  
 **01 <span style="color:red">05</span> 00 D3 BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 --> Device Type = 5  
 
 ##### 3. Decode the bytes to (float) values  
 
 - Byte #2+#3: Represent the information which transmitted channel values have been sent. Each bit represent the used channel from the particular device type  
+![picture of internal payload build](../../payload_protocol_channels.png "internal payload build")  
 **01 05 <span style="color:red">00 D3</span> BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 --> 00 D3 --> 0000'0000 **11**0**1**'00**11**  
 - Transmitted Channels:  
@@ -128,7 +134,7 @@ Above example payload identified:
   - #7 with  0.967890024...  
   - #8 with 23.0  
   
-Now, to map the channels to real named channels with physical units it is needed to lookup the given device type. See [protocol pdf](../../Kommunikationsprotokoll LoRa v2.0.pdf) or the [table below](#mapping).
+Now, to map the channels to real named channels with physical units it is needed to lookup the given device type. See [protocol pdf](../../ADT1 LoRa data communication protocol 02_2020.pdf) or the [table below](#mapping).
   
 The given channels are therefore:
 
