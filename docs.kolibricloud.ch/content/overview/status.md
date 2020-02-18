@@ -19,6 +19,22 @@ description: History about maintenances and outages
 
 ---
 
+### 10.Feb.2020 from 17:30 CET - 11.Feb.2020 08:30 CET
+
+**Summary of Impact**:  
+The https://www.kolibricloud.ch web app showed no content. Only the the https://test.kolibricloud.ch test environment was working.
+
+**Preliminary Root Cause**:
+Engineers determined that an error in deployment process that just happens to stop working.  
+The specific error is documented here: https://github.com/microsoft/azure-pipelines-tasks/issues/10387  
+
+**Mitigation:**:  
+The DevOps Engineer fixed and tested the issue by updateting the CD component.
+
+**Next Steps**:  
+None.
+
+---
 
 ### From 23.Jan.2020 to 10.Feb.2020
 
