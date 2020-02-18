@@ -4,15 +4,16 @@ menu:
     main:
         parent: lora-technology
         weight: 3
-toc: true
+toc: false
 description: Information how to decrypt and use the LoRa payload encrypted by KELLER AG
 ---
+
 
 ## How many LoRa messages can I send per device?
 
 Due to the limited size of a LoRa message KELLER can send up to five float values per transmission. If a device is configured to send more than 5 float values then two messages have to be transmitted. Be aware that this doubles the message rate and therefore you might have to adjust the sending interval. KELLER recommends not more than 1 message per 10min per device; Independently, if there is one device or one thousand devices.
 
-## The KELLER ADT/ARC LoRa communication protocol  ...or How to decrypt the KELLER payload messages?
+## The KELLER ADT/ARC LoRa communication protocol     ...or How to decrypt the KELLER payload messages?
 
 #### For the ARC devices
 The actual protocol can be [found here](../../ARC-1 LoRa data communication protocol 02_2020.pdf) (V02.2020 English)
