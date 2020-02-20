@@ -65,7 +65,7 @@ byte[] decodedPayload = System.Convert.FromBase64String(payload);
 
 ##### 3. Decode the bytes to (float) values  
 
-- Byte #2+#3: Represent the information which transmitted channel values have been sent. Each bit represent the used channel from the particular device type  
+- Byte #3+#4: Represent the information which transmitted channel values have been sent. Each bit represent the used channel from the particular device type  
 ![picture of internal payload build](../../payload_protocol_channels.png "internal payload build")  
 **01 05 <span style="color:red">00 D3</span> BF 60 42 59 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 --> 00 D3 --> 0000'0000 **11**0**1**'00**11**  
@@ -76,7 +76,7 @@ byte[] decodedPayload = System.Convert.FromBase64String(payload);
   - #7  
   - #8  
 
-- Byte #4 .. #7: Represents a float value using the IEEE 754 (<https://en.wikipedia.org/wiki/IEEE_754)> standard.  
+- Byte #5 .. #8: Represents a float value using the IEEE 754 (<https://en.wikipedia.org/wiki/IEEE_754)> standard.  
 **01 05 00 D3 <span style="color:red">BF 60 42 59</span> 3D BC 29 FC 41 A8 D9 00 3F 77 C7 A4 41 B8 00 00**  
 --> BF 60 42 59 --> -0.876012384...
 
