@@ -3,7 +3,7 @@ title: KELLER Device Channel Mapping
 menu:
     main:
         parent: api
-        weight: 2
+        weight: 3
 ---
 
 # KELLER Channel mapping

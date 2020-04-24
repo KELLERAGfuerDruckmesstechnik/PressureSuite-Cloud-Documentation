@@ -3,7 +3,7 @@ title: Device Configuration Protocol
 menu:
     main:
         parent: api
-        weight: 2
+        weight: 4
 ---
 
 # Device Config API to "Cellular data communication protocol" Mapping
