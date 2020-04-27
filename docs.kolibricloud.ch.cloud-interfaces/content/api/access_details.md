@@ -50,9 +50,9 @@ Endpoints of interest are:
 
 **Data Params**
 
-* **skip** (OPTIONAL)<br />
-Type: integer($int32)<br />
-Default: 0<br />
+* **skip** (OPTIONAL)<br/>  
+Type: integer($int32)<br/>  
+Default: 0<br/>  
 Use: *Skips the given number of devices. The opposite of Take.*
 
 * **take** (OPTIONAL)<br />
@@ -219,7 +219,7 @@ Use: *Every device has an 4 digit id number. The ```deviceId``` is the same numb
 
 **Data Params**
 
-* **measurementDefinitionId ** (REQUIRED)<br />
+* **measurementDefinitionId** (REQUIRED)<br />
 Type: integer($int32)<br />
 Use: *Every ```measurementDefinitionId``` represents a pyhsical measurment identifiaction and unit. The list of all ```measurementDefinitionId``` can be seen here: https://docs.kolibricloud.ch/cloud-interfaces/api/channels/*
 
@@ -235,7 +235,7 @@ Use: *Normally, the start UTC timestamp has to be given. It is in the ISO format
 * **end** (OPTIONAL)<br />
 Type: string($date-time)<br />
 Default: null<br />
-Use: *Normally, the end UTC timestamp has to be given. It is in the ISO format (ISO 8601) eg. ```2020-04-01T23:59:01.009Z```. All replied measurement data are older then this timestamp. If the ```end``` timestamp is not given then all data is returned from the ```start``` timestamp.
+Use: *Normally, the end UTC timestamp has to be given. It is in the ISO format (ISO 8601) eg. ```2020-04-01T23:59:01.009Z```. All replied measurement data are older then this timestamp. If the ```end``` timestamp is not given then all data is returned from the ```start``` timestamp.*
 
 * **isFiltered** (OPTIONAL)<br />
 Type: boolean<br />
