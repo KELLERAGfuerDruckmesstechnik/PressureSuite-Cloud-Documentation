@@ -83,7 +83,7 @@ Use: *If False then the list of the devices is ordered in descending order.*
 
   * **Code:** 200   
     **Content:** 
-```
+``` yaml
 {
   "totalRecords": 2,
   "devices":
@@ -135,13 +135,13 @@ Use: *Every device has an 4 digit id number. The ```deviceId``` is the same numb
 ``` yaml
 {
   "deviceId": 2128,  #Use the deviceId as an unique identifier for a remote sending unit / measurement location
-  "stationId": "GSM: +901405100340210",  //Do not use this
+  "stationId": "GSM: +901405100340210",  #Do not use this
   "measurementDefinitions": [
     {
-      "id": 11,     // this is the measurementDefinitionId
-      "name": "Pd (P1-PBaro)",  // The standard name of the channel
-      "unitId": 101,  // This is bar. See below what unitId represents
-      "isActive": true //Normally, a sending device has many channels but only a few are used. Those which are active are used. The inactive channels do not have data.
+      "id": 11,     # this is the measurementDefinitionId
+      "name": "Pd (P1-PBaro)",  # The standard name of the channel
+      "unitId": 101,  # This is bar. See below what unitId represents
+      "isActive": true #Normally, a sending device has many channels but only a few are used. Those which are active are used. The inactive channels do not have data.
     },
     {
       "id": 2,
@@ -201,12 +201,12 @@ Use: *Every device has an 4 digit id number. The ```deviceId``` is the same numb
   "note": null,  #This is a note text written by a user in the front end (rsp. with the POST /v1/device/{deviceId} endpoint)
   "numberOfUnconfirmedAlarms": 8, #The number of unconfirmed alarms
   "lastMeasurementTransmissionDateTime": "2020-04-23T18:01:35.3835644", #The UTC timestamp when the last transmission happened
-  "signalQuality": 24, //Represents the signal strength in "Arbitrary Strength Unit".  (24 ASU * 2)-113dBm = -65dBm signal strength
-  "humidity": 29, // 29% humidity
-  "batteryInfoVoltageInVolt": 3.814, // battery voltage
-  "batteryInfoCapacityInPercent": 98, // battery capacity calculated by the voltage and used time. Be aware that this will be resetted to 100% when the remote sending device is disconnected from the power (eg. during a battery change).
-  "transmissionInterval": null, //unused for now
-  "saveInterval": null //unused for now
+  "signalQuality": 24, #Represents the signal strength in "Arbitrary Strength Unit".  (24 ASU * 2)-113dBm = -65dBm signal strength
+  "humidity": 29, # 29% humidity
+  "batteryInfoVoltageInVolt": 3.814, # battery voltage
+  "batteryInfoCapacityInPercent": 98, # battery capacity calculated by the voltage and used time. Be aware that this will be resetted to 100% when the remote sending device is disconnected from the power (eg. during a battery change).
+  "transmissionInterval": null, #unused for now
+  "saveInterval": null #unused for now
 }
 ```
 * **Error Response:**
@@ -255,14 +255,14 @@ Use: *Normally, the measurements are returned in UTC time. But it is also possib
 
   * **Code:** 200   
     **Content:** 
-``` json
+``` yaml
 {
-  "measurementDefinitionId": 8, // this is the measurementDefinitionId. 8 represents TBaro which, normally, is similar to the air temperature but measured inside of the remote sending unit.
+  "measurementDefinitionId": 8, # this is the measurementDefinitionId. 8 represents TBaro which, normally, is similar to the air temperature but measured inside of the remote sending unit.
   "deviceId": 2128,
   "values": [
     {
       "time": "2020-04-01T03:00:02",
-      "value": 10.23999  // In this case this is 10.23999 °C
+      "value": 10.23999  # In this case this is 10.23999 °C
     },
     {
       "time": "2020-04-01T03:10:02",
@@ -285,7 +285,7 @@ Use: *Normally, the measurements are returned in UTC time. But it is also possib
       "value": 9.969971
     }
   ],
-  "unitId": 201 // See table below. 201 represents 'Temperature' in °C
+  "unitId": 201 # See table below. 201 represents 'Temperature' in °C
 }
 ```
 * **Error Response:**
@@ -297,7 +297,7 @@ Use: *Normally, the measurements are returned in UTC time. But it is also possib
 
 The used units mapping can be get with the ```GET ​/v1​/Units``` endpoint. It returns this:
 
-``` json
+``` yaml
 {
   "units": [
     {
