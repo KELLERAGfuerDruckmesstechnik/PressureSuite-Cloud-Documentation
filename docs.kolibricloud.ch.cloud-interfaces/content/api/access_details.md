@@ -50,29 +50,29 @@ Endpoints of interest are:
 
 **Data Params**
 
-* **skip** (OPTIONAL)<br/>  
-Type: integer($int32)<br/>  
-Default: 0<br/>  
+* **skip** (OPTIONAL)  
+Type: integer($int32)  
+Default: 0  
 Use: *Skips the given number of devices. The opposite of Take.*
 
-* **take** (OPTIONAL)<br/>
-Type: integer($int32)<br/>
-Default: 50<br/>
+* **take** (OPTIONAL)  
+Type: integer($int32)  
+Default: 50<br/>  
 Use: *Takes only the first .. devices. The opposite of Skip. When not specified the API replies with the first 50 devices.*
 
-* **searchText** (OPTIONAL)<br />  
-Type: string<br />  
-Default: null<br />  
+* **searchText** (OPTIONAL)  
+Type: string  
+Default: null  
 Use: *Text term to filter all devices. Only the devices with ```searchText``` in the ```name``` or ```network```*
 
-* **sortField** (OPTIONAL)<br />
-Type: string<br />
-Default: null<br />
+* **sortField** (OPTIONAL)  
+Type: string  
+Default: null  
 Use: *Default it is sort by the device's ```"Name"```. It is also possible to sort for ```"NetworkNode"```, ```"TransferType"```, ```"GsmNumber"```, ```"EuiNumber"```, ```"SerialNumber"```*
 
-* **sortAscending** (OPTIONAL)<br />
-Type: boolean<br />
-Default: True<br />
+* **sortAscending** (OPTIONAL)  
+Type: boolean  
+Default: True  
 Use: *If False then the list of the devices is ordered in descending order.*
 
 **Sample Call**
@@ -81,7 +81,7 @@ Use: *If False then the list of the devices is ordered in descending order.*
 
 **Successfull Sample Response:**
 
-  * **Code:** 200 <br />
+  * **Code:** 200   
     **Content:** 
 ```
 {
@@ -111,7 +111,7 @@ Use: *If False then the list of the devices is ordered in descending order.*
 }
 ```
 * **Error Response:**
-  * **Code:** 401 UNAUTHORIZED <br />
+  * **Code:** 401 UNAUTHORIZED   
 
 
 ### GET /v1/Device/{deviceId}
@@ -120,8 +120,8 @@ Use: *If False then the list of the devices is ordered in descending order.*
 
 **Data Params**
 
-* **deviceId** (REQUIRED)<br />
-Type: integer($int32)<br />
+* **deviceId** (REQUIRED)  
+Type: integer($int32)  
 Use: *Every device has an 4 digit id number. The ```deviceId``` is the same number that can be seen in the URL of the WebApp when the device is selected: [https://www.kolibricloud.ch/devices/**1234**/](https://www.kolibricloud.ch/devices/1234/)*
 
 **Sample Call**
@@ -130,11 +130,11 @@ Use: *Every device has an 4 digit id number. The ```deviceId``` is the same numb
 
 **Successfull Sample Response:**
 
-  * **Code:** 200 <br />
+  * **Code:** 200   
     **Content:** 
-``` json
+``` yaml
 {
-  "deviceId": 2128,  //Use the deviceId as an unique identifier for a remote sending unit / measurement location
+  "deviceId": 2128,  #Use the deviceId as an unique identifier for a remote sending unit / measurement location
   "stationId": "GSM: +901405100340210",  //Do not use this
   "measurementDefinitions": [
     {
@@ -198,9 +198,9 @@ Use: *Every device has an 4 digit id number. The ```deviceId``` is the same numb
       "isActive": false
     }
   ],
-  "note": null,  //This is a note text written by a user in the front end (rsp. with the POST /v1/device/{deviceId} endpoint)
-  "numberOfUnconfirmedAlarms": 8, //The number of unconfirmed alarms
-  "lastMeasurementTransmissionDateTime": "2020-04-23T18:01:35.3835644", //The UTC timestamp when the last transmission happened
+  "note": null,  #This is a note text written by a user in the front end (rsp. with the POST /v1/device/{deviceId} endpoint)
+  "numberOfUnconfirmedAlarms": 8, #The number of unconfirmed alarms
+  "lastMeasurementTransmissionDateTime": "2020-04-23T18:01:35.3835644", #The UTC timestamp when the last transmission happened
   "signalQuality": 24, //Represents the signal strength in "Arbitrary Strength Unit".  (24 ASU * 2)-113dBm = -65dBm signal strength
   "humidity": 29, // 29% humidity
   "batteryInfoVoltageInVolt": 3.814, // battery voltage
@@ -210,7 +210,7 @@ Use: *Every device has an 4 digit id number. The ```deviceId``` is the same numb
 }
 ```
 * **Error Response:**
-  * **Code:** 401 UNAUTHORIZED <br />
+  * **Code:** 401 UNAUTHORIZED   
 
 
 ### GET /v1/Measurements
@@ -219,32 +219,32 @@ Use: *Every device has an 4 digit id number. The ```deviceId``` is the same numb
 
 **Data Params**
 
-* **measurementDefinitionId** (REQUIRED)<br />
-Type: integer($int32)<br />
+* **measurementDefinitionId** (REQUIRED)  
+Type: integer($int32)  
 Use: *Every ```measurementDefinitionId``` represents a pyhsical measurment identifiaction and unit. The list of all ```measurementDefinitionId``` can be seen here: https://docs.kolibricloud.ch/cloud-interfaces/api/channels/*
 
-* **deviceId** (REQUIRED)<br />
-Type: integer($int32)<br />
+* **deviceId** (REQUIRED)  
+Type: integer($int32)  
 Use: *Every device has an 4 digit id number. The ```deviceId``` is the same number that can be seen in the URL of the WebApp when the device is selected: [https://www.kolibricloud.ch/devices/**1234**/](https://www.kolibricloud.ch/devices/1234/)*
 
-* **start** (OPTIONAL)<br />
-Type: string($date-time)<br />
-Default: null<br />
+* **start** (OPTIONAL)  
+Type: string($date-time)  
+Default: null  
 Use: *Normally, the start UTC timestamp has to be given. It is in the ISO format (ISO 8601) eg. ```2020-04-01T12:34:56.009Z```. All replied measurement data are younger then this timestamp. If the ```start``` timestamp is not given then all data is returned until the ```end``` timestamp.*
 
-* **end** (OPTIONAL)<br />
-Type: string($date-time)<br />
-Default: null<br />
+* **end** (OPTIONAL)  
+Type: string($date-time)  
+Default: null  
 Use: *Normally, the end UTC timestamp has to be given. It is in the ISO format (ISO 8601) eg. ```2020-04-01T23:59:01.009Z```. All replied measurement data are older then this timestamp. If the ```end``` timestamp is not given then all data is returned from the ```start``` timestamp.*
 
-* **isFiltered** (OPTIONAL)<br />
-Type: boolean<br />
-Default: False<br />
+* **isFiltered** (OPTIONAL)  
+Type: boolean  
+Default: False  
 Use: *If True then only 1500 measurement points are taken. The choosen measurments point are given by the Largest Triangle Three Buckets algorithm.*
 
-* **ianaTimeZone** (OPTIONAL)<br />
-Type: boolean<br />
-Default: null<br />
+* **ianaTimeZone** (OPTIONAL)  
+Type: boolean  
+Default: null  
 Use: *Normally, the measurements are returned in UTC time. But it is also possible to specifiy a time zone and the measurement's time is calculated to a local time. See the list of IANA names: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones Eg. "&ianaTimeZone=America/Costa_Rica"*
 
 **Sample Call**
@@ -253,7 +253,7 @@ Use: *Normally, the measurements are returned in UTC time. But it is also possib
 
 **Successfull Sample Response:**
 
-  * **Code:** 200 <br />
+  * **Code:** 200   
     **Content:** 
 ``` json
 {
@@ -289,8 +289,8 @@ Use: *Normally, the measurements are returned in UTC time. But it is also possib
 }
 ```
 * **Error Response:**
-  * **Code:** 401 UNAUTHORIZED <br />
-  * **Code:** 500 Internal Server Error - Happens when at least one of the parameters is wrong or access is not given. Eg. Wrong ```deviceId``` or ```measurementDefinitionId``` which does not exist in the given device.<br />
+  * **Code:** 401 UNAUTHORIZED   
+  * **Code:** 500 Internal Server Error - Happens when at least one of the parameters is wrong or access is not given. Eg. Wrong ```deviceId``` or ```measurementDefinitionId``` which does not exist in the given device.  
 
 
 # Units / unitId
