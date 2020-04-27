@@ -55,14 +55,14 @@ Type: integer($int32)<br/>
 Default: 0<br/>  
 Use: *Skips the given number of devices. The opposite of Take.*
 
-* **take** (OPTIONAL)<br />
-Type: integer($int32)<br />
-Default: 50<br />
+* **take** (OPTIONAL)<br/>
+Type: integer($int32)<br/>
+Default: 50<br/>
 Use: *Takes only the first .. devices. The opposite of Skip. When not specified the API replies with the first 50 devices.*
 
-* **searchText** (OPTIONAL)<br />
-Type: string<br />
-Default: null<br />
+* **searchText** (OPTIONAL)<br />  
+Type: string<br />  
+Default: null<br />  
 Use: *Text term to filter all devices. Only the devices with ```searchText``` in the ```name``` or ```network```*
 
 * **sortField** (OPTIONAL)<br />
