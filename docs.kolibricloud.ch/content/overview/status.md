@@ -9,7 +9,7 @@ description: History about maintenances and outages
 ---
 # Status
 
-🟢 ***OK*** - The KOLIBRI Cloud is working as planned
+***OK*** - The KOLIBRI Cloud is working as planned
 
 ## Planned Maintenance windows
 

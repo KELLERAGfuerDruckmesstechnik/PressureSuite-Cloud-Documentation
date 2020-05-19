@@ -36,20 +36,20 @@ See <https://lora-alliance.org/>
 
 <https://lpn.swisscom.ch>  
 *"The Swisscom LPN currently covers 96.7% of the Swiss population. The information contained in this map is based on network coverage simulations, so small variations in coverage may occur. Map dated 14 June 2019."*
-![Swisscom LoRa Coverage](../../coverage_Swisscom_IoT.jpg"Swisscom LoRa Coverage")
+![Swisscom LoRa Coverage](../../coverage_Swisscom_IoT.jpg "Swisscom LoRa Coverage")
 
 #### Example Finland: Digita
 
 <https://www.digita.fi/en/services/iot>  
 <https://www.digita.fi/en/services/iot/iot_lorawan_network_coverage_map>  
 *"Using Digita's nationwide covering LPWA(Low Power Wide Area), LoRa is next-generation’s radio technology that has been especially designed to meet the needs of IoT. [..] For many customers of Digita, it is crucial to develop IoT-services without complicated local network or gateway solutions in properties. "*  
-![Finland LoRa Coverage](../../Digita_IoT_peittoalueet.jpg"Finland LoRa Coverage")
+![Finland LoRa Coverage](../../Digita_IoT_peittoalueet.jpg "Finland LoRa Coverage")
 
 #### Example The Netherlands: KPN
 
 <https://www.kpn.com/lora>  
 *"KPN is working hard to expand our LoRa network, so you can enjoy the same coverage as our other mobile networks, wherever you are in the Netherlands."*
-![Netherland LoRa Coverage](../../coverage_KPN_IoT.jpg"Netherland LoRa Coverage")
+![Netherland LoRa Coverage](../../coverage_KPN_IoT.jpg "Netherland LoRa Coverage")
 
 ### Software Integrators with experience with KELLER devices
 
@@ -61,7 +61,7 @@ You might want to have an own or another frontend? You are searching for a partn
 *"Decentlab is a Swiss company providing wireless sensor devices and services for distributed, cost-effective monitoring solutions."*
 <https://keller-druck.decentlab.com/d/000000031/keller-demo-at-keller-druck>
 
-#### Hivemind (GSM/LoRa)
+#### Akenza (GSM/LoRa)
 
 <https://akenza.com//>  
 *"Akenza is a Swiss leading IoT company with focus on commercial IoT."*
