@@ -16,10 +16,10 @@ Due to the limited size of a LoRa message KELLER can send up to five float value
 ## The KELLER ADT/ARC LoRa communication protocol     ...or How to decrypt the KELLER payload messages?
 
 #### For the ARC devices
-The actual protocol can be ![found here](https://docs.kolibricloud.ch/sending-technology/ARC-1%20LoRa%20data%20communication%20protocol%2002_2020.pdf) (V02.2020 English)
+The actual protocol can be [found here](https://docs.kolibricloud.ch/sending-technology/ARC-1%20LoRa%20data%20communication%20protocol%2002_2020.pdf) (V02.2020 English)
 
 #### For the ADT devices
-The actual protocol can be ![found here](https://docs.kolibricloud.ch/sending-technology/ADT1%20LoRa%20data%20communication%20protocol%2002_2020.pdf) (V02.2020 English)
+The actual protocol can be [found here](https://docs.kolibricloud.ch/sending-technology/ADT1%20LoRa%20data%20communication%20protocol%2002_2020.pdf) (V02.2020 English)
 
 
 ### Example with measurements (Port==1, Function code == 0x01)
