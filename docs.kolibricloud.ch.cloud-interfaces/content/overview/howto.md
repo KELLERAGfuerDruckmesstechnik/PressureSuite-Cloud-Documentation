@@ -31,9 +31,11 @@ It is even possible to use „Google Spreadsheet“ as a "database" and visualiz
 As the whole www.kolibricloud.com-"Web App" gets all the information through the KOLIBRI Cloud API it is also possible to re-design an own App and just use the KOLIBRI Cloud API to get the data and present them.  
 Alternately, it is possible to periodically gather the measurement data and develop an own API.
 
-## LoRa and Loriot.io, Swisscom, KPN... : How do I connect my device to the KOLIBRI Cloud?
+## LoRa and Loriot.io, Swisscom, KPN, Digita ... : How do I connect my device to the KOLIBRI Cloud?
 
-Use the same procedure as with TTN but with the specific named services (eg. "HTTP Post").  The [KOLIBRI support team](<kolibri@keller-druck.com>) can help you with the integration.
+Use [the same procedure as with TTN](https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-ttn/) but with the specific named services (eg. "HTTP Post").  
+For *Actility*/*Thingspark* based platforms used by Swisscom, KPN, Digita etc. please See https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-actility/  
+The [KOLIBRI support team](<kolibri@keller-druck.com>) can help you with the integration.
 
 ## LoRa: I want LoRa technology but not share my data in any cloud. What are my options?
 
