@@ -8,7 +8,7 @@ menu:
 
 # KOLIBRI Desktop - The new Logger Software
 
-The 'KOLIBRI Desktop' software is part of the modern KOLIBRI product line which embeds the newest technologies and strives for intuitive design. This software runs on Windows and lets users read out and configure KELLER data loggers. With 'live data', a connected device can record directly to the PC. Selected measurement data can be graphically displayed and exported to various formats.
+The 'KOLIBRI Desktop' Windows software is part of the modern KOLIBRI product line which embeds the newest technologies and strives for intuitive design. Recorded data from KELLER pressure measuring instruments with recording function can be read out and visualised. The measured data can be exported as CSV, JSON, picture, Excel, Word report and other formats for further processing or documentation. Due to the user-friendly interface, the data loggers can be easily configured and optimally adapted to the measuring task by means of the various recording functions. For a conversion of the measuring data immediately after readout, information about the measuring point, such as parameters for water level calculation, can be stored directly in the measuring device.
 
 During the Installation process please install the "FTDI Chip CDM Drivers" when using KOLIBRI Desktop together with Dataloggers. Only install "Manometer driver (LEO 5 USB)" when using the KOLIBRI Desktop together with the "LEO 5" Manometer.
 
