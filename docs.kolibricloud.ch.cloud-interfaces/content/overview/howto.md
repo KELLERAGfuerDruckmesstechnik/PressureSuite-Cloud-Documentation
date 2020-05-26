@@ -34,7 +34,7 @@ Alternately, it is possible to periodically gather the measurement data and deve
 ## LoRa and Loriot.io, Swisscom, KPN, Digita ... : How do I connect my device to the KOLIBRI Cloud?
 
 Use [the same procedure as with TTN](https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-ttn/) but with the specific named services (eg. "HTTP Post").  
-For *Actility*/*Thingspark* based platforms used by Swisscom, KPN, Digita etc. please See https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-actility/  
+For *Actility*/*Thingspark* based platforms used by Swisscom, KPN, Digita etc please see https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-actility/  
 The [KOLIBRI support team](<kolibri@keller-druck.com>) can help you with the integration.
 
 ## LoRa: I want LoRa technology but not share my data in any cloud. What are my options?
