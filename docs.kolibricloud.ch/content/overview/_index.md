@@ -12,7 +12,7 @@ menu:
 
 ![alt text](../img/ArcArchitecture.png "Architecture Overview")
 
-One or more sensors are connected to an data transmitter unit (such as "ARC-1") and transmit data to a FTP-Server or a Mail-Server using a network provider. When using the KOLIBRI Cloud the FTP-Server are automatically gathering the data, transform them in a understandable format and store them in a database hosted in a professional data warehouse. This database is accessible through an API. Authenticated users can access the the API. One way to access the API is using the KOLIBRI Cloud web application.
+One or more sensors are connected to an data transmitter unit (such as "ARC1") and transmit data to a FTP-Server or a Mail-Server using a network provider. When using the KOLIBRI Cloud the FTP-Server are automatically gathering the data, transform them in a understandable format and store them in a database hosted in a professional data warehouse. This database is accessible through an API. Authenticated users can access the the API. One way to access the API is using the KOLIBRI Cloud web application.
 
 ## Overview
 

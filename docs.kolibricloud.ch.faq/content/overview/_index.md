@@ -47,7 +47,7 @@ See more at <https://docs.kolibricloud.ch/sending-technology/lora-technology/>
 
 ## What kind of IoT devices does KELLER have?
 
-KELLER sells pressure sensors that send data via GSM or LoRa. Both using the ARC-1 variations. With or without ATEX certification. 
+KELLER sells pressure sensors that send data via GSM or LoRa. Both using the ARC1 variations. With or without ATEX certification. 
 In 2019 KELLER will sell cost-efficient LoRa-devices. And there will be the first NB-IoT prototypes, too.
 
 ## What does "KOLIBRI" even mean?

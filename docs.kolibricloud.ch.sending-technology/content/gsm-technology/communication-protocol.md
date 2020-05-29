@@ -6,8 +6,8 @@ menu:
         weight: 2
 ---
 
-## The ARC-1 cellular data communication protocol for GSM/UMTS/LTE
-Here is the download link of the **ARC-1 cellular data communication protocol (GSM/UMTS/LTE)**:
+## The ARC1 cellular data communication protocol for GSM/UMTS/LTE
+Here is the download link of the **ARC1 cellular data communication protocol (GSM/UMTS/LTE)**:
 ["Version v1.00a (24-05-2018)](https://docs.kolibricloud.ch/sending-technology/ARC-1%20Cellular%20data%20communication%20protocol%20(GSM%20UMTS%20LTE)%20v1.00a.pdf)  
 
 
