@@ -27,6 +27,9 @@ To register a GSM/ARC device please follow the following steps:
     - Choose the correct device type and only the channels that are needed.
     ![Choose the correct device type picture](../gsmsetup_correcttype.png "Choose the correct device type!") ![Choose only the needed channels picture](../gsmsetup_correctchannels.png "Choose only the needed channels!")  
 
+    - To verify the choice of channels and device connection type it is a good idea to check the actual measurement in [Error/Status]. Only chose those channels that deliver measurement values of interest.  
+    ![Check chosen channels](../gsmsetup_verifyactivechannels.png "Check chosen channels!")  
+
     - Use a "check interval" which is the time the device waits until it checks the FTP server for new configuration (from the DataManager and soon from the KOLIBRI Cloud). An interval of 24h is ok.
     ![Choose a check interval picture](../gsmsetup_checkinterval.png "Check the interval!")
 
