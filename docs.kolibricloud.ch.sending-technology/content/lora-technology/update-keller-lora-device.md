@@ -10,7 +10,7 @@ description: Information how to configuring a LoRaWAN device from KELLER AG
 
 # Configuring a LoRaWAN device from KELLER
 
-The following manual describes how to configure a LoRaWAN device from KELLER (LdT-1 / ADT-1 / ARC-1 Lora) and a K114 adapter cable. It is also available in [German as PDF](../../KELLER_LoRaWAN_Geraet_konfigurieren_V1.0.pdf).
+The following manual describes how to configure a LoRaWAN device from KELLER ARC1-Lora and a K114 adapter cable rsp. a ADT1 and a USB-cable. It is also available in [German as PDF](../../KELLER_LoRaWAN_Geraet_konfigurieren_V1.0.pdf).
 
 The software *GsmConfiguration/GsmSetup* is required for the configuration. The software can be downloaded under the following link: <http://www.keller-druck2.ch/swupdate/GSMSetup/GSMSetup.zip>
 
