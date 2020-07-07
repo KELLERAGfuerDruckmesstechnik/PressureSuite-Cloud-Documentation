@@ -54,7 +54,7 @@ The goal is now to handle and visualize the stored device configurations, in the
 
 
 ----
-## PRIO 3
+## PRIO 2
 
 ### Alarming
 It is wished to automatically trigger alarms when certain device or system specific cases occur:  
@@ -73,7 +73,7 @@ It is wished to automatically trigger alarms when certain device or system speci
 
 
 ----
-## PRIO 4
+## PRIO 3
 ### Easier Registration with Welcome/Guidance Mail for new Users
 The registration process and everything following might be overwhelming to some users. Better guidance and check lists should help to make it clearer what to do.  
 
@@ -93,7 +93,7 @@ The possibility to add multiple reference lines to show various installation dep
 ![Offset channels as reference lines](../../img/roadmap/AddReferenceLines.png)  
 
 ----
-## PRIO 5
+## PRIO 4
 ### Overflow Calculations
 Like the KOLIBRI Desktop-SW the KOLIBRI Cloud has to support overflow calculations, too.
 ![Overflow Calculations 1](../../img/roadmap/Poleni.png)  ![Overflow Calculations 2](../../img/roadmap/Thomson.png)  ![Overflow Calculations 3](../../img/roadmap/Venturi.png)  
