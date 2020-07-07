@@ -29,15 +29,19 @@ PLANNED
 ## Release History
 
 ### Version 6.2.20128.4
+
 #### Description
+
 With this version we introduce the compatibility of [KELLER remote transmission units](https://keller-druck.com/en/products/wireless-solutions). KOLIBRI Desktop can read the measurements from ADT1, ARC1 and GSM-1 & GSM-2 devices.  
 
 #### Features and Enhancements
+
 - **[General]**: New devices supported by KOLIBRI Desktop: ADT1, ARC1, GSM-1, GSM-2. Measurements can be read out but it can not be configured. For a configuration of the remote transmission units it is necessary to use the ["GsmSetup"-tool](https://keller-druck.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results).
 - **[General]**: Connected KELLER devices that are not supported by KOLIBRI Desktop will now show up as "not supported KELLER device"
 - **[Tools]**: Added the import function for Logger 5 and KOLIBRI JSON files  
 
 #### Bug fixes
+
 - fixed: export file name could contain invalid characters and the export would fail
 - fixed: failed import of Logger 5 files now shows the error message why it failed
 
@@ -46,6 +50,7 @@ With this version we introduce the compatibility of [KELLER remote transmission 
 ### Version 6.2.20100.2
 
 #### Description
+
 With this update we introduce many features that were requested and some quality of life upgrades.
 
 #### Features and Enhancements

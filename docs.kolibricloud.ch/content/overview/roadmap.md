@@ -13,38 +13,14 @@ The following roadmap is an idea. Therefore, the priority might change and ee mi
 ![.](../../img/roadmap/void.jpg)  
 
 
-## PRIO 1
-
-### More languages (eg. Polish, Spanish)
-We are going to add more language plus revise the existing terms in cooperation with native partners.  
-![More languages 1](../../img/roadmap/Poland.png) ![More languages 2](../../img/roadmap/Spain.png)  
-
-### Customized Alarm-Mail message subject
-The subject of a mail should be configurable per device.
-
-### Add FTP account for self-assignment of devices
-This feature let an customer admin add FTP server credentials. Each new device communicating from this FTP will automatically added to the customers group.  
-![Add FTP account for auto-assignment of devices](../../img/roadmap/AddFtpAccountForAutoAssignmentOfDevices_red.png)  
-
-### Auto-add used channels
-Especially with the new LoRa ADT devices the used channels have to be changed according to the users configuration. At the same time the user expect to see measuring data from channels that are not sending data anymore but have stored data.  
-![Auto-Add used channels](../../img/roadmap/AutoAssingmentOfUsedChannels.png)  
+## PRIO 1 
 
 ### Customer Administrator features
-- Group-wide "System & Device Alarms" Email
-- Add LoRa device with EUI from device
 - Add registered user to own group
-
-### Show Permanent Token for Administrators
-To make it easier for the users and the KOLIBRI support team the individual permanent tokens of the *contributor* users will be shown.  
-![Show Permanent Token for Administrators](../../img/roadmap/ShowIndividualPermanentToken.png)  
 
 ### DeviceConfiguration for LoRa devices
 Now that the sending 'Device Configuration' for GSM/ARC to devices over FTP/Mail-server is working. We are going to implement the new protocol for KELLER's LoRa devices. The goal is to communicate to and from the device over multiple LoRaWAN transmission using the small payload in an efficient way.  
 ![DeviceConfiguration for LoRa devices](../../img/roadmap/DeviceConfigurationsLoRa.png)  
-
-----
-## PRIO 2  
 
 ### Individual channel customizations
 A long awaiting feature is the possibility to set a different **color** and **name** per channel per device. And each device should have different scale settings.  

@@ -15,13 +15,44 @@ description: Actual Release History and Known Limitations
 
 ---
 
-### v.1.19352.02 (18.December 2019)
+### v.1.20189.01 (07. July 2020)
+
+#### More languages (eg. Polish, Spanish)
+
+We added more languages plus revised the existing terms in cooperation with native partners.  
+![More languages 1](../../img/roadmap/Poland.png) ![More languages 2](../../img/roadmap/Spain.png)  
+
+#### Customized Alarm-Mail message subject
+
+The subject of a mail is configurable per device.
+
+#### Account Settings
+
+- Group-wide "System & Device Alarms" Email
+- Add LoRa device with EUI from device
+
+#### Add FTP account for self-assignment of devices
+
+This feature lets a customer admin add FTP server credentials. Each new device communicating from this FTP will automatically added to the customers group.  
+![Add FTP account for auto-assignment of devices](../../img/add_ftp_image.png)  
+
+#### Auto-add used channels
+
+Especially with the new LoRa ADT devices the used channels have to be changed according to the users configuration. At the same time the user expect to see measuring data from channels that are not sending data anymore but have stored data.  
+![Auto-Add used channels](../../img/roadmap/AutoAssingmentOfUsedChannels.png) 
+
+#### Show Permanent Token for Administrators
+
+To make it easier for the users and the KOLIBRI support team the individual permanent tokens of the *contributor* users are shown.  
+![Show Permanent Token for Administrators](../../img/admin_token.png)  
+
+### v.1.19352.02 (18. December 2019)
 
 #### Device Configuration
 
 Some devices configurations can now be seen and saved through the KOLIBRI Cloud.
 
-### v.1.19315.01 (11.November 2019)
+### v.1.19315.01 (11. November 2019)
 
 #### PREVIEW: Device Configuration
 
@@ -70,7 +101,7 @@ Scale settings are now being saved on the browser side. It must be kept in mind 
 
 ---
 
-### v.1.19108.01 (18.April 2019)
+### v.1.19108.01 (18. April 2019)
 
 #### Translations Update
 
