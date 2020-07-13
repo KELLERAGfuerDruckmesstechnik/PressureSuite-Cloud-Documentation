@@ -31,8 +31,15 @@ A [KELLER LoRa device](https://docs.kolibricloud.ch/keller-devices/overview/) ca
 ![TTN LoRa Decoder](/cloud-interfaces/img/TTN_PayloadDecryptor.png  "TTN LoRa Decoder")  
 
 ### Step 4  
-- Choose **HTTP integration** and enter a POST method to forward the URL to `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`. This will forward a transmission to the KOLIBRI Cloud.  
+- Choose **HTTP integration** and enter a POST method to forward the URL to  
+`https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`
+This will forward a transmission to the KOLIBRI Cloud.  
+- Process ID : Enter the name of the integration which doesn't have an effect  
+- Other fields are empty:  
+  - Authorization: Leave empty  
+  -	Custom Header Name: Leave empty  
+  -	Custom Header Value: Leave empty  
+![TTN HTTP Integration example](/cloud-interfaces/img/TTNIntegration_Integration.png  "TTN HTTP Integration example")  
 
 ### Step 5
 - If the device is already in a accessible KOLIBRI Cloud group it should be possible to see new measurement data from the device. With the connected GSMSetup-tool it is possible to manually execute the sending of measurement data or device information.  If the device is not visible on www.kolibricloud.ch then please wait until the KOLIBRI Cloud support assigned the device to your group.  
-
