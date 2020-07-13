@@ -39,7 +39,7 @@ This will forward a transmission to the KOLIBRI Cloud.
   - Authorization: Leave empty  
   -	Custom Header Name: Leave empty  
   -	Custom Header Value: Leave empty  
-![TTN HTTP Integration example](/cloud-interfaces/img/TTNIntegration_Integration.png  "TTN HTTP Integration example")  
+![TTN HTTP Integration example](../../TTNIntegration_Integration.png  "TTN HTTP Integration example")  
 
 ### Step 5
 - If the device is already in a accessible KOLIBRI Cloud group it should be possible to see new measurement data from the device. With the connected GSMSetup-tool it is possible to manually execute the sending of measurement data or device information.  If the device is not visible on www.kolibricloud.ch then please wait until the KOLIBRI Cloud support assigned the device to your group.  
