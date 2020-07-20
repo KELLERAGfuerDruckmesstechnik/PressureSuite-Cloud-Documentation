@@ -35,7 +35,21 @@ We differ between 13 connection types. Customer that know the GSMSetup-tool reco
   
 Depending on the chosen ***DeviceTypeId*** one has a different set of channel numbers (***ChannelNumber***). These ***ChannelNumber*** are again mapped to certain ***MeasurementDefinitionId*** 's which defines the physical measurement identification and unit.
 
-## Measurement Definition Id
+## MeasurementDefinitionId
+
+##### What is a **MeasurementDefinitionId**?
+This is an integer number representing a MeasurementDefinition and is, currently, between 1 and 54.
+
+A MeasurementDefinition represent the physical unit. In other KELLER SW the "channel number" is used but because in the KOLIBRI Cloud there are many different devices (GSM, ARC, ADT..) with various ways to connect sensors ("DeviceType" (or "Connection Types")) it was settled on using a so called "Measurement Definition" that defines the measured physical unit.
+
+>E.g.:
+MeasurementDefinition "**PBaro**" which is the "**Barometric Pressure**" inside an ARC1 or ADT1. It has an MeasurementDefinitionId of "*7*".
+MeasurementDefinition "**TBaro**" which is the "**Barometric Temperature**" inside an ARC1 or ADT1. It has an MeasurementDefinitionId of "*8*".
+MeasurementDefinition "**TOB1 (4)**" which is the temperature on the 4th attached probe. It has an MeasurementDefinitionId of "*32*".
+
+There are also calculated MeasurementDefinitions.
+MeasurementDefinition "**F**" which is the "**Water Depth**" calculated from a pressure difference and other parameters. It has an MeasurementDefinitionId of "*35*".  
+
 
 | ***MeasurementDefinitionId*** | ***MeasurementDefinition***        |
 | ----------------------------- |----------------------------------- |

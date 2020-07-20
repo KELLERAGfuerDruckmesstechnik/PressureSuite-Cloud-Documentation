@@ -22,50 +22,69 @@ description: Information on how to integrate a configurated LoRa KELLER to the A
 
 ### Step 1
 
-<img src="../../integrateActility/1.png"/>  
-
 Log into the portal and **Create** a **application server**  
+![Create an application server](../../thingpark/001_create_app_server.png  "Create an application server")  
 
 ### Step 2
 
-<img src="../../integrateActility/2.png"/>  
-
 Give a **Name**, choose **Content Type** *JSON* and set the **Status** to **Active**  
 Add a the destination URL which is the KOLIBRI Endpoint URL for LoRa devices and **Save** the **Application Server**  
+![Configure an application server](../../thingpark/002_configure_app_server_2.png  "Configure an application server")
 
 ### Step 3
 
-<img src="../../integrateActility/3.png"/>  
+**Add a Route** to add a route and add a destination. The destination for the KOLIBRI Cloud is:  
+   ```https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==```  
 
-**Create** a **AS Routing profile**  
+![Configure an application server](../../thingpark/002_configure_app_server_add_destination_1.png  "Configure an application server")
+
+### Step 3B
+
+Alternatively, it is possible to use a free service like https://webhook.site/ or https://putsreq.com/ to generate an own endpoint in order to test the communication before adding it to the KOLIBRI Cloud.  
+![Test with webhook.site first](../../thingpark/002_configure_app_server_add_destination_2.png  "Test with webhook.site first")
 
 ### Step 4
-
-<img src="../../integrateActility/4.png"/>  
-
-Give a **Name** and **Add** the new created application server as a **Local application server**. **Save** the **AS routing profile**  
+**Create** a AS routing profile in **AS Routing profiles**.
+![Configure an application server](../../thingpark/002_configure_app_server_add_destination_1.png  "Configure an application server")
 
 ### Step 5
+Give a **Name** and **Add** the new created application server as a **Local application server**. **Save** the **AS routing profile** with the top right **Save** button.  
+![Create a routing profile](../../thingpark/003_create_routing_profile_2.png "Create a routing profile")
 
-<img src="../../integrateActility/5.png"/>  
+### Step 6A
+Before the device can be created it first has to be configured, too. Use the tool ["GSM setup for remote transmission units and its manual"](https://keller-druck.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results) and a similar process like in https://docs.kolibricloud.ch/sending-technology/gsm-technology/ 
 
-Go to **Devices** and choose your device from the list.  
-You might have to **create** the device first.  
+### Step 6B
+Under [Settings] choose the correct "Connection Device/type" based on the attached sensor/probe.  
+In [Error/Status] the measured values of all 
+![Configure a LoRa device 1](../../thingpark/004_configure_device_1.png  "Configure a LoRa device 1") channels can be seen and indicates which channels are of interest.  
 
-//TODO: Add description for device creation with app key, EUI key and GSMSetup tool.
+### Step 6C
+In [Settings] choose only the channels that are of interest. As smaller the amount of chosen channels as better it is for the LoRaWAN transmission.  
+![Configure a LoRa device 2](../../thingpark/004_configure_device_2.png  "Configure a LoRa device 2") 
 
-### Step 6
+### Step 6D
+Under [LoRa Settings] generally use the default values unless you now exactly what you are doing. See https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/  
+Write down the **Device EUI** and the **App Key**.  
+The **Application EUI** has to be programmed based on the provider. For Swisscom this is ```F0-3D-29-AC-71-00-00-01```.  
+![Configure a LoRa device 3](../../thingpark/004_configure_device_3.png  "Configure a LoRa device 3") 
 
-<img src="../../integrateActility/6.png"/>  
 
-With the chosen device, select the **Network**.  
-
-### Step 7
-
-<img src="../../integrateActility/7.png"/>  
-
-In the middle of the page there is the **Network routing**. Please **change** the **AS routing profile** to the new created one.
+### Step 7 
+**Create** a device and add the same settings as seen in the picture below. Just use the individual **Device EUI** and the **App Key**.  The **Application EUI** has to be programmed based on the provider. For Swisscom this is ```F0-3D-29-AC-71-00-00-01```.  
+Use the correct **Connectivity plan** based on the contract with your service provider.  
+Under "Application server routing profile" choose routing profile which was created before.  
+![Create a device](../../thingpark/005_create_device.png  "Create a device") 
 
 ### Step 8
+If the device is already in a accessible KOLIBRI Cloud group it should be possible to see new measurement data from the device. With the connected GSMSetup-tool it is possible to manually execute the sending of measurement data or device information.  
+[TODO: It is now possible for contributor users to **ADD LoRa devices** in the account settings (https://www.kolibricloud.ch/account-settings)]
 
-If the device is already in a accessible KOLIBRI Cloud group it should be possible to see new measurement data from the device. With the connected GSMSetup-tool it is possible to manually execute the sending of measurement data or device information.
+### Tips:
+- The above guide is based on the experience with Swisscom that uses the Actility/ThingPark Wireless platform. It is assumed that other telecom company such as Digita or KNP are using the same platform and therefore have similar steps. Please consult and prefer the guides provided by the telecom company.  
+
+- To force a join it is sometimes helpful to remove and attache the battery of the ADT1.  
+
+- In the ThingPark Wireless "Device Manager" the devices are sometimes not found in the devices menu. They can be easier found when choosing the "List" tab.  
+
+-  Deleting a device and re-adding it can cause an error by the platform. It is better to log out and login after deleting to be able to Add a device.

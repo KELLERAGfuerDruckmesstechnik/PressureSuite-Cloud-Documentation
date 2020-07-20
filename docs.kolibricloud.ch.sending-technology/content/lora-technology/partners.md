@@ -70,7 +70,7 @@ You might want to have an own or another frontend? You are searching for a partn
 #### Lobaro (LoRa)
 
 <https://www.lobaro.com/>  
-*"Lobaro ist Ihr Hamburger Dienstleister für die kosteneffiziente Realisierung industrieller „IoT“ Projekte bzw. der Digitalisierung von Produkten und Prozessen."*
+*"Lobaro ist Ihr Hamburger Dienstleister für die kosteneffiziente Realisierung industrieller "IoT" Projekte bzw. der Digitalisierung von Produkten und Prozessen."*
 
 #### WRMSYSTEM (GSM)
 

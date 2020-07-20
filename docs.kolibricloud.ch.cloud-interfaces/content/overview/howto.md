@@ -24,7 +24,7 @@ Ask for a permanent Access Token that is bound to your user account.
 Currently, it is not possible to export/display KOLIBRI Cloud Charts to another website.
 Consider periodically load the measurement data from the KOLIBRI Cloud API, store it in a (online) data base.  
 Users have good experience with solutions like <https://grafana.com/> (demo: <https://play.grafana.org/)> where it is possible to export an IFrame. There are many such platforms (Prometheus, Kibana, …).
-It is even possible to use „Google Spreadsheet“ as a "database" and visualization tool. Here an older demo from 2017: <http://www.gsmdata.ch/Lora/Leo5SwisscomTestModule.html>
+It is even possible to use "Google Spreadsheet" as a "database" and visualization tool. Here an older demo from 2017: <http://www.gsmdata.ch/Lora/Leo5SwisscomTestModule.html>
 
 ## How to build an own Web App / Mobile App with KOLIBRI Cloud?
 
