@@ -9,7 +9,7 @@ description: History about maintenances and outages
 ---
 # Status
 
-***OK*** - The KOLIBRI Cloud is working as planned
+***NOT OK*** - An important Cloud-WebJob is stopped and under maintanance due to erroneous behaviour. No new data is being processed right now. Data is not lost. We are working on it.
 
 ## Planned Maintenance windows
 
