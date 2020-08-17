@@ -15,6 +15,22 @@ description: Actual Release History and Known Limitations
 
 ---
 
+### v.1.20228.01 (15. August 2020)
+
+#### Individual channel customizations
+A long awaiting feature is the possibility to set a different **color** and **name** per channel per device. And each device should have different scale settings.  
+![Individual channel customizations](../../img/roadmap/CustomizedChannels.png)  
+
+### Export and Alarming in other units (not only m, °C, bar)
+Users using the imperial system need the possibility to export in units like feet, inch and Fahrenheit. 
+When improving the export it shall also be able to export & alarm of Tank- and Overflow Calculation.
+![Export and Alarming in other units](../../img/roadmap/MultipleDevicesExporWithCustomUnits.png) 
+
+### Performance
+We optimize various methods by caching data in order to quickly load various components. Performance is always a feature and we will further improve it.  
+Every API call using the Permanent Access Token was ~1 sec because the 1 sec was needed for the authentication process. We cache this now and only the first API call has now 1 sec, all other generic calls should be around 50-100ms.
+![Performance](../../img/roadmap/performance.png)  
+
 ### v.1.20189.01 (07. July 2020)
 
 #### More languages (eg. Polish, Spanish)
