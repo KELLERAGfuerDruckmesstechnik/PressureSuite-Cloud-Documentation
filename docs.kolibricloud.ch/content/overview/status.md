@@ -9,13 +9,32 @@ description: History about maintenances and outages
 ---
 # Status
 
-***NOT OK*** - An important Cloud-WebJob is stopped and under maintanance due to erroneous behaviour. No new data is being processed right now. Data is not lost. We are working on it.
+***OK***
 
 ## Planned Maintenance windows
 
 - None
 
 ## Outages & Maintenance Windows
+
+---
+
+### 10.Aug.2020 from 17:00 CET - 22:30 CET
+
+**Summary of Impact**:  
+An important Cloud-WebJob has stopped and was under maintenance due to erroneous behavior. 
+No new data was processed but stored in a data queue (service bus), therefore no new data was shown on the KOLIBRI Cloud web app.
+There was no known data loss. 
+
+**Preliminary Root Cause**:
+The present DevOps Engineer determined that a Cloud component during an update misbehaved and didn't start correctly when published.
+Therefore, no new data was processed to the database. The data was temporary stored in a data queue.
+
+**Mitigation:**:  
+The DevOps Engineer fixed the program again and all stored data was processed correctly.
+
+**Next Steps**:  
+None.
 
 ---
 
@@ -29,7 +48,7 @@ Engineers determined that an error in deployment process that just happens to st
 The specific error is documented here: https://github.com/microsoft/azure-pipelines-tasks/issues/10387  
 
 **Mitigation:**:  
-The DevOps Engineer fixed and tested the issue by updateting the CD component.
+The DevOps Engineer fixed and tested the issue by updating the CD component.
 
 **Next Steps**:  
 None.
