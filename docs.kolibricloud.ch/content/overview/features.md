@@ -145,8 +145,6 @@ The selected Calculations are shown in the chart as well:
 
 ## Known Limitations
 
-- Only the default units (°C, bar, m..) will be exported. It is planned to make it possible to export the configured units.
-- The color scheme of the chart lines needs a redesign. Especially, line colors in the multiple device mode.
 - Export of measuring data of multiple devices produces a zip file with the Excel or CSV included instead of having all data in one single Excel/CSV included. It is planned to make this possible.
 - For now, Events (vertical line) nor reference heights (horizontal line) not event ranges (highlighted area) can be added to the chart.
 - Calculations are applied to ALL measurements. It is not possible have a separate calculation for a certain time frame and another calculation for another time range in the same chart.
