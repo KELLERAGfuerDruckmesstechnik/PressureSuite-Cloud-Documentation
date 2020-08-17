@@ -28,7 +28,7 @@ When improving the export it shall also be able to export & alarm of Tank- and O
 
 #### Performance
 We optimize various methods by caching data in order to quickly load various components. Performance is always a feature and we will further improve it.  
-Every API call using the Permanent Access Token was ~1 sec because the 1 sec was needed for the authentication process. We cache this now and only the first API call has now 1 sec, all other generic calls should be around 50-100ms.
+Every API call using the Permanent Access Token was ~1 sec because the 1 sec was needed for the authentication process. We cache this now and only the first API call has now 1 sec, all other generic calls should be around 50-100ms.  
 ![Performance](../../img/roadmap/performance.png)  
 
 ### v.1.20189.01 (07. July 2020)

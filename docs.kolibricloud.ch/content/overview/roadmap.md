@@ -101,4 +101,6 @@ Export of multiple channels into ONE Excel/CSV file.
 ----
 # YOUR idea
 Tell us your idea! What do you need?
-<kolibri@keller-druck.com>
+<kolibri@keller-druck.com>  
+
+<a href="http://www.keller-druck2.ch/swupdate/KOLIBRI/Roadmap/" rel="roadmap">![](../../img/roadmap/void.jpg)</a>
