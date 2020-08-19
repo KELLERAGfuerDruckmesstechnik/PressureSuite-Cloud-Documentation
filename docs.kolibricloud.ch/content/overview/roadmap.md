@@ -103,4 +103,4 @@ Export of multiple channels into ONE Excel/CSV file.
 Tell us your idea! What do you need?  
 <kolibri@keller-druck.com>  
 
-[![](https://docs.kolibricloud.ch/img/logo.png)](http://www.keller-druck2.ch/swupdate/KOLIBRI/Roadmap/)
+[![](https://docs.kolibricloud.ch/img/logo.png)](https://roadmap.kolibricloud.ch/)
