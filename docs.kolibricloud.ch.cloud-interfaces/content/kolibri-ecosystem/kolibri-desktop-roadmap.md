@@ -11,7 +11,7 @@ PLANNED with goal Q3/2020
 - **Adjust** - Adjust function "zeroing" and "gain factor". Also adjust of CDT sensors.  
 - **UX Enhancements** - Various improvements to help with configuration of complex settings.
 - **Compensation with multiple records** - Subtraction of pressure values of multiple record files from multiple devices. This is mostly used to compensate the barometric pressure from another device.
-- **Chinese**
+- **Polish** - Improve translations for polish
 
 PLANNED  
 
@@ -22,11 +22,48 @@ PLANNED
 
 ## Known limitations
 - It is not possible to use Series30-transmitters directly like in the CCS30 tool
-- Wireless connection over K114 BT does not work reliable
 
 -----
 
 ## Release History
+
+### Version 6.2.20225.1
+
+#### Description
+
+This update introduces an improved performance for the device search.
+
+#### Features and Enhancements
+
+- Device search performance improved. Devices can be selected before all ports finished the search
+- Major language update for mandarin
+
+#### Bug fixes
+
+- Fixed some labels and translations
+
+
+### Version 6.2.20191.1
+
+#### Description
+
+In this update we introduce the new DEMO MODE. This mode can be used to try out or present KOLIBRI Desktop without connected devices. 
+
+#### Features and Enhancements
+
+- DEMO MODE: Added a mode to use KOLIBRI Desktop without connected devices. This mode can be used to to try out KOLIBRI Desktop without devices.
+- New button to delete multiple records at once.
+- Configuration: When starting a record the device time is synchronized by default with the option to deselect the synchronisation.
+
+#### Bug fixes
+
+- Fixed: Exporting Files could generate default filenames that contained invalid symbols
+
+- Fixed: Water configuration: Default values for gravity and density are indicated
+
+- Fixed: Water configuration: When loading the water config for the first time many errors were shown
+
+- Fixed: When exporting a .zip where a folder or zip with the same name existed the export would fail
 
 ### Version 6.2.20128.4
 
