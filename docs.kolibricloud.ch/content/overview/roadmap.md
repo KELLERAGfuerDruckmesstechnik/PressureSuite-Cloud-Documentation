@@ -104,3 +104,5 @@ Tell us your idea! What do you need?
 <kolibri@keller-druck.com>  
 
 [![](https://docs.kolibricloud.ch/img/logo.png)](https://roadmap.kolibricloud.ch/)
+
+<iframe src="https://roadmap.kolibricloud.ch/index.html" width="1000" height="840"></iframe>
