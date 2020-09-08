@@ -19,6 +19,10 @@ This is an example SW (Python) that shows the connection and data loading: <http
 Please be aware that you need a valid AccessToken. See <https://docs.kolibricloud.ch/cloud-interfaces/api>  
 Ask for a permanent Access Token that is bound to your user account.  
 
+## Can I use KOLIBRI Cloud and the Datamanager at the same time for the same devices?
+
+No, this is not possible. Both use FTP folders and both grab the data in a periodic fashion. After getting the data, the data is deleted on the FTP server. Would both software tools try to get the data, the faster one gets the data and other not. This behaviour is programmed into the Datamanger and can not be changed as there are no new changes implemented in the DataManager SW.
+
 ## How to add a KOLIBRI Cloud Chart into my Website?
 
 Currently, it is not possible to export/display KOLIBRI Cloud Charts to another website.
