@@ -9,12 +9,7 @@ menu:
 
 See: https://iotconverter.kolibricloud.ch
 
-<p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.FromFtp.png" width="400" />
-  <img src="https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.ToFtp.png"  width="400" /> 
-</p>
-
-<p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.FromLoRaDevice.png" width="400" />
-  <img src="https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.ToLoRaDevice.png"  width="400" /> 
-</p>
+    | 
+--------|------
+![Readme.LiveEditor.FromFtp](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.FromFtp.png?raw=true) | ![Readme.LiveEditor.ToFtp.png](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.ToFtp.png?raw=true)  
+![Readme.LiveEditor.FromLoRaDevice](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.FromLoRaDevice.png?raw=true) | ![Readme.LiveEditor.ToLoRaDevice](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.ToLoRaDevice.png?raw=true)
