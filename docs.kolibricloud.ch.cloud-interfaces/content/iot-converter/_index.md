@@ -1,12 +1,12 @@
 ---
-title: IoT converter library and Live-Editor
+title: Description & Usage
 menu:
     main:
         parent: iot-converter
         weight: 1
 ---
 
-# KellerAg.Shared.IoT.Converters and Live-Editor
+# Introduction
 The *KellerAg.Shared.IoT.Converters* are a set of **.NET** DLLs to handle proprietary communication data from [IoT devices](https://keller-druck.com/en/products/wireless-solutions) of the company [KELLER AG für Druckmesstechnik](https://keller-druck.com).
 
 The main purpose is to demonstrate one possible way to implement the text data stored on FTP folders (via 2G/3G/4G/NB-IoT/LTE-M) or JSON text from/to LoRaWAN network server (TheThingsNetwork / ThingsPark (Actility) / Loriot.io).  
@@ -56,7 +56,6 @@ var deviceConfiguration = new Entites.Data.DeviceSettings{ GeneralNetworkName = 
 gsmCommunicationJsonText = converter.DeviceConfigurationToGsmCommunication(deviceConfiguration);
 ```
 
-
 #### Conversion with LoRa data
 ```csharp
 // Have a look at the examples in https://github.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/blob/master/DemoBlazorApp/Pages/DemoLora.razor 
@@ -86,20 +85,6 @@ List<string> payloads = PayloadConverter.ConvertToActility(payloadInfo);
   // alternative
 List<string> payloads = PayloadConverter.ConvertToLoriot(payloadInfo); 
 ```
-
-
-## Live-Editor with Blazor Web App
-See: https://iotconverter.kolibricloud.ch
-
-<p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.FromFtp.png" width="400" />
-  <img src="https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.ToFtp.png"  width="400" /> 
-</p>
-
-<p float="left" align="middle">
-  <img src="https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.FromLoRaDevice.png" width="400" />
-  <img src="https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/master/Readme.LiveEditor.ToLoRaDevice.png"  width="400" /> 
-</p>
 
 ## Todos
 - Open-Source Entities (KellerAg.Shared.Entities)
