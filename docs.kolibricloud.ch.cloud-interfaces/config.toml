@@ -19,25 +19,32 @@ pygmentsUseClasses = true
     weight = 2
 
 [[menu.main]]
+    pre = "<i class='fas fa-exchange-alt'></i>"
+    name = "IoT Converter Library"
+    identifier = "iot-converter"
+    url = "/iot-converter/"
+    weight = 3
+
+[[menu.main]]
     pre = "<i class='fas fa-desktop'></i>"
     name = "Web App"
     identifier = "webapp"
     url = "/webapp/"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     pre = "<i class='fab fa-connectdevelop'></i>"
     name = "The KOLIBRI Ecosystem"
     identifier = "kolibri-ecosystem"
     url = "/kolibri-ecosystem/"
-    weight = 4
+    weight = 5
 
 [[menu.main]]
     pre = "<i class='fab fa-github'></i>"
     name = "Support"
     identifier = "support"
     url = "/support/"
-    weight = 5
+    weight = 6
 
 [params]
     version = "1.0.0"
