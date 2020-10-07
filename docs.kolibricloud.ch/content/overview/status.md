@@ -19,6 +19,19 @@ description: History about maintenances and outages
 
 ---
 
+### 06.Sep.2020 from 17:00 CET - 07.Sep.2020 10:15 CET
+
+**Summary of Impact**:  
+The API could not be reached (Status code: 502 Bad Gateway)
+
+**Mitigation:**:  
+The API was redeployed.
+
+**Next Steps**:  
+None.
+
+---
+
 ### 10.Aug.2020 from 17:00 CET - 22:30 CET
 
 **Summary of Impact**:  
