@@ -9,11 +9,11 @@ description: History about maintenances and outages
 ---
 # Status
 
-***Active maintenance window***
+***OK***
 
 ## Planned Maintenance windows
 
-- 27.Oct.2020 11:00
+- none
 
 ## Outages & Maintenance Windows
 
