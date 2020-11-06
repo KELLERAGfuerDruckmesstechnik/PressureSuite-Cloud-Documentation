@@ -21,18 +21,19 @@ description: History about maintenances and outages
 
 ### 05.Nov.2020 13:08:07 UTC - 06.Nov.2020 15:33:10 UTC
 
-**Summary of Impact**:  
+**Summary of Impact:**  
 During one day, all measurments of all LoRa devices have a wrong channel.
-This also caused wrong Alarms-mails being triggered.
+This also caused wrong alarms-mails being triggered.
 
-**Preliminary Root Cause**:
+**Preliminary Root Cause:**  
 SW Engineers determined that an error in using the new open-source converter SW (https://iotconverter.kolibricloud.ch/) caused the a wrong conversion where the channel mapping (https://docs.kolibricloud.ch/cloud-interfaces/api/channels/) was off by one (channel).
 
-**Mitigation:**:  
+**Mitigation:**  
 The DevOps Engineer fixed and tested the issue by updating a newer version.  
-*EVERY WRONG MEASUREMENTS WILL BE FIXED DURING THE WEEKEND AND RECIPIENTS OF MAILS WILL BE NOTIFIED.*
+*EVERY WRONG MEASUREMENTS WILL BE FIXED DURING THE WEEKEND AND RECIPIENTS OF MAILS WILL BE NOTIFIED.*  
+[update - 06.Nov2020 - 22:30 CET]: The measurements have been adjusted back to the correct mapping.
 
-**Next Steps**:  
+**Next Steps:**  
 None.
 
 ---
@@ -42,7 +43,7 @@ None.
 **Summary of Impact**:  
 The API could not be reached (Status code: 502 Bad Gateway)
 
-**Mitigation:**:  
+**Mitigation:**  
 The API was redeployed.
 
 **Next Steps**:  
