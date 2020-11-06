@@ -19,6 +19,24 @@ description: History about maintenances and outages
 
 ---
 
+### 05.Nov.2020 13:08:07 UTC - 06.Nov.2020 15:33:10 UTC
+
+**Summary of Impact**:  
+During one day, all measurments of all LoRa devices have a wrong channel.
+This also caused wrong Alarms-mails being triggered.
+
+**Preliminary Root Cause**:
+SW Engineers determined that an error in using the new open-source converter SW (https://iotconverter.kolibricloud.ch/) caused the a wrong conversion where the channel mapping (https://docs.kolibricloud.ch/cloud-interfaces/api/channels/) was off by one (channel).
+
+**Mitigation:**:  
+The DevOps Engineer fixed and tested the issue by updating a newer version.  
+*EVERY WRONG MEASUREMENTS WILL BE FIXED DURING THE WEEKEND AND RECIPIENTS OF MAILS WILL BE NOTIFIED.*
+
+**Next Steps**:  
+None.
+
+---
+
 ### 06.Sep.2020 from 17:00 CET - 07.Sep.2020 10:15 CET
 
 **Summary of Impact**:  
