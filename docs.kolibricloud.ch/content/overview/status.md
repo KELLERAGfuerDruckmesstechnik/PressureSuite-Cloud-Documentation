@@ -9,13 +9,17 @@ description: History about maintenances and outages
 ---
 # Status
 
-***OK***
+:warning: ***THE DATA INGRES HAS BEEN STOPPED***  :warning:  
+Since Friday afternoon data sent over cellular communication via ARCs/GSM are not stored correctly in the cloud database.  
+We are in the process of fixing and testing the issues.  
+
 
 ## Planned Maintenance windows
 
 - none
 
 ## Outages & Maintenance Windows
+:warning:   From 06.Nov.2020 15:33:10 UTC a fix of the LoRa conversion made the FTP conversion unreliable. We are in the process of fixing and testing the issues.
 
 ---
 
