@@ -9,17 +9,28 @@ description: History about maintenances and outages
 ---
 # Status
 
-⚠️ ***THE DATA INGRES HAS BEEN STOPPED***  ⚠️
-Since Friday afternoon data sent over cellular communication via ARCs/GSM are not stored correctly in the cloud database.  
-We are in the process of fixing and testing the issues.  
-
+💚 ***ALL SERVICES ARE RUNNING OK***
 
 ## Planned Maintenance windows
 
 - none
 
-## Outages & Maintenance Windows
-⚠️   From 06.Nov.2020 15:33:10 UTC a fix of the LoRa conversion made the FTP conversion unreliable. We are in the process of fixing and testing the issues.
+## Outages & Maintenance Windows  
+### 06.Nov.2020 15:33:10 UTC - 09.Nov.2020 20:00:00 UTC
+
+**Summary of Impact:**  
+After a new update on 06.Nov.2020 15:33:10 UTC the data ingress of all cellular devices failed.  
+No data from Friday to Monday was available throught the API not the web app.  
+While fixing the issue the LoRa data on Monday some LoRa messages where wrongly assigned, too.
+
+As the data was temporary stored in a DL-queue engineers restored all the data again on Monday night.  
+
+**Mitigation:**  
+Engineers found a bug that caused a wrong conversion and assignment of the GSM1/ARC1 channels.  
+
+**Next Steps:**  
+In hindsight, the SW developer deeply regrets deployind new stuff on a Friday afternoon.  
+
 
 ---
 
