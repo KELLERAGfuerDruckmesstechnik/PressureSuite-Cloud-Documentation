@@ -23,7 +23,9 @@ After a new update on 06.Nov.2020 15:33:10 UTC the data ingress of all cellular 
 No data from Friday to Monday was available throught the API not the web app.  
 While fixing the issue the LoRa data on Monday some LoRa messages where wrongly assigned, too.
 
-As the data was temporary stored in a DL-queue engineers restored all the data again on Monday night.  
+As the data was temporary stored in a DL-queue engineers restored all the data again on Monday night.
+
+If there are still data missing, please contact kolibri@keller-druck.com to restore missing data.
 
 **Mitigation:**  
 Engineers found a bug that caused a wrong conversion and assignment of the GSM1/ARC1 channels.  
