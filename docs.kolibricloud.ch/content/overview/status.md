@@ -16,6 +16,20 @@ description: History about maintenances and outages
 - none
 
 ## Outages & Maintenance Windows  
+
+### 16.Nov.2020 14:42:01 MEZ - 16:14:00 MEZ
+
+**Summary of Impact:**  
+Both, the Web app and the API was inaccessible due to an expired SSL certificate.
+
+**Mitigation:**  
+The annual SSL certificate renewal process seems to be broken and the SSL certificate was not proberly renwed.
+
+**Next Steps:**  
+We manually renewed the certificate and after waiting for all DNS involved all services are now reachable again.
+
+---
+
 ### 06.Nov.2020 15:33:10 UTC - 09.Nov.2020 20:00:00 UTC
 
 **Summary of Impact:**  
