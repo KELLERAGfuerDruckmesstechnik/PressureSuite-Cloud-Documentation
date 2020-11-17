@@ -27,6 +27,26 @@ PLANNED
 
 ## Release History
 
+### Version 6.2.20322.1
+
+#### Description
+
+This update introduces some requested features and various small bug fixes 
+
+#### Features and Enhancements
+
+- Major language update for Polish
+- Added silent installer for KOLIBRI Desktop. Call installer with option "/quiet" to install KOLIBRI Desktop and drivers without any user interaction (Eg. "KolibriDesktopInstaller.exe /quiet")
+- Added new Calculation: Pressure to Force
+- Memory errors of KELLER Devices are now recognized and further actions suggested
+
+#### Bug fixes
+
+- Updated multiple labels in multiple languages
+- Fixed: Communication problems with the timezone of IoT devices (ARC1, ADT1) that run with UTC instead of local time
+- Fixed: Displayed CTD range not updating after configuration
+- Fixed: Unsupported KELLER devices were not recognized
+
 ### Version 6.2.20225.1
 
 #### Description
