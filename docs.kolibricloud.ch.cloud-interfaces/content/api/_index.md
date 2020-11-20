@@ -37,11 +37,13 @@ If you want to try out the API with [Swagger](https://api.kolibricloud.ch/swagge
 You can get a valid bearer token when logged in on <http://www.kolibricloud.ch> under [User Settings]  
 ![BearerToken From Web App](../img/BearerTokenFromWebApp.png)
 
-## Permament Access Token
-If you want a *Permanent Access Token*, please contact the KOLIBRI support team (<kolibri@keller-druck.com>).
-The provided access token must be the value with the key "userOid" in the header of every request. This way a bearer token and the OAUTH flow is NOT needed anymore. 
+## Permanent Access Token
+If you want a *Permanent Access Token*: One user of a customer group has the "CustomerAdmin" rights. This user can get the permanent access token from the web app from https://www.kolibricloud.ch/account-settings.  
+The provided access token must be the value with the key "userOid" in the header of every request. This way a bearer token and the OAUTH flow is NOT needed anymore.  
 
-<img src="https://i.imgur.com/BtOYz6h.png" width="400">
+![Postman and permanent Access Token](../img/permanent-access-token-postman.png)  
+
+
 
 Please create github issues for feature wishes or problems.  
 Or contact <kolibri@keller-druck.com>
