@@ -26,5 +26,5 @@ There are multiple ways to connect devices to the Internet. LoRa, NB-IoT or the 
 
 ---
 
-APIs are the hidden backbone of our modern world which allow software programs to communicate with one another. The web app www.kolibricloud.com is just one way to connect to one API. We show how these multiple Software application can work together and communicate. Please refer to the [Interfaces](/cloud-interfaces/) page.
+APIs are the hidden backbone of our modern world which allow software programs to communicate with one another. The web app www.kolibricloud.ch is just one way to connect to one API. We show how these multiple Software application can work together and communicate. Please refer to the [Interfaces](/cloud-interfaces/) page.
 ![alt text](../img/ArcArchitecture_2.png "Interface Overview")

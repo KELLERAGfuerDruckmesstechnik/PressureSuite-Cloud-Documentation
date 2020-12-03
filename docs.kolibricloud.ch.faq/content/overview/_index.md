@@ -68,7 +68,7 @@ These products all use the latest technologies and a customized design. In addit
 KOLIBRI is the name of the new KELLER AG product line.
 Part of this new product line are the cloud possibilities, which are:
 
-- WebApp : The "Online Program" at www.kolibricloud.com
+- WebApp : The "Online Program" at www.kolibricloud.ch
 
 - API : A standardized interface to transfer data (e.g. measurement data) in a common internet format to other programs/services/clouds
 

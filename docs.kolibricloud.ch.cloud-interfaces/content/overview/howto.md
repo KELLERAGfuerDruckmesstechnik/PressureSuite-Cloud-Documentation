@@ -32,7 +32,7 @@ It is even possible to use "Google Spreadsheet" as a "database" and visualizatio
 
 ## How to build an own Web App / Mobile App with KOLIBRI Cloud?
 
-As the whole www.kolibricloud.com-"Web App" gets all the information through the KOLIBRI Cloud API it is also possible to re-design an own App and just use the KOLIBRI Cloud API to get the data and present them.  
+As the whole www.kolibricloud.ch-"Web App" gets all the information through the KOLIBRI Cloud API it is also possible to re-design an own App and just use the KOLIBRI Cloud API to get the data and present them.  
 Alternately, it is possible to periodically gather the measurement data and develop an own API.
 
 ## LoRa and Loriot.io, Swisscom, KPN, Digita ... : How do I connect my device to the KOLIBRI Cloud?

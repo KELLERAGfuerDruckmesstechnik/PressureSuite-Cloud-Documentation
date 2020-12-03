@@ -10,8 +10,8 @@ toc: false
 
 # General process
 
-- As a customer you can try out the KOLIBRI Cloud by using a demo user name "Test2019" and its password "Test2019" on <https://www.kolibricloud.com>
-- As a customer you can register yourself at https://www.kolibricloud.com at any time. Please understand the [Terms of Use](https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_e.pdf).  
+- As a customer you can try out the KOLIBRI Cloud by using a demo user name "Test2019" and its password "Test2019" on <https://www.kolibricloud.ch>
+- As a customer you can register yourself at https://www.kolibricloud.ch at any time. Please understand the [Terms of Use](https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_e.pdf).  
 - Understand the differences between Groups-Devices-Users
   - A registered user can only see devices that are assigned to the "customer group" the customer is assigned to.
   - The customer and the KELLER sales personal discuss the customer use case and order the KOLIBRI Support to setup one or more customer group/s for the customer.
