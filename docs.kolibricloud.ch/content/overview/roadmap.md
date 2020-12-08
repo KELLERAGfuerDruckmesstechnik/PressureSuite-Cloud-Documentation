@@ -48,10 +48,13 @@ The goal is now to handle and visualize the stored device configurations, in the
 ### Alarming
 It is wished to automatically trigger alarms when certain device or system specific cases occur:  
 * Device Alarm  
+  * Device stopped sending measurments
   * Low Battery - Warn when battery has to be replaced  
   * Too high humidity  
   * Freeze (water must be ice - pressure measurement unusable)  
   * Level probe is not in water anymore  
+  * Immediate Conductivity range change
+  * Some channels are not sending values anymore (defect/removed sensor)
 * System Alarm  
   * Gateway does not respond  
   * FTP/Mail server do not respond  
