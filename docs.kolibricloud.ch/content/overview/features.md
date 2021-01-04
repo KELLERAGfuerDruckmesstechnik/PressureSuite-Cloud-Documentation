@@ -14,6 +14,22 @@ description: Actual Release History and Known Limitations
 ## Releases
 
 ---
+### v.1.21003.01 (03. January 2021)
+
+#### Localized Landing Page
+Depending on where the user logs in the welcome page is in German or English or something in between. It is possible to localize this page to various languages such as
+English, German, Suomi, Russian, Chinese, Swedish, Turkish, Italian, Spanish, Dutch, Polish
+![Localized Landing Page](../../img/roadmap/LoginPageLocalized.png)  
+
+#### Explainer videos
+Youtube-videos that show the functionalities and get a short overview. 
+
+#### Process descriptions
+It is needed to have an easy overview of how to initialize a project with as a sales person, as a customer as KOLIBRI Cloud support person...
+A check list and a graphical overview is wished.  
+
+#### Free .NET DLL to convert data from/to ARC1/ADT1
+See: https://iotconverter.kolibricloud.ch  
 
 ### v.1.20228.01 (15. August 2020)
 
@@ -81,7 +97,7 @@ Some devices configurations can now be seen and saved through the KOLIBRI Cloud.
 Chart performance has been optimized. This was accomplished by two main adjustments:
 
 - Calculating the correct timezone to display on the chart is a time consuming thing when done in the browser. That is why it is now calculated on the backend.
-- Displaying over 100'000 data points per channel is not performant nor really useful as the chart is limited to 1000 pixel wide so it is not possible to present them. The backend no uses the [Largest Triangle Three Buckets algorithm](https://docs.kolibricloud.ch/faq/overview/#does-the-chart-show-all-measurement-points) to downsample the loaded data to a maximum of 1'500 data points per channel. This leads to a drastic performance boost without a significant accuracy loss. The downside of this is that when zooming in some values might be missing. The export feature still exports all data.
+- Displaying over 100'000 data points per channel is not efficient nor really useful as the chart is limited to 1000 pixel wide so it is not possible to present them. The backend no uses the [Largest Triangle Three Buckets algorithm](https://docs.kolibricloud.ch/faq/overview/#does-the-chart-show-all-measurement-points) to down-sample the loaded data to a maximum of 1'500 data points per channel. This leads to a drastic performance boost without a significant accuracy loss. The downside of this is that when zooming in some values might be missing. The export feature still exports all data.
 
 #### Last Data Values
 
