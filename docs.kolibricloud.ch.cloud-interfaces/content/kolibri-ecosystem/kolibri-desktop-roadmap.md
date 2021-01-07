@@ -7,11 +7,9 @@ menu:
 ---
 
 # KOLIBRI Desktop - Roadmap
-PLANNED with goal Q3/2020
+PLANNED with goal Q2/2021
 - **Adjust** - Adjust function "zeroing" and "gain factor". Also adjust of CDT sensors.  
-- **UX Enhancements** - Various improvements to help with configuration of complex settings.
 - **Compensation with multiple records** - Subtraction of pressure values of multiple record files from multiple devices. This is mostly used to compensate the barometric pressure from another device.
-- **Polish** - Improve translations for polish
 
 PLANNED  
 
@@ -19,6 +17,7 @@ PLANNED
 - **Purge obsolete data on the logger device** - Deletion of existing records stored on the device.
 - **CCS30 functionality**
 - **Desktop-to-Cloud connection** - Press a button and store records of your device in the cloud. Access this data using http://www.kolibricloud.ch
+- **Reporting** - new functionality to easily generate reports out of a record
 
 ## Known limitations
 - It is not possible to use Series30-transmitters directly like in the CCS30 tool
