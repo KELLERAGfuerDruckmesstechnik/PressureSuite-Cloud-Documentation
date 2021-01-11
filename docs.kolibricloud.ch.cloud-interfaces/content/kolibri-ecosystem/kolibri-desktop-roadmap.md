@@ -8,7 +8,7 @@ menu:
 
 # KOLIBRI Desktop - Roadmap
 PLANNED with goal Q2/2021
-- **Adjust** - Adjust function "zeroing" and "gain factor". Also adjust of CDT sensors.  
+- **Adjust** - Adjust function "zeroing" and "gain factor".
 - **Compensation with multiple records** - Subtraction of pressure values of multiple record files from multiple devices. This is mostly used to compensate the barometric pressure from another device.
 
 PLANNED  
