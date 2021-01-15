@@ -3,7 +3,7 @@ title: KOLIBRI Mobile
 menu:
     main:
         parent: kolibri-ecosystem
-        weight: 3
+        weight: 4
 
 ---
 
