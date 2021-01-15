@@ -9,12 +9,12 @@ toc: false
 ## Known issue with Microsoft Antivirus Defender  
 For some unknown reasons and starting from 12. January 2021 [Microsoft's patch day](https://www.thezdi.com/blog/2021/1/12/the-january-2021-security-update-review) some customer experience problems with KOLIBRI Desktop when storing data to the local hard disk due to the AntiVirus Defender deleting the data instantly.
 
-#### Effects  
-### When using the "Live Measurement" the SW crashes  
-### When "Read"-ing out data from a logger the SW shows a red popup with "Error while Reading from device"  
+### Effects  
+ - When using the "Live Measurement" the SW crashes  
+ - When "Read"-ing out data from a logger the SW shows a red popup with "Error while Reading from device"  
 ![Device overview](../../img/ReadDataError.png "Device overview")  
 
-#### Possible workaround  
+### Possible workaround  
 We are currently trying to find a solution for this problem.  
 These are the suggested steps for know:
  - Update Windows 10  
