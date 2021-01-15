@@ -4,13 +4,10 @@ menu:
     main:
         parent: kolibri-ecosystem
         weight: 3
+toc: false
 ---
-
-## Known limitations
-- It is not possible to use Series30-transmitters directly like in the CCS30 tool.
-
-# Known issue with Microsoft Antivirus Defender  
-For some unknown reasons and starting from 12. January 2021 (Microsoft's patch day)[https://www.thezdi.com/blog/2021/1/12/the-january-2021-security-update-review] some customer experience problems with KOLIBRI Desktop when storing data to the local hard disk due to the AntiVirus Defender deleting the data instantly.
+## Known issue with Microsoft Antivirus Defender  
+For some unknown reasons and starting from 12. January 2021 [Microsoft's patch day](https://www.thezdi.com/blog/2021/1/12/the-january-2021-security-update-review) some customer experience problems with KOLIBRI Desktop when storing data to the local hard disk due to the AntiVirus Defender deleting the data instantly.
 
 #### Effects  
 ### When using the "Live Measurement" the SW crashes  
@@ -21,16 +18,16 @@ For some unknown reasons and starting from 12. January 2021 (Microsoft's patch d
 We are currently trying to find a solution for this problem.  
 These are the suggested steps for know:
  - Update Windows 10  
- - Manually add exceptions to your 'Microsoft Defender Antivirus' following the steps from (Microsoft)[https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus#add-exclusions-for-microsoft-defender-antivirus-in-the-windows-security-app]
-    1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for Defender.
-    2. Click the Virus & threat protection tile (or the shield icon on the left menu bar).
-    3. Click Virus & threat protection settings.
-    4. Under the Exclusions setting, click 'Add or remove exclusions'.
-    5. Click the plus icon to choose the type and set the options for each exclusion.
-    5.A) Add an exclusion for *File type* with `.json` 
-    5.B) Add an exclusion for *Process* with the path the KOLIBRIDesktop.exe is installed. Most likely: `C:\Program Files (x86)\Keller\KOLIBRIDesktop\KolibriDesktop.exe` 
-    5.C) Add an exclusion for *Folder* with to your storage folder including your user name. `C:\Users\{yourUserName}\Documents\KELLER\KolibriDesktop\data` 
-    5.D) Add an exclusion for *Folder* with to your storage folder including your user name. `C:\Users\{yourUserName}\Documents\KELLER\KolibriDesktop`  
+ - Manually add exceptions to your 'Microsoft Defender Antivirus' following the steps from [Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus#add-exclusions-for-microsoft-defender-antivirus-in-the-windows-security-app)
+    1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for Defender.  
+    2. Click the Virus & threat protection tile (or the shield icon on the left menu bar).  
+    3. Click Virus & threat protection settings.  
+    4. Under the Exclusions setting, click 'Add or remove exclusions'.  
+    5. Click the plus icon to choose the type and set the options for each exclusion.  
+       5.A) Add an exclusion for *File type* with `.json`  
+       5.B) Add an exclusion for *Process* with the path the KOLIBRIDesktop.exe is installed. Most likely: `C:\Program Files (x86)\Keller\KOLIBRIDesktop\KolibriDesktop.exe`  
+       5.C) Add an exclusion for *Folder* with to your storage folder including your user name. `C:\Users\{yourUserName}\Documents\KELLER\KolibriDesktop\data`  
+       5.D) Add an exclusion for *Folder* with to your storage folder including your user name. `C:\Users\{yourUserName}\Documents\KELLER\KolibriDesktop`  
     Example settings for user `sebas` : 
       ![DefenderSettings](../../img/Win10DefenderSettings.png "Defender Settings")  
  - You might have to restart the Windows PC again.
