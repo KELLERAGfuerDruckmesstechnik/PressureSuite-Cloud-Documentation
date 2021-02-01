@@ -14,10 +14,10 @@ The Things Network is changing from V2 to V3 stack.
 This means:  
  - From April 2021 on, no new devices will be able to be added to the old V2 stack at https://console.thethingsnetwork.org/. V3 is available on https://eu1.cloud.thethings.network/console/
  - The devices working with TTN and the KOLIBRI Cloud will still work.
- - Until TTN decides to shut down all V2 servers. We don't know when this will happen.
+ - TTN plans to shut down all V2 servers in September 2021. From then on all devices and gateways needs to be migrated.  
  - The KOLIBRI Support team will update it's backend and make V2 and V3 work in parallel.
  - There might be a point where all LoRaWAN devices and Gateways working over TTN will have to be updated.
- - For this scenario we will implment, test and inform all customers as soon as possible.
+ - For this scenario we will implement, test and inform all customers as soon as possible.
 
 More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256
 
