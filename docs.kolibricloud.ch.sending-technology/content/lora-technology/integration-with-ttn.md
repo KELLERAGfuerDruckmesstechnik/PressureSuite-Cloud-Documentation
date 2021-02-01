@@ -8,7 +8,7 @@ toc: false
 description: Information on how to integrate a configured KELLER LoRa device to the TTN plattform
 ---
 # Warning: The Things Network V2 to V3 migration  
-![V2 to V3 Warning](/TTN_V2_to_V3_Warning.png  "V2 to V3 Warning")  
+![V2 to V3 Warning](../../TTN_V2_to_V3_Warning.png  "V2 to V3 Warning")  
 
 The Things Network is changing from V2 to V3 stack.
 This means:  
