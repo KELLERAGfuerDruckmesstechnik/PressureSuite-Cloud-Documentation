@@ -15,8 +15,16 @@ The following roadmap is an idea. Therefore, the priority might change and ee mi
 
 ## PRIO 1
 
-### MQTT analysis and integration
-We are going to add the possibility to use MQTT in our sending devices. Ideally, the KOLIBRI Cloud backend shall be able to accept and communicate with MQTT.  
+### TTN V2 to V3 migration
+The Things Network is changing from V2 to V3 stack.
+This means:  
+ - From April 2021 on, no new devices will be able to be added to the old V2 stack at https://console.thethingsnetwork.org/. V3 is available on https://eu1.cloud.thethings.network/console/
+ - The devices working with TTN and the KOLIBRI Cloud will still work.
+ - Until TTN decides to shut down all V2 servers. We don't know when this will happen.
+ - The KOLIBRI Support team will update it's backend and make V2 and V3 work in parallel.
+ - For this scenario we will implement, test and inform all customers as soon as possible.
+More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256
+
 
 ### Offset channels as reference lines
 The possibility to add multiple reference lines to show various installation depending components such as the "maximal possible water height".  
@@ -49,6 +57,9 @@ It is wished to automatically trigger alarms when certain device or system speci
 
 ----
 ## PRIO 2
+
+### MQTT analysis and integration
+We are going to add the possibility to use MQTT in our sending devices. Ideally, the KOLIBRI Cloud backend shall be able to accept and communicate with MQTT.  
 
 ### Administer users, their rights and sub groups
 A rather complicated feature but wished by many users is the possibility to generate sub groups and the possibility to assign users to these sub groups in order to assign them and limit their access to certain devices.  
