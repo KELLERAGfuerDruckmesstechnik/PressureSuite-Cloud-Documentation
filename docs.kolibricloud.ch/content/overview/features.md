@@ -14,6 +14,13 @@ description: Actual Release History and Known Limitations
 ## Releases
 
 ---
+### v.1.21042.01 (11. February 2021)
+
+#### Administer users, their rights and sub groups
+With this new feature, the customer administrators can now add new users to their customer group and update their role.
+Users can also be set inactive, which prevents them from signing in
+![Administrator Settings](../../img/roadmap/AdminSettings.png)  
+
 ### v.1.21003.01 (03. January 2021)
 
 #### Localized Landing Page
