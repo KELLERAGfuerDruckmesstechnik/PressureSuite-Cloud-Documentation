@@ -16,8 +16,18 @@ description: Actual Release History and Known Limitations
 ---
 ### v.1.21042.01 (11. February 2021)
 
-#### Administer users, their rights and sub groups
+#### Show customer admin
+Users can now find the name of their customer admin in the account settings.
+![Administrator Settings](../../img/roadmap/CustomerAdmin.png)  
+
+#### Administer users and their rights
 With this new feature, the customer administrators can now add new users to their customer group and update their role.
+Roles:
+
+- Customer admin: Administrator of this group (cannot be grante to another user)
+- Contributor: Can change settings and display options of charts
+- Reader: Can only display but not change any settings
+
 Users can also be set inactive, which prevents them from signing in
 ![Administrator Settings](../../img/roadmap/AdminSettings.png)  
 
