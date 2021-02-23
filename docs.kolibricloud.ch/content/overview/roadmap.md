@@ -30,11 +30,6 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 The possibility to add multiple reference lines to show various installation depending components such as the "maximal possible water height".  
 ![Offset channels as reference lines](../../img/roadmap/AddReferenceLines.png)  
 
-### Customer Administrator features
-- Add registered user to own group
-- Show the user name of the customer administrator
-
-
 ### Alarming
 It is wished to automatically trigger alarms when certain device or system specific cases occur:  
 * Device Alarm  
@@ -59,11 +54,7 @@ It is wished to automatically trigger alarms when certain device or system speci
 ## PRIO 2
 
 ### MQTT analysis and integration
-We are going to add the possibility to use MQTT in our sending devices. Ideally, the KOLIBRI Cloud backend shall be able to accept and communicate with MQTT.  
-
-### Administer users, their rights and sub groups
-A rather complicated feature but wished by many users is the possibility to generate sub groups and the possibility to assign users to these sub groups in order to assign them and limit their access to certain devices.  
-![Administer users, their rights and sub groups](../../img/roadmap/AdminUsers.png)  
+We are going to add the possibility to use MQTT in our sending devices. Ideally, the KOLIBRI Cloud backend shall be able to accept and communicate with MQTT.
 
 ### DeviceConfiguration for LoRa devices
 Now that the sending 'Device Configuration' for GSM/ARC to devices over FTP/Mail-server is working. We are going to implement the new protocol for KELLER's LoRa devices. The goal is to communicate to and from the device over multiple LoRaWAN transmission using the small payload in an efficient way.  
