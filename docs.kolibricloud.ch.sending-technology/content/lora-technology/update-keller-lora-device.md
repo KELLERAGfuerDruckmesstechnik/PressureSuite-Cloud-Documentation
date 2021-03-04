@@ -12,7 +12,7 @@ description: Information how to configuring a LoRaWAN device from KELLER AG
 
 The following manual describes how to configure a LoRaWAN device from KELLER ARC1-Lora and a K114 adapter cable rsp. a ADT1 and a USB-cable. It is also available in [German as PDF](../../KELLER_LoRaWAN_Geraet_konfigurieren_V1.0.pdf).
 
-The software *GsmConfiguration/GsmSetup* is required for the configuration. The software can be downloaded under the following link: <http://www.keller-druck2.ch/swupdate/GSMSetup/GSMSetup.zip>
+The software [GsmConfiguration/GsmSetup](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) is required for the configuration. The software can be downloaded under the following link: <https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units>
 
 A general description of the software can be found here:
 <http://www.keller-druck2.ch/swupdate/GSMSetup/manual/man_gsm2_g_De.pdf>
