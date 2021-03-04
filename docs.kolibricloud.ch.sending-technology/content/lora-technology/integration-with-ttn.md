@@ -55,8 +55,8 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 - Set the *Basic settings* by
   - Choosing an **End device ID** name
-  - Entering the AppEUI from the device (See XXX)
-  - Entering the DevEUI from the device (See XXX)
+  - Entering the AppEUI from the device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
+  - Entering the DevEUI from the device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
 
 ![TTN V3 Add a Device 2](../../TTNV3_AddDevice2.png  "TTN V3 Add a Device 2")
 
@@ -83,7 +83,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 - Connect your PC using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and 
   - Check if you used the same Application EUI
   - Enter the generated App Key from *Step 6*
-  - Program your device (See XXX)
+  - Program your device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
 
 ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
 
