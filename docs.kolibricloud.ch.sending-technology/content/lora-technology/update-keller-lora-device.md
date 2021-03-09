@@ -46,7 +46,7 @@ The parameters required for transmission can be changed in the communication set
 The following settings can be changed:  
 
 - ***Activation method***  
-The activation method OTAA (Network-Session-Key and App-Session-Key are exchanged/created during the first connection) or ABP (Manual entry of keys) can be selected. Depending on the selection of the activation method, the input fields are activated. 
+The activation method OTAA (Network-Session-Key and App-Session-Key are exchanged/created during the first connection) or ABP (Manual entry of keys) can be selected. Depending on the selection of the activation method, the input fields are activated.
   - Default/Recommended: **OTAA**
 
 - ***Device EUI***  
@@ -58,25 +58,31 @@ The unique identification number for the application with which the data is furt
     - For Swisscom/Actility: Use `F0-3D-29-AC-71-00-00-01`
     - For TTN V3: You do not have to change the App EUI. Use this APP EUI when adding the Device to your TTN (V3) application.
 
+
 - ***Device Address / Network Session Key / App Session Key***  
 These settings must be entered for the ABP activation method.
   - Default: When using the preferred OTAA mode these fields can not change.
+
 
 - ***Uplink Mode***  
 The data can be sent with confirmation (confirmed) or without confirmation (unconfirmed) of the network server.
   - Default/Recommended: unconfirmed.  
 
+
 - ***Transmit Mode***  
 If ADR= ON () is selected, the transmission power (SF) of the device is adapted to the ambient conditions by the network server. An optimal ratio between range and power is set. If ADR=OFF, the automatic power adjustment is deactivated and the device transmits with the power set in the "Data Rate" field.  
- - Default/Recommended: ON
+  - Default/Recommended: ON  
+
 
 - ***Data Rate***  
 Here the transmission power can be set, whereby the setting 0 SF12/125kHz achieves the highest power and consequently the highest range (and also the highest energy consumption). With the setting 6 SF7/250kHz the smallest range is reached.  
- - Default/Recommended: Use 1 SF11/125kHz when ADR is OFF  
+  - Default/Recommended: Use 1 SF11/125kHz when ADR is OFF  
+
 
 - ***Power Index***  
 With the Power Index setting the transmission power can be adjusted to the antenna. If an antenna with amplification is used, the transmission power can be reduced so that the transmission power corresponds to the permissible standard.
-  - Default/Recommended: 1 14dbm.
+  - Default/Recommended: 1 14dbm.  
+
 
 ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
 
@@ -89,7 +95,8 @@ The device can send useful information such as battery voltage, battery capacity
 
 ## ReJoin
 Devices with Firmware>20.34 can have a ReJoin interval that helps to fix troubles with LoRa Network Servers (Hello Swisscom)
-  - Default/Recommended: Interval time of 14 days
+  - Default/Recommended: Interval time of 14 days  
+  
 
 ![LoRa Setup ReJoin](../../LoRaSetup-ReJoin.png  "LoRa Setup ReJoin")
 
