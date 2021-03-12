@@ -40,7 +40,8 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 ### Step 2  
 
-- Go to <https://eu1.cloud.thethings.network/console/> and **+Add Application** if you do not have one. Set a **Application ID** and the **Owner**.
+- Go to <https://eu1.cloud.thethings.network/console/> and **+Add Application** if you do not have one. Set a **Application ID** and the **Owner**.  
+
 ![Create a TTN V3 Application](../../TTNV3_CreateApplication.png  "Create a TTN V3 Application")
 
 ### Step 3
@@ -75,7 +76,8 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 ![TTN V3 Add a Device 4](../../TTNV3_AddDevice4.png  "TTN V3 Add a Device 4")
 
-- If you forgot to store the key. It is also possible to copy the key after adding the device:
+- If you forgot to store the key. It is also possible to copy the key after adding the device:  
+
 ![TTN V3 Add a Device 5](../../TTNV3_AddDevice5.png  "TTN V3 Add a Device 5")
 
 ### Step 7
@@ -83,7 +85,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 - Connect your PC using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and 
   - Check if you used the same Application EUI
   - Enter the generated App Key from *Step 6*
-  - Program your device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
+  - Program your device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
 
 ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
 
