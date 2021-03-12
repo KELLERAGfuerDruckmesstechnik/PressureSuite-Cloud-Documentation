@@ -10,7 +10,7 @@ description: Information on how to integrate a configured KELLER LoRa device to 
 
 ## Warning: Upcoming 'The Things Network' V2 to V3 migration
 
-![V2 to V3 Warning](../../TTN_V2_to_V3_Warning.png  "V2 to V3 Warning")  
+> ![V2 to V3 Warning](../../TTN_V2_to_V3_Warning.png  "V2 to V3 Warning")  
 
 The Things Network is changing from V2 to V3 stack.
 This means:  
@@ -27,6 +27,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 ## TTN V3 guide
 
 ### What you need
+
 - An account on 'The Things Network'. If you do not have one than please sign up on https://www.thethingsnetwork.org/
 - A KELLER LoRa device (ADT1 LoRa or ARC1 LoRa)
 - [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and a USB connector cable (ARC1: K114 interface converter / ADT1: Micro USB cable)
@@ -42,7 +43,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 - Go to <https://eu1.cloud.thethings.network/console/> and **+Add Application** if you do not have one. Set a **Application ID** and the **Owner**.  
 
-![Create a TTN V3 Application](../../TTNV3_CreateApplication.png  "Create a TTN V3 Application")
+> ![Create a TTN V3 Application](../../TTNV3_CreateApplication.png  "Create a TTN V3 Application")
 
 ### Step 3
 
@@ -50,7 +51,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
   - Activation mode: OTAA
   - LoRaWAN version: MAC V1.0.2  
 
-![TTN V3 Add a Device 1](../../TTNV3_AddDevice1.png  "TTN V3 Add a Device 1")
+> ![TTN V3 Add a Device 1](../../TTNV3_AddDevice1.png  "TTN V3 Add a Device 1")
 
 ### Step 4
 
@@ -59,7 +60,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
   - Entering the AppEUI from the device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
   - Entering the DevEUI from the device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
 
-![TTN V3 Add a Device 2](../../TTNV3_AddDevice2.png  "TTN V3 Add a Device 2")
+> ![TTN V3 Add a Device 2](../../TTNV3_AddDevice2.png  "TTN V3 Add a Device 2")
 
 ### Step 5
 
@@ -67,18 +68,18 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
   - Choosing an frequency plan. In Europe choose **"Europe 863-870 MHz (SF9 for RX2 - recommended)"**
   - Choosing Regional Parameter version: **PHY V1.0.2 REV B**
 
-![TTN V3 Add a Device 3](../../TTNV3_AddDevice3.png  "TTN V3 Add a Device 3")
+> ![TTN V3 Add a Device 3](../../TTNV3_AddDevice3.png  "TTN V3 Add a Device 3")
 
 ### Step 6
 
 - Set the *Join settings* by
   - Generate an AppKey and store the key. This key is needed to assign, verify and program the device.
 
-![TTN V3 Add a Device 4](../../TTNV3_AddDevice4.png  "TTN V3 Add a Device 4")
+> ![TTN V3 Add a Device 4](../../TTNV3_AddDevice4.png  "TTN V3 Add a Device 4")
 
 - If you forgot to store the key. It is also possible to copy the key after adding the device:  
 
-![TTN V3 Add a Device 5](../../TTNV3_AddDevice5.png  "TTN V3 Add a Device 5")
+> ![TTN V3 Add a Device 5](../../TTNV3_AddDevice5.png  "TTN V3 Add a Device 5")
 
 ### Step 7
 
@@ -87,7 +88,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
   - Enter the generated App Key from *Step 6*
   - Program your device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
 
-![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
+> ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
 
 ### Step 8
 
@@ -102,7 +103,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
   - The most recent KELLER Payload Decoder code is on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder/blob/master/PayloadDecoderFunction.js)
   - Got to **Payload formatters** in your application and paste the decoder code into *Uplink*  using **Javascript** formatter type.
 
-![Add KELLER Payload Decoder](../../TTNV3_AddPayloadDecoder.png  "Add KELLER Payload Decoder")
+> ![Add KELLER Payload Decoder](../../TTNV3_AddPayloadDecoder.png  "Add KELLER Payload Decoder")
 
 ### Step 10
 
@@ -116,7 +117,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
   - Press **Add webhook**
 This will forward a transmission to the KOLIBRI Cloud.  
 
-![TTN V3 Webhook Integration](../../TTNV3_AddIntegrationToKolibri.png  "TTN V3 Webhook Integration")  
+> ![TTN V3 Webhook Integration](../../TTNV3_AddIntegrationToKolibri.png  "TTN V3 Webhook Integration")  
 
 ### Step 11
 
@@ -124,7 +125,7 @@ This will forward a transmission to the KOLIBRI Cloud.
   - In the **Account Settings** on https://www.kolibricloud.ch enter the Device EUI of the LoRa device and press **Add Device**
   - The device should now be visible in the device list. If adding is not possible and a red popup is shown, please contact the KOLIBRI Support Team kolibri@keller-druck.com
 
-![Add LoRa Device To Own Group](../../AddLoRaDeviceToOwnGroup.png  "Add LoRa Device To Own Group")  
+> ![Add LoRa Device To Own Group](../../AddLoRaDeviceToOwnGroup.png  "Add LoRa Device To Own Group")  
 wait until the KOLIBRI Cloud support assigned the device to your group. otototototottotoot
 
 ## Obsolete TTN V2 guide
@@ -135,7 +136,6 @@ wait until the KOLIBRI Cloud support assigned the device to your group. otototot
 - The EUI number of the device (Use the GSMSetup-tool to extract the EUI)  
 - The App key (Use the GSMSetup-tool to write the key)  
 - The KOLIBRI Endpoint URL which is: `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`  
-
 
 A [KELLER LoRa device](https://docs.kolibricloud.ch/keller-devices/overview/) can be added to the KOLIBRI Cloud using the following steps:  
   
@@ -150,7 +150,8 @@ A [KELLER LoRa device](https://docs.kolibricloud.ch/keller-devices/overview/) ca
 ### Step 3  
 
 - Verify your connection with your gateway by seeing a transmission with a payload in the [TTN console](https://console.thethingsnetwork.org/). You may optionally use the [KELLER LoRa Payload Decoder code](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder) to decrypt the real channel values and visualize them in the TTN console.  
-![TTN LoRa Decoder](/cloud-interfaces/img/TTN_PayloadDecryptor.png  "TTN LoRa Decoder")  
+
+> ![TTN LoRa Decoder](/cloud-interfaces/img/TTN_PayloadDecryptor.png  "TTN LoRa Decoder")  
 
 ### Step 4  
 
@@ -162,7 +163,8 @@ This will forward a transmission to the KOLIBRI Cloud.
   - Authorization: Leave empty  
   -	Custom Header Name: Leave empty  
   -	Custom Header Value: Leave empty  
-![TTN HTTP Integration example](../../TTNIntegration_Integration.png  "TTN HTTP Integration example")  
+
+> ![TTN HTTP Integration example](../../TTNIntegration_Integration.png  "TTN HTTP Integration example")  
 
 ### Step 5
 
