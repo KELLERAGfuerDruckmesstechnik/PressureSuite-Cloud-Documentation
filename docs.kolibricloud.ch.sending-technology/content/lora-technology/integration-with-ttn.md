@@ -100,7 +100,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 ### Step 9
 
 - This step is optional. You can add the KELLER Payload Decoder to decode the payload string into readable Measurements/Information visible in the Live-Editor.
-  - The most recent KELLER Payload Decoder code is on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder/blob/master/PayloadDecoderFunction.js)
+  - The most recent KELLER Payload Decoder code is on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder/blob/master/ttn-v3-payload-decoder.js)
   - Got to **Payload formatters** in your application and paste the decoder code into *Uplink*  using **Javascript** formatter type.
 
 > ![Add KELLER Payload Decoder](../../TTNV3_AddPayloadDecoder.png  "Add KELLER Payload Decoder")
@@ -168,4 +168,4 @@ This will forward a transmission to the KOLIBRI Cloud.
 
 ### Step 5
 
-- If the device is already in a accessible KOLIBRI Cloud group it should be possible to see new measurement data from the device. With the connected GSMSetup-tool it is possible to manually execute the sending of measurement data or device information.  If the device is not visible on www.kolibricloud.ch then please wait until the KOLIBRI Cloud support assigned the device to your group.  
+- If the device is already in a accessible KOLIBRI Cloud group it should be possible to see new measurement data from the device. With the connected GSMSetup-tool it is possible to manually execute the sending of measurement data or device information.  If the device is not visible on www.kolibricloud.ch then please wait until the KOLIBRI Cloud support assigned the device to your group. 
