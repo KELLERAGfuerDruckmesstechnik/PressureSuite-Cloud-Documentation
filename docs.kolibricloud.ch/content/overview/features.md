@@ -14,6 +14,12 @@ description: Actual Release History and Known Limitations
 ## Releases
 
 ---
+
+### v.1.21088.01 (30. March 2021)
+### Offset channels as reference lines
+The possibility to add multiple reference lines to show various installation-depending components such as the 'maximal possible water height' or the 'installation depth'.  
+![Offset channels as reference lines](../../img/reference-lines.png)  
+
 ### v.1.21042.01 (11. February 2021)
 
 #### Show customer admin

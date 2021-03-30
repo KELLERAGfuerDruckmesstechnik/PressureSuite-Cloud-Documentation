@@ -26,10 +26,6 @@ This means:
 More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256
 
 
-### Offset channels as reference lines
-The possibility to add multiple reference lines to show various installation depending components such as the "maximal possible water height".  
-![Offset channels as reference lines](../../img/roadmap/AddReferenceLines.png)  
-
 ### Alarming
 It is wished to automatically trigger alarms when certain device or system specific cases occur:  
 * Device Alarm  
