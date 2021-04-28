@@ -9,7 +9,12 @@ description: History about maintenances and outages
 ---
 # Status
 
-💚 ***ALL SERVICES ARE RUNNING OK***
+⚠️ ***FTP SERVICES FROM/TO GSMDATA DO NOT WORK***
+
+**It seems all communication with ftp.gsmdata.ch timeout. Therefore, the cellular devices GSM/ARC1 won't be able send data to the cloud.
+This happened first at 28.April 2021 at 14:00:00 MEZ.
+We are in contact with the service provider to find the cause.**
+
 
 ## Planned Maintenance windows
 
