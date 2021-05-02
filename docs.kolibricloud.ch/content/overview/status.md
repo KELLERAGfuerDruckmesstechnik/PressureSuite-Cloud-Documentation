@@ -9,11 +9,7 @@ description: History about maintenances and outages
 ---
 # Status
 
-⚠️ ***FTP SERVICES FROM/TO GSMDATA DO NOT WORK***
-
-**It seems all communication with ftp.gsmdata.ch timeout. Therefore, the cellular devices GSM/ARC1 won't be able send data to the cloud.
-This happened first at 28.April 2021 at 14:00:00 MEZ.
-We are in contact with the service provider to find the cause.**
+💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***
 
 
 ## Planned Maintenance windows
@@ -21,6 +17,19 @@ We are in contact with the service provider to find the cause.**
 - none
 
 ## Outages & Maintenance Windows  
+
+### 28.April 2021 at 14:00:00 MEZ - 30.April 2021 at 17:00:00 MEZ
+
+**Summary of Impact:**  
+Our FTP-provider did migrate the server to another. Not only did the provider forgot to tell us, they also somehow made mistakes and caused ALL our FTP accounts (ftp.gsmdata.ch) to cease communicating for two days.
+During this time period, all cellular devices (GSM/ARC1) using ftp.gsmdata.ch could not send data to the FTP and, therefore, not to the cloud.
+Nevertheless, the ARC1/GSMs are programmed in a way that after a positive re-connection they re-send the missing data. 
+
+**Next Steps:**  
+There should not been data holes due to the ARC1s/GSMs fault-tolerance startegy. If you think there are any data holes, please contact kolibri@keller-druck.ch to remotely request the missing data.
+
+---
+
 
 ### 16.Nov.2020 14:42:01 MEZ - 16:14:00 MEZ
 
