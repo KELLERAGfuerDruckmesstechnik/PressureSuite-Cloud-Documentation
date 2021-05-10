@@ -9,7 +9,6 @@ menu:
 # KOLIBRI Desktop - Roadmap
 PLANNED with goal Q3/2021
 - **Adjust** - Adjust function "zeroing" and "gain factor".
-- **Compensation with multiple records** - Subtraction of pressure values of multiple record files from multiple devices. This is mostly used to compensate the barometric pressure from another device.
 
 PLANNED  
 
@@ -25,6 +24,21 @@ PLANNED
 -----
 
 ## Release History
+
+### Version 6.2.21127.1
+
+#### Description
+
+This update introduces the air pressure compensation and some "quality of life"-improvements.
+
+#### Features and Enhancements
+
+- Air pressure compensation with measurements from different devices
+- Added new limited device support for: ADT-NB and ARC1-LoRa
+
+#### Bug fixes
+
+- Export: DOCX export does no longer print chart on a second page by default
 
 ### Version 6.2.20322.1
 
