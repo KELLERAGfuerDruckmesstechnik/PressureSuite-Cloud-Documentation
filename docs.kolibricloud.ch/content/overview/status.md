@@ -22,39 +22,39 @@ description: History about maintenances and outages
 ### 17.June 2021 11:00:00 MEZ - 18.June 2021 10:00:00 MEZ
 
 **Summary of Impact:**  
-The process to gather measurements from FTP was broken for 24h until an older working version was deployed again.  
+The process to gather measurements from FTP was broken again for 24h until an older working version was manually deployed again.  
 Customers experienced a delay of the data in the web app or API.
 
 **Preliminary Root Cause:**  
-The last known issue with the process of data collecting showed weak points that had to be fixed. As we were working on these improvements, unfortunately, a new release was deployed live that had problems in the module that should warn when problems arise.
+The last known issue from May 2021 with the process of data collecting showed weak points that had to be fixed. As we were working on these improvements, unfortunately, a new release was deployed live that had problems in the module that should warn when problems arise.
 
 **Mitigation:**  
 We deployed an older working version.
 
 **Next Steps:**  
-We continue to improve the warn and log system to find such problems earlier.
+We continue to improve the warn & log system to find such problems earlier.
 
 ---
 
 ### 15.May 2021 - 26.May 2021
 
 **Summary of Impact:**  
-The KOLIBRI Cloud searches all known FTP server for new measurement data. It does this every 5 minutes. Now, due to a chain of multiple causes, the interval to gather the new measurements files were blocked because the process took not 2 minutes but multiple hours. The data came but during a random time later (up to 3 hours later).  
+The KOLIBRI Cloud searches on all known FTP servers for new measurement data. It does this every 5 minutes. Now, due to a chain of multiple causes, the interval to gather the new measurements files has increased from 2 minutes up to multiple hours. The data came but during a random time later (up to 3 hours later).  
 Customers experienced a delay of the data in the web app or API.
 
 After the holidays around pentecoste, we fixed the system and saw ways to improve it. No measurment data has been lost due to this incident.
 
 **Root Cause:**  
-A customer used a slow FTP server located in South America and sumed up multiple thousands of faulty measurement files. The KOLIBRI Cloud FTP collection service tried to download this multiple times causing this 'collection' process to take **several hours** instead of 2 minutes. The files were rejected from the KOLIBRI Cloud as they were faulty, but re-downloaded and analysed later again and again.  
-This caused the arrival of the measurements not the usual 1-5 minutes but a random time between 2-3 hours depending on the speed of the FTP and the amount of collected data.  
+A customer used a slow FTP server located in South America and sumed up multiple thousands of faulty measurement files. The 'KOLIBRI Cloud FTP collection service' tried to download this multiple times causing this 'collection process' to take **several hours** instead of 2 minutes. The files were rejected from the KOLIBRI Cloud as they were faulty, but re-downloaded and analysed later again and again.  
+This caused the ingestion time of the measurements to be deleayed not by the usual 1-5 minutes but by a random (and exponentially increasing) time. On May 26, we saw that it took between 2-3 hours depending on the speed of the particular FTP and the amount of collected data.  
 This also caused to overload the warn mail system which again caused delays in sending the "Level Alarm"-mails to some customers.  
 
 **Mitigation:**  
-The particular FTP server has been blocked which caused the service run normal again.  
+The particular FTP server has been blocked which caused the service to run normal again.  
 The 60k mails stuck in the mail system needed several days to be processed as other services like spam protection also triggered a delay.
 
 **Next Steps:**  
-We changed the service in a way that slow FTP connection will be blocked. It is also necessary to change the whole warn and logging mechanism.
+We changed the service in a way that slow FTP connection will be blocked. It is also necessary to change the whole warn & logging mechanism.
 
 ---
 
