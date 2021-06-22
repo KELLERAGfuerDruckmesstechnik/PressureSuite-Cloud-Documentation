@@ -14,7 +14,13 @@ description: History about maintenances and outages
 
 ## Planned Maintenance windows
 
-- none
+### 13.June 2021 14:00 MEZ - 17:00 MEZ
+
+**Planned work**  
+We are continuing improving several components that gather data from FTP, Mails ...  
+The new versions of these components are being deployed and resulting in temporary down times where no new measurment files can be loaded. No data will be lost.  
+In the worst case, data will not be updated for some hours.
+
 
 ## Outages & Maintenance Windows  
 
