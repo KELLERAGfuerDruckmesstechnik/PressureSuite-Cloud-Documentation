@@ -251,5 +251,4 @@ The new versions of these components are being deployed and resulting in tempora
 In the worst case, data will not be updated for some hours.
 
 **Effects**  
-
 No measureable impacts happened noticeable by users.
