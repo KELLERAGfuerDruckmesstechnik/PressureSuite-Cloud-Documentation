@@ -7,21 +7,14 @@ menu:
 toc: true
 description: Information on how to integrate a configured KELLER LoRa device to the TTN platform
 ---
-![.](../../void.jpg  "")
+
+> ![.](../../void.jpg  "")
+
+---
 
 ## Warning: Upcoming 'The Things Network' V2 to V3 Migration
 
-> [![V2 to V3 Warning][1]][1]
-
-[1]: ../../TTN_V2_to_V3_Warning.png
-
-yyy
-
-
-
-|![pictureAliasName](../../TTN_V2_to_V3_Warning.png)|
--
-
+[V2 to V3 Warning](../../TTN_V2_to_V3_Warning.png)
 
 The Things Network is changing from V2 to V3 stack.
 This means:  
@@ -35,6 +28,8 @@ This means:
 
 More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256
 
+---
+---
 ---
 
 ## TTN V3 Guide – New Easy Process
@@ -75,7 +70,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 #### Step 5
 
-- Choose the Brand which is **KELLER AG für DRruckmesstechnik**  
+- Choose the Brand which is **KELLER AG für Druckmesstechnik**  
 > ![TTN V3 Add a Device 2](../../TTNv3-easy-02.png  "TTN V3 Add a Device 2")
 
 #### Step 6
@@ -124,8 +119,10 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
   - The device should now be visible in the device list. If adding is not possible and a red popup is shown, please contact the KOLIBRI Support Team kolibri@keller-druck.com
 
 > ![Add LoRa Device To Own Group](../../AddLoRaDeviceToOwnGroup.png  "Add LoRa Device To Own Group")  
-wait until the KOLIBRI Cloud support assigned the device to your group. 
 
+
+---
+---
 ---
 
 ## TTN V3 Guide – Old Manual Process
@@ -231,6 +228,10 @@ wait until the KOLIBRI Cloud support assigned the device to your group.
 
 > ![Add LoRa Device To Own Group](../../AddLoRaDeviceToOwnGroup.png  "Add LoRa Device To Own Group")  
 wait until the KOLIBRI Cloud support assigned the device to your group. 
+
+---
+---
+---
 
 ## Obsolete TTN V2 guide
 #### What you need
