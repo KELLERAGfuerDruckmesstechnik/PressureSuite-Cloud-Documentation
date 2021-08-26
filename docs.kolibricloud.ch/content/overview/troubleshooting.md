@@ -70,7 +70,7 @@ Nevertheless, missing *five* transmissions is considered wothy of alarm.
    - todo SIM card cost/abo 
 #### ⚡ *The FTP/Mail server is not reachable* 
 
-Be aware that all KELLER remote sending devices are also logger. And even when communication is not possible measurements will be made and stored. The measurment files can even be extracted (with 'KOLIBRI Desktop') and uploaded into the KOLIBRI Cloud.
+Be aware that all KELLER remote sending devices are also logger. And even when communication is not possible measurements will be made and stored. The measurement files can even be extracted (with 'KOLIBRI Desktop') and uploaded into the KOLIBRI Cloud.
 
 **How was the alarm triggered**  
 Every device in the KOLIBRI Cloud is checked daily (03:30 UTC). If a device missed *at least five* transmission at this moment, it will trigger a *'Device stopped transmitting'*-alarm.

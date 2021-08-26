@@ -1,0 +1,9 @@
+LoRaWAN
+KOLIBRI
+TTN
+LoRa
+EUI
+Druckmesstechnik
+für
+gsmdata
+GSMs

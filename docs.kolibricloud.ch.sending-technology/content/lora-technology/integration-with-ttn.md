@@ -48,7 +48,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 #### Step 2
 
 - Connect your PC using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and 
-  - Program your device accoring to your use case (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
+  - Program your device according to your use case (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
   - Write down the 'Application EUI', 'App Key' and the 'Device EUI'
 
 > ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")

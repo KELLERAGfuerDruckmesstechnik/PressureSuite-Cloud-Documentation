@@ -26,13 +26,13 @@ description: History about maintenances and outages
 ### 3.August 2021 - 28.August 2021
 
 **Summary of Impact:**  
-Some level alarms have not been created nor send via e-mail to users.
+Some level alarms have not been created nor sent via e-mail to users.
 
 **Preliminary Root Cause:**  
 An error in the alarming system caused to stop working due to one single faulty alarm setting of one user.
 
 **Mitigation:**  
-The particular alarm setting has been fixed and counter measurments have been implemented that this should never occure again.
+The particular alarm setting has been fixed, and counter measurements have been implemented that this should never occur again.
 We decided not to re-trigger the e-mails as this would look like a spam attack to some users.
 
 ---
@@ -58,7 +58,7 @@ We continue to improve the warn & log system to find such problems earlier.
 
 **Planned work**  
 We are continuing improving several components that gather data from FTP, Mails ...  
-The new versions of these components are being deployed and resulting in temporary down times when no new measurment files can be loaded. No data will be lost.  
+The new versions of these components are being deployed and resulting in temporary downtimes when no new measurement files can be loaded. No data will be lost.  
 In the worst case, data will not be updated for some hours.
 
 ---
@@ -86,11 +86,11 @@ We continue to improve the warn & log system to find such problems earlier.
 The KOLIBRI Cloud searches on all known FTP servers for new measurement data. It does this every 5 minutes. Now, due to a chain of multiple causes, the interval to gather the new measurements files has increased from 2 minutes up to multiple hours. The data came but during a random time later (up to 3 hours later).  
 Customers experienced a delay of the data in the web app or API.
 
-After the holidays around pentecoste, we fixed the system and saw ways to improve it. No measurment data has been lost due to this incident.
+After the holidays around Pentecost, we fixed the system and saw ways to improve it. No measurement data has been lost due to this incident.
 
 **Root Cause:**  
-A customer used a slow FTP server located in South America and sumed up multiple thousands of faulty measurement files. The 'KOLIBRI Cloud FTP collection service' tried to download this multiple times causing this 'collection process' to take **several hours** instead of 2 minutes. The files were rejected from the KOLIBRI Cloud as they were faulty, but re-downloaded and analysed later again and again.  
-This caused the ingestion time of the measurements to be deleayed not by the usual 1-5 minutes but by a random (and exponentially increasing) time. On May 26, we saw that it took between 2-3 hours depending on the speed of the particular FTP and the amount of collected data.  
+A customer used a slow FTP server located in South America and summed up multiple thousands of faulty measurement files. The 'KOLIBRI Cloud FTP collection service' tried to download this multiple times causing this 'collection process' to take **several hours** instead of 2 minutes. The files were rejected from the KOLIBRI Cloud as they were faulty, but re-downloaded and analysed later again and again.  
+This caused the ingestion time of the measurements to be delayed not by the usual 1-5 minutes but by a random (and exponentially increasing) time. On May 26, we saw that it took between 2-3 hours depending on the speed of the particular FTP and the amount of collected data.  
 This also caused to overload the warn mail system which again caused delays in sending the "Level Alarm"-mails to some customers.  
 
 **Mitigation:**  
@@ -110,7 +110,7 @@ During this time period, all cellular devices (GSM/ARC1) using ftp.gsmdata.ch co
 Nevertheless, the ARC1/GSMs are programmed in a way that after a positive re-connection they re-send the missing data. 
 
 **Next Steps:**  
-There should not been data holes due to the ARC1s/GSMs fault-tolerance startegy. If you think there are any data holes, please contact kolibri@keller-druck.ch to remotely request the missing data.
+There should not been data holes due to the ARC1s/GSMs fault-tolerance strategy. If you think there are any data holes, please contact kolibri@keller-druck.ch to remotely request the missing data.
 
 ---
 
@@ -121,7 +121,7 @@ There should not been data holes due to the ARC1s/GSMs fault-tolerance startegy.
 Both, the Web app and the API was inaccessible due to an expired SSL certificate.
 
 **Mitigation:**  
-The annual SSL certificate renewal process seems to be broken and the SSL certificate was not proberly renwed.
+The annual SSL certificate renewal process seems to be broken and the SSL certificate was not properly renewed.
 
 **Next Steps:**  
 We manually renewed the certificate and after waiting for all DNS involved all services are now reachable again.
@@ -132,10 +132,10 @@ We manually renewed the certificate and after waiting for all DNS involved all s
 
 **Summary of Impact:**  
 After a new update on 06.Nov.2020 15:33:10 UTC the data ingress of all cellular devices failed.  
-No data from Friday to Monday was available throught the API not the web app.  
+No data from Friday to Monday was available through the API not the web app.  
 While fixing the issue the LoRa data on Monday some LoRa messages where wrongly assigned, too.
 
-As the data was temporary stored in a DL-queue engineers restored all the data again on Monday night.
+As the data was temporarily stored in a DL-queue engineers restored all the data again on Monday night.
 
 If there are still data missing, please contact kolibri@keller-druck.com to restore missing data.
 
@@ -143,7 +143,7 @@ If there are still data missing, please contact kolibri@keller-druck.com to rest
 Engineers found a bug that caused a wrong conversion and assignment of the GSM1/ARC1 channels.  
 
 **Next Steps:**  
-In hindsight, the SW developer deeply regrets deployind new stuff on a Friday afternoon.  
+In hindsight, the SW developer deeply regrets deploying new stuff on a Friday afternoon.  
 
 
 ---
@@ -151,7 +151,7 @@ In hindsight, the SW developer deeply regrets deployind new stuff on a Friday af
 ### 05.Nov.2020 13:08:07 UTC - 06.Nov.2020 15:33:10 UTC
 
 **Summary of Impact:**  
-During one day, all measurments of all LoRa devices have a wrong channel.
+During one day, all measurements of all LoRa devices have a wrong channel.
 This also caused wrong alarms-mails being triggered.
 
 **Preliminary Root Cause:**  
@@ -189,7 +189,7 @@ There was no known data loss.
 
 **Preliminary Root Cause**:
 The present DevOps Engineer determined that a Cloud component during an update misbehaved and didn't start correctly when published.
-Therefore, no new data was processed to the database. The data was temporary stored in a data queue.
+Therefore, no new data was processed to the database. The data was temporarily stored in a data queue.
 
 **Mitigation:**:  
 The DevOps Engineer fixed the program again and all stored data was processed correctly.
@@ -284,7 +284,7 @@ None.
 
 **Planned work**  
 We are continuing improving several components that gather data from FTP, Mails ...  
-The new versions of these components are being deployed and resulting in temporary down times when no new measurment files can be loaded. No data will be lost.  
+The new versions of these components are being deployed and resulting in temporary downtimes when no new measurement files can be loaded. No data will be lost.  
 In the worst case, data will not be updated for some hours.
 
 ---
@@ -292,7 +292,7 @@ In the worst case, data will not be updated for some hours.
 
 **Planned work**  
 We are continuing improving several components that gather data from FTP, Mails ...  
-The new versions of these components are being deployed and resulting in temporary down times where no new measurment files can be loaded. No data will be lost.  
+The new versions of these components are being deployed and resulting in temporary downtimes where no new measurement files can be loaded. No data will be lost.  
 In the worst case, data will not be updated for some hours.
 
 **Effects**  

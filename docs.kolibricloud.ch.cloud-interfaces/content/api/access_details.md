@@ -221,7 +221,7 @@ Use: *Every device has an 4 digit id number. The ```deviceId``` is the same numb
 
 * **measurementDefinitionId** (REQUIRED)  
 Type: integer($int32)  
-Use: *Every ```measurementDefinitionId``` represents a pyhsical measurment identifiaction and unit. The list of all ```measurementDefinitionId``` can be seen here: https://docs.kolibricloud.ch/cloud-interfaces/api/channels/*
+Use: *Every ```measurementDefinitionId``` represents a pyhsical measurement identifiaction and unit. The list of all ```measurementDefinitionId``` can be seen here: https://docs.kolibricloud.ch/cloud-interfaces/api/channels/*
 
 * **deviceId** (REQUIRED)  
 Type: integer($int32)  
@@ -240,7 +240,7 @@ Use: *Normally, the end UTC timestamp has to be given. It is in the ISO format (
 * **isFiltered** (OPTIONAL)  
 Type: boolean  
 Default: False  
-Use: *If True then only 1500 measurement points are taken. The choosen measurments point are given by the Largest Triangle Three Buckets algorithm.*
+Use: *If True then only 1500 measurement points are taken. The choosen measurements point are given by the Largest Triangle Three Buckets algorithm.*
 
 * **ianaTimeZone** (OPTIONAL)  
 Type: boolean  
