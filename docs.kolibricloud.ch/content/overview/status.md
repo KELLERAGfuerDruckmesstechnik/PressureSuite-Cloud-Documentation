@@ -11,20 +11,57 @@ description: History about maintenances and outages
 
 💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***
 
-
+---
+---
 ## Planned Maintenance windows
+  --
+
+
+
+---
+---
+
+## Outages  
+
+### 3.August 2021 - 28.August 2021
+
+**Summary of Impact:**  
+Some level alarms have not been created nor send via e-mail to users.
+
+**Preliminary Root Cause:**  
+An error in the alarming system caused to stop working due to one single faulty alarm setting of one user.
+
+**Mitigation:**  
+The particular alarm setting has been fixed and counter measurments have been implemented that this should never occure again.
+We decided not to re-trigger the e-mails as this would look like a spam attack to some users.
+
+---
+
+### 17.June 2021 11:00:00 MEZ - 18.June 2021 10:00:00 MEZ
+
+**Summary of Impact:**  
+The process to gather measurements from FTP was broken again for 24h until an older working version was manually deployed again.  
+Customers experienced a delay of the data in the web app or API.
+
+**Preliminary Root Cause:**  
+The last known issue from May 2021 with the process of data collecting showed weak points that had to be fixed. As we were working on these improvements, unfortunately, a new release was deployed live that had problems in the module that should warn when problems arise.
+
+**Mitigation:**  
+We deployed an older working version.
+
+**Next Steps:**  
+We continue to improve the warn & log system to find such problems earlier.
+
+---
 
 ### 01.July 2021 10:00 MEZ - 16:00 MEZ
 
 **Planned work**  
 We are continuing improving several components that gather data from FTP, Mails ...  
-The new versions of these components are being deployed and resulting in temporary down times where no new measurment files can be loaded. No data will be lost.  
+The new versions of these components are being deployed and resulting in temporary down times when no new measurment files can be loaded. No data will be lost.  
 In the worst case, data will not be updated for some hours.
 
 ---
----
-
-## Outages & Maintenance Windows  
 
 ### 17.June 2021 11:00:00 MEZ - 18.June 2021 10:00:00 MEZ
 
@@ -243,6 +280,14 @@ None.
 
 ## Past Maintenance windows
 
+### 01.July 2021 10:00 MEZ - 16:00 MEZ
+
+**Planned work**  
+We are continuing improving several components that gather data from FTP, Mails ...  
+The new versions of these components are being deployed and resulting in temporary down times when no new measurment files can be loaded. No data will be lost.  
+In the worst case, data will not be updated for some hours.
+
+---
 ### 13.June 2021 14:00 MEZ - 17:00 MEZ
 
 **Planned work**  
