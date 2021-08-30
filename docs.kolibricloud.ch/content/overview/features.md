@@ -15,9 +15,36 @@ description: Actual Release History and Known Limitations
 
 ---
 
+### v.1.21242.02 (30.08.2021)
+#### Display and export of Overflow calculations possible
+#### Overflow Calculations
+We now support overflow calculations.
+![Overflow Calculations 1](../../img/roadmap/Poleni.png)  ![Overflow Calculations 2](../../img/roadmap/Thomson.png)  
+
+Works: 
+- Display of Overflow Calculations (use the Page Settings to enable them) and export them to Excel, CSV etc.  
+
+Does not work: 
+- Currently, it is not possible to set an alarm to a certain flow.
+- We plan to add a special report to show the flown volume.
+
+
+#### Performance improvements and bug fixes
+Several bug fixes and speed improvements.
+
+#### TTN V3 descriptions
+With the change from the open LoRaWAN network platform TheThingsNetwork (TTN) from V2 to V3 we added our LoRaWAN devices to the new TTN repository in order to easier configure or change the devices into TTN v3.  
+![TTN v3 device repository](https://docs.kolibricloud.ch/sending-technology/TTNv3-easy-02.png)
+
+From April 2021 on, no new devices will be able to be added to the old V2 stack at https://console.thethingsnetwork.org/. V3 is available on https://eu1.cloud.thethings.network/console/
+
+Version 2 will definitely shut down on December 1st 2021. Please migrate your devices into TTN v3!
+More information: https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-ttn/  or https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256
+
+
 ### v.1.21088.01 (30. March 2021)
-### Offset channels as reference lines
-The possibility to add multiple reference lines to show various installation-depending components such as the 'maximal possible water height' or the 'installation depth'.  
+#### Offset channels as reference lines
+It is possible to add multiple reference lines to show various installation-depending components such as the 'maximal possible water height' or the 'installation depth'.  
 ![Offset channels as reference lines](../../img/reference-lines.png)  
 
 ### v.1.21042.01 (11. February 2021)
@@ -48,7 +75,7 @@ English, German, Suomi, Russian, Chinese, Swedish, Turkish, Italian, Spanish, Du
 Youtube-videos that show the functionalities and get a short overview. 
 
 #### Process descriptions
-It is needed to have an easy overview of how to initialize a project with as a sales person, as a customer as KOLIBRI Cloud support person...
+It is needed to have an easy overview of how to initialize a project with as a sales person, as a customer as KOLIBRI Cloud support person...  
 A check list and a graphical overview is wished.  
 
 #### Free .NET DLL to convert data from/to ARC1/ADT1
@@ -66,7 +93,7 @@ When improving the export it shall also be able to export & alarm of Tank- and O
 ![Export and Alarming in other units](../../img/roadmap/MultipleDevicesExporWithCustomUnits.png) 
 
 #### Performance
-We optimize various methods by caching data in order to quickly load various components. Performance is always a feature and we will further improve it.  
+We optimize various methods by caching data in order to quickly load various components. Performance is always a feature, and we will further improve it.  
 Every API call using the Permanent Access Token was ~1 sec because the 1 sec was needed for the authentication process. We cache this now and only the first API call has now 1 sec, all other generic calls should be around 50-100ms.  
 ![Performance](../../img/roadmap/performance.png)  
 
@@ -88,7 +115,7 @@ The subject of a mail is configurable per device.
 
 #### Add FTP account for self-assignment of devices
 
-This feature lets a customer admin add FTP server credentials. Each new device communicating from this FTP will automatically added to the customers group.  
+This feature lets a customer admin add FTP server credentials. Each new device communicating from this FTP will automatically be added to the customers group.  
 ![Add FTP account for auto-assignment of devices](../../img/add_ftp_image.png)  
 
 #### Auto-add used channels
@@ -119,7 +146,7 @@ Some devices configurations can now be seen and saved through the KOLIBRI Cloud.
 
 Chart performance has been optimized. This was accomplished by two main adjustments:
 
-- Calculating the correct timezone to display on the chart is a time consuming thing when done in the browser. That is why it is now calculated on the backend.
+- Calculating the correct timezone to display on the chart is a time-consuming thing when done in the browser. That is why it is now calculated on the backend.
 - Displaying over 100'000 data points per channel is not efficient nor really useful as the chart is limited to 1000 pixel wide so it is not possible to present them. The backend no uses the [Largest Triangle Three Buckets algorithm](https://docs.kolibricloud.ch/faq/overview/#does-the-chart-show-all-measurement-points) to down-sample the loaded data to a maximum of 1'500 data points per channel. This leads to a drastic performance boost without a significant accuracy loss. The downside of this is that when zooming in some values might be missing. The export feature still exports all data.
 
 #### Last Data Values

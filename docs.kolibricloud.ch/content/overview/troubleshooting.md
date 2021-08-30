@@ -19,7 +19,7 @@ There are three categories of alarms:
  - Device alarms  
     *Device alarms are automatically triggered alarms in case a device has an exceptionally state such es low power, high humidity or stopped sending measurements.*
  - System alarms  
-    *System alarms are triggered when systme-wide problems arise.*
+    *System alarms are triggered when system-wide problems arise.*
 
 While *Application alarms* have to be set by the users themselves and link to a receiver e-mail address, *Device alarms*, however, are preset with fixed minimum limit and maximum limit. The e-mail address for these kinds of alarms must be configured, too.
 
@@ -34,14 +34,14 @@ In the *Account Settings* (https://www.kolibricloud.ch/account-settings) one or 
 **Problems**  
 With cellular technology, multiple reasons for one failed transmissions can arise. The cellular technology based KELLER devices (GSM/ARC1/ADT1) can handle a few failed transmission by automatically resending the missing data. 
 In LoRaWAN a 100% reliability is not given by protocol design. Failed transmissions will not be repeated automatically.  
-Nevertheless, missing *five* transmissions is considered wothy of alarm.  
+Nevertheless, missing *five* transmissions is considered worthy of alarm.  
 
 ### Common causes
 - The sending device
   - has no battery power left
   - has communication problems
     - because of heavy rain
-    - because of it is under water
+    - because of it is underwater
     - because the antenna/gateway is not reacting (G netz down, antenna change, gateway not here or powerddown...)
     - because of a defect level probe or cable
   - electronics are damaged
@@ -52,16 +52,16 @@ Nevertheless, missing *five* transmissions is considered wothy of alarm.
 
 #### ⚡ *The sending device has no battery power left*
    - To identify this problem please analyze the 'Battery Info' of the device on https://www.kolibricloud.ch/. Also, there should have been a *Device Alarm* in the *Alarms* list with a warning.
-   - If the battery voltage and/or battery capacity is low than the battery needs to be replaced.
+   - If the battery voltage and/or battery capacity is lower than the battery needs to be replaced.
 
 #### ⚡ *The sending device has communication problems because of heavy rain/snow* 
    - To identify this problem please analyze the 'Signal strength' of the device on https://www.kolibricloud.ch/ and, if possible, cross-reference the data with past weather data. Does the signal strength get worse when there is heavy rain/snow fall?
    - If the weather has an impact then consider re-position or protect the antenna. The higher the position the better.
    - Even with a free line of sight there might be issues due to [Fresnel zones](https://en.wikipedia.org/wiki/Fresnel_zone)
 
-#### ⚡ *The sending device has communication problems because of it is under water* 
+#### ⚡ *The sending device has communication problems because of it is underwater* 
    - To identify this problem please analyze the 'Signal Strength' and the 'Humidity' of the device on https://www.kolibricloud.ch/ :
-   - If the humidity continues to rise, the signal strength immediatley drops and the communication stopped, consider a water damage or the possibility of an overflooded device. Consider verifying the state of the sending device in the field.
+   - If the humidity continues to rise, the signal strength immediately drops and the communication stopped, consider a water damage or the possibility of an overflooded device. Consider verifying the state of the sending device in the field.
 #### ⚡ *The sending device has communication problems because the antenna/gateway is not reacting* 
    - todo (G netz down, antenna change, gateway not here or powerddown...)  
 #### ⚡ *The sending device electronics are damaged* 
