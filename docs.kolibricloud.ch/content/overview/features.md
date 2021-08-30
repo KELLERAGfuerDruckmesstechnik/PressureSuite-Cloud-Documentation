@@ -22,8 +22,6 @@ We now support overflow calculations.
 
 ![flow calc use](../../img/roadmap/use-flow-calculation.png)  
 ![flow calc enabling in page settings](../../img/roadmap/enable-flow-calculation.png)  
-![flow  enabling in page settings](../../img/roadmap/CustomerAdmin.png)  
-
 
 Works: 
 - Display of Overflow Calculations (use the Page Settings to enable them) and export them to Excel, CSV etc.  
