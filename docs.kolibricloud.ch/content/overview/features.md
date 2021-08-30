@@ -20,8 +20,10 @@ description: Actual Release History and Known Limitations
 #### Overflow Calculations
 We now support overflow calculations.  
 
-![TTN v3 device repository](../../img/roadmap/use-flow-calculation.png)  
-![TTN v3 device repository](../../img/roadmap/enable-flow-calculation.png)  
+![flow calc use](../../img/roadmap/use-flow-calculation.png)  
+![flow calc enabling in page settings](../../img/roadmap/enable-flow-calculation.png)  
+![flow  enabling in page settings](../../img/roadmap/CustomerAdmin.png)  
+
 
 Works: 
 - Display of Overflow Calculations (use the Page Settings to enable them) and export them to Excel, CSV etc.  
