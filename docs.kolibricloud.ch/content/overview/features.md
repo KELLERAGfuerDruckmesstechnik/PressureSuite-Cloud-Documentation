@@ -18,8 +18,10 @@ description: Actual Release History and Known Limitations
 ### v.1.21242.02 (30.08.2021)
 #### Display and export of Overflow calculations possible
 #### Overflow Calculations
-We now support overflow calculations.
-![Overflow Calculations 1](../../img/roadmap/Poleni.png)  ![Overflow Calculations 2](../../img/roadmap/Thomson.png)  
+We now support overflow calculations.  
+
+![TTN v3 device repository](.../../img/roadmap/use-flow-calculation.png)  
+![TTN v3 device repository](.../../img/roadmap/enable-flow-calculation.png)  
 
 Works: 
 - Display of Overflow Calculations (use the Page Settings to enable them) and export them to Excel, CSV etc.  
