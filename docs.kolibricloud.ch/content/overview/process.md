@@ -28,14 +28,14 @@ toc: false
   ☐ Choose an appropriate housing: Tube, Box or Box SB  
   ☐ Choose sensor / level probe depending on use case  
   ☐ Decide together with sales person which additional accessories are needed (See data sheets)  
-      - ARC1  
-         - K-114 A Interface converter  
-         - Monitoring pipe cap lock  
-         - Monitoring pipe adapter ring  
-      - ADT1
-         - Micro USB cable  
-         - Monitoring pipe cap lock  
-         - Monitoring pipe adapter ring  
+  - ARC1  
+     - K-114 A Interface converter  
+     - Monitoring pipe cap lock  
+     - Monitoring pipe adapter ring  
+  - ADT1
+     - Micro USB cable  
+     - Monitoring pipe cap lock  
+     - Monitoring pipe adapter ring  
   
 ☐ Try out www.kolibricloud.ch and visits the documentation page https://docs.kolibricloud.ch  
  ☐ Understand the benefits, the features and limitations of the 'KOLIBRI Cloud' 
