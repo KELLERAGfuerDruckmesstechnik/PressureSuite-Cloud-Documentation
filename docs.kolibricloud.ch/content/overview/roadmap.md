@@ -48,7 +48,7 @@ Now that the sending 'Device Configuration' for GSM/ARC to devices over FTP/Mail
 ![DeviceConfiguration for LoRa devices](../../img/roadmap/DeviceConfigurationsLoRa.png)  
 
 ### Handle multiple Configurations/Water Calculations per device
-One of the advantages of the DataManger-SW is that it can handle various configuration/calculations per device. The KOLIBRI Cloud right shows calculated values on-the-fly but ignores the fact that measurements can have different calculations in the past (eg. due to changing installation). It is wished to be able to add comments to chosen installation/configuration. n 
+One of the advantages of the DataManager-SW is that it can handle various configuration/calculations per device. The KOLIBRI Cloud right shows calculated values on-the-fly but ignores the fact that measurements can have different calculations in the past (e.g. due to changing installation). It is wished to be able to add comments to chosen installation/configuration.  
 The goal is now to handle and visualize the stored device configurations, in the chart and the export!  ![Handle multiple Configurations/Water Calculations per device](../../img/roadmap/MultipleWaterLevelsOnOneChart.png)  
 
 
