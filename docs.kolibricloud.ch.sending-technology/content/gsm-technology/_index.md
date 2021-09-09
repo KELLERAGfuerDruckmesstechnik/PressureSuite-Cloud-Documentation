@@ -49,6 +49,9 @@ To register a GSM/ARC device please follow the following steps:
 5. <span style="color:red">After writing the settings it is *NEEDED* to have a configuration file ready for the Cloud.</span> Without a configuration a device CAN NOT be registered in the Cloud! We recommend sending it manually in tab **[Error/Status]**. Otherwise, the Cloud has to wait for the interval set in **[Info]**.  
 ![Do manually send a config file picture](../gsmsetup_sendconfigfile.png "Do manually send a config file!") 
 
+
+6. Test your connection! If an FTP account has been assigned (step 2) and the device uses the same FTP then the device should automatically be listed into your KOLIBRI cloud account. Otherwise, use your login credentials and use an FTP client (like [FileZilla](https://filezilla-project.org/)) and check if a text file could be sent.  
+
 ## Without a cable connection: Cloud integration with the GSMDataManager
 
 1. Please consult the [DataManager Manual](http://www.keller-druck2.ch/swupdate/InstallerGSM2Datamanager/manual/MAN_Datamanager_EN_en.pdf).
