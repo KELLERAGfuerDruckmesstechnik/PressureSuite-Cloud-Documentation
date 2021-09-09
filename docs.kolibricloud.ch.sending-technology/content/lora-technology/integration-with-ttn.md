@@ -13,7 +13,7 @@ description: Information on how to integrate a configured KELLER LoRa device to 
 The Things Network is changing from V2 to V3 stack.
 This means:  
 
-- From April 2021 on, no new devices can be added to the old V2 stack at https://console.thethingsnetwork.org/. V3 is available on https://eu1.cloud.thethings.network/console/
+- From April 2021 on, no new devices can be added to the old V2 stack at https://console.thethingsnetwork.org/.   V3 is available on https://eu1.cloud.thethings.network/console/
 - The devices working with TTN and the KOLIBRI Cloud will still work until December 2021.
 - TTN plans to shut down all V2 servers in September 2021. From then on all devices and gateways needs to be migrated.  
 - The KOLIBRI Support team updated its backend: V2 and V3 work in parallel.
@@ -30,25 +30,30 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 ### What you need
 
-- An account on 'The Things Network'. If you do not have one than please sign up on https://www.thethingsnetwork.org/
-- A KELLER LoRa device (ADT1 LoRa or ARC1 LoRa)
-- [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and a USB connector cable (ARC1: K114 interface converter / ADT1: Micro USB cable)
-- The Device EUI number of the device (Use the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) to extract the EUI)
-- The Application EUI number of the device (Use the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) to extract the EUI)
+- The existing account on https://v2console.thethingsnetwork.org/ (V2)
+- The migrated account to https://eu1.cloud.thethings.network/console/ (V3)
 - The KOLIBRI Endpoint URL which is: `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`
+- A gateway migrated to V3 (https://www.thethingsindustries.com/docs/getting-started/migrating/gateway-migration/)
+
+### Step 0
+
+- Please read all steps in below guide before starting.
+- This guide focuses on migrating the KELLER devices from V2 to V3 'remotely'. Our tests showed success, but there might be combinations where it is necessary to go to each device and re-program it.
+- The guide has many manual steps. Depending on the count of devices a programmatic approach might be interesting. See https://www.youtube.com/watch?v=JUEJ_9LdnuI. When you have less than 20 devices we recommend to do it manually.
+- The LoRaWAN gateway should also be migrated to V3. This is not covered in this guide.
+- We recommend to start with one device and test it with one instead of migrating all devices at once.
 
 ### Step 1
 
-- During the order of the device ask your sales person to let the device pre-configure by the KOLIBRI support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device).
+- We recommend updating your gateway to V3 first. The idea is that the V2-devices still will send transmissions to TTN over the gateway. This worked in our environment, but it is not guaranteed that this will work with you gateway setup. There might be gateway where firmware-updates are necessary.
+  - https://www.thethingsindustries.com/docs/getting-started/migrating/gateway-migration/
+  - https://www.thethingsindustries.com/docs/gateways/
 
 ### Step 2
 
-- Connect your PC using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and 
-  - Program your device according to your use case (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
-  - Write down the 'Application EUI', 'App Key' and the 'Device EUI'
-
-> ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
-
+- Login to the V2 account on https://v2console.thethingsnetwork.org/
+- Note **Device EUI**, **Application EUI** and **App Key** for each device. You will need these keys later. Also, note the device's name.
+> ![TTN V2 old console](../../ttn-v2-to-ttn-v3-old-console.png  "TTN V2 old console")
 
 ### Step 3
 
@@ -64,7 +69,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 ### Step 5
 
-- Choose the Brand which is **KELLER AG für Druckmesstechnik**  
+- Choose the *Brand* which is **KELLER AG für Druckmesstechnik**  
 > ![TTN V3 Add a Device 2](../../TTNv3-easy-02.png  "TTN V3 Add a Device 2")
 
 ### Step 6
@@ -80,8 +85,8 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 ### Step 7
 
-- Now enter the 'Application EUI', 'App Key' and the 'Device EUI'
-- Enter a device id text to identify the device in the TTN portal
+- Now enter the **'Application EUI'**, **'App Key'** and the **'Device EUI'** which you have noted  
+- Enter an *End Device ID* text to identify the device in the TTN portal. Preferably, the same or similar as in the V2 platform.
 
 > ![TTN V3 Add a Device 4](../../TTNv3-easy-04.png  "TTN V3 Add a Device 4")
 
@@ -108,23 +113,15 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 ### Step 10
 
-- To make your device visible on https://www.kolibricloud.ch it is needed to add it
-  - In the **Account Settings** on https://www.kolibricloud.ch enter the Device EUI of the LoRa device and press **Add Device**
-  - The device should now be visible in the device list. If adding is not possible and a red popup is shown, please contact the KOLIBRI Support Team kolibri@keller-druck.com
-
-> ![Add LoRa Device To Own Group](../../AddLoRaDeviceToOwnGroup.png  "Add LoRa Device To Own Group")  
-
+- Verify the connection by
+  - waiting for the sending interval and seeing the transmission in the TTN V3 console.
+  - finding the new measurement in the KOLIBRI Cloud
 
 ---
 ---
 ---
 
-
----
----
----
-
-## Add a new device to TTN V3 Guide — New Easy Process
+## Add a New Device to TTN V3 Guide — New Easy Process
 
 ### What you need
 
