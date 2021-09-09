@@ -30,7 +30,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 ---
 ---
 
-## TTN V3 Guide – New Easy Process
+## TTN V3 Guide — New Easy Process
 
 #### What you need
 
@@ -62,7 +62,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 #### Step 4
 
-- In the application (eg https://eu1.cloud.thethings.network/console/applications/app-for-my-company) **+Add end device** with
+- In the application (e.g. https://eu1.cloud.thethings.network/console/applications/app-for-my-company) **+Add end device** with
 
 > ![TTN V3 Add a Device 1](../../TTNv3-easy-01.png  "TTN V3 Add a Device 1")
 
@@ -140,7 +140,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 #### Step 2  
 
-- Go to <https://eu1.cloud.thethings.network/console/> and **+Add Application** if you do not have one. Set a **Application ID** and the **Owner**.  
+- Go to <https://eu1.cloud.thethings.network/console/> and **+Add Application** if you do not have one. Set an **Application ID** and the **Owner**.  
 
 > ![Create a TTN V3 Application](../../TTNV3_CreateApplication.png  "Create a TTN V3 Application")
 
@@ -156,8 +156,8 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 
 - Set the *Basic settings* by
   - Choosing an **End device ID** name
-  - Entering the AppEUI from the device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
-  - Entering the DevEUI from the device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
+  - Entering the AppEUI from the device (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
+  - Entering the DevEUI from the device (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
 
 > ![TTN V3 Add a Device 2](../../TTNV3_AddDevice2.png  "TTN V3 Add a Device 2")
 
@@ -185,13 +185,13 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 - Connect your PC using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and 
   - Check if you used the same Application EUI
   - Enter the generated App Key from *Step 6*
-  - Program your device (See [How to configuring a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
+  - Programm your device (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
 
 > ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
 
 #### Step 8
 
-- If you have a TTN gateway in reach you should now be able to communicate with the TTN server.
+- When you have a TTN gateway in reach you should now be able to communicate with the TTN server.
 - When you want to register a new TTN gateway into TTN V3 then go to https://eu1.cloud.thethings.network/console/gateways/add
   - Enter the **Gateway EUI** from the Gateway and choose a **Gateway ID**
   - Use the same *frequency plan* and set the *Gateway Status* to **Public**
@@ -199,7 +199,7 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 #### Step 9
 
 - This step is optional. You can add the KELLER Payload Decoder to decode the payload string into readable Measurements/Information visible in the Live-Editor.
-  - The most recent KELLER Payload Decoder code is on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder/blob/master/ttn-v3-payload-decoder.js)
+  - The most recent KELLER Payload Decoder code is on [GitHub](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAgTheThingsNetworkPayloadDecoder/blob/master/ttn-v3-payload-decoder.js)
   - Got to **Payload formatters** in your application and paste the decoder code into *Uplink* using **Javascript** formatter type.
 
 > ![Add KELLER Payload Decoder](../../TTNV3_AddPayloadDecoder.png  "Add KELLER Payload Decoder")
@@ -248,7 +248,7 @@ A [KELLER LoRa device](https://docs.kolibricloud.ch/keller-devices/overview/) ca
 
 #### Step 2  
 
-- Go to <https://console.thethingsnetwork.org/> and **Create** a **application server**. Use the given app key and program it into the LoRa device using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and program the device with the application key.  
+- Go to <https://console.thethingsnetwork.org/> and **Create** an **application server**. Use the given app key and program it into the LoRa device using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and program the device with the application key.  
 
 #### Step 3  
 

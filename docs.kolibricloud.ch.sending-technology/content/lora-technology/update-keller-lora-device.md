@@ -5,7 +5,7 @@ menu:
         parent: lora-technology
         weight: 4
 toc: false
-description: Information how to configuring a LoRaWAN device from KELLER AG
+description: Information how to configure a LoRaWAN device from KELLER AG
 ---
 
 # Configuring a LoRaWAN device from KELLER
