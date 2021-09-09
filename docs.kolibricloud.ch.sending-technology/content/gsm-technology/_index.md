@@ -61,7 +61,7 @@ To register a GSM/ARC device please follow the following steps:
 3. For each device  
     - Like above configure the device so that it sends the data to the agreed FTP account.
 
-    - Like with the GSMSetup it is ***NEEDED*** to activate the “Record Datatransfer”.  
+    - Like with the GSM-Setup it is ***NEEDED*** to activate the “Record Datatransfer”.  
     ![Use the record format picture](../datamanager_recordformat.png "Use the record format!")  
 
     - Like with the GSMSetup above it is ***NEEDED*** to have a configuration file ready for the Cloud. One way to trigger the device to send a configuration file is to **send a configuration from the DataManager to the devices**. The device will mirror the settings and make it available for the cloud.
