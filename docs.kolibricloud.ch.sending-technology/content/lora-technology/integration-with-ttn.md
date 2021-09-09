@@ -49,17 +49,33 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
   - https://www.thethingsindustries.com/docs/getting-started/migrating/gateway-migration/
   - https://www.thethingsindustries.com/docs/gateways/
 
-### Step 2
 
-- Login to the V2 account on https://v2console.thethingsnetwork.org/
-- Note **Device EUI**, **Application EUI** and **App Key** for each device. You will need these keys later. Also, note the device's name.
-> ![TTN V2 old console](../../ttn-v2-to-ttn-v3-old-console.png  "TTN V2 old console")
-
-### Step 3
+### Step 2A
 
 - Go to <https://eu1.cloud.thethings.network/console/> and **+Add Application** if you do not have one. Set an **Application ID** and the **Owner**.  
 
 > ![Create a TTN V3 Application](../../TTNV3_CreateApplication.png  "Create a TTN V3 Application")
+
+### Step 2B
+- This step has to be done ones for each new **Application**:
+  - To send data to the KOLIBRI Cloud it is needed to forward the transmissions.
+    - Go to **Integrations** and **+Add Webhook** in **Webhooks**
+    - Choose **Custom webhook**
+    - Choose a *Webhook ID* such as *webhook-to-kolibri*
+    - *Webhook format* is **JSON**
+    - *Base URL* is `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`  
+    - Enable all **Uplink messages**
+    - Press **Add webhook**.  
+    This will forward every transmission to the KOLIBRI Cloud.  
+
+> ![TTN V3 Webhook Integration](../../TTNV3_AddIntegrationToKolibri.png  "TTN V3 Webhook Integration")  
+
+
+### Step 3
+
+- Login to the V2 account on https://v2console.thethingsnetwork.org/
+- Note **Device EUI**, **Application EUI** and **App Key** for each device. You will need these keys later. Also, note the device's name.
+> ![TTN V2 old console](../../ttn-v2-to-ttn-v3-old-console.png  "TTN V2 old console")
 
 ### Step 4
 
@@ -97,25 +113,12 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
   - Enter the **Gateway EUI** from the Gateway and choose a **Gateway ID**
   - Use the same *frequency plan* and set the *Gateway Status* to **Public**
 
-### Step 9
-
-- To send data to the KOLIBRI Cloud it is needed to forward the transmissions.
-  - Go to **Integrations** and **+Add Webhook** in **Webhooks**
-  - Choose **Custom webhook**
-  - Choose a *Webhook ID* such as *webhook-to-kolibri*
-  - *Webhook format* is **JSON**
-  - *Base URL* is `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`  
-  - Enable all **Uplink messages**
-  - Press **Add webhook**.  
-  This will forward a transmission to the KOLIBRI Cloud.  
-
-> ![TTN V3 Webhook Integration](../../TTNV3_AddIntegrationToKolibri.png  "TTN V3 Webhook Integration")  
-
 ### Step 10
 
 - Verify the connection by
   - waiting for the sending interval and seeing the transmission in the TTN V3 console.
   - finding the new measurement in the KOLIBRI Cloud
+- Repeat *Step 3* to *Step 10* for each device 
 
 ---
 ---
