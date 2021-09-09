@@ -19,10 +19,11 @@ To register a GSM/ARC device please follow the following steps:
 1. Please download the appropriate SW tool to configure your device. You find the SW [here](http://www.keller-druck.com/home_e/paprod_e/software_e.asp). If you can connect to the device with a cable please use the ["GSM-Config" SW](http://www.keller-druck2.ch/swupdate/GSMSetup/GSMSetup.zip), and it's [manual](http://www.keller-druck2.ch/swupdate/GSMSetup/manual/man_gsm2_e_en.pdf).
 
 2. Ideally, the KOLIBRI Cloud gets the data from an FTP-Server. Either you host an own FTP server or use own of the provided FTP accounts from KELLER. 
+
   - a) If you wish to use an FTP account provided by KELLER then, please, contact KOLIBRI Cloud support or your KELLER sales representative to communicate the needed credentials (host-name, user-name, password).
   - b) If you wish to use an own hosted FTP account, please be aware that only certain security protocols are supported. SFTP is not supported. Some FTPS versions are supported. In doubt, please ask the KOLIBRI Cloud support team (kolibri@keller-druck.com).
   - c) To let the device automatically be assigned to your KOLIBRI Cloud account, register your FTP account first in your KOLIBRI Cloud in https://www.kolibricloud.ch/account-settings  
-  [Add an FTP account to auto-register new devices](../add-ftp-account.png "Add a FTP account to auto-register new devices")
+  ![Add an FTP account to auto-register new devices](../add-ftp-account.png "Add a FTP account to auto-register new devices")
 
 3. Connect the device with your Windows PC (you might need a K114 adapter) and use the GSM-Setup tool according its manual.
 
