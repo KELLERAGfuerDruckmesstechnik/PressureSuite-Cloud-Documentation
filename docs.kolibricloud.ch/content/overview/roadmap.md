@@ -26,9 +26,6 @@ It is wished to automatically trigger alarms when certain device or system speci
   
 ![Alarming](../../img/roadmap/SystemDeviceAlarms.png)  
 
-### Easier Registration with Welcome/Guidance Mail for new Users
-The registration process and everything following might be overwhelming to some users. Better guidance and check lists should help to make it clearer what to do.  
-
 ----
 ## PRIO 2
 
