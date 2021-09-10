@@ -10,7 +10,6 @@ description: Actual Release History and Known Limitations
 ---
 
 # Release History and Known Limitations
-![.](../../img/roadmap/void.jpg)  
 ## Releases
 
 ---

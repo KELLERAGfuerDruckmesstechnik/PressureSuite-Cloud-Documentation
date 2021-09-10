@@ -10,25 +10,17 @@ description: Roadmap of coming features
 # Roadmap
 The following roadmap is an idea. Therefore, the priority might change and ee might implement a feature earlier or later depending on customer projects and other circumstances.  
 
-![.](../../img/roadmap/void.jpg)  
-
-
 ## PRIO 1
 
 
 ### Alarming
 It is wished to automatically trigger alarms when certain device or system specific cases occur:  
 * Device Alarm  
-  * Device stopped sending measurements
-  * Low Battery - Warn when battery has to be replaced  
-  * Too high humidity  
+  * Device stopped sending measurements (with E-Mail-alarm)
+  * Low Battery - Warn when battery has to be replaced  (with E-Mail-alarm)
+  * Too high humidity  (with E-Mail-alarm)
   * Freeze (water must be ice - pressure measurement unusable)  
-  * Level probe is not in water any more  
-  * Immediate Conductivity range change
   * Some channels are not sending values anymore (defect/removed sensor)
-* System Alarm  
-  * Gateway does not respond  
-  * FTP/Mail server do not respond  
 
 ![Alarm Overview](../../img/roadmap/AlarmOverview.png)   
   
