@@ -109,11 +109,14 @@ More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-n
 ### Step 8
 
 - Delete the device in the V2 platform (https://v2console.thethingsnetwork.org/). Without deletion the data will most probably not show up in the V3 platform.
+
+### Step 9
+
 - If you have a TTN gateway in reach, you should now be able to communicate with the TTN server.
 - When you want to register a new TTN gateway into TTN V3 then go to https://eu1.cloud.thethings.network/console/gateways/add
   - Enter the **Gateway EUI** from the Gateway and choose a **Gateway ID**
   - Use the same *frequency plan* and set the *Gateway Status* to **Public**
-
+  
 ### Step 10
 
 - Verify the connection by
