@@ -15,8 +15,11 @@ description: History about maintenances and outages
 ---
 ## Planned Maintenance windows
   --
+### 20. September 2021
 
-
+**Planned work**  
+- We are enabling the auto-alarming feature for all customers. This might trigger warn mails to those customers who have an E-Mail address registered in the account settings (https://www.kolibricloud.ch/account-settings)
+- We are going to switch the SSL certificate. This might cause temporary connection problems and problems when accessing the data thought the API.
 
 ---
 ---

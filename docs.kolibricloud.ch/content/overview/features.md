@@ -18,14 +18,14 @@ description: Actual Release History and Known Limitations
 #### Dialogs for new users and new features
 We now display dialogs for new users or new features.
 
-First log in
-- When a user first logs in there is a dialog explaining how he can join or create a customer group.
+First log in dialog
+- When a user first logs in there is a dialog explaining how to join a customer group or add new signed-up users.
 
 Welcome dialog
-- When a user is a member of a customer group he will get a welcome dialog with useful tips and links.
+- When a user is a member of a customer group a welcome dialog with useful tips and links is shown.
 
 New feature dialog
-- When a new feature is introduced, there will be a dialog explaining the feature. The first one will be a dialog about the new alarming-feature.
+- When a new important feature is introduced, there will be a dialog explaining the feature. The first one will be a dialog about the new alarming-feature.
 
 ### v.1.21242.02 (30.08.2021)
 #### Display and export of Overflow calculations possible
