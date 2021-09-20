@@ -17,13 +17,13 @@ There are three categories of alarms:
  - Application alarms  
     *Application alarms are for example 'level alarms' that can be set per device per channel and trigger when the value falls below/over a certain level.*
  - Device alarms  
-    *Device alarms are automatically triggered alarms in case a device has an exceptionally state such es low power, high humidity or stopped sending measurements.*
+    *Device alarms are automatically triggered alarms in case a device has an exceptional state such es low power, high humidity, or stopped sending measurements.*
  - System alarms  
     *System alarms are triggered when system-wide problems arise.*
 
-While *Application alarms* have to be set by the users themselves and link to a receiver e-mail address, *Device alarms*, however, are preset with fixed minimum limit and maximum limit. The e-mail address for these kinds of alarms must be configured, too.
+*Application alarms* have to be set by the users themselves and link to a receiver e-mail address. *Device alarms*, however, are preset with a fixed minimum limit and maximum limit. The e-mail address for these kinds of alarms must be configured, too.
 
-**solutions** 
+**Solutions**  
 In the *Account Settings* (https://www.kolibricloud.ch/account-settings) one or multiple receiver e-mail addresses have to be added to make it possible for the KOLIBRI Cloud to send alarm e-mails.  
 
 ![.](../../img/troubleshooting/add-email-for-system-and-device-alarm.png)  
@@ -32,31 +32,35 @@ In the *Account Settings* (https://www.kolibricloud.ch/account-settings) one or 
 ## The device stopped sending / *'Device stopped transmitting'*-alarm triggered
 
 **Problems**  
-With cellular technology, multiple reasons for one failed transmissions can arise. The cellular technology based KELLER devices (GSM/ARC1/ADT1) can handle a few failed transmission by automatically resending the missing data. 
+With cellular technology, multiple reasons for failed transmissions can arise. The cellular technology-based KELLER devices (GSM/ARC1/ADT1) can handle a few failed transmissions by automatically resending the missing data. 
 In LoRaWAN a 100% reliability is not given by protocol design. Failed transmissions will not be repeated automatically.  
 Nevertheless, missing *five* transmissions is considered worthy of alarm.  
 
 ### Common causes
 - The sending device
   - has no battery power left
+  - battery is not plugged in
+  - device antenna is not plugged in
   - has communication problems
     - because of heavy rain
-    - because of it is underwater
-    - because the antenna/gateway is not reacting (G netz down, antenna change, gateway not here or powerddown...)
+    - because it is underwater
+    - because the cellular antenna is not reacting (cell antenna stopped sending the needed frequency, cell antenna is updating or broken, ...)
+    - because the LoRaWAN gateway is not reacting (power-off, antenna broken, ...)
     - because of a defect level probe or cable
   - electronics are damaged
-  - SIM card invalid
+  - has an invalid SIM card
+  - has a SIM card with a plan that ran out of money
 - The FTP/Mail server is not reachable
 
 **Possible reasons and solutions**  
 
 #### ⚡ *The sending device has no battery power left*
-   - To identify this problem please analyze the 'Battery Info' of the device on https://www.kolibricloud.ch/. Also, there should have been a *Device Alarm* in the *Alarms* list with a warning.
-   - If the battery voltage and/or battery capacity is lower than the battery needs to be replaced.
+   - To identify this problem, please analyze the 'Battery Info' of the device on https://www.kolibricloud.ch/. Also, there should have been a *Device Alarm* in the *Alarms* list with a warning.
+   - If the battery voltage and/or battery capacity is too low, then the battery needs to be replaced.
 
 #### ⚡ *The sending device has communication problems because of heavy rain/snow* 
-   - To identify this problem please analyze the 'Signal strength' of the device on https://www.kolibricloud.ch/ and, if possible, cross-reference the data with past weather data. Does the signal strength get worse when there is heavy rain/snow fall?
-   - If the weather has an impact then consider re-position or protect the antenna. The higher the position the better.
+   - To identify this problem please analyze the 'Signal strength' of the device on https://www.kolibricloud.ch/ and, if possible, cross-reference the data with past weather data. Does the signal strength get worse when there is heavy rainfall/snowfall?
+   - If the weather has an impact, then consider re-position or protect the antenna. The higher the position, the better.
    - Even with a free line of sight there might be issues due to [Fresnel zones](https://en.wikipedia.org/wiki/Fresnel_zone)
 
 #### ⚡ *The sending device has communication problems because of it is underwater* 
@@ -70,10 +74,10 @@ Nevertheless, missing *five* transmissions is considered worthy of alarm.
    - todo SIM card cost/abo 
 #### ⚡ *The FTP/Mail server is not reachable* 
 
-Be aware that all KELLER remote sending devices are also logger. And even when communication is not possible measurements will be made and stored. The measurement files can even be extracted (with 'KOLIBRI Desktop') and uploaded into the KOLIBRI Cloud.
+Be aware that all KELLER remote sending devices are also logger. And even when communication is not possible, measurements will be made and stored. The measurement files can even be extracted (with 'KOLIBRI Desktop') and uploaded into the KOLIBRI Cloud.
 
 **How was the alarm triggered**  
-Every device in the KOLIBRI Cloud is checked daily (03:30 UTC). If a device missed *at least five* transmission at this moment, it will trigger a *'Device stopped transmitting'*-alarm.
+Every device in the KOLIBRI Cloud is checked daily (03:30 UTC). If a device missed *at least five* transmissions at this moment, it will trigger a *'Device stopped transmitting'*-alarm.
 
 ---
 ## The humidity in the device is too high / *'Humidity'*-alarm triggered
