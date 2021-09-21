@@ -21,7 +21,7 @@ There are three categories of alarms:
  - System alarms  
     *System alarms are triggered when system-wide problems arise.*
 
-*Application alarms* have to be set by the users themselves and link to a receiver e-mail address. *Device alarms*, however, are preset with a fixed minimum limit and maximum limit. The e-mail address for these kinds of alarms must be configured, too.
+*Application alarms* must be set by users themselves and linked to a recipient e-mail address. *Device alarms*, however, are preset with a fixed minimum limit and maximum limit. The e-mail address for these kinds of alarms must be configured, too.
 
 **Solutions**  
 In the *Account Settings* (https://www.kolibricloud.ch/account-settings) one or multiple receiver e-mail addresses have to be added to make it possible for the KOLIBRI Cloud to send alarm e-mails.  
@@ -46,10 +46,8 @@ Nevertheless, missing *five* transmissions is considered worthy of alarm.
     - because it is underwater
     - because the cellular antenna is not reacting (cell antenna stopped sending the needed frequency, cell antenna is updating or broken, ...)
     - because the LoRaWAN gateway is not reacting (power-off, antenna broken, ...)
-    - because of a defect level probe or cable
-  - electronics are damaged
+  - electronics/sensors/level-probes are damaged
   - has an invalid SIM card
-  - has a SIM card with a plan that ran out of money
 - The FTP/Mail server is not reachable
 
 **Possible reasons and solutions**  
@@ -59,22 +57,37 @@ Nevertheless, missing *five* transmissions is considered worthy of alarm.
    - If the battery voltage and/or battery capacity is too low, then the battery needs to be replaced.
 
 #### ⚡ *The sending device has communication problems because of heavy rain/snow* 
-   - To identify this problem please analyze the 'Signal strength' of the device on https://www.kolibricloud.ch/ and, if possible, cross-reference the data with past weather data. Does the signal strength get worse when there is heavy rainfall/snowfall?
+   - To identify this problem, please analyze the 'Signal strength' of the device on https://www.kolibricloud.ch/ and, if possible, cross-reference the data with past weather data. Does the signal strength get worse when there is heavy rainfall/snowfall?
    - If the weather has an impact, then consider re-position or protect the antenna. The higher the position, the better.
    - Even with a free line of sight there might be issues due to [Fresnel zones](https://en.wikipedia.org/wiki/Fresnel_zone)
 
-#### ⚡ *The sending device has communication problems because of it is underwater* 
-   - To identify this problem please analyze the 'Signal Strength' and the 'Humidity' of the device on https://www.kolibricloud.ch/ :
-   - If the humidity continues to rise, the signal strength immediately drops and the communication stopped, consider a water damage or the possibility of an overflooded device. Consider verifying the state of the sending device in the field.
-#### ⚡ *The sending device has communication problems because the antenna/gateway is not reacting* 
-   - todo (G netz down, antenna change, gateway not here or powerddown...)  
-#### ⚡ *The sending device electronics are damaged* 
-   - todo, sabotage or external influences
+#### ⚡ *The sending device has communication problems because it is underwater* 
+   - To identify this problem, please analyze the 'Signal Strength' and the 'Humidity' of the device on https://www.kolibricloud.ch/ :
+   - If the humidity continues to rise, the signal strength immediately dropped and the communication stopped, then consider a water damage or the possibility of an overflowed device. Consider verifying the state of the sending device in the field.
+#### ⚡ *The sending device has communication problems because the cellular antenna is not reacting* 
+   - The cell antenna stopped sending the needed frequency because the mobile telecom provider changes the available frequencies (No 2G in favour of 4G rsp. No 3G in favour of 4G etc.). Please check with you provider is in the process of shutting down the mobile network.
+   - Unlikely, but sometimes network provider lower the signal strength of cell antennas during the night. This might lead to the device not being able to connect during the nighttime. Please check if transmission gaps happened periodically and consider replacing the sending device to a more exposed place.
+
+#### ⚡ *The sending device has communication problems because the LoRaWAN gateway is not reacting* 
+   - The LoRaWAN gateway might be power-off or defect. Please check the state of the gateway. You might be able to remotely check the state of the gateway with the LoRa network platform (TTN, Loriot.io, ...)
+
+#### ⚡ *The sending device's electronics/sensors/level-probes are damaged* 
+   - Three cases:
+      A) The sending device (GSM, ARC1 or ADT1) might be defective or missing.
+      B) The cables to the level probes might be defective.
+      C) The sensors themselves might be defective.
+   - To analyze this please check the rate of transmissions on www.kolibrcloud.ch and the "last data". 
+    If some channels do not send correct values ("--" instead of a number), the sensor might be defective. Sometimes it is visible that the values of another channel have increased/decreased from the very moment other channels do not show any values. This indicates that the sensor is defective due to pressure overload.
+    If ALL channels are no longer sending correct values, but transmissions continue, the cable to the probes may be defective.
+    If there is no transmission anymore, the sending device itself might be physically defective or there is another (connection) problem.
+
 #### ⚡ *The SIM card invalid*
-   - todo SIM card cost/abo 
+   - Check with your mobile provider if the SIM card plan that ran out of money.
 #### ⚡ *The FTP/Mail server is not reachable* 
 
-Be aware that all KELLER remote sending devices are also logger. And even when communication is not possible, measurements will be made and stored. The measurement files can even be extracted (with 'KOLIBRI Desktop') and uploaded into the KOLIBRI Cloud.
+
+**The ARD1/ADT1 are also loggers**  
+Be aware that all KELLER remote sending devices are also logger. And even when communication is not possible, measurements will be made and stored as long as the level probes and the cables are working. The measurement files can even be extracted (with 'KOLIBRI Desktop') and uploaded into the KOLIBRI Cloud.
 
 **How was the alarm triggered**  
 Every device in the KOLIBRI Cloud is checked daily (03:30 UTC). If a device missed *at least five* transmissions at this moment, it will trigger a *'Device stopped transmitting'*-alarm.
@@ -83,10 +96,10 @@ Every device in the KOLIBRI Cloud is checked daily (03:30 UTC). If a device miss
 ## The humidity in the device is too high / *'Humidity'*-alarm triggered
 
 **Problem**  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The humidity IN the ARC1/ADT1 is too high. This might be because there is water IN the sending device itself. Water in the device will damage its electronics and power supply. It might stop sending because the electronics are defective or/and the device itself is underwater.
 
 **Possible solution**   
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+Please check the state of the device. You might open it and see if there is water IN the device. Use new 'Silica gel bags' to dry the device and consider to re-position the device to avoid further water problems.
 
 **How was the alarm triggered**  
 The alarm is triggered when the humidity level is above 90%. This is checked every 6 hours.
@@ -96,27 +109,31 @@ The alarm is triggered when the humidity level is above 90%. This is checked eve
 ## The battery capacity is too low / *'Battery Capacity'*-alarm triggered
 
 **Problem**  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+It is difficult to measure when a battery is running out of power as they are not rechargeable. Environmental changes or hardware differences result in an individual discharge curve for each battery. We measure and summarize every action of the device to calculate the used power. This empiric counter is visualized by the '*battery capacity*'. Effects like temperature or humidity influence the charge of the battery. The device might stop sending on +20% or will continue to send even when it reached 0%. 
+Whenever we calculate a capacity of 30%, please consider replacing the batteries.
+Be aware that **unplugging and re-plugging of the battery resets the capacity counter**! Therefore, the battery capacity will be 100%, although it is not.
 
 **Possible solutions**  
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+Please replace the battery. You can order new batteries from KELLER sales or directly from the manufacturer.
 
 **How was the alarm triggered**  
-alarm condition 1  
-alarm condition 2
+The *battery capacity too low* alarm is triggered when the capacity level is below 30% and will be automatically set off when the capacity level is over 90% again. 
+
 
 ---
 
 ## The battery voltage is too low / *'Battery Voltage'*-alarm triggered
 
 **Problem**  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+It is difficult to measure when a battery is running out of power as they are not rechargeable. Environmental changes or hardware differences result in an individual discharge curve for each battery. We measure and summarize every action of the device to calculate the used power. This empiric counter is visualized by the '*battery capacity*'. 
+The '*battery voltage*' is the actual measured voltage on the battery.
+When this alarm is raised, please consider replacing the batteries.
 
 **Possible solutions**    
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+Please replace the battery. You can order new batteries from KELLER sales or directly from the manufacturer.
+Be aware that unplugging and re-plugging of the battery resets the capacity counter. Therefore, the battery capacity will be 100%, although it is not.
 
 **How was the alarm triggered**  
-alarm condition 1  
-alarm condition 2
+The *battery voltage too low* alarm is triggered when the battery voltage level is below 3.6V (ARC1) rsp. 3.5V (ADT1 LoRa) rsp 3.8V (ADT1 NB/LTEM) and will be automatically set off when the battery level is over 3.7V (ARC1) rsp. 4.0V (ADT1 LoRa) rsp 4.0V (ADT1 NB/LTEM) again.  
 
 ---
