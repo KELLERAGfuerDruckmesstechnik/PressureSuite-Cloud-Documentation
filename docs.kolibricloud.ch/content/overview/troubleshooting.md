@@ -83,7 +83,17 @@ Nevertheless, missing *five* transmissions is considered worthy of alarm.
 
 #### ⚡ *The SIM card invalid*
    - Check with your mobile provider if the SIM card plan that ran out of money.
-#### ⚡ *The FTP/Mail server is not reachable* 
+#### ⚡ *The FTP server is not reachable* 
+   - Check with an FTP client such as [FileZilla](https://filezilla-project.org/) your credentials (host/username/password). 
+   - Alternatively, it is possible to test the connection in the account settings (https://www.kolibricloud.ch/account-settings)
+   - If it is an FTP server provided by KELLER with the host name ftp.gsmdata.ch, then please contact kolibri@keller-druck.com
+   - If it is an FTP server provided by you, then contact your IT administrator. When the FTP server never could be reached, then this might be a problem with unsupported security protocols. Contact kolibri@keller-druck.com to check if the used FTPS SSH cipher is supported. SFTP is not supported.
+
+#### ⚡ *The mail server is not reachable* 
+   - Check with an alternative mail client your credentials (host/username/password). 
+   - If the credentials don't work, and it is a mail server provided by KELLER, then please contact kolibri@keller-druck.com
+   - If the credentials don't work, and it is a mail server provided by you, then contact your IT administrator.
+   - If the credentials work, but the device can not send data to the mail server any more than please contact kolibri@keller-druck.com
 
 
 **The ARD1/ADT1 are also loggers**  
