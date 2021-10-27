@@ -17,7 +17,7 @@ There are three categories of alarms:
  - Application alarms  
     *Application alarms are for example 'level alarms' that can be set per device per channel and trigger when the value falls below/over a certain level.*
  - Device alarms  
-    *Device alarms are automatically triggered alarms in case a device has an exceptional state such es low power, high humidity, or stopped sending measurements.*
+    *Device alarms are automatically triggered alarms in case a device has an exceptional state such as low power, high humidity, or stopped sending measurements.*
  - System alarms  
     *System alarms are triggered when system-wide problems arise.*
 
@@ -33,21 +33,21 @@ In the *Account Settings* (https://www.kolibricloud.ch/account-settings) one or 
 
 **Problems**  
 With cellular technology, multiple reasons for failed transmissions can arise. The cellular technology-based KELLER devices (GSM/ARC1/ADT1) can handle a few failed transmissions by automatically resending the missing data. 
-In LoRaWAN a 100% reliability is not given by protocol design. Failed transmissions will not be repeated automatically.  
+In LoRaWAN a 100% reliability is not given by protocol design. Failed transmissions will not be resending automatically.  
 Nevertheless, missing *five* transmissions is considered worthy of alarm.  
 
 ### Common causes
 - The sending device  
-    - has no battery power left  
-    - battery is not plugged in  
-    - device antenna is not plugged in  
-    - has communication problems  
-        - because of heavy rain  
-        - because it is underwater  
-        - because the cellular antenna is not reacting (cell antenna stopped sending the needed frequency, cell antenna is updating or broken, ...)  
-        - because the LoRaWAN gateway is not reacting (power-off, antenna broken, ...)  
-    - electronics/sensors/level-probes are damaged  
-    - has an invalid SIM card  
+  + has no battery power left  
+  + battery is not plugged in  
+  + device antenna is not plugged in  
+  + has communication problems  
+    - because of heavy rain  
+    - because it is underwater  
+    - because the cellular antenna is not reacting (cell antenna stopped sending the needed frequency, cell antenna is updating or broken, ...)  
+    - because the LoRaWAN gateway is not reacting (power-off, antenna broken, ...)  
+  + electronics/sensors/level-probes are damaged  
+  + has an invalid SIM card  
 
 - The FTP/Mail server is not reachable  
 
@@ -61,14 +61,14 @@ Nevertheless, missing *five* transmissions is considered worthy of alarm.
 #### ⚡ *The sending device has communication problems because of heavy rain/snow* 
    - To identify this problem, please analyze the 'Signal strength' of the device on https://www.kolibricloud.ch/ and, if possible, cross-reference the data with past weather data. Does the signal strength get worse when there is heavy rainfall/snowfall?
    - If the weather has an impact, then consider re-position or protect the antenna. The higher the position, the better.
-   - Even with a free line of sight there might be issues due to [Fresnel zones](https://en.wikipedia.org/wiki/Fresnel_zone)
+   - Even with a free line in sight there might be issues due to [Fresnel zones](https://en.wikipedia.org/wiki/Fresnel_zone)
 
 #### ⚡ *The sending device has communication problems because it is underwater* 
    - To identify this problem, please analyze the 'Signal Strength' and the 'Humidity' of the device on https://www.kolibricloud.ch/ :
    - If the humidity continues to rise, the signal strength immediately dropped and the communication stopped, then consider a water damage or the possibility of an overflowed device. Consider verifying the state of the sending device in the field.
 #### ⚡ *The sending device has communication problems because the cellular antenna is not reacting* 
    - The cell antenna stopped sending the needed frequency because the mobile telecom provider changes the available frequencies (No 2G in favour of 4G resp. No 3G in favour of 4G etc.). Please check with you provider is in the process of shutting down the mobile network.
-   - Unlikely, but sometimes network provider lower the signal strength of cell antennas during the night. This might lead to the device not being able to connect during the nighttime. Please check if transmission gaps happened periodically and consider replacing the sending device to a more exposed place.
+   - Unlikely, but sometimes network provider lower the signal strength of cell antennas during the night. This might lead to the device not being able to connect during the nighttime. Please check if transmission gaps happen periodically and consider replacing the sending device to a more exposed place.
 
 #### ⚡ *The sending device has communication problems because the LoRaWAN gateway is not reacting* 
    - The LoRaWAN gateway might be power-off or defect. Please check the state of the gateway. You might be able to remotely check the state of the gateway with the LoRa network platform (TTN, Loriot.io, ...)
