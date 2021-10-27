@@ -37,18 +37,18 @@ In LoRaWAN a 100% reliability is not given by protocol design. Failed transmissi
 Nevertheless, missing *five* transmissions is considered worthy of alarm.  
 
 ### Common causes
-- The sending device
-  - has no battery power left
-  - battery is not plugged in
-  - device antenna is not plugged in
-  - has communication problems
-    - because of heavy rain
-    - because it is underwater
-    - because the cellular antenna is not reacting (cell antenna stopped sending the needed frequency, cell antenna is updating or broken, ...)
-    - because the LoRaWAN gateway is not reacting (power-off, antenna broken, ...)
-  - electronics/sensors/level-probes are damaged
-  - has an invalid SIM card
-- The FTP/Mail server is not reachable
+- The sending device  
+   - has no battery power left  
+   - battery is not plugged in  
+   - device antenna is not plugged in  
+   - has communication problems  
+      - because of heavy rain  
+      - because it is underwater  
+      - because the cellular antenna is not reacting (cell antenna stopped sending the needed frequency, cell antenna is updating or broken, ...)  
+      - because the LoRaWAN gateway is not reacting (power-off, antenna broken, ...)  
+   - electronics/sensors/level-probes are damaged  
+   - has an invalid SIM card  
+- The FTP/Mail server is not reachable  
 
 **Possible reasons and solutions**  
 
@@ -65,35 +65,35 @@ Nevertheless, missing *five* transmissions is considered worthy of alarm.
    - To identify this problem, please analyze the 'Signal Strength' and the 'Humidity' of the device on https://www.kolibricloud.ch/ :
    - If the humidity continues to rise, the signal strength immediately dropped and the communication stopped, then consider a water damage or the possibility of an overflowed device. Consider verifying the state of the sending device in the field.
 #### ⚡ *The sending device has communication problems because the cellular antenna is not reacting* 
-   - The cell antenna stopped sending the needed frequency because the mobile telecom provider changes the available frequencies (No 2G in favour of 4G rsp. No 3G in favour of 4G etc.). Please check with you provider is in the process of shutting down the mobile network.
+   - The cell antenna stopped sending the needed frequency because the mobile telecom provider changes the available frequencies (No 2G in favour of 4G resp. No 3G in favour of 4G etc.). Please check with you provider is in the process of shutting down the mobile network.
    - Unlikely, but sometimes network provider lower the signal strength of cell antennas during the night. This might lead to the device not being able to connect during the nighttime. Please check if transmission gaps happened periodically and consider replacing the sending device to a more exposed place.
 
 #### ⚡ *The sending device has communication problems because the LoRaWAN gateway is not reacting* 
    - The LoRaWAN gateway might be power-off or defect. Please check the state of the gateway. You might be able to remotely check the state of the gateway with the LoRa network platform (TTN, Loriot.io, ...)
 
-#### ⚡ *The sending device's electronics/sensors/level-probes are damaged* 
-   - Three cases:
-      A) The sending device (GSM, ARC1 or ADT1) might be defective or missing.
-      B) The cables to the level probes might be defective.
-      C) The sensors themselves might be defective.
-   - To analyze this please check the rate of transmissions on www.kolibrcloud.ch and the "last data". 
-    If some channels do not send correct values ("--" instead of a number), the sensor might be defective. Sometimes it is visible that the values of another channel have increased/decreased from the very moment other channels do not show any values. This indicates that the sensor is defective due to pressure overload.
-    If ALL channels are no longer sending correct values, but transmissions continue, the cable to the probes may be defective.
-    If there is no transmission anymore, the sending device itself might be physically defective or there is another (connection) problem.
+#### ⚡ *The sending device's electronics/sensors/level-probes are damaged*  
+   - Three cases:  
+      A) The sending device (GSM, ARC1 or ADT1) might be defective or missing.  
+      B) The cables to the level probes might be defective.  
+      C) The sensors themselves might be defective.  
+   - To analyze this, please check the rate of transmissions on www.kolibrcloud.ch and the "last data".  
+    If some channels do not send correct values ("--" instead of a number), the sensor might be defective. Sometimes it is visible that the values of another channel have increased/decreased from the very moment other channels do not show any values. This indicates that the sensor is defective due to pressure overload.  
+    If ALL channels are no longer sending correct values, but transmissions continue, the cable to the probes may be defective.  
+    If there is no transmission anymore, the sending device itself might be physically defective or there is another (connection) problem.  
 
 #### ⚡ *The SIM card invalid*
    - Check with your mobile provider if the SIM card plan that ran out of money.
 #### ⚡ *The FTP server is not reachable* 
-   - Check with an FTP client such as [FileZilla](https://filezilla-project.org/) your credentials (host/username/password). 
-   - Alternatively, it is possible to test the connection in the account settings (https://www.kolibricloud.ch/account-settings)
-   - If it is an FTP server provided by KELLER with the host name ftp.gsmdata.ch, then please contact kolibri@keller-druck.com
-   - If it is an FTP server provided by you, then contact your IT administrator. When the FTP server never could be reached, then this might be a problem with unsupported security protocols. Contact kolibri@keller-druck.com to check if the used FTPS SSH cipher is supported. SFTP is not supported.
+   - Check with an FTP client such as [FileZilla](https://filezilla-project.org/) your credentials (host/username/password).  
+   - Alternatively, it is possible to test the connection in the account settings (https://www.kolibricloud.ch/account-settings)  
+   - If it is an FTP server provided by KELLER with the host name ftp.gsmdata.ch, then please contact kolibri@keller-druck.com  
+   - If it is an FTP server provided by you, then contact your IT administrator. When the FTP server never could be reached, then this might be a problem with unsupported security protocols. Contact kolibri@keller-druck.com to check if the used FTPS SSH cipher is supported. SFTP is not supported.  
 
 #### ⚡ *The mail server is not reachable* 
-   - Check with an alternative mail client your credentials (host/username/password). 
-   - If the credentials don't work, and it is a mail server provided by KELLER, then please contact kolibri@keller-druck.com
-   - If the credentials don't work, and it is a mail server provided by you, then contact your IT administrator.
-   - If the credentials work, but the device can not send data to the mail server any more than please contact kolibri@keller-druck.com
+   - Check with an alternative mail client your credentials (host/username/password).   
+   - If the credentials don't work, and it is a mail server provided by KELLER, then please contact kolibri@keller-druck.com  
+   - If the credentials don't work, and it is a mail server provided by you, then contact your IT administrator.  
+   - If the credentials work, but the device can not send data to the mail server any more than please contact kolibri@keller-druck.com  
 
 
 **The ARD1/ADT1 are also loggers**  
@@ -144,6 +144,6 @@ Please replace the battery. You can order new batteries from KELLER sales or dir
 Be aware that unplugging and re-plugging of the battery resets the capacity counter. Therefore, the battery capacity will be 100%, although it is not.
 
 **How was the alarm triggered**  
-The *battery voltage too low* alarm is triggered when the battery voltage level is below 3.6V (ARC1) rsp. 3.5V (ADT1 LoRa) rsp 3.8V (ADT1 NB/LTEM) and will be automatically set off when the battery level is over 3.7V (ARC1) rsp. 4.0V (ADT1 LoRa) rsp 4.0V (ADT1 NB/LTEM) again.  
+The *battery voltage too low* alarm is triggered when the battery voltage level is below 3.6V (ARC1) resp. 3.5V (ADT1 LoRa) resp.  3.8V (ADT1 NB/LTEM) and will be automatically set off when the battery level is over 3.7V (ARC1) resp. 4.0V (ADT1 LoRa) resp.  4.0V (ADT1 NB/LTEM) again.  
 
 ---

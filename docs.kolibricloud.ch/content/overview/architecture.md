@@ -28,7 +28,7 @@ description: Architectural overview. What components are used and how.
 ---  
 ![Architecture part 3](../../img/arch3.png)  
 *A LoRa Network Server pushed the transmission further to the KOLIBRI Cloud where it is transformed and stored in a SQL database.*  
-*Every 5 minutes, Cloud programs gather new files from the FTP- rsp. Mail-server and transform and store them in a SQL database.*
+*Every 5 minutes, Cloud programs gather new files from the FTP- resp. Mail-server and transform and store them in a SQL database.*
   
 ---
 ![Architecture part 4](../../img/arch4.png)  

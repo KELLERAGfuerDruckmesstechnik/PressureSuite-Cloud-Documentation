@@ -198,7 +198,7 @@ Use: *Every device has an 4 digit id number. The ```deviceId``` is the same numb
       "isActive": false
     }
   ],
-  "note": null,  #This is a note text written by a user in the front end (rsp. with the POST /v1/device/{deviceId} endpoint)
+  "note": null,  #This is a note text written by a user in the front end (resp. with the POST /v1/device/{deviceId} endpoint)
   "numberOfUnconfirmedAlarms": 8, #The number of unconfirmed alarms
   "lastMeasurementTransmissionDateTime": "2020-04-23T18:01:35.3835644", #The UTC timestamp when the last transmission happened
   "signalQuality": 24, #Represents the signal strength in "Arbitrary Strength Unit".  (24 ASU * 2)-113dBm = -65dBm signal strength
