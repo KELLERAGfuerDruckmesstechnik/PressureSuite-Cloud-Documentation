@@ -38,26 +38,16 @@ Nevertheless, missing *five* transmissions is considered worthy of alarm.
 
 ### Common causes
 - The sending device  
-
-   - has no battery power left  
-
-   - battery is not plugged in  
-
-   - device antenna is not plugged in  
-
-   - has communication problems  
-
-      - because of heavy rain  
-
-      - because it is underwater  
-
-      - because the cellular antenna is not reacting (cell antenna stopped sending the needed frequency, cell antenna is updating or broken, ...)  
-
-      - because the LoRaWAN gateway is not reacting (power-off, antenna broken, ...)  
-
-   - electronics/sensors/level-probes are damaged  
-
-   - has an invalid SIM card  
+    - has no battery power left  
+    - battery is not plugged in  
+    - device antenna is not plugged in  
+    - has communication problems  
+        - because of heavy rain  
+        - because it is underwater  
+        - because the cellular antenna is not reacting (cell antenna stopped sending the needed frequency, cell antenna is updating or broken, ...)  
+        - because the LoRaWAN gateway is not reacting (power-off, antenna broken, ...)  
+    - electronics/sensors/level-probes are damaged  
+    - has an invalid SIM card  
 
 - The FTP/Mail server is not reachable  
 
