@@ -15,13 +15,7 @@ description: History about maintenances and outages
 ---
 ## Planned Maintenance windows
   --
-### 20. September 2021
 
-**Planned work**  
-- We are enabling the auto-alarming feature for all customers. This might trigger warn mails to those customers who have an E-Mail address registered in the account settings (https://www.kolibricloud.ch/account-settings)
-- We are going to switch the SSL certificate. This might cause temporary connection problems and problems when accessing the data through the API.
-
----
 ---
 
 ## Outages  
@@ -253,7 +247,7 @@ None.
 ### 06.Nov.2019 from 16:00-17:00 CET
 
 **Planned Maintenance Window**:  
-Updated various features including test version of the new "Device Configuration" feature.  
+Updated various features; Including test version of the new "Device Configuration" feature.  
 Known issues:
 
 - The Device Configuration-Button is hidden on purpose.
@@ -296,6 +290,14 @@ None.
 ---
 
 ## Past Maintenance windows
+
+### 20. September 2021
+
+**Planned work**  
+- We are enabling the auto-alarming feature for all customers. This might trigger warn mails to those customers who have an E-Mail address registered in the account settings (https://www.kolibricloud.ch/account-settings)
+- We are going to switch the SSL certificate. This might cause temporary connection problems and problems when accessing the data through the API.
+
+---
 
 ### 01.July 2021 10:00 MEZ - 16:00 MEZ
 
