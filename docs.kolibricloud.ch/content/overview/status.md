@@ -26,7 +26,7 @@ description: History about maintenances and outages
 
 ## Outages  
 
-### 25. October 2021 16:00 CET - 02. November 2021 12:30 CET
+### 25. October 2021 16:00 CET - 02. November 2021 13:30 CET
 
 **Summary of Impact:**  
 An update on the FTP-file-grabber-module caused an internal error in four FTP accounts where new devices where registered.  
