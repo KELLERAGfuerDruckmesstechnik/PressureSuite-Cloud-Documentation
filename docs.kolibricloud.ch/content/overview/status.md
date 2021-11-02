@@ -19,12 +19,26 @@ description: History about maintenances and outages
 
 **Planned work**  
 - We are enabling the auto-alarming feature for all customers. This might trigger warn mails to those customers who have an E-Mail address registered in the account settings (https://www.kolibricloud.ch/account-settings)
-- We are going to switch the SSL certificate. This might cause temporary connection problems and problems when accessing the data thought the API.
+- We are going to switch the SSL certificate. This might cause temporary connection problems and problems when accessing the data through the API.
 
 ---
 ---
 
 ## Outages  
+
+### 25. October 2021 16:00 CET - 02. November 2021 12:30 CET
+
+**Summary of Impact:**  
+An update on the FTP-file-grabber-module caused an internal error in four FTP accounts where new devices where registered.  
+This error has been fixed. No data has been deleted, and all missing measurement should have been loaded up to the KOLIBRI Cloud DB.
+
+**Root Cause:**  
+An error when creating paths to copy the measurement files to a new associated folder lead to ill-formed folders and files. This error caused an exception and the FTP account and the process of mitigation the new measurement files has been dropped for another 5min. 
+
+**Mitigation:**  
+The particular software code has been fixed and tested. All data should now be visible again.  
+
+---
 
 ### 3.August 2021 - 28.August 2021
 
