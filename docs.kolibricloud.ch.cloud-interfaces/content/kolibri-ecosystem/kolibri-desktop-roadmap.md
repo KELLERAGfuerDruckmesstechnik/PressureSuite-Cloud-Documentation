@@ -25,6 +25,24 @@ PLANNED
 
 ## Release History
 
+## Version 6.2.21314.3
+
+### Description
+
+This update introduces the device calibration. 
+
+### Features and Enhancements
+
+- New feature: Device calibration (Adjust / Zeroing)
+- Device configuration: Device identification tile is now available for remote transmission unit (ADT1, ARC1, GSM2)
+- New language: Japanese (machine translated)
+- New language: Russian (machine translated)
+
+### Bug fixes
+
+- Fixed crash with double measurements caused by daylight saving time
+- Fixed crash with corrupted user-config files
+
 ### Version 6.2.21127.1
 
 #### Description
