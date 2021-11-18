@@ -8,26 +8,26 @@ toc: true
 description: Roadmap of coming features
 ---
 # Roadmap
-The following roadmap is an idea. Therefore, the priority might change and ee might implement a feature earlier or later depending on customer projects and other circumstances.  
+The following roadmap is an idea. Therefore, the priority might change and we might implement a feature earlier or later depending on customer projects and other circumstances.  
 
 ## PRIO 1
 ### Handle multiple Configurations/Water Calculations per device
-One of the advantages of the DataManager-SW is that it can handle various configuration/calculations per device. The KOLIBRI Cloud right shows calculated values on-the-fly but ignores the fact that measurements can have different calculations in the past (e.g. due to changing installation). It is wished to be able to add comments to chosen installation/configuration.  
+One of the advantages of the DataManager-SW is that it can handle various configuration/calculations per device. The KOLIBRI Cloud right shows calculated values on-the-fly but ignores the fact that measurements can have different calculations in the past (eg. due to changing installation). It is wished to be able to add comments to chosen installation/configuration.  
 The goal is now to handle and visualize the stored device configurations, in the chart and the export!  ![Handle multiple Configurations/Water Calculations per device](../../img/roadmap/MultipleWaterLevelsOnOneChart.png)  
 
 ### Device Log  
-Changing configurations, settings and calculations should be stored to give a certain traceability for understanding the system and allow to post-configure multiple installation per device. The 'Device Log' discloses the changes and who did the changes.  
+Changing configurations, settings and calculations should be stored to give a certain traceability for understanding the system and allow to post-configure multiple installations per device. The 'Device Log' discloses the changes and who did the changes.  
 ![Device Log](../../img/roadmap/DeviceLog.png)  
 
 ## PRIO 2
 
-### Possibility to hide measurements and request missing from the device
+### Show maintenance control to easy find issues with the device configuration and fix device issues/installations
+-  Show possible configuration issues of this device
+-  Possibility to hide measurements and request missing from the device
+-  Easier change of a device from an installation to another without the help of KOLIBRI Cloud support
+-  Easier replacement of a defect sending device without the help of KOLIBRI Cloud support
 
-### Easier change of a device from an installation to another without the help of KOLIBRI Cloud support
 
-### Easier replacement of a defect sending device without the help of KOLIBRI Cloud support
-
-### Show maintenance control to easy find issues with the device configuration
 
 ----
 ## PRIO 3
