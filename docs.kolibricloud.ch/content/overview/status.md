@@ -20,14 +20,27 @@ description: History about maintenances and outages
 
 ## Outages  
 
+### 10. December 2021 12:40 CET - 11. December 2021 08:40 CET
+
+**Summary of Impact:**  
+An SW update caused the system to reject all incoming measurement sets. ***We are working on restoring the data back. This will take a couple of days.***
+
+**Root Cause:**  
+
+
+**Mitigation:**  
+***We are working on restoring the data back. This will take a couple of days.***
+
+
+---
 ### 25. October 2021 16:00 CET - 02. November 2021 13:30 CET
 
 **Summary of Impact:**  
-An update on the FTP-file-grabber-module caused an internal error in four FTP accounts where new devices where registered.  
-This error has been fixed. No data has been deleted, and all missing measurement should have been loaded up to the KOLIBRI Cloud DB.
+An update on the FTP-file-grabber-module caused an internal error in four FTP accounts where new devices were registered.  
+This error has been fixed. No data has been deleted, and all missing measurements should have been loaded up to the KOLIBRI Cloud DB.  
 
 **Root Cause:**  
-An error when creating paths to copy the measurement files to a new associated folder lead to ill-formed folders and files. This error caused an exception and the FTP account and the process of mitigation the new measurement files has been dropped for another 5min. 
+An error when creating paths to copy the measurement files to a new associated folder lead to ill-formed folders and files. This error caused an exception and the FTP account and the process of mitigation the new measurement files has been dropped for another 5min.  
 
 **Mitigation:**  
 The particular software code has been fixed and tested. All data should now be visible again.  
