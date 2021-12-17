@@ -7,14 +7,11 @@ menu:
 ---
 
 # KOLIBRI Desktop - Roadmap
-PLANNED with goal Q3/2021
-- **Adjust** - Adjust function "zeroing" and "gain factor".
 
 PLANNED  
 
 - **Cloud-to-Desktop connection** - Use KOLIBRI Desktop to store/backup data from the KOLIBRI Cloud and visualize them.
 - **Purge obsolete data on the logger device** - Deletion of existing records stored on the device.
-- **CCS30 functionality**
 - **Desktop-to-Cloud connection** - Press a button and store records of your device in the cloud. Access this data using http://www.kolibricloud.ch
 - **Reporting** - new functionality to easily generate reports out of a record
 
