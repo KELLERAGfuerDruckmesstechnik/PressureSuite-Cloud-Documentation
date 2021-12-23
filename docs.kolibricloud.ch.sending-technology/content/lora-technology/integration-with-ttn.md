@@ -118,10 +118,24 @@ After signing in with The Things ID, this tool will let you see the applications
 
 - If you have a TTN gateway in reach, you should now be able to communicate with the TTN server.
 - When you want to register a new TTN gateway into TTN V3 then go to https://eu1.cloud.thethings.network/console/gateways/add
-  - Enter the **Gateway EUI** from the Gateway and choose a **Gateway ID**
+  - Enter the **Gateway EUI** from the gateway and choose a **Gateway ID**
   - Use the same *frequency plan* and set the *Gateway Status* to **Public**
   
 ### Step 10
+
+- To send data to the KOLIBRI Cloud it is needed to forward the transmissions.
+  - Go to **Integrations** and **+Add Webhook** in **Webhooks**
+  - Choose **Custom webhook**
+  - Choose a *Webhook ID* such as *webhook-to-kolibri*
+  - *Webhook format* is **JSON**
+  - *Base URL* is `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`  
+  - Enable all **Uplink messages**
+  - Press **Add webhook**.  
+  This will forward a transmission to the KOLIBRI Cloud.  
+
+> ![TTN V3 Webhook Integration](../../TTNV3_AddIntegrationToKolibri.png  "TTN V3 Webhook Integration")  
+
+### Step 11
 
 - Verify the connection by
   - waiting for the sending interval and seeing the transmission in the TTN V3 console.
