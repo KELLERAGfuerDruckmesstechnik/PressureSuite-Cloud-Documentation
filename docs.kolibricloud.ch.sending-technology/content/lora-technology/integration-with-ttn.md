@@ -22,9 +22,9 @@ This means:
 
 More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256
 
-For those who missed the warnings about the shutdown of TTN V2 (since February) and didn’t manage to migrate their devices before the migration deadline of September 30, for those who didn’t make it to the December 1 traffic API shutdown, and even for those who didn’t export their devices before the final shutdown of V2 on December 7, TTN is happy to announce the new The Things Network V2 Take-Out Tool:  https://v2takeout.thethingsnetwork.org/ 
+For those who missed the warnings about the shutdown of TTN V2 (since February) and didn't manage to migrate their devices before the migration deadline of September 30, for those who didn’t make it to the December 1 traffic API shutdown, and even for those who didn’t export their devices before the final shutdown of V2 on December 7, TTN is happy to announce the new The Things Network V2 Take-Out Tool:  https://v2takeout.thethingsnetwork.org/ 
 
-After signing in with The Things ID, this tool will let you see the applications you had on V2, as well as the end device registrations and state at the time of the final shutdown on December 7. You can use it to download a ZIP file containing application information, payload formatters and a CSV file with end device registrations.  The take-out tool will be available until The Things Conference 2022, after which the old V2 data will be destroyed.  
+After signing in with The Things ID, this tool will let you see the applications you had on V2, as well as the end device registrations and state at the time of the final shutdown on December 7. You can use it to download a ZIP file containing application information, payload formatters and a CSV file with end device registrations. The take-out tool will be available until The Things Conference 2022, after which the old V2 data will be destroyed.  
 
 ---
 ---

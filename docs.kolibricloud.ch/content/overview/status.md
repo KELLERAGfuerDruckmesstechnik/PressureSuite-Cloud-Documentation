@@ -23,14 +23,13 @@ description: History about maintenances and outages
 ### 10. December 2021 12:40 CET - 11. December 2021 08:40 CET
 
 **Summary of Impact:**  
-An SW update caused the system to reject all incoming measurement sets. ***We are working on restoring the data back. This will take a couple of days.***
+An SW update caused the system to reject all incoming measurement sets. The data has been restored.  
+If you think there is still missing data then please contact kolibri@keller-druck.com
 
 **Root Cause:**  
-
-
-**Mitigation:**  
-***We are working on restoring the data back. This will take a couple of days.***
-
+An SW update meant for our test system caused a smaller sub-part to automatically re-build and deploy to the production system. This resulted in an incompatibility and the data could not be ingested in the database.  
+The data was still captured in an emergency log queue from which the measurements could be retrieved.  
+Due to the holiday season we had to delay these efforts and fix and test everything after New Year's Eve but not earlier. We are sorry for this outage.  
 
 ---
 ### 25. October 2021 16:00 CET - 02. November 2021 13:30 CET
