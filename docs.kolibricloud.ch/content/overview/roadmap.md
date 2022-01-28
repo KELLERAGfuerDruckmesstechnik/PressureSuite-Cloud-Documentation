@@ -26,7 +26,7 @@ Changing configurations, settings and calculations should be stored to give a ce
 -  Possibility to hide measurements and request missing from the device
 -  Easier change of a device from an installation to another without the help of KOLIBRI Cloud support
 -  Easier replacement of a defect sending device without the help of KOLIBRI Cloud support
-
+-  Possibility to send request for missing data
 
 
 ----

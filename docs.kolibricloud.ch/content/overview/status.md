@@ -14,7 +14,11 @@ description: History about maintenances and outages
 ---
 ---
 ## Planned Maintenance windows
-  --
+
+### 31.January 2022 10:00 MEZ - 12:00 MEZ
+
+**Planned work**  
+*We update the DB, API and frontend to make the new features possible. For this, the Cloud, including WebApp & API might be not accessible for some hours. Expect API calls to fail and data to be collected with delay.*
 
 ---
 
