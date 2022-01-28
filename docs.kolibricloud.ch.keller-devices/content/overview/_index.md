@@ -18,7 +18,7 @@ They are especially suitable with our [Data Loggers](https://keller-druck.com/en
 
 KELLER has more than a decade experience with sending measuring data with mobile 2G/3G, 4G.
 
-- The [ARC1 remote transmitter](https://keller-druck.com/en/products/wireless-solutions/remote-transmission-units/arc1-tube) is a battery operated, robust sending device that is compatible with the KOLIBRI Cloud.
+- The [ARC1 remote transmitter](https://keller-druck.com/en/products/wireless-solutions/remote-transmission-units/arc1-tube) is a battery-operated, robust sending device that is compatible with the KOLIBRI Cloud.
 
 Multiple housing variants such as:  
 
@@ -29,6 +29,7 @@ Connectivity variants:
 
 - 2G/3G: GSM, GPRS/EDGE, UMTS, HSDPA
 - 4G: including 3G/2G, country-specific modules  
+- NB-IoT / LTE-M
 
 ## Remote Data Transmission Unit with LoRa
 
@@ -41,6 +42,7 @@ Connectivity variants:
 
 - 2G/3G: GSM, GPRS/EDGE, UMTS, HSDPA  
 - 4G: including 3G/2G, country-specific modules  
+- NB-IoT / LTE-M
 
 Multiple housing variants such as:
 

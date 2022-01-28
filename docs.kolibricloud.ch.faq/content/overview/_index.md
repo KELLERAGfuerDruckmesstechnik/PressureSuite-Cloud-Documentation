@@ -46,14 +46,14 @@ KELLER has been using IoT devices for many years: GSM data loggers and now also 
 See more at <https://docs.kolibricloud.ch/sending-technology/lora-technology/>
 
 ## What kind of IoT devices does KELLER have?
-
-KELLER sells pressure sensors that send data via GSM or LoRa. Both using the ARC1 variations. With or without ATEX certification. 
-In 2019 KELLER will sell cost-efficient LoRa-devices. And there will be the first NB-IoT prototypes, too.
+See https://keller-druck.com/en/products/wireless-solutions
+KELLER sells the ADT1 (low-cost) or the ARC1 (robust) device in a tube, a box or a box with special safty barriers.
+Both device categories can send data either via cellular sending technology (2G/3G/4G/NB-IoT/LTE-M) or via the LoRaWAN sending technology. 
 
 ## What does "KOLIBRI" even mean?
 
-KOLIBRI is the name of the new KELLER AG product line. Its the German name for hummingbird starting with a **K** as in **K**ELLER.
-Currently this product line contains:
+KOLIBRI is the name of the new KELLER AG product line. It's the German name for hummingbird starting with a **K** as in **K**ELLER.
+Currently, this product line contains:
 
 - KOLIBRI Cloud : Web portal for customers to access data
 
@@ -61,7 +61,7 @@ Currently this product line contains:
 
 - KOLIBRI Mobile : The new Android app, with which you can load measurement data from KELLER data loggers via Bluetooth to a smartphone.
 
-These products all use the latest technologies and a customized design. In addition, you will download and upload data from "KOLIBRI Desktop" and "KOLIBRI Mobile" to the "KOLIBRI Cloud".
+These products all use the latest technologies and a customized design. In addition, you will download and upload data from "KOLIBRI Desktop" and "KOLIBRI Mobile" to the "KOLIBRI Cloud".  
 
 ## What is the "KOLIBRI Cloud"?
 
@@ -87,7 +87,7 @@ Part of this new product line is the cloud possibilities, which are:
 ## The customer wants to create his own web app or mobile app. How can KELLER help the customer?
 
 Customer may use our WebApp to see that their devices are sending data (proof-of-concept). This means that he can IMMEDIATELY start testing our devices in his environment.
-Then he can use our API to make data queries. He now has to develop an User Interface and address our API. We help him with sample programs and good documentation.
+Then he can use our API to make data queries. He now has to develop an User-Interface and address our API. We help him with sample programs and good documentation.
 
 ## The customer does not want to use our "cloud". (ie the customer wants to save and present the data by himself). How can KELLER help the customer?
 
@@ -101,7 +101,7 @@ Please contact <marketing@keller-druck.com>
 ## How do I sign up? How do I log in? How can I test it?
 
 See: <http://www.kolibricloud.ch>
-For all those interested there is a test user account, with which everyone can log in and try out the WebApp.
+For all those interested, there is a test user account (Demo1234 / Demo1234), with which everyone can log in and try out the WebApp.
 There are a few test devices visible and their measurement data. The login password can be seen on <http://www.kolibricloud.ch.>
 
 ## Does the website also work on a mobile phone?
@@ -116,20 +116,11 @@ There are three categories:
 
 - Application alarms: Alarms that the customer can set and are related to his application
   - Level Alarm: Here you can select a minima or maxima of any channel. Eg "If channel 'Pressure 1' has more than 2.5 bar, then trigger an alarm
-  - PLANNED: Delta/Time Alarm: Here, an alarm can be triggered if measured values fluctuate too much
-- PLANNED: Device Alarms: These are alarms that are automatically triggered if a device experiences an extraordinary condition. For example:
+- Device Alarms: These are alarms that are automatically triggered if a device experiences an extraordinary condition. For example:
   - Low Battery Capacity / Critical Battery Capacity
   - "Low Battery Voltage " / "Critical Battery Voltage"
-  - "Low signal quality" / "low signal capacity"
-  - Extraordinary humidity in the sensor (feature of ARC devices)
-  - Sensor Error
+  - Extraordinary humidity in the sensor
   - Device does not send or is sending late
-- PLANNED: System Alarms: Alarms in case multiple devices have problems at the same time:
-  - Several devices do not send or arrive late
-  - FTP server is not available
-  - Mail server is not available
-  - LoRa Server is not available
-  - Measurement data could not be stored in the DB for unknown reasons
 
 ## How do I know that the devices are communicating?
 
@@ -140,8 +131,6 @@ On the WebApp you can read the time of the last communication.
 
 It is possible to load data from GSM2DataManager databases into the cloud. This is a work effort of multiple hours and might be a chargeable work. Your sales person will find a fair solution.
 
-At a trade fair I would like to present the KOLIBRI WebApp.
-
 ## The customer needs a new feature? How do I proceed?
 
 Contact to <kolibri@keller-druck.com>
@@ -150,7 +139,7 @@ Contact to <kolibri@keller-druck.com>
 
 Contact to <kolibri@keller-druck.com>
 
-## How does LoRa technology work and what are the advantages?
+## How does LoRa technology work? And what are the advantages?
 
 LoRa (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to GSM, measurement data from the KELLER sensor can be sent away wireless to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers.
 LoRa has the advantages over GSM that it is cheaper and requires less power (smaller, cheaper battery)
@@ -210,8 +199,8 @@ An API is very powerful. A customer can use the API to pick up all his data, sav
 
 ## Where is the data stored?
 
-All data is stored in a data center in Ireland (soon to be in Switzerland) in an SQL database and partly information is cached in log files to recover data in an emergency.
-It is automatically backed up every 5-10 min.
+All data is stored in a EU data center in Ireland in an SQL database.
+It is automatically backed-up every 5-10 min.
 
 ## How does the data get from the devices to the WebApp?
 
@@ -230,7 +219,7 @@ The entire system is not that complicated.
 ## How safe is the cloud?
 
 The cloud is very safe.
-It uses modern processes, best practices and tools.
+It uses modern processes, best practices and tools. Everything was audited by Windows Azure experts (Microsoft MVP expert).
 Authorization is managed externally (by Microsoft Azure Active Directory B2C). So if you want to hack accounts from KOLIBRI Cloud, then you have to hack Microsoft first.
 Without proper authorization, it is not possible to get data.
 You can only query the data assigned to the user. This means that a validly authorized user can not see other user's data. This is even backed up at the database level (role-level feature SQL Server).
@@ -243,7 +232,7 @@ Microsoft Azure is one of the top three players in cloud services and meets seve
 
 Security is one of the key features and concerns in IoT / cloud projects.
 
-The KOLIBRI Cloud uses the access, storage and authentication of users and data in / from a MICROSOFT (Azure) data center.
+The KOLIBRI Cloud uses the access, storage and authentication of users and data in/from a MICROSOFT (Azure) data center.
 
 This data center is in the EU and subject to EU regulations ( EU Data Protection Regulation ( DSGVO) ) (ie no data may be shared with data centers outside the EU, especially not with US). <https://www.microsoft.com/de-de/TrustCenter/Privacy/gdpr/default.aspx>
 
@@ -259,10 +248,7 @@ eg  ISO 9001 , ISO 20000-1: 2011, ISO 2230, ISO 27001, ISO 27017, ISO 27018, BIR
 
 ## Is there a terms of service(ToS)?
 
-Yes.  
-ENGLISH: <https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_e.pdf>  
-GERMAN : <https://www.kolibricloud.ch/assets/ToS/AGB_KOLIBIR-Cloud_2018_g.pdf>
-
+Yes.  See: https://docs.kolibricloud.ch/Nutzungsbedingungen_TermsAndConditions_KOLIBRI_Cloud.pdf
 ## Does the chart show all measurement points?
 
 To reduce the computing power needed to show the loaded measurement points in the chart (which is quite scarce when using a browser) a downsample algorithm is used. This algorithm reduces the displayed measurement points to a maximum number of 1500pts / channel. The algorithm is based on *Largest Triangle Three Buckets algorithm* described by *Sveinn Steinarsson* in his master thesis *"Downsampling Time Series for Visual Representation"* at the Faculty of Industrial Engineering, Mechanical Engeneering and Computer Sciece University of Iceland (<https://skemman.is/handle/1946/15343>).

@@ -20,7 +20,7 @@ pygmentsUseClasses = true
 
 [[menu.main]]
     pre = "<i class='fas fa-broadcast-tower'></i>"
-    name = "GSM technology"
+    name = "Cellular technology"
     identifier = "gsm-technology"
     url = "/gsm-technology/"
     weight = 3
