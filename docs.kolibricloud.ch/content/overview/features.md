@@ -13,6 +13,19 @@ description: Actual Release History and Known Limitations
 ## Releases
 
 ---
+### v.1.22034.01 (05.02.2022)
+#### Dialogs for new users and new features
+This release introduces the water calculation history and a log component.
+
+##### Water Calculation History
+Changing the water calculation is now possible without losing the old calculation (eg. due to changing installation). This way past calculations will still be visualized and exported by the KOLIBRI Cloud!
+![image](https://user-images.githubusercontent.com/36856727/153419252-c966d1db-38f7-45a9-9e48-a37640b4295a.png)
+
+
+##### Log Component
+Changing configurations, settings and calculations are now stored to give a certain traceability for understanding the system and allow to post-configure multiple installations per device. The ‘Device Log’ discloses the changes and who did the changes.
+![image](https://user-images.githubusercontent.com/36856727/153418136-91f883d9-dff1-4d29-916b-d8e974c89296.png)
+
 
 ### v.1.21253.03 (10.09.2021)
 #### Dialogs for new users and new features
