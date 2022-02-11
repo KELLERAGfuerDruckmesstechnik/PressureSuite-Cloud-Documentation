@@ -14,7 +14,6 @@ description: Actual Release History and Known Limitations
 
 ---
 ### v.1.22034.01 (05.02.2022)
-#### Dialogs for new users and new features
 This release introduces the water calculation history and a log component.
 
 ##### Water Calculation History
