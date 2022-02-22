@@ -17,12 +17,14 @@ description: Actual Release History and Known Limitations
 This release introduces the water calculation history and a log component.
 
 ##### Water Calculation History
-Changing the water calculation is now possible without losing the old calculation (eg. due to changing installation). This way past calculations will still be visualized and exported by the KOLIBRI Cloud!
+Changing the water calculation is now possible without losing the old calculation (eg. due to changing installation). This way, past calculations will still be visualized and exported by the KOLIBRI Cloud!
 ![image](https://user-images.githubusercontent.com/36856727/153419252-c966d1db-38f7-45a9-9e48-a37640b4295a.png)
+
+Unfortunately, the API endpoints have changed
 
 
 ##### Log Component
-Changing configurations, settings and calculations are now stored to give a certain traceability for understanding the system and allow to post-configure multiple installations per device. The ‘Device Log’ discloses the changes and who did the changes.
+Changing configurations, settings and calculations are now stored to give a certain traceability for understanding the system and allow to post-configure multiple installations per device. The 'Device Log' discloses the changes and who did the changes.
 ![image](https://user-images.githubusercontent.com/36856727/153418136-91f883d9-dff1-4d29-916b-d8e974c89296.png)
 
 
@@ -31,10 +33,10 @@ Changing configurations, settings and calculations are now stored to give a cert
 We now display dialogs for new users or new features.
 
 First log in dialog
-- When a user first logs in there is a dialog explaining how to join a customer group or add new signed-up users.
+- When a user first logs in, there is a dialog explaining how to join a customer group or add new signed-up users.
 
 Welcome dialog
-- When a user is a member of a customer group a welcome dialog with useful tips and links is shown.
+- When a user is a member of a customer-group a welcome dialog with useful tips and links is shown.
 
 New feature dialog
 - When a new important feature is introduced, there will be a dialog explaining the feature. The first one will be a dialog about the new alarming-feature.

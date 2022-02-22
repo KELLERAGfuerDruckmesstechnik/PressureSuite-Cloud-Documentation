@@ -14,26 +14,28 @@ description: History about maintenances and outages
 ---
 ---
 ## Planned Maintenance windows
-
-### 31.January 2022 10:00 MEZ - 12:00 MEZ
-
-**Planned work**  
-*We update the DB, API and frontend to make the new features possible. For this, the Cloud, including WebApp & API might be not accessible for some hours. Expect API calls to fail and data to be collected with delay.*
-
+None
 ---
 
-## Outages  
+## Outages/Issues  
+### 22. February 2022 10:00 CET - 10:20 CET
+
+**Summary of Impact:**  
+Faulty e-mails with the warning 'Device has stopped sending' were sent. The devices are still sending. Please ignore these e-mails.
+
+**Root Cause:**  
+Maintenance of a component led to a false deployment of the device-check-function that used an older test-DB, not the actual DB. We actualized this device-check-function with the correct link to the actual DB.
 
 ### 10. December 2021 12:40 CET - 11. December 2021 08:40 CET
 
 **Summary of Impact:**  
 An SW update caused the system to reject all incoming measurement sets. The data has been restored.  
-If you think there is still missing data then please contact kolibri@keller-druck.com
+If you think there is still missing data, then please contact kolibri@keller-druck.com
 
 **Root Cause:**  
-An SW update meant for our test system caused a smaller sub-part to automatically re-build and deploy to the production system. This resulted in an incompatibility and the data could not be ingested in the database.  
+An SW update meant for our test system caused a smaller sub-part to automatically re-build and deploy to the production system. This resulted in an incompatibility and the data could not be ingested into the database.  
 The data was still captured in an emergency log queue from which the measurements could be retrieved.  
-Due to the holiday season we had to delay these efforts and fix and test everything after New Year's Eve but not earlier. We are sorry for this outage.  
+Due to the holiday season, we had to delay these efforts and fix and test everything after New Year's Eve but not earlier. We are sorry for this outage.  
 
 ---
 ### 25. October 2021 16:00 CET - 02. November 2021 13:30 CET
@@ -306,6 +308,12 @@ None.
 ---
 
 ## Past Maintenance windows
+
+### 31.January 2022 10:00 MEZ - 12:00 MEZ
+
+**Planned work**  
+*We update the DB, API and frontend to make the new features possible. For this, the Cloud, including WebApp & API might be not accessible for some hours. Expect API calls to fail and data to be collected with delay.*
+
 
 ### 20. September 2021
 
