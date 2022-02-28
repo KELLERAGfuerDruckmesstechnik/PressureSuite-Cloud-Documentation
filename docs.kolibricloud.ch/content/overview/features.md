@@ -22,9 +22,7 @@ The measurement start time can now be configured in the device configuration.
 
 #### Device configuration > Device admin
 The new "Device Admin" configuration allows additional possibilities to manage the devices and recorded measurements. This is only available for the "Customer Admin" role. 
-![image](https://user-images.githubusercontent.com/36856727/155985300-c0e1a1ac-2475-4783-a04d-9e1e6f561491.png)
-
-
+![image](https://user-images.githubusercontent.com/36856727/155989537-28cd4663-176a-4ea3-920d-124152390ce4.png)
 
 
 ### v.1.22034.01 (05.02.2022)
