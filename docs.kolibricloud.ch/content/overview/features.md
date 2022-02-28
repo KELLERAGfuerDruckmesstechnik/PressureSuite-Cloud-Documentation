@@ -13,6 +13,20 @@ description: Actual Release History and Known Limitations
 ## Releases
 
 ---
+### latest (28.02.2022)
+With this version we introduce further device configuration options. 
+
+#### Device configuration > Measurement start time
+The measurement start time can now be configured in the device configuration.
+![image](https://user-images.githubusercontent.com/36856727/155985007-1f38fcbc-f8b7-497f-bb86-5824b1b938cb.png)
+
+#### Device configuration > Device admin
+The new "Device Admin" configuration allows additional possibilities to manage the devices and recorded measurements. This is only available for the "Customer Admin" role. 
+![image](https://user-images.githubusercontent.com/36856727/155985300-c0e1a1ac-2475-4783-a04d-9e1e6f561491.png)
+
+
+
+
 ### v.1.22034.01 (05.02.2022)
 This release introduces the water calculation history and a log component.
 
