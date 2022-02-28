@@ -13,7 +13,7 @@ description: Actual Release History and Known Limitations
 ## Releases
 
 ---
-### latest (28.02.2022)
+### v1.22059.01 (28.02.2022)
 With this version we introduce further device configuration options. 
 
 #### Device configuration > Measurement start time
