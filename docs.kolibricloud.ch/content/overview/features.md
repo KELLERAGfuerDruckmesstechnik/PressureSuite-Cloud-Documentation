@@ -14,7 +14,7 @@ description: Actual Release History and Known Limitations
 
 ---
 ### v1.22059.01 (28.02.2022)
-With this version we introduce further device configuration options. 
+With this version, we introduce further device configuration options. 
 
 #### Device configuration > Measurement start time
 The measurement start time can now be configured in the device configuration.
@@ -36,11 +36,22 @@ Unfortunately, the API endpoints have changed
 
 
 ##### Log Component
-Changing configurations, settings and calculations are now stored to give a certain traceability for understanding the system and allow to post-configure multiple installations per device. The 'Device Log' discloses the changes and who did the changes.
+Changing configurations, settings and calculations are now stored to give certain traceability for understanding the system and allow to post-configure multiple installations per device. The 'Device Log' discloses the changes and who did the changes.
 ![image](https://user-images.githubusercontent.com/36856727/153418136-91f883d9-dff1-4d29-916b-d8e974c89296.png)
 
 
 ### v.1.21253.03 (10.09.2021)
+#### Auto-Device-Alarms
+Some alarms are automatically triggered when certain events occur. These alarms are sent to the alarm mail addresses defined in the *Account Settings* (https://www.kolibricloud.ch/account-settings). Users with the 'Contributor' or 'Customer Admin' role can add one or multiple E-Mail recipients.  
+* Device Alarm  
+  * Device stopped sending measurements (with E-Mail-alarm)
+  * Low Battery / Low Capacity - Warn when the battery has to be replaced  (with E-Mail-alarm)
+  * Too high humidity  (with E-Mail-alarm)
+
+![Alarm Overview](../../img/roadmap/AlarmOverview.png)   
+
+![Alarming](../../img/roadmap/SystemDeviceAlarms.png)  
+
 #### Dialogs for new users and new features
 We now display dialogs for new users or new features.
 
