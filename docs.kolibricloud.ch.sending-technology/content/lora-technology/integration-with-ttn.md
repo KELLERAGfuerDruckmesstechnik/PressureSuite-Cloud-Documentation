@@ -4,149 +4,14 @@ menu:
     main:
         parent: lora-technology
         weight: 5
-toc: false
+toc: true
 description: Information on how to integrate a configured KELLER LoRa device to the TTN platform
 ---
+## Preface
+All LoRaWAN devices are already enlisted in a KELLER TTN account. If you do not want to claim ownership over the TTN communication and just want to see the data on the KOLIBRI Cloud, then you can go to Step 2 and program the device according your use case (measure/send interval) and update the device time. After this you can skip all steps until Step 10.
+Nevertheless, we recommend to overtake the ownership of the device in TTN and re-program the App EUI / App Key and enlist the device in an own application.
 
-## Warning: Upcoming 'The Things Network' V2 to V3 Migration
-
-The Things Network is changing from V2 to V3 stack.
-This means:  
-
-- From April 2021 on, no new devices can be added to the old V2 stack at https://console.thethingsnetwork.org/.   V3 is available on https://eu1.cloud.thethings.network/console/
-- The devices working with TTN and the KOLIBRI Cloud will still work until December 2021.
-- TTN plans to shut down all V2 servers in September 2021. From then on all devices and gateways needs to be migrated.  
-- The KOLIBRI Support team updated its backend: V2 and V3 work in parallel.
-- There might be a point where all LoRaWAN devices and Gateways working over TTN will have to be updated.
-- The below migration guide is tested with a couple of devices and gateways and should work, but KELLER can not guarantee this. In the worst-case scenario, one has to be connected to the KELLER device for a migration. Best case: The below migration works "remotely" and can be done in a couple of minutes.
-
-More information from TTN: https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256
-
-For those who missed the warnings about the shutdown of TTN V2 (since February) and didn't manage to migrate their devices before the migration deadline of September 30, for those who didn’t make it to the December 1 traffic API shutdown, and even for those who didn’t export their devices before the final shutdown of V2 on December 7, TTN is happy to announce the new The Things Network V2 Take-Out Tool:  https://v2takeout.thethingsnetwork.org/ 
-
-After signing in with The Things ID, this tool will let you see the applications you had on V2, as well as the end device registrations and state at the time of the final shutdown on December 7. You can use it to download a ZIP file containing application information, payload formatters and a CSV file with end device registrations. The take-out tool will be available until The Things Conference 2022, after which the old V2 data will be destroyed.  
-
----
----
----
-
-## Migrate Existing Device from TTN v2 to TTN V3 Guide
-
-### What you need
-
-- The existing account on https://v2console.thethingsnetwork.org/ (V2)
-- The migrated account to https://eu1.cloud.thethings.network/console/ (V3)
-- The KOLIBRI Endpoint URL is: `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`
-- A gateway migrated to V3 (https://www.thethingsindustries.com/docs/getting-started/migrating/gateway-migration/)
-
-### Step 0
-
-- Please read all steps in below guide before starting.
-- This guide focuses on migrating the KELLER devices from V2 to V3 'remotely'. Our tests showed success, but there might be combinations where it is necessary to go to each device and re-program it.
-- The guide has many manual steps. Depending on the count of devices a programmatic approach might be interesting. See https://www.youtube.com/watch?v=JUEJ_9LdnuI. When you have less than 20 devices we recommend to do it manually.
-- The LoRaWAN gateway should also be migrated to V3. This is not covered in this guide.
-- We recommend to start with one device and test it with one instead of migrating all devices at once.
-
-### Step 1
-
-- We recommend updating your gateway to V3 first. The idea is that the V2-devices still will send transmissions to TTN over the gateway. This worked in our environment, but it is not guaranteed that this will work with you gateway setup. There might be gateway where firmware-updates are necessary.
-  - https://www.thethingsindustries.com/docs/getting-started/migrating/gateway-migration/
-  - https://www.thethingsindustries.com/docs/gateways/
-
-
-### Step 2A
-
-- Go to <https://eu1.cloud.thethings.network/console/> and **+Add Application** if you do not have one. Set an **Application ID** and the **Owner**.  
-
-> ![Create a TTN V3 Application](../../TTNV3_CreateApplication.png  "Create a TTN V3 Application")
-
-### Step 2B
-- This step has to be done ones for each new **Application**:
-  - To send data to the KOLIBRI Cloud it is needed to forward the transmissions.
-    - Go to **Integrations** and **+Add Webhook** in **Webhooks**
-    - Choose **Custom webhook**
-    - Choose a *Webhook ID* such as *webhook-to-kolibri*
-    - *Webhook format* is **JSON**
-    - *Base URL* is `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`  
-    - Enable all **Uplink messages**
-    - Press **Add webhook**.  
-    This will forward every transmission to the KOLIBRI Cloud.  
-
-> ![TTN V3 Webhook Integration](../../TTNV3_AddIntegrationToKolibri.png  "TTN V3 Webhook Integration")  
-
-
-### Step 3
-
-- Login to the V2 account on https://v2console.thethingsnetwork.org/
-- Note **Device EUI**, **Application EUI** and **App Key** for each device. You will need these keys later. Also, note the device's name.
-> ![TTN V2 old console](../../ttn-v2-to-ttn-v3-old-console.png  "TTN V2 old console")
-
-### Step 4
-
-- In the application (e.g. https://eu1.cloud.thethings.network/console/applications/app-for-my-company) **+Add end device** with
-
-> ![TTN V3 Add a Device 1](../../TTNv3-easy-01.png  "TTN V3 Add a Device 1")
-
-### Step 5
-
-- Choose the *Brand* which is **KELLER AG für Druckmesstechnik**  
-> ![TTN V3 Add a Device 2](../../TTNv3-easy-02.png  "TTN V3 Add a Device 2")
-
-### Step 6
-
-- Choose the *Model* which is either
-  - ADT1 Tube
-  - ADT1 Box
-  - ARC1 Tube
-  - ARC1 Box
-- Choose the correct *Profile* for your region. In Europe this is **EU_863_870**
-
-> ![TTN V3 Add a Device 3](../../TTNv3-easy-03.png  "TTN V3 Add a Device 3")
-
-### Step 7
-
-- Now enter the **'Application EUI'**, **'App Key'** and the **'Device EUI'** which you have noted  
-- Enter an *End Device ID* text to identify the device in the TTN portal. Preferably, the same or similar as in the V2 platform.
-
-> ![TTN V3 Add a Device 4](../../TTNv3-easy-04.png  "TTN V3 Add a Device 4")
-
-### Step 8
-
-- Delete the device in the V2 platform (https://v2console.thethingsnetwork.org/). Without deletion the data will most probably not show up in the V3 platform.
-
-### Step 9
-
-- If you have a TTN gateway in reach, you should now be able to communicate with the TTN server.
-- When you want to register a new TTN gateway into TTN V3 then go to https://eu1.cloud.thethings.network/console/gateways/add
-  - Enter the **Gateway EUI** from the gateway and choose a **Gateway ID**
-  - Use the same *frequency plan* and set the *Gateway Status* to **Public**
-  
-### Step 10
-
-- To send data to the KOLIBRI Cloud it is needed to forward the transmissions.
-  - Go to **Integrations** and **+Add Webhook** in **Webhooks**
-  - Choose **Custom webhook**
-  - Choose a *Webhook ID* such as *webhook-to-kolibri*
-  - *Webhook format* is **JSON**
-  - *Base URL* is `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`  
-  - Enable all **Uplink messages**
-  - Press **Add webhook**.  
-  This will forward a transmission to the KOLIBRI Cloud.  
-
-> ![TTN V3 Webhook Integration](../../TTNV3_AddIntegrationToKolibri.png  "TTN V3 Webhook Integration")  
-
-### Step 11
-
-- Verify the connection by
-  - waiting for the sending interval and seeing the transmission in the TTN V3 console.
-  - finding the new measurement in the KOLIBRI Cloud
-- Repeat *Step 3* to *Step 10* for each device 
-
----
----
----
-
-## Add a New Device to TTN V3 Guide — New Easy Process
+## 'Add a New Device to your TTN V3'-Guide
 
 ### What you need
 
@@ -165,6 +30,7 @@ After signing in with The Things ID, this tool will let you see the applications
 
 - Connect your PC using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and 
   - Program your device according to your use case (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
+  - Do not forget to re-program the 'App EUI' and 'App Key' as the device is already enlisted in a KELLER TTN account. With the re-programming of the 'App EUI' and 'App Key' you have the complete ownership of the device and its transmission.
   - Write down the 'Application EUI', 'App Key' and the 'Device EUI'
 
 > ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
@@ -180,12 +46,12 @@ After signing in with The Things ID, this tool will let you see the applications
 
 - In the application (e.g. https://eu1.cloud.thethings.network/console/applications/app-for-my-company) **+Add end device** with
 
-> ![TTN V3 Add a Device 1](../../TTNv3-easy-01.png  "TTN V3 Add a Device 1")
+> ![TTN V3 Add a Device 1](../../TTNv3-easy-01.png  "TTN Add a Device 1")
 
 ### Step 5
 
 - Choose the Brand which is **KELLER AG für Druckmesstechnik**  
-> ![TTN V3 Add a Device 2](../../TTNv3-easy-02.png  "TTN V3 Add a Device 2")
+> ![TTN V3 Add a Device 2](../../TTNv3-easy-02.png  "TTN Add a Device 2")
 
 ### Step 6
 
@@ -196,19 +62,19 @@ After signing in with The Things ID, this tool will let you see the applications
   - ARC1 Box
 - Choose the correct *Profile* for your region. In Europe this is **EU_863_870**
 
-> ![TTN V3 Add a Device 3](../../TTNv3-easy-03.png  "TTN V3 Add a Device 3")
+> ![TTN V3 Add a Device 3](../../TTNv3-easy-03.png  "TTN Add a Device 3")
 
 ### Step 7
 
 - Now enter the 'Application EUI', 'App Key' and the 'Device EUI'
 - Enter a device id text to identify the device in the TTN portal
 
-> ![TTN V3 Add a Device 4](../../TTNv3-easy-04.png  "TTN V3 Add a Device 4")
+> ![TTN V3 Add a Device 4](../../TTNv3-easy-04.png  "TTN Add a Device 4")
 
 ### Step 8
 
 - If you have a TTN gateway in reach, you should now be able to communicate with the TTN server.
-- When you want to register a new TTN gateway into TTN V3 then go to https://eu1.cloud.thethings.network/console/gateways/add
+- When you want to register a new TTN gateway into TTN then go to https://eu1.cloud.thethings.network/console/gateways/add
   - Enter the **Gateway EUI** from the Gateway and choose a **Gateway ID**
   - Use the same *frequency plan* and set the *Gateway Status* to **Public**
 
@@ -239,7 +105,7 @@ After signing in with The Things ID, this tool will let you see the applications
 ---
 ---
 
-##  Add a new device to TTN V3 Guide — Old Manual Process
+##  'Add a new device to TTN'-Guide — Old Manual Process
 
 ### What you need
 
@@ -301,7 +167,7 @@ After signing in with The Things ID, this tool will let you see the applications
 - Connect your PC using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and 
   - Check if you used the same Application EUI
   - Enter the generated App Key from *Step 6*
-  - Programm your device (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
+  - Program your device (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
 
 > ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
 

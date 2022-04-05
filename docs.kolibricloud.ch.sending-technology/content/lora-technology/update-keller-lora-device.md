@@ -56,7 +56,7 @@ The devices EUI (Unique Device Identification) cannot be changed. The EUI is reg
 The unique identification number for the application with which the data is further processed is entered here.  
   - Enter here the Application EUI of your application/device from your LoRa Network Server
     - For Swisscom/Actility: Use `F0-3D-29-AC-71-00-00-01`
-    - For TTN V3: You do not have to change the App EUI. Use this APP EUI when adding the Device to your TTN (V3) application.
+    - If you want to have the device in YOUR OWN TTN application, it is recommended to have a different App EUI. Choose a random App EUI. The reason is that the device is already used by KELLER for testing purpose and enlisted in a KELLER TTN application. This may cause issues within TTN as the device are double enlisted. Use this APP EUI when adding the device to your TTN (V3) application.
 
 
 - ***Device Address / Network Session Key / App Session Key***  
