@@ -8,7 +8,10 @@ toc: true
 description: Roadmap of coming features
 ---
 # Roadmap
-The following roadmap is an idea. Therefore, the priority might change and we might implement a feature earlier or later depending on customer projects and other circumstances. 
+The following roadmap is an idea. Therefore, the priority might change, and we might implement a feature earlier or later depending on customer projects and other circumstances. 
+
+### More YouTube videos to explain new features
+It is planned to have a short series of YouTube videos explaining and demonstrating new features and their uses.
 
 ### MQTT analysis and integration
 We are going to add the possibility to use MQTT in our sending devices. Ideally, the KOLIBRI Cloud backend shall be able to accept and communicate with MQTT. 
