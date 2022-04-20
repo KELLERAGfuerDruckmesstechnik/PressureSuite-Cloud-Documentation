@@ -77,6 +77,7 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 - When you want to register a new TTN gateway into TTN then go to https://eu1.cloud.thethings.network/console/gateways/add
   - Enter the **Gateway EUI** from the Gateway and choose a **Gateway ID**
   - Use the same *frequency plan* and set the *Gateway Status* to **Public**
+  - Ensure that your gateway's communication is not blocked by your or your company's IT firewall.
 
 ### Step 9
 
