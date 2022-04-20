@@ -22,6 +22,26 @@ PLANNED
 
 ## Release History
 
+## Version 6.2.22101.05
+
+### Description
+
+This update introduces the overflow report. This report summarizes overflow events of an overflow calculation in a PDF file. 
+Another highly requested feature was to read multiple measurements at once, which is now possible.
+
+### Features and Enhancements
+
+- Overflow report
+- Read multiple records from the device at once
+
+### Bug fixes
+
+- fixed: crash when no access to records directory
+- fixed: filter on local measurements not working under certain circumstances
+- fixed: name and description of overflow calculation can now be customized
+- fixed: EUI of LoRa devices is now displayed correctly
+- updated device names to official KELLER names
+
 ## Version 6.2.21314.3
 
 ### Description
@@ -40,7 +60,7 @@ This update introduces the device calibration.
 - Fixed crash with double measurements caused by daylight saving time
 - Fixed crash with corrupted user-config files
 
-### Version 6.2.21127.1
+## Version 6.2.21127.1
 
 #### Description
 
@@ -55,7 +75,7 @@ This update introduces the air pressure compensation and some "quality of life"-
 
 - Export: DOCX export does no longer print chart on a second page by default
 
-### Version 6.2.20322.1
+## Version 6.2.20322.1
 
 #### Description
 
@@ -75,7 +95,7 @@ This update introduces some requested features and various small bug fixes
 - Fixed: Displayed CTD range not updating after configuration
 - Fixed: Unsupported KELLER devices were not recognized
 
-### Version 6.2.20225.1
+## Version 6.2.20225.1
 
 #### Description
 
@@ -91,7 +111,7 @@ This update introduces an improved performance for the device search.
 - Fixed some labels and translations
 
 
-### Version 6.2.20191.1
+## Version 6.2.20191.1
 
 #### Description
 
@@ -113,7 +133,7 @@ In this update we introduce the new DEMO MODE. This mode can be used to try out 
 
 - Fixed: When exporting a .zip where a folder or zip with the same name existed the export would fail
 
-### Version 6.2.20128.4
+## Version 6.2.20128.4
 
 #### Description
 
@@ -130,9 +150,7 @@ With this version we introduce the compatibility of [KELLER remote transmission 
 - fixed: export file name could contain invalid characters and the export would fail
 - fixed: failed import of Logger 5 files now shows the error message why it failed
 
------
-
-### Version 6.2.20100.2
+## Version 6.2.20100.2
 
 #### Description
 
@@ -162,9 +180,7 @@ With this update we introduce many features that were requested and some quality
 - added log file path when error message says: further infos in the log file
 - KOLIBRI Desktop no longer crashes if the [Logo.jpg] is missing
 
------
-
-### Version 6.2.19361.1
+## Version 6.2.19361.1
 
 #### Description
 
@@ -178,9 +194,7 @@ With this update we introduce the water configuration. It is now possible to con
 - fixed various translation errors
 - fixed bug where the window was invisible even after restart
 
------
-
-### Version 6.2.19200.1
+## Version 6.2.19200.1
 
 #### Description
 
@@ -202,9 +216,7 @@ In this update we introduce the event-triggered recording. We reworked the entir
 - Live data now uses the selected units instead of the default ones
 - Using a customized unit now uses regional format
 
------
-
-### Version 6.2.19136.2
+## Version 6.2.19136.2
 
 #### Description
 
@@ -221,9 +233,7 @@ This version introduces the Dutch translation and focuses on bugfixes. We always
 - Sometimes modifications in the visualization would not be recognized by the export.
 - In rare occasions when a big record was read from a device only the first few measurements were shown afterwards.
 
------
-
-### Version 6.2.19058.1
+## Version 6.2.19058.1
 
 #### Description
 
@@ -245,7 +255,6 @@ In this version we focused on implementing *your* feedback requests and suggeste
 - Translated all texts to German
 - Conductivity channels of DCX CTD are now available in live data
 
------
-### Version 6.2.18355.1
+## Version 6.2.18355.1
 
 Version 6.2.18355.1 is the first release with the basic functionalities.
