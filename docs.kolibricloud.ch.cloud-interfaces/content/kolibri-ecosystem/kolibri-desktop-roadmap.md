@@ -3,7 +3,7 @@ title: KOLIBRI Desktop Roadmap
 menu:
     main:
         parent: kolibri-ecosystem
-        weight: 2
+        weight: 3
 ---
 
 # KOLIBRI Desktop - Roadmap
