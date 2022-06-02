@@ -20,15 +20,14 @@ If a measurement has to be deleted, set the measure interval to 1 second and the
 
 ## How can I silenty install KOLIBRI Desktop
 
-KOLIBRI Desktop can be installed silent with the option "/quiet" or "/qn". WIth the silent option no UI will be shown and all extensions/drivers will be installed silent too if they are not yet installed
+KOLIBRI Desktop can be installed silent with the option "/quiet" or "/qn". With the silent option no UI will be shown and all extensions/drivers will be installed silent too if they are not yet installed.
 
-Example:       .../.../KolibriDesktopInstaller.exe /quiet
-
-Example uninstall: .../.../KolibriDesktopInstaller.exe /quiet /x //
+- Example:       .../.../KolibriDesktopInstaller.exe /quiet
+- Example uninstall: .../.../KolibriDesktopInstaller.exe /quiet /x //
 
 Further installation options can be found here:
 
-https://www.advancedinstaller.com/user-guide/msiexec.html
-https://www.advancedinstaller.com/user-guide/exe-setup-file.html
+- https://www.advancedinstaller.com/user-guide/msiexec.html
+- https://www.advancedinstaller.com/user-guide/exe-setup-file.html
 
 When installing with Silent mode, the user must be aware of the EULA's of the drivers and KOLIBRI Desktop.
