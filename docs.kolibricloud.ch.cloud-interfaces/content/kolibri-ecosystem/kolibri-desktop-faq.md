@@ -31,3 +31,9 @@ Further installation options can be found here:
 - https://www.advancedinstaller.com/user-guide/exe-setup-file.html
 
 When installing with Silent mode, the user must be aware of the EULA's of the drivers and KOLIBRI Desktop.
+
+## Can I change the KELLER logo in the application and on the reports to my own logo?
+
+Yes! Replace the 'Logo.jpg' in the KOLIBRI Desktop installation folder (default path: 'C:\Program Files (x86)\KELLER\KolibriDesktop\Resources\Logo\Logo.jpg') with an image of your own logo and you're good to go. The new file must be named the same as the old one 'Logo.jpg'.
+
+Make sure the format is similar to the KELLER image (220x116 pixel) so there is no horizontal or vertical stretching. 
