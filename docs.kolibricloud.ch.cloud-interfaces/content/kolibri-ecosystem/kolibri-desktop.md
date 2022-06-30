@@ -12,6 +12,11 @@ The 'KOLIBRI Desktop' Windows software is part of the modern KOLIBRI product lin
 
 During the Installation process please install the "FTDI Chip CDM Drivers" when using KOLIBRI Desktop together with Dataloggers. Only install "Manometer driver (LEO 5 USB)" when using the KOLIBRI Desktop together with the "LEO 5" Manometer.
 
+## Tutorials
+- [KOLIBRI Desktop - Installation](https://www.youtube.com/watch?v=OOwIafnIoro)
+- [KOLIBRI Desktop - Overview](https://www.youtube.com/watch?v=-Ib0wYZtKso)
+- [KOLIBRI Desktop - In Depth](https://www.youtube.com/watch?v=yLmyfeqxghs)
+
 ## Device overview
 
 A KELLER device should be recognized automatically. Otherwise pleaser 'restart the search for devices'

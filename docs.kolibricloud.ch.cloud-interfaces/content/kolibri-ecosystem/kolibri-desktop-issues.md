@@ -3,7 +3,7 @@ title: KOLIBRI Desktop Known Issues
 menu:
     main:
         parent: kolibri-ecosystem
-        weight: 3
+        weight: 4
 toc: false
 ---
 ## Known issue with Microsoft Antivirus Defender  
