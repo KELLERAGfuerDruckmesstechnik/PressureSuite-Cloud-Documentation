@@ -7,7 +7,7 @@ menu:
 ---
 
 # Introduction
-The *KellerAg.Shared.IoT.Converters* are a set of **.NET** DLLs to handle proprietary communication data from [IoT devices](https://keller-druck.com/en/products/wireless-solutions) of the company [KELLER AG für Druckmesstechnik](https://keller-druck.com).
+The *KellerAg.Shared.IoT.Converters* are a set of **.NET** DLLs to handle proprietary communication data from [IoT devices](https://keller-druck.com/en/products/wireless-solutions) of the company [KELLER Druckmesstechnik AG](https://keller-druck.com).
 
 The main purpose is to demonstrate one possible way to implement the text data stored on FTP folders (via 2G/3G/4G/NB-IoT/LTE-M) or JSON text from/to LoRaWAN network server (TheThingsNetwork / ThingsPark (Actility) / Loriot.io).  
 

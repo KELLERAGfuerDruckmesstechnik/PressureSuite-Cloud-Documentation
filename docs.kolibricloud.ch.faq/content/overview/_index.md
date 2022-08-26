@@ -52,7 +52,7 @@ Both device categories can send data either via cellular sending technology (2G/
 
 ## What does "KOLIBRI" even mean?
 
-KOLIBRI is the name of the new KELLER AG product line. It's the German name for hummingbird starting with a **K** as in **K**ELLER.
+KOLIBRI is the name of the new KELLER Pressure product line. It's the German name for hummingbird starting with a **K** as in **K**ELLER.
 Currently, this product line contains:
 
 - KOLIBRI Cloud : Web portal for customers to access data
@@ -65,7 +65,7 @@ These products all use the latest technologies and a customized design. In addit
 
 ## What is the "KOLIBRI Cloud"?
 
-KOLIBRI is the name of the new KELLER AG product line.
+KOLIBRI is the name of the new KELLER Pressure product line.
 Part of this new product line is the cloud possibilities, which are:
 
 - WebApp : The "Online Program" at www.kolibricloud.ch
@@ -100,9 +100,9 @@ Please contact <marketing@keller-druck.com>
 
 ## How do I sign up? How do I log in? How can I test it?
 
-See: <http://www.kolibricloud.ch>
+See: <https://www.kolibricloud.ch>
 For all those interested, there is a test user account (Demo1234 / Demo1234), with which everyone can log in and try out the WebApp.
-There are a few test devices visible and their measurement data. The login password can be seen on <http://www.kolibricloud.ch.>
+There are a few test devices visible and their measurement data. The login password can be seen on <https://www.kolibricloud.ch.>
 
 ## Does the website also work on a mobile phone?
 
@@ -148,7 +148,7 @@ See <https://docs.kolibricloud.ch/sending-technology/lora-technology/>
 
 ## What is an API?
 
-[![What is an API](http://img.youtube.com/vi/s7wmiS2mSXY/0.jpg)](http://www.youtube.com/watch?v=s7wmiS2mSXY)
+[![What is an API](https://img.youtube.com/vi/s7wmiS2mSXY/0.jpg)](https://www.youtube.com/watch?v=s7wmiS2mSXY)
 
 The Internet and Internet products essentially consist of devices that communicate with each other. The format of this interface is often a REST API. All large companies have APIs. Google Maps, for example, needs an API to query where a place is and reacts to maps, coordinates, ...
 

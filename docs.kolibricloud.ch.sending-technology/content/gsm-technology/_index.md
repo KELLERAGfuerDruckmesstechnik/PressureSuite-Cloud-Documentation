@@ -16,7 +16,7 @@ To register a GSM/ARC device please follow the following steps:
 
 ## With cable connection: Cloud integration with FTP
 
-1. Please download the appropriate SW tool to configure your device. You find the SW [here](http://www.keller-druck.com/home_e/paprod_e/software_e.asp). If you can connect to the device with a cable please use the ["GSM-Config" SW](http://www.keller-druck2.ch/swupdate/GSMSetup/GSMSetup.zip), and its [manual](http://www.keller-druck2.ch/swupdate/GSMSetup/manual/man_gsm2_e_en.pdf).
+1. Please download the appropriate SW tool to configure your device. You find the SW [here](https://www.keller-druck.com/home_e/paprod_e/software_e.asp). If you can connect to the device with a cable please use the ["GSM-Config" SW](https://www.keller-druck2.ch/swupdate/GSMSetup/GSMSetup.zip), and its [manual](https://www.keller-druck2.ch/swupdate/GSMSetup/manual/man_gsm2_e_en.pdf).
 
 2. Ideally, the KOLIBRI Cloud gets the data from an FTP-Server. Either you host an own FTP server or use own of the provided FTP accounts from KELLER. 
 
@@ -54,7 +54,7 @@ To register a GSM/ARC device please follow the following steps:
 
 ## Without a cable connection: Cloud integration with the GSMDataManager and FTP
 
-1. Please consult the [DataManager Manual](http://www.keller-druck2.ch/swupdate/InstallerGSM2Datamanager/manual/MAN_Datamanager_EN_en.pdf).
+1. Please consult the [DataManager Manual](https://www.keller-druck2.ch/swupdate/InstallerGSM2Datamanager/manual/MAN_Datamanager_EN_en.pdf).
 
 2. Ideally, the KOLIBRI Cloud gets the data from an FTP-Server. Either you host an own FTP server or use one of the provided FTP accounts from KELLER. Either way, please contact KOLIBRI support to communicate the needed credentials (host-name, user-name, password).  
 

@@ -50,7 +50,7 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 ### Step 5
 
-- Choose the Brand which is **KELLER AG für Druckmesstechnik**  
+- Choose the Brand which is **KELLER Pressure**  
 > ![TTN V3 Add a Device 2](../../TTNv3-easy-02.png  "TTN Add a Device 2")
 
 ### Step 6

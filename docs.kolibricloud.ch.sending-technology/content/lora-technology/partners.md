@@ -74,7 +74,7 @@ You might want to have an own or another frontend? You are searching for a partn
 
 #### WRMSYSTEM (GSM)
 
-<http://www.wrm-systems.fi/>
+<https://www.wrm-systems.fi/>
 *"From Finland to the world - We are based in the city of Oulu, the "living lab city", close to the Arctic Circle. For us, the environment is an important treasure. We aim that our position in the sector may contribute to fight the water scarcity for human consumption, protect the environment from possible damages caused by agriculture or industry, and prevent water catastrophes."*
 
 #### BBV (GSM/LoRA)

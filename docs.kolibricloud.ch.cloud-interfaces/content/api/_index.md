@@ -34,7 +34,7 @@ It is not possible to delete measurement data with the API
 If you want to try out the API with [Swagger](https://api.kolibricloud.ch/swagger/index.html?url=/swagger/v1/swagger.json) please us the dark green [Authorize] button and a valid bearer token.  
 ![BearerToken From Swagger UI](../img/BearerTokenFromSwaggerUI.png)
 
-You can get a valid bearer token when logged in on <http://www.kolibricloud.ch> under [User Settings]  
+You can get a valid bearer token when logged in on <https://www.kolibricloud.ch> under [User Settings]  
 ![BearerToken From Web App](../img/BearerTokenFromWebApp.png)
 
 ## Permanent Access Token

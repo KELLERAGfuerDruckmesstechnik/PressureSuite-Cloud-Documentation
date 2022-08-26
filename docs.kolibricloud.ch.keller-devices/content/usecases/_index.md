@@ -12,7 +12,7 @@ hidden: true
 
 ## The IoT starts with a sensor
 
-[![KELLER AG and IoT](http://img.youtube.com/vi/hbfnBRteBYM/0.jpg)](http://www.youtube.com/watch?v=hbfnBRteBYM)
+[![KELLER Pressure and IoT](https://img.youtube.com/vi/hbfnBRteBYM/0.jpg)](https://www.youtube.com/watch?v=hbfnBRteBYM)
 
 ## Use cases with KELLER devices
 
