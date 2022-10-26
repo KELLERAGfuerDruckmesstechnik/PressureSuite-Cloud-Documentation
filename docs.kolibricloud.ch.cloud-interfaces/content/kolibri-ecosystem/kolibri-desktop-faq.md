@@ -37,3 +37,10 @@ When installing with Silent mode, the user must be aware of the EULA's of the dr
 Yes! Replace the 'Logo.jpg' in the KOLIBRI Desktop installation folder (default path: 'C:\Program Files (x86)\KELLER\KolibriDesktop\Resources\Logo\Logo.jpg') with an image of your own logo and you're good to go. The new file must be named the same as the old one 'Logo.jpg'.
 
 Make sure the format is similar to the KELLER image (220x116 pixel) so there is no horizontal or vertical stretching. 
+
+## I got a notification 'Automatic COM-port detection error'. What does that mean?
+
+KOLOBRI Desktop cannot monitor the com ports for changed devices, because the 'windows remote management' is not available. Add the windows remote management to a delayed automatic start with the powershell command:
+- winrm quickconfig
+
+Further information are provided by the microsoft documentation: https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management
