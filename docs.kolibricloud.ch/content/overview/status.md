@@ -9,7 +9,7 @@ description: History about maintenances and outages
 ---
 # Status
 
-⚠️⚠️  **WE EXPERIENCE CONNECTION ISSUES WITH THE API**  ⚠️⚠️
+⚠️⚠️  **WE EXPERIENCE CONNECTION ISSUES WITH THE API**  ⚠️⚠️  
 6th March 2023 - 09:00 MEZ : The issues started on March 5th. We are in the process of fixing them. We are sorry for the down time.
 
 
