@@ -9,12 +9,9 @@ description: History about maintenances and outages
 ---
 # Status
 
-⚠️⚠️  **WE EXPERIENCE CONNECTION ISSUES WITH THE API**  ⚠️⚠️  
-6th March 2023 - 09:00 MEZ : The issues started on March 5th. We are in the process of fixing them. We are sorry for the down time.  
-  
-UPDATE 6th March 2023 - 14:00 MEZ : Unfortunately, the issue is somewhat more complicated then thought and we are still in process of fixing the problem. We think the reason is a missed migration from the Azure AD B2C endpoint provider. See https://learn.microsoft.com/en-us/azure/active-directory-b2c/b2clogin  
-Although, we changed everything according the guidelines, we still have errors.  
-This issue is visible on the login of the web app https://www.kolibricloud.com. The API with the Permanent Access Token should work. The data ingress into the KOLIBRI Cloud SQL DB is working, too.  
+💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***
+
+
 
 
 ---
@@ -30,6 +27,20 @@ No data will be lost during this time.
 ---
 
 ## Outages/Issues  
+
+### 05.March - 06. March 2023 15:45 CET
+
+**Summary of Impact:**  
+Starting on 5th March 2023, it was not possible to login anymore to https://www.kolibricloud.ch  
+Access to the API with 'Permanent Access Token' and ingress of measurement data worked so far.  
+On 6th March 2023 - 14:45 CEST it was possible again to login.  
+
+**Root Cause:**  
+The developer team found the root cause in a migration from the Microsoft Azure AD B2C endpoint provider. See https://learn.microsoft.com/en-us/azure/active-directory-b2c/b2clogin  
+After changing and testing various URLs and updating of packages/libraries the login was working again.
+
+
+
 ### 22. February 2022 10:00 CET - 10:20 CET
 
 **Summary of Impact:**  
