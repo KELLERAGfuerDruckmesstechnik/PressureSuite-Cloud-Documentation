@@ -10,7 +10,11 @@ description: History about maintenances and outages
 # Status
 
 ⚠️⚠️  **WE EXPERIENCE CONNECTION ISSUES WITH THE API**  ⚠️⚠️  
-6th March 2023 - 09:00 MEZ : The issues started on March 5th. We are in the process of fixing them. We are sorry for the down time.
+6th March 2023 - 09:00 MEZ : The issues started on March 5th. We are in the process of fixing them. We are sorry for the down time.  
+  
+UPDATE 6th March 2023 - 14:00 MEZ : Unfortunately, the issue is somewhat more complicated then thought and we are still in process of fixing the problem. We think the reason is a missed migration from the Azure AD B2C endpoint provider. See https://learn.microsoft.com/en-us/azure/active-directory-b2c/b2clogin  
+Although, we changed everything according the guidelines, we still have errors.  
+This issue is visible on the login of the web app https://www.kolibricloud.com. The API with the Permanent Access Token should work. The data ingress into the KOLIBRI Cloud SQL DB is working, too.  
 
 
 ---
