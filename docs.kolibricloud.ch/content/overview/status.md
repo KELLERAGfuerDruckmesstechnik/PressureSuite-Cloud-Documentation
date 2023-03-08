@@ -28,6 +28,18 @@ No data will be lost during this time.
 
 ## Outages/Issues  
 
+
+### 23.December - 08. March 2023
+
+**Summary of Impact:**  
+Some Level Alarm setup in the web app did not trigger an alarm and would not send an alarm mail! Affected customers have been contacted.  
+We completely re-deployed all connected services and implemented new monitor-software to react faster.
+
+**Root Cause:**  
+The dedicated Azure Function stopped executing in a night to the 23rd december. We tried to find the root cause but neither we nor Microsoft tooling could point a root cause.
+This lead us to the point to implement further alarming mechanism to monitor the level alarming mechanism.  
+
+
 ### 05.March - 06. March 2023 15:45 CET
 
 **Summary of Impact:**  
