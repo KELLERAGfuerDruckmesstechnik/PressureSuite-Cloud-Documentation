@@ -9,9 +9,9 @@ description: History about maintenances and outages
 ---
 # Status
 
-⚠️⚠️ ***KOLIBRI CLOUD SERVICES UNDER REPAIR*** ⚠️⚠️
-We are currently experiencing technical difficulties since 18. March 2023.  
-We are working on it.
+💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***
+
+
 
 
 ---
@@ -27,6 +27,15 @@ No data will be lost during this time.
 ---
 
 ## Outages/Issues  
+
+### 18.December 20:00 UTC - 20.March 2023 22:30 UTC
+
+**Summary of Impact:**  
+On the weekend evening, the API service ceased functioning, causing all attempts to connect to fail, including the web app www.kolibricloud.ch. However, the processes to ingest data continued to operate successfully, and no measurement data was lost. The engineers began addressing the issue on Monday morning, but were unable to determine the root cause. Ultimately, a new server was established and DNS routing was modified approximately 30 minutes prior to midnight, resulting in the API's restoration.  
+
+**Root Cause:**  
+Still Unknown.  
+A server component that worked for nearly 6 years just stopped and could not be restarted. The cause of the problem remains unknown, and communication with cloud experts is ongoing to determine its origin. (21 March 2023)  
 
 
 ### 23.December - 08. March 2023
