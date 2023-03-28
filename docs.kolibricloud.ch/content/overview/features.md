@@ -13,6 +13,17 @@ description: Actual Release History and Known Limitations
 ## Releases
 
 ---
+### v1.23087.03 (28.03.2023)
+With this version, we introduce further device configuration options. 
+### Devices Map
+It was always possible to change the coordinates of a device from the WebApp. Now it is possible to see all devices that have coordinations (other than 0°00′00″N 0°00′00″W) in a map. It is also possible to change the location in the map to update the coordinates. Just be aware that changing a location also triggers a new configuration file in order to re-program/store the new coordination. This again needs battery changes.
+![Devices Map](../../img/roadmap/DevicesMap.png)  
+
+### Device Alarms now store a measurement
+It is possible to configure one (1) unit alarm in the unit that has its own alarm value test interval. Whenever an alarm value exceeds/falls below the alarm value, an alarm is triggered. This alarm can be sent as SMS, email or to the cloud (FTP). In the KOLIBRI Cloud it is visible in the alarm list (https://www.kolibricloud.ch/alarms) as 'Triggerd By Device'.  
+In this version, the measurement that triggered the alarm is now also saved for each such alarm. This in turn makes it possible to trigger a Cloud alarm that reacts a few minutes after the device alarm and triggers the sending of (several) warning emails. Otherwise, the cloud alarm would have been triggered (hours later) when the batch of measurements was sent. 
+
+---
 ### v1.22059.01 (28.02.2022)
 With this version, we introduce further device configuration options. 
 

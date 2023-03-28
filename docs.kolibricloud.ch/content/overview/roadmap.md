@@ -19,10 +19,6 @@ We are going to add the possibility to use MQTT in our sending devices. Ideally,
 ### Export of multiple channels into ONE Excel/CSV file
 Export of multiple channels into ONE Excel/CSV file.
 
-### Devices Map
-As now a user can change and store the coordinates of a device from the WebApp it makes sense to visualize the devices in a map. It might be possible to change the location in the map to update the coordinates.  Try https://www.kolibricloud.ch/device-map  
-![Devices Map](../../img/roadmap/DevicesMap.png)  
-
 ### *Find*, *mark* and *delete* unreliable or outlier data
 Statistical methods and customized threshold should make it possible to find irregularities.  
 Found unreliable data should be able to be marked and even deleted.
