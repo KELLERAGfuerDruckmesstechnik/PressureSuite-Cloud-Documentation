@@ -10,118 +10,139 @@ description: Actual Release History and Known Limitations
 ---
 
 # Release History and Known Limitations
+
 ## Releases
 
 ---
+
 ### v1.23087.03 (28.03.2023)
-With this version, we introduce further device configuration options. 
-### Devices Map
+
+With this version, we introduce further device configuration options.
+
+#### Devices Map
+
 It was always possible to change the coordinates of a device from the WebApp. Now it is possible to see all devices that have coordinations (other than 0°00′00″N 0°00′00″W) in a map. It is also possible to change the location in the map to update the coordinates. Just be aware that changing a location also triggers a new configuration file in order to re-program/store the new coordination. This again needs battery changes.
 ![Devices Map](../../img/roadmap/DevicesMap.png)  
 
-### Device Alarms now store a measurement
-It is possible to configure one (1) unit alarm in the unit that has its own alarm value test interval. Whenever an alarm value exceeds/falls below the alarm value, an alarm is triggered. This alarm can be sent as SMS, email or to the cloud (FTP). In the KOLIBRI Cloud it is visible in the alarm list (https://www.kolibricloud.ch/alarms) as 'Triggerd By Device'.  
-In this version, the measurement that triggered the alarm is now also saved for each such alarm. This in turn makes it possible to trigger a Cloud alarm that reacts a few minutes after the device alarm and triggers the sending of (several) warning emails. Otherwise, the cloud alarm would have been triggered (hours later) when the batch of measurements was sent. 
+#### Device Alarms now store a measurement
+
+It is possible to configure one (1) unit alarm in the unit that has its own alarm value test interval. Whenever an alarm value exceeds/falls below the alarm value, an alarm is triggered. This alarm can be sent as SMS, email or to the cloud (FTP). In the KOLIBRI Cloud it is visible in the alarm list (<https://www.kolibricloud.ch/alarms>) as 'Triggerd By Device'.  
+In this version, the measurement that triggered the alarm is now also saved for each such alarm. This in turn makes it possible to trigger a Cloud alarm that reacts a few minutes after the device alarm and triggers the sending of (several) warning emails. Otherwise, the cloud alarm would have been triggered (hours later) when the batch of measurements was sent.
 
 ---
+
 ### v1.22059.01 (28.02.2022)
-With this version, we introduce further device configuration options. 
+
+With this version, we introduce further device configuration options.
 
 #### Device configuration > Measurement start time
+
 The measurement start time can now be configured in the device configuration.
 ![image](https://user-images.githubusercontent.com/36856727/155985007-1f38fcbc-f8b7-497f-bb86-5824b1b938cb.png)
 
 #### Device configuration > Device admin
-The new "Device Admin" configuration allows additional possibilities to manage the devices and recorded measurements. This is only available for the "Customer Admin" role. 
+
+The new "Device Admin" configuration allows additional possibilities to manage the devices and recorded measurements. This is only available for the "Customer Admin" role.
 ![image](https://user-images.githubusercontent.com/36856727/155989537-28cd4663-176a-4ea3-920d-124152390ce4.png)
 
-
 ### v.1.22034.01 (05.02.2022)
+
 This release introduces the water calculation history and a log component.
 
 ##### Water Calculation History
+
 Changing the water calculation is now possible without losing the old calculation (eg. due to changing installation). This way, past calculations will still be visualized and exported by the KOLIBRI Cloud!
 ![image](https://user-images.githubusercontent.com/36856727/153419252-c966d1db-38f7-45a9-9e48-a37640b4295a.png)
 
 Unfortunately, the API endpoints have changed
 
-
 ##### Log Component
+
 Changing configurations, settings and calculations are now stored to give certain traceability for understanding the system and allow to post-configure multiple installations per device. The 'Device Log' discloses the changes and who did the changes.
 ![image](https://user-images.githubusercontent.com/36856727/153418136-91f883d9-dff1-4d29-916b-d8e974c89296.png)
 
-
 ### v.1.21253.03 (10.09.2021)
+
 #### Auto-Device-Alarms
-Some alarms are automatically triggered when certain events occur. These alarms are sent to the alarm mail addresses defined in the *Account Settings* (https://www.kolibricloud.ch/account-settings). Users with the 'Contributor' or 'Customer Admin' role can add one or multiple E-Mail recipients.  
+
+Some alarms are automatically triggered when certain events occur. These alarms are sent to the alarm mail addresses defined in the *Account Settings* (<https://www.kolibricloud.ch/account-settings>). Users with the 'Contributor' or 'Customer Admin' role can add one or multiple E-Mail recipients.  
+
 * Device Alarm  
   * Device stopped sending measurements (with E-Mail-alarm)
   * Low Battery / Low Capacity - Warn when the battery has to be replaced  (with E-Mail-alarm)
   * Too high humidity  (with E-Mail-alarm)
 
-![Alarm Overview](../../img/roadmap/AlarmOverview.png)   
+![Alarm Overview](../../img/roadmap/AlarmOverview.png)
 
 ![Alarming](../../img/roadmap/SystemDeviceAlarms.png)  
 
 #### Dialogs for new users and new features
+
 We now display dialogs for new users or new features.
 
 First log in dialog
-- When a user first logs in, there is a dialog explaining how to join a customer group or add new signed-up users.
+* When a user first logs in, there is a dialog explaining how to join a customer group or add new signed-up users.
 
 Welcome dialog
-- When a user is a member of a customer-group a welcome dialog with useful tips and links is shown.
+* When a user is a member of a customer-group a welcome dialog with useful tips and links is shown.
 
 New feature dialog
-- When a new important feature is introduced, there will be a dialog explaining the feature. The first one will be a dialog about the new alarming-feature.
+* When a new important feature is introduced, there will be a dialog explaining the feature. The first one will be a dialog about the new alarming-feature.
 
 ### v.1.21242.02 (30.08.2021)
+
 #### Display and export of Overflow calculations possible
+
 #### Overflow Calculations
+
 We now support overflow calculations.  
 
 ![flow calc use](../../img/roadmap/use-flow-calculation.png)  
 ![flow calc enabling in page settings](../../img/roadmap/enable-flow-calculation.png)  
 
-Works: 
-- Display of Overflow Calculations (use the Page Settings to enable them) and export them to Excel, CSV etc.  
+Works:
+* Display of Overflow Calculations (use the Page Settings to enable them) and export them to Excel, CSV etc.  
 
-Does not work: 
-- Currently, it is not possible to set an alarm to a certain flow.
-- We plan to add a special report to show the flown volume.
-
+Does not work:
+* Currently, it is not possible to set an alarm to a certain flow.
+* We plan to add a special report to show the flown volume.
 
 #### Performance improvements and bug fixes
+
 Several bug fixes and speed improvements.
 
 #### TTN V3 descriptions
+
 With the change from the open LoRaWAN network platform TheThingsNetwork (TTN) from V2 to V3 we added our LoRaWAN devices to the new TTN repository in order to easier configure or change the devices into TTN v3.  
 ![TTN v3 device repository](https://docs.kolibricloud.ch/sending-technology/TTNv3-easy-02.png)
 
-From April 2021 on, no new devices will be able to be added to the old V2 stack at https://console.thethingsnetwork.org/. V3 is available on https://eu1.cloud.thethings.network/console/
+From April 2021 on, no new devices will be able to be added to the old V2 stack at <https://console.thethingsnetwork.org/>. V3 is available on <https://eu1.cloud.thethings.network/console/>
 
 Version 2 will definitely shut down on December 1st 2021. Please migrate your devices into TTN v3!
-More information: https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-ttn/  or https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256
-
+More information: <https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-ttn/>  or <https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256>
 
 ### v.1.21088.01 (30. March 2021)
+
 #### Offset channels as reference lines
+
 It is possible to add multiple reference lines to show various installation-depending components such as the 'maximal possible water height' or the 'installation depth'.  
 ![Offset channels as reference lines](../../img/reference-lines.png)  
 
 ### v.1.21042.01 (11. February 2021)
 
 #### Show customer admin
+
 Users can now find the name of their customer admin in the account settings.
 ![Administrator Settings](../../img/roadmap/CustomerAdmin.png)  
 
 #### Administer users and their rights
+
 With this new feature, the customer administrators can now add new users to their customer group and update their role.
 Roles:
 
-- Customer admin: Administrator of this group (cannot be grante to another user)
-- Contributor: Can change settings and display options of charts
-- Reader: Can only display but not change any settings
+* Customer admin: Administrator of this group (cannot be grante to another user)
+* Contributor: Can change settings and display options of charts
+* Reader: Can only display but not change any settings
 
 Users can also be set inactive, which prevents them from signing in
 ![Administrator Settings](../../img/roadmap/AdminSettings.png)  
@@ -129,32 +150,39 @@ Users can also be set inactive, which prevents them from signing in
 ### v.1.21003.01 (03. January 2021)
 
 #### Localized Landing Page
+
 Depending on where the user logs in the welcome page is in German or English or something in between. It is possible to localize this page to various languages such as
 English, German, Suomi, Russian, Chinese, Swedish, Turkish, Italian, Spanish, Dutch, Polish
 ![Localized Landing Page](../../img/roadmap/LoginPageLocalized.png)  
 
 #### Explainer videos
-Youtube-videos that show the functionalities and get a short overview. 
+
+Youtube-videos that show the functionalities and get a short overview.
 
 #### Process descriptions
+
 It is needed to have an easy overview of how to initialize a project with as a sales person, as a customer as KOLIBRI Cloud support person...  
 A check list and a graphical overview is wished.  
 
 #### Free .NET DLL to convert data from/to ARC1/ADT1
-See: https://iotconverter.kolibricloud.ch  
+
+See: <https://iotconverter.kolibricloud.ch>  
 
 ### v.1.20228.01 (15. August 2020)
 
 #### Individual channel customizations
+
 A long awaiting feature is the possibility to set a different **color** and **name** per channel per device. And each device should have different scale settings.  
 ![Individual channel customizations](../../img/roadmap/CustomizedChannels.png)  
 
 #### Export and Alarming in other units (not only m, °C, bar)
-Users using the imperial system need the possibility to export in units like feet, inch and Fahrenheit. 
+
+Users using the imperial system need the possibility to export in units like feet, inch and Fahrenheit.
 When improving the export it shall also be able to export & alarm of Tank- and Overflow Calculation.
-![Export and Alarming in other units](../../img/roadmap/MultipleDevicesExporWithCustomUnits.png) 
+![Export and Alarming in other units](../../img/roadmap/MultipleDevicesExporWithCustomUnits.png)
 
 #### Performance
+
 We optimize various methods by caching data in order to quickly load various components. Performance is always a feature, and we will further improve it.  
 Every API call using the Permanent Access Token was ~1 sec because the 1 sec was needed for the authentication process. We cache this now and only the first API call has now 1 sec, all other generic calls should be around 50-100ms.  
 ![Performance](../../img/roadmap/performance.png)  
@@ -172,8 +200,8 @@ The subject of a mail is configurable per device.
 
 #### Account Settings
 
-- Group-wide "System & Device Alarms" Email
-- Add LoRa device with EUI from device
+* Group-wide "System & Device Alarms" Email
+* Add LoRa device with EUI from device
 
 #### Add FTP account for self-assignment of devices
 
@@ -183,7 +211,7 @@ This feature lets a customer admin add FTP server credentials. Each new device c
 #### Auto-add used channels
 
 Especially with the new LoRa ADT devices the used channels have to be changed according to the users configuration. At the same time the user expect to see measuring data from channels that are not sending data anymore but have stored data.  
-![Auto-Add used channels](../../img/roadmap/AutoAssingmentOfUsedChannels.png) 
+![Auto-Add used channels](../../img/roadmap/AutoAssingmentOfUsedChannels.png)
 
 #### Show Permanent Token for Administrators
 
@@ -208,8 +236,8 @@ Some devices configurations can now be seen and saved through the KOLIBRI Cloud.
 
 Chart performance has been optimized. This was accomplished by two main adjustments:
 
-- Calculating the correct timezone to display on the chart is a time-consuming thing when done in the browser. That is why it is now calculated on the backend.
-- Displaying over 100'000 data points per channel is not efficient nor really useful as the chart is limited to 1000 pixel wide so it is not possible to present them. The backend no uses the [Largest Triangle Three Buckets algorithm](https://docs.kolibricloud.ch/faq/overview/#does-the-chart-show-all-measurement-points) to down-sample the loaded data to a maximum of 1'500 data points per channel. This leads to a drastic performance boost without a significant accuracy loss. The downside of this is that when zooming in some values might be missing. The export feature still exports all data.
+* Calculating the correct timezone to display on the chart is a time-consuming thing when done in the browser. That is why it is now calculated on the backend.
+* Displaying over 100'000 data points per channel is not efficient nor really useful as the chart is limited to 1000 pixel wide so it is not possible to present them. The backend no uses the [Largest Triangle Three Buckets algorithm](https://docs.kolibricloud.ch/faq/overview/#does-the-chart-show-all-measurement-points) to down-sample the loaded data to a maximum of 1'500 data points per channel. This leads to a drastic performance boost without a significant accuracy loss. The downside of this is that when zooming in some values might be missing. The export feature still exports all data.
 
 #### Last Data Values
 
@@ -259,7 +287,7 @@ In addition to FTP import, Mail import over SMTP can be used as well.
 
 We added the possibility to define additional Calculations to the already existing ones (Water and Tank Calculations). These new Calculations support all the Water Calculations for now.
 
-To enable it, head to _Page Settings_ and scroll down to _Profile_:
+To enable it, head to *Page Settings* and scroll down to *Profile*:
 
 ![How to enable additional Calculations](/img/calculations/activate_calculations.png "How to enable additional Calculations")
 
@@ -273,9 +301,9 @@ The selected Calculations are shown in the chart as well:
 
 ## Known Limitations
 
-- Export of measuring data of multiple devices produces a zip file with the Excel or CSV included instead of having all data in one single Excel/CSV included. It is planned to make this possible.
-- For now, Events (vertical line) nor reference heights (horizontal line) not event ranges (highlighted area) can be added to the chart.
-- Calculations are applied to ALL measurements. It is not possible have a separate calculation for a certain time frame and another calculation for another time range in the same chart.
+* Export of measuring data of multiple devices produces a zip file with the Excel or CSV included instead of having all data in one single Excel/CSV included. It is planned to make this possible.
+* For now, Events (vertical line) nor reference heights (horizontal line) not event ranges (highlighted area) can be added to the chart.
+* Calculations are applied to ALL measurements. It is not possible have a separate calculation for a certain time frame and another calculation for another time range in the same chart.
 
 <hr />
 <hr />
