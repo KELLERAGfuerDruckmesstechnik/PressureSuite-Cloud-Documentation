@@ -9,20 +9,20 @@ description: History about maintenances and outages
 ---
 # Status
 
-💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***
-
+💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***  
+🚧🚧  ***MAJOR UPGRADE INCOMING - See Planned Maintenance windows!***  🚧🚧    
 
 
 
 ---
 ---
 ## Planned Maintenance windows
-### 28.February 2022 12:00 MEZ - 14:00 MEZ
+### 10.May 2023 14:00 MEZ - 11.May 2023 18:00 MEZ
 
 **Planned work**  
-We are deploying the newest version of the app with version number v.1.22059.01. 
-During this time, an older database version with the timestamp February, 8th 2022 will be shown. After 14:00 MEZ, please login again and refresh the web app.
-No data will be lost during this time.
+We deploy all functions, WebJobs, API and tooling to the newest Long-Time-Supported framework version. 
+This is a major upgrade and we expect delays in various services inclusing access to the Web API, Web App and a delay in the gathering of newest measurement data.
+
 
 ---
 
@@ -352,6 +352,14 @@ None.
 ---
 
 ## Past Maintenance windows
+
+### 28.February 2022 12:00 MEZ - 14:00 MEZ
+
+**Planned work**  
+We are deploying the newest version of the app with version number v.1.22059.01. 
+During this time, an older database version with the timestamp February, 8th 2022 will be shown. After 14:00 MEZ, please login again and refresh the web app.
+No data will be lost during this time.
+
 
 ### 31.January 2022 10:00 MEZ - 12:00 MEZ
 
