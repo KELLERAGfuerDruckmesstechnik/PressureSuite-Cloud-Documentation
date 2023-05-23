@@ -10,19 +10,12 @@ description: History about maintenances and outages
 # Status
 
 💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***  
-🚧🚧  ***MAJOR UPGRADE INCOMING - See Planned Maintenance windows!***  🚧🚧    
-
 
 
 ---
 ---
 ## Planned Maintenance windows
-### 10.May 2023 14:00 MEZ - 11.May 2023 18:00 MEZ
-
-**Planned work**  
-We deploy all functions, WebJobs, API and tooling to the newest Long-Time-Supported framework version. 
-This is a major upgrade and we expect delays in various services inclusing access to the Web API, Web App and a delay in the gathering of newest measurement data.
-
+*NONE*
 
 ---
 
@@ -353,6 +346,13 @@ None.
 
 ## Past Maintenance windows
 
+### 10.May 2023 14:00 MEZ - 11.May 2023 18:00 MEZ
+
+**Planned work**  
+We deploy all functions, WebJobs, API and tooling to the newest Long-Time-Supported framework version. 
+This is a major upgrade and we expect delays in various services including access to the Web API, Web App and a delay in the gathering of newest measurement data.
+
+
 ### 28.February 2022 12:00 MEZ - 14:00 MEZ
 
 **Planned work**  
@@ -391,4 +391,4 @@ The new versions of these components are being deployed and resulting in tempora
 In the worst case, data will not be updated for some hours.
 
 **Effects**  
-No measureable impacts happened noticeable by users.
+No measurable impacts happened noticeable by users.
