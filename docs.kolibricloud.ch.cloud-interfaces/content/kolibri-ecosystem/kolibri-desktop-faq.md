@@ -46,7 +46,7 @@ KOLOBRI Desktop cannot monitor the com ports for changed devices, because the 'w
 Further information are provided by the microsoft documentation: https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management
 
 
-## Can I export/convert data from a LEO-Record as PDF file?  
+## Can I export/convert data to a PDF file?  
 
 Unfortunately, KOLIBRI Desktop does not have built-in support for direct PDF export. However, you can still achieve this by using the "Save as..." function and selecting PDF. This option is available in applications like Word, Excel, and most other text or spreadsheet applications.  
 For detailed instructions on how to save or convert to PDF using Microsoft Office desktop apps, you can refer to the following link: https://support.microsoft.com/en-us/office/save-or-convert-to-pdf-or-xps-in-office-desktop-apps-d85416c5-7d77-4fd6-a216-6f4bf7c7c110  
