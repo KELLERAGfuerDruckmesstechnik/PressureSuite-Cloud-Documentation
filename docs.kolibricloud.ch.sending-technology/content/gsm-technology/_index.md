@@ -35,10 +35,12 @@ To register a GSM/ARC device please follow the following steps:
   - b) To verify the choice of channels and device connection type it is a good idea to check the actual measurement in [Error/Status]. Only chose those channels that deliver measurement values of interest.  
     ![Check chosen channels](../gsmsetup_verifyactivechannels.png "Check chosen channels!")  
     
-  - c) Use a “check interval” which is the time the device waits until it checks the FTP server for new configuration (from the DataManager and soon from the KOLIBRI Cloud). An interval of 24h is ok.
+  - c) Use a “check interval” which is the time the device waits until it checks the FTP server for new configuration (from the DataManager and soon from the KOLIBRI Cloud). An interval of 24h is a good value.
     ![Choose a check interval picture](../gsmsetup_checkinterval.png "Check the interval!")  
 
-  - d) In the **[Measure]** tab please set the measure “Interval” and the “Send FTP-File after X-Measurements”. If you measure every 30min and send a measurements file after 20 Measurements then the device will send data every 10 hours. As longer the 'send interval' as lower the battery is used. On the other hand, an alarm set in the Cloud will only react when it has data. In this example a Cloud alarm is triggered in worst-case after 10h.  
+  - d) In the **[Measure]** tab, navigate to the settings and configure the following options: set the measurement type to "Interval" and specify the number of measurements to be taken before sending the FTP file, labeled as "Send FTP-File after X-Measurements".   
+  To illustrate, if you schedule measurements every 30 minutes and choose to send the measurements file after 20 measurements, the device will transmit data once every 10 hours. By extending the 'send interval,' you can conserve battery power. However, it's important to note that an alarm set in the Cloud will only be triggered when data is received. In the given scenario, the Cloud alarm will be activated at worst after 10 hours. 
+In most water level measuring scenarios, a good value is measuring every 1h and sending data every 12h.  
 
   - e) <span style="color:red">In the **[Measure]** tab it is *NEEDED* to activate the “Record Datatransfer”.</span> The KOLIBRI Cloud only handles data in this format.  
     ![Use the record format picture](../gsmsetup_recordformat.png "Use the record format!")  
