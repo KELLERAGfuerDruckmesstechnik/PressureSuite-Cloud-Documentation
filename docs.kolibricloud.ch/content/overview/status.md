@@ -15,7 +15,7 @@ description: History about maintenances and outages
 ---
 ---
 ## Planned Maintenance windows
-### 14.June 2023 09:00 MEZ - 11.June 2023 18:00 MEZ
+### 14.June 2023 09:00 MEZ - 15.June 2023 18:00 MEZ
 
 **Planned work**  
 We re-deploy all functions, WebJobs, API and tooling to the newest Long-Time-Supported framework version.  
