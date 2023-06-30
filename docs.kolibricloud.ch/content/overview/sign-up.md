@@ -1,5 +1,5 @@
 ---
-title: Sing-Up Process
+title: Sign-Up Process
 menu:
     main:
         parent: overview
@@ -10,7 +10,7 @@ toc: false
 
 # Sign Up process and how to add signed up users to your group
 
-# Create account at Keller Kolibri Cloud
+# Create account at KOLIBRI Cloud
 
 - Go to [https://www.kolibricloud.ch](https://www.kolibricloud.ch)
 
@@ -21,7 +21,7 @@ toc: false
 ![Sign Up Process Main](../../img/sign-up/sign-up-main.png)  
 
 
-## Create Kolibri account: Two step verification
+## Create KOLIBRI account: Two step verification
 
 - Fill the form with your data
 
