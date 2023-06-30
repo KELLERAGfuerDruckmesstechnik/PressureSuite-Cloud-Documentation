@@ -3,7 +3,7 @@ title: Roadmap
 menu:
     main:
         parent: overview
-        weight: 5
+        weight: 6
 toc: true
 description: Roadmap of coming features
 ---

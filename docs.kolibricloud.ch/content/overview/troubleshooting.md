@@ -3,7 +3,7 @@ title: Troubleshooting
 menu:
     main:
         parent: overview
-        weight: 7
+        weight: 8
 toc: true
 description: List of problems and their solutions
 ---

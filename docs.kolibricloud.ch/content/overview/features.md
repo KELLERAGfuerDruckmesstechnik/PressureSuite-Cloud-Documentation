@@ -3,7 +3,7 @@ title: New Features and Limitations
 menu:
     main:
         parent: overview
-        weight: 4
+        weight: 5
 toc: false
 description: Actual Release History and Known Limitations
 

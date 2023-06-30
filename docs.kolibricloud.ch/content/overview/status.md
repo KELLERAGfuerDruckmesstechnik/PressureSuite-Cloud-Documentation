@@ -3,7 +3,7 @@ title: Service Status
 menu:
     main:
         parent: overview
-        weight: 6
+        weight: 7
 toc: false
 description: History about maintenances and outages
 ---
