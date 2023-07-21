@@ -9,12 +9,8 @@ description: History about maintenances and outages
 ---
 # Status
 
-🚧🚧  *** DATABASE ISSUE - SOME DATA FROM 21th July 2023 ARE MISSING ***  🚧🚧   
+🚧🚧  ***DATABASE ISSUE - SOME DATA FROM 21th July 2023 ARE MISSING***  🚧🚧  
 
----
----
-## Planned Maintenance windows
-  - none at the moment
 
 ---
 
@@ -355,6 +351,12 @@ None.
 ---
 ---
 
+
+## Planned Maintenance windows
+  - none at the moment  
+
+---
+---
 ## Past Maintenance windows
 
 ### 14.June 2023 09:00 MEZ - 16.June 2023 18:00 MEZ
