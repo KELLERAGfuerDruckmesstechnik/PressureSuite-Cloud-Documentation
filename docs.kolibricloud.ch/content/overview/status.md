@@ -9,7 +9,7 @@ description: History about maintenances and outages
 ---
 # Status
 
-🚧🚧  ***DATABASE ISSUE - SOME DATA FROM 21th July 2023 ARE MISSING***  🚧🚧  
+💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***  
 
 
 ---
@@ -21,7 +21,7 @@ description: History about maintenances and outages
 
 **Summary of Impact:**  
 There are gaps of missing measurement data from 21.July 12:00 CEST - 21.July 2023 23:00 CEST.  
-On Monday 24.July the KOLIBRI tech team will try to restore all missing measurement data.  
+On the evening of the Monday 24.July, the KOLIBRI tech team restored all missing measurement data.  
 
 **Root Cause:**  
 The root cause was a data base quota that reached its limit. After increasing the quota for 100GB the measurements can be stored reliable.
