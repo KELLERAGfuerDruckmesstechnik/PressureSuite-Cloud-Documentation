@@ -23,6 +23,35 @@ PLANNED
 
 ## Release History
 
+## Version 6.2.23235.02 (August 23, 2022)
+
+### Description:
+This update brings significant improvements and various features to enhance user experience and system performance. 
+The most notable visible changes are in the Live Data control and the handling of calculations (water calculations and barometric pressure compensation).
+
+### Features and Enhancements:
+
+- Added a new feature to export data in PDF format
+- Enabled Live Measuring with Water-Calculation
+- Enabled the user to hide the Live Measuring chart control
+- Enhanced chart functionality to accommodate unitless time series (rain catcher)
+- Incorporated guidance for managing the deletion of existing device measurements on a device
+- Enhanced export file naming logic: Device name displayed if available
+- Improved visibility when data is being read out from the recording device; A popup offers then options
+- Adding a customer logo is now easier and more persistent
+- Introduced support for ARC1 demo device
+- Harmonized interface with the KELLER CI color scheme 
+- Improved barometric pressure usability by offering a checkbox to automatically use the new channel in the water calculation
+
+
+### Bug Fixes:
+
+- Optimized memory handling by refining warnings and intervals, enhancing system reliability
+- To optimize memory/CPU usage, the chart now displays the latest 2000 measurements
+- Addressed German translation typos
+- Implemented various bug fixes to enhance system stability across different scenarios
+- Fixed crash on export when multiple barometric pressure compensations were executed
+
 ## Version 6.2.22101.05
 
 ### Description
