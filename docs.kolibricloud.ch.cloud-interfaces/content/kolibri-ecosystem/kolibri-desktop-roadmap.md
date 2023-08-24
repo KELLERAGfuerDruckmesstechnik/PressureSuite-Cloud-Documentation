@@ -23,7 +23,7 @@ PLANNED
 
 ## Release History
 
-## Version 6.2.23235.02 (August 23, 2022)
+## Version 6.2.23236.05 (August 24, 2023)
 
 ### Description:
 This update brings significant improvements and various features to enhance user experience and system performance. 
