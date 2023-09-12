@@ -23,6 +23,11 @@ PLANNED
 
 ## Release History
 
+## Version 6.2.23251.01 (September 08, 2023)
+
+### Description:
+Hotfix: KOLIBRI Desktop crashes on startup on certain conditions.
+
 ## Version 6.2.23236.05 (August 24, 2023)
 
 ### Description:
