@@ -36,6 +36,8 @@ When installing with Silent mode, the user must be aware of the EULA's of the dr
 
 Yes! Replace the 'Logo.jpg' in the KOLIBRI Desktop installation folder (default path: 'C:\Program Files (x86)\KELLER\KolibriDesktop\Resources\Logo\Logo.jpg') with an image of your own logo and you're good to go. The new file must be named the same as the old one 'Logo.jpg'.
 
+A custom logo can also be supplied before running the installer. Paste the custom logo in the same folder as the installer and name the logo file "KolibriDesktopLogo.jpg". This logo will be replacing the default logo or any ohter custom logo previously defined.
+
 Make sure the format is similar to the KELLER image (220x116 pixel) so there is no horizontal or vertical stretching. 
 
 ## I got a notification 'Automatic COM-port detection error'. What does that mean?
