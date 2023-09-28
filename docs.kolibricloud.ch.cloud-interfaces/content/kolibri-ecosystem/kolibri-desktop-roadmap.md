@@ -34,7 +34,7 @@ The most notable visible changes are in the Live Data control and the handling o
 - Added a new feature to export data in PDF format
 - Enabled Live Measuring with Water-Calculation
 - Enabled the user to hide the Live Measuring chart control
-- Enhanced chart functionality to accommodate unitless time series (rain catcher)
+- Enhanced chart functionality to accommodate unit-less time series (rain catcher)
 - Incorporated guidance for managing the deletion of existing device measurements on a device
 - Enhanced export file naming logic: Device name displayed if available
 - Improved visibility when data is being read out from the recording device; A popup offers then options

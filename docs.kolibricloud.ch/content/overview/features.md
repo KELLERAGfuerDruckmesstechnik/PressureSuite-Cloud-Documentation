@@ -12,6 +12,18 @@ description: Actual Release History and Known Limitations
 # Release History and Known Limitations
 
 ## Releases
+---
+
+### v1.23271.02 (28.09.2023)
+
+With this version, we introduce a longly awaited feature: The possibility to hide devices for certain user.  
+Now, it is possible to have multiple customers and split the devices between them. Each customer can only see the devices that are assigned to him/her.
+
+#### Multi-Tenancy by using the network visibility
+
+As a CustomerAdmin it is possible to govern the user of their group(company). Sometimes, you as the KOLIBRI Cloud customer have your own customers who should only see their devices/data. In the past, it was necessary to create a new group and a new customerAdministrator account and assign each devices and your customers to a group. For this multiple login and logout were needed.  
+Now, it is possible to have multiple customers and split the devices between them. Each customer can only see the devices that are assigned to him/her. This is done by using the network visibility which is a setting in the 'Administrator Settings' under 'Govern User':
+![Network Visibility](../../img/multitenancy-hide-networks.png)  
 
 ---
 
