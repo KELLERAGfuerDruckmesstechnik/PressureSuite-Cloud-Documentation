@@ -16,6 +16,16 @@ description: History about maintenances and outages
 
 ## Outages/Issues  
 
+### 2022 - 01.December 2023
+
+**Summary of Impact:**  
+In 'v1.22059.01' we introduced the possibility to remotely change the start time of a measurement. Originally, we never wanted to add this feature as it is difficult to handle and the possibilities to make mistake is high up. This is why there are multiple warn boxes when changing this configuration field.  
+Unfortunately, we only now found a bug that made a cellular device change the measure starting time to the time a a new configuration is found by the device.  
+
+**Root Cause:**  
+We identified the problem in sending the recent measurement start time within a configuration file which is in the past during the time a device finds the new configuration. The solution was to avoid sending a measure start time unless specifically requested.  
+
+
 
 ### 21.July 12:00 CEST - 21.July 2023 23:00 CEST
 
