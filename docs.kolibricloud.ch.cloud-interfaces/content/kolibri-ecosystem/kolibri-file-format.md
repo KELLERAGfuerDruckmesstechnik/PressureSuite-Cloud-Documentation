@@ -1,5 +1,5 @@
 ---
-title: The KOLIBRI measurement JSON file
+title: The KOLIBRI measurement file
 menu:
     main:
         parent: kolibri-ecosystem
@@ -22,12 +22,12 @@ Example file:
 
 
 # Basic structure of the JSON file
-{{< highlight json >}}
+```
 {
   "Version": 1,
   "Header": {
     "MeasurementDefinitionsInBody": [5, 8, 2],
-    "...": ".. more meta information"
+//.. more meta information
   },
   "Body": [{
       "t": "2024-01-04T15:01:11",
@@ -36,10 +36,10 @@ Example file:
       "t": "2024-01-04T16:01:11",
       "v": [10.39307, 5.449951, -0.0421896]
     },
-    "etc": ".. more measurements .."
+//.. more measurements
   ]
 }
-
+```
 
 The whole JSON file consists of three blocks
  - `Version`  

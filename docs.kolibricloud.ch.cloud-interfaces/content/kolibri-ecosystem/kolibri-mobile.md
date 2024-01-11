@@ -9,4 +9,4 @@ menu:
 
 # KOLIBRI Mobile - The Bluetooth Mobile App
 
-KOLIRBI Mobile is in development and will be released around Q1 2023
+KOLIRBI Mobile App is in development and will be released around end of 2024 together with new KELLER BLE devices.
