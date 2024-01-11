@@ -27,7 +27,7 @@ Example file:
   "Version": 1,
   "Header": {
     "MeasurementDefinitionsInBody": [5, 8, 2],
-    //.. More meta information
+    "...": ".. more meta information"
   },
   "Body": [{
       "t": "2024-01-04T15:01:11",
@@ -36,8 +36,10 @@ Example file:
       "t": "2024-01-04T16:01:11",
       "v": [10.39307, 5.449951, -0.0421896]
     },
-    //.. More measurement data
+    "etc": ".. more measurements .."
+  ]
 }
+
 
 The whole JSON file consists of three blocks
  - `Version`  
@@ -48,10 +50,10 @@ The whole JSON file consists of three blocks
    Shows the list of raw measurements with a UTC time stamp (`t`) and the values (`v`).
 
 Example:
-On '2024-01-04T15:01:11' UTC it was measured  
-  - value '10.38257' of MeasurmentDefinitionId '5' which is 'TOB1' (Temperature Over the sensor)
-  - value '5.619995' of MeasurmentDefinitionId '8' which is 'TBaro' (Barometric Temperature measured inside the ARC1)
-  - value '-0.04195881' of MeasurmentDefinitionId '2' which is 'P1' (The first pressure which is for this type of level probe the pressure difference between the sensor pressure and the barometric pressure)
+On `2024-01-04T15:01:11` UTC it was measured  
+  - value '**10.38257**' of MeasurmentDefinitionId '**5**' which is '**TOB1**' (Temperature Over the sensor)
+  - value '**5.619995**' of MeasurmentDefinitionId '**8**' which is '**TBaro**' (Barometric Temperature measured inside the ARC1)
+  - value '**-0.04195881**' of MeasurmentDefinitionId '**2**' which is '**P1**' (The first pressure which is for this type of level probe the pressure difference between the sensor pressure and the barometric pressure)
 
 
 # File description
