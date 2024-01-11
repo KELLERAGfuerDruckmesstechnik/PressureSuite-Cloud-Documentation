@@ -7,21 +7,19 @@ menu:
 
 ---
 
-# Introduction
+## Introduction
 The KOLIBRI measurement file is meant to be a JSON file that has a structured and defined form in order to be used in various platform independent software tools. The main goal is to store measurement data and give information about the origin of the stored measurement data.  
 The KOLIBRI measurement file is used by the 'KOLIBRI Desktop'-Software, the 'KOLIBRI Cloud' Web App/API and the coming new 'KOLIBRI Mobile' Apps (Android/iOS). The idea is that the data can (or will be) interchangeable between the products. It is now possible to export measurement data from the 'KOLIBRI Cloud Web App and open the file with KOLIBRI Desktop.  
 This documentation helps to understand the file and makes an integration/transformation into other file formats or systems possible.
 
 
-# Example files
-
-Example file: 
-- [KOLIBRI Desktop - ADT1](../../data/Kolibri_EUI-009D6B0000C53DD32023111408584720231201073847.json)
-- [KOLIBRI Desktop - LEO Record](../../data/Kolibri_REC-10.2-123452023082308513220230824062552.json)
-- [KOLIBRI Cloud - ARC1](../../data/CLOUD_ARC-9.20-5_2024.01.04_15-01-11.json)
+## Example files
+- [KOLIBRI Desktop - ADT1](../../data/Kolibri_EUI-009D6B0000C53DD32023111408584720231201073847.json) 742KB
+- [KOLIBRI Desktop - LEO Record](../../data/Kolibri_REC-10.2-123452023082308513220230824062552.json) 1003KB
+- [KOLIBRI Cloud - ARC1](../../data/CLOUD_ARC-9.20-5_2024.01.04_15-01-11.json) 12KB
 
 
-# Basic structure of the JSON file
+## Basic structure of the JSON file
 ```
 {
   "Version": 1,
@@ -56,38 +54,49 @@ On `2024-01-04T15:01:11` UTC it was measured
   - value '**-0.04195881**' of MeasurmentDefinitionId '**2**' which is '**P1**' (The first pressure which is for this type of level probe the pressure difference between the sensor pressure and the barometric pressure)
 
 
-# File description
+## Detailed file description
+
+### Body
 
 | Name | Description | Example |
 | --- | --- | --- |
-| Time | The time of the measurement | "2022-01-01T00:00:00Z" |
-| Values | The values of the measurements | [1.0, 2.0, 3.0] |
+| t (Time) | The time of the measurement in UTC | "2023-08-23T08:51:32Z" |
+| v (Values) | The values of the measurements | [2, 5, 7, 11] |
+
+### Header
 
 | Name | Description | Example |
 | --- | --- | --- |
-| SourceUniqueSerialNumber | The unique serial number of the source | "1234567890" |
-| GeneratedMeasurementDefinitionIds | The IDs of the generated measurement definitions | [1, 2, 3] |
-| CompensationDateUTC | The UTC date of the compensation | "2022-01-01T00:00:00Z" |
+| MeasurementDefinitionsInBody | REQUIRED. The list of all MeasurementDefinitionIds | [5, 8, 2]  Use the mapping in https://docs.kolibricloud.ch/cloud-interfaces/api/channels/#measurementdefinitionid to identify the correct channel|
+| MeasurementDefinitionsInBodyAlternativeNames | The list of alternative names of the channels | ["Water Temp", "Air Temp", "Pressure Diff"] |
+| RecordId | Unique Record Id | "REC-10.2-157642023082308513220230824062552" |
+| UniqueSerialNumber | Based on Device-Type (eg. "REC-10.2" or "ARC-9.20") and Serial Number (LoRa devices use the EUI instead the device number) | "EUI-009D6B0000C5D33D" |
+| SerialNumber | Every device has a serial number | "1234" |
+| DeviceName | The device name in KOLIBRI Cloud this is | "Eulach 10 - Winterthur" |
+| DeviceType | Each KELLER device type has its own number | "30.05" |
+| CreationDateTimeUTC | The UTC time the file was created based on the system that created the file | "2024-01-11T14:58:44.1999293Z" |
+| CreationDateTimeDeviceTime | The time the file was created based on the time in the device. Some don't use UTC. | "2024-01-11T16:58:43" |
+| IanaTimeZoneName | IANA Time Zone Name. See TZ identifier from https://en.wikipedia.org/wiki/List_of_tz_database_time_zones | "Europe/Zurich" or "CET" or "UTC" |
+| FirstMeasurementUTC | Should be the UTC time stamp of the first measurement | "2023-08-23T08:51:32Z" |
+| LastMeasurementUTC | Should be the UTC time stamp of the last measurement | "2023-08-24T06:25:52Z" |
+| CreationOrigin | Which SW created this file? This is an enum. 0=Unknown, 1=Script, 2=Logger4, 3=Logger5, 4=KolibriDesktop, 5=KolibriMobile, 6=KolibriCloud, | 4 |
+| IsBodyCompressed | We might encrypt the body in the future. This is always false as for now. | false |
+| MemoryInfo | Internal Memory Info - Which gives information about the location of the data that was stored inside the device's memory | "MemoryInfo": {"SizeItem": 25.6,"Size": "25.6%","HighPage": 14,"LowPage": 251,"EndHighPage": 3,"EndLowPage": 25,"PageCount": 1047,"SizeRecord": 4096.0,"RecordTextSize": 8 } |
+| CompensationSourcesInfo | Information about the source measurements of the compensated channels. Sometimes Level Probes do not have access to the barometric pressure. With KOLIBRI Desktop we can merge/interpolate the barometric pressure from other devices to make calculations possible.  | "CompensationSourcesInfo":[{"SourceUniqueSerialNumber":"REC-10.2-15764","GeneratedMeasurementDefinitionIds":[7],"CompensationDateUTC":"2023-08-24T06:28:52.6913177Z"},{"SourceUniqueSerialNumber":"REC-10.2-15764","GeneratedMeasurementDefinitionIds":[11],"CompensationDateUTC":"2023-08-24T06:30:56.1798789Z"},{"SourceUniqueSerialNumber":"REC-10.2-15764","GeneratedMeasurementDefinitionIds":[7,11],"CompensationDateUTC":"2023-08-24T06:36:26.4745526Z"}] |
+| RemoteTransmissionUnitInfo | Information for RemoteTransmissionUnits. This ConnectionTypeId indicates which channels can be measured by the sensors connected to the remote transmission device (sometimes called: DeviceTypeId). Range 0-13 | "RemoteTransmissionUnitInfo": {"ConnectionTypeId": 3 },|
+| CustomAttributes | Dictionary with various information. Eg. "RecordNotes is the note text to the device in the KOLIBRI Cloud | { "RecordName": "CLOUD ARC-9.20-5 2024.01.04 15-01-11", "RecordNotes": "This is a note" } |
+| WaterCalculationStoredInDeviceSettings | MeasurementFileFormatWaterCalculationStoredInDevice | "WaterCalculationStoredInDeviceSettings":{"WaterLevelCalculation":{"WaterLevelType":34,"HydrostaticPressureChannelId":11,"BarometricPressureChannelId":0,"UseBarometricPressureToCompensate":false,"Offset":0.0,"Density":998.2,"Gravity":9.80665,"InstallationLength":0.0,"HeightOfWellhead":0.0},"OverflowCalculation":null,"TankCalculation":null} |
+| ChannelCalculations | List of calculations | "ChannelCalculations":[{"CalculationParameters":{"HydrostaticPressureMeasurementDefinitionId":"11","BarometricPressureMeasurementDefinitionId":"0","CorrespondingMeasurementDefinitionId":"34","Gravity":"9.80665","Offset":"0","Density":"998.2","UseBarometricPressureToCompensate":"False","From":null,"To":null},"CalculationTypeId":1,"ChannelInfo":{"ChannelType":34,"MeasurementDefinitionId":34,"Name":"mH20 (E)","Description":"","ColorCode":"#8c45ef","UnitType":3}}] |
 
 
 
-| Name | Description | Example |
-| --- | --- | --- |
-| RecordName | The name of the record | "Record 1" |
-| RecordNotes | The notes of the record | "This is a note" |
+## Calculation
+
+### WaterCalculationStoredInDeviceSettings vs. ChannelCalculations
 
 
-| Name | Description | Example |
-| --- | --- | --- |
-| SizeItem | The size of the item | 1.0 |
-| Size | The size of the memory | "1KB" |
-| HighPage | The high page of the memory | 1 |
-| LowPage | The low page of the memory | 1 |
-| EndHighPage | The end high page of the memory | 1 |
-| EndLowPage | The end low page of the memory | 1 |
-| PageCount | The count of the pages | 1 |
-| SizeRecord | The size of the record | 1.0 |
-| RecordTextSize | The text size of the record | 1 |
+### Example calculation
+
 
 | Name | Description | Example |
 | --- | --- | --- |
@@ -96,38 +105,21 @@ On `2024-01-04T15:01:11` UTC it was measured
 | TankCalculation | The calculation of the tank | null |
 
 
-| Name | Description | Example |
-| --- | --- | --- |
-| CalculationParameters | The parameters of the calculation | { "CalculationParameter1": "Value1", "CalculationParameter2": "Value2" } |
-| CalculationTypeId | The ID of the calculation type | 1 |
-| ChannelInfo | The information of the channel | { "ChannelId": 1, "ChannelName": "Channel 1" } |
+```
+    public enum WaterLevelType
+    {
+        HeightOfWater = 34,
+        DepthToWater = 35,
+        HeightOfWaterAboveSeaLevel = 36
+    }
 
-| Name | Description | Example |
-| --- | --- | --- |
-| ConnectionTypeId | The ID of the connection type | 1 |
+    public enum OverflowType
+    {
+        Poleni = 0,
+        Thomson = 1,
+        Venturi= 2,
+    }
+```
 
+## Load data using C#
 
-
-
-| Name | Description | Example |
-| --- | --- | --- |
-| MeasurementDefinitionsInBody | The list of all MeasurementDefinitionIds | [1, 2, 3, 4] |
-| MeasurementDefinitionsInBodyAlternativeNames | The list of alternative names of the channels | ["Air Pressure", null, "P1", "P2"] |
-| RecordId | Unique Record Id | "1234567890" |
-| UniqueSerialNumber | Based on Device-ID and Serial Number | "1234567890" |
-| SerialNumber | Every device has a serial number | "1234" |
-| DeviceName | Give a good clear name | "Eulach 10 - Winterthur / GSM: +41774692307" |
-| DeviceType | Mobile needs device type for identification | "30.05" |
-| CreationDateTimeUTC | The UTC time the file will be created | "2022-01-01T00:00:00Z" |
-| CreationDateTimeDeviceTime | The device time the file will be created | "2022-01-01T00:00:00" |
-| IanaTimeZoneName | IANA Time Zone Name | "Europe/Zurich" |
-| FirstMeasurementUTC | Should be .Body.First().Time | "2022-01-01T00:00:00Z" |
-| LastMeasurementUTC | Should be .Body.Last().Time | "2022-01-01T23:59:59Z" |
-| CreationOrigin | Which SW created this file? | Origin.Kolibri |
-| IsBodyCompressed | We might encrypt the body in the future | false |
-| MemoryInfo | InternalMemoryInfo | { "SizeItem": 1.0, "Size": "1KB" } |
-| CompensationSourcesInfo | Information about the source measurements of the compensated channels | [ { "SourceUniqueSerialNumber": "1234567890", "GeneratedMeasurementDefinitionIds": [1, 2], "CompensationDateUTC": "2022-01-01T00:00:00Z" } ] |
-| RemoteTransmissionUnitInfo | Information for RemoteTransmissionUnits | { "ConnectionTypeId": 1 } |
-| CustomAttributes | MeasurementFileFormatCustomAttributes | { "RecordName": "Record 1", "RecordNotes": "This is a note" } |
-| WaterCalculationStoredInDeviceSettings | MeasurementFileFormatWaterCalculationStoredInDevice | { "WaterLevelCalculation": { "WaterLevelType": WaterLevelType.HeightOfWater, "HydrostaticPressureChannelId": 1, "BarometricPressureChannelId": 2, "UseBarometricPressureToCompensate": true, "Offset": 0.0, "Density": 1.0, "Gravity": 9.8, "InstallationLength": 1.0, "HeightOfWellhead": 1.0 }, "OverflowCalculation": { "OverflowType": OverflowType.Poleni, "HydrostaticPressureChannelId": 1, "BarometricPressureChannelId": 2, "UseBarometricPressureToCompensate": true, "Offset": 0.0, "Density": 1.0, "Gravity": 9.8, "WallHeight": 1.0, "FormFactor": 1.0, "FormAngle": 1.0, "FormWidth": 1.0 }, "TankCalculation": null } |
-| ChannelCalculations | List<MeasurementFileFormatChannelCalculation> | [ { "CalculationParameters": { "CalculationParameter1": "Value1", "CalculationParameter2": "Value2" }, "CalculationTypeId": 1, "ChannelInfo": { "ChannelId": 1, "ChannelName": "Channel 1" } } ] |
