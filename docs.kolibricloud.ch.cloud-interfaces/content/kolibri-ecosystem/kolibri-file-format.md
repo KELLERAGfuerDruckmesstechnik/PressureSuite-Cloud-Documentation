@@ -14,9 +14,9 @@ This documentation helps to understand the file and makes an integration/transfo
 
 
 ## Example files
-- [KOLIBRI Desktop - ADT1](../../data/Kolibri_EUI-009D6B0000C53DD32023111408584720231201073847.json) 742KB
-- [KOLIBRI Desktop - LEO Record](../../data/Kolibri_REC-10.2-123452023082308513220230824062552.json) 1003KB
-- [KOLIBRI Cloud - ARC1](../../data/CLOUD_ARC-9.20-5_2024.01.04_15-01-11.json) 12KB
+- [KOLIBRI Desktop - ADT1](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/Kolibri_EUI-009D6B0000C53DD32023111408584720231201073847.json) 742KB
+- [KOLIBRI Desktop - LEO Record](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/Kolibri_REC-10.2-123452023082308513220230824062552.json) 1003KB
+- [KOLIBRI Cloud - ARC1](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/CLOUD_ARC-9.20-5_2024.01.04_15-01-11.json) 12KB
 
 
 ## Basic structure of the JSON file
@@ -68,7 +68,7 @@ On `2024-01-04T15:01:11` UTC it was measured
 | Name | Description | Example |
 | --- | --- | --- |
 | MeasurementDefinitionsInBody | REQUIRED. The list of all MeasurementDefinitionIds | [5, 8, 2]  Use the mapping in https://docs.kolibricloud.ch/cloud-interfaces/api/channels/#measurementdefinitionid to identify the correct channel|
-| MeasurementDefinitionsInBodyAlternativeNames | The list of alternative names of the channels | ["Water Temp", "Air Temp", "Pressure Diff"] |
+| MeasurementDefinitionsInBodyAlternativeNames | OBSOLETE. Should be null. The list of alternative names of the channels | ["Water Temp", "Air Temp", "Pressure Diff"] |
 | RecordId | Unique Record Id | "REC-10.2-157642023082308513220230824062552" |
 | UniqueSerialNumber | Based on Device-Type (eg. "REC-10.2" or "ARC-9.20") and Serial Number (LoRa devices use the EUI instead the device number) | "EUI-009D6B0000C5D33D" |
 | SerialNumber | Every device has a serial number | "1234" |
