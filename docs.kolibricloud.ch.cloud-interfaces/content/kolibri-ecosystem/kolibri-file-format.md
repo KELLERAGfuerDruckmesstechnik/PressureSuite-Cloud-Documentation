@@ -90,19 +90,17 @@ On `2024-01-04T15:01:11` UTC it was measured
 
 
 
+
 ## Calculation
 
 ### WaterCalculationStoredInDeviceSettings vs. ChannelCalculations
+//TODO
 
 
-### Example calculation
+### Calculation Example
+//TODO
 
 
-| Name | Description | Example |
-| --- | --- | --- |
-| WaterLevelCalculation | The calculation of the water level | { "WaterLevelType": WaterLevelType.HeightOfWater, "HydrostaticPressureChannelId": 1, "BarometricPressureChannelId": 2, "UseBarometricPressureToCompensate": true, "Offset": 0.0, "Density": 1.0, "Gravity": 9.8, "InstallationLength": 1.0, "HeightOfWellhead": 1.0 } |
-| OverflowCalculation | The calculation of the overflow | { "OverflowType": OverflowType.Poleni, "HydrostaticPressureChannelId": 1, "BarometricPressureChannelId": 2, "UseBarometricPressureToCompensate": true, "Offset": 0.0, "Density": 1.0, "Gravity": 9.8, "WallHeight": 1.0, "FormFactor": 1.0, "FormAngle": 1.0, "FormWidth": 1.0 } |
-| TankCalculation | The calculation of the tank | null |
 
 
 ```
@@ -123,3 +121,4 @@ On `2024-01-04T15:01:11` UTC it was measured
 
 ## Load data using C#
 
+See https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuiteFileFormatSamples
