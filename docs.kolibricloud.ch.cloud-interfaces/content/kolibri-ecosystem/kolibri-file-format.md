@@ -14,8 +14,8 @@ This documentation helps to understand the file and makes an integration/transfo
 
 
 ## Example files
-- [KOLIBRI Desktop - ADT1](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/Kolibri_EUI-009D6B0000C53DD32023111408584720231201073847.json) 742KB
-- [KOLIBRI Desktop - LEO Record](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/Kolibri_REC-10.2-123452023082308513220230824062552.json) 1003KB
+- [KOLIBRI Cloud - ADT1 LoRa](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/EUI-F84F25000001A0AD_2024-01-12_01_23_50.json) 22KB
+- [KOLIBRI Desktop - DCX](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/REC-5.5-539216_2024-01-12_02_08_19.json) 365KB
 - [KOLIBRI Cloud - ARC1](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/CLOUD_ARC-9.20-5_2024.01.04_15-01-11.json) 12KB
 
 
