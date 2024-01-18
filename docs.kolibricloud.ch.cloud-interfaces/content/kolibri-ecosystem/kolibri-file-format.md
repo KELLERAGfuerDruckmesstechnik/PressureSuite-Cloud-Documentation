@@ -337,6 +337,98 @@ Example
     }
 ```
 
+#### Required CalculationParameter per CalculationType
+Unknown = 0,
+
+- HeightOfWater = 1
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - UseBarometricPressureToCompensate
+  - From [nullable]
+  - To [nullable]
+- DepthToWater = 2
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - UseBarometricPressureToCompensate
+  - From [nullable]
+  - To [nullable]
+  - InstallationLength
+- HeightOfWaterAboveSea = 3
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - UseBarometricPressureToCompensate
+  - From [nullable]
+  - To [nullable]
+  - HeightOfWellheadAboveSea
+  - InstallationLength
+- Offset = 4
+  - Offset
+  - ChannelId
+- OverflowPoleni = 5
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - UseBarometricPressureToCompensate
+  - WallHeight
+  - FormFactor
+  - FormWidth
+- OverflowThomson = 6
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - UseBarometricPressureToCompensate
+  - WallHeight
+  - FormFactor
+  - FormAngle
+- OverflowVenturi = 7
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - UseBarometricPressureToCompensate
+  - FormFactor
+  - FormWidth
+- Force = 8
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - Offset
+  - Area
+  - UseBarometricPressureToCompensate
+- Tank = 9
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Density
+  - UseBarometricPressureToCompensate
+  - InstallationLength
+  - Width
+  - Height
+  - Length
+  - TankType
+
+
+
 ## Load data using C#
 
 See https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuiteFileFormatSamples
