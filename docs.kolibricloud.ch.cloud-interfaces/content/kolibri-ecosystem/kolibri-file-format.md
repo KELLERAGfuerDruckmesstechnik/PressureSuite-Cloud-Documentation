@@ -179,6 +179,7 @@ Examples:
 | BarometricPressureChannelId |  Channel Id of barometric pressure channel to compensate (see MeasurementDefinitionId) | 2 |
 
 #### WaterCalculationStoredInDeviceSettings Enum descriptions
+
 ```
     public enum WaterLevelType
     {
@@ -197,11 +198,144 @@ Examples:
 
 ### ChannelCalculations
 
-### Calculation Example
-//TODO
-
-
-
+Example
+```
+"ChannelCalculations": [
+            {
+                "CalculationParameters": {
+                    "BarometricPressureMeasurementDefinitionId": "0",
+                    "CorrespondingMeasurementDefinitionId": "35",
+                    "Density": "998",
+                    "From": null,
+                    "Gravity": "9.80665",
+                    "HydrostaticPressureMeasurementDefinitionId": "2",
+                    "InstallationLength": "10",
+                    "Offset": "0",
+                    "To": null,
+                    "UseBarometricPressureToCompensate": "False"
+                },
+                "CalculationTypeId": 2,
+                "ChannelInfo": {
+                    "ChannelType": 35,
+                    "ColorCode": "#2196f3",
+                    "Description": "",
+                    "MeasurementDefinitionId": 35,
+                    "Name": "mH20 (F)",
+                    "UnitType": 3
+                }
+            },
+            {
+                "CalculationParameters": {
+                    "BarometricPressureMeasurementDefinitionId": null,
+                    "CorrespondingMeasurementDefinitionId": "34",
+                    "Density": "998.2",
+                    "From": null,
+                    "Gravity": "9.80665",
+                    "HydrostaticPressureMeasurementDefinitionId": "2",
+                    "Offset": "0",
+                    "To": null,
+                    "UseBarometricPressureToCompensate": "False"
+                },
+                "CalculationTypeId": 1,
+                "ChannelInfo": {
+                    "ChannelType": 100,
+                    "ColorCode": "#8c45ef",
+                    "Description": "",
+                    "MeasurementDefinitionId": 100,
+                    "Name": "mH20 (E)",
+                    "UnitType": 3
+                }
+            },
+            {
+                "CalculationParameters": {
+                    "BarometricPressureMeasurementDefinitionId": null,
+                    "CorrespondingMeasurementDefinitionId": "36",
+                    "Density": "998.2",
+                    "From": null,
+                    "Gravity": "9.80665",
+                    "HeightOfWellheadAboveSea": "0",
+                    "HydrostaticPressureMeasurementDefinitionId": "2",
+                    "InstallationLength": "0",
+                    "Offset": "0",
+                    "To": null,
+                    "UseBarometricPressureToCompensate": "False"
+                },
+                "CalculationTypeId": 3,
+                "ChannelInfo": {
+                    "ChannelType": 100,
+                    "ColorCode": "#3f51b5",
+                    "Description": "",
+                    "MeasurementDefinitionId": 100,
+                    "Name": "mH20 (G)",
+                    "UnitType": 3
+                }
+            }
+        ],
+```
+```
+    public enum CalculationType
+    {
+        Unknown = 0,
+        HeightOfWater = 1,
+        DepthToWater = 2,
+        HeightOfWaterAboveSea = 3,
+        Offset = 4,
+        OverflowPoleni = 5,
+        OverflowThomson = 6,
+        OverflowVenturi = 7,
+        Force = 8,
+        Tank = 9
+    }
+```
+```
+    public enum UnitType
+    {
+        Unknown = 0,
+        Pressure = 1,
+        Temperature = 2,
+        Length = 3,
+        Conductivity = 4,
+        Voltage = 5,
+        Volume = 6,
+        Density = 7,
+        Acceleration = 8,
+        Angle = 9,
+        Flow = 10,
+        Force = 11,
+        Area = 13,
+        Unitless =13
+    }
+```
+```
+    public enum CalculationParameter
+    {
+        Offset,
+        Density,
+        Gravity,
+        /// <summary>
+        /// Especially, when using multisensor measurementDefinitionId like 55-59 the target calculation might be another like 34-36. This information must be stored
+        /// The calculation is a default calculation, that has a calculation parameters for eg 34 but this property shows that it corresponds to one of the multisensor channels.
+        /// </summary>
+        CorrespondingMeasurementDefinitionId,
+        ChannelId,
+        HydrostaticPressureMeasurementDefinitionId,
+        BarometricPressureMeasurementDefinitionId,
+        UseBarometricPressureToCompensate,
+        InstallationLength,
+        HeightOfWellheadAboveSea,
+        WallHeight,
+        FormFactor,
+        FormWidth,
+        FormAngle,
+        Area,
+        Width,
+        Height,
+        Length,
+        TankType,
+        From,
+        To,
+    }
+```
 
 ## Load data using C#
 
