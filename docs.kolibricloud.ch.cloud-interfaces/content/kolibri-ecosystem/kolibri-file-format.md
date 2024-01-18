@@ -342,33 +342,33 @@ Unknown = 0,
 
 - HeightOfWater = 1
   - HydrostaticPressureMeasurementDefinitionId
-  - BarometricPressureMeasurementDefinitionId
+  - UseBarometricPressureToCompensate
+  - BarometricPressureMeasurementDefinitionId [nullable]
   - CorrespondingMeasurementDefinitionId
   - Gravity
   - Offset
   - Density
-  - UseBarometricPressureToCompensate
   - From [nullable]
   - To [nullable]
 - DepthToWater = 2
   - HydrostaticPressureMeasurementDefinitionId
-  - BarometricPressureMeasurementDefinitionId
+  - UseBarometricPressureToCompensate
+  - BarometricPressureMeasurementDefinitionId [nullable]
   - CorrespondingMeasurementDefinitionId
   - Gravity
   - Offset
   - Density
-  - UseBarometricPressureToCompensate
   - From [nullable]
   - To [nullable]
   - InstallationLength
 - HeightOfWaterAboveSea = 3
   - HydrostaticPressureMeasurementDefinitionId
-  - BarometricPressureMeasurementDefinitionId
+  - UseBarometricPressureToCompensate
+  - BarometricPressureMeasurementDefinitionId [nullable]
   - CorrespondingMeasurementDefinitionId
   - Gravity
   - Offset
   - Density
-  - UseBarometricPressureToCompensate
   - From [nullable]
   - To [nullable]
   - HeightOfWellheadAboveSea
