@@ -94,15 +94,91 @@ On `2024-01-04T15:01:11` UTC it was measured
 ## Calculation
 
 ### WaterCalculationStoredInDeviceSettings vs. ChannelCalculations
-//TODO
+
+'WaterCalculationStoredInDeviceSettings' stores the water calculation that was configured on the device at the time of retrieving the measurement. This calculation will never be changed and is mainly to restore the original calulation.
+
+The 'WaterCalculationStoredInDeviceSettings' will be duplicated and also stored in the 'ChannelCalculations', where the user can modify, delete or add additional calculations. All calculations in 'ChannelCalculations' will be calculated and displayed the calculations in KOLIBRI Desktop.
+
+### WaterCalculationStoredInDeviceSettings
+
+| Name | Description | Example |
+| --- | --- | --- |
+| OverflowCalculation | see 'WaterLevelCalculation' |  |
+| WaterLevelCalculation | see 'OverflowCalculation' |  |
+| TankCalculation | does not exist yet -> always 'null' |  |
+
+Only one of the properties can have a value at a time, the other two will be 'null'
+
+Examples:
+```
+        "WaterCalculationStoredInDeviceSettings": {
+            "OverflowCalculation": {
+                "BarometricPressureChannelId": 0,
+                "Density": 998.0,
+                "FormAngle": 1.0,
+                "FormFactor": 1.111,
+                "FormWidth": 0.0,
+                "Gravity": 9.80665,
+                "HydrostaticPressureChannelId": 2,
+                "Offset": 0.002,
+                "OverflowType": 1,
+                "UseBarometricPressureToCompensate": false,
+                "WallHeight": 0.03
+            },
+            "TankCalculation": null,
+            "WaterLevelCalculation": null
+        }
+```
+```
+        "WaterCalculationStoredInDeviceSettings": {
+            "OverflowCalculation": null,
+            "TankCalculation": null,
+            "WaterLevelCalculation": {
+                "BarometricPressureChannelId": 0,
+                "Density": 998.0,
+                "Gravity": 9.80665,
+                "HeightOfWellhead": 0.0,
+                "HydrostaticPressureChannelId": 2,
+                "InstallationLength": 10.0,
+                "Offset": 0.0,
+                "UseBarometricPressureToCompensate": false,
+                "WaterLevelType": 35
+            }
+        }
+```
+
+#### WaterLevelCalculation
+
+| Name | Description | Example |
+| --- | --- | --- |
+| WaterLevelType | Id of type of calculation (see enum 'WaterLevelType' below) | 35 |
+| Density | Density of the liquid (kg/m³) | 998.0 |
+| Gravity | Gravity (m/s²) | 9.80665 |
+| HeightOfWellhead | Height of the wellhead above sea level (m) | 123.7 |
+| InstallationLength | Length of the installation (m) | 3.5 |
+| Offset | Offset to correct calculated value (m) | 0.02 |
+| HydrostaticPressureChannelId | Channel Id of pressure channel to calculate water level (see MeasurementDefinitionId) | 1 |
+| UseBarometricPressureToCompensate | indicator if calulation should use 'BarometricPressureChannelId' to compensate for barometric pressure | true |
+| BarometricPressureChannelId |  Channel Id of barometric pressure channel to compensate (see MeasurementDefinitionId) | 2 |
 
 
-### Calculation Example
-//TODO
+#### OverflowCalculation
 
+| Name | Description | Example |
+| --- | --- | --- |
+| OverflowType | Id of type of calculation (see enum 'OverflowType' below) | 1 |
+| Density | Density of the liquid (kg/m³) | 998.0 |
+| Gravity | Gravity (m/s²) | 9.80665 |
+| FormAngle | Angle of cutout for 'Thomson' calculation | 95.0 (°) |
+| FormFactor | Form factor to account for flow rate of different shapes of wall (between 0.85 and 1.37) | 1.14 |
+| FormWidth | With of wall cutout for 'Poleni' calculation (m) | 4.2 |
+| WallHeight | Height of the wall cutout relative to the sensor | 2.4 |
+| Offset | Offset to correct calculated value (m) | 0.02 |
+| HydrostaticPressureChannelId | Channel Id of pressure channel to calculate water level (see MeasurementDefinitionId) | 1 |
+| UseBarometricPressureToCompensate | indicator if calulation should use 'BarometricPressureChannelId' to compensate for barometric pressure | true |
+| BarometricPressureChannelId |  Channel Id of barometric pressure channel to compensate (see MeasurementDefinitionId) | 2 |
 
-
-
+#### WaterCalculationStoredInDeviceSettings Enum descriptions
 ```
     public enum WaterLevelType
     {
@@ -118,6 +194,14 @@ On `2024-01-04T15:01:11` UTC it was measured
         Venturi= 2,
     }
 ```
+
+### ChannelCalculations
+
+### Calculation Example
+//TODO
+
+
+
 
 ## Load data using C#
 
