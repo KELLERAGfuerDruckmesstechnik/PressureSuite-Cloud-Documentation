@@ -198,7 +198,135 @@ Examples:
 
 ### ChannelCalculations
 
-Example
+
+
+#### CalculationParameter Description
+
+| Name | Description | Example |
+| --- | --- | --- |
+| Offset | Offset to correct calculated value | "0.2" |
+| Density | Density of the liquid (kg/m³) | "998.2" |
+| Gravity | Gravity (m/s²) | "9.80665" |
+| CorrespondingMeasurementDefinitionId | Especially, when using multisensor measurementDefinitionId like 55-59 the target calculation might be another like 34-36. This information must be stored (see MeasurementDefinitionId) | "34" |
+| ChannelId |  | "1" |
+| HydrostaticPressureMeasurementDefinitionId | Channel Id of pressure channel to calculate water level (see MeasurementDefinitionId) | "1" |
+| BarometricPressureMeasurementDefinitionId | Can be null if 'UseBarometricPressureToCompensate' is "False". (see MeasurementDefinitionId) | "2" |
+| UseBarometricPressureToCompensate | indicator if calulation should use 'BarometricPressureMeasurementDefinitionId' to compensate for barometric pressure | "True" |
+| InstallationLength |  | "2.3" |
+| HeightOfWellheadAboveSea |  | "230" |
+| WallHeight | Height of the wall cutout relative to the sensor (m) | "1.7" |
+| FormFactor | Form factor to account for flow rate of different shapes of wall (between 0.85 and 1.37) | "1.11"|
+| FormWidth | With of wall cutout for 'Poleni' calculation (m) | "1.4" |
+| FormAngle | Angle of cutout for 'Thomson' calculation (°)  | "90" |
+| Area |  | "2.2" |
+| Width |  | "1" |
+| Height |  | "22.1" |
+| Length |  | "1.4" |
+| TankType |  | "1" |
+| From | Time from when the calculation is valid. Can be null. | "2022-12-11T07:55:25.7206325Z" |
+| To | Time until the calculation is valid. Can be null. | "2023-12-11T07:55:25.7206325Z" |
+
+#### Required CalculationParameter per CalculationType
+
+- Unknown = 0,
+- HeightOfWater = 1
+  - HydrostaticPressureMeasurementDefinitionId
+  - UseBarometricPressureToCompensate
+  - BarometricPressureMeasurementDefinitionId [nullable]
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - From [nullable]
+  - To [nullable]
+- DepthToWater = 2
+  - HydrostaticPressureMeasurementDefinitionId
+  - UseBarometricPressureToCompensate
+  - BarometricPressureMeasurementDefinitionId [nullable]
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - From [nullable]
+  - To [nullable]
+  - InstallationLength
+- HeightOfWaterAboveSea = 3
+  - HydrostaticPressureMeasurementDefinitionId
+  - UseBarometricPressureToCompensate
+  - BarometricPressureMeasurementDefinitionId [nullable]
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - From [nullable]
+  - To [nullable]
+  - HeightOfWellheadAboveSea
+  - InstallationLength
+- Offset = 4
+  - Offset
+  - ChannelId
+- OverflowPoleni = 5
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - UseBarometricPressureToCompensate
+  - WallHeight
+  - FormFactor
+  - FormWidth
+- OverflowThomson = 6
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - UseBarometricPressureToCompensate
+  - WallHeight
+  - FormFactor
+  - FormAngle
+- OverflowVenturi = 7
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Offset
+  - Density
+  - UseBarometricPressureToCompensate
+  - FormFactor
+  - FormWidth
+- Force = 8
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - Offset
+  - Area
+  - UseBarometricPressureToCompensate
+- Tank = 9
+  - HydrostaticPressureMeasurementDefinitionId
+  - BarometricPressureMeasurementDefinitionId
+  - CorrespondingMeasurementDefinitionId
+  - Gravity
+  - Density
+  - UseBarometricPressureToCompensate
+  - InstallationLength
+  - Width
+  - Height
+  - Length
+  - TankType
+
+
+#### How to calculate 
+
+For each datapoint in the 'Body' of the measurement file:
+- Look up the index of measurementId in the 'Header.MeasurementDefinitionIds'
+- Take the measurement value at the determined index
+- Insert the CalculationParameters and the previously determined values into the according formula
+- Repeat for each measurement value in the 'Body'
+
+
+#### Example
 ```
 "ChannelCalculations": [
             {
@@ -337,122 +465,13 @@ Example
     }
 ```
 
-#### CalculationParameter Description
+#### Formulas
 
-| Name | Description | Example |
-| --- | --- | --- |
-| Offset | Offset to correct calculated value | "0.2" |
-| Density | Density of the liquid (kg/m³) | "998.2" |
-| Gravity | Gravity (m/s²) | "9.80665" |
-| CorrespondingMeasurementDefinitionId | Especially, when using multisensor measurementDefinitionId like 55-59 the target calculation might be another like 34-36. This information must be stored (see MeasurementDefinitionId) | "34" |
-| ChannelId |  | "1" |
-| HydrostaticPressureMeasurementDefinitionId | Channel Id of pressure channel to calculate water level (see MeasurementDefinitionId) | "1" |
-| BarometricPressureMeasurementDefinitionId | Can be null if 'UseBarometricPressureToCompensate' is "False". (see MeasurementDefinitionId) | "2" |
-| UseBarometricPressureToCompensate | indicator if calulation should use 'BarometricPressureMeasurementDefinitionId' to compensate for barometric pressure | "True" |
-| InstallationLength |  | "2.3" |
-| HeightOfWellheadAboveSea |  | "230" |
-| WallHeight | Height of the wall cutout relative to the sensor (m) | "1.7" |
-| FormFactor | Form factor to account for flow rate of different shapes of wall (between 0.85 and 1.37) | "1.11"|
-| FormWidth | With of wall cutout for 'Poleni' calculation (m) | "1.4" |
-| FormAngle | Angle of cutout for 'Thomson' calculation (°)  | "90" |
-| Area |  | "2.2" |
-| Width |  | "1" |
-| Height |  | "22.1" |
-| Length |  | "1.4" |
-| TankType |  | "1" |
-| From | Time from when the calculation is valid. Can be null. | "2022-12-11T07:55:25.7206325Z" |
-| To | Time until the calculation is valid. Can be null. | "2023-12-11T07:55:25.7206325Z" |
+HeightOfWater = (HydrostaticPressure - BarometricPressure) / (Density * gravity) + Offset
 
-#### Required CalculationParameter per CalculationType
+DepthToWater = InstallationLength - (HydrostaticPressure - BarometricPressure) / (Density * gravity) + Offset
 
-- Unknown = 0,
-- HeightOfWater = 1
-  - HydrostaticPressureMeasurementDefinitionId
-  - UseBarometricPressureToCompensate
-  - BarometricPressureMeasurementDefinitionId [nullable]
-  - CorrespondingMeasurementDefinitionId
-  - Gravity
-  - Offset
-  - Density
-  - From [nullable]
-  - To [nullable]
-- DepthToWater = 2
-  - HydrostaticPressureMeasurementDefinitionId
-  - UseBarometricPressureToCompensate
-  - BarometricPressureMeasurementDefinitionId [nullable]
-  - CorrespondingMeasurementDefinitionId
-  - Gravity
-  - Offset
-  - Density
-  - From [nullable]
-  - To [nullable]
-  - InstallationLength
-- HeightOfWaterAboveSea = 3
-  - HydrostaticPressureMeasurementDefinitionId
-  - UseBarometricPressureToCompensate
-  - BarometricPressureMeasurementDefinitionId [nullable]
-  - CorrespondingMeasurementDefinitionId
-  - Gravity
-  - Offset
-  - Density
-  - From [nullable]
-  - To [nullable]
-  - HeightOfWellheadAboveSea
-  - InstallationLength
-- Offset = 4
-  - Offset
-  - ChannelId
-- OverflowPoleni = 5
-  - HydrostaticPressureMeasurementDefinitionId
-  - BarometricPressureMeasurementDefinitionId
-  - CorrespondingMeasurementDefinitionId
-  - Gravity
-  - Offset
-  - Density
-  - UseBarometricPressureToCompensate
-  - WallHeight
-  - FormFactor
-  - FormWidth
-- OverflowThomson = 6
-  - HydrostaticPressureMeasurementDefinitionId
-  - BarometricPressureMeasurementDefinitionId
-  - CorrespondingMeasurementDefinitionId
-  - Gravity
-  - Offset
-  - Density
-  - UseBarometricPressureToCompensate
-  - WallHeight
-  - FormFactor
-  - FormAngle
-- OverflowVenturi = 7
-  - HydrostaticPressureMeasurementDefinitionId
-  - BarometricPressureMeasurementDefinitionId
-  - CorrespondingMeasurementDefinitionId
-  - Gravity
-  - Offset
-  - Density
-  - UseBarometricPressureToCompensate
-  - FormFactor
-  - FormWidth
-- Force = 8
-  - HydrostaticPressureMeasurementDefinitionId
-  - BarometricPressureMeasurementDefinitionId
-  - Offset
-  - Area
-  - UseBarometricPressureToCompensate
-- Tank = 9
-  - HydrostaticPressureMeasurementDefinitionId
-  - BarometricPressureMeasurementDefinitionId
-  - CorrespondingMeasurementDefinitionId
-  - Gravity
-  - Density
-  - UseBarometricPressureToCompensate
-  - InstallationLength
-  - Width
-  - Height
-  - Length
-  - TankType
-
+HeightOfWaterAboveSea = HeightOfWellheadAboveSea - InstallationLength + (HydrostaticPressure - BarometricPressure) / (Density * gravity) + Offset
 
 
 ## Load data using C#
