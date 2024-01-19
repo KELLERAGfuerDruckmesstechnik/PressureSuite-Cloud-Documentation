@@ -320,8 +320,8 @@ Examples:
 #### How to calculate 
 
 For each datapoint in the 'Body' of the measurement file:
-- Look up the index of measurementId in the 'Header.MeasurementDefinitionIds'
-- Take the measurement value at the determined index
+- Look up the index of measurementDefinitionId in the 'Header.MeasurementDefinitionIds' (for both HydrostaticHeasurementDefinitionId and BarometricMeasurementDefinitionId)
+- Take the measurement values at the determined index
 - Insert the CalculationParameters and the previously determined values into the according formula
 - Repeat for each measurement value in the 'Body'
 
