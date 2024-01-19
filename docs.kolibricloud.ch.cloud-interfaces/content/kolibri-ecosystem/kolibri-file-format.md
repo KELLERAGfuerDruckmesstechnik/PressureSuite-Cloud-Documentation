@@ -14,9 +14,9 @@ This documentation helps to understand the file and makes an integration/transfo
 
 
 ## Example files
-- [KOLIBRI Cloud - ADT1 LoRa](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/EUI-F84F25000001A0AD_2024-01-12_01_23_50.json) 22KB
+- [KOLIBRI Cloud - ADT1 LoRa](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/CLOUD_EUI-E84F25000001A146_2023.11.22_16-19-13.json) 22KB
 - [KOLIBRI Desktop - DCX](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/REC-5.5-539216_2024-01-12_02_08_19.json) 365KB
-- [KOLIBRI Cloud - ARC1](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/CLOUD_ARC-9.20-5_2024.01.04_15-01-11.json) 12KB
+- [KOLIBRI Cloud - ARC1](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/CLOUD_ARC-9.20-1234_2024.01.12_09-10-01.json) 12KB
 
 
 ## Basic structure of the JSON file
@@ -24,15 +24,17 @@ This documentation helps to understand the file and makes an integration/transfo
 {
   "Version": 1,
   "Header": {
-    "MeasurementDefinitionsInBody": [5, 8, 2],
+    "MeasurementDefinitionsInBody": [ 2, 4, 7, 8 ],
 //.. more meta information
   },
-  "Body": [{
-      "t": "2024-01-04T15:01:11",
-      "v": [10.38257, 5.619995, -0.04195881]
-    }, {
-      "t": "2024-01-04T16:01:11",
-      "v": [10.39307, 5.449951, -0.0421896]
+  "Body": [
+    {
+      "t": "2023-11-22T16:19:13.804",
+      "v": [ 0.02652109, 6.126587, 0.97132, 5.82 ]
+    },
+    {
+      "t": "2023-11-22T16:29:17.802",
+      "v": [ 0.02997284, 6.145645, 0.97147, 5.88 ]
     },
 //.. more measurements
   ]
@@ -48,10 +50,12 @@ The whole JSON file consists of three blocks
    Shows the list of raw measurements with a UTC time stamp (`t`) and the values (`v`).
 
 Example:
-On `2024-01-04T15:01:11` UTC it was measured  
-  - value '**10.38257**' of MeasurmentDefinitionId '**5**' which is '**TOB1**' (Temperature Over the sensor)
-  - value '**5.619995**' of MeasurmentDefinitionId '**8**' which is '**TBaro**' (Barometric Temperature measured inside the ARC1)
-  - value '**-0.04195881**' of MeasurmentDefinitionId '**2**' which is '**P1**' (The first pressure which is for this type of level probe the pressure difference between the sensor pressure and the barometric pressure)
+On `2023-11-22T16:19:13.804` UTC it was measured  
+  - value '**0.02652109**' of MeasurementDefinitionId '**2**' which is '**P1**' (The first pressure which is for this type of level probe the pressure difference between the sensor pressure and the barometric pressure)
+  - value '**6.126587**' of MeasurementDefinitionId '**4**' which is '**T**' (Temperature Over the sensor)
+  - value '**0.97132**' *[Bar]* of MeasurementDefinitionId '**7**' which is '**PBaro**' (Barometric Pressure measured inside the ARC1)
+  - value '**5.82**' *[°C]* of MeasurementDefinitionId '**8**' which is '**TBaro**' (Barometric Temperature measured inside the ARC1)
+
 
 
 ## Detailed file description
@@ -60,8 +64,8 @@ On `2024-01-04T15:01:11` UTC it was measured
 
 | Name | Description | Example |
 | --- | --- | --- |
-| t (Time) | The time of the measurement in UTC | "2023-08-23T08:51:32Z" |
-| v (Values) | The values of the measurements | [2, 5, 7, 11] |
+| t (Time) | The time of the measurement in UTC | "2023-11-22T16:19:13.804" |
+| v (Values) | The values of the measurements | [ 0.02652109, 6.126587, 0.97132, 5.82 ] |
 
 ### Header
 
@@ -95,7 +99,7 @@ On `2024-01-04T15:01:11` UTC it was measured
 
 ### WaterCalculationStoredInDeviceSettings vs. ChannelCalculations
 
-'WaterCalculationStoredInDeviceSettings' stores the water calculation that was configured on the device at the time of retrieving the measurement. This calculation will never be changed and is mainly to restore the original calulation.
+'WaterCalculationStoredInDeviceSettings' stores the water calculation that was configured on the device at the time of retrieving the measurement. This calculation will never be changed and is mainly to restore the original calculation.
 
 The 'WaterCalculationStoredInDeviceSettings' will be duplicated and also stored in the 'ChannelCalculations', where the user can modify, delete or add additional calculations. All calculations in 'ChannelCalculations' will be calculated and displayed the calculations in KOLIBRI Desktop.
 
@@ -158,7 +162,7 @@ Examples:
 | InstallationLength | Length of the installation (m) | 3.5 |
 | Offset | Offset to correct calculated value (m) | 0.02 |
 | HydrostaticPressureChannelId | Channel Id of pressure channel to calculate water level (see MeasurementDefinitionId) | 1 |
-| UseBarometricPressureToCompensate | indicator if calulation should use 'BarometricPressureChannelId' to compensate for barometric pressure | true |
+| UseBarometricPressureToCompensate | indicator if calculation should use 'BarometricPressureChannelId' to compensate for barometric pressure | true |
 | BarometricPressureChannelId |  Channel Id of barometric pressure channel to compensate (see MeasurementDefinitionId) | 2 |
 
 
@@ -175,7 +179,7 @@ Examples:
 | WallHeight | Height of the wall cutout relative to the sensor | 2.4 |
 | Offset | Offset to correct calculated value (m) | 0.02 |
 | HydrostaticPressureChannelId | Channel Id of pressure channel to calculate water level (see MeasurementDefinitionId) | 1 |
-| UseBarometricPressureToCompensate | indicator if calulation should use 'BarometricPressureChannelId' to compensate for barometric pressure | true |
+| UseBarometricPressureToCompensate | indicator if calculation should use 'BarometricPressureChannelId' to compensate for barometric pressure | true |
 | BarometricPressureChannelId |  Channel Id of barometric pressure channel to compensate (see MeasurementDefinitionId) | 2 |
 
 #### WaterCalculationStoredInDeviceSettings Enum descriptions
@@ -207,11 +211,11 @@ Examples:
 | Offset | Offset to correct calculated value | "0.2" |
 | Density | Density of the liquid (kg/m³) | "998.2" |
 | Gravity | Gravity (m/s²) | "9.80665" |
-| CorrespondingMeasurementDefinitionId | Especially, when using multisensor measurementDefinitionId like 55-59 the target calculation might be another like 34-36. This information must be stored (see MeasurementDefinitionId) | "34" |
+| CorrespondingMeasurementDefinitionId | Especially, when using multi-sensor measurementDefinitionId like 55-59 the target calculation might be another like 34-36. This information must be stored (see MeasurementDefinitionId) | "34" |
 | ChannelId |  | "1" |
 | HydrostaticPressureMeasurementDefinitionId | Channel Id of pressure channel to calculate water level (see MeasurementDefinitionId) | "1" |
 | BarometricPressureMeasurementDefinitionId | Can be null if 'UseBarometricPressureToCompensate' is "False". (see MeasurementDefinitionId) | "2" |
-| UseBarometricPressureToCompensate | indicator if calulation should use 'BarometricPressureMeasurementDefinitionId' to compensate for barometric pressure | "True" |
+| UseBarometricPressureToCompensate | indicator if calculation should use 'BarometricPressureMeasurementDefinitionId' to compensate for barometric pressure | "True" |
 | InstallationLength |  | "2.3" |
 | HeightOfWellheadAboveSea |  | "230" |
 | WallHeight | Height of the wall cutout relative to the sensor (m) | "1.7" |
@@ -317,10 +321,10 @@ Examples:
   - TankType
 
 
-#### How to calculate 
+#### How to calculate
 
-For each datapoint in the 'Body' of the measurement file:
-- Look up the index of measurementDefinitionId in the 'Header.MeasurementDefinitionIds' (for both HydrostaticHeasurementDefinitionId and BarometricMeasurementDefinitionId)
+For each data point in the 'Body' of the measurement file:
+- Look up the index of measurementDefinitionId in the 'Header.MeasurementDefinitionIds' (for both HydrostaticMeasurementDefinitionId and BarometricMeasurementDefinitionId)
 - Take the measurement values at the determined index
 - Insert the CalculationParameters and the previously determined values into the according formula
 - Repeat for each measurement value in the 'Body'
@@ -441,8 +445,8 @@ For each datapoint in the 'Body' of the measurement file:
         Density,
         Gravity,
         /// <summary>
-        /// Especially, when using multisensor measurementDefinitionId like 55-59 the target calculation might be another like 34-36. This information must be stored
-        /// The calculation is a default calculation, that has a calculation parameters for eg 34 but this property shows that it corresponds to one of the multisensor channels.
+        /// Especially, when using multi-sensor measurementDefinitionId like 55-59 the target calculation might be another like 34-36. This information must be stored
+        /// The calculation is a default calculation, that has a calculation parameters for eg 34 but this property shows that it corresponds to one of the multi-sensor channels.
         /// </summary>
         CorrespondingMeasurementDefinitionId,
         ChannelId,
@@ -467,12 +471,66 @@ For each datapoint in the 'Body' of the measurement file:
 
 #### Formulas
 
-HeightOfWater = (HydrostaticPressure - BarometricPressure) / (Density * gravity) + Offset
+*HeightOfWater = (HydrostaticPressure - BarometricPressure) / (density * gravity) + Offset*
 
-DepthToWater = InstallationLength - (HydrostaticPressure - BarometricPressure) / (Density * gravity) + Offset
+*DepthToWater = InstallationLength - (HydrostaticPressure - BarometricPressure) / (density * gravity) + Offset*
 
-HeightOfWaterAboveSea = HeightOfWellheadAboveSea - InstallationLength + (HydrostaticPressure - BarometricPressure) / (Density * gravity) + Offset
+*HeightOfWaterAboveSea = HeightOfWellheadAboveSea - InstallationLength + (HydrostaticPressure - BarometricPressure) / (density * gravity) + Offset*
 
+##### Example
+Given 
+```
+{
+  "Version": 1,
+  "Header": {
+    "MeasurementDefinitionsInBody": [ 2, 4, 7, 8 ],
+//.. more meta information
+  },
+  "Body": [
+    {
+      "t": "2023-11-22T16:19:13.804",
+      "v": [ 0.02652109, 6.126587, 0.97132, 5.82 ]
+    },
+//.. more measurements
+  ]
+}
+```
+we know that the **pressure difference** is '**P1**' as this seems to be a relative sensor which already compensated with the atmospheric pressure. The pressure difference is '**0.02652109**'.
+
+
+and
+
+```
+"ChannelCalculations": [{
+        "CalculationParameters": {
+            "HydrostaticPressureMeasurementDefinitionId": "2",
+            "BarometricPressureMeasurementDefinitionId": null,
+            "CorrespondingMeasurementDefinitionId": "34",
+            "Gravity": "9.80665",
+            "Offset": "0.02",
+            "Density": "998.2",
+            "UseBarometricPressureToCompensate": "False",
+            "From": null,
+            "To": null
+        },
+        "CalculationTypeId": 1,
+        "ChannelInfo": {
+            "ChannelType": 100,
+            "MeasurementDefinitionId": 100,
+            "Name": "mH20 (E)",
+            "Description": "",
+            "ColorCode": "#8c45ef",
+            "UnitType": 3
+        }
+    }
+]
+```
+The calculation type (CalculationTypeId = 1) is **'HeightOfWater'**. 
+
+We use the formula
+*HeightOfWater = (HydrostaticPressure - BarometricPressure) / (density * gravity) + Offset*
+
+HeightOfWater = (**0.02652109** *[Bar]* * 100000 *[factorize to SI unit Pascal]*) / (**998** *[kg/m^3]* * **9.80665** *[m/s^2]*) + **0.02** ~= **0.291 m**
 
 ## Load data using C#
 
