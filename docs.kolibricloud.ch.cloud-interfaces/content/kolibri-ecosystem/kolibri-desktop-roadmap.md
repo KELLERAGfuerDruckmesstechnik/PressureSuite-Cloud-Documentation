@@ -23,6 +23,22 @@ PLANNED
 
 ## Release History
 
+## Version 6.3.24030.01 (January 30, 2024)
+
+### Description:
+This latest update integrates support for our IoT devices, namely ARC1 and ADT1. KOLIBRI Desktop now seamlessly incorporates the functionality of the IoT software 'GsmConfiguration'/'GSM Setup' to efficiently program our IoT devices, enhancing user experience and device management capabilities.
+
+### Features and Enhancements:
+
+- **IoT Device Support**: Users can now leverage KOLIBRI Desktop to configure and manage ARC1 and ADT1 IoT devices effortlessly.
+- **Simplified File Import**: Introducing the ability to drag and drop measurement files (.json and .dx5) directly from the file explorer to the measurements list.
+- **Logfile Display Tool**: A new tool has been added to facilitate the display of KOLIBRI Desktop logfiles, aiding in troubleshooting and system monitoring.
+
+### Bug Fixes:
+
+- **Improved Error Handling**: Users will now receive more informative error messages to guide them through problem resolution, enhancing the overall usability of the software.
+- **Stability Enhancements**: Various fixes have been implemented to address crashes, ensuring a more stable and reliable user experience.
+
 ## Version 6.2.23251.01 (September 08, 2023)
 
 ### Description:
