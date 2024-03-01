@@ -23,6 +23,23 @@ PLANNED
 
 ## Release History
 
+## Version 6.3.24061.01 (March 01, 2024)
+
+### Features and Enhancements:
+
+- **Visualize**: Added option to move chart toolbar 
+- **IoT Device Configuration**: Changed design of warnings to make them less intrusive
+- **Export**: Redesigned export page
+- **Settings**: Added option to set the default export filename to be compatible with the Dawaco software 
+
+### Bug Fixes:
+
+- **Visualize**: Fixed timespan labels displayed as datetime labels
+- **IoT Device Configuration**: Refresh summary when loading preset 
+- **Support Tools**: Fixed logfile send functionality 
+- Fixed crash when starting a second instance of KOLIBRI Desktop
+
+
 ## Version 6.3.24030.01 (January 30, 2024)
 
 ### Description:
