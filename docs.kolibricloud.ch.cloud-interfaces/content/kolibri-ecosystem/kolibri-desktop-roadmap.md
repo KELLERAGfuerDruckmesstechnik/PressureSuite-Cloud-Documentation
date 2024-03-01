@@ -10,7 +10,6 @@ menu:
 
 PLANNED  
 
-- **Iot Configuration** - Configure KELLER IoT devices (ARC1, ADT1) directly with KOLIBRI Desktop. This replaces the current software 'GSM Setup'/'GSM Configuration'
 - **Reporting** - new functionality to easily generate reports out of a record
 - **Cloud-to-Desktop connection** - Use KOLIBRI Desktop to store/backup data from the KOLIBRI Cloud and visualize them.
 - **Purge obsolete data on the logger device** - Deletion of existing records stored on the device.
