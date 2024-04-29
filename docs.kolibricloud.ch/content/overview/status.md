@@ -9,9 +9,9 @@ description: History about maintenances and outages
 ---
 # Status
 
-💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***  
+⚠️⚠️  **WE EXPERIENCE CONNECTION ISSUES WITH THE FTP ACCOUNTS**  ⚠️⚠️  
 
-
+**29th April 2024 - 11:30 CEST: All FTP accounts are currently unreachable due to provider/DNS issues. We are actively working to resolve this, but it may take at least 24 hours until the corrected settings are applied. Additional time may be needed for ADT1/ARC1 to retry sending the data. We do not anticipate any data loss**
 
 
 ---
