@@ -12,6 +12,7 @@ description: History about maintenances and outages
 ⚠️⚠️  **WE EXPERIENCE CONNECTION ISSUES WITH THE FTP ACCOUNTS**  ⚠️⚠️  
 
 **29th April 2024 - 11:30 CEST: All FTP accounts are currently unreachable due to provider/DNS issues. We are actively working to resolve this, but it may take at least 24 hours until the corrected settings are applied. Additional time may be needed for ADT1/ARC1 to retry sending the data. We do not anticipate any data loss**
+**30th April 2024 - 12:00 CEST: The root cause of this issue is that all @gsmdata.ch accounts have undergone changes within the web hoster's platform. Previously, usernames were email addresses (e.g., 'ftp0xx@gsmdata.ch'), but they have now been altered to different usernames (e.g., 'h18xxxx.ftp0xx_gs3xx'). We are currently in contact with the web hoster to rectify this situation. We apologize for any inconvenience caused by this disruption. To reassure, the data remains intact within the GSMs/ARC1s/ADT1s and will be transmitted once the programmed FTP credentials are operational again.**
 
 
 ---
