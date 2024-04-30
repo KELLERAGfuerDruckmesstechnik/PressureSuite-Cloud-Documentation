@@ -17,7 +17,7 @@ description: History about maintenances and outages
 ***Next steps:***
 **Our team is actively engaging with the hoster's technicians. While initial attempts to reverse the changes have been unsuccessful, we are exploring all options to resolve the issue.**
 **In the event that the hoster cannot restore FTP accounts, two options remain:**
-  - **Affected customers may need to reconfigure their devices on-site.**
+  - **Affected customers may need to reconfigure their devices on-site with a new/changed FTP account**
   - **We are considering alternative FTP hosting options and may transfer gsmdata.ch accordingly, recreating FTP/mail accounts with identical credentials.**
 **We apologize for any inconvenience caused and appreciate your patience and understanding as we work to resolve this issue promptly.**
 
