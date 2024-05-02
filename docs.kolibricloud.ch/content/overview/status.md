@@ -10,6 +10,8 @@ description: History about maintenances and outages
 # Status
 
 ⚠️⚠️  **WE EXPERIENCE CONNECTION ISSUES WITH THE FTP ACCOUNTS**  ⚠️⚠️  
+**[UPDATE] 2nd May 2024 - 17:00 CEST: We have received an update from our new FTP hoster. They anticipate completing the connection of all existing accounts to the new root server by tomorrow evening (3rd May CEST).**
+
 **[UPDATE] 2nd May 2024 - 16:00 CEST: Following numerous attempts to revert the hoster's configuration, we have received confirmation that the changes are indeed irreversible. In response, we have sourced a new hoster and initiated the migration process. Currently, we are in the midst of adjusting DNS settings and transferring hundreds of FTP accounts to the new FTP root server. We remain optimistic that services will resume by tomorrow.**
 
 **[UPDATE] 30th April 2024 - 18:40 CEST: The root cause of this issue lies in changes made to the gsmdata.ch domain, including DNS settings alterations, which have had unforeseen effects on our FTP/eMail-hoster.**
