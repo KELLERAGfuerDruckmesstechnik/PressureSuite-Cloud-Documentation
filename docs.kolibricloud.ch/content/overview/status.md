@@ -41,16 +41,16 @@ We apologize for any inconvenience caused and appreciate your patience and under
 
 ### 29th April 2024 - 11:30 CEST - 3rd May 2024 - 16:30 CEST
 
-**What happened?**
+**What happened?**  
 We experienced a disruption in our services due to connection issues with ALL our FTP accounts using the host ftp.gsmdata.ch. This resulted in the inability of devices to send data to the FTP server and subsequently to the KOLIBRI Cloud.
 
-**What went wrong and why?**
+**What went wrong and why?**  
 The root cause of this issue stemmed from changes made to the gsmdata.ch domain, including DNS settings alterations. These changes had unforeseen effects on our FTP/eMail-hoster, leading to the conversion of all user names and rendering devices unable to communicate with the FTP server.
 
-**How did we respond?**
+**How did we respond?**  
 Upon identifying the issue, we immediately initiated contact with our FTP hoster and explored various avenues to resolve the problem. Despite multiple attempts to revert the changes, we received confirmation that the alterations were irreversible. In response, we sourced a new FTP hoster and initiated the migration process.
 
-**How are we making incidents like this less likely or less impactful?**
+**How are we making incidents like this less likely or less impactful?**  
 We reviewed our hosting options and transitioned to a dedicated root server with a FTP hoster capable of providing efficient support and troubleshooting. This move grants us full control over all aspects of the server, ensuring quicker response times to any issues that may arise. Additionally, we are considering transitioning away from FTP to a more modern technology such as MQTT or a similar alternative.
 
 
