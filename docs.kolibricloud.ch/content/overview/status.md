@@ -12,6 +12,7 @@ description: History about maintenances and outages
 💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***  
 
 **[UPDATE] 3rd May 2024 - 16:30 CEST: We are pleased to announce that the connection issues with our FTP accounts have been successfully resolved. We completed the migration of all existing accounts to the new root server. As a result, services have been restored, and all systems are operational. We deeply apologize for any inconvenience caused during this disruption and appreciate your patience and understanding. Rest assured, no data loss is estimated throughout this process.**
+**The missing data will be automatically re-added to the KOLIBRI Cloud once the devices resume communication and attempt to resend the data. This process will occur according to the configured sending interval of the devices.**
 
 [UPDATE] 2nd May 2024 - 17:00 CEST: We have received an update from our new FTP hoster. They anticipate completing the connection of all existing accounts to the new root server by tomorrow evening (3rd May CEST).
 
