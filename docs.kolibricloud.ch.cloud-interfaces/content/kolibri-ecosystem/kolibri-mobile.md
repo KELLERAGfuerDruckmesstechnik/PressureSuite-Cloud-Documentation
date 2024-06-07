@@ -1,5 +1,5 @@
 ---
-title: KOLIBRI Mobile
+title: PressureSuite Mobile
 menu:
     main:
         parent: kolibri-ecosystem
@@ -7,6 +7,6 @@ menu:
 
 ---
 
-# KOLIBRI Mobile - The Bluetooth Mobile App
+# PressureSuite Mobile - The Bluetooth Mobile App
 
-KOLIRBI Mobile App is in development and will be released around end of 2024 together with new KELLER BLE devices.
+KOLIRBI Mobile App is in development and will be released around mid 2025 together with new KELLER BLE devices.

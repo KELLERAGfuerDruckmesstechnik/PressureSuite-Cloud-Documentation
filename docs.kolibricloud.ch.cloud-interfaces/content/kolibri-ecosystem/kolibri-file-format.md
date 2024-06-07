@@ -1,5 +1,5 @@
 ---
-title: The KOLIBRI measurement file
+title: The PressureSuite measurement file
 menu:
     main:
         parent: kolibri-ecosystem
@@ -8,15 +8,15 @@ menu:
 ---
 
 ## Introduction
-The KOLIBRI measurement file is meant to be a JSON file that has a structured and defined form in order to be used in various platform independent software tools. The main goal is to store measurement data and give information about the origin of the stored measurement data.  
-The KOLIBRI measurement file is used by the 'KOLIBRI Desktop'-Software, the 'KOLIBRI Cloud' Web App/API and the coming new 'KOLIBRI Mobile' Apps (Android/iOS). The idea is that the data can (or will be) interchangeable between the products. It is now possible to export measurement data from the 'KOLIBRI Cloud Web App and open the file with KOLIBRI Desktop.  
+The PressureSuite measurement file is meant to be a JSON file that has a structured and defined form in order to be used in various platform independent software tools. The main goal is to store measurement data and give information about the origin of the stored measurement data.  
+The PressureSuite measurement file is used by the 'PressureSuite Desktop'-Software, the 'PressureSuite Cloud' Web App/API and the coming new 'PressureSuite Mobile' Apps (Android/iOS). The idea is that the data can (or will be) interchangeable between the products. It is now possible to export measurement data from the 'PressureSuite Cloud Web App and open the file with PressureSuite Desktop.  
 This documentation helps to understand the file and makes an integration/transformation into other file formats or systems possible.
 
 
 ## Example files
-- [KOLIBRI Cloud - ADT1 LoRa](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/CLOUD_EUI-E84F25000001A146_2023.11.22_16-19-13.json) 15KB
-- [KOLIBRI Desktop - DCX](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/REC-5.5-539216_2024-01-12_02_08_19.json) 365KB
-- [KOLIBRI Cloud - ARC1](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/CLOUD_ARC-9.20-1234_2024.01.12_09-10-01.json) 70KB
+- [PressureSuite Cloud - ADT1 LoRa](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/CLOUD_EUI-E84F25000001A146_2023.11.22_16-19-13.json) 15KB
+- [PressureSuite Desktop - DCX](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/REC-5.5-539216_2024-01-12_02_08_19.json) 365KB
+- [PressureSuite Cloud - ARC1](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.kolibricloud.ch.cloud-interfaces/static/data/CLOUD_ARC-9.20-1234_2024.01.12_09-10-01.json) 70KB
 
 
 ## Basic structure of the JSON file
@@ -45,7 +45,7 @@ The whole JSON file consists of three blocks
  - `Version`  
    Shows the version number of the JSON schema which was the number 1 ten years ago still is 1. If we introduce breaking changes it would be version 2.
  - ``Header``  
-   Shows a lot of meta information to interpret the measurements. The first information is `MeasurementsDefinition` which indicates which raw measurements channels are stored in the `Body` part. https://docs.kolibricloud.ch/cloud-interfaces/api/channels/#measurementdefinitionid shows the mapping of the numbers to the physical channels. In the `Header` are also the calculation formula stored used to calculate values such as 'water level' out of the raw measurements.
+   Shows a lot of meta information to interpret the measurements. The first information is `MeasurementsDefinition` which indicates which raw measurements channels are stored in the `Body` part. https://docs.pressuresuite.com/cloud-interfaces/api/channels/#measurementdefinitionid shows the mapping of the numbers to the physical channels. In the `Header` are also the calculation formula stored used to calculate values such as 'water level' out of the raw measurements.
  - ```Body```  
    Shows the list of raw measurements with a UTC time stamp (`t`) and the values (`v`).
 
@@ -71,24 +71,24 @@ On `2023-11-22T16:19:13.804` UTC it was measured
 
 | Name | Description | Example |
 | --- | --- | --- |
-| MeasurementDefinitionsInBody | REQUIRED. The list of all MeasurementDefinitionIds | [5, 8, 2]  Use the mapping in https://docs.kolibricloud.ch/cloud-interfaces/api/channels/#measurementdefinitionid to identify the correct channel|
+| MeasurementDefinitionsInBody | REQUIRED. The list of all MeasurementDefinitionIds | [5, 8, 2]  Use the mapping in https://docs.pressuresuite.com/cloud-interfaces/api/channels/#measurementdefinitionid to identify the correct channel|
 | MeasurementDefinitionsInBodyAlternativeNames | OBSOLETE. Should be null. The list of alternative names of the channels | ["Water Temp", "Air Temp", "Pressure Diff"] |
 | RecordId | Unique Record Id | "REC-10.2-157642023082308513220230824062552" |
 | UniqueSerialNumber | Based on Device-Type (eg. "REC-10.2" or "ARC-9.20") and Serial Number (LoRa devices use the EUI instead the device number) | "EUI-009D6B0000C5D33D" |
 | SerialNumber | Every device has a serial number | "1234" |
-| DeviceName | The device name in KOLIBRI Cloud this is | "Eulach 10 - Winterthur" |
+| DeviceName | The device name in PressureSuite Cloud this is | "Eulach 10 - Winterthur" |
 | DeviceType | Each KELLER device type has its own number | "30.05" |
 | CreationDateTimeUTC | The UTC time the file was created based on the system that created the file | "2024-01-11T14:58:44.1999293Z" |
 | CreationDateTimeDeviceTime | The time the file was created based on the time in the device. Some don't use UTC. | "2024-01-11T16:58:43" |
 | IanaTimeZoneName | IANA Time Zone Name. See TZ identifier from https://en.wikipedia.org/wiki/List_of_tz_database_time_zones | "Europe/Zurich" or "CET" or "UTC" |
 | FirstMeasurementUTC | Should be the UTC time stamp of the first measurement | "2023-08-23T08:51:32Z" |
 | LastMeasurementUTC | Should be the UTC time stamp of the last measurement | "2023-08-24T06:25:52Z" |
-| CreationOrigin | Which SW created this file? This is an enum. 0=Unknown, 1=Script, 2=Logger4, 3=Logger5, 4=KolibriDesktop, 5=KolibriMobile, 6=KolibriCloud, | 4 |
+| CreationOrigin | Which SW created this file? This is an enum. 0=Unknown, 1=Script, 2=Logger4, 3=Logger5, 4=PressureSuiteDesktop, 5=PressureSuiteMobile, 6=PressureSuiteCloud, | 4 |
 | IsBodyCompressed | We might encrypt the body in the future. This is always false as for now. | false |
 | MemoryInfo | Internal Memory Info - Which gives information about the location of the data that was stored inside the device's memory | "MemoryInfo": {"SizeItem": 25.6,"Size": "25.6%","HighPage": 14,"LowPage": 251,"EndHighPage": 3,"EndLowPage": 25,"PageCount": 1047,"SizeRecord": 4096.0,"RecordTextSize": 8 } |
-| CompensationSourcesInfo | Information about the source measurements of the compensated channels. Sometimes Level Probes do not have access to the barometric pressure. With KOLIBRI Desktop we can merge/interpolate the barometric pressure from other devices to make calculations possible.  | "CompensationSourcesInfo":[{"SourceUniqueSerialNumber":"REC-10.2-15764","GeneratedMeasurementDefinitionIds":[7],"CompensationDateUTC":"2023-08-24T06:28:52.6913177Z"},{"SourceUniqueSerialNumber":"REC-10.2-15764","GeneratedMeasurementDefinitionIds":[11],"CompensationDateUTC":"2023-08-24T06:30:56.1798789Z"},{"SourceUniqueSerialNumber":"REC-10.2-15764","GeneratedMeasurementDefinitionIds":[7,11],"CompensationDateUTC":"2023-08-24T06:36:26.4745526Z"}] |
-| RemoteTransmissionUnitInfo | Information for RemoteTransmissionUnits. This ConnectionTypeId indicates which channels can be measured by the sensors connected to the remote transmission device (sometimes called: DeviceTypeId). Range: 0-13. See https://docs.kolibricloud.ch/cloud-interfaces/api/channels#connection-types or manual | "RemoteTransmissionUnitInfo": {"ConnectionTypeId": 3 },|
-| CustomAttributes | Dictionary with various information. Eg. "RecordNotes is the note text to the device in the KOLIBRI Cloud | { "RecordName": "CLOUD ARC-9.20-5 2024.01.04 15-01-11", "RecordNotes": "This is a note" } |
+| CompensationSourcesInfo | Information about the source measurements of the compensated channels. Sometimes Level Probes do not have access to the barometric pressure. With PressureSuite Desktop we can merge/interpolate the barometric pressure from other devices to make calculations possible.  | "CompensationSourcesInfo":[{"SourceUniqueSerialNumber":"REC-10.2-15764","GeneratedMeasurementDefinitionIds":[7],"CompensationDateUTC":"2023-08-24T06:28:52.6913177Z"},{"SourceUniqueSerialNumber":"REC-10.2-15764","GeneratedMeasurementDefinitionIds":[11],"CompensationDateUTC":"2023-08-24T06:30:56.1798789Z"},{"SourceUniqueSerialNumber":"REC-10.2-15764","GeneratedMeasurementDefinitionIds":[7,11],"CompensationDateUTC":"2023-08-24T06:36:26.4745526Z"}] |
+| RemoteTransmissionUnitInfo | Information for RemoteTransmissionUnits. This ConnectionTypeId indicates which channels can be measured by the sensors connected to the remote transmission device (sometimes called: DeviceTypeId). Range: 0-13. See https://docs.pressuresuite.com/cloud-interfaces/api/channels#connection-types or manual | "RemoteTransmissionUnitInfo": {"ConnectionTypeId": 3 },|
+| CustomAttributes | Dictionary with various information. Eg. "RecordNotes is the note text to the device in the PressureSuite Cloud | { "RecordName": "CLOUD ARC-9.20-5 2024.01.04 15-01-11", "RecordNotes": "This is a note" } |
 | WaterCalculationStoredInDeviceSettings | MeasurementFileFormatWaterCalculationStoredInDevice | "WaterCalculationStoredInDeviceSettings":{"WaterLevelCalculation":{"WaterLevelType":34,"HydrostaticPressureChannelId":11,"BarometricPressureChannelId":0,"UseBarometricPressureToCompensate":false,"Offset":0.0,"Density":998.2,"Gravity":9.80665,"InstallationLength":0.0,"HeightOfWellhead":0.0},"OverflowCalculation":null,"TankCalculation":null} |
 | ChannelCalculations | List of calculations | "ChannelCalculations":[{"CalculationParameters":{"HydrostaticPressureMeasurementDefinitionId":"11","BarometricPressureMeasurementDefinitionId":"0","CorrespondingMeasurementDefinitionId":"34","Gravity":"9.80665","Offset":"0","Density":"998.2","UseBarometricPressureToCompensate":"False","From":null,"To":null},"CalculationTypeId":1,"ChannelInfo":{"ChannelType":34,"MeasurementDefinitionId":34,"Name":"mH20 (E)","Description":"","ColorCode":"#8c45ef","UnitType":3}}] |
 
@@ -101,7 +101,7 @@ On `2023-11-22T16:19:13.804` UTC it was measured
 
 'WaterCalculationStoredInDeviceSettings' stores the water calculation that was configured on the device at the time of retrieving the measurement. This calculation will never be changed and is mainly to restore the original calculation.
 
-The 'WaterCalculationStoredInDeviceSettings' will be duplicated and also stored in the 'ChannelCalculations', where the user can modify, delete or add additional calculations. All calculations in 'ChannelCalculations' will be calculated and displayed the calculations in KOLIBRI Desktop.
+The 'WaterCalculationStoredInDeviceSettings' will be duplicated and also stored in the 'ChannelCalculations', where the user can modify, delete or add additional calculations. All calculations in 'ChannelCalculations' will be calculated and displayed the calculations in PressureSuite Desktop.
 
 ### WaterCalculationStoredInDeviceSettings
 

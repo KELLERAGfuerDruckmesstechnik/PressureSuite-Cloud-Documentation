@@ -1,5 +1,5 @@
 ---
-title: KOLIBRI Desktop Known Issues
+title: PressureSuite Desktop Known Issues
 menu:
     main:
         parent: kolibri-ecosystem
@@ -7,7 +7,7 @@ menu:
 toc: false
 ---
 ## Known issue with Microsoft Antivirus Defender  
-For some unknown reasons and starting from 12. January 2021 [Microsoft's patch day](https://www.thezdi.com/blog/2021/1/12/the-january-2021-security-update-review) some customer experience problems with KOLIBRI Desktop when storing data to the local hard disk due to the AntiVirus Defender deleting the data instantly.
+For some unknown reasons and starting from 12. January 2021 [Microsoft's patch day](https://www.thezdi.com/blog/2021/1/12/the-january-2021-security-update-review) some customer experience problems with PressureSuite Desktop when storing data to the local hard disk due to the AntiVirus Defender deleting the data instantly.
 
 ### Effects  
  - When using the "Live Measurement" the SW crashes  
@@ -25,11 +25,11 @@ These are the suggested steps for know:
     4. Under the Exclusions setting, click 'Add or remove exclusions'.  
     5. Click the plus icon to choose the type and set the options for each exclusion.  
        5.A) Add an exclusion for *File type* with `.json`  
-       5.B) Add an exclusion for *Process* with the path the KOLIBRIDesktop.exe is installed. Most likely: `C:\Program Files (x86)\Keller\KOLIBRIDesktop\KolibriDesktop.exe`  
-       5.C) Add an exclusion for *Folder* with to your storage folder including your user name. `C:\Users\{yourUserName}\Documents\KELLER\KolibriDesktop\data`  
-       5.D) Add an exclusion for *Folder* with to your storage folder including your user name. `C:\Users\{yourUserName}\Documents\KELLER\KolibriDesktop`  
+       5.B) Add an exclusion for *Process* with the path the PressureSuiteDesktop.exe is installed. Most likely: `C:\Program Files (x86)\Keller\PressureSuiteDesktop\PressureSuiteDesktop.exe`  
+       5.C) Add an exclusion for *Folder* with to your storage folder including your user name. `C:\Users\{yourUserName}\Documents\KELLER\PressureSuiteDesktop\data`  
+       5.D) Add an exclusion for *Folder* with to your storage folder including your user name. `C:\Users\{yourUserName}\Documents\KELLER\PressureSuiteDesktop`  
     Example settings for user `sebas` : 
       ![DefenderSettings](../../img/Win10DefenderSettings.png "Defender Settings")  
  - You might have to restart the Windows PC again.
- - Try the KOLIBRI Desktop SW again and if it doesn't work, please contact kolibri@keller-druck.com
+ - Try the PressureSuite Desktop SW again and if it doesn't work, please contact pressuresuite@keller-pressure.com
 

@@ -1,16 +1,16 @@
 ---
-title: KOLIBRI Desktop
+title: PressureSuite Desktop
 menu:
     main:
         parent: kolibri-ecosystem
         weight: 1
 ---
 
-# KOLIBRI Desktop - The new Logger Software
+# PressureSuite Desktop - The new Logger Software
 
-The 'KOLIBRI Desktop' Windows software is part of the modern KOLIBRI product line which embeds the newest technologies and strives for intuitive design. Recorded data from KELLER pressure measuring instruments with recording function can be read out and visualised. The measured data can be exported as CSV, JSON, picture, Excel, Word report and other formats for further processing or documentation. Due to the user-friendly interface, the data loggers can be easily configured and optimally adapted to the measuring task by means of the various recording functions. For a conversion of the measuring data immediately after readout, information about the measuring point, such as parameters for water level calculation, can be stored directly in the measuring device.
+The 'PressureSuite Desktop' Windows software is part of the modern PressureSuite product line which embeds the newest technologies and strives for intuitive design. Recorded data from KELLER pressure measuring instruments with recording function can be read out and visualised. The measured data can be exported as CSV, JSON, picture, Excel, Word report and other formats for further processing or documentation. Due to the user-friendly interface, the data loggers can be easily configured and optimally adapted to the measuring task by means of the various recording functions. For a conversion of the measuring data immediately after readout, information about the measuring point, such as parameters for water level calculation, can be stored directly in the measuring device.
 
-During the Installation process please install the "FTDI Chip CDM Drivers" when using KOLIBRI Desktop together with Dataloggers. Only install "Manometer driver (LEO 5 USB)" when using the KOLIBRI Desktop together with the "LEO 5" Manometer.
+During the Installation process please install the "FTDI Chip CDM Drivers" when using PressureSuite Desktop together with Dataloggers. Only install "Manometer driver (LEO 5 USB)" when using the PressureSuite Desktop together with the "LEO 5" Manometer.
 
 ## Tutorials
 - [KOLIBRI Desktop - Installation](https://www.youtube.com/watch?v=OOwIafnIoro)
@@ -61,6 +61,6 @@ Export the chart to various export formats including Excel and Word-report. The 
 
 ## Settings
 
-Use the Settings to customize KOLIBRI Desktop to your use case and application's need.
+Use the Settings to customize PressureSuite Desktop to your use case and application's need.
 
 ![Setting](../../img/KOLIBRIDesktop_8.png "Setting")

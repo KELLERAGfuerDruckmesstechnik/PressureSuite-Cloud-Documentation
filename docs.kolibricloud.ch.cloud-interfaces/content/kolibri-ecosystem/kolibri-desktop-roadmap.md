@@ -1,19 +1,18 @@
 ---
-title: KOLIBRI Desktop Roadmap
+title: PressureSuite Desktop Roadmap
 menu:
     main:
         parent: kolibri-ecosystem
         weight: 3
 ---
 
-# KOLIBRI Desktop - Roadmap
+# PressureSuite Desktop - Roadmap
 
 PLANNED  
 
 - **Reporting** - new functionality to easily generate reports out of a record
-- **Cloud-to-Desktop connection** - Use KOLIBRI Desktop to store/backup data from the KOLIBRI Cloud and visualize them.
-- **Purge obsolete data on the logger device** - Deletion of existing records stored on the device.
-- **Desktop-to-Cloud connection** - Press a button and store records of your device in the cloud. Access this data using https://www.kolibricloud.ch
+- **Cloud-to-Desktop connection** - Use PressureSuite Desktop to store/backup data from the PressureSuite Cloud and visualize them.
+- **Desktop-to-Cloud connection** - Press a button and store records of your device in the cloud. Access this data using https://www.pressuresuite.com
 
 ## Known limitations
 - It is not possible to use Series30-transmitters directly like in the CCS30 tool
