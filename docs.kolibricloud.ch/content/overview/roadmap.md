@@ -14,7 +14,7 @@ The following roadmap is an idea. Therefore, the priority might change, and we m
 It is planned to have a short series of YouTube videos explaining and demonstrating new features and their uses.
 
 ### MQTT analysis and integration
-We are going to add the possibility to use MQTT in our sending devices. Ideally, the KOLIBRI Cloud backend shall be able to accept and communicate with MQTT. 
+We are going to add the possibility to use MQTT in our sending devices. Ideally, the PressureSuite Cloud backend shall be able to accept and communicate with MQTT. 
 
 ### Export of multiple channels into ONE Excel/CSV file
 Export of multiple channels into ONE Excel/CSV file.
@@ -30,8 +30,8 @@ Now that the sending 'Device Configuration' for GSM/ARC to devices over FTP/Mail
 ----
 # YOUR idea
 Tell us your idea! What do you need?  
-<kolibri@keller-druck.com>  
+<pressuresuite@keller-pressure.com>  
 
-[![](https://docs.kolibricloud.ch/img/logo.png)](https://roadmap.kolibricloud.ch/)
+[![](https://docs.pressuresuite.com/img/logo.png)](https://roadmap.pressuresuite.com/)
 
-<iframe src="https://roadmap.kolibricloud.ch/index.html" width="1000" height="840"></iframe>
+<iframe src="https://roadmap.pressuresuite.com/index.html" width="1000" height="840"></iframe>

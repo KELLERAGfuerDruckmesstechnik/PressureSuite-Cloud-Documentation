@@ -10,18 +10,18 @@ toc: false
 
 # Sign Up process and how to add signed up users to your group
 
-# Create account at KOLIBRI Cloud
+# Create account at PressureSuite Cloud
 
-- Go to [https://www.kolibricloud.ch](https://www.kolibricloud.ch)
+- Go to [https://www.pressuresuite.com](https://www.pressuresuite.com)
 
-- Read the [Terms of Use](https://docs.kolibricloud.ch/Nutzungsbedingungen_TermsAndConditions_KOLIBRI_Cloud.pdf)
+- Read the [Terms of Use](https://docs.pressuresuite.com/Nutzungsbedingungen_TermsAndConditions_KOLIBRI_Cloud.pdf)
 
 - Click on “Sign up now” button
 
 ![Sign Up Process Main](../../img/sign-up/sign-up-main.png)  
 
 
-## Create KOLIBRI account: Two step verification
+## Create PressureSuite account: Two step verification
 
 - Fill the form with your data
 
@@ -45,7 +45,7 @@ the following symbols: @ # $ % ^ & * - _ + =
 [ ] { } | \ : ' ,? / ` ~ " ( ) ;
 ```
 
-- Next step will be to contact your KOLIBRI Cloud Support team to add you to your group and give you Administrator Rights (***CustomerAdmin***).
+- Next step will be to contact your PressureSuite Cloud Support team to add you to your group and give you Administrator Rights (***CustomerAdmin***).
 
 ![Sign Up Form](../../img/sign-up/sign-up-form.png)  
 
@@ -55,9 +55,9 @@ the following symbols: @ # $ % ^ & * - _ + =
 
 - The CustomerAdmin then uses the “Admin Settings” and just write the chosen username in the box for “Add New Registered User” and press “Add user”.
 
-- Then it will take a couple of minutes to update the database before the new user can access the KOLIBRI Cloud.
+- Then it will take a couple of minutes to update the database before the new user can access the PressureSuite Cloud.
 
-- You can always reach our KOLIBRI Cloud Support by mailing your ordinary contact or send a mail to: kolibri@keller-druck.com
+- You can always reach our PressureSuite Cloud Support by mailing your ordinary contact or send a mail to: pressuresuite@keller-pressure.com
 
 
 ![Sign Up Process Add New User](../../img/sign-up/sign-up-add-new-user.png)  

@@ -24,7 +24,7 @@ There are three categories of alarms:
 *Application alarms* must be set by users themselves and linked to a recipient e-mail address. *Device alarms*, however, are preset with a fixed minimum limit and maximum limit. The e-mail address for these kinds of alarms must be configured, too.
 
 **Solutions**  
-In the *Account Settings* (https://www.kolibricloud.ch/account-settings) one or multiple receiver e-mail addresses have to be added to make it possible for the KOLIBRI Cloud to send alarm e-mails.  
+In the *Account Settings* (https://www.pressuresuite.com/account-settings) one or multiple receiver e-mail addresses have to be added to make it possible for the PressureSuite Cloud to send alarm e-mails.  
 
 ![.](../../img/troubleshooting/add-email-for-system-and-device-alarm.png)  
 
@@ -55,16 +55,16 @@ Nevertheless, missing *five* transmissions is considered worthy of alarm.
 **Possible reasons and solutions**  
 
 #### ⚡ *The sending device has no battery power left*
-   - To identify this problem, please analyze the 'Battery Info' of the device on https://www.kolibricloud.ch/. Also, there should have been a *Device Alarm* in the *Alarms* list with a warning.
+   - To identify this problem, please analyze the 'Battery Info' of the device on https://www.pressuresuite.com/. Also, there should have been a *Device Alarm* in the *Alarms* list with a warning.
    - If the battery voltage and/or battery capacity is too low, then the battery needs to be replaced.
 
 #### ⚡ *The sending device has communication problems because of heavy rain/snow* 
-   - To identify this problem, please analyze the 'Signal strength' of the device on https://www.kolibricloud.ch/ and, if possible, cross-reference the data with past weather data. Does the signal strength get worse when there is heavy rainfall/snowfall?
+   - To identify this problem, please analyze the 'Signal strength' of the device on https://www.pressuresuite.com/ and, if possible, cross-reference the data with past weather data. Does the signal strength get worse when there is heavy rainfall/snowfall?
    - If the weather has an impact, then consider re-position or protect the antenna. The higher the position, the better.
    - Even with a free line in sight there might be issues due to [Fresnel zones](https://en.wikipedia.org/wiki/Fresnel_zone)
 
 #### ⚡ *The sending device has communication problems because it is underwater* 
-   - To identify this problem, please analyze the 'Signal Strength' and the 'Humidity' of the device on https://www.kolibricloud.ch/ :
+   - To identify this problem, please analyze the 'Signal Strength' and the 'Humidity' of the device on https://www.pressuresuite.com/ :
    - If the humidity continues to rise, the signal strength immediately dropped and the communication stopped, then consider a water damage or the possibility of an overflowed device. Consider verifying the state of the sending device in the field.
 #### ⚡ *The sending device has communication problems because the cellular antenna is not reacting* 
    - The cell antenna stopped sending the needed frequency because the mobile telecom provider changes the available frequencies (No 2G in favour of 4G resp. No 3G in favour of 4G etc.). Please check with you provider is in the process of shutting down the mobile network.
@@ -87,22 +87,22 @@ Nevertheless, missing *five* transmissions is considered worthy of alarm.
    - Check with your mobile provider if the SIM card plan that ran out of money.
 #### ⚡ *The FTP server is not reachable* 
    - Check with an FTP client such as [FileZilla](https://filezilla-project.org/) your credentials (host/username/password).  
-   - Alternatively, it is possible to test the connection in the account settings (https://www.kolibricloud.ch/account-settings)  
-   - If it is an FTP server provided by KELLER with the host name ftp.gsmdata.ch, then please contact kolibri@keller-druck.com  
-   - If it is an FTP server provided by you, then contact your IT administrator. When the FTP server never could be reached, then this might be a problem with unsupported security protocols. Contact kolibri@keller-druck.com to check if the used FTPS SSH cipher is supported. SFTP is not supported.  
+   - Alternatively, it is possible to test the connection in the account settings (https://www.pressuresuite.com/account-settings)  
+   - If it is an FTP server provided by KELLER with the host name ftp.gsmdata.ch, then please contact pressuresuite@keller-pressure.com
+   - If it is an FTP server provided by you, then contact your IT administrator. When the FTP server never could be reached, then this might be a problem with unsupported security protocols. Contact pressuresuite@keller-pressure.com to check if the used FTPS SSH cipher is supported. SFTP is not supported.  
 
 #### ⚡ *The mail server is not reachable* 
    - Check with an alternative mail client your credentials (host/username/password).   
-   - If the credentials don't work, and it is a mail server provided by KELLER, then please contact kolibri@keller-druck.com  
+   - If the credentials don't work, and it is a mail server provided by KELLER, then please contact pressuresuite@keller-pressure.com
    - If the credentials don't work, and it is a mail server provided by you, then contact your IT administrator.  
-   - If the credentials work, but the device can not send data to the mail server any more than please contact kolibri@keller-druck.com  
+   - If the credentials work, but the device can not send data to the mail server any more than please contact pressuresuite@keller-pressure.com
 
 
 **The ARD1/ADT1 are also loggers**  
-Be aware that all KELLER remote sending devices are also logger. And even when communication is not possible, measurements will be made and stored as long as the level probes and the cables are working. The measurement files can even be extracted (with 'KOLIBRI Desktop') and uploaded into the KOLIBRI Cloud.
+Be aware that all KELLER remote sending devices are also logger. And even when communication is not possible, measurements will be made and stored as long as the level probes and the cables are working. The measurement files can even be extracted (with 'PressureSuite Desktop') and uploaded into the PressureSuite Cloud.
 
 **How was the alarm triggered**  
-Every device in the KOLIBRI Cloud is checked daily (03:30 UTC). If a device missed *at least five* transmissions at this moment, it will trigger a *'Device stopped transmitting'*-alarm.
+Every device in the PressureSuite Cloud is checked daily (03:30 UTC). If a device missed *at least five* transmissions at this moment, it will trigger a *'Device stopped transmitting'*-alarm.
 
 ---
 ## The humidity in the device is too high / *'Humidity'*-alarm triggered

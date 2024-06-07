@@ -6,13 +6,13 @@ menu:
         weight: 1
 ---
 
-# The KOLIBRI Cloud
+# The PressureSuite Cloud
 
 ## From KELLER transmitter to the Cloud
 
 ![alt text](../img/ArcArchitecture.png "Architecture Overview")
 
-One or more sensors are connected to an data transmitter unit (such as "ARC1") and transmit data to a FTP-Server or a Mail-Server using a network provider. When using the KOLIBRI Cloud the FTP-Server are automatically gathering the data, transform them in a understandable format and store them in a database hosted in a professional data warehouse. This database is accessible through an API. Authenticated users can access the the API. One way to access the API is using the KOLIBRI Cloud web application.
+One or more sensors are connected to an data transmitter unit (such as "ARC1") and transmit data to a FTP-Server or a Mail-Server using a network provider. When using the PressureSuite Cloud the FTP-Server are automatically gathering the data, transform them in a understandable format and store them in a database hosted in a professional data warehouse. This database is accessible through an API. Authenticated users can access the the API. One way to access the API is using the PressureSuite Cloud web application.
 
 ## Overview
 
@@ -26,5 +26,5 @@ There are multiple ways to connect devices to the Internet. LoRa, NB-IoT or the 
 
 ---
 
-APIs are the hidden backbone of our modern world which allow software programs to communicate with one another. The web app www.kolibricloud.ch is just one way to connect to one API. We show how these multiple Software application can work together and communicate. Please refer to the [Interfaces](/cloud-interfaces/) page.
+APIs are the hidden backbone of our modern world which allow software programs to communicate with one another. The web app www.pressuresuite.com is just one way to connect to one API. We show how these multiple Software application can work together and communicate. Please refer to the [Interfaces](/cloud-interfaces/) page.
 ![alt text](../img/ArcArchitecture_2.png "Interface Overview")

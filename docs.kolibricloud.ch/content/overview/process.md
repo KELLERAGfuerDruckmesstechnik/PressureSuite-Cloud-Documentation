@@ -4,7 +4,7 @@ menu:
     main:
         parent: overview
         weight: 3
-description: General process on how to 'get' the KOLIBRI Cloud
+description: General process on how to 'get' the PressureSuite Cloud
 toc: false
 ---
 
@@ -17,7 +17,7 @@ toc: false
   ☐ With cellular technology such as 3G/4G or NB-IoT/LTE-M:  
   - Know your coverage with maps such as https://www.gsma.com/coverage (4G/LTE) and https://www.gsma.com/iot/deployment-map (NB-IoT/LTE-M)  
   - Your mobile provider might show you a more recent coverage map  
-  - For a temporary storage between KELLER sending devices and KOLIBRI cloud an FTP account is needed. By default, you have to use an own FTP host by yourself. Exceptionally, KELLER can offer to host an FTP account but can not guarantee 100% accessibility  
+  - For a temporary storage between KELLER sending devices and PressureSuite Cloud an FTP account is needed. By default, you have to use an own FTP host by yourself. Exceptionally, KELLER can offer to host an FTP account but can not guarantee 100% accessibility  
   - Consider using an IoT SIM card such as one from 1nce.com (Check if your county is supported using a coverage map and https://1nce.com/en/coverage)  
 
   ☐ With LoRaWAN technology:  
@@ -37,12 +37,12 @@ toc: false
      - Monitoring pipe cap lock  
      - Monitoring pipe adapter ring  
   
-☐ Try out www.kolibricloud.ch and visits the documentation page https://docs.kolibricloud.ch  
- ☐ Understand the benefits, the features and limitations of the 'KOLIBRI Cloud' 
- ☐ Even if an external cloud solution like the 'KOLIBRI Cloud' does not fit the use case it might be a good idea to start with it to test the connectivity and verify the data transfer  
-☐ Read and understand the 'Terms and Conditions' for the KOLIBRI Cloud EN / DE  
+☐ Try out www.pressuresuite.com and visits the documentation page https://docs.pressuresuite.com  
+ ☐ Understand the benefits, the features and limitations of the 'PressureSuite Cloud' 
+ ☐ Even if an external cloud solution like the 'PressureSuite Cloud' does not fit the use case it might be a good idea to start with it to test the connectivity and verify the data transfer  
+☐ Read and understand the 'Terms and Conditions' for the PressureSuite Cloud EN / DE  
 
-☐ Decide if 'KOLIBRI Support team' shall pre-configure and connect the device to the KOLIBRI Cloud  
+☐ Decide if 'PressureSuite Support team' shall pre-configure and connect the device to the PressureSuite Cloud  
 ☐ If yes: Give the order to 'KELLER sales person'  
 ☐ Finalize order with sales person  
 
@@ -50,13 +50,13 @@ toc: false
 
 ☐ When the devices have to be pre-configured and the SIM-cards do work in Switzerland (such as IoT SIM cards from https://1nce.com), please send them toyour 'KELLER sales person'. The SIM card/s will be inserted into the device/sand used for the configuration.  
 
-☐ Sign-Up on https://www.kolibricloud.ch with a username and E-Mail address.  
+☐ Sign-Up on https://www.pressuresuite.com with a username and E-Mail address.  
 ☐ Other users can also sign up and access the same measurement data if wished 
 ☐ Use the username to login  
-☐ When forgetting the password the user can reset the password on https://www.kolibricloud.ch  
+☐ When forgetting the password the user can reset the password on https://www.pressuresuite.com
 
-☐ When the 'KOLIBRI Cloud API' has to be used to gather data to store them to a customer specific SCADA/DB then see https://docs.kolibricloud.ch/cloud-interfaces/api/  
+☐ When the 'PressureSuite Cloud API' has to be used to gather data to store them to a customer specific SCADA/DB then see https://docs.www.pressuresuite.com/cloud-interfaces/api/  
 
-☐ When customer decides not to use the 'KOLIBRI Cloud' anymore and implement a known integration: See https://docs.kolibricloud.ch/cloud-interfaces/iot-converter/  
+☐ When customer decides not to use the 'PressureSuite Cloud' anymore and implement a known integration: See https://docs.pressuresuite.com/cloud-interfaces/iot-converter/  
 
-☐ When it is needed to change or replace devices / delete or manipulate data? Ask 'KOLIBRI Support Team' (kolibri@keller-druck.com)  
+☐ When it is needed to change or replace devices / delete or manipulate data? Ask 'PressureSuite Support Team' (pressuresuite@keller-pressure.com)  
