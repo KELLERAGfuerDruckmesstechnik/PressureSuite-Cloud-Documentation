@@ -9,7 +9,7 @@ description: History about maintenances and outages
 ---
 # Status
 
-💚 ***ALL KOLIBRI CLOUD SERVICES RUNNING OK***  
+💚 ***All PressureSuite Cloud services running OK***  
 
 **[UPDATE] 3rd May 2024 - 16:30 CEST: We are pleased to announce that the connection issues with our FTP accounts have been successfully resolved. We completed the migration of all existing accounts to the new root server. As a result, services have been restored, and all systems are operational. We deeply apologize for any inconvenience caused during this disruption and appreciate your patience and understanding. Rest assured, no data loss is estimated throughout this process.**
 **The missing data will be automatically re-added to the KOLIBRI Cloud once the devices resume communication and attempt to resend the data. This process will occur according to the configured sending interval of the devices.**
