@@ -46,4 +46,4 @@ The provided access token must be the value with the key "userOid" in the header
 
 
 Please create github issues for feature wishes or problems.  
-Or contact <kolibri@keller-druck.com>
+Or contact <pressuresuite@keller-druck.com>

@@ -1,6 +1,6 @@
 # Introduction
 
-This are the resource files for the documentation web page for the KOLIBRI Cloud. The compiled result can be seen on <https://docs.pressuresuite.com>
+This are the resource files for the documentation web page for the PressureSuite Cloud. The compiled result can be seen on <https://docs.pressuresuite.com>
 
 It is build using markdown files (in /content/...) and the Hugo project (<https://gohugo.io/)> to transform it to HTML.
 The template was taken from <https://github.com/brocaar/docs.loraserver.io>

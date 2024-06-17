@@ -9,7 +9,7 @@ menu:
 # Device config API to "Cellular data communication protocol" mapping
 
 The mapping of the API fields and the ARC1 cellular data communication protocol is described in the following tables.  
-kolibri@keller-druck.com has converter SW to transfer the text content (used in the transfer files sent to the FTP) to C# objects and Json-Objects. Ask kolibri@keller-druck.com if you plan to implement the cellular data communication protocol used by the ARC1/ADT1.
+pressuresuite@keller-druck.com has converter SW to transfer the text content (used in the transfer files sent to the FTP) to C# objects and Json-Objects. Ask pressuresuite@keller-druck.com if you plan to implement the cellular data communication protocol used by the ARC1/ADT1.
 
 ## #a GPRS Settings
 

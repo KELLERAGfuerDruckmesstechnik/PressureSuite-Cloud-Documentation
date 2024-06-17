@@ -34,9 +34,9 @@ pygmentsUseClasses = true
 
 [[menu.main]]
     pre = "<i class='fab fa-connectdevelop'></i>"
-    name = "The KOLIBRI Ecosystem"
-    identifier = "kolibri-ecosystem"
-    url = "/kolibri-ecosystem/"
+    name = "The PressureSuite Ecosystem"
+    identifier = "pressuresuite-ecosystem"
+    url = "/pressuresuite-ecosystem/"
     weight = 5
 
 [[menu.main]]

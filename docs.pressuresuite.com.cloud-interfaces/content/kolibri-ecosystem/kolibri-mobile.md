@@ -2,7 +2,7 @@
 title: PressureSuite Mobile
 menu:
     main:
-        parent: kolibri-ecosystem
+        parent: pressuresuite-ecosystem
         weight: 5
 
 ---

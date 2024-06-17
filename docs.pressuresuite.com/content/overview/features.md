@@ -21,7 +21,7 @@ Now, it is possible to have multiple customers and split the devices between the
 
 #### Multi-Tenancy by using the network visibility
 
-As a CustomerAdmin it is possible to govern the user of their group(company). Sometimes, you as the KOLIBRI Cloud customer have your own customers who should only see their devices/data. In the past, it was necessary to create a new group and a new customerAdministrator account and assign each devices and your customers to a group. For this multiple login and logout were needed.  
+As a CustomerAdmin it is possible to govern the user of their group(company). Sometimes, you as the PressureSuite Cloud customer have your own customers who should only see their devices/data. In the past, it was necessary to create a new group and a new customerAdministrator account and assign each devices and your customers to a group. For this multiple login and logout were needed.  
 Now, it is possible to have multiple customers and split the devices between them. Each customer can only see the devices that are assigned to him/her. This is done by using the network visibility which is a setting in the 'Administrator Settings' under 'Govern User':
 ![Network Visibility](../../img/multitenancy-hide-networks.png)  
 
@@ -38,7 +38,7 @@ It was always possible to change the coordinates of a device from the WebApp. No
 
 #### Device Alarms now store a measurement
 
-It is possible to configure one (1) unit alarm in the unit that has its own alarm value test interval. Whenever an alarm value exceeds/falls below the alarm value, an alarm is triggered. This alarm can be sent as SMS, email or to the cloud (FTP). In the KOLIBRI Cloud it is visible in the alarm list (<https://www.pressuresuite.com/alarms>) as 'Triggerd By Device'.  
+It is possible to configure one (1) unit alarm in the unit that has its own alarm value test interval. Whenever an alarm value exceeds/falls below the alarm value, an alarm is triggered. This alarm can be sent as SMS, email or to the cloud (FTP). In the PressureSuite Cloud it is visible in the alarm list (<https://www.pressuresuite.com/alarms>) as 'Triggerd By Device'.  
 In this version, the measurement that triggered the alarm is now also saved for each such alarm. This in turn makes it possible to trigger a Cloud alarm that reacts a few minutes after the device alarm and triggers the sending of (several) warning emails. Otherwise, the cloud alarm would have been triggered (hours later) when the batch of measurements was sent.
 
 ---
@@ -63,7 +63,7 @@ This release introduces the water calculation history and a log component.
 
 ##### Water Calculation History
 
-Changing the water calculation is now possible without losing the old calculation (eg. due to changing installation). This way, past calculations will still be visualized and exported by the KOLIBRI Cloud!
+Changing the water calculation is now possible without losing the old calculation (eg. due to changing installation). This way, past calculations will still be visualized and exported by the PressureSuite Cloud!
 ![image](https://user-images.githubusercontent.com/36856727/153419252-c966d1db-38f7-45a9-9e48-a37640b4295a.png)
 
 Unfortunately, the API endpoints have changed
@@ -173,7 +173,7 @@ Youtube-videos that show the functionalities and get a short overview.
 
 #### Process descriptions
 
-It is needed to have an easy overview of how to initialize a project with as a sales person, as a customer as KOLIBRI Cloud support person...  
+It is needed to have an easy overview of how to initialize a project with as a sales person, as a customer as PressureSuite Cloud support person...  
 A check list and a graphical overview is wished.  
 
 #### Free .NET DLL to convert data from/to ARC1/ADT1
@@ -227,20 +227,20 @@ Especially with the new LoRa ADT devices the used channels have to be changed ac
 
 #### Show Permanent Token for Administrators
 
-To make it easier for the users and the KOLIBRI support team the individual permanent tokens of the *contributor* users are shown.  
+To make it easier for the users and the PressureSuite support team the individual permanent tokens of the *contributor* users are shown.  
 ![Show Permanent Token for Administrators](../../img/admin_token.png)  
 
 ### v.1.19352.02 (18. December 2019)
 
 #### Device Configuration
 
-Some devices configurations can now be seen and saved through the KOLIBRI Cloud.
+Some devices configurations can now be seen and saved through the PressureSuite Cloud.
 
 ### v.1.19315.01 (11. November 2019)
 
 #### PREVIEW: Device Configuration
 
-**PREVIEW**: Some devices configurations can now be seen in through the KOLIBRI Cloud. We are now testing the sending and fixing various issues.
+**PREVIEW**: Some devices configurations can now be seen in through the PressureSuite Cloud. We are now testing the sending and fixing various issues.
 
 ![Device Configuration](/img/device_configuration.png "Device Configuration")
 
@@ -269,7 +269,7 @@ Copy and pasting a comma or semicolon separated list of mail addresses works acc
 
 #### Number of Decimal Places
 
-KOLIBRI Cloud now supports 0 as decimal precision in page settings.
+PressureSuite Cloud now supports 0 as decimal precision in page settings.
 
 ![0 as number of decimal places](/img/page_settings_units_precision.png "0 as number of decimal places")
 
@@ -279,7 +279,7 @@ As the scale settings consist of five different units, it used to be difficult t
 
 The settings are now split into two rows which leaves enough room for the parameters to be adjusted without the space restrictions.
 
-Scale settings are now being saved on the browser side. It must be kept in mind that if the browser / workstation is switched or KOLIBRI Cloud is opened in an incognito window the settings will be reset to the default value. Furthermore, the scale settings do not distinguish between devices.
+Scale settings are now being saved on the browser side. It must be kept in mind that if the browser / workstation is switched or PressureSuite Cloud is opened in an incognito window the settings will be reset to the default value. Furthermore, the scale settings do not distinguish between devices.
 
 ![New layout for scale settings](/img/scale_settings.png "New layout for scale settings")
 
@@ -289,7 +289,7 @@ Scale settings are now being saved on the browser side. It must be kept in mind 
 
 #### Translations Update
 
-The most used languages for the KOLIBRI Cloud (DE, EN, FI and NL) got updated and verified by native speakers.
+The most used languages for the PressureSuite Cloud (DE, EN, FI and NL) got updated and verified by native speakers.
 
 #### Mail Import
 
@@ -333,7 +333,7 @@ The selected Calculations are shown in the chart as well:
       <div class="col-sm-4">
         <h4><i class="fas fa-broadcast-tower"></i> LoRa and GSM ready</h4>
         <p class="content">
-          LoRa & GSM data directly saved to the KOLIBRI Cloud.</br>
+          LoRa & GSM data directly saved to the PressureSuite Cloud.</br>
           No need for PC software (GSM2Datamanager) and maintenance-free.
         </p>
       </div>
@@ -349,7 +349,7 @@ The selected Calculations are shown in the chart as well:
       <div class="col-sm-4">
         <h4><i class="fas fa-chart-line"></i> Visualise with charts</h4>
         <p class="content">
-          Visualise and analyse stored data in KOLIBRI Cloud.
+          Visualise and analyse stored data in PressureSuite Cloud.
         </p>
       </div>
       <div class="col-sm-4">
@@ -370,7 +370,7 @@ The selected Calculations are shown in the chart as well:
       <div class="col-sm-4">
         <h4><i class="fas fa-exchange-alt"></i> Compatibility</h4>
         <p class="content">
-          Supports existing and new KELLER IoT products and IoT protocols: GSM, ARC, LoRa, KOLIBRI Mobile App and Desktop App.
+          Supports existing and new KELLER IoT products and IoT protocols: GSM, ARC, LoRa, PressureSuite Mobile App and Desktop App.
         </p>
       </div>
       <div class="col-sm-4">

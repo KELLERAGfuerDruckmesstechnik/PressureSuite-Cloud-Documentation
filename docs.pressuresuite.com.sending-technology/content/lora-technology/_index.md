@@ -35,5 +35,5 @@ There are many youtube channels with interesting content about LoRa and alternat
     - OR: In certain countries mobile communication provider offer a connection to their LoRa-compatible antennas. See <https://docs.pressuresuite.com/sending-technology/lora-technology/partners/> for example coverage maps. You do not have to buy a gateway but pay a monthly/yearly fee to your provider.  
 3. Choose a [LoRa Network server](https://docs.pressuresuite.com/sending-technology/lora-technology/partners/)
 4. Connect the LoRa devices with your LoRa Network server and test the connection
-5. You might want to use the KOLIBRI Cloud to test your application by using this process: <https://docs.pressuresuite.com/overview/process/>
-6. Forward your LoRa telegrams to the cloud using the KOLIBRI Cloud endpoint URL
+5. You might want to use the PressureSuite Cloud to test your application by using this process: <https://docs.pressuresuite.com/overview/process/>
+6. Forward your LoRa telegrams to the cloud using the PressureSuite Cloud endpoint URL

@@ -7,5 +7,5 @@ menu:
 hidden: true
 ---
 
-![KOLIBRI Cloud Architectural overview](/cloud-interfaces/img/KellerCloud_Architecture.png "Architectural overview")
-*KOLIBRI Cloud Overview with Interfaces*
+![PressureSuite Cloud Architectural overview](/cloud-interfaces/img/KellerCloud_Architecture.png "Architectural overview")
+*PressureSuite Cloud Overview with Interfaces*

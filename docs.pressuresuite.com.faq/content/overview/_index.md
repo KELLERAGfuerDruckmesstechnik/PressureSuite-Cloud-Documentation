@@ -10,12 +10,12 @@ description: Frequently Asked Questions  (FAQ)
 
 # Frequently Asked Questions
 
-If you miss a question/answer please contact <kolibri@keller-druck.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation).
+If you miss a question/answer please contact <pressuresuite@keller-druck.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation).
 
 - [What does "cloud", "IoT", "LoRa" mean?](#what-does-cloud-iot-lora-mean)
 - [What kind of IoT devices does KELLER have?](#what-kind-of-iot-devices-does-keller-have)
-- [What does "KOLIBRI" even mean?](#what-does-kolibri-even-mean)
-- [What is the "KOLIBRI Cloud"?](#what-is-the-kolibri-cloud)
+- [What does "PressureSuite" even mean?](#what-does-pressuresuite-even-mean)
+- [What is the "PressureSuite Cloud"?](#what-is-the-pressuresuite-cloud)
 - [Should I use the Cloud or the GSM2Datamanager solution?](#should-i-use-the-cloud-or-the-gsm2datamanager-solution)
 - [What is the roadmap of the features?](#what-is-the-roadmap-of-the-features)
 - [The customer wants to create his own web app or mobile app. How can KELLER help the customer?](#the-customer-wants-to-create-his-own-web-app-or-mobile-app-how-can-keller-help-the-customer)
@@ -25,7 +25,7 @@ If you miss a question/answer please contact <kolibri@keller-druck.com> or write
 - [Does the website also work on a mobile phone?](#does-the-website-also-work-on-a-mobile-phone)
 - [What alarms are there](#what-alarms-are-there)
 - [How do I know that the devices are communicating?](#how-do-i-know-that-the-devices-are-communicating)
-- [Can I use existing data from the GSM2Datamanager switch to the KOLIBRI Cloud?](#can-i-use-existing-data-from-the-gsm2datamanager-switch-to-the-kolibri-cloud)
+- [Can I use existing data from the GSM2Datamanager switch to the PressureSuite Cloud?](#can-i-use-existing-data-from-the-gsm2datamanager-switch-to-the-pressuresuite-cloud)
 - [The customer needs a new feature? How do I proceed?](#the-customer-needs-a-new-feature-how-do-i-proceed)
 - [I discovered an SW error. How do I contact KELLER?](#i-discovered-an-sw-error-how-do-i-contact-keller)
 - [How does LoRa technology work and what are the advantages?](#how-does-lora-technology-work-and-what-are-the-advantages)
@@ -50,22 +50,22 @@ See https://keller-druck.com/en/products/wireless-solutions
 KELLER sells the ADT1 (low-cost) or the ARC1 (robust) device in a tube, a box or a box with special safty barriers.
 Both device categories can send data either via cellular sending technology (2G/3G/4G/NB-IoT/LTE-M) or via the LoRaWAN sending technology. 
 
-## What does "KOLIBRI" even mean?
+## What does "PressureSuite" even mean?
 
-KOLIBRI is the name of the new KELLER Pressure product line. It's the German name for hummingbird starting with a **K** as in **K**ELLER.
+PressureSuite is the name of the new KELLER Pressure product line. It's the German name for hummingbird starting with a **K** as in **K**ELLER.
 Currently, this product line contains:
 
-- KOLIBRI Cloud : Web portal for customers to access data
+- PressureSuite Cloud : Web portal for customers to access data
 
-- KOLIBRI Desktop : The new logger software application that we use to store and visualize data from data loggers on the Windows PC.
+- PressureSuite Desktop : The new logger software application that we use to store and visualize data from data loggers on the Windows PC.
 
-- KOLIBRI Mobile : The new Android app, with which you can load measurement data from KELLER data loggers via Bluetooth to a smartphone.
+- PressureSuite Mobile : The new Android app, with which you can load measurement data from KELLER data loggers via Bluetooth to a smartphone.
 
-These products all use the latest technologies and a customized design. In addition, you will download and upload data from "KOLIBRI Desktop" and "KOLIBRI Mobile" to the "KOLIBRI Cloud".  
+These products all use the latest technologies and a customized design. In addition, you will download and upload data from "PressureSuite Desktop" and "PressureSuite Mobile" to the "PressureSuite Cloud".  
 
-## What is the "KOLIBRI Cloud"?
+## What is the "PressureSuite Cloud"?
 
-KOLIBRI is the name of the new KELLER Pressure product line.
+PressureSuite is the name of the new KELLER Pressure product line.
 Part of this new product line is the cloud possibilities, which are:
 
 - WebApp : The "Online Program" at www.pressuresuite.com
@@ -127,17 +127,17 @@ There are three categories:
 On the WebApp you can read the time of the last communication.
 ![Last Data on www.pressuresuite.com](../LastData.png"Last Data")
 
-## Can I use existing data from the GSM2Datamanager switch to the KOLIBRI Cloud?
+## Can I use existing data from the GSM2Datamanager switch to the PressureSuite Cloud?
 
 It is possible to load data from GSM2DataManager databases into the cloud. This is a work effort of multiple hours and might be a chargeable work. Your sales person will find a fair solution.
 
 ## The customer needs a new feature? How do I proceed?
 
-Contact to <kolibri@keller-druck.com>
+Contact to <pressuresuite@keller-druck.com>
 
 ## I discovered an SW error. How do I contact KELLER?
 
-Contact to <kolibri@keller-druck.com>
+Contact to <pressuresuite@keller-druck.com>
 
 ## How does LoRa technology work? And what are the advantages?
 
@@ -153,13 +153,13 @@ See <https://docs.pressuresuite.com/sending-technology/lora-technology/>
 The Internet and Internet products essentially consist of devices that communicate with each other. The format of this interface is often a REST API. All large companies have APIs. Google Maps, for example, needs an API to query where a place is and reacts to maps, coordinates, ...
 
 APIs are not sorcery solely for developers.
-The KOLIBRI Cloud API can also be tested (if authorized) at <https://api.pressuresuite.com/swagger/index.html?url=/swagger/v1/swagger.json>
+The PressureSuite Cloud API can also be tested (if authorized) at <https://api.pressuresuite.com/swagger/index.html?url=/swagger/v1/swagger.json>
 
 If you as a specific software aks. e.g. "Give me the list of all devices", the answer would be:
 
 `https://api.pressuresuite.com/v1/Devices`
 
-And in answer you get from KOLIBRI Cloud:
+And in answer you get from PressureSuite Cloud:
 
 {{< highlight json >}}
 {
@@ -207,7 +207,7 @@ It is automatically backed-up every 5-10 min.
 The entire system is not that complicated.
 
 - The data of our sensors is regularly stored in FTP/mail server.
-- The KOLIBRI Cloud in the background is also a collection of many small programs (Azure Functions), which do regular tasks. For example, every 5 minutes all FTP/mail servers are checked for new data and new data is stored in a data queue.
+- The PressureSuite Cloud in the background is also a collection of many small programs (Azure Functions), which do regular tasks. For example, every 5 minutes all FTP/mail servers are checked for new data and new data is stored in a data queue.
 - As soon as a new telegram is available at LoRa, it will be stored in a data queue.
 - Another program controls the data queue and analyses the content and origin. The data will then be converted and stored in a database.
 - There are other programs that regularly check the measured data and abnormalities and, if necessary, generate alarms and send emails.
@@ -220,7 +220,7 @@ The entire system is not that complicated.
 
 The cloud is very safe.
 It uses modern processes, best practices and tools. Everything was audited by Windows Azure experts (Microsoft MVP expert).
-Authorization is managed externally (by Microsoft Azure Active Directory B2C). So if you want to hack accounts from KOLIBRI Cloud, then you have to hack Microsoft first.
+Authorization is managed externally (by Microsoft Azure Active Directory B2C). So if you want to hack accounts from PressureSuite Cloud, then you have to hack Microsoft first.
 Without proper authorization, it is not possible to get data.
 You can only query the data assigned to the user. This means that a validly authorized user can not see other user's data. This is even backed up at the database level (role-level feature SQL Server).
 
@@ -232,13 +232,13 @@ Microsoft Azure is one of the top three players in cloud services and meets seve
 
 Security is one of the key features and concerns in IoT / cloud projects.
 
-The KOLIBRI Cloud uses the access, storage and authentication of users and data in/from a MICROSOFT (Azure) data center.
+The PressureSuite Cloud uses the access, storage and authentication of users and data in/from a MICROSOFT (Azure) data center.
 
 This data center is in the EU and subject to EU regulations ( EU Data Protection Regulation ( DSGVO) ) (ie no data may be shared with data centers outside the EU, especially not with US). <https://www.microsoft.com/de-de/TrustCenter/Privacy/gdpr/default.aspx>
 
 In addition:
 
-- There are not many standards of countries regarding cloud/data/privacy, yet. And if so, then they affect the "personal data" which does not concern us, because the KOLIBRI Cloud stores mostly measurement data.
+- There are not many standards of countries regarding cloud/data/privacy, yet. And if so, then they affect the "personal data" which does not concern us, because the PressureSuite Cloud stores mostly measurement data.
 - What standards does Microsoft guarantee?
 
   - <https://azure.microsoft.com/en-us/overview/trusted-cloud/>   (overview)

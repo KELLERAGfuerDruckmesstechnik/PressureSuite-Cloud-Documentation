@@ -8,7 +8,7 @@ toc: true
 description: Information on how to integrate a configured KELLER LoRa device to the TTN platform
 ---
 ## Preface
-All LoRaWAN devices are already enlisted in a KELLER TTN account. If you do not want to claim ownership over the TTN communication and just want to see the data on the KOLIBRI Cloud, then you can go to Step 2 and program the device according your use case (measure/send interval) and update the device time. After this you can skip all steps until Step 10.
+All LoRaWAN devices are already enlisted in a KELLER TTN account. If you do not want to claim ownership over the TTN communication and just want to see the data on the PressureSuite Cloud, then you can go to Step 2 and program the device according your use case (measure/send interval) and update the device time. After this you can skip all steps until Step 10.
 Nevertheless, we recommend to overtake the ownership of the device in TTN and re-program the App EUI / App Key and enlist the device in an own application.
 
 ## 'Add a New Device to your TTN V3'-Guide
@@ -20,11 +20,11 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 - [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and a USB connector cable (ARC1: K114 interface converter / ADT1: Micro USB cable)
 - The Device EUI number of the device (Use the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) to extract the EUI)
 - The Application EUI number of the device (Use the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) to extract the EUI)
-- The KOLIBRI Endpoint URL which is: `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`
+- The PressureSuite Endpoint URL which is: `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`
 
 ### Step 1
 
-- During the order of the device ask your sales person to let the device pre-configure by the KOLIBRI support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device).
+- During the order of the device ask your sales person to let the device pre-configure by the PressureSuite support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device).
 
 ### Step 2
 
@@ -81,15 +81,15 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 ### Step 9
 
-- To send data to the KOLIBRI Cloud it is needed to forward the transmissions.
+- To send data to the PressureSuite Cloud it is needed to forward the transmissions.
   - Go to **Integrations** and **+Add Webhook** in **Webhooks**
   - Choose **Custom webhook**
-  - Choose a *Webhook ID* such as *webhook-to-kolibri*
+  - Choose a *Webhook ID* such as *webhook-to-pressuresuite*
   - *Webhook format* is **JSON**
   - *Base URL* is `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`  
   - Enable all **Uplink messages**
   - Press **Add webhook**.  
-  This will forward a transmission to the KOLIBRI Cloud.  
+  This will forward a transmission to the PressureSuite Cloud.  
 
 > ![TTN V3 Webhook Integration](../../TTNV3_AddIntegrationToKolibri.png  "TTN V3 Webhook Integration")  
 
@@ -97,7 +97,7 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 - To make your device visible on https://www.pressuresuite.com it is needed to add it
   - In the **Account Settings** on https://www.pressuresuite.com enter the Device EUI of the LoRa device and press **Add Device**
-  - The device should now be visible in the device list. If adding is not possible and a red popup is shown, please contact the KOLIBRI Support Team kolibri@keller-druck.com
+  - The device should now be visible in the device list. If adding is not possible and a red popup is shown, please contact the PressureSuite Support Team pressuresuite@keller-druck.com
 
 > ![Add LoRa Device To Own Group](../../AddLoRaDeviceToOwnGroup.png  "Add LoRa Device To Own Group")  
 
@@ -115,11 +115,11 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 - [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and a USB connector cable (ARC1: K114 interface converter / ADT1: Micro USB cable)
 - The Device EUI number of the device (Use the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) to extract the EUI)
 - The Application EUI number of the device (Use the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) to extract the EUI)
-- The KOLIBRI Endpoint URL which is: `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`
+- The PressureSuite Endpoint URL which is: `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`
 
 ### Step 1  
 
-- During the order of the device ask your sales person to let the device pre-configure by the KOLIBRI support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device).
+- During the order of the device ask your sales person to let the device pre-configure by the PressureSuite support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device).
 
 ### Step 2  
 
@@ -189,15 +189,15 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 ### Step 10
 
-- To send data to the KOLIBRI Cloud it is needed to forward the transmissions.
+- To send data to the PressureSuite Cloud it is needed to forward the transmissions.
   - Go to **Integrations** and **+Add Webhook** in **Webhooks**
   - Choose **Custom webhook**
-  - Choose a *Webhook ID* such as *webhook-to-kolibri*
+  - Choose a *Webhook ID* such as *webhook-to-pressuresuite*
   - *Webhook format* is **JSON**
   - *Base URL* is `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`  
   - Enable all **Uplink messages**
   - Press **Add webhook**.  
-  This will forward a transmission to the KOLIBRI Cloud.  
+  This will forward a transmission to the PressureSuite Cloud.  
 
 > ![TTN V3 Webhook Integration](../../TTNV3_AddIntegrationToKolibri.png  "TTN V3 Webhook Integration")  
 
@@ -205,10 +205,10 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 - To make your device visible on www.pressuresuite.com it is needed to add it
   - In the **Account Settings** on https://www.pressuresuite.com enter the Device EUI of the LoRa device and press **Add Device**
-  - The device should now be visible in the device list. If adding is not possible and a red popup is shown, please contact the KOLIBRI Support Team kolibri@keller-druck.com
+  - The device should now be visible in the device list. If adding is not possible and a red popup is shown, please contact the PressureSuite Support Team pressuresuite@keller-druck.com
 
 > ![Add LoRa Device To Own Group](../../AddLoRaDeviceToOwnGroup.png  "Add LoRa Device To Own Group")  
-wait until the KOLIBRI Cloud support assigned the device to your group. 
+wait until the PressureSuite Cloud support assigned the device to your group. 
 
 ---
 ---

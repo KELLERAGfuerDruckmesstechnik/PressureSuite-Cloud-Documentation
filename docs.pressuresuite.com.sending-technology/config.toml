@@ -1,6 +1,6 @@
 baseURL = "https://docs.pressuresuite.com/sending-technology/"
 languageCode = "en-us"
-title = "KOLIBRI Cloud Sending Technology"
+title = "PressureSuite Cloud Sending Technology"
 googleAnalytics = "UA-117920007-1"
 pygmentsUseClasses = true
 

@@ -12,14 +12,14 @@ description: History about maintenances and outages
 💚 ***All PressureSuite Cloud services running OK***  
 
 **[UPDATE] 3rd May 2024 - 16:30 CEST: We are pleased to announce that the connection issues with our FTP accounts have been successfully resolved. We completed the migration of all existing accounts to the new root server. As a result, services have been restored, and all systems are operational. We deeply apologize for any inconvenience caused during this disruption and appreciate your patience and understanding. Rest assured, no data loss is estimated throughout this process.**
-**The missing data will be automatically re-added to the KOLIBRI Cloud once the devices resume communication and attempt to resend the data. This process will occur according to the configured sending interval of the devices.**
+**The missing data will be automatically re-added to the PressureSuite Cloud once the devices resume communication and attempt to resend the data. This process will occur according to the configured sending interval of the devices.**
 
 [UPDATE] 2nd May 2024 - 17:00 CEST: We have received an update from our new FTP hoster. They anticipate completing the connection of all existing accounts to the new root server by tomorrow evening (3rd May CEST).
 
 [UPDATE] 2nd May 2024 - 16:00 CEST: Following numerous attempts to revert the hoster's configuration, we have received confirmation that the changes are indeed irreversible. In response, we have sourced a new hoster and initiated the migration process. Currently, we are in the midst of adjusting DNS settings and transferring hundreds of FTP accounts to the new FTP root server. We remain optimistic that services will resume by tomorrow.
 
 [UPDATE] 30th April 2024 - 18:40 CEST: The root cause of this issue lies in changes made to the gsmdata.ch domain, including DNS settings alterations, which have had unforeseen effects on our FTP/eMail-hoster.
-These changes have resulted in the conversion of all user names (e.g., ftp00X@gsmdata.ch) to a new scheme (e.g., 'h134567.ftp00X_gs3XX'), rendering devices unable to send data to the FTP server and subsequently to the KOLIBRI Cloud.
+These changes have resulted in the conversion of all user names (e.g., ftp00X@gsmdata.ch) to a new scheme (e.g., 'h134567.ftp00X_gs3XX'), rendering devices unable to send data to the FTP server and subsequently to the PressureSuite Cloud.
 Rest assured, your measurement data is safe and will be transmitted once access to the FTP server is restored. However, current efforts to revert the changes with the hoster have proved unsuccessful, and we are awaiting a response regarding the possibility of backup restoration.
 *Next steps:*
 Our team is actively engaging with the hoster's technicians. While initial attempts to reverse the changes have been unsuccessful, we are exploring all options to resolve the issue.
@@ -42,7 +42,7 @@ We apologize for any inconvenience caused and appreciate your patience and under
 ### 29th April 2024 - 11:30 CEST - 3rd May 2024 - 16:30 CEST
 
 **What happened?**  
-We experienced a disruption in our services due to connection issues with ALL our FTP accounts using the host ftp.gsmdata.ch. This resulted in the inability of devices to send data to the FTP server and subsequently to the KOLIBRI Cloud.
+We experienced a disruption in our services due to connection issues with ALL our FTP accounts using the host ftp.gsmdata.ch. This resulted in the inability of devices to send data to the FTP server and subsequently to the PressureSuite Cloud.
 
 **What went wrong and why?**  
 The root cause of this issue stemmed from changes made to the gsmdata.ch domain, including DNS settings alterations. These changes had unforeseen effects on our FTP/eMail-hoster, leading to the conversion of all user names and rendering devices unable to communicate with the FTP server.
@@ -69,7 +69,7 @@ We identified the problem in sending the recent measurement start time within a 
 
 **Summary of Impact:**  
 There are gaps of missing measurement data from 21.July 12:00 CEST - 21.July 2023 23:00 CEST.  
-On the evening of the Monday 24.July, the KOLIBRI tech team restored all missing measurement data.  
+On the evening of the Monday 24.July, the PressureSuite tech team restored all missing measurement data.  
 
 **Root Cause:**  
 The root cause was a data base quota that reached its limit. After increasing the quota for 100GB the measurements can be stored reliable.
@@ -122,7 +122,7 @@ Maintenance of a component led to a false deployment of the device-check-functio
 
 **Summary of Impact:**  
 An SW update caused the system to reject all incoming measurement sets. The data has been restored.  
-If you think there is still missing data, then please contact kolibri@keller-druck.com
+If you think there is still missing data, then please contact pressuresuite@keller-druck.com
 
 **Root Cause:**  
 An SW update meant for our test system caused a smaller sub-part to automatically re-build and deploy to the production system. This resulted in an incompatibility and the data could not be ingested into the database.  
@@ -134,7 +134,7 @@ Due to the holiday season, we had to delay these efforts and fix and test everyt
 
 **Summary of Impact:**  
 An update on the FTP-file-grabber-module caused an internal error in four FTP accounts where new devices were registered.  
-This error has been fixed. No data has been deleted, and all missing measurements should have been loaded up to the KOLIBRI Cloud DB.  
+This error has been fixed. No data has been deleted, and all missing measurements should have been loaded up to the PressureSuite Cloud DB.  
 
 **Root Cause:**  
 An error when creating paths to copy the measurement files to a new associated folder lead to ill-formed folders and files. This error caused an exception and the FTP account and the process of mitigation the new measurement files has been dropped for another 5min.  
@@ -204,13 +204,13 @@ We continue to improve the warn & log system to find such problems earlier.
 ### 15.May 2021 - 26.May 2021
 
 **Summary of Impact:**  
-The KOLIBRI Cloud searches on all known FTP servers for new measurement data. It does this every 5 minutes. Now, due to a chain of multiple causes, the interval to gather the new measurements files has increased from 2 minutes up to multiple hours. The data came but during a random time later (up to 3 hours later).  
+The PressureSuite Cloud searches on all known FTP servers for new measurement data. It does this every 5 minutes. Now, due to a chain of multiple causes, the interval to gather the new measurements files has increased from 2 minutes up to multiple hours. The data came but during a random time later (up to 3 hours later).  
 Customers experienced a delay of the data in the web app or API.
 
 After the holidays around Pentecost, we fixed the system and saw ways to improve it. No measurement data has been lost due to this incident.
 
 **Root Cause:**  
-A customer used a slow FTP server located in South America and summed up multiple thousands of faulty measurement files. The 'KOLIBRI Cloud FTP collection service' tried to download this multiple times causing this 'collection process' to take **several hours** instead of 2 minutes. The files were rejected from the KOLIBRI Cloud as they were faulty, but re-downloaded and analysed later again and again.  
+A customer used a slow FTP server located in South America and summed up multiple thousands of faulty measurement files. The 'PressureSuite Cloud FTP collection service' tried to download this multiple times causing this 'collection process' to take **several hours** instead of 2 minutes. The files were rejected from the PressureSuite Cloud as they were faulty, but re-downloaded and analysed later again and again.  
 This caused the ingestion time of the measurements to be delayed not by the usual 1-5 minutes but by a random (and exponentially increasing) time. On May 26, we saw that it took between 2-3 hours depending on the speed of the particular FTP and the amount of collected data.  
 This also caused to overload the warn mail system which again caused delays in sending the "Level Alarm"-mails to some customers.  
 
@@ -231,7 +231,7 @@ During this time period, all cellular devices (GSM/ARC1) using ftp.gsmdata.ch co
 Nevertheless, the ARC1/GSMs are programmed in a way that after a positive re-connection they re-send the missing data. 
 
 **Next Steps:**  
-There should not been data holes due to the ARC1s/GSMs fault-tolerance strategy. If you think there are any data holes, please contact kolibri@keller-druck.ch to remotely request the missing data.
+There should not been data holes due to the ARC1s/GSMs fault-tolerance strategy. If you think there are any data holes, please contact pressuresuite@keller-druck.com to remotely request the missing data.
 
 ---
 
@@ -258,7 +258,7 @@ While fixing the issue the LoRa data on Monday some LoRa messages where wrongly 
 
 As the data was temporarily stored in a DL-queue engineers restored all the data again on Monday night.
 
-If there are still data missing, please contact kolibri@keller-druck.com to restore missing data.
+If there are still data missing, please contact pressuresuite@keller-druck.com to restore missing data.
 
 **Mitigation:**  
 Engineers found a bug that caused a wrong conversion and assignment of the GSM1/ARC1 channels.  
@@ -305,7 +305,7 @@ None.
 
 **Summary of Impact**:  
 An important Cloud-WebJob has stopped and was under maintenance due to erroneous behavior. 
-No new data was processed but stored in a data queue (service bus), therefore no new data was shown on the KOLIBRI Cloud web app.
+No new data was processed but stored in a data queue (service bus), therefore no new data was shown on the PressureSuite Cloud web app.
 There was no known data loss. 
 
 **Preliminary Root Cause**:
@@ -371,13 +371,13 @@ Known issues:
 The storing of LoRa messages from TTN and Loriot.io was temporary impossible. LoRa from Actility networks were stored.
 
 **Preliminary Root Cause**:
-Engineers determined that an error in a recent deployment of a new auto-assignment feature to the backend of the KOLIBRI Cloud caused a conflict with specific LoRa-server protocol implementation.
+Engineers determined that an error in a recent deployment of a new auto-assignment feature to the backend of the PressureSuite Cloud caused a conflict with specific LoRa-server protocol implementation.
 
 **Mitigation:**:  
 Engineers fixed and tested the protocol issue.
 
 **Next Steps**:  
-Customers who lost important data can contact the KOLIBRI Cloud support (kolibri@keller-druck.com) to retrieve the missing measurement data from the log files.
+Customers who lost important data can contact the PressureSuite Cloud support (pressuresuite@keller-druck.com) to retrieve the missing measurement data from the log files.
 
 ---
 

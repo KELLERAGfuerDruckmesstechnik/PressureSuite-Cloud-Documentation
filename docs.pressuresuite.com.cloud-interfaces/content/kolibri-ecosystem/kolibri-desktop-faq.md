@@ -2,16 +2,16 @@
 title: PressureSuite Desktop FAQ
 menu:
     main:
-        parent: kolibri-ecosystem
+        parent: pressuresuite-ecosystem
         weight: 2
 ---
 
 # Frequently askes questions
 
 Tutorials:
-- [KOLIBRI Desktop - Installation](https://www.youtube.com/watch?v=OOwIafnIoro)
-- [KOLIBRI Desktop - Overview](https://www.youtube.com/watch?v=-Ib0wYZtKso)
-- [KOLIBRI Desktop - In Depth](https://www.youtube.com/watch?v=yLmyfeqxghs)
+- [PressureSuite Desktop - Installation](https://www.youtube.com/watch?v=OOwIafnIoro)
+- [PressureSuite Desktop - Overview](https://www.youtube.com/watch?v=-Ib0wYZtKso)
+- [PressureSuite Desktop - In Depth](https://www.youtube.com/watch?v=yLmyfeqxghs)
 
 ## How can I delete measurements from the device?
 

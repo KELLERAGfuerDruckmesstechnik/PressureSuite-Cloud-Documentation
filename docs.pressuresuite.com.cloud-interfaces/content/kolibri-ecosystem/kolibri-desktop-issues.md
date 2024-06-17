@@ -2,7 +2,7 @@
 title: PressureSuite Desktop Known Issues
 menu:
     main:
-        parent: kolibri-ecosystem
+        parent: pressuresuite-ecosystem
         weight: 4
 toc: false
 ---

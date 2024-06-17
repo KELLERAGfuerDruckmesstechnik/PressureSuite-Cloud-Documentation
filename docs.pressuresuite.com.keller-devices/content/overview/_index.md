@@ -18,7 +18,7 @@ They are especially suitable with our [Data Loggers](https://keller-druck.com/en
 
 KELLER has more than a decade experience with sending measuring data with mobile 2G/3G, 4G.
 
-- The [ARC1 remote transmitter](https://keller-druck.com/en/products/wireless-solutions/remote-transmission-units/arc1-tube) is a battery-operated, robust sending device that is compatible with the KOLIBRI Cloud.
+- The [ARC1 remote transmitter](https://keller-druck.com/en/products/wireless-solutions/remote-transmission-units/arc1-tube) is a battery-operated, robust sending device that is compatible with the PressureSuite Cloud.
 
 Multiple housing variants such as:  
 
@@ -36,7 +36,7 @@ Connectivity variants:
 Being an [early adopter](https://www.thethingsnetwork.org/labs/story/pressure-manometer-node-shows-live-data-on-a-website-1) and member of the LoRa Alliance since 2016 KELLER has a lot experience with LoRa. See [Datasheet PDF](https://download.keller-druck.com/api/download/VyyiKwTWpeTxLdpb9sSSK4/en/2019-09.pdf)  
  ![ARC1](../ARC-1.jpg "ARC1")
 
-- The [ARC1 remote transmitter](https://keller-druck.com/en/products/wireless-solutions/remote-transmission-units/arc1-tube) is a battery operated, robust sending device that is compatible with the KOLIBRI Cloud.
+- The [ARC1 remote transmitter](https://keller-druck.com/en/products/wireless-solutions/remote-transmission-units/arc1-tube) is a battery operated, robust sending device that is compatible with the PressureSuite Cloud.
 
 Connectivity variants:
 
@@ -52,7 +52,7 @@ Multiple housing variants such as:
 
 ## NEW: ADT1-TUBE and ADT1-BOX
 
-- The **ADT-1 remote transmitter** is a battery operated sending device that is compatible with the KOLIBRI Cloud.  
+- The **ADT-1 remote transmitter** is a battery operated sending device that is compatible with the PressureSuite Cloud.  
  ![ADT1-Box Open](../adt1-box-offen.jpg "ADT1-Box open")  
  ![ADT1-Tube](../adt1-tube-1.jpg "ADT1-Tube")
  ![ADT1-Tube Open](../adt1-tube-offen.jpg "ADT1-Tube open")

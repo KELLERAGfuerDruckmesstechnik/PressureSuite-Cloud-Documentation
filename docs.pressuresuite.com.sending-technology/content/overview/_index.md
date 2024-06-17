@@ -37,4 +37,4 @@ Coverage NB-IoT/LTE-M: https://www.gsma.com/iot/deployment-map/
 - What is your budget? Depending on the number of needed devices, LoRa devices have the potential to lower the cost.  
 - How important are 'real-time' data for my application?  
 - Is it ok that a LoRa Network provider temporary stores my measurement data?  
-- Why not try out a device from KELLER with the KOLIBRI Cloud and try it out in your environment for your application? In just a couple of days, you have a proof-of-concept of your application!
+- Why not try out a device from KELLER with the PressureSuite Cloud and try it out in your environment for your application? In just a couple of days, you have a proof-of-concept of your application!

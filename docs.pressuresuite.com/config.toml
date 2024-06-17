@@ -1,7 +1,7 @@
 baseURL = "https://docs.pressuresuite.com/"
 languageCode = "en-us"
 relativeURLs = true
-title = "KOLIBRI Cloud, the secure Web Portal to your measurements made with pressure sensors."
+title = "PressureSuite Cloud, the secure Web Portal to your measurements made with pressure sensors."
 googleAnalytics = "UA-117920007-1"
 pygmentsUseClasses = true
 

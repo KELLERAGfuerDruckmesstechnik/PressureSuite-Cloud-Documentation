@@ -2,7 +2,7 @@
 title: PressureSuite Desktop Roadmap
 menu:
     main:
-        parent: kolibri-ecosystem
+        parent: pressuresuite-ecosystem
         weight: 3
 ---
 
@@ -35,19 +35,19 @@ PLANNED
 - **Visualize**: Fixed timespan labels displayed as datetime labels
 - **IoT Device Configuration**: Refresh summary when loading preset 
 - **Support Tools**: Fixed logfile send functionality 
-- Fixed crash when starting a second instance of KOLIBRI Desktop
+- Fixed crash when starting a second instance of PressureSuite Desktop
 
 
 ## Version 6.3.24030.01 (January 30, 2024)
 
 ### Description:
-This latest update integrates support for our IoT devices, namely ARC1 and ADT1. KOLIBRI Desktop now seamlessly incorporates the functionality of the IoT software 'GsmConfiguration'/'GSM Setup' to efficiently program our IoT devices, enhancing user experience and device management capabilities.
+This latest update integrates support for our IoT devices, namely ARC1 and ADT1. PressureSuite Desktop now seamlessly incorporates the functionality of the IoT software 'GsmConfiguration'/'GSM Setup' to efficiently program our IoT devices, enhancing user experience and device management capabilities.
 
 ### Features and Enhancements:
 
-- **IoT Device Support**: Users can now leverage KOLIBRI Desktop to configure and manage ARC1 and ADT1 IoT devices effortlessly.
+- **IoT Device Support**: Users can now leverage PressureSuite Desktop to configure and manage ARC1 and ADT1 IoT devices effortlessly.
 - **Simplified File Import**: Introducing the ability to drag and drop measurement files (.json and .dx5) directly from the file explorer to the measurements list.
-- **Logfile Display Tool**: A new tool has been added to facilitate the display of KOLIBRI Desktop logfiles, aiding in troubleshooting and system monitoring.
+- **Logfile Display Tool**: A new tool has been added to facilitate the display of PressureSuite Desktop logfiles, aiding in troubleshooting and system monitoring.
 
 ### Bug Fixes:
 
@@ -57,7 +57,7 @@ This latest update integrates support for our IoT devices, namely ARC1 and ADT1.
 ## Version 6.2.23251.01 (September 08, 2023)
 
 ### Description:
-Hotfix: KOLIBRI Desktop crashes on startup on certain conditions.
+Hotfix: PressureSuite Desktop crashes on startup on certain conditions.
 
 ## Version 6.2.23236.05 (August 24, 2023)
 
@@ -150,7 +150,7 @@ This update introduces some requested features and various small bug fixes
 #### Features and Enhancements
 
 - Major language update for Polish
-- Added silent installer for KOLIBRI Desktop. Call installer with option "/quiet" to install KOLIBRI Desktop and drivers without any user interaction (Eg. "KolibriDesktopInstaller.exe /quiet")
+- Added silent installer for PressureSuite Desktop. Call installer with option "/quiet" to install PressureSuite Desktop and drivers without any user interaction (Eg. "PressureSuiteDesktopInstaller.exe /quiet")
 - Added new Calculation: Pressure to Force
 - Memory errors of KELLER Devices are now recognized and further actions suggested
 
@@ -181,11 +181,11 @@ This update introduces an improved performance for the device search.
 
 #### Description
 
-In this update we introduce the new DEMO MODE. This mode can be used to try out or present KOLIBRI Desktop without connected devices. 
+In this update we introduce the new DEMO MODE. This mode can be used to try out or present PressureSuite Desktop without connected devices. 
 
 #### Features and Enhancements
 
-- DEMO MODE: Added a mode to use KOLIBRI Desktop without connected devices. This mode can be used to to try out KOLIBRI Desktop without devices.
+- DEMO MODE: Added a mode to use PressureSuite Desktop without connected devices. This mode can be used to to try out PressureSuite Desktop without devices.
 - New button to delete multiple records at once.
 - Configuration: When starting a record the device time is synchronized by default with the option to deselect the synchronisation.
 
@@ -203,13 +203,13 @@ In this update we introduce the new DEMO MODE. This mode can be used to try out 
 
 #### Description
 
-With this version we introduce the compatibility of [KELLER remote transmission units](https://keller-druck.com/en/products/wireless-solutions). KOLIBRI Desktop can read the measurements from ADT1, ARC1 and GSM-1 & GSM-2 devices.  
+With this version we introduce the compatibility of [KELLER remote transmission units](https://keller-druck.com/en/products/wireless-solutions). PressureSuite Desktop can read the measurements from ADT1, ARC1 and GSM-1 & GSM-2 devices.  
 
 #### Features and Enhancements
 
-- **[General]**: New devices supported by KOLIBRI Desktop: ADT1, ARC1, GSM-1, GSM-2. Measurements can be read out but it can not be configured. For a configuration of the remote transmission units it is necessary to use the ["GsmSetup"-tool](https://keller-druck.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results).
-- **[General]**: Connected KELLER devices that are not supported by KOLIBRI Desktop will now show up as "not supported KELLER device"
-- **[Tools]**: Added the import function for Logger 5 and KOLIBRI JSON files  
+- **[General]**: New devices supported by PressureSuite Desktop: ADT1, ARC1, GSM-1, GSM-2. Measurements can be read out but it can not be configured. For a configuration of the remote transmission units it is necessary to use the ["GsmSetup"-tool](https://keller-druck.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results).
+- **[General]**: Connected KELLER devices that are not supported by PressureSuite Desktop will now show up as "not supported KELLER device"
+- **[Tools]**: Added the import function for Logger 5 and PressureSuite JSON files  
 
 #### Bug fixes
 
@@ -224,15 +224,15 @@ With this update we introduce many features that were requested and some quality
 
 #### Features and Enhancements
 - **[Devices]**: Lifted restriction to only have one device connected: Multiple devices can now be connected and will be displayed in the list of ports. It can be switched between devices.
-- **[Devices]**: KELLER devices that are not compatible with KOLIBRI Desktop will be recognized and an information will be displayed.
-- **[Import]**: Import Logger5 (.dx5) and KOLIBRI (.json) files was has now a summary after the import and the import is way faster
+- **[Devices]**: KELLER devices that are not compatible with PressureSuite Desktop will be recognized and an information will be displayed.
+- **[Import]**: Import Logger5 (.dx5) and PressureSuite (.json) files was has now a summary after the import and the import is way faster
 - **[Export]**: Added more information about the record and device to the excel export
-- **[Export]**: Export will now export the Units in the KOLIBRI Desktop settings (instead of just bar and celsius)
-- **[Export]**: New export format: Hydras, KOLIBRI Format
+- **[Export]**: Export will now export the Units in the PressureSuite Desktop settings (instead of just bar and celsius)
+- **[Export]**: New export format: Hydras, PressureSuite Format
 - **[Configuration]**: CTD measuring is now configurable for DCX CTD
 - **[Configuration]**: Added new images to overflow configuration
 - **[Language] New languages: Italian, French and Spanish
-- **[K-114BT]**: The K-114 Bluetooth can now reliably communicate with KOLIBRI Desktop
+- **[K-114BT]**: The K-114 Bluetooth can now reliably communicate with PressureSuite Desktop
 - **[Support tools]**: Added functionalities to "read memory" tool: option to read configuration, option to send directly to KELLER after reading and option to add log files when sending to KELLER.
 
 #### Bug fixes
@@ -244,7 +244,7 @@ With this update we introduce many features that were requested and some quality
 - The export now suggests a filename
 - fixed: export for multiple records would ignore some of the selected records
 - added log file path when error message says: further infos in the log file
-- KOLIBRI Desktop no longer crashes if the [Logo.jpg] is missing
+- PressureSuite Desktop no longer crashes if the [Logo.jpg] is missing
 
 ## Version 6.2.19361.1
 
@@ -252,7 +252,7 @@ With this update we introduce many features that were requested and some quality
 
 With this update we introduce the water configuration. It is now possible to configure the water configuration on the devices and calculate the water level.
 #### Features and Enhancements
-- **[General]**: KOLIBRI Desktop now shows an icon during startup
+- **[General]**: PressureSuite Desktop now shows an icon during startup
 - **[Configuration]**: Added water configuration
 - **[Configuration]**: Rearranged the existing configuration tiles
 - **[Import]**: Implemented a experimental feature to import the old Logger 5 files (.dx5)
@@ -268,11 +268,11 @@ In this update we introduce the event-triggered recording. We reworked the entir
 
 #### Features and Enhancements
 
-- **[General]**: KOLIBRI Desktop no longer automatically searches for devices while communicating with another device
+- **[General]**: PressureSuite Desktop no longer automatically searches for devices while communicating with another device
 - **[General]**: Navigation is no longer limited while communicating
 - **[Configuration]**: Added event-triggered recording
 - **[Configuration]**: Reworked the existing configuration
-- **[Settings]**: KOLIBRI Desktop settings are no longer reset after an update
+- **[Settings]**: PressureSuite Desktop settings are no longer reset after an update
 - **[Live data]**: The Windows sleep mode is now disabled while recording live data
 - **[Device overview]**: Device overview now refreshes after the device is configured 
 
@@ -290,7 +290,7 @@ This version introduces the Dutch translation and focuses on bugfixes. We always
 
 #### Features and Enhancements
 
-- **[General]**: New language: KOLIBRI Desktop is now available in **Dutch**.
+- **[General]**: New language: PressureSuite Desktop is now available in **Dutch**.
 - **[Export]**: The export of large records is now considerably faster.
 
 #### Bug fixes

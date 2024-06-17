@@ -16,7 +16,7 @@ The communication protocol are public:
 - [Communication protocol for ARC1 cellular interface](https://keller-druck.com/en/downloads?id=84kw6u2pCAozgisVdHLVgK#results)
 - [Communication protocol for ARC1 LoRaWAN](https://keller-druck.com/en/downloads?id=X35LDeWEgkPdjekTAzEn6b#results)
 
-The *KellerAg.Shared.IoT.Converters* are an example implementation of said communication protocols and used by KELLER's [KOLIBRI Cloud](www.pressuresuite.com).
+The *KellerAg.Shared.IoT.Converters* are an example implementation of said communication protocols and used by KELLER's [PressureSuite Cloud](www.pressuresuite.com).
 ![overview](https://github.com/KELLERAGfuerDruckmesstechnik/KellerAg.Shared.IoT.Converters/blob/master/Readme.Overview.png?raw=true)
 
 ## Github-URL

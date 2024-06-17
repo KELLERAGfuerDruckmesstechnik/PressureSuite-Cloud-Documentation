@@ -1,5 +1,5 @@
 LoRaWAN
-KOLIBRI
+PressureSuite
 TTN
 LoRa
 EUI
