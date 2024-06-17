@@ -248,7 +248,7 @@ eg  ISO 9001 , ISO 20000-1: 2011, ISO 2230, ISO 27001, ISO 27017, ISO 27018, BIR
 
 ## Is there a terms of service(ToS)?
 
-Yes.  See: https://docs.kolibricloud.ch/Nutzungsbedingungen_TermsAndConditions_KOLIBRI_Cloud.pdf
+Yes.  See: https://docs.kolibricloud.ch/PressureSuite_Cloud_Terms_and_Conditions_2024.pdf
 ## Does the chart show all measurement points?
 
 To reduce the computing power needed to show the loaded measurement points in the chart (which is quite scarce when using a browser) a downsample algorithm is used. This algorithm reduces the displayed measurement points to a maximum number of 1500pts / channel. The algorithm is based on *Largest Triangle Three Buckets algorithm* described by *Sveinn Steinarsson* in his master thesis *"Downsampling Time Series for Visual Representation"* at the Faculty of Industrial Engineering, Mechanical Engeneering and Computer Sciece University of Iceland (<https://skemman.is/handle/1946/15343>).
