@@ -79,7 +79,7 @@ The root cause was a data base quota that reached its limit. After increasing th
 ### 18.December 20:00 UTC - 20.March 2023 22:30 UTC
 
 **Summary of Impact:**  
-On the weekend evening, the API service ceased functioning, causing all attempts to connect to fail, including the web app www.kolibricloud.ch. However, the processes to ingest data continued to operate successfully, and no measurement data was lost. The engineers began addressing the issue on Monday morning, but were unable to determine the root cause. Ultimately, a new server was established and DNS routing was modified approximately 30 minutes prior to midnight, resulting in the API's restoration.  
+On the weekend evening, the API service ceased functioning, causing all attempts to connect to fail, including the web app www.pressuresuite.com. However, the processes to ingest data continued to operate successfully, and no measurement data was lost. The engineers began addressing the issue on Monday morning, but were unable to determine the root cause. Ultimately, a new server was established and DNS routing was modified approximately 30 minutes prior to midnight, resulting in the API's restoration.  
 
 **Root Cause:**  
 Still Unknown.  
@@ -100,7 +100,7 @@ This lead us to the point to implement further alarming mechanism to monitor the
 ### 05.March - 06. March 2023 15:45 CET
 
 **Summary of Impact:**  
-Starting on 5th March 2023, it was not possible to login anymore to https://www.kolibricloud.ch  
+Starting on 5th March 2023, it was not possible to login anymore to https://www.pressuresuite.com  
 Access to the API with 'Permanent Access Token' and ingress of measurement data worked so far.  
 On 6th March 2023 - 14:45 CEST it was possible again to login.  
 
@@ -276,7 +276,7 @@ During one day, all measurements of all LoRa devices have a wrong channel.
 This also caused wrong alarms-mails being triggered.
 
 **Preliminary Root Cause:**  
-SW Engineers determined that an error in using the new open-source converter SW (https://iotconverter.kolibricloud.ch/) caused the a wrong conversion where the channel mapping (https://docs.kolibricloud.ch/cloud-interfaces/api/channels/) was off by one (channel).
+SW Engineers determined that an error in using the new open-source converter SW (https://iotconverter.pressuresuite.com/) caused the a wrong conversion where the channel mapping (https://docs.pressuresuite.com/cloud-interfaces/api/channels/) was off by one (channel).
 
 **Mitigation:**  
 The DevOps Engineer fixed and tested the issue by updating a newer version.  
@@ -323,7 +323,7 @@ None.
 ### 10.Feb.2020 from 17:30 CET - 11.Feb.2020 08:30 CET
 
 **Summary of Impact**:  
-The https://www.kolibricloud.ch web app showed no content. Only the the https://test.kolibricloud.ch test environment was working.
+The https://www.pressuresuite.com web app showed no content. Only the the https://test.pressuresuite.com test environment was working.
 
 **Preliminary Root Cause**:
 Engineers determined that an error in deployment process that just happens to stop working.  
@@ -439,7 +439,7 @@ No data will be lost during this time.
 ### 20. September 2021
 
 **Planned work**  
-- We are enabling the auto-alarming feature for all customers. This might trigger warn mails to those customers who have an E-Mail address registered in the account settings (https://www.kolibricloud.ch/account-settings)
+- We are enabling the auto-alarming feature for all customers. This might trigger warn mails to those customers who have an E-Mail address registered in the account settings (https://www.pressuresuite.com/account-settings)
 - We are going to switch the SSL certificate. This might cause temporary connection problems and problems when accessing the data through the API.
 
 ---

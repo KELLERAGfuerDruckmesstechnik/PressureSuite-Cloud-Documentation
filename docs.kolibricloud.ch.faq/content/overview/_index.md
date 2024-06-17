@@ -43,7 +43,7 @@ If you miss a question/answer please contact <kolibri@keller-druck.com> or write
 KELLER has been using IoT devices for many years: GSM data loggers and now also LoRa devices.  
 **Cloud**: Can be defined as follows: By "cloud computing" one can mean storing and accessing data and programs via the Internet or the opposite is saving data to your hard disk. The term "cloud" is also used as a metaphor for "the Internet".  
 **LoRa** (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to GSM, measurement data from the KELLER sensor can be sent away wirelessly to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers. LoRa has the advantages over GSM that it is cheaper and requires less power (smaller, cheaper battery).  
-See more at <https://docs.kolibricloud.ch/sending-technology/lora-technology/>
+See more at <https://docs.pressuresuite.com/sending-technology/lora-technology/>
 
 ## What kind of IoT devices does KELLER have?
 See https://keller-druck.com/en/products/wireless-solutions
@@ -68,7 +68,7 @@ These products all use the latest technologies and a customized design. In addit
 KOLIBRI is the name of the new KELLER Pressure product line.
 Part of this new product line is the cloud possibilities, which are:
 
-- WebApp : The "Online Program" at www.kolibricloud.ch
+- WebApp : The "Online Program" at www.pressuresuite.com
 
 - API : A standardized interface to transfer data (e.g. measurement data) in a common internet format to other programs/services/clouds
 
@@ -78,11 +78,11 @@ Part of this new product line is the cloud possibilities, which are:
 
 ## Should I use the Cloud or the GSM2Datamanager solution?
 
-[Please see this comparison.](https://docs.kolibricloud.ch/cloud-interfaces/overview/differences/)
+[Please see this comparison.](https://docs.pressuresuite.com/cloud-interfaces/overview/differences/)
 
 ## What is the roadmap of the features?
 
-[Please see this overview.](https://docs.kolibricloud.ch/overview/roadmap/)
+[Please see this overview.](https://docs.pressuresuite.com/overview/roadmap/)
 
 ## The customer wants to create his own web app or mobile app. How can KELLER help the customer?
 
@@ -100,9 +100,9 @@ Please contact <marketing@keller-druck.com>
 
 ## How do I sign up? How do I log in? How can I test it?
 
-See: <https://www.kolibricloud.ch>
+See: <https://www.pressuresuite.com>
 For all those interested, there is a test user account (Demo1234 / Demo1234), with which everyone can log in and try out the WebApp.
-There are a few test devices visible and their measurement data. The login password can be seen on <https://www.kolibricloud.ch.>
+There are a few test devices visible and their measurement data. The login password can be seen on <https://www.pressuresuite.com.>
 
 ## Does the website also work on a mobile phone?
 
@@ -125,7 +125,7 @@ There are three categories:
 ## How do I know that the devices are communicating?
 
 On the WebApp you can read the time of the last communication.
-![Last Data on www.kolibricloud.ch](../LastData.png"Last Data")
+![Last Data on www.pressuresuite.com](../LastData.png"Last Data")
 
 ## Can I use existing data from the GSM2Datamanager switch to the KOLIBRI Cloud?
 
@@ -144,7 +144,7 @@ Contact to <kolibri@keller-druck.com>
 LoRa (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to GSM, measurement data from the KELLER sensor can be sent away wireless to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers.
 LoRa has the advantages over GSM that it is cheaper and requires less power (smaller, cheaper battery)
 
-See <https://docs.kolibricloud.ch/sending-technology/lora-technology/>
+See <https://docs.pressuresuite.com/sending-technology/lora-technology/>
 
 ## What is an API?
 
@@ -153,11 +153,11 @@ See <https://docs.kolibricloud.ch/sending-technology/lora-technology/>
 The Internet and Internet products essentially consist of devices that communicate with each other. The format of this interface is often a REST API. All large companies have APIs. Google Maps, for example, needs an API to query where a place is and reacts to maps, coordinates, ...
 
 APIs are not sorcery solely for developers.
-The KOLIBRI Cloud API can also be tested (if authorized) at <https://api.kolibricloud.ch/swagger/index.html?url=/swagger/v1/swagger.json>
+The KOLIBRI Cloud API can also be tested (if authorized) at <https://api.pressuresuite.com/swagger/index.html?url=/swagger/v1/swagger.json>
 
 If you as a specific software aks. e.g. "Give me the list of all devices", the answer would be:
 
-`https://api.kolibricloud.ch/v1/Devices`
+`https://api.pressuresuite.com/v1/Devices`
 
 And in answer you get from KOLIBRI Cloud:
 
@@ -248,7 +248,7 @@ eg  ISO 9001 , ISO 20000-1: 2011, ISO 2230, ISO 27001, ISO 27017, ISO 27018, BIR
 
 ## Is there a terms of service(ToS)?
 
-Yes.  See: https://docs.kolibricloud.ch/PressureSuite_Cloud_Terms_and_Conditions_2024.pdf
+Yes.  See: https://docs.pressuresuite.com/PressureSuite_Cloud_Terms_and_Conditions_2024.pdf
 ## Does the chart show all measurement points?
 
 To reduce the computing power needed to show the loaded measurement points in the chart (which is quite scarce when using a browser) a downsample algorithm is used. This algorithm reduces the displayed measurement points to a maximum number of 1500pts / channel. The algorithm is based on *Largest Triangle Three Buckets algorithm* described by *Sveinn Steinarsson* in his master thesis *"Downsampling Time Series for Visual Representation"* at the Faculty of Industrial Engineering, Mechanical Engeneering and Computer Sciece University of Iceland (<https://skemman.is/handle/1946/15343>).

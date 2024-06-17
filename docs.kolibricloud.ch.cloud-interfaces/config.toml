@@ -1,4 +1,4 @@
-baseURL = "https://docs.kolibricloud.ch/cloud-interfaces/"
+baseURL = "https://docs.pressuresuite.com/cloud-interfaces/"
 languageCode = "en-us"
 title = "Documentation to various interfaces"
 googleAnalytics = "UA-117920007-1"

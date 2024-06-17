@@ -8,7 +8,7 @@ menu:
 
 # How to set up a GSM/ARC device to send data to the cloud
 
-Please refer to the [General Process](https://docs.kolibricloud.ch/overview/process) of working with the KOLIBRI Cloud.
+Please refer to the [General Process](https://docs.pressuresuite.com/overview/process) of working with the KOLIBRI Cloud.
 To register a GSM/ARC device please follow the following steps:
 
 1. Consider staying in close contact with the KELLER sales engineer and/or the KOLIBRI Cloud support team (kolibri@keller-druck.com)  
@@ -22,7 +22,7 @@ To register a GSM/ARC device please follow the following steps:
 
   - a) If you wish to use an FTP account provided by KELLER, then please, contact KOLIBRI Cloud support or your KELLER sales representative to communicate the needed credentials (host-name, user-name, password).
   - b) If you wish to use an own hosted FTP account, please be aware that only certain security protocols are supported. SFTP is not supported. Some FTPS versions are supported. In doubt, please ask the KOLIBRI Cloud support team (kolibri@keller-druck.com).
-  - c) To let the device automatically be assigned to your KOLIBRI Cloud account, register your FTP account first in your KOLIBRI Cloud in https://www.kolibricloud.ch/account-settings  
+  - c) To let the device automatically be assigned to your KOLIBRI Cloud account, register your FTP account first in your KOLIBRI Cloud in https://www.pressuresuite.com/account-settings  
   ![Add an FTP account to auto-register new devices](../add-ftp-account.png "Add a FTP account to auto-register new devices")
 
 3. Connect the device with your Windows PC (you might need a K114 adapter) and use the GSM-Setup tool according its manual.

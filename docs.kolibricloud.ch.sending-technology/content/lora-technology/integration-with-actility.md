@@ -49,7 +49,7 @@ Give a **Name** and **Add** the new created application server as a **Local appl
 ![Create a routing profile](../../thingpark/003_create_routing_profile_2.png "Create a routing profile")
 
 ### Step 5A
-Before the device can be created it first has to be configured, too. Use the tool ["GSM setup for remote transmission units and its manual"](https://keller-druck.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results) and a similar process like in https://docs.kolibricloud.ch/sending-technology/gsm-technology/ 
+Before the device can be created it first has to be configured, too. Use the tool ["GSM setup for remote transmission units and its manual"](https://keller-druck.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results) and a similar process like in https://docs.pressuresuite.com/sending-technology/gsm-technology/ 
 
 ### Step 5B
 Under [Settings] choose the correct "Connection Device/type" based on the attached sensor/probe.  
@@ -61,7 +61,7 @@ In [Settings] choose only the channels that are of interest. As smaller the amou
 ![Configure a LoRa device 2](../../thingpark/004_configure_device_2.png  "Configure a LoRa device 2") 
 
 ### Step 5D
-Under [LoRa Settings] generally use the default values unless you now exactly what you are doing. See https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/  
+Under [LoRa Settings] generally use the default values unless you now exactly what you are doing. See https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device/  
 Write down the **Device EUI** and the **App Key**.  
 The **Application EUI** has to be programmed based on the provider. For Swisscom this is ```F0-3D-29-AC-71-00-00-01```.  
 ![Configure a LoRa device 3](../../thingpark/004_configure_device_3.png  "Configure a LoRa device 3") 
@@ -75,7 +75,7 @@ Under "Application server routing profile" choose routing profile which was crea
 
 ### Step 7
 If the device is already in a accessible KOLIBRI Cloud group it should be possible to see new measurement data from the device. With the connected GSMSetup-tool it is possible to manually execute the sending of measurement data or device information.  
-It is now possible for contributor users to **ADD LoRa devices** in the account settings (https://www.kolibricloud.ch/account-settings)
+It is now possible for contributor users to **ADD LoRa devices** in the account settings (https://www.pressuresuite.com/account-settings)
 
 ### Tips:
 - The above guide is based on the experience with Swisscom that uses the Actility/ThingPark Wireless platform. It is assumed that other telecom company such as Digita or KNP are using the same platform and therefore have similar steps. Please consult and prefer the guides provided by the telecom company.  

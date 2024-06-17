@@ -38,7 +38,7 @@ It was always possible to change the coordinates of a device from the WebApp. No
 
 #### Device Alarms now store a measurement
 
-It is possible to configure one (1) unit alarm in the unit that has its own alarm value test interval. Whenever an alarm value exceeds/falls below the alarm value, an alarm is triggered. This alarm can be sent as SMS, email or to the cloud (FTP). In the KOLIBRI Cloud it is visible in the alarm list (<https://www.kolibricloud.ch/alarms>) as 'Triggerd By Device'.  
+It is possible to configure one (1) unit alarm in the unit that has its own alarm value test interval. Whenever an alarm value exceeds/falls below the alarm value, an alarm is triggered. This alarm can be sent as SMS, email or to the cloud (FTP). In the KOLIBRI Cloud it is visible in the alarm list (<https://www.pressuresuite.com/alarms>) as 'Triggerd By Device'.  
 In this version, the measurement that triggered the alarm is now also saved for each such alarm. This in turn makes it possible to trigger a Cloud alarm that reacts a few minutes after the device alarm and triggers the sending of (several) warning emails. Otherwise, the cloud alarm would have been triggered (hours later) when the batch of measurements was sent.
 
 ---
@@ -77,7 +77,7 @@ Changing configurations, settings and calculations are now stored to give certai
 
 #### Auto-Device-Alarms
 
-Some alarms are automatically triggered when certain events occur. These alarms are sent to the alarm mail addresses defined in the *Account Settings* (<https://www.kolibricloud.ch/account-settings>). Users with the 'Contributor' or 'Customer Admin' role can add one or multiple E-Mail recipients.  
+Some alarms are automatically triggered when certain events occur. These alarms are sent to the alarm mail addresses defined in the *Account Settings* (<https://www.pressuresuite.com/account-settings>). Users with the 'Contributor' or 'Customer Admin' role can add one or multiple E-Mail recipients.  
 
 * Device Alarm  
   * Device stopped sending measurements (with E-Mail-alarm)
@@ -126,12 +126,12 @@ Several bug fixes and speed improvements.
 #### TTN V3 descriptions
 
 With the change from the open LoRaWAN network platform TheThingsNetwork (TTN) from V2 to V3 we added our LoRaWAN devices to the new TTN repository in order to easier configure or change the devices into TTN v3.  
-![TTN v3 device repository](https://docs.kolibricloud.ch/sending-technology/TTNv3-easy-02.png)
+![TTN v3 device repository](https://docs.pressuresuite.com/sending-technology/TTNv3-easy-02.png)
 
 From April 2021 on, no new devices will be able to be added to the old V2 stack at <https://console.thethingsnetwork.org/>. V3 is available on <https://eu1.cloud.thethings.network/console/>
 
 Version 2 will definitely shut down on December 1st 2021. Please migrate your devices into TTN v3!
-More information: <https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-ttn/>  or <https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256>
+More information: <https://docs.pressuresuite.com/sending-technology/lora-technology/integration-with-ttn/>  or <https://www.thethingsnetwork.org/forum/t/the-things-network-upgrade-to-v3/43256>
 
 ### v.1.21088.01 (30. March 2021)
 
@@ -178,7 +178,7 @@ A check list and a graphical overview is wished.
 
 #### Free .NET DLL to convert data from/to ARC1/ADT1
 
-See: <https://iotconverter.kolibricloud.ch>  
+See: <https://iotconverter.pressuresuite.com>  
 
 ### v.1.20228.01 (15. August 2020)
 
@@ -249,7 +249,7 @@ Some devices configurations can now be seen and saved through the KOLIBRI Cloud.
 Chart performance has been optimized. This was accomplished by two main adjustments:
 
 * Calculating the correct timezone to display on the chart is a time-consuming thing when done in the browser. That is why it is now calculated on the backend.
-* Displaying over 100'000 data points per channel is not efficient nor really useful as the chart is limited to 1000 pixel wide so it is not possible to present them. The backend no uses the [Largest Triangle Three Buckets algorithm](https://docs.kolibricloud.ch/faq/overview/#does-the-chart-show-all-measurement-points) to down-sample the loaded data to a maximum of 1'500 data points per channel. This leads to a drastic performance boost without a significant accuracy loss. The downside of this is that when zooming in some values might be missing. The export feature still exports all data.
+* Displaying over 100'000 data points per channel is not efficient nor really useful as the chart is limited to 1000 pixel wide so it is not possible to present them. The backend no uses the [Largest Triangle Three Buckets algorithm](https://docs.pressuresuite.com/faq/overview/#does-the-chart-show-all-measurement-points) to down-sample the loaded data to a maximum of 1'500 data points per channel. This leads to a drastic performance boost without a significant accuracy loss. The downside of this is that when zooming in some values might be missing. The export feature still exports all data.
 
 #### Last Data Values
 

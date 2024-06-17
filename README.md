@@ -1,6 +1,6 @@
 # Introduction
 
-This are the resource files for the documentation web page for the KOLIBRI Cloud. The compiled result can be seen on <https://docs.kolibricloud.ch>
+This are the resource files for the documentation web page for the KOLIBRI Cloud. The compiled result can be seen on <https://docs.pressuresuite.com>
 
 It is build using markdown files (in /content/...) and the Hugo project (<https://gohugo.io/)> to transform it to HTML.
 The template was taken from <https://github.com/brocaar/docs.loraserver.io>
@@ -11,7 +11,7 @@ To deploy a change you basically have to change the markdown files and `git push
 
 To test the page locally do this:
 
-1. Choose the folder you want to change (e.g. /docs.kolibricloud.ch.keller-devices/)
+1. Choose the folder you want to change (e.g. /docs.pressuresuite.com.keller-devices/)
 2. To start Hugo as a web-server (auto-refreshing on file-change), run the following command from the root of this repository: `hugo server -w` (when not on windows you have to install hugo first and use the installed binary)
 3. Make your changes in the files and see the changes on the local Web Server on <http://localhost:1313/> (or another port)
 

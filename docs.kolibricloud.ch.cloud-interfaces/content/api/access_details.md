@@ -26,11 +26,11 @@ It is recommended to periodically gather data and store it into an own DB by:
   - you might check first if the measurement(value+timestamp) is not already stored because
   - It is possible that a request fails. To solve this error case please re-call the data later again. You might gather data from an overlapped time slot and exclude measurements that has been stored already.
 
-Be aware that it is not possible to get calculated measuring data (eg. water level) from the API. See https://docs.kolibricloud.ch/cloud-interfaces/overview/howto/#how-do-i-get-calculated-data-from-the-api
+Be aware that it is not possible to get calculated measuring data (eg. water level) from the API. See https://docs.pressuresuite.com/cloud-interfaces/overview/howto/#how-do-i-get-calculated-data-from-the-api
 
 # Important endpoints
 
-The API's Swagger specification can be found here: <https://api.kolibricloud.ch/swagger/index.html?url=/swagger/v1/swagger.json>
+The API's Swagger specification can be found here: <https://api.pressuresuite.com/swagger/index.html?url=/swagger/v1/swagger.json>
 
 Open-sourced example implementations (C# and Python) can be seen here: <https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-API-daemon-example-with-access-token>
 
@@ -77,7 +77,7 @@ Use: *If False then the list of the devices is ordered in descending order.*
 
 **Sample Call**
 
-   https://api.kolibricloud.ch/v1/Devices
+   https://api.pressuresuite.com/v1/Devices
 
 **Successfull Sample Response:**
 
@@ -122,11 +122,11 @@ Use: *If False then the list of the devices is ordered in descending order.*
 
 * **deviceId** (REQUIRED)  
 Type: integer($int32)  
-Use: *Every device has an 4 digit id number. The ```deviceId``` is the same number that can be seen in the URL of the WebApp when the device is selected: [https://www.kolibricloud.ch/devices/**1234**/](https://www.kolibricloud.ch/devices/1234/)*
+Use: *Every device has an 4 digit id number. The ```deviceId``` is the same number that can be seen in the URL of the WebApp when the device is selected: [https://www.pressuresuite.com/devices/**1234**/](https://www.pressuresuite.com/devices/1234/)*
 
 **Sample Call**
 
-   https://api.kolibricloud.ch/v1/Device/2128
+   https://api.pressuresuite.com/v1/Device/2128
 
 **Successfull Sample Response:**
 
@@ -221,11 +221,11 @@ Use: *Every device has an 4 digit id number. The ```deviceId``` is the same numb
 
 * **measurementDefinitionId** (REQUIRED)  
 Type: integer($int32)  
-Use: *Every ```measurementDefinitionId``` represents a pyhsical measurement identifiaction and unit. The list of all ```measurementDefinitionId``` can be seen here: https://docs.kolibricloud.ch/cloud-interfaces/api/channels/*
+Use: *Every ```measurementDefinitionId``` represents a pyhsical measurement identifiaction and unit. The list of all ```measurementDefinitionId``` can be seen here: https://docs.pressuresuite.com/cloud-interfaces/api/channels/*
 
 * **deviceId** (REQUIRED)  
 Type: integer($int32)  
-Use: *Every device has an 4 digit id number. The ```deviceId``` is the same number that can be seen in the URL of the WebApp when the device is selected: [https://www.kolibricloud.ch/devices/**1234**/](https://www.kolibricloud.ch/devices/1234/)*
+Use: *Every device has an 4 digit id number. The ```deviceId``` is the same number that can be seen in the URL of the WebApp when the device is selected: [https://www.pressuresuite.com/devices/**1234**/](https://www.pressuresuite.com/devices/1234/)*
 
 * **start** (OPTIONAL)  
 Type: string($date-time)  
@@ -249,7 +249,7 @@ Use: *Normally, the measurements are returned in UTC time. But it is also possib
 
 **Sample Call**
 
-   https://api.kolibricloud.ch/v1/Measurements?measurementDefinitionId=8&deviceId=2128&start=2020-04-01T03%3A00%3A00.0Z&end=2020-04-01T04%3A00%3A00.0Z&isFiltered=false
+   https://api.pressuresuite.com/v1/Measurements?measurementDefinitionId=8&deviceId=2128&start=2020-04-01T03%3A00%3A00.0Z&end=2020-04-01T04%3A00%3A00.0Z&isFiltered=false
 
 **Successfull Sample Response:**
 

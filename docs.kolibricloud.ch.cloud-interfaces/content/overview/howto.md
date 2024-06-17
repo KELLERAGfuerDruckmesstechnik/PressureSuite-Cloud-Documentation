@@ -16,7 +16,7 @@ The best way is to use the KOLIBRI Cloud API to periodically gather measurement 
 
 This is an example SW (Python) that shows the connection and data loading: <https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-API-daemon-example-with-access-token>  
 
-Please be aware that you need a valid AccessToken. See <https://docs.kolibricloud.ch/cloud-interfaces/api>  
+Please be aware that you need a valid AccessToken. See <https://docs.pressuresuite.com/cloud-interfaces/api>  
 Ask for a permanent Access Token that is bound to your user account.  
 
 ## Can I use KOLIBRI Cloud and the Datamanager at the same time for the same devices?
@@ -32,13 +32,13 @@ It is even possible to use "Google Spreadsheet" as a "database" and visualizatio
 
 ## How to build an own Web App / Mobile App with KOLIBRI Cloud?
 
-As the whole www.kolibricloud.ch-"Web App" gets all the information through the KOLIBRI Cloud API it is also possible to re-design an own App and just use the KOLIBRI Cloud API to get the data and present them.  
+As the whole www.pressuresuite.com-"Web App" gets all the information through the KOLIBRI Cloud API it is also possible to re-design an own App and just use the KOLIBRI Cloud API to get the data and present them.  
 Alternately, it is possible to periodically gather the measurement data and develop an own API.
 
 ## LoRa and Loriot.io, Swisscom, KPN, Digita ... : How do I connect my device to the KOLIBRI Cloud?
 
-Use [the same procedure as with TTN](https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-ttn/) but with the specific named services (eg. "HTTP Post").  
-For *Actility*/*Thingspark* based platforms used by Swisscom, KPN, Digita etc please see https://docs.kolibricloud.ch/sending-technology/lora-technology/integration-with-actility/  
+Use [the same procedure as with TTN](https://docs.pressuresuite.com/sending-technology/lora-technology/integration-with-ttn/) but with the specific named services (eg. "HTTP Post").  
+For *Actility*/*Thingspark* based platforms used by Swisscom, KPN, Digita etc please see https://docs.pressuresuite.com/sending-technology/lora-technology/integration-with-actility/  
 The [KOLIBRI support team](<kolibri@keller-druck.com>) can help you with the integration.
 
 ## LoRa: I want LoRa technology but not share my data in any cloud. What are my options?

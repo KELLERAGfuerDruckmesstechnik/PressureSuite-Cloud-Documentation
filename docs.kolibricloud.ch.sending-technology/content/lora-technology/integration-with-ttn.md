@@ -24,12 +24,12 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 ### Step 1
 
-- During the order of the device ask your sales person to let the device pre-configure by the KOLIBRI support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device).
+- During the order of the device ask your sales person to let the device pre-configure by the KOLIBRI support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device).
 
 ### Step 2
 
 - Connect your PC using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and 
-  - Program your device according to your use case (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
+  - Program your device according to your use case (See [How to configure a LoRaWAN device](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device/))  
   - Do not forget to re-program the 'App EUI' and 'App Key' as the device is already enlisted in a KELLER TTN account. With the re-programming of the 'App EUI' and 'App Key' you have the complete ownership of the device and its transmission.
   - Write down the 'Application EUI', 'App Key' and the 'Device EUI'
 
@@ -95,8 +95,8 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 ### Step 10
 
-- To make your device visible on https://www.kolibricloud.ch it is needed to add it
-  - In the **Account Settings** on https://www.kolibricloud.ch enter the Device EUI of the LoRa device and press **Add Device**
+- To make your device visible on https://www.pressuresuite.com it is needed to add it
+  - In the **Account Settings** on https://www.pressuresuite.com enter the Device EUI of the LoRa device and press **Add Device**
   - The device should now be visible in the device list. If adding is not possible and a red popup is shown, please contact the KOLIBRI Support Team kolibri@keller-druck.com
 
 > ![Add LoRa Device To Own Group](../../AddLoRaDeviceToOwnGroup.png  "Add LoRa Device To Own Group")  
@@ -119,7 +119,7 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 ### Step 1  
 
-- During the order of the device ask your sales person to let the device pre-configure by the KOLIBRI support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device).
+- During the order of the device ask your sales person to let the device pre-configure by the KOLIBRI support team. This helps to speed up and simplify your configuration work. Technical documentation for the configuration of a KELLER LoRa-device can be found [here](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device).
 
 ### Step 2  
 
@@ -139,8 +139,8 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 - Set the *Basic settings* by
   - Choosing an **End device ID** name
-  - Entering the AppEUI from the device (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
-  - Entering the DevEUI from the device (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))
+  - Entering the AppEUI from the device (See [How to configure a LoRaWAN device](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device/))
+  - Entering the DevEUI from the device (See [How to configure a LoRaWAN device](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device/))
 
 > ![TTN V3 Add a Device 2](../../TTNV3_AddDevice2.png  "TTN V3 Add a Device 2")
 
@@ -168,7 +168,7 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 - Connect your PC using the [GSM setup tool](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) and 
   - Check if you used the same Application EUI
   - Enter the generated App Key from *Step 6*
-  - Program your device (See [How to configure a LoRaWAN device](https://docs.kolibricloud.ch/sending-technology/lora-technology/update-keller-lora-device/))  
+  - Program your device (See [How to configure a LoRaWAN device](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device/))  
 
 > ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
 
@@ -203,8 +203,8 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 ### Step 11
 
-- To make your device visible on www.kolibricloud.ch it is needed to add it
-  - In the **Account Settings** on https://www.kolibricloud.ch enter the Device EUI of the LoRa device and press **Add Device**
+- To make your device visible on www.pressuresuite.com it is needed to add it
+  - In the **Account Settings** on https://www.pressuresuite.com enter the Device EUI of the LoRa device and press **Add Device**
   - The device should now be visible in the device list. If adding is not possible and a red popup is shown, please contact the KOLIBRI Support Team kolibri@keller-druck.com
 
 > ![Add LoRa Device To Own Group](../../AddLoRaDeviceToOwnGroup.png  "Add LoRa Device To Own Group")  
