@@ -1,0 +1,29 @@
+baseURL = "https://docs.pressuresuite.com/sending-technology/"
+languageCode = "en-us"
+title = "PressureSuite Cloud Sending Technology"
+googleAnalytics = "UA-117920007-1"
+pygmentsUseClasses = true
+
+[[menu.main]]
+    pre = "<i class='fas fa-hand-point-right'></i>"
+    name = "Differences between LoRa and GSM UMTS LTE"
+    identifier = "overview"
+    url = "/overview/"
+    weight = 1
+
+[[menu.main]]
+    pre = "<i class='fas fa-broadcast-tower'></i>"
+    name = "LoRa technology"
+    identifier = "lora-technology"
+    url = "/lora-technology/"
+    weight = 2
+
+[[menu.main]]
+    pre = "<i class='fas fa-broadcast-tower'></i>"
+    name = "Cellular technology"
+    identifier = "gsm-technology"
+    url = "/gsm-technology/"
+    weight = 3
+
+[params]
+    version = "1.0.0"
