@@ -6,14 +6,14 @@ function Delete-StaticPagesOfSubDirs {
 }
 
 $srcRoot = Get-Location
-$siteName = "docs.kolibricloud.ch"
+$siteName = "docs.pressuresuite.com"
 $destinationSubDirectoryName = "wwwroot"
 
 Get-ChildItem -Path .\$destinationSubDirectoryName -Include * | remove-Item -recurse
-Get-ChildItem -Path .\docs.kolibricloud.ch\public -Include * | remove-Item -recurse
+Get-ChildItem -Path .\docs.pressuresuite.com\public -Include * | remove-Item -recurse
 
-Delete-StaticPagesOfSubDirs docs.kolibricloud.ch.keller-devices
-Delete-StaticPagesOfSubDirs docs.kolibricloud.ch.cloud-interfaces
-Delete-StaticPagesOfSubDirs docs.kolibricloud.ch.sending-technology
-Delete-StaticPagesOfSubDirs docs.kolibricloud.ch.faq
-Delete-StaticPagesOfSubDirs docs.kolibricloud.ch
+Delete-StaticPagesOfSubDirs docs.pressuresuite.com.keller-devices
+Delete-StaticPagesOfSubDirs docs.pressuresuite.com.cloud-interfaces
+Delete-StaticPagesOfSubDirs docs.pressuresuite.com.sending-technology
+Delete-StaticPagesOfSubDirs docs.pressuresuite.com.faq
+Delete-StaticPagesOfSubDirs docs.pressuresuite.com
