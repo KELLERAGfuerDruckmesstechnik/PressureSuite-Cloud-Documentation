@@ -22,9 +22,9 @@ The Internet of Things starts with a sensor. Understand the versatile range of t
 ---
 
 There are multiple ways to connect devices to the Internet. LoRa, NB-IoT or the good old GSM... What is the best for your use case? Find out in the [Sending Technology](/sending-technology/) page.
-![alt text](../img/pressuresuite_modular_build_architecture_3.png "Interfaces Overview")
+![alt text](../img/pressuresuite_modular_build_architecture_2.png "Interfaces Overview")
 
 ---
 
 APIs are the hidden backbone of our modern world which allow software programs to communicate with one another. The web app www.pressuresuite.com is just one way to connect to one API. We show how these multiple Software application can work together and communicate. Please refer to the [Interfaces](/cloud-interfaces/) page.
-![alt text](../img/pressuresuite_modular_build_architecture_2.png "Interface Overview")
+![alt text](../img/pressuresuite_modular_build_architecture_3.png "Interface Overview")
