@@ -10,22 +10,20 @@ description: Roadmap of coming features
 # Roadmap
 The following roadmap is an idea. Therefore, the priority might change, and we might implement a feature earlier or later depending on customer projects and other circumstances.  
 
-### More YouTube videos to explain new features
-It is planned to have a short series of YouTube videos explaining and demonstrating new features and their uses.
+### More YouTube Videos to Explain New Features
+We plan to create a short series of YouTube videos to explain and demonstrate new features and their uses.
 
-### MQTT analysis and integration
-We are going to add the possibility to use MQTT in our sending devices. Ideally, the PressureSuite Cloud backend shall be able to accept and communicate with MQTT.  
+### MQTT Analysis and Integration
+We aim to add the capability for our sending devices to use MQTT. Ideally, the PressureSuite Cloud backend will be able to accept and communicate using MQTT.
 
-### Export of multiple channels into ONE Excel/CSV file
-Export of multiple channels into ONE Excel/CSV file.
+### Export of Multiple Channels into One Excel/CSV File
+Enable the export of data from multiple channels into a single Excel/CSV file.
 
-### *Find*, *mark* and *delete* unreliable or outlier data
-Statistical methods and customized threshold should make it possible to find irregularities.  
-Found unreliable data should be able to be marked and even deleted.
+### *Find*, *Mark*, and *Delete* Unreliable or Outlier Data
+Use statistical methods and customized thresholds to identify irregularities. Users should be able to mark and delete found unreliable data.
 
-### DeviceConfiguration for LoRa devices
-Now that the sending 'Device Configuration' for GSM/ARC to devices over FTP/Mail-server is working. We are going to implement the new protocol for KELLER's LoRa devices. The goal is to communicate to and from the device over multiple LoRaWAN transmission using the small payload efficiently.  
-![DeviceConfiguration for LoRa devices](../../img/roadmap/DeviceConfigurationsLoRa.png)  
+### Helper Formulas and Forms for Installing a Level Probe, Even When the Borehole Is Not Vertical
+In conjunction with PressureSuite Desktop, we want to simplify the process of installing a level probe and the sending unit until the first transmission. This includes special cases where a borehole is not vertical, requiring compensation with a formula that accounts for the angle difference.
 
 ----
 # YOUR idea
