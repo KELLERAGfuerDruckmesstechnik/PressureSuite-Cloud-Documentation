@@ -41,7 +41,7 @@ Depending on the chosen ***DeviceTypeId*** one has a different set of channel nu
 ##### What is a **MeasurementDefinitionId**?
 This is an integer number representing a MeasurementDefinition and is, currently, between 1 and 54.
 
-A MeasurementDefinition represent the physical unit. In other KELLER SW the "channel number" is used but because in the PressureSuite Cloud there are many different devices (GSM, ARC, ADT..) with various ways to connect sensors ("DeviceType" (or "Connection Types")) it was settled on using a so called "Measurement Definition" that defines the measured physical unit.
+A MeasurementDefinition represent the physical unit. In other KELLER SW the "channel number" is used but because in the PressureSuite Cloud there are many different devices (ARC, ADT..) with various ways to connect sensors ("DeviceType" (or "Connection Types")) it was settled on using a so called "Measurement Definition" that defines the measured physical unit.
 
 E.g.:  
 MeasurementDefinition "**PBaro**" which is the "**Barometric Pressure**" inside an ARC1 or ADT1. It has an MeasurementDefinitionId of "*7*".  

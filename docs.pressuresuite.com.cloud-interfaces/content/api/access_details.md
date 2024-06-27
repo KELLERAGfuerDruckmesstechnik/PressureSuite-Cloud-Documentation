@@ -9,18 +9,18 @@ menu:
 # Recommended data access flow and interval policy
 
 Accessing the data through the API with a (daemon/server) program it is recommended to gather the data daily. If possible somewhen between 00:00 UTC and 06:00 UTC.  
-It is forbidden to gather data in an interval faster than 60min. This would hurt the throughtput of others and is considered malicious and against the terms of service (Section IV.20).  
+It is forbidden to gather data in an interval faster than 60min. This would hurt the throughput of others and is considered malicious and against the terms of service (Section IV.20).  
 
 It is recommended to periodically gather data and store it into an own DB by:
 - Decide for a timespan to gather date: eg. *every 12h*  
 
 - Every remote sending unit (GSM, ARC, ADT..) has its own ```deviceId```. It is recommended to hard code this deviceIds and link it to the application relevant entity (eg. location, position, sending place, lake, measuring point..)  
 
-- Create a list of ```measurementsDefinitonId```s representing the physical measurement channel (eg. ```channels_of_interest=[2,5,7,8,11]```) and link it to the application relevant entities (eg. Water Temperature, Pressure 1, Air Pressure, Water-Conductivity..). It is recommended to hard code this, too.
+- Create a list of ```measurementsDefinitionId```s representing the physical measurement channel (eg. ```channels_of_interest=[2,5,7,8,11]```) and link it to the application relevant entities (eg. Water Temperature, Pressure 1, Air Pressure, Water-Conductivity..). It is recommended to hard code this, too.
 
 - Run the program every ~12h and
   - for all devices (```deviceId```) of interest...
-  - for all channels ```measurementsDefinitonId``` of interest..
+  - for all channels ```measurementsDefinitionId``` of interest..
   - use the ```GET /v1/Measurements``` endpoint and get the data from the last ~24h
   - and store the data into a DB
   - you might check first if the measurement(value+timestamp) is not already stored because

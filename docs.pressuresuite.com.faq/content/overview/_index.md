@@ -72,7 +72,7 @@ Part of this new product line are the cloud possibilities, which include:
 
 - API: A standardized interface to transfer data (e.g., measurement data) in a common internet format to other programs/services/clouds
 
-- Documentations: How to interpret the measurement data of GSM/LoRa devices? How does the API work? All protocols and simple examples should be openly documented.
+- Documentations: How to interpret the measurement data of Cellular/LoRa devices? How does the API work? All protocols and simple examples should be openly documented.
 
 - Tools: To simplify the integration of our IoT devices, sample programs and libraries are available for free or even open-sourced.
 
@@ -141,8 +141,8 @@ Contact to <pressuresuite@keller-druck.com>
 
 ## How does LoRa technology work? And what are the advantages?
 
-LoRa (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to GSM, measurement data from the KELLER sensor can be sent away wireless to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers.
-LoRa has the advantages over GSM that it is cheaper and requires less power (smaller, cheaper battery)
+LoRa (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to Cellular Radio, measurement data from the KELLER sensor can be sent away wireless to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers.
+LoRa has the advantages over Cellular Radio that it is cheaper and requires less power (smaller, cheaper battery)
 
 See <https://docs.pressuresuite.com/sending-technology/lora-technology/>
 
@@ -199,42 +199,42 @@ An API is very powerful. A customer can use the API to pick up all his data, sav
 
 ## Where is the data stored?
 
-All data is stored in a EU data center in Ireland in an SQL database.
-It is automatically backed-up every 5-10 min.
+All data is stored in an EU data center in Ireland in an SQL database.
+It is automatically backed up every 10 minutes.
 
 ## How does the data get from the devices to the WebApp?
 
 The entire system is not that complicated.
 
-- The data of our sensors is regularly stored in FTP/mail server.
-- The PressureSuite Cloud in the background is also a collection of many small programs (Azure Functions), which do regular tasks. For example, every 5 minutes all FTP/mail servers are checked for new data and new data is stored in a data queue.
-- As soon as a new telegram is available at LoRa, it will be stored in a data queue.
-- Another program controls the data queue and analyses the content and origin. The data will then be converted and stored in a database.
-- There are other programs that regularly check the measured data and abnormalities and, if necessary, generate alarms and send emails.
-- At the same time there is this- (our) API. This is the gateway to the database. No customer can access the database directly. Everything goes through the API.
-- You can log in with username/password. An external service authorizes the user and responds with a special key that identifies the user correctly and allows the user to use our API.
-- Thanks to the key, the API knows what data it is allowed to send to the user / program.
-- The WebApp is such a program that collects all data via the API. The measurement data are also sent in compressed&encrypted text formats to the WebApp. The WebApp (App = Application = Program) generates a chart itself based on the measured data.
+- The data from our sensors is regularly stored on FTP/mail servers.
+- The PressureSuite Cloud in the background is also a collection of many small programs (Azure Functions), which perform regular tasks. For example, every 5 minutes, all FTP/mail servers are checked for new data, and new data is stored in a data queue.
+- As soon as a new message is available from LoRa, it is stored in a data queue.
+- Another program monitors the data queue, analyzes the content and origin, then converts the data and stores it in a database.
+- There are other programs that regularly check the measured data for abnormalities and, if necessary, generate alarms and send emails.
+- At the same time, there is this—our API. This is the gateway to the database. No customer can access the database directly. Everything goes through the API.
+- You can log in with a username/password. An external service authorizes the user and responds with a special key that correctly identifies the user and allows them to use our API.
+- Thanks to the key, the API knows which data it is allowed to send to the user/program.
+- The WebApp is such a program that collects all data via the API. The measurement data are also sent in compressed and encrypted text formats to the WebApp. The WebApp (App = Application = Program) generates a chart itself based on the measured data.
 
 ## How safe is the cloud?
 
 The cloud is very safe.
-It uses modern processes, best practices and tools. Everything was audited by Windows Azure experts (Microsoft MVP expert).
-Authorization is managed externally (by Microsoft Azure Active Directory B2C). So if you want to hack accounts from PressureSuite Cloud, then you have to hack Microsoft first.
+It uses modern processes, best practices, and tools. Everything was audited by Windows Azure experts (Microsoft MVP experts).
+Authorization is managed externally (by Microsoft Azure Active Directory B2C). So, if you want to hack accounts from PressureSuite Cloud, then you have to hack Microsoft first.
 Without proper authorization, it is not possible to get data.
-You can only query the data assigned to the user. This means that a validly authorized user can not see other user's data. This is even backed up at the database level (role-level feature SQL Server).
+You can only query the data assigned to the user. This means that a validly authorized user cannot see other users' data. This is even backed up at the database level (role-level feature SQL Server).
 
-The greatest risk is not that our system (or Microsoft's) or a password is hacked, but that a customer wrongly redistributes the password themselves.
+The greatest risk is not that our system (or Microsoft's) or a password is hacked, but that a customer mistakenly redistributes the password by themselves.
 
 Microsoft Azure is one of the top three players in cloud services and meets several standards.
 
 ## Are there any specific standards that the cloud fulfills?
 
-Security is one of the key features and concerns in IoT / cloud projects.
+Security is one of the key features and concerns in IoT/cloud projects.
 
-The PressureSuite Cloud uses the access, storage and authentication of users and data in/from a MICROSOFT (Azure) data center.
+The PressureSuite Cloud uses the access, storage, and authentication of users and data in/from a MICROSOFT (Azure) data center.
 
-This data center is in the EU and subject to EU regulations ( EU Data Protection Regulation ( DSGVO) ) (ie no data may be shared with data centers outside the EU, especially not with US). <https://www.microsoft.com/de-de/TrustCenter/Privacy/gdpr/default.aspx>
+This data center is in the EU and subject to EU regulations (EU Data Protection Regulation (DSGVO)) (i.e., no data may be shared with data centers outside the EU, especially not with US). <https://www.microsoft.com/de-de/TrustCenter/Privacy/gdpr/default.aspx>
 
 In addition:
 
@@ -249,6 +249,7 @@ eg  ISO 9001 , ISO 20000-1: 2011, ISO 2230, ISO 27001, ISO 27017, ISO 27018, BIR
 ## Is there a terms of service(ToS)?
 
 Yes.  See: https://docs.pressuresuite.com/PressureSuite_Cloud_Terms_and_Conditions_2024.pdf
+
 ## Does the chart show all measurement points?
 
-To reduce the computing power needed to show the loaded measurement points in the chart (which is quite scarce when using a browser) a downsample algorithm is used. This algorithm reduces the displayed measurement points to a maximum number of 1500pts / channel. The algorithm is based on *Largest Triangle Three Buckets algorithm* described by *Sveinn Steinarsson* in his master thesis *"Downsampling Time Series for Visual Representation"* at the Faculty of Industrial Engineering, Mechanical Engeneering and Computer Sciece University of Iceland (<https://skemman.is/handle/1946/15343>).
+To reduce the computing power needed to show the loaded measurement points in the chart (which is quite scarce when using a browser) a downsample algorithm is used. This algorithm reduces the displayed measurement points to a maximum number of 1500pts / channel. The algorithm is based on *Largest Triangle Three Buckets algorithm* described by *Sveinn Steinarsson* in his master thesis *"Downsampling Time Series for Visual Representation"* at the Faculty of Industrial Engineering, Mechanical Engineering and Computer Science University of Iceland (<https://skemman.is/handle/1946/15343>).
