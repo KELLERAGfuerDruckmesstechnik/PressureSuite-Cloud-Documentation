@@ -13,13 +13,14 @@ description: List of problems and their solutions
 ## How can I *activate* the alarm mails for the device alarms?
 
 **Problem**  
-There are three categories of alarms: 
- - Application alarms  
-    *Application alarms are for example 'level alarms' that can be set per device per channel and trigger when the value falls below/over a certain level.*
- - Device alarms  
-    *Device alarms are automatically triggered alarms in case a device has an exceptional state such as low power, high humidity, or stopped sending measurements.*
- - System alarms  
-    *System alarms are triggered when system-wide problems arise.*
+There are three categories of alarms:  
+
+- Application alarms  
+  *Application alarms are for example 'level alarms' that can be set per device per channel and trigger when the value falls below/over a certain level.*
+- Device alarms  
+  *Device alarms are automatically triggered alarms in case a device has an exceptional state such as low power, high humidity, or stopped sending measurements.*
+- System alarms  
+  *System alarms are triggered when system-wide problems arise.*
 
 *Application alarms* must be set by users themselves and linked to a recipient e-mail address. *Device alarms*, however, are preset with a fixed minimum limit and maximum limit. The e-mail address for these kinds of alarms must be configured, too.
 

@@ -8,13 +8,13 @@ toc: true
 description: Roadmap of coming features
 ---
 # Roadmap
-The following roadmap is an idea. Therefore, the priority might change, and we might implement a feature earlier or later depending on customer projects and other circumstances. 
+The following roadmap is an idea. Therefore, the priority might change, and we might implement a feature earlier or later depending on customer projects and other circumstances.  
 
 ### More YouTube videos to explain new features
 It is planned to have a short series of YouTube videos explaining and demonstrating new features and their uses.
 
 ### MQTT analysis and integration
-We are going to add the possibility to use MQTT in our sending devices. Ideally, the PressureSuite Cloud backend shall be able to accept and communicate with MQTT. 
+We are going to add the possibility to use MQTT in our sending devices. Ideally, the PressureSuite Cloud backend shall be able to accept and communicate with MQTT.  
 
 ### Export of multiple channels into ONE Excel/CSV file
 Export of multiple channels into ONE Excel/CSV file.
@@ -31,7 +31,3 @@ Now that the sending 'Device Configuration' for GSM/ARC to devices over FTP/Mail
 # YOUR idea
 Tell us your idea! What do you need?  
 <pressuresuite@keller-pressure.com>  
-
-[![](https://docs.pressuresuite.com/img/logo.png)](https://roadmap.pressuresuite.com/)
-
-<iframe src="https://roadmap.pressuresuite.com/index.html" width="1000" height="840"></iframe>
