@@ -16,6 +16,7 @@ If you miss a question/answer please contact <pressuresuite@keller-druck.com> or
 - [What kind of IoT devices does KELLER have?](#what-kind-of-iot-devices-does-keller-have)
 - [What does "PressureSuite" even mean?](#what-does-pressuresuite-even-mean)
 - [What is the "PressureSuite Cloud"?](#what-is-the-pressuresuite-cloud)
+- [Why did you change the name from "KOLIBRI" to "PressureSuite"?](#why-did-you-change-the-name-from-kolibri-to-pressuresuite)
 - [Should I use the Cloud or the GSM2Datamanager solution?](#should-i-use-the-cloud-or-the-gsm2datamanager-solution)
 - [What is the roadmap of the features?](#what-is-the-roadmap-of-the-features)
 - [The customer wants to create his own web app or mobile app. How can KELLER help the customer?](#the-customer-wants-to-create-his-own-web-app-or-mobile-app-how-can-keller-help-the-customer)
@@ -52,7 +53,7 @@ Both device categories can send data either via cellular sending technology (2G/
 
 ## What does "PressureSuite" even mean?
 
-PressureSuite is the successor of KOLIBRI. It is a new name for a product line. 
+PressureSuite is the successor of KOLIBRI. It is a new name for a product line.  
 Currently, this product line contains:
 
 - PressureSuite Cloud: Web portal for customers to access data
@@ -62,6 +63,10 @@ Currently, this product line contains:
 - PressureSuite Mobile: The new iOS/Android app, with which you can load measurement data from KELLER data loggers via Bluetooth to a smartphone.
 
 These products all use the latest technologies and a customized design. In addition, you can download and upload data from "PressureSuite Desktop" and "PressureSuite Mobile" to the "PressureSuite Cloud".
+
+## Why did you change the name from "KOLIBRI" to "PressureSuite"?
+
+We had to change the name for legal reasons. Until the end of 2024 the API endpoint https://api.kolibricloud.ch/v1/ will stay. Be aware that we will shut off this endpoint. Please switch to https://api.pressuresuite.com/v1/ as soon as possible. All queries and responses should behave the same.  
 
 ## What is the "PressureSuite Cloud"?
 
