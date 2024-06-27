@@ -38,7 +38,7 @@ toc: false
      - Monitoring pipe adapter ring  
   
 ☐ Try out www.pressuresuite.com and visits the documentation page https://docs.pressuresuite.com  
- ☐ Understand the benefits, the features and limitations of the 'PressureSuite Cloud' 
+ ☐ Understand the benefits, the features and limitations of the 'PressureSuite Cloud'  
  ☐ Even if an external cloud solution like the 'PressureSuite Cloud' does not fit the use case it might be a good idea to start with it to test the connectivity and verify the data transfer  
 ☐ Read and understand the 'Terms and Conditions' for the PressureSuite Cloud EN / DE  
 
@@ -48,10 +48,10 @@ toc: false
 
 ☐ When using cellular sending technology SIM-cards are needed. Due to legal reasons the customer has to buy the SIM cards  
 
-☐ When the devices have to be pre-configured and the SIM-cards do work in Switzerland (such as IoT SIM cards from https://1nce.com), please send them toyour 'KELLER sales person'. The SIM card/s will be inserted into the device/sand used for the configuration.  
+☐ When the devices have to be pre-configured and the SIM-cards do work in Switzerland (such as IoT SIM cards from https://1nce.com), please send them to your 'KELLER sales person'. The SIM card/s will be inserted into the device/sand used for the configuration.  
 
 ☐ Sign-Up on https://www.pressuresuite.com with a username and E-Mail address.  
-☐ Other users can also sign up and access the same measurement data if wished 
+☐ Other users can also sign up and access the same measurement data if wished  
 ☐ Use the username to login  
 ☐ When forgetting the password the user can reset the password on https://www.pressuresuite.com
 

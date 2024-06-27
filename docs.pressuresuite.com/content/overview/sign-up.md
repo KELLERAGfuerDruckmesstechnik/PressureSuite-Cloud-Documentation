@@ -14,7 +14,7 @@ toc: false
 
 - Go to [https://www.pressuresuite.com](https://www.pressuresuite.com)
 
-- Read the [Terms of Use](https://docs.pressuresuite.com/PressureSuite_Cloud_Terms_and_Conditions_2024.pdf)
+- Read the [Terms and Conditions](https://docs.pressuresuite.com/PressureSuite_Cloud_Terms_and_Conditions_2024.pdf)
 
 - Click on “Sign up now” button
 
