@@ -11,29 +11,6 @@ description: History about maintenances and outages
 
 💚 ***All PressureSuite Cloud services running OK***  
 
-**[UPDATE] 3rd May 2024 - 16:30 CEST: We are pleased to announce that the connection issues with our FTP accounts have been successfully resolved. We completed the migration of all existing accounts to the new root server. As a result, services have been restored, and all systems are operational. We deeply apologize for any inconvenience caused during this disruption and appreciate your patience and understanding. Rest assured, no data loss is estimated throughout this process.**
-**The missing data will be automatically re-added to the PressureSuite Cloud once the devices resume communication and attempt to resend the data. This process will occur according to the configured sending interval of the devices.**
-
-[UPDATE] 2nd May 2024 - 17:00 CEST: We have received an update from our new FTP hoster. They anticipate completing the connection of all existing accounts to the new root server by tomorrow evening (3rd May CEST).
-
-[UPDATE] 2nd May 2024 - 16:00 CEST: Following numerous attempts to revert the hoster's configuration, we have received confirmation that the changes are indeed irreversible. In response, we have sourced a new hoster and initiated the migration process. Currently, we are in the midst of adjusting DNS settings and transferring hundreds of FTP accounts to the new FTP root server. We remain optimistic that services will resume by tomorrow.
-
-[UPDATE] 30th April 2024 - 18:40 CEST: The root cause of this issue lies in changes made to the gsmdata.ch domain, including DNS settings alterations, which have had unforeseen effects on our FTP/eMail-hoster.
-These changes have resulted in the conversion of all user names (e.g., ftp00X@gsmdata.ch) to a new scheme (e.g., 'h134567.ftp00X_gs3XX'), rendering devices unable to send data to the FTP server and subsequently to the PressureSuite Cloud.
-Rest assured, your measurement data is safe and will be transmitted once access to the FTP server is restored. However, current efforts to revert the changes with the hoster have proved unsuccessful, and we are awaiting a response regarding the possibility of backup restoration.
-*Next steps:*
-Our team is actively engaging with the hoster's technicians. While initial attempts to reverse the changes have been unsuccessful, we are exploring all options to resolve the issue.
-In the event that the hoster cannot restore FTP accounts, two options remain:
-  - Affected customers may need to reconfigure their devices on-site with a new/changed FTP account
-  - We are considering alternative FTP hosting options and may transfer gsmdata.ch accordingly, recreating FTP/mail accounts with identical credentials.
-We apologize for any inconvenience caused and appreciate your patience and understanding as we work to resolve this issue promptly.
-
-[UPDATE] 30th April 2024 - 12:00 CEST: The root cause of this issue is that all @gsmdata.ch accounts have undergone changes within the web hoster's platform. Previously, usernames were email addresses (e.g., 'ftp0xx@gsmdata.ch'), but they have now been altered to different usernames (e.g., 'h18xxxx.ftp0xx_gs3xx'). We are currently in contact with the web hoster to rectify this situation. We apologize for any inconvenience caused by this disruption. To reassure, the data remains intact within the GSMs/ARC1s/ADT1s and will be transmitted once the programmed FTP credentials are operational again.  
-
-29th April 2024 - 11:30 CEST: All FTP accounts are currently unreachable due to provider/DNS issues. We are actively working to resolve this, but it may take at least 24 hours until the corrected settings are applied. Additional time may be needed for ADT1/ARC1 to retry sending the data. We do not anticipate any data loss
-
-
-
 
 ---
 
@@ -52,6 +29,28 @@ Upon identifying the issue, we immediately initiated contact with our FTP hoster
 
 **How are we making incidents like this less likely or less impactful?**  
 We reviewed our hosting options and transitioned to a dedicated root server with a FTP hoster capable of providing efficient support and troubleshooting. This move grants us full control over all aspects of the server, ensuring quicker response times to any issues that may arise. Additionally, we are considering transitioning away from FTP to a more modern technology such as MQTT or a similar alternative.
+
+**Update History for this incident**  
+[UPDATE] 3rd May 2024 - 16:30 CEST: We are pleased to announce that the connection issues with our FTP accounts have been successfully resolved. We completed the migration of all existing accounts to the new root server. As a result, services have been restored, and all systems are operational. We deeply apologize for any inconvenience caused during this disruption and appreciate your patience and understanding. Rest assured, no data loss is estimated throughout this process.**
+**The missing data will be automatically re-added to the PressureSuite Cloud once the devices resume communication and attempt to resend the data. This process will occur according to the configured sending interval of the devices.
+
+[UPDATE] 2nd May 2024 - 17:00 CEST: We have received an update from our new FTP hoster. They anticipate completing the connection of all existing accounts to the new root server by tomorrow evening (3rd May CEST).
+
+[UPDATE] 2nd May 2024 - 16:00 CEST: Following numerous attempts to revert the hoster's configuration, we have received confirmation that the changes are indeed irreversible. In response, we have sourced a new hoster and initiated the migration process. Currently, we are in the midst of adjusting DNS settings and transferring hundreds of FTP accounts to the new FTP root server. We remain optimistic that services will resume by tomorrow.
+
+[UPDATE] 30th April 2024 - 18:40 CEST: The root cause of this issue lies in changes made to the gsmdata.ch domain, including DNS settings alterations, which have had unforeseen effects on our FTP/eMail-hoster.
+These changes have resulted in the conversion of all user names (e.g., ftp00X@gsmdata.ch) to a new scheme (e.g., 'h134567.ftp00X_gs3XX'), rendering devices unable to send data to the FTP server and subsequently to the PressureSuite Cloud.
+Rest assured, your measurement data is safe and will be transmitted once access to the FTP server is restored. However, current efforts to revert the changes with the hoster have proved unsuccessful, and we are awaiting a response regarding the possibility of backup restoration.
+*Next steps:*
+Our team is actively engaging with the hoster's technicians. While initial attempts to reverse the changes have been unsuccessful, we are exploring all options to resolve the issue.
+In the event that the hoster cannot restore FTP accounts, two options remain:
+
+- Affected customers may need to reconfigure their devices on-site with a new/changed FTP account
+- We are considering alternative FTP hosting options and may transfer gsmdata.ch accordingly, recreating FTP/mail accounts with identical credentials.
+We apologize for any inconvenience caused and appreciate your patience and understanding as we work to resolve this issue promptly.
+
+[UPDATE] 30th April 2024 - 12:00 CEST: The root cause of this issue is that all @gsmdata.ch accounts have undergone changes within the web hoster's platform. Previously, usernames were email addresses (e.g., 'ftp0xx@gsmdata.ch'), but they have now been altered to different usernames (e.g., 'h18xxxx.ftp0xx_gs3xx'). We are currently in contact with the web hoster to rectify this situation. We apologize for any inconvenience caused by this disruption. To reassure, the data remains intact within the GSMs/ARC1s/ADT1s and will be transmitted once the programmed FTP credentials are operational again.  
+
 
 
 ### 2022 - 01.December 2023

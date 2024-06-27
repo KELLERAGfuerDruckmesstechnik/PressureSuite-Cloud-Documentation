@@ -34,7 +34,7 @@ Email Address: k.hulten@keller-rocks.now
 ```
 
 - Click on the [Send verification] and look in your
-mailbox and verify the mail. If you don’t find the mail then either you entered the wrong mail or your email provider has blocked the mail.
+mailbox and verify the mail. If you don't find the mail then either you entered the wrong mail or your email provider has blocked the mail.
 
 ```
 * Password credentials:
