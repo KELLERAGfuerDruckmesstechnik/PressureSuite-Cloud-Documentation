@@ -32,7 +32,7 @@ Be aware that it is not possible to get calculated measuring data (eg. water lev
 
 The API's Swagger specification can be found here: <https://api.pressuresuite.com/swagger/index.html?url=/swagger/v1/swagger.json>
 
-Open-sourced example implementations (C# and Python) can be seen here: <https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-API-daemon-example-with-access-token>
+Open-sourced example implementations (C# and Python) can be seen here: <https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-API-daemon-example-with-access-token>
 
 Endpoints of interest are:  
 

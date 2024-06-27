@@ -10,7 +10,7 @@ menu:
 
 The API's specification can be found here: <https://api.pressuresuite.com/swagger/index.html?url=/swagger/v1/swagger.json>
 
-An open-sourced example implementation can be seen here: <https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-API-daemon-example-with-access-token>
+An open-sourced example implementation can be seen here: <https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-API-daemon-example-with-access-token>
 
 Endpoints of interest are:  
 

@@ -10,7 +10,7 @@ description: Frequently Asked Questions  (FAQ)
 
 # Frequently Asked Questions
 
-If you miss a question/answer please contact <pressuresuite@keller-druck.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation).
+If you miss a question/answer please contact <pressuresuite@keller-druck.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-Documentation).
 
 - [What does "cloud", "IoT", "LoRa" mean?](#what-does-cloud-iot-lora-mean)
 - [What kind of IoT devices does KELLER have?](#what-kind-of-iot-devices-does-keller-have)
@@ -39,42 +39,42 @@ If you miss a question/answer please contact <pressuresuite@keller-druck.com> or
 
 ## What does "cloud", "IoT", "LoRa" mean?
 
-**IoT** ("Internet of Things"): Hype term that describes a system / network of things (= devices) with sensors , which perform well together or with users thanks to information exchange (e.g. measurement data through the Internet).  
-KELLER has been using IoT devices for many years: GSM data loggers and now also LoRa devices.  
-**Cloud**: Can be defined as follows: By "cloud computing" one can mean storing and accessing data and programs via the Internet or the opposite is saving data to your hard disk. The term "cloud" is also used as a metaphor for "the Internet".  
-**LoRa** (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to GSM, measurement data from the KELLER sensor can be sent away wirelessly to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers. LoRa has the advantages over GSM that it is cheaper and requires less power (smaller, cheaper battery).  
+**IoT** ("Internet of Things"): A hype term that describes a system/network of things (= devices) with sensors, which perform well together or with users thanks to information exchange (e.g., measurement data through the Internet).  
+KELLER has been using IoT devices for many years: Cellular data loggers and now also LoRa devices.  
+**Cloud**: Can be defined as follows: "Cloud computing" refers to storing and accessing data and programs over the Internet, as opposed to saving data on your hard disk. The term "cloud" is also used as a metaphor for "the Internet".  
+**LoRa** (long range): A long-range, low-power wireless platform. A popular IoT wireless protocol. Similar to cellular radio, measurement data from KELLER sensors can be sent wirelessly to the nearest antenna/gateway, and from there forwarded via the Internet to FTP/mail servers or even LoRa servers. LoRa has advantages over cellular radio in that it is cheaper and requires less power (smaller, cheaper battery).  
 See more at <https://docs.pressuresuite.com/sending-technology/lora-technology/>
 
 ## What kind of IoT devices does KELLER have?
 See https://keller-druck.com/en/products/wireless-solutions
-KELLER sells the ADT1 (low-cost) or the ARC1 (robust) device in a tube, a box or a box with special safty barriers.
-Both device categories can send data either via cellular sending technology (2G/3G/4G/NB-IoT/LTE-M) or via the LoRaWAN sending technology. 
+KELLER sells the ADT1 (low-cost) and the ARC1 (robust) devices in a tube, a box, or a box with special safety barriers.
+Both device categories can send data either via cellular sending technology (2G/3G/4G/NB-IoT/LTE-M) or via the LoRaWAN sending technology.
 
 ## What does "PressureSuite" even mean?
 
-PressureSuite is the name of the new KELLER Pressure product line. It's the German name for hummingbird starting with a **K** as in **K**ELLER.
+PressureSuite is the successor of KOLIBRI. It is a new name for a product line. 
 Currently, this product line contains:
 
-- PressureSuite Cloud : Web portal for customers to access data
+- PressureSuite Cloud: Web portal for customers to access data
 
-- PressureSuite Desktop : The new logger software application that we use to store and visualize data from data loggers on the Windows PC.
+- PressureSuite Desktop: The new logger software application that we use to store and visualize data from data loggers on the Windows PC.
 
-- PressureSuite Mobile : The new Android app, with which you can load measurement data from KELLER data loggers via Bluetooth to a smartphone.
+- PressureSuite Mobile: The new iOS/Android app, with which you can load measurement data from KELLER data loggers via Bluetooth to a smartphone.
 
-These products all use the latest technologies and a customized design. In addition, you will download and upload data from "PressureSuite Desktop" and "PressureSuite Mobile" to the "PressureSuite Cloud".  
+These products all use the latest technologies and a customized design. In addition, you can download and upload data from "PressureSuite Desktop" and "PressureSuite Mobile" to the "PressureSuite Cloud".
 
 ## What is the "PressureSuite Cloud"?
 
 PressureSuite is the name of the new KELLER Pressure product line.
-Part of this new product line is the cloud possibilities, which are:
+Part of this new product line are the cloud possibilities, which include:
 
-- WebApp : The "Online Program" at www.pressuresuite.com
+- WebApp: The "Online Program" at www.pressuresuite.com
 
-- API : A standardized interface to transfer data (e.g. measurement data) in a common internet format to other programs/services/clouds
+- API: A standardized interface to transfer data (e.g., measurement data) in a common internet format to other programs/services/clouds
 
-- Documentations : How to interpret the measurement data of GSM / LoRa devices? How does the API work? All protocols and simple examples should be openly documented.
+- Documentations: How to interpret the measurement data of GSM/LoRa devices? How does the API work? All protocols and simple examples should be openly documented.
 
-- Tools : To simplify the integration of our IoT devices, sample programs and libraries are available for free or even open sourced.
+- Tools: To simplify the integration of our IoT devices, sample programs and libraries are available for free or even open-sourced.
 
 ## Should I use the Cloud or the GSM2Datamanager solution?
 
@@ -84,47 +84,47 @@ Part of this new product line is the cloud possibilities, which are:
 
 [Please see this overview.](https://docs.pressuresuite.com/overview/roadmap/)
 
-## The customer wants to create his own web app or mobile app. How can KELLER help the customer?
+## The customer wants to create their own web app or mobile app. How can KELLER assist?
 
-Customer may use our WebApp to see that their devices are sending data (proof-of-concept). This means that he can IMMEDIATELY start testing our devices in his environment.
-Then he can use our API to make data queries. He now has to develop an User-Interface and address our API. We help him with sample programs and good documentation.
+Customers may use our WebApp to see that their devices are sending data (proof-of-concept). This means they can IMMEDIATELY start testing our devices in their environment.
+Then they can use our API to make data queries. They now have to develop a User Interface and address our API. We assist them with sample programs and good documentation.
 
-## The customer does not want to use our "cloud". (ie the customer wants to save and present the data by himself). How can KELLER help the customer?
+## The customer does not want to use our "cloud" (i.e., the customer wants to manage and present the data themselves). How can KELLER assist?
 
-Customer may use our WebApp to see that their devices are sending data (proof-of-concept). This means that he can IMMEDIATELY start testing our devices in his environment.
-During the testing phase, he can start using our documentation to integrate his devices into his solution.
+Customers may use our WebApp to see that their devices are sending data (proof-of-concept). This means they can IMMEDIATELY start testing our devices in their environment.
+During the testing phase, they can start using our documentation to integrate the devices into their solution.
 
-## Where can I find marketing/promotional material?
+## Where can I find marketing/promotional materials?
 
-Please contact <marketing@keller-druck.com>
+Please contact <marketing@keller-druck.com>.
 
 ## How do I sign up? How do I log in? How can I test it?
 
 See: <https://www.pressuresuite.com>
 For all those interested, there is a test user account (Demo1234 / Demo1234), with which everyone can log in and try out the WebApp.
-There are a few test devices visible and their measurement data. The login password can be seen on <https://www.pressuresuite.com.>
+There are a few test devices visible and their measurement data. The login password can be found on <https://www.pressuresuite.com>.
 
 ## Does the website also work on a mobile phone?
 
-Yes. The site is optimized for the PC / Mac with monitor screen.
-The WebApp is "responsive" and therefore it works on a mobile phone, too. However, because of the small screen area, the chart display is very difficult to use.
-The mobile version is needed more to monitor triggered alarms and to monitor the current state of all devices.
+Yes. The site is optimized for PC / Mac with monitor screens.
+The WebApp is "responsive" and therefore works on mobile phones, too. However, due to the small screen area, the chart display is very difficult to use.
+The mobile version is more necessary for monitoring triggered alarms and the current state of all devices.
 
-## What alarms are there
+## What alarms are there?
 
 There are three categories:
 
-- Application alarms: Alarms that the customer can set and are related to his application
-  - Level Alarm: Here you can select a minima or maxima of any channel. Eg "If channel 'Pressure 1' has more than 2.5 bar, then trigger an alarm
+- Application alarms: Alarms that the customer can set and are related to their application
+  - Level Alarm: Here you can select a minimum or maximum of any channel. E.g., "If channel 'Pressure 1' has more than 2.5 bar, then trigger an alarm."
 - Device Alarms: These are alarms that are automatically triggered if a device experiences an extraordinary condition. For example:
   - Low Battery Capacity / Critical Battery Capacity
-  - "Low Battery Voltage " / "Critical Battery Voltage"
+  - "Low Battery Voltage" / "Critical Battery Voltage"
   - Extraordinary humidity in the sensor
   - Device does not send or is sending late
 
 ## How do I know that the devices are communicating?
 
-On the WebApp you can read the time of the last communication.
+On the WebApp, you can read the time of the last communication.
 ![Last Data on www.pressuresuite.com](../LastData.png"Last Data")
 
 ## Can I use existing data from the GSM2Datamanager switch to the PressureSuite Cloud?

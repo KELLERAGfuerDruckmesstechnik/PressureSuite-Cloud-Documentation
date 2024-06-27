@@ -14,7 +14,7 @@ description: Some FAQ but rather technical and specific.
 
 The best way is to use the PressureSuite Cloud API to periodically gather measurement data from the PressureSuite Cloud API. When the data is loaded from the API it can be transformed or stored in your database system.  
 
-This is an example SW (Python) that shows the connection and data loading: <https://github.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-API-daemon-example-with-access-token>  
+This is an example SW (Python) that shows the connection and data loading: <https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-API-daemon-example-with-access-token>  
 
 Please be aware that you need a valid AccessToken. See <https://docs.pressuresuite.com/cloud-interfaces/api>  
 Ask for a permanent Access Token that is bound to your user account.  

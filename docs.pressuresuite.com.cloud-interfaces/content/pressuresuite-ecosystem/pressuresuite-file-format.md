@@ -14,9 +14,9 @@ This documentation helps to understand the file and makes an integration/transfo
 
 
 ## Example files
-- [PressureSuite Cloud - ADT1 LoRa](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.pressuresuite.com.cloud-interfaces/static/data/CLOUD_EUI-E84F25000001A146_2023.11.22_16-19-13.json) 15KB
-- [PressureSuite Desktop - DCX](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.pressuresuite.com.cloud-interfaces/static/data/REC-5.5-539216_2024-01-12_02_08_19.json) 365KB
-- [PressureSuite Cloud - ARC1](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/Kolibri-Cloud-Documentation/master/docs.pressuresuite.com.cloud-interfaces/static/data/CLOUD_ARC-9.20-1234_2024.01.12_09-10-01.json) 70KB
+- [PressureSuite Cloud - ADT1 LoRa](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-Documentation/master/docs.pressuresuite.com.cloud-interfaces/static/data/CLOUD_EUI-E84F25000001A146_2023.11.22_16-19-13.json) 15KB
+- [PressureSuite Desktop - DCX](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-Documentation/master/docs.pressuresuite.com.cloud-interfaces/static/data/REC-5.5-539216_2024-01-12_02_08_19.json) 365KB
+- [PressureSuite Cloud - ARC1](https://raw.githubusercontent.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-Documentation/master/docs.pressuresuite.com.cloud-interfaces/static/data/CLOUD_ARC-9.20-1234_2024.01.12_09-10-01.json) 70KB
 
 
 ## Basic structure of the JSON file
