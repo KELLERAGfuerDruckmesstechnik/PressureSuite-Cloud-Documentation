@@ -15,7 +15,7 @@ description: Architectural overview. What components are used and how.
 ---  
 
 ![Architecture part 1](../../img/arch2.png)  
-*Using a ARC device lets the sensor send measurement data per GSM/UMTS/LTE to the next antenna and from there via internet to a configured FTP server. The measurement data or configuration information are stored in text files. It is also possible to store the data on a mail server but we do not recommend this as FTP is more reliable than SMTP/POP. If you do not want to host a FTP server than KELLER can create one for you as part of the PressureSuite Cloud set up process.*  
+*Using a ARC device lets the sensor send measurement data per UMTS/LTE/LTE-M/NB-IoT to the next antenna and from there via internet to a configured FTP server. The measurement data or configuration information are stored in text files. It is also possible to store the data on a mail server but we do not recommend this as FTP is more reliable than SMTP/POP. If you do not want to host a FTP server than KELLER can create one for you as part of the PressureSuite Cloud set up process.*  
 
 *Normally, measurements will be periodically stored (e.g. every 1h) and send after reaching a certain amount of measurements (e.g.after 24 measurements = every 24h).*  
 
@@ -38,7 +38,7 @@ description: Architectural overview. What components are used and how.
   
 ---  
 ![Architecture part 5](../../img/arch6.png)  
-*The PressureSuite Cloud WebApp and the API are protected with state-of-the art security measures. Azure Active Directory handles the Authentication. For a registration you have to enter a user name and an Email-Address. KELLER will never have access to your password as it is stored by Azure Active Directory. It is possible to reset the password.*  
+*The PressureSuite Cloud WebApp and the API are protected with state-of-the art security measures. Azure Active Directory (Microsoft Entra ID) handles the Authentication. For a registration you have to enter a user name and an Email-Address. KELLER will never have access to your password as it is stored by Azure Active Directory (Microsoft Entra ID). It is possible to reset the password.*  
 
 *Authorization: The PressureSuite Cloud allows multiple users per group. And multiple devices per group. Each user has either Read- or Read-Write-rights. Only users with write rights can change settings. All users can view and export all data of all devices of the assigned group.*
   
