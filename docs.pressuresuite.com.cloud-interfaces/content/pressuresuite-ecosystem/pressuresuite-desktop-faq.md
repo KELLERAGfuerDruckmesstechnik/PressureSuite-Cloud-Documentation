@@ -18,6 +18,16 @@ Tutorials:
 There is no option to delete measurements on the logger devices. When the memory of the logger is full, the oldest measurements will be overwritten. 
 If a measurement has to be deleted, set the measure interval to 1 second and the memory mode to 'linear recording' and start the recording. This way the whole memory will be overwritten after a few hours.
 
+## Why does PressureSuite Desktop trigger an antivirus warning?
+
+Recently there was an uptick in requests regarding PressureSuite Desktop beeing flagged by antivirus providers.
+Especially since the rebranding from 'KOLIBRI Desktop' to 'PressureSuite Desktop' multiple users experienced issues while donwloading or installing PressureSuite Desktop.
+PressureSuite Desktop is fully developed in-house at KELLER and does not knowingly contain any malicous functionality.
+
+We are in the process of evaluating steps to build trust and reduce the number of false positives by antivirus providers. 
+
+Most antivirus solutions offer possibilities to register PressureSuite Desktop as a trusted software or an exception, which makes it possible to install it.
+
 ## How can I silently install PressureSuite Desktop
 
 PressureSuite Desktop can be installed silent with the option "/quiet" or "/qn". With the silent option no UI will be shown and all extensions/drivers will be installed silent too if they are not yet installed.
