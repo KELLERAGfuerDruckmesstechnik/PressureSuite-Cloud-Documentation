@@ -10,14 +10,20 @@ description: Information how to configure a LoRaWAN device from KELLER Pressure
 
 # Configuring a LoRaWAN device from KELLER
 
-**The guide for the old 'GSM configuration' software is on the bottom of the page**
+
+For the configuration of the KELLER LoRaWAN devices we developed "PressureSuite Desktop". 
+
+PressureSuite Desktop is available on the [KELLER Website](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) 
+
+
+<em>The guide for the old 'GSM configuration' software is on the bottom of the page</em>
 
 ## Overview
 
--On the left side navigation you can find the 'Configuration'-tab.
+- On the left side navigation you can find the 'Configuration'-tab.
 ![LoRa Configuration Overview](../../LoRa_ConfigOverview.png  "LoRa Configuration Overview")
 
--You can change the configuration with a guided wizards (1) or an individual section (2) 
+- You can change the configuration with a guided wizards (1) or an individual section (2) 
 ![LoRa Wizards Overview](../../LoRa_WizardsOverview.png  "LoRa Wizards Overview")
 
 
