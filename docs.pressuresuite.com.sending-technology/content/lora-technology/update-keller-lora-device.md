@@ -10,6 +10,142 @@ description: Information how to configure a LoRaWAN device from KELLER Pressure
 
 # Configuring a LoRaWAN device from KELLER
 
+**The guide for the old 'GSM configuration' software is on the bottom of the page**
+
+## Overview
+
+-On the left side navigation you can find the 'Configuration'-tab.
+![LoRa Configuration Overview](../../LoRa_ConfigOverview.png  "LoRa Configuration Overview")
+
+-You can change the configuration with a guided wizards (1) or an individual section (2) 
+![LoRa Wizards Overview](../../LoRa_WizardsOverview.png  "LoRa Wizards Overview")
+
+
+## Location
+
+<!--- TODO -->
+
+![LoRa Location Wizard](../../LoRa_WizardLocation.png  "LoRa Location Wizard")
+
+## Hardware
+
+<!--- TODO -->
+
+![LoRa Hardware Wizard](../../LoRa_WizardHardware.png  "LoRa Hardware Wizard")
+
+## Measurement
+
+- In the Wizard [Measurement] the **Next Action** and the **Interval** can be defined.
+- In this example, the first measurement is carried out at 12:00 on 30.10.2024 and then repeated at 30-minute intervals.
+The measured values are transmitted immediately after each measurement.
+- Default measure interval is: 10 min
+- The more the device sends the more battery is consumed
+![LoRa Measurement Wizard](../../LoRa_WizardMeasurement.png  "LoRa Measurement Wizard")
+
+## LoRa Settings
+
+The parameters required for transmission can be changed in the communication settings.
+  
+The following settings can be changed:  
+
+- ***Activation method***  
+The activation method OTAA (Network-Session-Key and App-Session-Key are exchanged/created during the first connection) or ABP (Manual entry of keys) can be selected. Depending on the selection of the activation method, the input fields are activated.
+  - Default/Recommended: **OTAA**
+
+- ***Device EUI***  
+The devices EUI (Unique Device Identification) cannot be changed. The EUI is registered at the network server.  
+
+- ***Application EUI***  
+The unique identification number for the application with which the data is further processed is entered here.  
+  - Enter here the Application EUI of your application/device from your LoRa Network Server
+    - For Swisscom/Actility: Use `F0-3D-29-AC-71-00-00-01`
+    - If you want to have the device in YOUR OWN TTN application, it is recommended to have a different App EUI. Choose a random App EUI. The reason is that the device is already used by KELLER for testing purpose and enlisted in a KELLER TTN application. This may cause issues within TTN as the device are double enlisted. Use this APP EUI when adding the device to your TTN (V3) application.
+
+
+- ***Device Address / Network Session Key / App Session Key***  
+These settings must be entered for the ABP activation method.
+  - Default: When using the preferred OTAA mode these fields can not change.
+
+
+- ***Uplink Mode***  
+The data can be sent with confirmation (confirmed) or without confirmation (unconfirmed) of the network server.
+  - Default/Recommended: unconfirmed.  
+
+
+- ***Transmit Mode***  
+If ADR= ON () is selected, the transmission power (SF) of the device is adapted to the ambient conditions by the network server. An optimal ratio between range and power is set. If ADR=OFF, the automatic power adjustment is deactivated and the device transmits with the power set in the "Data Rate" field.  
+  - Default/Recommended: ON  
+
+
+- ***Data Rate***  
+Here the transmission power can be set, whereby the setting 0 SF12/125kHz achieves the highest power and consequently the highest range (and also the highest energy consumption). With the setting 6 SF7/250kHz the smallest range is reached.  
+  - Default/Recommended: Use 1 SF11/125kHz when ADR is OFF  
+
+
+- ***Power Index***  
+With the Power Index setting the transmission power can be adjusted to the antenna. If an antenna with amplification is used, the transmission power can be reduced so that the transmission power corresponds to the permissible standard.
+  - Default/Recommended: 1 14dbm.  
+
+![LoRa Settings Wizard](../../LoRa_WizardLoraSettings.png  "LoRa Settings Wizard")
+
+## Info Message
+
+The device can send useful information such as battery voltage, battery capacity, humidity etc.
+  - Default/Recommended: Once per day.
+
+![LoRa Info Wizard](../../LoRa_WizardInfoMessage.png  "LoRa Info Wizard")
+
+## Alarming
+
+<!--- TODO -->
+
+![LoRa Alarming Wizard](../../LoRa_WizardAlarming.png  "LoRa Alarming Wizard")
+
+## Water Calculation
+
+<!--- TODO -->
+
+![LoRa Watercalculation Wizard](../../LoRa_WizardWaterCalc1.png  "LoRa Watercalculation Wizard")
+![LoRa Watercalculation Wizard](../../LoRa_WizardWaterCalc2.png  "LoRa Watercalculation Wizard")
+
+## Link Check
+
+<!--- TODO -->
+
+![LoRa Link Check Wizard](../../LoRa_WizardLinkCheck.png  "LoRa Link Check Wizard")
+
+## Rejoin
+
+Devices with Firmware>20.34 can have a ReJoin interval that helps to fix troubles with LoRa Network Servers (Hello Swisscom)
+  - Default/Recommended: Interval time of 14 days  
+
+![LoRa Rejoin Wizard](../../LoRa_WizardRejoin.png  "LoRa Rejoin Wizard")
+
+## Write the device with the configuration
+
+- After all settings have been made on the software interface, press the **Write changes to device** button and all settings are transferred to the device connected to the COM port.
+- The device will measure at the set time/interval and transfer the measured values.
+- Before the first transfer of the measured values or if required, the device will perform a JOIN, in which the device registers with the network server and exchanges the keys.
+
+## Manually Send Data 
+
+**Transmit Information**
+The device sends useful information such as battery voltage, battery capacity, humidity etc. 
+  
+**Transmit Configuration**
+By pressing this button, all settings of the device are transmitted one after the other in different individual messages via LoRaWAN.
+**Attention**: Due to the limitations of the transmission (frequency band usage regulations) the transmission may take some time (minutes to hours).
+
+**Transmit Measurements**
+A measurement is triggered and the measured values are transmitted via LoRaWAN. If necessary, a JOIN is carried out before the measurement data transfer.  
+
+![LoRa Transmit Commands](../../LoRa_TransmitCommands.png  "LoRa Transmit Commands")
+
+
+---
+
+## Setup with obsolete "GSM configuration" software
+
 The following guide describes how to configure a LoRaWAN device from KELLER. A German version is available [as PDF](../../KELLER_LoRaWAN_Geraet_konfigurieren_V1.0.pdf).
 
 The software [GsmConfiguration/GsmSetup](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) is required for the configuration. The software can be downloaded under the following link: <https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units>
@@ -19,6 +155,8 @@ The software [GsmConfiguration/GsmSetup](https://keller-druck.com/en/products/so
 - Select the <span style="color:red">*Comport Number*</span> of the connected device and then press the button <span style="color:green">*Read Configuration*</span>. The current settings of the device are now read out and displayed in the software.
 
 **ATTENTION**: Changes to the configuration are only transferred to the device if the <span style="color:orange">*Write Configuration*</span> button is pressed.
+
+
 
 ## Settings
 
