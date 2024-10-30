@@ -28,6 +28,16 @@ We are in the process of evaluating steps to build trust and reduce the number o
 
 Most antivirus solutions offer possibilities to register PressureSuite Desktop as a trusted software or an exception, which makes it possible to install it.
 
+## Can I configure PressureSuite Desktop with a constant offset to UTC without observing daylight saving time?
+
+For time zone management we use the regulations of the "Internet Assigned Numbers Authority" (IANA).
+Here are two sources that list all the available time zones and their offsets to UTC (universal time coordinated):
+[TimeApi](https://timeapi.io/documentation/iana-timezones)
+[Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+CET does observe DST. During the winter it defined as CET (Central european time, UTC+01:00) and during summer its defines as CEST (Central european summer time, UTC+02:00) 
+If you need a constant UTC offset without DST, we suggest the time zone "Etc/GMT-1" which is always UTC+01:00 without daylight saving time. Replace the -1 with the desired offset from UTC.
+
 ## How can I silently install PressureSuite Desktop
 
 PressureSuite Desktop can be installed silent with the option "/quiet" or "/qn". With the silent option no UI will be shown and all extensions/drivers will be installed silent too if they are not yet installed.
