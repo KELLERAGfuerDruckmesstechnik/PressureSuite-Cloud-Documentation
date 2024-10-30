@@ -52,19 +52,18 @@ Give a **Name** and **Add** the new created application server as a **Local appl
 Before the device can be created it first has to be configured, too. Use the tool ["GSM setup for remote transmission units and its manual"](https://keller-druck.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results) and a similar process like in https://docs.pressuresuite.com/sending-technology/gsm-technology/ 
 
 ### Step 5B
-Under [Settings] choose the correct "Connection Device/type" based on the attached sensor/probe.  
-In [Error/Status] the measured values of all channels can be seen and indicates which channels are of interest.  
-![Configure a LoRa device 1](../../thingpark/004_configure_device_1.png  "Configure a LoRa device 1") 
+Under [Hardware] choose the correct "Connected Sensor Type" based on the attached sensor/probe.  
+In the righthand side the list of measured values of all active channels can be seen and indicates which channels are of interest.
+<em>Only channels that are already configured active on the device will dislpay values.</em>
+Choose only the channels that are of interest. As smaller the amount of chosen channels as better it is for the LoRaWAN transmission.  
+
+![LoRa Hardware Wizard](../../LoRa_WizardHardware.png  "LoRa Hardware Wizard")
 
 ### Step 5C
-In [Settings] choose only the channels that are of interest. As smaller the amount of chosen channels as better it is for the LoRaWAN transmission.  
-![Configure a LoRa device 2](../../thingpark/004_configure_device_2.png  "Configure a LoRa device 2") 
-
-### Step 5D
 Under [LoRa Settings] generally use the default values unless you now exactly what you are doing. See https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device/  
 Write down the **Device EUI** and the **App Key**.  
 The **Application EUI** has to be programmed based on the provider. For Swisscom this is ```F0-3D-29-AC-71-00-00-01```.  
-![Configure a LoRa device 3](../../thingpark/004_configure_device_3.png  "Configure a LoRa device 3") 
+![LoRa Settings Wizard](../../LoRa_WizardLoraSettings.png  "LoRa Settings Wizard")
 
 
 ### Step 6

@@ -33,7 +33,7 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
   - Do not forget to re-program the 'App EUI' and 'App Key' as the device is already enlisted in a KELLER TTN account. With the re-programming of the 'App EUI' and 'App Key' you have the complete ownership of the device and its transmission.
   - Write down the 'Application EUI', 'App Key' and the 'Device EUI'
 
-> ![LoRa Setup LoRa Settings](../../LoRaSetup-LoRaSettings.png  "LoRa Setup LoRa Settings")
+![LoRa Settings Wizard](../../LoRa_WizardLoraSettings.png  "LoRa Settings Wizard")
 
 
 ### Step 3
