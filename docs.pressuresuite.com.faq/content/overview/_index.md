@@ -17,7 +17,6 @@ If you miss a question/answer please contact <pressuresuite@keller-druck.com> or
 - [What does "PressureSuite" even mean?](#what-does-pressuresuite-even-mean)
 - [What is the "PressureSuite Cloud"?](#what-is-the-pressuresuite-cloud)
 - [Why did you change the name from "KOLIBRI" to "PressureSuite"?](#why-did-you-change-the-name-from-kolibri-to-pressuresuite)
-- [Should I use the Cloud or the GSM2Datamanager solution?](#should-i-use-the-cloud-or-the-gsm2datamanager-solution)
 - [What is the roadmap of the features?](#what-is-the-roadmap-of-the-features)
 - [The customer wants to create his own web app or mobile app. How can KELLER help the customer?](#the-customer-wants-to-create-his-own-web-app-or-mobile-app-how-can-keller-help-the-customer)
 - [The customer does not want to use our "cloud". (ie the customer wants to save and present the data by himself). How can KELLER help the customer?](#the-customer-does-not-want-to-use-our-cloud-ie-the-customer-wants-to-save-and-present-the-data-by-himself-how-can-keller-help-the-customer)
@@ -80,10 +79,6 @@ Part of this new product line are the cloud possibilities, which include:
 - Documentations: How to interpret the measurement data of Cellular/LoRa devices? How does the API work? All protocols and simple examples should be openly documented.
 
 - Tools: To simplify the integration of our IoT devices, sample programs and libraries are available for free or even open-sourced.
-
-## Should I use the Cloud or the GSM2Datamanager solution?
-
-[Please see this comparison.](https://docs.pressuresuite.com/cloud-interfaces/overview/differences/)
 
 ## What is the roadmap of the features?
 

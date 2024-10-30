@@ -33,7 +33,7 @@ Consider staying in close contact with the KELLER sales engineer and/or the Pres
   - a) Choose the correct device type and only the channels that are needed.
     ![Choose the correct device type picture](../gsmsetup_correcttype.png "Choose the correct device type!") ![Choose only the needed channels picture](../gsmsetup_correctchannels.png "Choose only the needed channels!")  
 
-  - b) Use a “check interval” which is the time the device waits until it checks the FTP server for new configuration (from the DataManager and soon from the PressureSuite Cloud). An interval of 24h is a good value.
+  - b) Use a “check interval” which is the time the device waits until it checks the FTP server for new configuration. An interval of 24h is a good value.
     ![Choose a check interval picture](../gsmsetup_checkinterval.png "Check the interval!")
 
   - d) In the **[Measure]** tab, navigate to the settings and configure the following options: set the measurement type to "Interval" and specify the number of measurements to be taken before sending the FTP file, labeled as "Send FTP-File after X-Measurements".   
