@@ -142,7 +142,7 @@ At depth to water (F), the distance from the upper edge of the measuring point t
 the calculation of the depth upper edge of the measuring point to the water surface, the installation length B must be 
 known. 
 
-![Water Depth](../../WaterDepthtDialog.png  "Water Depth")
+![Water Depth](../../WaterDepthDialog.png  "Water Depth")
 
 ### Height Of Water Above Sea Level
 
