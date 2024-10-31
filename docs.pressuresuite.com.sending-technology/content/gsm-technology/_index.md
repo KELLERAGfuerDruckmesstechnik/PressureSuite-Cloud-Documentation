@@ -15,7 +15,7 @@ Consider staying in close contact with the KELLER sales engineer and/or the Pres
 
 ## With cable connection: Cloud integration with FTP
 
-1. Please download the appropriate SW tool to configure your device. You find the SW [here](https://keller-druck.com/en/products/software-accessories). If you can connect to the device with a cable please use the ["PressureSuite Desktop"](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop).
+1. Please download the software "PressureSuite Desktop" to configure your device. You find the software [here](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop).
 <!--- TODO: new Manual? -->
 <!---, and its [manual](https://www.keller-druck2.ch/swupdate/GSMSetup/manual/man_gsm2_e_en.pdf). -->
 

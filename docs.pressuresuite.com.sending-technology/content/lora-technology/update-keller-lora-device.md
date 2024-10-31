@@ -21,9 +21,11 @@ PressureSuite Desktop is available on the [KELLER Website](https://keller-druck.
 ## Overview
 
 - On the left side navigation you can find the 'Configuration'-tab.
+
 ![LoRa Configuration Overview](../../LoRa_ConfigOverview.png  "LoRa Configuration Overview")
 
 - You can change the configuration with a guided wizards (1) or an individual section (2) 
+
 ![LoRa Wizards Overview](../../LoRa_WizardsOverview.png  "LoRa Wizards Overview")
 
 
@@ -37,6 +39,8 @@ PressureSuite Desktop is available on the [KELLER Website](https://keller-druck.
 
 <!--- TODO -->
 
+
+
 ![LoRa Hardware Wizard](../../LoRa_WizardHardware.png  "LoRa Hardware Wizard")
 
 ## Measurement
@@ -46,6 +50,7 @@ PressureSuite Desktop is available on the [KELLER Website](https://keller-druck.
 The measured values are transmitted immediately after each measurement.
 - Default measure interval is: 10 min
 - The more the device sends the more battery is consumed
+
 ![LoRa Measurement Wizard](../../LoRa_WizardMeasurement.png  "LoRa Measurement Wizard")
 
 ## LoRa Settings
@@ -118,11 +123,15 @@ The device can send useful information such as battery voltage, battery capacity
 
 <!--- TODO -->
 
+**Note:** Link check is working with device firmware >= 20.34 only 
+Be aware that the link check function initiates downlink traffic which can cause more transfer costs and can limiting also the maximum sending interval. The power consumption of the device will also increase. Therefore, we do not recommend using this function.  
+Please use the "Rejoin" function instead. 
+
 ![LoRa Link Check Wizard](../../LoRa_WizardLinkCheck.png  "LoRa Link Check Wizard")
 
 ## Rejoin
 
-Devices with Firmware>20.34 can have a ReJoin interval that helps to fix troubles with LoRa Network Servers (Hello Swisscom)
+Devices with firmware >= 20.34 can have a Rejoin interval that helps to fix troubles with LoRa Network Servers (Hello Swisscom)
   - Default/Recommended: Interval time of 14 days  
 
 ![LoRa Rejoin Wizard](../../LoRa_WizardRejoin.png  "LoRa Rejoin Wizard")
