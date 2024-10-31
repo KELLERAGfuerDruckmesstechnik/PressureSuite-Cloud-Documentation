@@ -31,15 +31,14 @@ PressureSuite Desktop is available on the [KELLER Website](https://keller-druck.
 
 ## Location
 
-<!--- TODO -->
+Register the coordinates where this device is installed as decimal degrees and the altitude of the device.
 
 ![LoRa Location Wizard](../../LoRa_WizardLocation.png  "LoRa Location Wizard")
 
 ## Hardware
 
 <!--- TODO -->
-
-
+The current values of the channel can only be retrvieved, if the 
 
 ![LoRa Hardware Wizard](../../LoRa_WizardHardware.png  "LoRa Hardware Wizard")
 
@@ -108,7 +107,20 @@ The device can send useful information such as battery voltage, battery capacity
 
 ## Alarming
 
-<!--- TODO -->
+If 'Alarm Trigger Value' >= 'Alarm Un-Trigger Value', then the alarm will be sent above a certain level 
+
+An alarm message is triggered if the measured value of the selected channel is greater than the 'Alarm Trigger Value'. During this period the alarm will be sent X times if the measured value is still greater than the 'Alarm Un-Trigger Value' (Hysteresis = 'Alarm Trigger Value' – 'Alarm Un-Trigger Value'). 
+
+![Alarming Explanation](../../AlarmingExplanation1.png  "Alarming Explanation")
+ 
+If 'Alarm Trigger Value' < 'Alarm Un-Trigger Value', then the alarm will be sent below a certain level 
+
+An alarm message is triggered if the measured value of the selected channel is less than the 'Alarm Trigger Value'. During this period the alarm will be sent X times if the measured value is still lower than the 'Alarm Un-Trigger Value' (Hysteresis = 'Alarm Un-Trigger Value' – 'Alarm Trigger Value'). 
+ 
+![Alarming Explanation](../../AlarmingExplanation2.png  "Alarming Explanation")
+
+NOTE: If the alarm condition is active and X alarm messages are sent no more alarm messages will be sent. The alarm is 
+only re-armed when the 'Alarm Un-Trigger Value' condition is fulfilled.
 
 ![LoRa Alarming Wizard](../../LoRa_WizardAlarming.png  "LoRa Alarming Wizard")
 
