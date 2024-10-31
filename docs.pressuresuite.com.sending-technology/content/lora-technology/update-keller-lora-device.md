@@ -38,7 +38,7 @@ Register the coordinates where this device is installed as decimal degrees and t
 ## Hardware
 
 <!--- TODO -->
-The current values of the channel can only be retrvieved, if the 
+The current value of a channel can only be retrvieved, if they are already configured active on the device.
 
 ![LoRa Hardware Wizard](../../LoRa_WizardHardware.png  "LoRa Hardware Wizard")
 
@@ -126,10 +126,31 @@ only re-armed when the 'Alarm Un-Trigger Value' condition is fulfilled.
 
 ## Water Calculation
 
-<!--- TODO -->
+There are essentially 3 different calculation types.
 
 ![LoRa Watercalculation Wizard](../../LoRa_WizardWaterCalc1.png  "LoRa Watercalculation Wizard")
-![LoRa Watercalculation Wizard](../../LoRa_WizardWaterCalc2.png  "LoRa Watercalculation Wizard")
+
+### Height Of Water
+
+At water height above probe (E), the water column/water height above the probe is measured.
+
+![Height Of Water](../../WaterHeightDialog.png  "Height Of Water")
+
+### Depth To Water
+
+At depth to water (F), the distance from the upper edge of the measuring point to the water surface is determined. For 
+the calculation of the depth upper edge of the measuring point to the water surface, the installation length B must be 
+known. 
+
+![Water Depth](../../WaterDepthtDialog.png  "Water Depth")
+
+### Height Of Water Above Sea Level
+
+At water level related to sea level (G) the water level/water level related to sea level is calculated. With this infor-
+mation, the measured values from different locations can be compared with each other. For this calculation, the 
+installation length B and the height above sea level of the upper edge of the measuring point are required. 
+
+![Height Of Water Above Sea Level](../../WaterHeightAboveSeaDialog.png  "Height Of Water Above Sea Level")
 
 ## Link Check
 
