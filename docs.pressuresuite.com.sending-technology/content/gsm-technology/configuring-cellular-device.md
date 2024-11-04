@@ -10,12 +10,15 @@ menu:
 
 ## Identification / Location
 
-- 
+- Unique Id is used to identify the device when sending data. Recommended is to use the IMEI.
+- Device Name and Network name are used to name devices and group them into networks.
 - Register the coordinates where this device is installed as decimal degrees and the altitude of the device.
 
 ![](../../Cellular_WizardLocation.png  "")
 
 ## Hardware
+
+- Select the 'Connected Sensor Type' based on the connected sensor.
 
 The current value of a channel can only be retrvieved, if they are already configured active on the device.
 
@@ -32,17 +35,33 @@ The current value of a channel can only be retrvieved, if they are already confi
 
 ## Event Recording
 
+- There are three types of events
+  - Delta Save
+    - The device saves a value when the delta to the last measured value is bigger than the defined 'Delta Value'
+  - Delta Send
+    - The device sends the stored an unsent measurements when the delta to the last measured value is bigger than the defined 'Delta Value'
+  - On/Off
+    - The device starts recording at the 'Trigger Value' and stops at the 'Trigger Off value'. This is described more in detail in the chapter "Alarming" below.
+
 ![](../../Cellular_WizardEventOnOff.png  "")
 
 ## Internet Connection
+
+- Enter the 'APN', 'User Name' and 'Password' provided by the SIM-card provider. Some of the more popular providers are listed in the popup box next to the APN field.
+- If the SIM-card requiers a PIN, make sure to enter the PIN correctly. The SIM-card will be locked after three incorrect tries by the ADT1/ARC1. If that happens, the SIM-card must be unlocked with the help of a mobile phone and the SIM-card puck.
 
 ![](../../Cellular_WizardInternetConnection.png  "")
 
 ## FTP Connection
 
+- Enter the credentials to the FTP server.
+- If you use the PressureSuite Cloud service, an FTP server can be provided to you by the PressureSuite support.
+
 ![](../../Cellular_WizardFtpConnection.png  "")
 
 ## Configuration Check
+
+This function checks for incoming configurations for example sent by the PressureSuite cloud.
 
 ![](../../Cellular_WizardConfigCheck.png  "")
 
@@ -100,5 +119,7 @@ installation length B and the height above sea level of the upper edge of the me
 ![Height Of Water Above Sea Level](../../WaterHeightAboveSeaDialog.png  "Height Of Water Above Sea Level")
 
 ## E-Mail Connection
+
+We recommend using FTP instead of E-Mail. 
 
 ![](../../Cellular_WizardEmailConnection.png  "")
