@@ -8,6 +8,20 @@ menu:
 
 # How to set up a cellular device with PressureSuite Desktop
 
+For the configuration of the KELLER cellular devices we developed "PressureSuite Desktop". 
+
+PressureSuite Desktop is available on the [KELLER Website](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) 
+
+## Overview
+
+- On the left side navigation you can find the 'Configuration'-tab.
+
+![Cellular Configuration Overview](../../Cellular_ConfigOverview.png  "Cellular Configuration Overview")
+
+- You can change the configuration with a guided wizards (1) or an individual section (2) 
+
+![Cellular Wizards Overview](../../Cellular_WizardOverview.png  "Cellular Wizards Overview")
+
 ## Identification / Location
 
 - Unique Id is used to identify the device when sending data. Recommended is to use the IMEI.
@@ -123,3 +137,22 @@ installation length B and the height above sea level of the upper edge of the me
 We recommend using FTP instead of E-Mail. 
 
 ![](../../Cellular_WizardEmailConnection.png  "")
+
+## Control Commands
+
+**Test FTP connection**
+Checks the connection to the from the computer to the configured FTP server with the provided credentials and prompts success or failure.
+  
+**Send Configuration FTP**
+Sends the current device configuration to the configured FTP server.
+
+**Send Measuring Data FTP**
+Sends all the stored measurements that were not yet sent to the configured FTP server.
+
+**Send Configuration Email**
+Sends the current device configuration to the configured E-Mail address.
+
+**Send Measuring Data Email**
+Sends all the stored measurements that were not yet sent to the configured E-Mail address.
+
+![Cellular Control Commands](../../Cellular_ControlCommands.png  "Cellular Control Commands")
