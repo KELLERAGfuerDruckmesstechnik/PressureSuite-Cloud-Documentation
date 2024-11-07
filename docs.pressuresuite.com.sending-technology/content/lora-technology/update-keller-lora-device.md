@@ -4,7 +4,6 @@ menu:
     main:
         parent: lora-technology
         weight: 4
-toc: false
 description: Information how to configure a LoRaWAN device from KELLER Pressure
 ---
 
