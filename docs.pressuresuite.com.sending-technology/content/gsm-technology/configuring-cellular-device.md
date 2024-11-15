@@ -70,6 +70,7 @@ The current value of a channel can only be retrvieved, if they are already confi
 
 - Enter the credentials to the FTP server.
 - If you use the PressureSuite Cloud service, an FTP server can be provided to you by the PressureSuite support.
+- With the button "Test Connection" the FTP server and credentials can be tested. With the press of this button, PressureSuite Desktop tries to establish the connection to the provided FTP server with the provided credentials. The Computer must have an active internet connection for the connection test.
 
 ![](../../Cellular_WizardFtpConnection.png  "")
 
