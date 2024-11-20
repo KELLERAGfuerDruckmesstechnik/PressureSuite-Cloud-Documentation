@@ -79,7 +79,7 @@ Nevertheless, missing *five* transmissions is considered worthy of alarm.
       A) The sending device (GSM, ARC1 or ADT1) might be defective or missing.  
       B) The cables to the level probes might be defective.  
       C) The sensors themselves might be defective.  
-   - To analyze this, please check the rate of transmissions on www.kolibrcloud.ch and the "last data".  
+   - To analyze this, please check the rate of transmissions on www.pressuresuite.com and the "last data".  
     If some channels do not send correct values ("--" instead of a number), the sensor might be defective. Sometimes it is visible that the values of another channel have increased/decreased from the very moment other channels do not show any values. This indicates that the sensor is defective due to pressure overload.  
     If ALL channels are no longer sending correct values, but transmissions continue, the cable to the probes may be defective.  
     If there is no transmission anymore, the sending device itself might be physically defective or there is another (connection) problem.  
