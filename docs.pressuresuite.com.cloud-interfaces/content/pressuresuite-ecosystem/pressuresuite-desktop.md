@@ -13,9 +13,9 @@ The 'PressureSuite Desktop' Windows software is part of the modern PressureSuite
 During the Installation process please install the "FTDI Chip CDM Drivers" when using PressureSuite Desktop together with Dataloggers. Only install "Manometer driver (LEO 5 USB)" when using the PressureSuite Desktop together with the "LEO 5" Manometer.
 
 ## Tutorials
-- [PressureSuite Desktop - Installation](https://www.youtube.com/watch?v=OOwIafnIoro)
-- [PressureSuite Desktop - Overview](https://www.youtube.com/watch?v=-Ib0wYZtKso)
-- [PressureSuite Desktop - In Depth](https://www.youtube.com/watch?v=yLmyfeqxghs)
+- [PressureSuite Desktop - Installation](https://www.youtube.com/watch?v=gs4iMZx5Ens&list=PLsJXvAaRPNlXOSieA_Tka_CTCqvwumCMI&index=1)
+- [PressureSuite Desktop - Overview](https://www.youtube.com/watch?v=9UWGqytViCI&list=PLsJXvAaRPNlXOSieA_Tka_CTCqvwumCMI&index=2)
+- [PressureSuite Desktop - In Depth](https://www.youtube.com/watch?v=PChVGxhu5dQ&list=PLsJXvAaRPNlXOSieA_Tka_CTCqvwumCMI&index=3)
 
 ## Device overview
 
