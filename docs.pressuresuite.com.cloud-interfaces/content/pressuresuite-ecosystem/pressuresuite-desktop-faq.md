@@ -9,7 +9,7 @@ menu:
 # Frequently askes questions
 
 Tutorials:
-- [PressureSuite Desktop - Installation](https://www.youtube.com/watch?v=gs4iMZx5Ens&list=PLsJXvAaRPNlXOSieA_Tka_CTCqvwumCMI&index=1)
+- [PressureSuite Desktop - Installation](https://www.youtube.com/watch?v=TptD7kvC7ic&list=PLsJXvAaRPNlXOSieA_Tka_CTCqvwumCMI&index=10)
 - [PressureSuite Desktop - Overview](https://www.youtube.com/watch?v=9UWGqytViCI&list=PLsJXvAaRPNlXOSieA_Tka_CTCqvwumCMI&index=2)
 - [PressureSuite Desktop - In Depth](https://www.youtube.com/watch?v=PChVGxhu5dQ&list=PLsJXvAaRPNlXOSieA_Tka_CTCqvwumCMI&index=3)
 
