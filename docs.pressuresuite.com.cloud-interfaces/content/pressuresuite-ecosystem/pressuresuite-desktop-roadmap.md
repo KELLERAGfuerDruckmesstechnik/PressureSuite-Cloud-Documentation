@@ -21,6 +21,30 @@ PLANNED
 
 ## Release History
 
+## Version 6.3.24338.01 (November, 2024)
+### Description:
+
+This update introduces multiple bugfixes.
+
+### Bug Fixes:
+
+- fixed: IoT configuration files not recognized with new file extension (".psuitec")
+- fixed: Recording during the switch between daylight saving time to 'regular' time could result shifted times after the switch
+- fixed: Crash when closing waterconfiguration dialog
+
+## Version 6.3.24291.01 (Oktober, 2024)
+### Description:
+This update introduces some quality of life improvements and fixes a few small bugs
+
+### Features and Enhancements:
+
+- Added helper dialog to determine installation length for "depth to water" calculation
+- Improved dutch translation
+
+### Bug Fixes:
+
+- Fixed ARC1 live measurement displaying null values with CTD sensor
+
 ## Version 6.3.24061.01 (March 01, 2024)
 
 ### Features and Enhancements:
