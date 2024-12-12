@@ -17,9 +17,9 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 - An account on 'The Things Network'. If you do not have one than please sign up on https://www.thethingsnetwork.org/
 - A KELLER LoRa device (ADT1 LoRa or ARC1 LoRa)
-- [PressureSuite Destkop](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) and a USB connector cable (ARC1: K114 interface converter / ADT1: Micro USB cable)
-- The Device EUI number of the device (Use the [PressureSuite Destkop](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) to extract the EUI)
-- The Application EUI number of the device (Use the [PressureSuite Destkop](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) to extract the EUI)
+- [PressureSuite Desktop](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) and a USB connector cable (ARC1: K114 interface converter / ADT1: Micro USB cable)
+- The Device EUI number of the device (Use the [PressureSuite Desktop](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) to extract the EUI)
+- The Application EUI number of the device (Use the [PressureSuite Desktop](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) to extract the EUI)
 - The PressureSuite Endpoint URL which is: `https://devspakellercloudfunctionapp.azurewebsites.net/api/HttpTriggerCSharp_PascalTTN?code=eQxVYd76shpatS8av6lzsn3XxNEbtCiE9psrJaasyeMk/fudmQQ5uw==`
 
 ### Step 1
@@ -28,7 +28,7 @@ Nevertheless, we recommend to overtake the ownership of the device in TTN and re
 
 ### Step 2
 
-- Connect your PC using the [PressureSuite Destkop](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) and 
+- Connect your PC using the [PressureSuite Desktop](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) and 
   - Program your device according to your use case (See [How to configure a LoRaWAN device](https://docs.pressuresuite.com/sending-technology/lora-technology/update-keller-lora-device/))  
   - Do not forget to re-program the 'App EUI' and 'App Key' as the device is already enlisted in a KELLER TTN account. With the re-programming of the 'App EUI' and 'App Key' you have the complete ownership of the device and its transmission.
   - Write down the 'Application EUI', 'App Key' and the 'Device EUI'
