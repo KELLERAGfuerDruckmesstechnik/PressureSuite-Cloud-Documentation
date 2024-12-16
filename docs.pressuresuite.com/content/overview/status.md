@@ -9,14 +9,25 @@ description: History about maintenances and outages
 ---
 # Status
 
-We are currently addressing an issue where FTP files cannot be retrieved since **December 15, 2024, at 04:00**. Please rest assured, no data has been lost, and our team is actively working on a solution.
-
-Thank you for your patience!
-
+💚 ***All PressureSuite Cloud services running OK***  
 
 ---
 
 ## Outages/Issues  
+
+### 15. December 2024 04:00 CET - 16. December 2024 09:30 CET
+
+**Summary of Impact:**  
+The FTP-file-grabber-module used too much memory due to some faulty FTP accounts with thousands of folders/files and could not finish the upload to the cloud. Therefore, all files weren't uploaded tot he cloud and stuck in the FTP folders.  
+This error has been fixed. No data has been deleted, and all missing measurements should have been loaded up to the PressureSuite Cloud DB.  
+
+**Root Cause:**  
+After getting noticed that this issue exists, the engineers restarted the module and all data could be loaded again. The software team quickly adapted to this use case and tested & deployed the new code.
+
+**Mitigation:**  
+The particular software code has been adapted to new use cases and tested. All data should now be visible again.  
+
+---
 
 ### 29th April 2024 - 11:30 CEST - 3rd May 2024 - 16:30 CEST
 
@@ -53,7 +64,7 @@ We apologize for any inconvenience caused and appreciate your patience and under
 
 [UPDATE] 30th April 2024 - 12:00 CEST: The root cause of this issue is that all @gsmdata.ch accounts have undergone changes within the web hoster's platform. Previously, usernames were email addresses (e.g., 'ftp0xx@gsmdata.ch'), but they have now been altered to different usernames (e.g., 'h18xxxx.ftp0xx_gs3xx'). We are currently in contact with the web hoster to rectify this situation. We apologize for any inconvenience caused by this disruption. To reassure, the data remains intact within the GSMs/ARC1s/ADT1s and will be transmitted once the programmed FTP credentials are operational again.  
 
-
+---
 
 ### 2022 - 01.December 2023
 
@@ -64,7 +75,7 @@ Unfortunately, we only now found a bug that made a cellular device change the me
 **Root Cause:**  
 We identified the problem in sending the recent measurement start time within a configuration file which is in the past during the time a device finds the new configuration. The solution was to avoid sending a measure start time unless specifically requested.  
 
-
+---
 
 ### 21.July 12:00 CEST - 21.July 2023 23:00 CEST
 
@@ -75,7 +86,7 @@ On the evening of the Monday 24.July, the PressureSuite tech team restored all m
 **Root Cause:**  
 The root cause was a data base quota that reached its limit. After increasing the quota for 100GB the measurements can be stored reliable.
 
-
+---
 
 ### 18.December 20:00 UTC - 20.March 2023 22:30 UTC
 
@@ -86,6 +97,7 @@ On the weekend evening, the API service ceased functioning, causing all attempts
 Still Unknown.  
 A server component that worked for nearly 6 years just stopped and could not be restarted. The cause of the problem remains unknown, and communication with cloud experts is ongoing to determine its origin. (21 March 2023)  
 
+---
 
 ### 23.December - 08. March 2023
 
@@ -97,6 +109,7 @@ We completely re-deployed all connected services and implemented new monitor-sof
 The dedicated Azure Function stopped executing in a night to the 23rd december. We tried to find the root cause but neither we nor Microsoft tooling could point a root cause.
 This lead us to the point to implement further alarming mechanism to monitor the level alarming mechanism.  
 
+---
 
 ### 05.March - 06. March 2023 15:45 CET
 
@@ -109,7 +122,7 @@ On 6th March 2023 - 14:45 CEST it was possible again to login.
 The developer team found the root cause in a migration from the Microsoft Azure AD B2C endpoint provider. See https://learn.microsoft.com/en-us/azure/active-directory-b2c/b2clogin  
 After changing and testing various URLs and updating of packages/libraries the login was working again.
 
-
+---
 
 ### 22. February 2022 10:00 CET - 10:20 CET
 
@@ -131,6 +144,7 @@ The data was still captured in an emergency log queue from which the measurement
 Due to the holiday season, we had to delay these efforts and fix and test everything after New Year's Eve but not earlier. We are sorry for this outage.  
 
 ---
+
 ### 25. October 2021 16:00 CET - 02. November 2021 13:30 CET
 
 **Summary of Impact:**  
