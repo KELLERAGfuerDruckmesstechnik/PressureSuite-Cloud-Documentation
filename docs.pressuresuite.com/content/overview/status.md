@@ -9,7 +9,9 @@ description: History about maintenances and outages
 ---
 # Status
 
-💚 ***All PressureSuite Cloud services running OK***  
+We are currently addressing an issue where FTP files cannot be retrieved since **December 15, 2024, at 04:00**. Please rest assured, no data has been lost, and our team is actively working on a solution.
+
+Thank you for your patience!
 
 
 ---
