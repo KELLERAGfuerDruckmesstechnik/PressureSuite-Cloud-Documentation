@@ -21,6 +21,18 @@ PLANNED
 
 ## Release History
 
+## Version 6.3.25092.01 (April, 2025)
+### Description:
+
+This update introduces some bugfixes.
+
+### Bug Fixes:
+
+- fixed: Datepicker reverting to selected date when navigating to another month
+- fixed: Removed Manometer configuration from DCX22 configuration page
+- fixed: Images export used UTC for time axis instead of local time
+- Added exception handling to reduce the risk of crashes
+
 ## Version 6.3.24338.01 (November, 2024)
 ### Description:
 
