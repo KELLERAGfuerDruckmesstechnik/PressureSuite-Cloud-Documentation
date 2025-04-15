@@ -239,11 +239,11 @@ In this update we introduce the new DEMO MODE. This mode can be used to try out 
 
 #### Description
 
-With this version we introduce the compatibility of [KELLER remote transmission units](https://keller-druck.com/en/products/wireless-solutions). PressureSuite Desktop can read the measurements from ADT1, ARC1 and GSM-1 & GSM-2 devices.  
+With this version we introduce the compatibility of [KELLER remote transmission units](https://keller-pressure.com/en/products/wireless-solutions). PressureSuite Desktop can read the measurements from ADT1, ARC1 and GSM-1 & GSM-2 devices.  
 
 #### Features and Enhancements
 
-- **[General]**: New devices supported by PressureSuite Desktop: ADT1, ARC1, GSM-1, GSM-2. Measurements can be read out but it can not be configured. For a configuration of the remote transmission units it is necessary to use the ["GsmSetup"-tool](https://keller-druck.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results).
+- **[General]**: New devices supported by PressureSuite Desktop: ADT1, ARC1, GSM-1, GSM-2. Measurements can be read out but it can not be configured. For a configuration of the remote transmission units it is necessary to use the ["GsmSetup"-tool](https://keller-pressure.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results).
 - **[General]**: Connected KELLER devices that are not supported by PressureSuite Desktop will now show up as "not supported KELLER device"
 - **[Tools]**: Added the import function for Logger 5 and PressureSuite JSON files  
 

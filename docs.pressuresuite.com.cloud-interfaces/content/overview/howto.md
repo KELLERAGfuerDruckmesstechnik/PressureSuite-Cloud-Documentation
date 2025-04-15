@@ -39,7 +39,7 @@ Alternately, it is possible to periodically gather the measurement data and deve
 
 Use [the same procedure as with TTN](https://docs.pressuresuite.com/sending-technology/lora-technology/integration-with-ttn/) but with the specific named services (eg. "HTTP Post").  
 For *Actility*/*Thingspark* based platforms used by Swisscom, KPN, Digita etc please see https://docs.pressuresuite.com/sending-technology/lora-technology/integration-with-actility/  
-The [PressureSuite support team](<pressuresuite@keller-druck.com>) can help you with the integration.
+The [PressureSuite support team](<pressuresuite@keller-pressure.com>) can help you with the integration.
 
 ## LoRa: I want LoRa technology but not share my data in any cloud. What are my options?
 

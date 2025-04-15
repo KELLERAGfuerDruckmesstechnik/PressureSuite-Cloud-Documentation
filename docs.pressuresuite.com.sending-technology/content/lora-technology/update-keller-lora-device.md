@@ -12,7 +12,7 @@ description: Information how to configure a LoRaWAN device from KELLER Pressure
 
 For the configuration of the KELLER LoRaWAN devices we developed "PressureSuite Desktop". 
 
-PressureSuite Desktop is available on the [KELLER Website](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) 
+PressureSuite Desktop is available on the [KELLER Website](https://keller-pressure.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) 
 
 
 <em>The guide for the old 'GSM configuration' software is on the bottom of the page</em>
@@ -195,7 +195,7 @@ A measurement is triggered and the measured values are transmitted via LoRaWAN. 
 
 The following guide describes how to configure a LoRaWAN device from KELLER. A German version is available [as PDF](../../KELLER_LoRaWAN_Geraet_konfigurieren_V1.0.pdf).
 
-The software [GsmConfiguration/GsmSetup](https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) is required for the configuration. The software can be downloaded under the following link: <https://keller-druck.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units>
+The software [GsmConfiguration/GsmSetup](https://keller-pressure.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units) is required for the configuration. The software can be downloaded under the following link: <https://keller-pressure.com/en/products/software/desktop-applications/gsm-setup-for-remote-transmission-units>
 
 - Connect the ARC1 device to a Windows-PC with the interface converter K114 and then start the software *GsmConfiguration*. ADT1 devices can be connected using a Micro USB-cable.
 

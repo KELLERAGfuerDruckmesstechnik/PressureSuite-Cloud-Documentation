@@ -10,7 +10,7 @@ description: Frequently Asked Questions  (FAQ)
 
 # Frequently Asked Questions
 
-If you miss a question/answer please contact <pressuresuite@keller-druck.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-Documentation).
+If you miss a question/answer please contact <pressuresuite@keller-pressure.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-Documentation).
 
 - [What does "cloud", "IoT", "LoRa" mean?](#what-does-cloud-iot-lora-mean)
 - [What kind of IoT devices does KELLER have?](#what-kind-of-iot-devices-does-keller-have)
@@ -46,7 +46,7 @@ KELLER has been using IoT devices for many years: Cellular data loggers and now 
 See more at <https://docs.pressuresuite.com/sending-technology/lora-technology/>
 
 ## What kind of IoT devices does KELLER have?
-See https://keller-druck.com/en/products/wireless-solutions
+See https://keller-pressure.com/en/products/wireless-solutions
 KELLER sells the ADT1 (low-cost) and the ARC1 (robust) devices in a tube, a box, or a box with special safety barriers.
 Both device categories can send data either via cellular sending technology (2G/3G/4G/NB-IoT/LTE-M) or via the LoRaWAN sending technology.
 
@@ -96,7 +96,7 @@ During the testing phase, they can start using our documentation to integrate th
 
 ## Where can I find marketing/promotional materials?
 
-Please contact <marketing@keller-druck.com>.
+Please contact <marketing@keller-pressure.com>.
 
 ## How do I sign up? How do I log in? How can I test it?
 
@@ -133,11 +133,11 @@ It is possible to load data from GSM2DataManager databases into the cloud. This 
 
 ## The customer needs a new feature? How do I proceed?
 
-Contact to <pressuresuite@keller-druck.com>
+Contact to <pressuresuite@keller-pressure.com>
 
 ## I discovered an SW error. How do I contact KELLER?
 
-Contact to <pressuresuite@keller-druck.com>
+Contact to <pressuresuite@keller-pressure.com>
 
 ## How does LoRa technology work? And what are the advantages?
 

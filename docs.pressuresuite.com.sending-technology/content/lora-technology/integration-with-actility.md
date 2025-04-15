@@ -49,7 +49,7 @@ Give a **Name** and **Add** the new created application server as a **Local appl
 ![Create a routing profile](../../thingpark/003_create_routing_profile_2.png "Create a routing profile")
 
 ### Step 5A
-Before the device can be created it first has to be configured, too. Use the tool ["GSM setup for remote transmission units and its manual"](https://keller-druck.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results) and a similar process like in https://docs.pressuresuite.com/sending-technology/gsm-technology/ 
+Before the device can be created it first has to be configured, too. Use the tool ["GSM setup for remote transmission units and its manual"](https://keller-pressure.com/en/downloads?id=nBhPS8HkSDJkB6azedxsAB#results) and a similar process like in https://docs.pressuresuite.com/sending-technology/gsm-technology/ 
 
 ### Step 5B
 Under [Hardware] choose the correct "Connected Sensor Type" based on the attached sensor/probe.  

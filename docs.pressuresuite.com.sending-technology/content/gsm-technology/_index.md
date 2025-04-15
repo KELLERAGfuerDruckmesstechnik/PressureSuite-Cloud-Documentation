@@ -11,18 +11,18 @@ menu:
 Please refer to the [General Process](https://docs.pressuresuite.com/overview/process) of working with the PressureSuite Cloud.
 To register a GSM/ARC device please follow the following steps:
 
-Consider staying in close contact with the KELLER sales engineer and/or the PressureSuite Cloud support team (pressuresuite@keller-druck.com) 
+Consider staying in close contact with the KELLER sales engineer and/or the PressureSuite Cloud support team (pressuresuite@keller-pressure.com) 
 
 ## With cable connection: Cloud integration with FTP
 
-1. Please download the software "PressureSuite Desktop" to configure your device. You find the software [here](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop).
+1. Please download the software "PressureSuite Desktop" to configure your device. You find the software [here](https://keller-pressure.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop).
 <!--- TODO: new Manual? -->
 <!---, and its [manual](https://www.keller-druck2.ch/swupdate/GSMSetup/manual/man_gsm2_e_en.pdf). -->
 
 2. Ideally, the PressureSuite Cloud gets the data from an FTP-Server. Either you host an own FTP server or use own of the provided FTP accounts from KELLER. 
 
   - a) If you wish to use an FTP account provided by KELLER, then please, contact PressureSuite Cloud support or your KELLER sales representative to communicate the needed credentials (host-name, user-name, password).
-  - b) If you wish to use an own hosted FTP account, please be aware that only certain security protocols are supported. SFTP is not supported. Some FTPS versions are supported. In doubt, please ask the PressureSuite Cloud support team (pressuresuite@keller-druck.com).
+  - b) If you wish to use an own hosted FTP account, please be aware that only certain security protocols are supported. SFTP is not supported. Some FTPS versions are supported. In doubt, please ask the PressureSuite Cloud support team (pressuresuite@keller-pressure.com).
   - c) To let the device automatically be assigned to your PressureSuite Cloud account, register your FTP account first in your PressureSuite Cloud in https://www.pressuresuite.com/account-settings  
   ![Add an FTP account to auto-register new devices](../add-ftp-account.png "Add a FTP account to auto-register new devices")
 

@@ -13,14 +13,14 @@ hidden: true
 
 For support questions, please refer to
 
-- <pressuresuite@keller-druck.com>
-- OR: [your local KELLER sales engineer](https://keller-druck.com/en/company/subsidiaries)  
+- <pressuresuite@keller-pressure.com>
+- OR: [your local KELLER sales engineer](https://keller-pressure.com/en/company/subsidiaries)  
 
 ## Contribute
 
 Did you find a bug or want to request a new feature?  
 
-- Ask directly: <pressuresuite@keller-druck.com>  
+- Ask directly: <pressuresuite@keller-pressure.com>  
 - Report bugs or make feature-requests by opening an issue at [https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-Documentation/issues](https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-Documentation/issues)  
 - Help fixing issues or improve documentation by creating pull-requests  
 - Did you use the PressureSuite Cloud API for your project and are willing to share some source? Please consider open-source it and share it on Github!  

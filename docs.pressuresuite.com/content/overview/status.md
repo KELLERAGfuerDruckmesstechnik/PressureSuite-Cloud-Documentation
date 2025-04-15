@@ -136,7 +136,7 @@ Maintenance of a component led to a false deployment of the device-check-functio
 
 **Summary of Impact:**  
 An SW update caused the system to reject all incoming measurement sets. The data has been restored.  
-If you think there is still missing data, then please contact pressuresuite@keller-druck.com
+If you think there is still missing data, then please contact pressuresuite@keller-pressure.com
 
 **Root Cause:**  
 An SW update meant for our test system caused a smaller sub-part to automatically re-build and deploy to the production system. This resulted in an incompatibility and the data could not be ingested into the database.  
@@ -246,7 +246,7 @@ During this time period, all cellular devices (GSM/ARC1) using ftp.gsmdata.ch co
 Nevertheless, the ARC1/GSMs are programmed in a way that after a positive re-connection they re-send the missing data. 
 
 **Next Steps:**  
-There should not been data holes due to the ARC1s/GSMs fault-tolerance strategy. If you think there are any data holes, please contact pressuresuite@keller-druck.com to remotely request the missing data.
+There should not been data holes due to the ARC1s/GSMs fault-tolerance strategy. If you think there are any data holes, please contact pressuresuite@keller-pressure.com to remotely request the missing data.
 
 ---
 
@@ -273,7 +273,7 @@ While fixing the issue the LoRa data on Monday some LoRa messages where wrongly 
 
 As the data was temporarily stored in a DL-queue engineers restored all the data again on Monday night.
 
-If there are still data missing, please contact pressuresuite@keller-druck.com to restore missing data.
+If there are still data missing, please contact pressuresuite@keller-pressure.com to restore missing data.
 
 **Mitigation:**  
 Engineers found a bug that caused a wrong conversion and assignment of the GSM1/ARC1 channels.  
@@ -392,7 +392,7 @@ Engineers determined that an error in a recent deployment of a new auto-assignme
 Engineers fixed and tested the protocol issue.
 
 **Next Steps**:  
-Customers who lost important data can contact the PressureSuite Cloud support (pressuresuite@keller-druck.com) to retrieve the missing measurement data from the log files.
+Customers who lost important data can contact the PressureSuite Cloud support (pressuresuite@keller-pressure.com) to retrieve the missing measurement data from the log files.
 
 ---
 

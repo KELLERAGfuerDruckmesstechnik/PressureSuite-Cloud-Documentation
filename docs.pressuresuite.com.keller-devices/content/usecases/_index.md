@@ -16,8 +16,8 @@ hidden: true
 
 ## Use cases with KELLER devices
 
-Please visit: https://keller-druck.com/en/industries
+Please visit: https://keller-pressure.com/en/industries
 
 ## Leaflet "Data Loggers/Level probes"
 
-Please visit: https://keller-druck.com/en/products/level-probes
+Please visit: https://keller-pressure.com/en/products/level-probes

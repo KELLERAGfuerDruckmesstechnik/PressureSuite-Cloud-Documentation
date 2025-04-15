@@ -10,7 +10,7 @@ menu:
 
 For the configuration of the KELLER cellular devices we developed "PressureSuite Desktop". 
 
-PressureSuite Desktop is available on the [KELLER Website](https://keller-druck.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) 
+PressureSuite Desktop is available on the [KELLER Website](https://keller-pressure.com/en/products/software-accessories/pressuresuite/pressuresuite-desktop) 
 
 ## Overview
 
