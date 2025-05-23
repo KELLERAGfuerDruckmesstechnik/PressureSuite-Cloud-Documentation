@@ -34,7 +34,7 @@ Consider staying in close contact with the KELLER sales engineer and/or the Pres
     ![Choose the correct device type picture](../CloudSetup_HardwareSettings.png "Choose the correct device type!")
 
   - b) Use a “Configuration Check” which is the time the device waits until it checks the FTP server for new configuration. An interval of 24h is a good value.
-    ![Choose a check interval picture](../CloudSetup_ConfigurationCheck.png.png "Check the interval!")
+    ![Choose a check interval picture](../CloudSetup_ConfigurationCheck.png "Check the interval!")
 
   - d) In the **Measurement** tab, configure the following options: set the measurement interval and specify the number of measurements to be taken before sending the FTP file, labeled as "Measurements per FTP message".   
   To illustrate, if you schedule measurements every 30 minutes and choose to send the measurements file after 20 measurements, the device will transmit data once every 10 hours. By extending the 'Interval,' you can conserve battery power. However, it's important to note that an alarm set in the Cloud will only be triggered when data is received. In the given scenario, the Cloud alarm will be activated at worst after 10 hours. 
