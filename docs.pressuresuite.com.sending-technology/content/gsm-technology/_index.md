@@ -31,20 +31,20 @@ Consider staying in close contact with the KELLER sales engineer and/or the Pres
 4. The following steps are some general hints for a Cloud integration:
 
   - a) Choose the correct device type and only the channels that are needed.
-    ![Choose the correct device type picture](../gsmsetup_correcttype.png "Choose the correct device type!") ![Choose only the needed channels picture](../gsmsetup_correctchannels.png "Choose only the needed channels!")  
+    ![Choose the correct device type picture](../CloudSetup_HardwareSettings.png "Choose the correct device type!")
 
-  - b) Use a “check interval” which is the time the device waits until it checks the FTP server for new configuration. An interval of 24h is a good value.
-    ![Choose a check interval picture](../gsmsetup_checkinterval.png "Check the interval!")
+  - b) Use a “Configuration Check” which is the time the device waits until it checks the FTP server for new configuration. An interval of 24h is a good value.
+    ![Choose a check interval picture](../CloudSetup_ConfigurationCheck.png.png "Check the interval!")
 
-  - d) In the **[Measure]** tab, navigate to the settings and configure the following options: set the measurement type to "Interval" and specify the number of measurements to be taken before sending the FTP file, labeled as "Send FTP-File after X-Measurements".   
-  To illustrate, if you schedule measurements every 30 minutes and choose to send the measurements file after 20 measurements, the device will transmit data once every 10 hours. By extending the 'send interval,' you can conserve battery power. However, it's important to note that an alarm set in the Cloud will only be triggered when data is received. In the given scenario, the Cloud alarm will be activated at worst after 10 hours. 
+  - d) In the **Measurement** tab, configure the following options: set the measurement interval and specify the number of measurements to be taken before sending the FTP file, labeled as "Measurements per FTP message".   
+  To illustrate, if you schedule measurements every 30 minutes and choose to send the measurements file after 20 measurements, the device will transmit data once every 10 hours. By extending the 'Interval,' you can conserve battery power. However, it's important to note that an alarm set in the Cloud will only be triggered when data is received. In the given scenario, the Cloud alarm will be activated at worst after 10 hours. 
 In most water level measuring scenarios, a good value is measuring every 1h and sending data every 12h.  
 
-  - e) In the **[Communication]** tab avoid having a “FTP directory”. If you need/configured one, then please contact PressureSuite support. It is recommended to NOT use the “active Mode” and NOT use FTPs (with TLS).  
-    ![Prefer not to use a sub folder picture](../gsmsetup_ftpsettings.png "Prefer not to use a sub folder!") 
+  - e) In the **FTP Connection** tab avoid having a “FTP directory”. If you need/configured one, then please contact PressureSuite support. It is recommended to NOT use the “active Mode” and NOT use FTPs (with TLS).  
+    ![Prefer not to use a sub folder picture](../CloudSetup_FtpConnection.png "Prefer not to use a sub folder!") 
 
-5. <span style="color:red">After writing the configuration, it is *NEEDED* to have a configuration file ready for the Cloud.</span> Without a configuration a device CAN NOT be registered in the Cloud! We recommend sending it manually in tab **[Error/Status]**. Otherwise, the Cloud has to wait for the interval set in **[Info]**.  
-![Do manually send a config file picture](../gsmsetup_sendconfigfile.png "Do manually send a config file!") 
+1. **<span style="color:red">After writing the configuration, it is *REQUIRED* to have a configuration file ready for the Cloud.</span>** Without a configuration a device CANNOT be registered in the Cloud! We recommend sending it manually in status bar. Otherwise, the Cloud has to wait for the **Information Message** interval set in.  
+![Do manually send a config file picture](../CloudSetup_SendConfiguration.png "Do manually send a config file!") 
 
 
 6. Test your connection! If an FTP account has been assigned (step 2) and the device uses the same FTP then the device should automatically be listed into your PressureSuite cloud account. Otherwise, use your login credentials and use an FTP client (like [FileZilla](https://filezilla-project.org/)) and check if a text file could be sent.  
