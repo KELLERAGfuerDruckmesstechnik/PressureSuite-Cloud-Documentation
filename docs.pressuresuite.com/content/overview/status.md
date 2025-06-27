@@ -9,11 +9,25 @@ description: History about maintenances and outages
 ---
 # Status
 
-💚 ***All PressureSuite Cloud services running OK***  
+⚠️  **WE EXPERIENCE ISSUES WITH STORING ACTUAL MEASUREMENTS INTO THE DATABASE**  ⚠️
 
 ---
 
 ## Outages/Issues  
+
+### 27. June 2025 09:00 CET  
+
+**Summary of Impact:**  
+Some measurements are stored hours later and are visible in the web app and the API only a couple hours later.
+
+**Root Cause:**  
+Various Cloud services have been rewritten and modernized in the last weeks. Unfortunately, the important Azure Webjob that stores the measurements into the database was shot down by the Azure platform due to unknown reasons. The shutdown happened during the night from 25. June to 26. June and from 26. June to 27. June 2025. Only after the PressureSuite team noticed the problem during working hours, the Webjob was restarted and all measurements were stored in the database. No data has been lost, but the delay in storing the measurements caused a delay in the web app and API.
+
+**Mitigation:**  
+We are currently working on a more robust solution to avoid such issues in the future. The team is also investigating the root cause of the shutdown to prevent it from happening again.  
+
+---
+
 
 ### 15. December 2024 04:00 CET - 16. December 2024 09:30 CET
 
