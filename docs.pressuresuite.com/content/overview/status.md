@@ -9,11 +9,26 @@ description: History about maintenances and outages
 ---
 # Status
 
-⚠️  **WE EXPERIENCE ISSUES WITH STORING ACTUAL MEASUREMENTS INTO THE DATABASE**  ⚠️
+⚠️  **WE EXPERIENCE ISSUES WITH THE DATABASE**  ⚠️
 
 ---
 
 ## Outages/Issues  
+
+## 30. July 2025 15:00 CET  
+
+**Summary of Impact:**  
+The Web API and therefore the Web App experience delays in displaying data. We are currently migrating the database to a newer version which causes more delays than expected.
+Please be patient, we are working on it.
+
+**Root Cause:**  
+We are currently migrating the database to a newer version which is taking longer than anticipated due to the size of the database and the complexity of the data structures.
+
+**Mitigation:**  
+
+
+---
+
 
 ### 27. June 2025 09:00 CET  
 
