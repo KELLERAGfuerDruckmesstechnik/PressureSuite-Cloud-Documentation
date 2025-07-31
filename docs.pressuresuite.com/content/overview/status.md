@@ -15,25 +15,25 @@ description: History about maintenances and outages
 
 ## Outages/Issues  
 
-## 30. July 2025 15:00 CET  
+## 30. July 2025 15:00 CEST  - 30. July 2025 18:00 CEST
 
 **Summary of Impact:**  
-The Web API and therefore the Web App experience delays in displaying data. We are currently migrating the database to a newer version which causes more delays than expected.
-Please be patient, we are working on it.
+The Web API and therefore the Web App experience delays in displaying data. We were migrating the database to a newer version which caused more delays than expected.
 
 **Root Cause:**  
-We are currently migrating the database to a newer version which is taking longer than anticipated due to the size of the database and the complexity of the data structures.
+We were migrating the database to a newer version which was taking longer than anticipated due to the size of the database and the complexity of the data structures.
 
-**Mitigation:**  
-
+**Mitigation:**
+The team is also monitoring the system closely to ensure that any further issues are addressed promptly. Also, we try to warn here in advance when we plan to make further complex changes.
 
 ---
 
 
-### 27. June 2025 09:00 CET  
+### ⚠️ 27. June 2025 09:00 CEST  - ...
 
 **Summary of Impact:**  
-Some measurements are stored hours later and are visible in the web app and the API only a couple hours later.
+⚠️ Some measurements are stored hours later and are visible in the web app and the API only a couple hours later.
+⚠️ Coordinates can not be stored successfully. Longitude/Latitude are cut to two digits after the decimal point.
 
 **Root Cause:**  
 Various Cloud services have been rewritten and modernized in the last weeks. Unfortunately, the important Azure Webjob that stores the measurements into the database was shot down by the Azure platform due to unknown reasons. The shutdown happened during the night from 25. June to 26. June and from 26. June to 27. June 2025. Only after the PressureSuite team noticed the problem during working hours, the Webjob was restarted and all measurements were stored in the database. No data has been lost, but the delay in storing the measurements caused a delay in the web app and API.
