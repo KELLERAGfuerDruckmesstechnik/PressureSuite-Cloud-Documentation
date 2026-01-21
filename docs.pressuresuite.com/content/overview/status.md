@@ -15,7 +15,7 @@ description: History about maintenances and outages
 
 ## Outages/Issues  
 
-## 21. January 2026 02:00 CET  - 21. January 2026 13:00 CET  
+### 21. January 2026 02:00 CET  - 21. January 2026 13:00 CET  
 
 **Summary of Impact**  
 In response to performance issues caused by a customer's slow external FTP server, we deployed upgrades to the software components responsible for periodically retrieving measurement files from all FTP accounts. These changes inadvertently introduced further delays. As a result, some files remained on the FTP servers longer than expected and were not immediately ingested into the PressureSuite Cloud database.
@@ -32,7 +32,7 @@ With this architecture, the ingestion pipeline operates more reliably, and data 
 ---
 
 
-## 30. July 2025 15:00 CEST  - 30. July 2025 18:00 CEST
+### 30. July 2025 15:00 CEST  - 30. July 2025 18:00 CEST
 
 **Summary of Impact:**  
 The Web API and therefore the Web App experience delays in displaying data. We were migrating the database to a newer version which caused more delays than expected.
