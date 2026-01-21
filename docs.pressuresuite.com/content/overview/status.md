@@ -9,20 +9,25 @@ description: History about maintenances and outages
 ---
 # Status
 
-⚠️  **WE EXPERIENCE ISSUES WITH THE GATHERING OF FTP-FILES FROM ALL FTP ACCOUNTS**  ⚠️
+ ** EVERYTHING IS RUNNING WITHIN NORMAL PARAMETERS **
 
 ---
 
 ## Outages/Issues  
 
-## 21. January 2026 02:00 CEST  - 
+## 21. January 2026 02:00 CET  - 21. January 2026 13:00 CET  
 
-**Summary of Impact:**  
-Because of a slow FTP server of a customer, we tried to improve the situation by upgrading our software components that periodically gather all measurement files from all FTP accounts. Unfortunately, this caused more delays than expected and some data is still residing in the FTP server and not yet ingested into the PressureSuite Cloud DB.
-We do not expect any data loss, but delays of up to multiple hours until all data is ingested into the PressureSuite Cloud DB.
+**Summary of Impact**  
+In response to performance issues caused by a customer's slow external FTP server, we deployed upgrades to the software components responsible for periodically retrieving measurement files from all FTP accounts. These changes inadvertently introduced further delays. As a result, some files remained on the FTP servers longer than expected and were not immediately ingested into the PressureSuite Cloud database.
+No data loss is expected; however, ingestion delays of several hours occurred for certain accounts.
 
-**Root Cause:**  
+**Root Cause**  
+We identified the root cause in a subset of FTP accounts that utilize slow, externally hosted FTP servers (not operated by KELLER). Additionally, some of these accounts contained a very large number of folders—exceeding 900 in certain cases.
+These factors created significant processing bottlenecks within the ingestion pipeline. The pipeline operates on a 5‑minute interval, but processing these high‑latency and high‑complexity accounts required longer than the available interval. As a result, the pipeline was unable to complete a full cycle before the next iteration began, preventing full traversal of all accounts and leaving some files unprocessed on the FTP servers.
 
+**Mitigation**  
+We redesigned and reimplemented the affected service to enhance resilience and throughput. The high‑latency and high‑volume accounts have been isolated and are now processed in dedicated execution flows. This prevents them from impacting the performance of standard accounts.
+With this architecture, the ingestion pipeline operates more reliably, and data from the faster accounts is processed without delay. All remaining data from the previously affected accounts is now being successfully ingested.
 
 ---
 
