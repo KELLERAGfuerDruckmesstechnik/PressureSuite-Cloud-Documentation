@@ -9,11 +9,23 @@ description: History about maintenances and outages
 ---
 # Status
 
-⚠️  **WE EXPERIENCE ISSUES WITH THE DATABASE**  ⚠️
+⚠️  **WE EXPERIENCE ISSUES WITH THE GATHERING OF FTP-FILES FROM ALL FTP ACCOUNTS**  ⚠️
 
 ---
 
 ## Outages/Issues  
+
+## 21. January 2026 02:00 CEST  - 
+
+**Summary of Impact:**  
+Because of a slow FTP server of a customer, we tried to improve the situation by upgrading our software components that periodically gather all measurement files from all FTP accounts. Unfortunately, this caused more delays than expected and some data is still residing in the FTP server and not yet ingested into the PressureSuite Cloud DB.
+We do not expect any data loss, but delays of up to multiple hours until all data is ingested into the PressureSuite Cloud DB.
+
+**Root Cause:**  
+
+
+---
+
 
 ## 30. July 2025 15:00 CEST  - 30. July 2025 18:00 CEST
 
