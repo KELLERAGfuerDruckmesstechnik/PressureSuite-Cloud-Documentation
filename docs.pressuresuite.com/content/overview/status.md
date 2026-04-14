@@ -15,15 +15,15 @@ description: History about maintenances and outages
 
 ## Outages/Issues  
 
-### 13. April 2026 23:00 CEST – 14. April 2026 11:00 CEST
+### 13. April 2026 23:00 CEST - 14. April 2026 11:00 CEST  
 
-**Summary of Impact**
+**Summary of Impact**  
 During the night, the PressureSuite Cloud experienced a temporary service disruption. The Cloud API became partially to fully unavailable for other users, leading to degraded performance and limited access to Cloud functions. Several customers reported outages during this period.
 
-**Root Cause**
+**Root Cause**  
 The disruption was caused by an excessive volume of requests originating from a single customer, which exhausted shared system resources and blocked normal operation for other tenants.
 
-**Mitigation**
+**Mitigation**  
 The service was stabilized after intervention by the engineering team. To prevent similar incidents, rate limiting per customer group is being introduced in the coming days, and API usage recommendations are being reinforced to ensure fair usage and platform stability for all users.
 
 
