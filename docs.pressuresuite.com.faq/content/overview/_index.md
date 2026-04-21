@@ -5,144 +5,145 @@ menu:
         parent: overview
         weight: 1
 toc: false
-description: Frequently Asked Questions  (FAQ)
+description: Frequently Asked Questions (FAQ)
 ---
 
-# Frequently Asked Questions
-
-If you miss a question/answer please contact <pressuresuite@keller-pressure.com> or write a new issue on [Github](https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-Documentation).
+If you cannot find your question here, please contact <pressuresuite@keller-pressure.com> or create a new issue on [GitHub](https://github.com/KELLERAGfuerDruckmesstechnik/PressureSuite-Cloud-Documentation).
 
 - [What does "cloud", "IoT", "LoRa" mean?](#what-does-cloud-iot-lora-mean)
 - [What kind of IoT devices does KELLER have?](#what-kind-of-iot-devices-does-keller-have)
 - [What does "PressureSuite" even mean?](#what-does-pressuresuite-even-mean)
 - [What is the "PressureSuite Cloud"?](#what-is-the-pressuresuite-cloud)
 - [Why did you change the name from "KOLIBRI" to "PressureSuite"?](#why-did-you-change-the-name-from-kolibri-to-pressuresuite)
-- [What is the roadmap of the features?](#what-is-the-roadmap-of-the-features)
-- [The customer wants to create his own web app or mobile app. How can KELLER help the customer?](#the-customer-wants-to-create-his-own-web-app-or-mobile-app-how-can-keller-help-the-customer)
-- [The customer does not want to use our "cloud". (ie the customer wants to save and present the data by himself). How can KELLER help the customer?](#the-customer-does-not-want-to-use-our-cloud-ie-the-customer-wants-to-save-and-present-the-data-by-himself-how-can-keller-help-the-customer)
-- [Where can I find marketing/promotional material?](#where-can-i-find-marketingpromotional-material)
+- [What is the feature roadmap?](#what-is-the-feature-roadmap)
+- [The customer wants to create their own web app or mobile app. How can KELLER assist?](#the-customer-wants-to-create-their-own-web-app-or-mobile-app-how-can-keller-assist)
+- [The customer does not want to use our "cloud" and wants to manage and present the data themselves. How can KELLER assist?](#the-customer-does-not-want-to-use-our-cloud-and-wants-to-manage-and-present-the-data-themselves-how-can-keller-assist)
+- [Where can I find marketing or promotional material?](#where-can-i-find-marketing-or-promotional-material)
 - [How do I sign up? How do I log in? How can I test it?](#how-do-i-sign-up-how-do-i-log-in-how-can-i-test-it)
 - [Does the website also work on a mobile phone?](#does-the-website-also-work-on-a-mobile-phone)
-- [What alarms are there](#what-alarms-are-there)
+- [What alarms are there?](#what-alarms-are-there)
 - [How do I know that the devices are communicating?](#how-do-i-know-that-the-devices-are-communicating)
 - [Can I use existing data from the GSM2Datamanager switch to the PressureSuite Cloud?](#can-i-use-existing-data-from-the-gsm2datamanager-switch-to-the-pressuresuite-cloud)
-- [The customer needs a new feature? How do I proceed?](#the-customer-needs-a-new-feature-how-do-i-proceed)
-- [I discovered an SW error. How do I contact KELLER?](#i-discovered-an-sw-error-how-do-i-contact-keller)
-- [How does LoRa technology work and what are the advantages?](#how-does-lora-technology-work-and-what-are-the-advantages)
+- [The customer needs a new feature. How do I proceed?](#the-customer-needs-a-new-feature-how-do-i-proceed)
+- [I discovered a software error. How do I contact KELLER?](#i-discovered-a-software-error-how-do-i-contact-keller)
+- [How does LoRa technology work, and what are the advantages?](#how-does-lora-technology-work-and-what-are-the-advantages)
 - [What is an API?](#what-is-an-api)
 - [Where is the data stored?](#where-is-the-data-stored)
 - [How does the data get from the devices to the WebApp?](#how-does-the-data-get-from-the-devices-to-the-webapp)
 - [How safe is the cloud?](#how-safe-is-the-cloud)
 - [Are there any specific standards that the cloud fulfills?](#are-there-any-specific-standards-that-the-cloud-fulfills)
-- [Is there a terms of service(ToS)?](#is-there-a-terms-of-servicetos)
+- [Are there terms of service (ToS)?](#are-there-terms-of-service-tos)
 - [Does the chart show all measurement points?](#does-the-chart-show-all-measurement-points)
+- [Can I use my own SFTP server?](#can-i-use-my-own-sftp-server)
 
 ## What does "cloud", "IoT", "LoRa" mean?
 
-**IoT** ("Internet of Things"): A hype term that describes a system/network of things (= devices) with sensors, which perform well together or with users thanks to information exchange (e.g., measurement data through the Internet).  
-KELLER has been using IoT devices for many years: Cellular data loggers and now also LoRa devices.  
-**Cloud**: Can be defined as follows: "Cloud computing" refers to storing and accessing data and programs over the Internet, as opposed to saving data on your hard disk. The term "cloud" is also used as a metaphor for "the Internet".  
-**LoRa** (long range): A long-range, low-power wireless platform. A popular IoT wireless protocol. Similar to cellular radio, measurement data from KELLER sensors can be sent wirelessly to the nearest antenna/gateway, and from there forwarded via the Internet to FTP/mail servers or even LoRa servers. LoRa has advantages over cellular radio in that it is cheaper and requires less power (smaller, cheaper battery).  
+**IoT** ("Internet of Things"): A term that describes a system or network of devices with sensors that work together, or with users, by exchanging information such as measurement data over the Internet.  
+KELLER has been using IoT devices for many years, including cellular data loggers and now also LoRa devices.  
+**Cloud**: "Cloud computing" refers to storing and accessing data and programs over the Internet instead of saving data on a local hard drive. The term "cloud" is also used as a metaphor for the Internet.  
+**LoRa** (long range): A long-range, low-power wireless platform and a popular IoT wireless protocol. Similar to cellular radio, measurement data from KELLER sensors can be sent wirelessly to the nearest antenna or gateway and from there forwarded via the Internet to FTP or mail servers, or even LoRa servers. Compared with cellular radio, LoRa is cheaper and requires less power, which allows for smaller and less expensive batteries.  
 See more at <https://docs.pressuresuite.com/sending-technology/lora-technology/>
 
 ## What kind of IoT devices does KELLER have?
-See https://keller-pressure.com/en/products/wireless-solutions
+
+See <https://keller-pressure.com/en/products/wireless-solutions>
+
 KELLER sells the ADT1 (low-cost) and the ARC1 (robust) devices in a tube, a box, or a box with special safety barriers.
-Both device categories can send data either via cellular sending technology (2G/3G/4G/NB-IoT/LTE-M) or via the LoRaWAN sending technology.
+Both device categories can send data either via cellular technology (2G/3G/4G/NB-IoT/LTE-M) or via LoRaWAN.
 
 ## What does "PressureSuite" even mean?
 
-PressureSuite is the successor of KOLIBRI. It is a new name for a product line.  
+PressureSuite is the successor to KOLIBRI. It is the new name of the product line.  
 Currently, this product line contains:
 
 - PressureSuite Cloud: Web portal for customers to access data
 
-- PressureSuite Desktop: The new logger software application that we use to store and visualize data from data loggers on the Windows PC.
+- PressureSuite Desktop: The logger software application we use to store and visualize data from data loggers on a Windows PC.
 
-- PressureSuite Mobile: The new iOS/Android app, with which you can load measurement data from KELLER data loggers via Bluetooth to a smartphone.
+- PressureSuite Mobile: The iOS and Android app that lets you load measurement data from KELLER data loggers to a smartphone via Bluetooth.
 
-These products all use the latest technologies and a customized design. In addition, you can download and upload data from "PressureSuite Desktop" and "PressureSuite Mobile" to the "PressureSuite Cloud".
+These products all use current technologies and a customized design. In addition, you can download and upload data between PressureSuite Desktop, PressureSuite Mobile, and PressureSuite Cloud.
 
 ## Why did you change the name from "KOLIBRI" to "PressureSuite"?
 
-We had to change the name for legal reasons. Until the end of 2024 the API endpoint https://api.kolibricloud.ch/v1/ will stay. Be aware that we will shut off this endpoint. Please switch to https://api.pressuresuite.com/v1/ as soon as possible. All queries and responses should behave the same.  
+We had to change the name for legal reasons. Until the end of 2024, the API endpoint <https://api.kolibricloud.ch/v1/> remained available. Please be aware that this endpoint has been shut down. Please switch to <https://api.pressuresuite.com/v1/> as soon as possible. All queries and responses should behave the same.
 
 ## What is the "PressureSuite Cloud"?
 
 PressureSuite is the name of the new KELLER Pressure product line.
-Part of this new product line are the cloud possibilities, which include:
+Part of this product line is PressureSuite Cloud, which includes:
 
-- WebApp: The "Online Program" at www.pressuresuite.com
+- WebApp: The online application at <https://www.pressuresuite.com>
 
-- API: A standardized interface to transfer data (e.g., measurement data) in a common internet format to other programs/services/clouds
+- API: A standardized interface for transferring data such as measurement data in a common Internet format to other programs, services, or clouds.
 
-- Documentations: How to interpret the measurement data of Cellular/LoRa devices? How does the API work? All protocols and simple examples should be openly documented.
+- Documentation: Explanations of how to interpret the measurement data of cellular and LoRa devices, how the API works, and how to use the documented protocols and examples.
 
-- Tools: To simplify the integration of our IoT devices, sample programs and libraries are available for free or even open-sourced.
+- Tools: To simplify the integration of our IoT devices, sample programs and libraries are available free of charge and, in some cases, as open-source projects.
 
-## What is the roadmap of the features?
+## What is the feature roadmap?
 
 [Please see this overview.](https://docs.pressuresuite.com/overview/roadmap/)
 
 ## The customer wants to create their own web app or mobile app. How can KELLER assist?
 
-Customers may use our WebApp to see that their devices are sending data (proof-of-concept). This means they can IMMEDIATELY start testing our devices in their environment.
-Then they can use our API to make data queries. They now have to develop a User Interface and address our API. We assist them with sample programs and good documentation.
+Customers may use our WebApp to see that their devices are sending data as a proof of concept. This means they can immediately start testing our devices in their environment.
+They can then use our API to query the data. After that, they can develop their own user interface and connect it to our API. We support them with sample programs and good documentation.
 
-## The customer does not want to use our "cloud" (i.e., the customer wants to manage and present the data themselves). How can KELLER assist?
+## The customer does not want to use our "cloud" and wants to manage and present the data themselves. How can KELLER assist?
 
-Customers may use our WebApp to see that their devices are sending data (proof-of-concept). This means they can IMMEDIATELY start testing our devices in their environment.
-During the testing phase, they can start using our documentation to integrate the devices into their solution.
+Customers may use our WebApp to see that their devices are sending data as a proof of concept. This means they can immediately start testing our devices in their environment.
+During the testing phase, they can start using our documentation to integrate the devices into their own solution.
 
-## Where can I find marketing/promotional materials?
+## Where can I find marketing or promotional material?
 
 Please contact <marketing@keller-pressure.com>.
 
 ## How do I sign up? How do I log in? How can I test it?
 
-See: <https://www.pressuresuite.com>
-For all those interested, there is a test user account (Demo1234 / Demo1234), with which everyone can log in and try out the WebApp.
-There are a few test devices visible and their measurement data. The login password can be found on <https://www.pressuresuite.com>.
+See <https://www.pressuresuite.com>.
+For anyone interested, there is a test user account (Demo1234 / Demo1234) that can be used to log in and try out the WebApp.
+Several test devices and their measurement data are visible there. The login password can be found on <https://www.pressuresuite.com>.
 
 ## Does the website also work on a mobile phone?
 
-Yes. The site is optimized for PC / Mac with monitor screens.
-The WebApp is "responsive" and therefore works on mobile phones, too. However, due to the small screen area, the chart display is very difficult to use.
-The mobile version is more necessary for monitoring triggered alarms and the current state of all devices.
+Yes. The site is optimized for PCs and Macs with larger screens.
+The WebApp is responsive and therefore also works on mobile phones. However, due to the limited screen size, the chart display is difficult to use.
+The mobile version is mainly intended for monitoring triggered alarms and the current status of all devices.
 
 ## What alarms are there?
 
 There are three categories:
 
-- Application alarms: Alarms that the customer can set and are related to their application
-  - Level Alarm: Here you can select a minimum or maximum of any channel. E.g., "If channel 'Pressure 1' has more than 2.5 bar, then trigger an alarm."
-- Device Alarms: These are alarms that are automatically triggered if a device experiences an extraordinary condition. For example:
-  - Low Battery Capacity / Critical Battery Capacity
-  - "Low Battery Voltage" / "Critical Battery Voltage"
+- Application alarms: Alarms that the customer can set and that are related to their application
+  - Level alarm: Here you can select a minimum or maximum value for any channel, for example: "If channel 'Pressure 1' exceeds 2.5 bar, then trigger an alarm."
+- Device alarms: These are alarms that are automatically triggered if a device experiences an unusual condition. For example:
+  - Low battery capacity / critical battery capacity
+  - Low battery voltage / critical battery voltage
   - Extraordinary humidity in the sensor
-  - Device does not send or is sending late
+  - Device does not send data or sends data late
 
 ## How do I know that the devices are communicating?
 
-On the WebApp, you can read the time of the last communication.
-![Last Data on www.pressuresuite.com](../LastData.png"Last Data")
+On the WebApp, you can see the time of the last communication.
+![Last data on www.pressuresuite.com](../LastData.png "Last data")
 
 ## Can I use existing data from the GSM2Datamanager switch to the PressureSuite Cloud?
 
-It is possible to load data from GSM2DataManager databases into the cloud. This is a work effort of multiple hours and might be a chargeable work. Your sales person will find a fair solution.
+It is possible to load data from GSM2DataManager databases into the cloud. This usually requires several hours of work and may be a chargeable service. Your sales contact will help you find a fair solution.
 
-## The customer needs a new feature? How do I proceed?
+## The customer needs a new feature. How do I proceed?
 
-Contact to <pressuresuite@keller-pressure.com>
+Please contact <pressuresuite@keller-pressure.com>.
 
-## I discovered an SW error. How do I contact KELLER?
+## I discovered a software error. How do I contact KELLER?
 
-Contact to <pressuresuite@keller-pressure.com>
+Please contact <pressuresuite@keller-pressure.com>.
 
-## How does LoRa technology work? And what are the advantages?
+## How does LoRa technology work, and what are the advantages?
 
-LoRa (long range): Long range, low power wireless platform. A popular IoT wireless protocol. Similar to Cellular Radio, measurement data from the KELLER sensor can be sent away wireless to the next antenna/gateway, and from there forwarded via the Internet to FTP / mail servers or even LoRa servers.
-LoRa has the advantages over Cellular Radio that it is cheaper and requires less power (smaller, cheaper battery)
+LoRa (long range) is a long-range, low-power wireless platform and a popular IoT wireless protocol. Similar to cellular radio, measurement data from a KELLER sensor can be sent wirelessly to the next antenna or gateway and from there forwarded via the Internet to FTP or mail servers, or even LoRa servers.
+Compared with cellular radio, LoRa is cheaper and requires less power, which allows for smaller and less expensive batteries.
 
 See <https://docs.pressuresuite.com/sending-technology/lora-technology/>
 
@@ -150,16 +151,16 @@ See <https://docs.pressuresuite.com/sending-technology/lora-technology/>
 
 [![What is an API](https://img.youtube.com/vi/s7wmiS2mSXY/0.jpg)](https://www.youtube.com/watch?v=s7wmiS2mSXY)
 
-The Internet and Internet products essentially consist of devices that communicate with each other. The format of this interface is often a REST API. All large companies have APIs. Google Maps, for example, needs an API to query where a place is and reacts to maps, coordinates, ...
+The Internet and many Internet-based products essentially consist of devices and services that communicate with each other. The format of this communication is often a REST API. Many large companies provide APIs. Google Maps, for example, uses an API to query locations and respond to maps and coordinates.
 
-APIs are not sorcery solely for developers.
-The PressureSuite Cloud API can also be tested (if authorized) at <https://api.pressuresuite.com/swagger/index.html?url=/swagger/v1/swagger.json>
+APIs are not something only developers can use.
+The PressureSuite Cloud API can also be tested, if authorized, at <https://api.pressuresuite.com/swagger/index.html?url=/swagger/v1/swagger.json>.
 
-If you as a specific software aks. e.g. "Give me the list of all devices", the answer would be:
+If a software application asks, for example, "Give me the list of all devices", the answer would be:
 
 `https://api.pressuresuite.com/v1/Devices`
 
-And in answer you get from PressureSuite Cloud:
+In response, you get the following from PressureSuite Cloud:
 
 {{< highlight json >}}
 {
@@ -193,63 +194,78 @@ And in answer you get from PressureSuite Cloud:
 }
 {{< /highlight >}}
 
-The data format is called JSON (standard) and can be easily decrypted by all programming languages.
+This data format is called JSON, a standard format that can be easily processed by all programming languages.
 
-An API is very powerful. A customer can use the API to pick up all his data, save it or just show how it suits him.
+An API is very powerful. A customer can use the API to retrieve all of their data, save it, or display it in whatever way suits them best.
 
 ## Where is the data stored?
 
-All data is stored in an EU data center in Ireland in an SQL database.
+All data is stored in an EU data center in Ireland in a SQL database.
 It is automatically backed up every 10 minutes.
 
 ## How does the data get from the devices to the WebApp?
 
 The entire system is not that complicated.
 
-- The data from our sensors is regularly stored on FTP/mail servers.
-- The PressureSuite Cloud in the background is also a collection of many small programs (Azure Functions), which perform regular tasks. For example, every 5 minutes, all FTP/mail servers are checked for new data, and new data is stored in a data queue.
+- The data from our sensors is regularly stored on FTP or mail servers.
+- In the background, PressureSuite Cloud is a collection of many small programs (Azure Functions) that perform regular tasks. For example, every 5 minutes all FTP and mail servers are checked for new data, and any new data is stored in a data queue.
 - As soon as a new message is available from LoRa, it is stored in a data queue.
-- Another program monitors the data queue, analyzes the content and origin, then converts the data and stores it in a database.
+- Another program monitors the data queue, analyzes the content and origin, converts the data, and stores it in a database.
 - There are other programs that regularly check the measured data for abnormalities and, if necessary, generate alarms and send emails.
-- At the same time, there is this—our API. This is the gateway to the database. No customer can access the database directly. Everything goes through the API.
-- You can log in with a username/password. An external service authorizes the user and responds with a special key that correctly identifies the user and allows them to use our API.
-- Thanks to the key, the API knows which data it is allowed to send to the user/program.
-- The WebApp is such a program that collects all data via the API. The measurement data are also sent in compressed and encrypted text formats to the WebApp. The WebApp (App = Application = Program) generates a chart itself based on the measured data.
+- At the same time, there is our API. It is the gateway to the database. No customer can access the database directly. Everything goes through the API.
+- You can log in with a username and password. An external service authorizes the user and responds with a special key that correctly identifies the user and allows access to our API.
+- Thanks to the key, the API knows which data it is allowed to send to the user or program.
+- The WebApp is one such program that collects all data via the API. The measurement data are also sent to the WebApp in compressed and encrypted text formats. The WebApp itself generates a chart based on the measured data.
 
 ## How safe is the cloud?
 
 The cloud is very safe.
 It uses modern processes, best practices, and tools. Everything was audited by Windows Azure experts (Microsoft MVP experts).
-Authorization is managed externally (by Microsoft Azure Active Directory B2C). So, if you want to hack accounts from PressureSuite Cloud, then you have to hack Microsoft first.
-Without proper authorization, it is not possible to get data.
-You can only query the data assigned to the user. This means that a validly authorized user cannot see other users' data. This is even backed up at the database level (role-level feature SQL Server).
+Authorization is managed externally by Microsoft Azure Active Directory B2C. This means that compromising PressureSuite Cloud accounts would require compromising Microsoft first.
+Without proper authorization, it is not possible to access data.
+You can only query the data assigned to the user. This means that a validly authorized user cannot see other users' data. This is even backed up at the database level (SQL Server row-level security).
 
-The greatest risk is not that our system (or Microsoft's) or a password is hacked, but that a customer mistakenly redistributes the password by themselves.
+The greatest risk is not that our system, Microsoft's systems, or a password is hacked, but that a customer accidentally shares the password.
 
 Microsoft Azure is one of the top three players in cloud services and meets several standards.
 
 ## Are there any specific standards that the cloud fulfills?
 
-Security is one of the key features and concerns in IoT/cloud projects.
+Security is one of the key features and concerns in IoT and cloud projects.
 
-The PressureSuite Cloud uses the access, storage, and authentication of users and data in/from a MICROSOFT (Azure) data center.
+PressureSuite Cloud uses Microsoft Azure data centers for user access, data storage, and authentication.
 
-This data center is in the EU and subject to EU regulations (EU Data Protection Regulation (DSGVO)) (i.e., no data may be shared with data centers outside the EU, especially not with US). <https://www.microsoft.com/de-de/TrustCenter/Privacy/gdpr/default.aspx>
+This data center is located in the EU and is subject to EU regulations, including the General Data Protection Regulation (GDPR). This means that data may not be shared with data centers outside the EU, especially not with the US. <https://www.microsoft.com/de-de/TrustCenter/Privacy/gdpr/default.aspx>
 
 In addition:
 
-- There are not many standards of countries regarding cloud/data/privacy, yet. And if so, then they affect the "personal data" which does not concern us, because the PressureSuite Cloud stores mostly measurement data.
+- There are still not many country-specific standards for cloud, data, and privacy. Where such standards exist, they mainly concern personal data, which is less relevant here because PressureSuite Cloud stores mostly measurement data.
 - What standards does Microsoft guarantee?
 
-  - <https://azure.microsoft.com/en-us/overview/trusted-cloud/>   (overview)
-  - <https://azure.microsoft.com/en-us/blog/microsoft-azure-leads-the-industry-in-iso-certifications/>  (overview)
-  - List of standards:  <https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings>
-eg  ISO 9001 , ISO 20000-1: 2011, ISO 2230, ISO 27001, ISO 27017, ISO 27018, BIR 2012 (Netherlands), UK G-Cloud, Argentina PDPA, ...
+  - <https://azure.microsoft.com/en-us/overview/trusted-cloud/> (overview)
+  - <https://azure.microsoft.com/en-us/blog/microsoft-azure-leads-the-industry-in-iso-certifications/> (overview)
+  - List of standards: <https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings>
 
-## Is there a terms of service(ToS)?
+For example: ISO 9001, ISO 20000-1:2011, ISO 2230, ISO 27001, ISO 27017, ISO 27018, BIR 2012 (Netherlands), UK G-Cloud, Argentina PDPA, and more.
 
-Yes.  See: https://docs.pressuresuite.com/PressureSuite_Cloud_Terms_and_Conditions_2024.pdf
+## Are there terms of service (ToS)?
+
+Yes. See <https://docs.pressuresuite.com/Nutzungsbedingungen_and_Terms_and_conditions_PressureSuite_Cloud_2026.pdf>.
 
 ## Does the chart show all measurement points?
 
-To reduce the computing power needed to show the loaded measurement points in the chart (which is quite scarce when using a browser) a downsample algorithm is used. This algorithm reduces the displayed measurement points to a maximum number of 1500pts / channel. The algorithm is based on *Largest Triangle Three Buckets algorithm* described by *Sveinn Steinarsson* in his master thesis *"Downsampling Time Series for Visual Representation"* at the Faculty of Industrial Engineering, Mechanical Engineering and Computer Science University of Iceland (<https://skemman.is/handle/1946/15343>).
+To reduce the computing power needed to display measurement points in the chart, which is limited in a browser, a downsampling algorithm is used. This algorithm reduces the displayed measurement points to a maximum of 1500 points per channel. It is based on the *Largest Triangle Three Buckets* algorithm described by *Sveinn Steinarsson* in the master's thesis *"Downsampling Time Series for Visual Representation"* at the Faculty of Industrial Engineering, Mechanical Engineering and Computer Science, University of Iceland (<https://skemman.is/handle/1946/15343>).
+
+## Can I use my own SFTP server?
+
+No. SFTP is not supported.
+
+If you need an encrypted transfer, use **FTPS** instead. In many cases it is enough to enable the option "Use secure FTP" in the FTP configuration.
+
+Normally, no separate credentials are required beyond the FTP credentials already provided for the server. If the connection still does not work, the cause is usually a mismatch between the TLS versions or cipher suites required by the server and those supported by the device.
+
+In that case, please contact <pressuresuite@keller-pressure.com> and provide:
+
+- the device type and serial number
+- the TLS protocol versions required by your server
+- the cipher suites required by your server
