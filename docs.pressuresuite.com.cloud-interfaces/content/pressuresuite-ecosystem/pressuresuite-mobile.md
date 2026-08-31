@@ -9,4 +9,4 @@ menu:
 
 # PressureSuite Mobile - The Bluetooth Mobile App
 
-The PressureSuite Mobile App is in development and will be released around mid 2025 together with new KELLER BLE devices.
+The PressureSuite Mobile App available at Google Play Store and Apple App Store allows you to connect to your KELLER devices via Bluetooth.  
