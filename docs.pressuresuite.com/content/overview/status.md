@@ -5,7 +5,7 @@ menu:
         parent: overview
         weight: 7
 toc: false
-description: History about maintenances and outages
+description: History of maintenance and outages
 ---
 # Status
 
@@ -63,13 +63,13 @@ With this architecture, the ingestion pipeline operates more reliably, and data 
 ### 30. July 2025 15:00 CEST  - 30. July 2025 18:00 CEST
 
 **Summary of Impact:**  
-The Web API and therefore the Web App experience delays in displaying data. We were migrating the database to a newer version which caused more delays than expected.
+The Web API, and therefore the Web App, experienced delays in displaying data. We were migrating the database to a newer version, which caused more delays than expected.
 
 **Root Cause:**  
-We were migrating the database to a newer version which was taking longer than anticipated due to the size of the database and the complexity of the data structures.
+We were migrating the database to a newer version, which was taking longer than anticipated due to the size of the database and the complexity of the data structures.
 
 **Mitigation:**
-The team is also monitoring the system closely to ensure that any further issues are addressed promptly. Also, we try to warn here in advance when we plan to make further complex changes.
+The team is monitoring the system closely to ensure that any further issues are addressed promptly. We also try to warn here in advance when we plan to make further complex changes.
 
 ---
 
@@ -77,11 +77,11 @@ The team is also monitoring the system closely to ensure that any further issues
 ### ⚠️ 27. June 2025 09:00 CEST  - ...
 
 **Summary of Impact:**  
-⚠️ Some measurements are stored hours later and are visible in the web app and the API only a couple hours later.
-⚠️ Coordinates can not be stored successfully. Longitude/Latitude are cut to two digits after the decimal point.
+⚠️ Some measurements are stored hours late and are visible in the web app and the API only a couple of hours later.
+⚠️ Coordinates cannot be stored successfully. Longitude/Latitude are cut to two digits after the decimal point.
 
 **Root Cause:**  
-Various Cloud services have been rewritten and modernized in the last weeks. Unfortunately, the important Azure Webjob that stores the measurements into the database was shot down by the Azure platform due to unknown reasons. The shutdown happened during the night from 25. June to 26. June and from 26. June to 27. June 2025. Only after the PressureSuite team noticed the problem during working hours, the Webjob was restarted and all measurements were stored in the database. No data has been lost, but the delay in storing the measurements caused a delay in the web app and API.
+Various Cloud services have been rewritten and modernized in recent weeks. Unfortunately, the important Azure WebJob that stores the measurements in the database was shut down by the Azure platform for unknown reasons. The shutdown happened during the night from 25. June to 26. June and from 26. June to 27. June 2025. Only after the PressureSuite team noticed the problem during working hours was the WebJob restarted and all measurements stored in the database. No data has been lost, but the delay in storing the measurements caused a delay in the web app and API.
 
 **Mitigation:**  
 We are currently working on a more robust solution to avoid such issues in the future. The team is also investigating the root cause of the shutdown to prevent it from happening again.  
@@ -92,11 +92,11 @@ We are currently working on a more robust solution to avoid such issues in the f
 ### 15. December 2024 04:00 CET - 16. December 2024 09:30 CET
 
 **Summary of Impact:**  
-The FTP-file-grabber-module used too much memory due to some faulty FTP accounts with thousands of folders/files and could not finish the upload to the cloud. Therefore, all files weren't uploaded tot he cloud and stuck in the FTP folders.  
+The FTP-file-grabber-module used too much memory due to some faulty FTP accounts with thousands of folders/files and could not finish the upload to the cloud. Therefore, no files were uploaded to the cloud, and they remained stuck in the FTP folders.  
 This error has been fixed. No data has been deleted, and all missing measurements should have been loaded up to the PressureSuite Cloud DB.  
 
 **Root Cause:**  
-After getting noticed that this issue exists, the engineers restarted the module and all data could be loaded again. The software team quickly adapted to this use case and tested & deployed the new code.
+After the engineers noticed this issue, they restarted the module, and all data could be loaded again. The software team quickly adapted to this use case, then tested and deployed the new code.
 
 **Mitigation:**  
 The particular software code has been adapted to new use cases and tested. All data should now be visible again.  
@@ -109,23 +109,23 @@ The particular software code has been adapted to new use cases and tested. All d
 We experienced a disruption in our services due to connection issues with ALL our FTP accounts using the host ftp.gsmdata.ch. This resulted in the inability of devices to send data to the FTP server and subsequently to the PressureSuite Cloud.
 
 **What went wrong and why?**  
-The root cause of this issue stemmed from changes made to the gsmdata.ch domain, including DNS settings alterations. These changes had unforeseen effects on our FTP/eMail-hoster, leading to the conversion of all user names and rendering devices unable to communicate with the FTP server.
+The root cause of this issue stemmed from changes made to the gsmdata.ch domain, including DNS setting alterations. These changes had unforeseen effects on our FTP/eMail-hoster, leading to the conversion of all user names and rendering devices unable to communicate with the FTP server.
 
 **How did we respond?**  
 Upon identifying the issue, we immediately initiated contact with our FTP hoster and explored various avenues to resolve the problem. Despite multiple attempts to revert the changes, we received confirmation that the alterations were irreversible. In response, we sourced a new FTP hoster and initiated the migration process.
 
 **How are we making incidents like this less likely or less impactful?**  
-We reviewed our hosting options and transitioned to a dedicated root server with a FTP hoster capable of providing efficient support and troubleshooting. This move grants us full control over all aspects of the server, ensuring quicker response times to any issues that may arise. Additionally, we are considering transitioning away from FTP to a more modern technology such as MQTT or a similar alternative.
+We reviewed our hosting options and transitioned to a dedicated root server with an FTP hoster capable of providing efficient support and troubleshooting. This move grants us full control over all aspects of the server, ensuring quicker response times to any issues that may arise. Additionally, we are considering transitioning away from FTP to a more modern technology such as MQTT or a similar alternative.
 
 **Update History for this incident**  
-[UPDATE] 3rd May 2024 - 16:30 CEST: We are pleased to announce that the connection issues with our FTP accounts have been successfully resolved. We completed the migration of all existing accounts to the new root server. As a result, services have been restored, and all systems are operational. We deeply apologize for any inconvenience caused during this disruption and appreciate your patience and understanding. Rest assured, no data loss is estimated throughout this process.**
-**The missing data will be automatically re-added to the PressureSuite Cloud once the devices resume communication and attempt to resend the data. This process will occur according to the configured sending interval of the devices.
+[UPDATE] 3rd May 2024 - 16:30 CEST: We are pleased to announce that the connection issues with our FTP accounts have been successfully resolved. We completed the migration of all existing accounts to the new root server. As a result, services have been restored, and all systems are operational. We deeply apologize for any inconvenience caused during this disruption and appreciate your patience and understanding. Rest assured, no data loss is expected throughout this process.
+The missing data will be automatically re-added to the PressureSuite Cloud once the devices resume communication and attempt to resend the data. This process will occur according to the configured sending interval of the devices.
 
 [UPDATE] 2nd May 2024 - 17:00 CEST: We have received an update from our new FTP hoster. They anticipate completing the connection of all existing accounts to the new root server by tomorrow evening (3rd May CEST).
 
 [UPDATE] 2nd May 2024 - 16:00 CEST: Following numerous attempts to revert the hoster's configuration, we have received confirmation that the changes are indeed irreversible. In response, we have sourced a new hoster and initiated the migration process. Currently, we are in the midst of adjusting DNS settings and transferring hundreds of FTP accounts to the new FTP root server. We remain optimistic that services will resume by tomorrow.
 
-[UPDATE] 30th April 2024 - 18:40 CEST: The root cause of this issue lies in changes made to the gsmdata.ch domain, including DNS settings alterations, which have had unforeseen effects on our FTP/eMail-hoster.
+[UPDATE] 30th April 2024 - 18:40 CEST: The root cause of this issue lies in changes made to the gsmdata.ch domain, including DNS setting alterations, which have had unforeseen effects on our FTP/eMail-hoster.
 These changes have resulted in the conversion of all user names (e.g., ftp00X@gsmdata.ch) to a new scheme (e.g., 'h134567.ftp00X_gs3XX'), rendering devices unable to send data to the FTP server and subsequently to the PressureSuite Cloud.
 Rest assured, your measurement data is safe and will be transmitted once access to the FTP server is restored. However, current efforts to revert the changes with the hoster have proved unsuccessful, and we are awaiting a response regarding the possibility of backup restoration.
 *Next steps:*
@@ -136,29 +136,29 @@ In the event that the hoster cannot restore FTP accounts, two options remain:
 - We are considering alternative FTP hosting options and may transfer gsmdata.ch accordingly, recreating FTP/mail accounts with identical credentials.
 We apologize for any inconvenience caused and appreciate your patience and understanding as we work to resolve this issue promptly.
 
-[UPDATE] 30th April 2024 - 12:00 CEST: The root cause of this issue is that all @gsmdata.ch accounts have undergone changes within the web hoster's platform. Previously, usernames were email addresses (e.g., 'ftp0xx@gsmdata.ch'), but they have now been altered to different usernames (e.g., 'h18xxxx.ftp0xx_gs3xx'). We are currently in contact with the web hoster to rectify this situation. We apologize for any inconvenience caused by this disruption. To reassure, the data remains intact within the GSMs/ARC1s/ADT1s and will be transmitted once the programmed FTP credentials are operational again.  
+[UPDATE] 30th April 2024 - 12:00 CEST: The root cause of this issue is that all @gsmdata.ch accounts have undergone changes within the web hoster's platform. Previously, usernames were email addresses (e.g., 'ftp0xx@gsmdata.ch'), but they have now been altered to different usernames (e.g., 'h18xxxx.ftp0xx_gs3xx'). We are currently in contact with the web hoster to rectify this situation. We apologize for any inconvenience caused by this disruption. To reassure you, the data remains intact within the GSMs/ARC1s/ADT1s and will be transmitted once the programmed FTP credentials are operational again.  
 
 ---
 
 ### 2022 - 01.December 2023
 
 **Summary of Impact:**  
-In 'v1.22059.01' we introduced the possibility to remotely change the start time of a measurement. Originally, we never wanted to add this feature as it is difficult to handle and the possibilities to make mistake is high up. This is why there are multiple warn boxes when changing this configuration field.  
-Unfortunately, we only now found a bug that made a cellular device change the measure starting time to the time a a new configuration is found by the device.  
+In 'v1.22059.01' we introduced the possibility to remotely change the start time of a measurement. Originally, we never wanted to add this feature as it is difficult to handle and the possibility of making mistakes is high. This is why there are multiple warn boxes when changing this configuration field.  
+Unfortunately, we only now found a bug that made a cellular device change the measure starting time to the time a new configuration is found by the device.  
 
 **Root Cause:**  
-We identified the problem in sending the recent measurement start time within a configuration file which is in the past during the time a device finds the new configuration. The solution was to avoid sending a measure start time unless specifically requested.  
+We identified the problem as sending the most recent measurement start time within a configuration file; that time is in the past when a device finds the new configuration. The solution was to avoid sending a measure start time unless specifically requested.  
 
 ---
 
-### 21.July 12:00 CEST - 21.July 2023 23:00 CEST
+### 21.July 2023 12:00 CEST - 21.July 2023 23:00 CEST
 
 **Summary of Impact:**  
-There are gaps of missing measurement data from 21.July 12:00 CEST - 21.July 2023 23:00 CEST.  
-On the evening of the Monday 24.July, the PressureSuite tech team restored all missing measurement data.  
+There were gaps in the measurement data from 21.July 2023 12:00 CEST - 21.July 2023 23:00 CEST.  
+On the evening of Monday, 24.July, the PressureSuite tech team restored all missing measurement data.  
 
 **Root Cause:**  
-The root cause was a data base quota that reached its limit. After increasing the quota for 100GB the measurements can be stored reliable.
+The root cause was a database quota that reached its limit. After increasing the quota to 100 GB, the measurements can be stored reliably.
 
 ---
 
@@ -176,25 +176,25 @@ A server component that worked for nearly 6 years just stopped and could not be 
 ### 23.December - 08. March 2023
 
 **Summary of Impact:**  
-Some Level Alarm setup in the web app did not trigger an alarm and would not send an alarm mail! Affected customers have been contacted.  
-We completely re-deployed all connected services and implemented new monitor-software to react faster.
+Some level alarm setups in the web app did not trigger an alarm and did not send an alarm mail! Affected customers have been contacted.  
+We completely re-deployed all connected services and implemented new monitoring software to react faster.
 
 **Root Cause:**  
-The dedicated Azure Function stopped executing in a night to the 23rd december. We tried to find the root cause but neither we nor Microsoft tooling could point a root cause.
-This lead us to the point to implement further alarming mechanism to monitor the level alarming mechanism.  
+The dedicated Azure Function stopped executing overnight on 23rd December. We tried to find the root cause, but neither we nor Microsoft tooling could identify one.
+This led us to implement a further alarming mechanism to monitor the level alarming mechanism.  
 
 ---
 
 ### 05.March - 06. March 2023 15:45 CET
 
 **Summary of Impact:**  
-Starting on 5th March 2023, it was not possible to login anymore to https://www.pressuresuite.com  
-Access to the API with 'Permanent Access Token' and ingress of measurement data worked so far.  
-On 6th March 2023 - 14:45 CEST it was possible again to login.  
+Starting on 5th March 2023, it was no longer possible to log in to https://www.pressuresuite.com  
+Access to the API with 'Permanent Access Token' and ingress of measurement data worked as expected.  
+On 6th March 2023 - 14:45 CEST it was possible to log in again.  
 
 **Root Cause:**  
 The developer team found the root cause in a migration from the Microsoft Azure AD B2C endpoint provider. See https://learn.microsoft.com/en-us/azure/active-directory-b2c/b2clogin  
-After changing and testing various URLs and updating of packages/libraries the login was working again.
+After changing and testing various URLs and updating packages/libraries, the login was working again.
 
 ---
 
@@ -204,7 +204,7 @@ After changing and testing various URLs and updating of packages/libraries the l
 Faulty e-mails with the warning 'Device has stopped sending' were sent. The devices are still sending. Please ignore these e-mails.
 
 **Root Cause:**  
-Maintenance of a component led to a false deployment of the device-check-function that used an older test-DB, not the actual DB. We actualized this device-check-function with the correct link to the actual DB.
+Maintenance of a component led to an incorrect deployment of the device-check-function that used an older test DB instead of the actual DB. We updated this device-check-function with the correct link to the actual DB.
 
 ### 10. December 2021 12:40 CET - 11. December 2021 08:40 CET
 
@@ -213,7 +213,7 @@ An SW update caused the system to reject all incoming measurement sets. The data
 If you think there is still missing data, then please contact pressuresuite@keller-pressure.com
 
 **Root Cause:**  
-An SW update meant for our test system caused a smaller sub-part to automatically re-build and deploy to the production system. This resulted in an incompatibility and the data could not be ingested into the database.  
+An SW update meant for our test system caused a smaller sub-part to automatically rebuild and deploy to the production system. This resulted in an incompatibility and the data could not be ingested into the database.  
 The data was still captured in an emergency log queue from which the measurements could be retrieved.  
 Due to the holiday season, we had to delay these efforts and fix and test everything after New Year's Eve but not earlier. We are sorry for this outage.  
 
@@ -222,11 +222,11 @@ Due to the holiday season, we had to delay these efforts and fix and test everyt
 ### 25. October 2021 16:00 CET - 02. November 2021 13:30 CET
 
 **Summary of Impact:**  
-An update on the FTP-file-grabber-module caused an internal error in four FTP accounts where new devices were registered.  
+An update to the FTP-file-grabber-module caused an internal error in four FTP accounts where new devices were registered.  
 This error has been fixed. No data has been deleted, and all missing measurements should have been loaded up to the PressureSuite Cloud DB.  
 
 **Root Cause:**  
-An error when creating paths to copy the measurement files to a new associated folder lead to ill-formed folders and files. This error caused an exception and the FTP account and the process of mitigation the new measurement files has been dropped for another 5min.  
+An error when creating paths to copy the measurement files to a new associated folder led to malformed folders and files. This error caused an exception, and the FTP account and the migration of the new measurement files were skipped for another 5 minutes.  
 
 **Mitigation:**  
 The particular software code has been fixed and tested. All data should now be visible again.  
@@ -239,10 +239,10 @@ The particular software code has been fixed and tested. All data should now be v
 Some level alarms have not been created nor sent via e-mail to users.
 
 **Preliminary Root Cause:**  
-An error in the alarming system caused to stop working due to one single faulty alarm setting of one user.
+An error caused the alarming system to stop working due to a single faulty alarm setting of one user.
 
 **Mitigation:**  
-The particular alarm setting has been fixed, and counter measurements have been implemented that this should never occur again.
+The particular alarm setting has been fixed, and countermeasures have been implemented so that this should never occur again.
 We decided not to re-trigger the e-mails as this would look like a spam attack to some users.
 
 ---
@@ -293,34 +293,34 @@ We continue to improve the warn & log system to find such problems earlier.
 ### 15.May 2021 - 26.May 2021
 
 **Summary of Impact:**  
-The PressureSuite Cloud searches on all known FTP servers for new measurement data. It does this every 5 minutes. Now, due to a chain of multiple causes, the interval to gather the new measurements files has increased from 2 minutes up to multiple hours. The data came but during a random time later (up to 3 hours later).  
+The PressureSuite Cloud searches on all known FTP servers for new measurement data. It does this every 5 minutes. Now, due to a chain of multiple causes, the interval to gather the new measurements files has increased from 2 minutes up to multiple hours. The data arrived at a random later time (up to 3 hours later).  
 Customers experienced a delay of the data in the web app or API.
 
 After the holidays around Pentecost, we fixed the system and saw ways to improve it. No measurement data has been lost due to this incident.
 
 **Root Cause:**  
-A customer used a slow FTP server located in South America and summed up multiple thousands of faulty measurement files. The 'PressureSuite Cloud FTP collection service' tried to download this multiple times causing this 'collection process' to take **several hours** instead of 2 minutes. The files were rejected from the PressureSuite Cloud as they were faulty, but re-downloaded and analysed later again and again.  
+A customer used a slow FTP server located in South America and accumulated several thousand faulty measurement files. The 'PressureSuite Cloud FTP collection service' tried to download these multiple times, causing this 'collection process' to take **several hours** instead of 2 minutes. The files were rejected from the PressureSuite Cloud as they were faulty, but re-downloaded and analysed later again and again.  
 This caused the ingestion time of the measurements to be delayed not by the usual 1-5 minutes but by a random (and exponentially increasing) time. On May 26, we saw that it took between 2-3 hours depending on the speed of the particular FTP and the amount of collected data.  
-This also caused to overload the warn mail system which again caused delays in sending the "Level Alarm"-mails to some customers.  
+This also overloaded the warning mail system, which in turn delayed the sending of the "Level Alarm" mails to some customers.  
 
 **Mitigation:**  
 The particular FTP server has been blocked which caused the service to run normal again.  
-The 60k mails stuck in the mail system needed several days to be processed as other services like spam protection also triggered a delay.
+The 60k mails stuck in the mail system needed several days to be processed because other services, such as spam protection, also triggered a delay.
 
 **Next Steps:**  
-We changed the service in a way that slow FTP connection will be blocked. It is also necessary to change the whole warn & logging mechanism.
+We changed the service so that slow FTP connections will be blocked. It is also necessary to change the whole warning & logging mechanism.
 
 ---
 
 ### 28.April 2021 at 14:00:00 MEZ - 30.April 2021 at 17:00:00 MEZ
 
 **Summary of Impact:**  
-Our FTP-provider did migrate the server to another. Not only did the provider forgot to tell us, they also somehow made mistakes and caused ALL our FTP accounts (ftp.gsmdata.ch) to cease communicating for two days.
+Our FTP provider migrated the server to another one. Not only did the provider forget to tell us, they also made mistakes that caused ALL our FTP accounts (ftp.gsmdata.ch) to cease communicating for two days.
 During this time period, all cellular devices (GSM/ARC1) using ftp.gsmdata.ch could not send data to the FTP and, therefore, not to the cloud.
 Nevertheless, the ARC1/GSMs are programmed in a way that after a positive re-connection they re-send the missing data. 
 
 **Next Steps:**  
-There should not been data holes due to the ARC1s/GSMs fault-tolerance strategy. If you think there are any data holes, please contact pressuresuite@keller-pressure.com to remotely request the missing data.
+There should not be any data holes due to the ARC1s/GSMs fault-tolerance strategy. If you think there are any data holes, please contact pressuresuite@keller-pressure.com to remotely request the missing data.
 
 ---
 
@@ -328,13 +328,13 @@ There should not been data holes due to the ARC1s/GSMs fault-tolerance strategy.
 ### 16.Nov.2020 14:42:01 MEZ - 16:14:00 MEZ
 
 **Summary of Impact:**  
-Both, the Web app and the API was inaccessible due to an expired SSL certificate.
+Both the Web app and the API were inaccessible due to an expired SSL certificate.
 
 **Mitigation:**  
-The annual SSL certificate renewal process seems to be broken and the SSL certificate was not properly renewed.
+The annual SSL certificate renewal process seems to be broken, and the SSL certificate was not properly renewed.
 
 **Next Steps:**  
-We manually renewed the certificate and after waiting for all DNS involved all services are now reachable again.
+We manually renewed the certificate and after waiting for DNS propagation, all services are now reachable again.
 
 ---
 
@@ -342,12 +342,12 @@ We manually renewed the certificate and after waiting for all DNS involved all s
 
 **Summary of Impact:**  
 After a new update on 06.Nov.2020 15:33:10 UTC the data ingress of all cellular devices failed.  
-No data from Friday to Monday was available through the API not the web app.  
-While fixing the issue the LoRa data on Monday some LoRa messages where wrongly assigned, too.
+No data from Friday to Monday was available through the API or the web app.  
+While fixing the issue on Monday, some LoRa messages were also wrongly assigned.
 
-As the data was temporarily stored in a DL-queue engineers restored all the data again on Monday night.
+As the data was temporarily stored in a DL queue, engineers restored all the data again on Monday night.
 
-If there are still data missing, please contact pressuresuite@keller-pressure.com to restore missing data.
+If there is still data missing, please contact pressuresuite@keller-pressure.com to restore missing data.
 
 **Mitigation:**  
 Engineers found a bug that caused a wrong conversion and assignment of the GSM1/ARC1 channels.  
@@ -361,16 +361,16 @@ In hindsight, the SW developer deeply regrets deploying new stuff on a Friday af
 ### 05.Nov.2020 13:08:07 UTC - 06.Nov.2020 15:33:10 UTC
 
 **Summary of Impact:**  
-During one day, all measurements of all LoRa devices have a wrong channel.
-This also caused wrong alarms-mails being triggered.
+During one day, all measurements of all LoRa devices had a wrong channel.
+This also caused wrong alarm mails to be triggered.
 
 **Preliminary Root Cause:**  
-SW Engineers determined that an error in using the new open-source converter SW (https://iotconverter.pressuresuite.com/) caused the a wrong conversion where the channel mapping (https://docs.pressuresuite.com/cloud-interfaces/api/channels/) was off by one (channel).
+SW Engineers determined that an error in using the new open-source converter SW (https://iotconverter.pressuresuite.com/) caused a wrong conversion where the channel mapping (https://docs.pressuresuite.com/cloud-interfaces/api/channels/) was off by one (channel).
 
 **Mitigation:**  
-The DevOps Engineer fixed and tested the issue by updating a newer version.  
-*EVERY WRONG MEASUREMENTS WILL BE FIXED DURING THE WEEKEND AND RECIPIENTS OF MAILS WILL BE NOTIFIED.*  
-[update - 06.Nov2020 - 22:30 CET]: The measurements have been adjusted back to the correct mapping.
+The DevOps Engineer fixed and tested the issue by updating to a newer version.  
+*EVERY WRONG MEASUREMENT WILL BE FIXED DURING THE WEEKEND, AND RECIPIENTS OF MAILS WILL BE NOTIFIED.*  
+[update - 06.Nov.2020 - 22:30 CET]: The measurements have been adjusted back to the correct mapping.
 
 **Next Steps:**  
 None.
@@ -393,15 +393,15 @@ None.
 ### 10.Aug.2020 from 17:00 CET - 22:30 CET
 
 **Summary of Impact**:  
-An important Cloud-WebJob has stopped and was under maintenance due to erroneous behavior. 
-No new data was processed but stored in a data queue (service bus), therefore no new data was shown on the PressureSuite Cloud web app.
+An important Cloud WebJob stopped and was taken down for maintenance due to erroneous behavior. 
+No new data was processed but was stored in a data queue (service bus); therefore, no new data was shown on the PressureSuite Cloud web app.
 There was no known data loss. 
 
 **Preliminary Root Cause**:
-The present DevOps Engineer determined that a Cloud component during an update misbehaved and didn't start correctly when published.
-Therefore, no new data was processed to the database. The data was temporarily stored in a data queue.
+The DevOps engineer on duty determined that a Cloud component misbehaved during an update and didn't start correctly when published.
+Therefore, no new data was written to the database. The data was temporarily stored in a data queue.
 
-**Mitigation:**:  
+**Mitigation:**  
 The DevOps Engineer fixed the program again and all stored data was processed correctly.
 
 **Next Steps**:  
@@ -412,13 +412,13 @@ None.
 ### 10.Feb.2020 from 17:30 CET - 11.Feb.2020 08:30 CET
 
 **Summary of Impact**:  
-The https://www.pressuresuite.com web app showed no content. Only the the https://test.pressuresuite.com test environment was working.
+The https://www.pressuresuite.com web app showed no content. Only the https://test.pressuresuite.com test environment was working.
 
 **Preliminary Root Cause**:
-Engineers determined that an error in deployment process that just happens to stop working.  
+Engineers determined that an error in the deployment process had caused it to stop working.  
 The specific error is documented here: https://github.com/microsoft/azure-pipelines-tasks/issues/10387  
 
-**Mitigation:**:  
+**Mitigation:**  
 The DevOps Engineer fixed and tested the issue by updating the CD component.
 
 **Next Steps**:  
@@ -429,12 +429,12 @@ None.
 ### From 23.Jan.2020 to 10.Feb.2020
 
 **Summary of Impact**:  
-The "LastMeasurements" and the "DeviceInformation" showed older measurements (timestamp + values) then available and stored.  
+The "LastMeasurements" and the "DeviceInformation" showed older measurements (timestamp + values) than those available and stored.  
 
 **Preliminary Root Cause**:
-The DevOps Engineer determined an error in a wrong continuous deployment process that upgraded only parts of the system causing the ```/v1/LastMeasurements``` endpoint to show an older measurement. Nevertheless, no data was lost and the ```/v1/Measurements``` endpoint continued to work properly.
+The DevOps Engineer determined an error in the continuous deployment process that upgraded only parts of the system, causing the ```/v1/LastMeasurements``` endpoint to show an older measurement. Nevertheless, no data was lost and the ```/v1/Measurements``` endpoint continued to work properly.
 
-**Mitigation:**:  
+**Mitigation:**  
 Engineers fixed and tested the issue.
 
 **Next Steps**:  
@@ -446,7 +446,7 @@ None.
 ### 06.Nov.2019 from 16:00-17:00 CET
 
 **Planned Maintenance Window**:  
-Updated various features; Including test version of the new "Device Configuration" feature.  
+Updated various features, including a test version of the new "Device Configuration" feature.  
 Known issues:
 
 - The Device Configuration-Button is hidden on purpose.
@@ -454,15 +454,15 @@ Known issues:
 
 ---
 
-### 29.Okt.2019 from 17:00-21:00 CET
+### 29.Oct.2019 from 17:00-21:00 CET
 
 **Summary of Impact**:  
-The storing of LoRa messages from TTN and Loriot.io was temporary impossible. LoRa from Actility networks were stored.
+The storing of LoRa messages from TTN and Loriot.io was temporarily impossible. LoRa messages from Actility networks were stored.
 
 **Preliminary Root Cause**:
 Engineers determined that an error in a recent deployment of a new auto-assignment feature to the backend of the PressureSuite Cloud caused a conflict with specific LoRa-server protocol implementation.
 
-**Mitigation:**:  
+**Mitigation:**  
 Engineers fixed and tested the protocol issue.
 
 **Next Steps**:  
@@ -473,14 +473,14 @@ Customers who lost important data can contact the PressureSuite Cloud support (p
 ### 2.May.2019 from 20:00-22:00 UTC
 
 **Summary of Impact**:  
-The web app and API could not be reached for two hours. No measurement data have been lost.
+The web app and API could not be reached for two hours. No measurement data has been lost.
 
 **Preliminary Root Cause**:
 An error by the cloud hoster Microsoft caused a global outage of many cloud services including the possibility of storing measurement data.  
 See <https://www.zdnet.com/article/azure-global-outage-our-dns-update-mangled-domain-records-says-microsoft/>
 
-**Mitigation:**:  
-After two hours all services were working again and the pending measurement transmission automatically waited in a queue and were stored into the DB as soon as the outage was fixed.
+**Mitigation:**  
+After two hours all services were working again and the pending measurement transmissions automatically waited in a queue and were stored into the DB as soon as the outage was fixed.
 
 **Next Steps**:  
 None.
@@ -499,7 +499,7 @@ None.
 ### 14.June 2023 09:00 MEZ - 16.June 2023 18:00 MEZ
 
 **Planned work**  
-We re-deploy all functions, WebJobs, API and tooling to the newest Long-Time-Supported framework version.  
+We are re-deploying all functions, WebJobs, API and tooling to the newest Long-Term Support framework version.  
 This is a major upgrade and we expect delays in various services including access to the Web API, Web App and a delay in the gathering of newest measurement data.  
 Update: The maintenance window is extended to 16.June 18:00 MEZ.
 
@@ -507,7 +507,7 @@ Update: The maintenance window is extended to 16.June 18:00 MEZ.
 ### 10.May 2023 14:00 MEZ - 11.May 2023 18:00 MEZ
 
 **Planned work**  
-We deploy all functions, WebJobs, API and tooling to the newest Long-Time-Supported framework version. 
+We are deploying all functions, WebJobs, API and tooling to the newest Long-Term Support framework version. 
 This is a major upgrade and we expect delays in various services including access to the Web API, Web App and a delay in the gathering of newest measurement data.
 
 
@@ -515,20 +515,20 @@ This is a major upgrade and we expect delays in various services including acces
 
 **Planned work**  
 We are deploying the newest version of the app with version number v.1.22059.01. 
-During this time, an older database version with the timestamp February, 8th 2022 will be shown. After 14:00 MEZ, please login again and refresh the web app.
+During this time, an older database version with the timestamp February 8th, 2022 will be shown. After 14:00 MEZ, please log in again and refresh the web app.
 No data will be lost during this time.
 
 
 ### 31.January 2022 10:00 MEZ - 12:00 MEZ
 
 **Planned work**  
-*We update the DB, API and frontend to make the new features possible. For this, the Cloud, including WebApp & API might be not accessible for some hours. Expect API calls to fail and data to be collected with delay.*
+*We update the DB, API and frontend to make the new features possible. For this, the Cloud, including WebApp & API, might not be accessible for some hours. Expect API calls to fail and data to be collected with delay.*
 
 
 ### 20. September 2021
 
 **Planned work**  
-- We are enabling the auto-alarming feature for all customers. This might trigger warn mails to those customers who have an E-Mail address registered in the account settings (https://www.pressuresuite.com/account-settings)
+- We are enabling the auto-alarming feature for all customers. This might trigger warning emails to those customers who have an E-Mail address registered in the account settings (https://www.pressuresuite.com/account-settings)
 - We are going to switch the SSL certificate. This might cause temporary connection problems and problems when accessing the data through the API.
 
 ---
@@ -549,4 +549,4 @@ The new versions of these components are being deployed and resulting in tempora
 In the worst case, data will not be updated for some hours.
 
 **Effects**  
-No measurable impacts happened noticeable by users.
+No impacts were noticeable to users.
