@@ -9,13 +9,13 @@ description: History of maintenance and outages
 ---
 # Status
 
- ** WE ARE HAVING TECHNICAL ISSUES WITH THE FTP INGESTION SERVICE **
+ ** NO LONGER HAVING TECHNICAL ISSUES WITH THE FTP INGESTION SERVICE **
 
 ---
 
 ## Outages/Issues  
 
-### 21. October 2026 12:00 CEST -   
+### 21. October 2026 12:00 CEST - 22. October 2026 12:00 CEST
 
 **Summary of Impact**  
 The FTP ingestion service is currently experiencing technical issues. No new data is being ingested at this time. The data will be stored on the FTP servers and is expected to be ingested once the service is restored.
@@ -25,7 +25,7 @@ LoRa transmissions are not affected by this issue and continue to operate normal
 Ongoing migration of all services to a different Azure subscription is causing temporary disruptions in the FTP ingestion service.
 
 **Mitigation**  
-We are working to resolve the issue as quickly as possible and restore normal operation of the FTP ingestion service.
+We redeployed the affected components and restored normal operation of the FTP ingestion service. The migration to the new Azure subscription is ongoing, but the service is now stable and fully operational.
 
 
 
