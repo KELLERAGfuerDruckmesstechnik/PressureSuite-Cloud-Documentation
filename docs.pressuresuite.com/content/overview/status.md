@@ -9,11 +9,25 @@ description: History of maintenance and outages
 ---
 # Status
 
- ** NO LONGER HAVING TECHNICAL ISSUES WITH THE FTP INGESTION SERVICE **
+ ** TECHNICAL ISSUES: The cloud services do not accept any LoRaWAN transmissions **
 
 ---
 
 ## Outages/Issues  
+
+
+### 29. October 2026 11:00 CEST - ongoing 
+
+**Summary of Impact**  
+ALL LoRaWAN transmissions are currently not being accepted by the cloud services. The cellular transmissions are not affected and continue to operate normally.
+
+**Root Cause**  
+A deletion of critical configuration files related to Azure Function App that handles LoRaWAN transmissions caused the service to stop accepting new transmissions.
+
+**Mitigation**  
+
+
+
 
 ### 21. October 2026 12:00 CEST - 22. October 2026 12:00 CEST
 
