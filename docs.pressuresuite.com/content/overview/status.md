@@ -9,23 +9,25 @@ description: History of maintenance and outages
 ---
 # Status
 
- ** TECHNICAL ISSUES: The cloud services do not accept any LoRaWAN transmissions **
+ ** Service Status: All systems operational within normal parameters **
 
 ---
 
 ## Outages/Issues  
 
 
-### 29. October 2026 11:00 CEST - ongoing 
+### 29. October 2026 10:32 UTC - 30. October 2026 16:33 UTC
 
 **Summary of Impact**  
-ALL LoRaWAN transmissions are currently not being accepted by the cloud services. The cellular transmissions are not affected and continue to operate normally.
+ALL LoRaWAN transmissions from 29. October 2026 10:32 UTC - 30. October 2026 16:33 UTC were not accepted by the cloud services. This means, unfortunately, that the data from measurements during this period was not ingested into the cloud services. We are truly sorry for the inconvenience caused.
+The cellular transmissions are not affected and continue to operate normally.
 
 **Root Cause**  
 A deletion of critical configuration files related to Azure Function App that handles LoRaWAN transmissions caused the service to stop accepting new transmissions.
 
 **Mitigation**  
-
+The engineering team restored the deleted configuration files and redeployed the Azure Function App.Re-Deployment failed as we had to first upgrade all related Azure Functions to the latest version before the service could be restored and the Function was accepted by the Azure Cloud again.
+After setting the needed 'old' keys, the Azure Function started to accept new LoRaWAN transmissions.
 
 
 
