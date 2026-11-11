@@ -15,6 +15,19 @@ description: History of maintenance and outages
 
 ## Outages/Issues  
 
+### 29. October 2026 10:32 UTC - 11. November 2026 01:00 UTC
+
+**Summary of Impact**  
+On October 30, 2026, we fixed the services that were affected by the outage, restoring normal operation of the webhook and storage of the transmitted data into a service bus (some kind of queue).
+Unfortunately, they haven't been converted properly and therefore were not stored into the database.
+Yesterday, we identified the issue and migrated the missing services to the newest platform versions in order to properly convert and store the affected data into the database. We are currently working on a solution to ensure all affected data is correctly ingested into the database.
+
+**Root Cause**  
+The root cause of the issue was the improper conversion of services during the migration to the new platform versions, which led to the failure in storing the transmitted data into the database. All data from 30. October 2026 16:33 UTC onwards were affected by this issue and could be restored during the night of 11. November 2026 UTC. 
+
+**Mitigation**  
+We have migrated the affected services to the latest platform versions to ensure proper conversion and storage of the transmitted data into the database. We created tools to re-submit dead-letter messages from the service bus to the database, ensuring that all affected data is correctly ingested.
+
 
 ### 29. October 2026 10:32 UTC - 30. October 2026 16:33 UTC
 
